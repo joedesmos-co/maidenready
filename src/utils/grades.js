@@ -1,4 +1,5 @@
 import { getCompatibilityScore } from "./compatibility";
+import { safeNumber } from "./buildCalculations";
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -57,12 +58,20 @@ const costEfficiencyScore = (stats, compatibilityScore) => {
 };
 
 export const calculateBuildGrades = (stats, warnings) => {
+  const safeStats = {
+    totalPrice: safeNumber(stats.totalPrice, 0),
+    totalWeightG: safeNumber(stats.totalWeightG, 0),
+    totalThrustG: safeNumber(stats.totalThrustG, 0),
+    thrustToWeight: safeNumber(stats.thrustToWeight, 0),
+    flightTimeMinutes: safeNumber(stats.flightTimeMinutes, 0),
+    topSpeedMph: safeNumber(stats.topSpeedMph, 0),
+  };
   const compatibilityScore = getCompatibilityScore(warnings);
   const scores = {
-    power: powerScore(stats.thrustToWeight),
-    flightTime: flightTimeScore(stats.flightTimeMinutes),
+    power: powerScore(safeStats.thrustToWeight),
+    flightTime: flightTimeScore(safeStats.flightTimeMinutes),
     compatibility: compatibilityScore,
-    costEfficiency: costEfficiencyScore(stats, compatibilityScore),
+    costEfficiency: costEfficiencyScore(safeStats, compatibilityScore),
   };
 
   scores.overall = Math.round(

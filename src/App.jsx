@@ -1,67 +1,317 @@
-import { useMemo, useState } from "react";
-import { buildSteps, categoryMeta, parts } from "./data/parts";
+import { useEffect, useMemo, useState } from "react";
+import {
+  buildClassById,
+  buildClassIds,
+  buildClasses,
+  buildSteps,
+  categoryMeta,
+  defaultBuildClass,
+  parts,
+} from "./data/parts";
+import { presetBuilds } from "./data/presets";
 import {
   calculateBuildStats,
   formatCurrency,
+  formatFlightTimeMinutes,
   formatPreciseCurrency,
+  formatThrustG,
+  formatThrustToWeight,
+  formatTopSpeedMph,
+  formatWeightG,
   getSelectedParts,
 } from "./utils/buildCalculations";
+import {
+  buildComparisonSummary,
+  compareMetric,
+  comparisonMetrics,
+  getSavedBuildComparisonStats,
+} from "./utils/compareBuilds";
 import { getCompatibilityWarnings } from "./utils/compatibility";
 import { calculateBuildGrades } from "./utils/grades";
+import { resolvePresetParts } from "./utils/presets";
+import {
+  createAutoBuildName,
+  createSavedBuildSnapshot,
+  loadSavedBuilds,
+  persistSavedBuilds,
+  resolveSavedBuildSelections,
+} from "./utils/savedBuilds";
+import {
+  buildShareUrl,
+  copyTextToClipboard,
+  resolveBuildClassFromSearch,
+  resolveSelectionsFromSearch,
+} from "./utils/shareUrl";
+import { explainBuild } from "./utils/explainBuild";
+import {
+  filterPartsForBuildClass,
+  getDefaultSelectionsForBuildClass,
+  inferBuildClassFromSelections,
+  resolveSelectionsForBuildClass,
+} from "./utils/buildClasses";
 
-const initialSelections = buildSteps.reduce((selections, step) => {
-  selections[step.key] = parts[step.key][0].id;
-  return selections;
-}, {});
+const getInitialBuildClass = () => {
+  if (typeof window === "undefined") {
+    return defaultBuildClass;
+  }
+
+  return resolveBuildClassFromSearch(
+    window.location.search,
+    buildClassIds,
+    defaultBuildClass,
+  );
+};
+
+const getInitialSelections = (buildClass) => {
+  const defaultSelections = getDefaultSelectionsForBuildClass(buildClass, parts);
+
+  if (typeof window === "undefined") {
+    return defaultSelections;
+  }
+
+  const urlSelections = resolveSelectionsFromSearch(
+    window.location.search,
+    parts,
+    defaultSelections,
+  );
+
+  return resolveSelectionsForBuildClass(urlSelections, buildClass, parts).selections;
+};
 
 const statCards = [
-  { key: "totalPrice", label: "Est. price", format: formatCurrency },
+  {
+    key: "totalPrice",
+    label: "Est. price",
+    confidence: "HIGH",
+    format: formatCurrency,
+  },
   {
     key: "totalWeightG",
     label: "Est. mass",
-    format: (value) => `${value.toLocaleString()} g`,
+    confidence: "MEDIUM",
+    format: formatWeightG,
   },
   {
     key: "totalThrustG",
     label: "Est. thrust",
-    format: (value) => `${value.toLocaleString()} g`,
+    confidence: "MEDIUM",
+    format: formatThrustG,
   },
   {
     key: "thrustToWeight",
     label: "Est. T:W",
-    format: (value) => `${value.toFixed(2)}:1`,
+    confidence: "MEDIUM",
+    format: formatThrustToWeight,
   },
   {
     key: "flightTimeMinutes",
     label: "Est. flight",
-    format: (value) => `${value.toFixed(1)} min`,
+    confidence: "LOW",
+    format: formatFlightTimeMinutes,
   },
   {
     key: "topSpeedMph",
-    label: "EST. TOP SPEED",
-    format: (value) => `${value.toFixed(0)} mph`,
+    label: "Est. top speed",
+    confidence: "LOW",
+    format: formatTopSpeedMph,
   },
 ];
 
 function App() {
-  const [selectedIds, setSelectedIds] = useState(initialSelections);
+  const [buildClass, setBuildClass] = useState(getInitialBuildClass);
+  const [selectedIds, setSelectedIds] = useState(() =>
+    getInitialSelections(buildClass),
+  );
+  const [buildClassStatus, setBuildClassStatus] = useState("");
+  const [copyStatus, setCopyStatus] = useState("");
+  const [savedBuilds, setSavedBuilds] = useState(loadSavedBuilds);
+  const [savedBuildName, setSavedBuildName] = useState("");
+  const [savedBuildStatus, setSavedBuildStatus] = useState("");
+  const [activePartKey, setActivePartKey] = useState(null);
 
+  const filteredParts = useMemo(
+    () => filterPartsForBuildClass(parts, buildClass),
+    [buildClass],
+  );
   const selectedParts = useMemo(
     () => getSelectedParts(selectedIds, parts),
     [selectedIds],
   );
-  const stats = useMemo(() => calculateBuildStats(selectedParts), [selectedParts]);
+  const activePartInfo = useMemo(() => {
+    const step = buildSteps.find((buildStep) => buildStep.key === activePartKey);
+    const part = activePartKey ? selectedParts[activePartKey] : null;
+
+    return step && part ? { part, step } : null;
+  }, [activePartKey, selectedParts]);
+  const stats = useMemo(
+    () => calculateBuildStats(selectedParts, buildClass),
+    [buildClass, selectedParts],
+  );
   const warnings = useMemo(
-    () => getCompatibilityWarnings(selectedParts),
-    [selectedParts],
+    () => getCompatibilityWarnings(selectedParts, buildClass, stats),
+    [buildClass, selectedParts, stats],
   );
   const grades = useMemo(
     () => calculateBuildGrades(stats, warnings),
     [stats, warnings],
   );
+  const buildExplanation = useMemo(
+    () =>
+      explainBuild({
+        selectedParts,
+        stats,
+        warnings,
+        overallGrade: grades.overall,
+        buildClass,
+      }),
+    [buildClass, grades, selectedParts, stats, warnings],
+  );
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    window.history.replaceState(null, "", buildShareUrl(selectedIds, buildClass));
+  }, [buildClass, selectedIds]);
+
+  useEffect(() => {
+    persistSavedBuilds(savedBuilds);
+  }, [savedBuilds]);
+
+  useEffect(() => {
+    setSelectedIds((current) => {
+      const resolved = resolveSelectionsForBuildClass(current, buildClass, parts);
+      const isSame = buildSteps.every(
+        (step) => resolved.selections[step.key] === current[step.key],
+      );
+
+      return isSame ? current : resolved.selections;
+    });
+  }, [buildClass]);
+
+  useEffect(() => {
+    if (!activePartInfo || typeof window === "undefined") {
+      return undefined;
+    }
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setActivePartKey(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activePartInfo]);
 
   const handleSelectionChange = (key, partId) => {
     setSelectedIds((current) => ({ ...current, [key]: partId }));
+  };
+
+  const handleBuildClassChange = (nextBuildClass) => {
+    const nextClassLabel =
+      buildClassById[nextBuildClass]?.label ?? nextBuildClass;
+
+    setBuildClass(nextBuildClass);
+    setSelectedIds((current) => {
+      const resolved = resolveSelectionsForBuildClass(current, nextBuildClass, parts);
+      const changedCount = resolved.changedKeys.length;
+
+      setBuildClassStatus(
+        changedCount > 0
+          ? `Swapped ${changedCount} incompatible part${changedCount === 1 ? "" : "s"} for ${nextClassLabel}.`
+          : "",
+      );
+
+      if (changedCount > 0) {
+        window.setTimeout(() => setBuildClassStatus(""), 2200);
+      }
+
+      return resolved.selections;
+    });
+  };
+
+  const handlePresetLoad = (preset) => {
+    const presetBuildClass = preset.buildClass ?? buildClass;
+    const { isComplete } = resolvePresetParts(preset, parts);
+    const resolved = resolveSelectionsForBuildClass(
+      preset.selections ?? {},
+      presetBuildClass,
+      parts,
+    );
+
+    setBuildClass(presetBuildClass);
+    setSelectedIds(resolved.selections);
+    setBuildClassStatus(
+      isComplete
+        ? "Preset loaded."
+        : "Preset loaded; some parts were adjusted for compatibility.",
+    );
+    window.setTimeout(() => setBuildClassStatus(""), 2200);
+  };
+
+  const handleCopyBuildLink = async () => {
+    try {
+      await copyTextToClipboard(buildShareUrl(selectedIds, buildClass));
+      setCopyStatus("Link copied.");
+    } catch (error) {
+      console.warn("[MaidenReady] Failed to copy build URL.", error);
+      setCopyStatus("Copy failed — copy the URL from the address bar.");
+    }
+
+    window.setTimeout(() => setCopyStatus(""), 1800);
+  };
+
+  const handleSaveBuild = () => {
+    const savedBuild = createSavedBuildSnapshot({
+      name: savedBuildName,
+      buildClass,
+      selectedIds,
+      stats,
+      overallGrade: grades.overall.grade,
+    });
+
+    setSavedBuilds((current) => [savedBuild, ...current]);
+    setSavedBuildName("");
+    setSavedBuildStatus("Build saved to this browser.");
+    window.setTimeout(() => setSavedBuildStatus(""), 1800);
+  };
+
+  const handleLoadSavedBuild = (savedBuild) => {
+    const savedBuildClass = buildClassIds.includes(savedBuild.buildClass)
+      ? savedBuild.buildClass
+      : null;
+    const nextBuildClass =
+      savedBuildClass ??
+      inferBuildClassFromSelections(savedBuild.selectedIds, parts, buildClass);
+    const fallbackSelections = getDefaultSelectionsForBuildClass(nextBuildClass, parts);
+    const resolved = resolveSavedBuildSelections(
+      savedBuild,
+      parts,
+      fallbackSelections,
+      nextBuildClass,
+    );
+    const classResolved = resolveSelectionsForBuildClass(
+      resolved.selections,
+      nextBuildClass,
+      parts,
+    );
+
+    setBuildClass(nextBuildClass);
+    setSelectedIds(classResolved.selections);
+    setSavedBuildStatus(
+      resolved.isComplete
+        ? "Saved build loaded."
+        : `${resolved.missing.length} part${resolved.missing.length === 1 ? "" : "s"} missing from catalog — defaults applied.`,
+    );
+    window.setTimeout(() => setSavedBuildStatus(""), 2200);
+  };
+
+  const handleDeleteSavedBuild = (buildId) => {
+    setSavedBuilds((current) => current.filter((build) => build.id !== buildId));
+    setSavedBuildStatus("Saved build removed.");
+    window.setTimeout(() => setSavedBuildStatus(""), 1800);
   };
 
   return (
@@ -69,9 +319,15 @@ function App() {
       <header className="topbar">
         <div>
           <p className="eyebrow">MaidenReady.com</p>
-          <h1>5-inch FPV build calculator</h1>
+          <h1>FPV build calculator</h1>
         </div>
-        <GradePill grade={grades.overall.grade} label="Overall" />
+        <div className="topbar-actions">
+          <ShareBuildButton
+            status={copyStatus}
+            onCopyBuildLink={handleCopyBuildLink}
+          />
+          <GradePill grade={grades.overall.grade} label="Overall" />
+        </div>
       </header>
 
       <section className="workspace" aria-label="Build planner">
@@ -82,6 +338,24 @@ function App() {
             <h2 id="picker-heading">Build list</h2>
           </div>
 
+          <BuildClassSelector
+            buildClass={buildClass}
+            buildClasses={buildClasses}
+            status={buildClassStatus}
+            onBuildClassChange={handleBuildClassChange}
+          />
+          <PresetBuilds presets={presetBuilds} onLoadPreset={handlePresetLoad} />
+          <SavedBuilds
+            buildName={savedBuildName}
+            savedBuilds={savedBuilds}
+            status={savedBuildStatus}
+            onBuildNameChange={setSavedBuildName}
+            onDeleteSavedBuild={handleDeleteSavedBuild}
+            onLoadSavedBuild={handleLoadSavedBuild}
+            onSaveBuild={handleSaveBuild}
+          />
+          <CompareBuilds savedBuilds={savedBuilds} partsCatalog={parts} />
+
           <div className="part-list">
             {buildSteps.map((step, index) => (
               <PartPicker
@@ -89,8 +363,9 @@ function App() {
                 index={index + 1}
                 step={step}
                 selectedPart={selectedParts[step.key]}
-                options={parts[step.key]}
+                options={filteredParts[step.key]}
                 onChange={handleSelectionChange}
+                onOpenDetails={setActivePartKey}
               />
             ))}
           </div>
@@ -109,13 +384,11 @@ function App() {
                   key={stat.key}
                   label={stat.label}
                   value={stat.format(stats[stat.key])}
+                  confidence={stat.confidence}
                 />
               ))}
             </div>
-            <p className="stat-note">
-              Rough no-wind estimate. Real speed depends on drag, voltage sag,
-              tune, and flying style.
-            </p>
+            <EstimateAccuracy />
           </section>
 
           <section className="results-section module-panel" aria-labelledby="grades-heading">
@@ -131,17 +404,497 @@ function App() {
             </div>
           </section>
 
+          <section className="results-section module-panel" aria-labelledby="explain-heading">
+            <CornerMarks />
+            <div className="section-heading">
+              <p className="eyebrow">Explain my build</p>
+              <h2 id="explain-heading">Rule readout</h2>
+            </div>
+            <ExplainBuildPanel explanation={buildExplanation} />
+          </section>
+
           <section className="results-section module-panel" aria-labelledby="warnings-heading">
             <CornerMarks />
             <div className="section-heading">
               <p className="eyebrow">Compatibility</p>
               <h2 id="warnings-heading">Warnings</h2>
             </div>
-            <WarningList warnings={warnings} />
+            <WarningList buildClass={buildClass} warnings={warnings} />
           </section>
         </div>
       </section>
+
+      <PartInfoDrawer
+        info={activePartInfo}
+        onClose={() => setActivePartKey(null)}
+      />
     </main>
+  );
+}
+
+function BuildClassSelector({
+  buildClass,
+  buildClasses,
+  status,
+  onBuildClassChange,
+}) {
+  return (
+    <section className="build-class-module" aria-labelledby="build-class-heading">
+      <div className="section-heading compact-heading">
+        <p className="eyebrow">Build class</p>
+        <h2 id="build-class-heading">Airframe mode</h2>
+      </div>
+      <div className="build-class-control">
+        <label htmlFor="build-class-select">Class</label>
+        <select
+          id="build-class-select"
+          value={buildClass}
+          onChange={(event) => onBuildClassChange(event.target.value)}
+        >
+          {buildClasses.map((item) => (
+            <option key={item.id} value={item.id}>
+              {item.label}
+            </option>
+          ))}
+        </select>
+        <span aria-live="polite">{status}</span>
+      </div>
+    </section>
+  );
+}
+
+function ExplainBuildPanel({ explanation }) {
+  if (!explanation.isComplete) {
+    return (
+      <div className="explain-empty">
+        Select all nine parts to generate a rule-based build readout.
+      </div>
+    );
+  }
+
+  return (
+    <div className="explain-panel">
+      {explanation.sections.map((section) => (
+        <section
+          className={`explain-section ${section.danger ? "danger" : ""}`}
+          key={section.title}
+        >
+          <h3>{section.title}</h3>
+          {section.body && <p>{section.body}</p>}
+          {section.items?.length > 0 && (
+            <ul>
+              {section.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function PartInfoDrawer({ info, onClose }) {
+  if (!info) {
+    return null;
+  }
+
+  const { part, step } = info;
+  const categoryLabel = categoryMeta[step.key]?.label ?? step.label;
+  const bestFor = asList(part.bestFor).slice(0, 4);
+  const watchOutFor = asList(part.watchOutFor).slice(0, 4);
+
+  return (
+    <div className="part-info-layer">
+      <button
+        aria-label="Close part details"
+        className="part-info-scrim"
+        type="button"
+        onClick={onClose}
+      />
+      <aside
+        aria-labelledby="part-info-heading"
+        aria-modal="true"
+        className="part-info-drawer"
+        role="dialog"
+      >
+        <div className="part-info-header">
+          <div>
+            <p className="eyebrow">Part details</p>
+            <h2 id="part-info-heading">{categoryLabel}</h2>
+          </div>
+          <button className="drawer-close" type="button" onClick={onClose}>
+            Close
+          </button>
+        </div>
+
+        <div className="part-info-image">
+          <PartImage part={part} partType={categoryLabel} />
+        </div>
+
+        <div className="part-info-title">
+          <span>{part.brand ?? "Unknown brand"}</span>
+          <strong>{part.name ?? "Unnamed part"}</strong>
+        </div>
+
+        <div className="part-info-stats">
+          <PartInfoStat label="Category" value={categoryLabel} />
+          <PartInfoStat
+            label="Price"
+            value={getPartPriceLabel(step.key, part)}
+          />
+          <PartInfoStat
+            label="Est. weight"
+            value={getPartWeightLabel(step.key, part)}
+          />
+        </div>
+
+        {part.description && (
+          <p className="part-info-description">{part.description}</p>
+        )}
+
+        <PartInfoTagGroup title="Key specs" items={getKeySpecs(step.key, part)} />
+        <PartInfoTagGroup title="Best for" items={bestFor} />
+        <PartInfoTagGroup title="Watch outs" items={watchOutFor} />
+      </aside>
+    </div>
+  );
+}
+
+function PartInfoStat({ label, value }) {
+  if (!value) {
+    return null;
+  }
+
+  return (
+    <div>
+      <span>{label}</span>
+      <strong>{value}</strong>
+    </div>
+  );
+}
+
+function PartInfoTagGroup({ title, items }) {
+  const safeItems = asList(items);
+
+  if (safeItems.length === 0) {
+    return null;
+  }
+
+  return (
+    <section className="part-info-group">
+      <h3>{title}</h3>
+      <div className="part-info-tags">
+        {safeItems.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CompareBuilds({ savedBuilds, partsCatalog }) {
+  const [leftBuildId, setLeftBuildId] = useState(savedBuilds[0]?.id ?? "");
+  const [rightBuildId, setRightBuildId] = useState(savedBuilds[1]?.id ?? "");
+
+  useEffect(() => {
+    if (savedBuilds.length < 2) {
+      setLeftBuildId(savedBuilds[0]?.id ?? "");
+      setRightBuildId("");
+      return;
+    }
+
+    const hasLeftBuild = savedBuilds.some((build) => build.id === leftBuildId);
+    const nextLeftBuildId = hasLeftBuild ? leftBuildId : savedBuilds[0].id;
+    const hasRightBuild = savedBuilds.some((build) => build.id === rightBuildId);
+    const fallbackRightBuildId =
+      savedBuilds.find((build) => build.id !== nextLeftBuildId)?.id ?? "";
+    const nextRightBuildId =
+      hasRightBuild && rightBuildId !== nextLeftBuildId
+        ? rightBuildId
+        : fallbackRightBuildId;
+
+    if (nextLeftBuildId !== leftBuildId) {
+      setLeftBuildId(nextLeftBuildId);
+    }
+
+    if (nextRightBuildId !== rightBuildId) {
+      setRightBuildId(nextRightBuildId);
+    }
+  }, [leftBuildId, rightBuildId, savedBuilds]);
+
+  const leftBuild = savedBuilds.find((build) => build.id === leftBuildId);
+  const rightBuild = savedBuilds.find((build) => build.id === rightBuildId);
+
+  const comparison = useMemo(() => {
+    if (!leftBuild || !rightBuild) {
+      return null;
+    }
+
+    const leftStats = getSavedBuildComparisonStats(leftBuild, partsCatalog);
+    const rightStats = getSavedBuildComparisonStats(rightBuild, partsCatalog);
+    const results = comparisonMetrics.map((metric) => ({
+      metric,
+      winner: compareMetric(metric, leftStats, rightStats),
+      leftValue: leftStats[metric.key],
+      rightValue: rightStats[metric.key],
+    }));
+
+    return {
+      leftStats,
+      rightStats,
+      results,
+      summary: buildComparisonSummary(
+        results,
+        leftStats.buildClass,
+        rightStats.buildClass,
+      ),
+    };
+  }, [leftBuild, partsCatalog, rightBuild]);
+
+  return (
+    <section className="compare-module" aria-labelledby="compare-heading">
+      <div className="section-heading compact-heading">
+        <p className="eyebrow">Compare builds</p>
+        <h2 id="compare-heading">Saved delta</h2>
+      </div>
+
+      {savedBuilds.length < 2 ? (
+        <div className="compare-empty">
+          Save at least two builds locally to compare estimated stats side by side.
+        </div>
+      ) : (
+        <>
+          <div className="compare-selectors">
+            <label>
+              Build A
+              <select
+                value={leftBuildId}
+                onChange={(event) => setLeftBuildId(event.target.value)}
+              >
+                {savedBuilds.map((build) => (
+                  <option
+                    disabled={build.id === rightBuildId}
+                    key={build.id}
+                    value={build.id}
+                  >
+                    {formatSavedBuildOptionLabel(build)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Build B
+              <select
+                value={rightBuildId}
+                onChange={(event) => setRightBuildId(event.target.value)}
+              >
+                {savedBuilds.map((build) => (
+                  <option
+                    disabled={build.id === leftBuildId}
+                    key={build.id}
+                    value={build.id}
+                  >
+                    {formatSavedBuildOptionLabel(build)}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+
+          {comparison && (
+            <>
+              <div className="comparison-table">
+                <div className="comparison-head">Metric</div>
+                <div className="comparison-head">Build A</div>
+                <div className="comparison-head">Build B</div>
+                {comparison.results.map((result) => (
+                  <ComparisonRow key={result.metric.key} result={result} />
+                ))}
+              </div>
+              <p className="comparison-summary">{comparison.summary}</p>
+            </>
+          )}
+        </>
+      )}
+    </section>
+  );
+}
+
+function ComparisonRow({ result }) {
+  const leftWins = result.winner === "left";
+  const rightWins = result.winner === "right";
+
+  return (
+    <>
+      <div className="comparison-label">{result.metric.label}</div>
+      <div className={`comparison-value ${leftWins ? "better" : ""}`}>
+        <span>{formatComparisonValue(result.metric.key, result.leftValue)}</span>
+      </div>
+      <div className={`comparison-value ${rightWins ? "better" : ""}`}>
+        <span>{formatComparisonValue(result.metric.key, result.rightValue)}</span>
+      </div>
+    </>
+  );
+}
+
+function formatComparisonValue(key, value) {
+  switch (key) {
+    case "totalPrice":
+      return formatCurrency(value);
+    case "totalWeightG":
+      return formatWeightG(value);
+    case "totalThrustG":
+      return formatThrustG(value);
+    case "thrustToWeight":
+      return formatThrustToWeight(value);
+    case "flightTimeMinutes":
+      return formatFlightTimeMinutes(value);
+    case "topSpeedMph":
+      return formatTopSpeedMph(value);
+    case "overallGrade":
+      return value || "N/A";
+    case "warningCount":
+      return String(value ?? 0);
+    default:
+      return value == null || value === "" ? "N/A" : String(value);
+  }
+}
+
+function formatSavedBuildOptionLabel(savedBuild) {
+  const classLabel = buildClassById[savedBuild.buildClass]?.label;
+
+  return classLabel ? `${savedBuild.name} · ${classLabel}` : savedBuild.name;
+}
+
+function formatSavedBuildStat(value, formatter) {
+  if (value == null || value === "") {
+    return "N/A";
+  }
+
+  return formatter(value);
+}
+
+function SavedBuilds({
+  buildName,
+  savedBuilds,
+  status,
+  onBuildNameChange,
+  onDeleteSavedBuild,
+  onLoadSavedBuild,
+  onSaveBuild,
+}) {
+  const autoName = useMemo(() => createAutoBuildName(), []);
+
+  return (
+    <section className="saved-module" aria-labelledby="saved-heading">
+      <div className="section-heading compact-heading">
+        <p className="eyebrow">Saved builds</p>
+        <h2 id="saved-heading">Local store</h2>
+      </div>
+
+      <div className="save-controls">
+        <input
+          aria-label="Build name"
+          placeholder={`Auto: ${autoName}`}
+          type="text"
+          value={buildName}
+          onChange={(event) => onBuildNameChange(event.target.value)}
+        />
+        <button type="button" onClick={onSaveBuild}>
+          Save build
+        </button>
+        <span aria-live="polite">{status}</span>
+      </div>
+
+      {savedBuilds.length === 0 ? (
+        <div className="saved-empty">
+          No saved builds yet. Name the current configuration above, then save it locally.
+        </div>
+      ) : (
+        <div className="saved-list">
+          {savedBuilds.map((savedBuild) => (
+            <SavedBuildRow
+              key={savedBuild.id}
+              savedBuild={savedBuild}
+              onDeleteSavedBuild={onDeleteSavedBuild}
+              onLoadSavedBuild={onLoadSavedBuild}
+            />
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
+function SavedBuildRow({ savedBuild, onDeleteSavedBuild, onLoadSavedBuild }) {
+  const createdDate = new Date(savedBuild.createdAt).toLocaleDateString("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "2-digit",
+  });
+
+  return (
+    <article className="saved-row">
+      <div className="saved-row-main">
+        <div>
+          <strong>{savedBuild.name}</strong>
+          <span>{createdDate}</span>
+        </div>
+        <div className="saved-row-stats">
+          <span>{formatCurrency(savedBuild.totalPrice)}</span>
+          <span>{formatSavedBuildStat(savedBuild.totalWeightG, formatWeightG)}</span>
+          <span>{formatSavedBuildStat(savedBuild.thrustToWeight, formatThrustToWeight)}</span>
+          <span>{formatSavedBuildStat(savedBuild.flightTimeMinutes, formatFlightTimeMinutes)}</span>
+          <span>{formatSavedBuildStat(savedBuild.topSpeedMph, formatTopSpeedMph)}</span>
+          <span>Grade {savedBuild.overallGrade || "N/A"}</span>
+        </div>
+      </div>
+      <div className="saved-row-actions">
+        <button type="button" onClick={() => onLoadSavedBuild(savedBuild)}>
+          Load
+        </button>
+        <button type="button" onClick={() => onDeleteSavedBuild(savedBuild.id)}>
+          Delete
+        </button>
+      </div>
+    </article>
+  );
+}
+
+function ShareBuildButton({ status, onCopyBuildLink }) {
+  return (
+    <div className="share-build">
+      <button type="button" onClick={onCopyBuildLink}>
+        Copy build link
+      </button>
+      <span aria-live="polite">{status}</span>
+    </div>
+  );
+}
+
+function PresetBuilds({ presets, onLoadPreset }) {
+  return (
+    <section className="preset-module" aria-labelledby="preset-heading">
+      <div className="section-heading compact-heading">
+        <p className="eyebrow">Preset builds</p>
+        <h2 id="preset-heading">Quick load</h2>
+      </div>
+      <div className="preset-grid">
+        {presets.map((preset) => (
+          <article className="preset-card" key={preset.id}>
+            <div>
+              <span className="preset-role">{preset.role}</span>
+              <h3>{preset.name}</h3>
+              <p>{preset.description}</p>
+            </div>
+            <button type="button" onClick={() => onLoadPreset(preset)}>
+              Load preset
+            </button>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -156,36 +909,58 @@ function CornerMarks() {
   );
 }
 
-function PartPicker({ index, step, selectedPart, options, onChange }) {
-  const meta = categoryMeta[step.key];
-  const price =
-    meta.priceMultiplier > 1
-      ? `${formatPreciseCurrency(selectedPart.price)} ${meta.unitLabel} / ${formatCurrency(
-          selectedPart.price * meta.priceMultiplier,
-        )} total`
-      : `${formatPreciseCurrency(selectedPart.price)} ${
-          meta.unitLabel ? meta.unitLabel : ""
-        }`.trim();
-  const weight =
-    meta.weightMultiplier > 1
-      ? `${selectedPart.weightG} g each / ${Math.round(
-          selectedPart.weightG * meta.weightMultiplier,
-        )} g total`
-      : `${selectedPart.weightG} g`;
+function PartPicker({
+  index,
+  step,
+  selectedPart,
+  options,
+  onChange,
+  onOpenDetails,
+}) {
+  const activePart = selectedPart ?? options[0] ?? null;
+
+  if (!activePart) {
+    return (
+      <article className="part-row part-row-empty">
+        <div className="part-control">
+          <div className="part-heading">
+            <span className="step-marker" aria-hidden="true">
+              {String(index).padStart(2, "0")}
+            </span>
+            <label htmlFor={`${step.key}-select`}>{step.label}</label>
+          </div>
+          <p className="part-description">No compatible parts for this build class.</p>
+        </div>
+      </article>
+    );
+  }
+
+  const price = getPartPriceLabel(step.key, activePart);
+  const weight = getPartWeightLabel(step.key, activePart);
   const specs = [
-    selectedPart.brand,
+    activePart.brand,
     price,
     weight,
-    ...getKeySpecs(step.key, selectedPart),
-  ];
+    ...getKeySpecs(step.key, activePart),
+  ].filter(Boolean);
 
   return (
     <article className="part-row">
-      <PartImage
-        key={`${step.key}-${selectedPart.id}`}
-        part={selectedPart}
-        partType={step.label}
-      />
+      <div className="part-preview-stack">
+        <PartImage
+          key={`${step.key}-${activePart.id}`}
+          part={activePart}
+          partType={step.label}
+        />
+        <button
+          aria-label={`Show details for ${activePart.name}`}
+          className="part-details-button"
+          type="button"
+          onClick={() => onOpenDetails(step.key)}
+        >
+          Details
+        </button>
+      </div>
       <div className="part-control">
         <div className="part-heading">
           <span className="step-marker" aria-hidden="true">
@@ -195,7 +970,7 @@ function PartPicker({ index, step, selectedPart, options, onChange }) {
         </div>
         <select
           id={`${step.key}-select`}
-          value={selectedPart.id}
+          value={activePart.id}
           onChange={(event) => onChange(step.key, event.target.value)}
         >
           {options.map((part) => (
@@ -204,7 +979,7 @@ function PartPicker({ index, step, selectedPart, options, onChange }) {
             </option>
           ))}
         </select>
-        <p className="part-description">{selectedPart.description}</p>
+        <p className="part-description">{activePart.description}</p>
         <div className="part-meta" aria-label={`${step.label} details`}>
           {specs.map((spec) => (
             <span key={spec} title={spec}>
@@ -239,37 +1014,106 @@ function PartImage({ part, partType }) {
   );
 }
 
+function getPartPriceLabel(key, part) {
+  if (!part || typeof part.price !== "number") {
+    return "Price TBD";
+  }
+
+  const meta = categoryMeta[key] ?? {};
+
+  if (meta.priceMultiplier > 1) {
+    return `${formatPreciseCurrency(part.price)} ${
+      meta.unitLabel ?? "each"
+    } / ${formatCurrency(part.price * meta.priceMultiplier)} total`;
+  }
+
+  return `${formatPreciseCurrency(part.price)} ${
+    meta.unitLabel ? meta.unitLabel : ""
+  }`.trim();
+}
+
+function getPartWeightLabel(key, part) {
+  if (!part || typeof part.weightG !== "number") {
+    return "Weight TBD";
+  }
+
+  const meta = categoryMeta[key] ?? {};
+
+  if (meta.weightMultiplier > 1) {
+    return `${part.weightG} g each / ${Math.round(
+      part.weightG * meta.weightMultiplier,
+    )} g total`;
+  }
+
+  return `${part.weightG} g`;
+}
+
+function asList(value) {
+  if (Array.isArray(value)) {
+    return value.filter(Boolean);
+  }
+
+  return value ? [value] : [];
+}
+
 function getKeySpecs(key, part) {
+  if (!part) {
+    return [];
+  }
+
   if (part.keySpecs?.length) {
     return part.keySpecs;
   }
 
-  switch (key) {
+  const specs = (() => {
+    switch (key) {
     case "frame":
       return [
-        `${part.maxPropInches}" max prop`,
-        `${part.motorMounts.join(" / ")} motor`,
-        `${part.stackMounts.join(" / ")} stack`,
+        part.maxPropInches ? `${part.maxPropInches}" max prop` : null,
+        asList(part.motorMounts).length
+          ? `${asList(part.motorMounts).join(" / ")} motor`
+          : null,
+        asList(part.stackMounts).length
+          ? `${asList(part.stackMounts).join(" / ")} stack`
+          : null,
       ];
     case "motors":
       return [
-        `${part.stator}`,
-        `${part.kv}KV`,
-        `${part.recommendedCells.join("S / ")}S`,
-        `${part.maxCurrentA}A max`,
+        part.stator,
+        part.kv ? `${part.kv}KV` : null,
+        part.mountPattern,
+        asList(part.recommendedCells).length
+          ? `${asList(part.recommendedCells).join("S / ")}S`
+          : null,
+        part.maxCurrentA ? `${part.maxCurrentA}A max` : null,
       ];
     case "esc":
       return [
-        `${part.continuousAmp}A`,
-        `${part.supportedCells.join("S / ")}S`,
+        part.continuousAmp ? `${part.continuousAmp}A` : null,
+        asList(part.supportedCells).length
+          ? `${asList(part.supportedCells).join("S / ")}S`
+          : null,
         part.mountPattern,
+        part.firmware,
       ];
     case "flightController":
       return [part.mountPattern, part.gyro, part.osd];
     case "props":
-      return [`${part.diameterInches}x${part.pitch}`, `${part.blades} blade`];
+      return [
+        part.diameterInches && part.pitch
+          ? `${part.diameterInches}x${part.pitch}`
+          : null,
+        part.blades ? `${part.blades} blade` : null,
+      ];
     case "battery":
-      return [`${part.cells}S`, `${part.capacityMah}mAh`, `${part.cRating}C`];
+      return [
+        part.cells ? `${part.cells}S` : null,
+        part.voltage ? `${part.voltage}V` : null,
+        part.capacityMah ? `${part.capacityMah}mAh` : null,
+        part.cRating ? `${part.cRating}C` : null,
+        part.connector,
+        part.chemistry,
+      ];
     case "receiver":
       return [part.protocol, part.frequency];
     case "camera":
@@ -282,19 +1126,47 @@ function getKeySpecs(key, part) {
       return [
         part.videoSystem,
         part.digitalSystem ?? "analog",
-        `${part.maxPowerMw}mW`,
+        part.maxPowerMw ? `${part.maxPowerMw}mW` : null,
       ];
     default:
       return part.highlights ?? [];
-  }
+    }
+  })();
+
+  return specs.filter(Boolean);
 }
 
-function StatCard({ label, value }) {
+function StatCard({ label, value, confidence }) {
+  const safeValue = value == null || value === "" ? "N/A" : value;
+
   return (
     <article className="stat-card">
       <p>{label}</p>
-      <strong>{value}</strong>
+      <strong>{safeValue}</strong>
+      <span className="stat-confidence">Confidence: {confidence.toLowerCase()}</span>
     </article>
+  );
+}
+
+function EstimateAccuracy() {
+  return (
+    <section className="accuracy-panel" aria-labelledby="accuracy-heading">
+      <div className="accuracy-title" id="accuracy-heading">
+        Estimate accuracy
+      </div>
+      <ul>
+        <li>
+          Mass excludes wiring, hardware, straps, antenna mounts, and HD payload unless modeled in part data.
+        </li>
+        <li>
+          Flight time assumes mixed throttle; aggressive flying, sag, tune quality, and wind reduce it.
+        </li>
+        <li>
+          Top speed is a no-wind model from KV, cell count, prop pitch, and class efficiency — not GPS verified.
+        </li>
+        <li>Use these numbers to compare configurations, not to certify airworthiness or range.</li>
+      </ul>
+    </section>
   );
 }
 
@@ -303,28 +1175,34 @@ function GradeCard({ grade }) {
     <article className="grade-card">
       <div>
         <p>{grade.label}</p>
-        <span>{grade.score}/100</span>
+        <span>{grade.score ?? 0}/100</span>
       </div>
-      <GradePill grade={grade.grade} />
+      <GradePill grade={grade.grade || "N/A"} />
     </article>
   );
 }
 
 function GradePill({ grade, label }) {
+  const safeGrade = grade || "N/A";
+
   return (
-    <div className="grade-pill" aria-label={label ? `${label} grade ${grade}` : undefined}>
+    <div className="grade-pill" aria-label={label ? `${label} grade ${safeGrade}` : undefined}>
       {label && <span>{label}</span>}
-      <strong>{grade}</strong>
+      <strong>{safeGrade}</strong>
     </div>
   );
 }
 
-function WarningList({ warnings }) {
+function WarningList({ buildClass, warnings }) {
   if (warnings.length === 0) {
+    const buildClassLabel = buildClassById[buildClass]?.label ?? "selected class";
+
     return (
       <div className="empty-warning">
         <strong>No compatibility warnings</strong>
-        <span>Current selections look ready for a normal 5-inch freestyle build.</span>
+        <span>
+          Static checks pass for this {buildClassLabel.toLowerCase()} configuration. Verify wiring, stack fit, and tune before arming.
+        </span>
       </div>
     );
   }
