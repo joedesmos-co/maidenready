@@ -208,6 +208,9 @@ h2 {
 
 .part-row {
   position: relative;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 8px;
   padding: 8px;
   border: 1px solid var(--line);
   background: var(--cell);
@@ -243,6 +246,72 @@ h2 {
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
+}
+
+.part-preview {
+  position: relative;
+  width: 96px;
+  min-height: 96px;
+  border: 1px solid var(--line);
+  background: #080809;
+  overflow: hidden;
+}
+
+.part-preview::before,
+.part-preview::after {
+  position: absolute;
+  z-index: 1;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  line-height: 1;
+  content: "+";
+}
+
+.part-preview::before {
+  top: 4px;
+  left: 5px;
+}
+
+.part-preview::after {
+  right: 5px;
+  bottom: 4px;
+}
+
+.part-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 96px;
+  object-fit: cover;
+}
+
+.part-placeholder {
+  display: grid;
+  align-content: end;
+  width: 100%;
+  height: 100%;
+  min-height: 96px;
+  gap: 4px;
+  padding: 8px;
+  background: #0b0b0c;
+}
+
+.part-placeholder span {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.part-placeholder strong {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .part-control {
@@ -286,12 +355,21 @@ h2 {
 
 .part-control select:focus {
   border-color: var(--accent);
-  box-shadow: inset 0 0 0 1px var(--accent);
+  outline: 1px solid var(--accent);
+  outline-offset: -2px;
 }
 
 .part-control option {
   background: #09090a;
   color: var(--ink);
+}
+
+.part-description {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.35;
 }
 
 .part-meta {
@@ -325,7 +403,7 @@ h2 {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1px;
   border: 1px solid var(--line);
   background: var(--line);
@@ -364,6 +442,14 @@ h2 {
   font-weight: 800;
   line-height: 1;
   white-space: nowrap;
+}
+
+.stat-note {
+  margin: 8px 0 0;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.35;
 }
 
 .grade-grid {
@@ -531,6 +617,17 @@ h2 {
 
   .part-meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .part-row {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+
+  .part-preview,
+  .part-preview img,
+  .part-placeholder {
+    width: 72px;
+    min-height: 72px;
   }
 
   .stats-grid,

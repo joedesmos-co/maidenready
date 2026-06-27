@@ -34,6 +34,7 @@ export const calculateBuildStats = (selectedParts) => {
     totalWeightG,
     totalThrustG,
   );
+  const topSpeedMph = calculateTopSpeedMph(selectedParts);
 
   return {
     totalPrice: roundTo(totalPrice, 2),
@@ -41,6 +42,7 @@ export const calculateBuildStats = (selectedParts) => {
     totalThrustG: roundTo(totalThrustG, 0),
     thrustToWeight: roundTo(thrustToWeight, 2),
     flightTimeMinutes: roundTo(flightTimeMinutes, 1),
+    topSpeedMph: roundTo(topSpeedMph, 0),
   };
 };
 
@@ -74,6 +76,19 @@ export const calculateFlightTimeMinutes = (
   const usableCapacityAh = (battery.capacityMah / 1000) * 0.78;
 
   return usableCapacityAh * 60 * (props.efficiencyMultiplier ?? 1) / averageCurrentA;
+};
+
+export const calculateTopSpeedMph = (
+  { motors, props, battery },
+  efficiencyFactor = 0.65,
+) => {
+  if (!motors || !props || !battery) {
+    return 0;
+  }
+
+  const voltage = battery.voltage ?? battery.cells * 3.7;
+
+  return motors.kv * voltage * props.pitch * 0.000947 * efficiencyFactor;
 };
 
 export const formatCurrency = (value) =>

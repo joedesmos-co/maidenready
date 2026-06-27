@@ -36,6 +36,11 @@ const statCards = [
     label: "Est. flight",
     format: (value) => `${value.toFixed(1)} min`,
   },
+  {
+    key: "topSpeedMph",
+    label: "EST. TOP SPEED",
+    format: (value) => `${value.toFixed(0)} mph`,
+  },
 ];
 
 function App() {
@@ -107,6 +112,10 @@ function App() {
                 />
               ))}
             </div>
+            <p className="stat-note">
+              Rough no-wind estimate. Real speed depends on drag, voltage sag,
+              tune, and flying style.
+            </p>
           </section>
 
           <section className="results-section module-panel" aria-labelledby="grades-heading">
@@ -172,6 +181,11 @@ function PartPicker({ index, step, selectedPart, options, onChange }) {
 
   return (
     <article className="part-row">
+      <PartImage
+        key={`${step.key}-${selectedPart.id}`}
+        part={selectedPart}
+        partType={step.label}
+      />
       <div className="part-control">
         <div className="part-heading">
           <span className="step-marker" aria-hidden="true">
@@ -190,6 +204,7 @@ function PartPicker({ index, step, selectedPart, options, onChange }) {
             </option>
           ))}
         </select>
+        <p className="part-description">{selectedPart.description}</p>
         <div className="part-meta" aria-label={`${step.label} details`}>
           {specs.map((spec) => (
             <span key={spec} title={spec}>
@@ -202,7 +217,33 @@ function PartPicker({ index, step, selectedPart, options, onChange }) {
   );
 }
 
+function PartImage({ part, partType }) {
+  const [failed, setFailed] = useState(false);
+  const showPlaceholder = failed || !part.imagePath;
+
+  return (
+    <div className="part-preview" aria-label={`${part.name} preview`}>
+      {showPlaceholder ? (
+        <div className="part-placeholder">
+          <span>{partType}</span>
+          <strong>{part.name}</strong>
+        </div>
+      ) : (
+        <img
+          src={part.imagePath}
+          alt={part.name}
+          onError={() => setFailed(true)}
+        />
+      )}
+    </div>
+  );
+}
+
 function getKeySpecs(key, part) {
+  if (part.keySpecs?.length) {
+    return part.keySpecs;
+  }
+
   switch (key) {
     case "frame":
       return [
