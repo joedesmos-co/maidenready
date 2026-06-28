@@ -19,10 +19,10 @@ export const presetBuilds = [
   },
   {
     id: "tiny-whoop-2s-outdoor",
-    name: "Tiny Whoop 2S Outdoor",
+    name: "2.5\" Outdoor Whoop",
     role: "OUTDOOR",
-    buildClass: "tiny-whoop",
-    description: "2S brushless whoop with 25A AIO, outdoor props, and ELRS receiver.",
+    buildClass: "cinewhoop",
+    description: "2S ducted Pavo25-style build with 35A AIO, outdoor props, and ELRS receiver.",
     selections: {
       frame: "betafpv-pavo25-frame",
       motors: "betafpv-1102-18000kv",

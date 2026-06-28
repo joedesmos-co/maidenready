@@ -1,3 +1,5 @@
+import { formatFlightTimeRange } from "./buildCalculations.js";
+
 const hasIntersection = (left = [], right = []) =>
   left.some((value) => right.includes(value));
 
@@ -264,7 +266,7 @@ const getBuildClassWarnings = (
         id: "long-range-flight-time",
         severity: "medium",
         title: "Estimated flight time is short for long range",
-        message: `About ${stats.flightTimeMinutes} minutes estimated. Long-range 7" builds should prioritize efficiency — lighter AUW, lower pitch, larger packs.`,
+        message: `Estimated flight ${formatFlightTimeRange(stats)}. Long-range 7" builds should prioritize efficiency — lighter AUW, lower pitch, larger packs.`,
       });
     }
 

@@ -1,5 +1,5 @@
 import { buildClassById, buildSteps, defaultBuildClass } from "../data/parts";
-import { formatStatNumber } from "./buildCalculations";
+import { formatStatNumber, formatFlightTimeRange, formatTopSpeedRange } from "./buildCalculations.js";
 
 const gradeRank = {
   "A+": 12,
@@ -107,7 +107,9 @@ export const explainBuild = ({
       )} must be resolved before arming.`
     : `This reads as a ${powerClass} ${cellLabel} ${buildClassLabel} build.`;
 
-  const buildPersonality = `${personalityLead} Estimated all-up mass is ${formatStatNumber(stats.totalWeightG, 0)}g with ${formatStatNumber(stats.thrustToWeight, 2)}:1 thrust-to-weight, about ${formatStatNumber(stats.flightTimeMinutes, 1)} minutes of mixed-throttle flight, and roughly ${formatStatNumber(stats.topSpeedMph, 0)} mph no-wind top speed. Overall grade: ${grade}. Motor choice: ${kv}KV on ${cellLabel}.`;
+  const flightRange = formatFlightTimeRange(stats);
+  const speedRange = formatTopSpeedRange(stats);
+  const buildPersonality = `${personalityLead} Estimated all-up mass is ~${formatStatNumber(stats.totalWeightG, 0)}g with ${formatStatNumber(stats.thrustToWeight, 2)}:1 thrust-to-weight, estimated flight ${flightRange}, estimated top speed ${speedRange}. Overall grade: ${grade}. Motor choice: ${kv}KV on ${cellLabel}.`;
 
   const strengths = uniqueItems([
     stats.thrustToWeight >= 13 &&

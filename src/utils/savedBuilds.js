@@ -87,7 +87,11 @@ export const createSavedBuildSnapshot = ({
   totalWeightG: safeNumber(stats.totalWeightG, 0),
   thrustToWeight: safeNumber(stats.thrustToWeight, 0),
   flightTimeMinutes: safeNumber(stats.flightTimeMinutes, 0),
+  flightTimeMinutesMin: safeNumber(stats.flightTimeMinutesMin, stats.flightTimeMinutes),
+  flightTimeMinutesMax: safeNumber(stats.flightTimeMinutesMax, stats.flightTimeMinutes),
   topSpeedMph: safeNumber(stats.topSpeedMph, 0),
+  topSpeedMphMin: safeNumber(stats.topSpeedMphMin, stats.topSpeedMph),
+  topSpeedMphMax: safeNumber(stats.topSpeedMphMax, stats.topSpeedMph),
   overallGrade: overallGrade || "N/A",
 });
 

@@ -13,10 +13,12 @@ import {
   calculateBuildStats,
   formatCurrency,
   formatFlightTimeMinutes,
+  formatFlightTimeRange,
   formatPreciseCurrency,
   formatThrustG,
   formatThrustToWeight,
   formatTopSpeedMph,
+  formatTopSpeedRange,
   formatWeightG,
   getSelectedParts,
 } from "./utils/buildCalculations";
@@ -112,13 +114,13 @@ const statCards = [
     key: "flightTimeMinutes",
     label: "Est. flight",
     confidence: "LOW",
-    format: formatFlightTimeMinutes,
+    format: (_value, stats) => formatFlightTimeRange(stats),
   },
   {
     key: "topSpeedMph",
     label: "Est. top speed",
     confidence: "LOW",
-    format: formatTopSpeedMph,
+    format: (_value, stats) => formatTopSpeedRange(stats),
   },
 ];
 
@@ -164,12 +166,12 @@ const learnEntries = [
   {
     term: "Flight time estimate",
     definition:
-      "Mixed-throttle model from pack capacity, voltage, and estimated draw. Real flight time varies with tune, sag, wind, and how hard you fly.",
+      "Conservative mixed-throttle range from pack capacity and estimated draw. Real flight time varies with tune, sag, wind, and flying style.",
   },
   {
     term: "Top speed estimate",
     definition:
-      "No-wind model from KV, cell count, prop pitch, and class efficiency factor. Useful for comparing setups — not a GPS or radar measurement.",
+      "Conservative comparison range derived from KV, voltage, and prop pitch, then capped by build class. Not GPS-verified performance.",
   },
 ];
 
@@ -457,7 +459,7 @@ function App() {
                   <StatCard
                     key={stat.key}
                     label={stat.label}
-                    value={stat.format(stats[stat.key])}
+                    value={stat.format(stats[stat.key], stats)}
                     confidence={stat.confidence}
                   />
                 ))}
@@ -581,20 +583,35 @@ function TabNav({ activeTab, tabs, onTabChange }) {
 
 function LearnPanel({ entries }) {
   return (
-    <section aria-labelledby="learn-heading">
-      <div className="section-heading">
-        <p className="eyebrow">Reference</p>
-        <h2 id="learn-heading">Field glossary</h2>
-      </div>
-      <dl className="learn-glossary">
-        {entries.map((entry) => (
-          <div className="learn-entry" key={entry.term}>
-            <dt>{entry.term}</dt>
-            <dd>{entry.definition}</dd>
-          </div>
-        ))}
-      </dl>
-    </section>
+    <>
+      <section aria-labelledby="learn-heading">
+        <div className="section-heading">
+          <p className="eyebrow">Reference</p>
+          <h2 id="learn-heading">Field glossary</h2>
+        </div>
+        <dl className="learn-glossary">
+          {entries.map((entry) => (
+            <div className="learn-entry" key={entry.term}>
+              <dt>{entry.term}</dt>
+              <dd>{entry.definition}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+      <section aria-labelledby="contact-heading" className="learn-contact">
+        <div className="section-heading">
+          <p className="eyebrow">Support</p>
+          <h2 id="contact-heading">Contact</h2>
+        </div>
+        <p className="learn-contact-copy">
+          Send feedback, bug reports, part corrections, or image/source issues.
+        </p>
+        <p className="learn-contact-email">
+          Contact:{" "}
+          <a href="mailto:joedesmos.co@gmail.com">joedesmos.co@gmail.com</a>
+        </p>
+      </section>
+    </>
   );
 }
 
@@ -880,7 +897,12 @@ function CompareBuilds({ savedBuilds, partsCatalog }) {
                 <div className="comparison-head">Build A</div>
                 <div className="comparison-head">Build B</div>
                 {comparison.results.map((result) => (
-                  <ComparisonRow key={result.metric.key} result={result} />
+                  <ComparisonRow
+                    key={result.metric.key}
+                    leftStats={comparison.leftStats}
+                    result={result}
+                    rightStats={comparison.rightStats}
+                  />
                 ))}
               </div>
               <p className="comparison-summary">{comparison.summary}</p>
@@ -892,7 +914,7 @@ function CompareBuilds({ savedBuilds, partsCatalog }) {
   );
 }
 
-function ComparisonRow({ result }) {
+function ComparisonRow({ result, leftStats, rightStats }) {
   const leftWins = result.winner === "left";
   const rightWins = result.winner === "right";
 
@@ -900,16 +922,16 @@ function ComparisonRow({ result }) {
     <>
       <div className="comparison-label">{result.metric.label}</div>
       <div className={`comparison-value ${leftWins ? "better" : ""}`}>
-        <span>{formatComparisonValue(result.metric.key, result.leftValue)}</span>
+        <span>{formatComparisonValue(result.metric.key, result.leftValue, leftStats)}</span>
       </div>
       <div className={`comparison-value ${rightWins ? "better" : ""}`}>
-        <span>{formatComparisonValue(result.metric.key, result.rightValue)}</span>
+        <span>{formatComparisonValue(result.metric.key, result.rightValue, rightStats)}</span>
       </div>
     </>
   );
 }
 
-function formatComparisonValue(key, value) {
+function formatComparisonValue(key, value, stats) {
   switch (key) {
     case "totalPrice":
       return formatCurrency(value);
@@ -920,9 +942,9 @@ function formatComparisonValue(key, value) {
     case "thrustToWeight":
       return formatThrustToWeight(value);
     case "flightTimeMinutes":
-      return formatFlightTimeMinutes(value);
+      return stats ? formatFlightTimeRange(stats) : formatFlightTimeMinutes(value);
     case "topSpeedMph":
-      return formatTopSpeedMph(value);
+      return stats ? formatTopSpeedRange(stats) : formatTopSpeedMph(value);
     case "overallGrade":
       return value || "N/A";
     case "warningCount":
@@ -938,9 +960,15 @@ function formatSavedBuildOptionLabel(savedBuild) {
   return classLabel ? `${savedBuild.name} · ${classLabel}` : savedBuild.name;
 }
 
-function formatSavedBuildStat(value, formatter) {
+function formatSavedBuildStat(savedBuild, key, formatter) {
+  const value = savedBuild?.[key];
+
   if (value == null || value === "") {
     return "N/A";
+  }
+
+  if (key === "flightTimeMinutes" || key === "topSpeedMph") {
+    return formatter(savedBuild);
   }
 
   return formatter(value);
@@ -1009,10 +1037,10 @@ function SavedBuildRow({ savedBuild, onDeleteSavedBuild, onLoadSavedBuild }) {
         </div>
         <div className="saved-row-stats">
           <span>{formatCurrency(savedBuild.totalPrice)}</span>
-          <span>{formatSavedBuildStat(savedBuild.totalWeightG, formatWeightG)}</span>
-          <span>{formatSavedBuildStat(savedBuild.thrustToWeight, formatThrustToWeight)}</span>
-          <span>{formatSavedBuildStat(savedBuild.flightTimeMinutes, formatFlightTimeMinutes)}</span>
-          <span>{formatSavedBuildStat(savedBuild.topSpeedMph, formatTopSpeedMph)}</span>
+          <span>{formatSavedBuildStat(savedBuild, "totalWeightG", formatWeightG)}</span>
+          <span>{formatSavedBuildStat(savedBuild, "thrustToWeight", formatThrustToWeight)}</span>
+          <span>{formatSavedBuildStat(savedBuild, "flightTimeMinutes", formatFlightTimeRange)}</span>
+          <span>{formatSavedBuildStat(savedBuild, "topSpeedMph", formatTopSpeedRange)}</span>
           <span>Grade {savedBuild.overallGrade || "N/A"}</span>
         </div>
       </div>
@@ -1346,13 +1374,16 @@ function EstimateAccuracy() {
       </div>
       <ul>
         <li>
-          Mass excludes wiring, hardware, straps, antenna mounts, and HD payload unless modeled in part data.
+          Mass includes a small hardware allowance per build class, but still excludes straps, mounts, and payload unless modeled in part data.
         </li>
         <li>
-          Flight time assumes mixed throttle; aggressive flying, sag, tune quality, and wind reduce it.
+          Flight time shows a conservative range for mixed throttle. Aggressive flying, sag, tune quality, and wind reduce real-world time.
         </li>
         <li>
-          Top speed is a no-wind model from KV, cell count, prop pitch, and class efficiency — not GPS verified.
+          Top speed uses pitch-speed math as one input, then applies class caps and drag correction. It is not GPS-verified performance.
+        </li>
+        <li>
+          Speed and flight time are conservative comparison estimates, not GPS-verified performance.
         </li>
         <li>Use these numbers to compare configurations, not to certify airworthiness or range.</li>
       </ul>

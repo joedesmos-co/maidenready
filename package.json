@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "audit:images": "node scripts/auditPresetImages.js",
-    "images:folders": "node scripts/createImageFolders.js"
+    "images:folders": "node scripts/createImageFolders.js",
+    "validate:stats": "node scripts/validatePresetStats.js"
   },
   "dependencies": {
     "vite": "^8.1.0",

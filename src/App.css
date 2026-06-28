@@ -1615,6 +1615,38 @@ h2 {
   line-height: 1.4;
 }
 
+.learn-contact {
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: #0e0e10;
+}
+
+.learn-contact-copy {
+  margin: 0 0 8px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  line-height: 1.4;
+}
+
+.learn-contact-email {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.learn-contact-email a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.learn-contact-email a:hover {
+  text-decoration: underline;
+}
+
 .empty-warning {
   display: grid;
   gap: 4px;
