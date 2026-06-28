@@ -41,6 +41,7 @@ import {
 import {
   buildShareUrl,
   copyTextToClipboard,
+  hasSharedBuildInSearch,
   resolveBuildClassFromSearch,
   resolveSelectionsFromSearch,
 } from "./utils/shareUrl";
@@ -52,6 +53,7 @@ import {
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
 import { LegalPanel } from "./components/LegalPanel.jsx";
+import { HomePanel } from "./components/HomePanel.jsx";
 import { PartImage } from "./components/PartImage.jsx";
 import { PartImageAttribution } from "./components/PartImageAttribution.jsx";
 import { SiteFooter } from "./components/SiteFooter.jsx";
@@ -83,6 +85,15 @@ const getInitialSelections = (buildClass) => {
   );
 
   return resolveSelectionsForBuildClass(urlSelections, buildClass, parts).selections;
+};
+
+/** Home by default; shared build links open Custom Build so parts are visible. */
+const getInitialActiveTab = () => {
+  if (typeof window === "undefined") {
+    return "home";
+  }
+
+  return hasSharedBuildInSearch(window.location.search) ? "custom" : "home";
 };
 
 const statCards = [
@@ -125,6 +136,7 @@ const statCards = [
 ];
 
 const appTabs = [
+  { id: "home", label: "Home" },
   { id: "presets", label: "Presets" },
   { id: "custom", label: "Custom Build" },
   { id: "saved", label: "Saved Builds" },
@@ -206,7 +218,7 @@ function App() {
   const [savedBuildName, setSavedBuildName] = useState("");
   const [savedBuildStatus, setSavedBuildStatus] = useState("");
   const [activePartKey, setActivePartKey] = useState(null);
-  const [activeTab, setActiveTab] = useState("presets");
+  const [activeTab, setActiveTab] = useState(getInitialActiveTab);
   const [presetStatus, setPresetStatus] = useState("");
   const [legalPageId, setLegalPageId] = useState(null);
 
@@ -405,19 +417,31 @@ function App() {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <div>
+        <button
+          aria-label="MaidenReady home"
+          className="topbar-brand"
+          type="button"
+          onClick={() => setActiveTab("home")}
+        >
           <p className="eyebrow">MaidenReady.com</p>
-          <h1>FPV build calculator</h1>
+          <span className="topbar-title">FPV build calculator</span>
           <p className="topbar-tagline">
             Plan parts, estimates, and compatibility — not a store.
           </p>
-        </div>
+        </button>
         <div className="topbar-actions">
           <GradePill grade={grades.overall.grade} label="Overall" />
         </div>
       </header>
 
       <TabNav activeTab={activeTab} tabs={appTabs} onTabChange={setActiveTab} />
+
+      {activeTab === "home" && (
+        <section className="tab-panel module-panel" aria-label="Home">
+          <CornerMarks />
+          <HomePanel onNavigateTab={setActiveTab} />
+        </section>
+      )}
 
       {activeTab === "presets" && (
         <section className="tab-panel module-panel" aria-label="Preset builds">

@@ -88,6 +88,12 @@ export const buildShareUrl = (
   return url.toString();
 };
 
+/** True when the URL encodes at least one part selection (shared build link). */
+export const hasSharedBuildInSearch = (search) => {
+  const params = new URLSearchParams(search);
+  return Object.values(buildQueryMap).some((queryKey) => params.has(queryKey));
+};
+
 export const copyTextToClipboard = async (text) => {
   if (navigator.clipboard?.writeText) {
     try {
