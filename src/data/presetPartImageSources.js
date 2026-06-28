@@ -232,7 +232,7 @@ export const presetPartImageSources = [
     categoryKey: "props",
     category: "Props",
     brand: "Gemfan",
-    officialUrl: "https://www.gemfanhobby.com/51466-hurricane-pc-3-blade.html",
+    officialUrl: "https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/gemfan-51466.jpg",

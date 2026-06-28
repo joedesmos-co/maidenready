@@ -5,15 +5,15 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-28T02:40:24.712Z
+Last updated: 2026-06-28T04:44:30.663Z
 
-Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retained for review.
+Last local cleanup: 2026-06-28T04:44:30.662Z — removed 0 unsure local JPG(s); **26** retained for review.
 
 ## Summary
 
-- Downloaded local JPG candidates: **14**
-- Rejected / not saved candidates: **34**
-- Recommendation counts: **14 keep for review**, **2 unsure**, **32 remove**
+- Downloaded local JPG candidates: **26**
+- Rejected / not saved candidates: **81**
+- Recommendation counts: **26 keep for review**, **0 unsure**, **81 remove**
 
 ## Rules applied
 
@@ -24,7 +24,142 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 
 ## Downloaded candidates (local JPG on disk)
 
-### 1. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
+### 1. AOS 3.5 V5 (`aos-3-5-v5`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://www.aos-rc.com/designs/aos-3.5-v5
+- **Exact image URL downloaded:** https://static.wixstatic.com/media/e57211_e232808460f149bcaa893ea59d49fa64~mv2.jpg/v1/fill/w_4080,h_3072,al_c,q_90/AOS%203.5%20V5%20(1)%20(1).jpg
+- **Local file path:** public/parts/frames/aos-3-5-v5.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official AOS RC design page for AOS 3.5 V5 frame.
+
+### 2. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/0802se-22000kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_4319d714-8323-44ca-bf80-77c15f7badf3_1024x1024.jpg?v=1666348352
+- **Local file path:** public/parts/motors/betafpv-0802se-19500kv.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant.
+
+### 3. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/1102-13500kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_f7a20941-d790-4480-9c37-a4e829a8cd8e_1024x1024.jpg?v=1662720960
+- **Local file path:** public/parts/motors/betafpv-1102-18000kv.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant).
+
+### 4. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/6391ace427ade714b70fb966024ae804_d937718f-4491-4bef-a2e5-a84d1fad945d_1024x1024.jpg?v=1668653169
+- **Local file path:** public/parts/batteries/betafpv-2s-450-xt30.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page.
+
+### 5. BETAFPV ELRS Lite 2.4GHz (`betafpv-elrs-nano`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://betafpv.com/products/elrs-nano-receiver
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_1024x1024.jpg?v=1713320529
+- **Local file path:** public/parts/receivers/betafpv-elrs-nano.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page.
+
+### 6. BETAFPV M03 5.8GHz VTX (`betafpv-m03-vtx`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://betafpv.com/products/m03-25-350mw-5-8g-vtx
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_1024x1024.jpg?v=1634390917
+- **Local file path:** public/parts/vtx/betafpv-m03-vtx.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Replaced fictitious N03 VTX; official BETAFPV M03 5.8GHz analog VTX page.
+
+### 7. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/meteor75-pro-brushless-whoop-frame
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/fc5c15b0efaca7433a404b65da841a73_8fa87a72-be3d-4f6f-b734-d61a7ad49bf4_1024x1024.jpg?v=1676356562
+- **Local file path:** public/parts/frames/betafpv-meteor75-pro-frame.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official Meteor75 Pro whoop frame product page.
+
+### 8. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/pavo25-frame-kit
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_1024x1024.jpg?v=1697077778
+- **Local file path:** public/parts/frames/betafpv-pavo25-frame.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official Pavo25 frame kit page.
+
+### 9. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug
+- **Exact image URL downloaded:** https://chinahobbyline.com/cdn/shop/files/1_883e2525-41c0-4434-b870-328ee3fb73c9_1024x1024.jpg?v=1728638515
+- **Local file path:** public/parts/batteries/cnhl-black-6s-1300.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official CNHL store Black Series V2.0 6S 1300mAh listing.
+
+### 10. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/35mm-pc-3-blade.html
@@ -39,7 +174,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 35mm 3-blade whoop prop page.
 
-### 2. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
+### 11. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/40mm-1613-pc-4-blade.html
@@ -54,7 +189,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 40mm 4-blade whoop prop page.
 
-### 3. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
+### 12. Gemfan Hurricane 51466 (`gemfan-51466`)
+
+- **Category:** Props
+- **Manufacturer/source page URL:** https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html
+- **Exact image URL downloaded:** https://img03.71360.com/w3/5p3560/20260329/8614b2dd04a0481bce682f33b1227115.jpg
+- **Local file path:** public/parts/props/gemfan-51466.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** Manufacturer CDN host; no watermark noted from URL review only.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Replaced DAL Cyclone T5046C; official Gemfan Hurricane 51466 page.
+
+### 13. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/3520-hurricane-pc-3-blade-t-mount.html
@@ -69,7 +219,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 3520 3-blade prop page.
 
-### 4. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
+### 14. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
@@ -84,7 +234,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EP2 ELRS receiver product page.
 
-### 5. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
+### 15. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.hqprop.com/hq-durable-prop-7x35x3v1s-2cw2ccw-poly-carbonate-p0132.html
@@ -99,7 +249,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 7x3.5x3 prop page.
 
-### 6. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
+### 16. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hqprop-duct-t90mmx3-for-cinewhoop-grey-2cw2ccw-poly-carbonate-p0351.html
@@ -114,7 +264,37 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Renamed from Duct-T90 3.5x2.8x5 to match official HQProp Duct T90 3-blade page.
 
-### 7. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
+### 17. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/cdn/shop/files/ER6-1_1024x1024.jpg?v=1750061572
+- **Local file path:** public/parts/receivers/radiomaster-er6-elrs.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official RadioMaster ER6 ELRS receiver product page.
+
+### 18. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/cdn/shop/files/RP1-V240123_1024x1024.jpg?v=1750061953
+- **Local file path:** public/parts/receivers/radiomaster-rp1-elrs.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page.
+
+### 19. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-4-ntsc-only/
@@ -129,7 +309,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Nano 4 whoop camera page.
 
-### 8. RunCam Phoenix 2 (`runcam-phoenix-2`)
+### 20. RunCam Phoenix 2 (`runcam-phoenix-2`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-phoenix-2/
@@ -144,7 +324,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Phoenix 2 camera page.
 
-### 9. SpeedyBee F405 V4 (`speedybee-f405-v4`)
+### 21. SpeedyBee F405 V4 (`speedybee-f405-v4`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
@@ -159,7 +339,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official F405 V4 stack page.
 
-### 10. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
+### 22. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-450mah-3.8v-high-voltage-75c-1s1p-lipo-battery-pack-with-bt-2.0-plug-5pcs/
@@ -174,7 +354,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu/Grepow 1S 450mAh HV BT2.0 page.
 
-### 11. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
+### 23. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug.html
@@ -189,7 +369,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 4S 850mAh page.
 
-### 12. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
+### 24. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-2200mah-6s-95c-22-2v-r-line-lipo-battery-with-xt60-plug-for-7-quad/
@@ -204,7 +384,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Replaced Molicel custom Li-ion pack; official Tattu R-Line 6S 2200mAh for 7-inch page.
 
-### 13. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
+### 25. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_nano_rx
@@ -219,7 +399,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Crossfire Nano RX store page.
 
-### 14. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
+### 26. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_hv
@@ -240,7 +420,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.aos-rc.com/designs/aos-3.5-v5
-- **Exact image URL downloaded:** —
+- **Exact image URL downloaded:** https://www.aos-rc.com/media/e57211_169c9796b4d84a99962ba83b277e0a93~mv2.jpg/v1/fill/w_400,h_400,al_c,q_80/ZgZph9Cz_400x400.jpg
 - **Local file path:** public/parts/frames/aos-3-5-v5.jpg
 - **Status:** failed
 - **Source type:** manufacturer page
@@ -249,39 +429,129 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official AOS RC design page for AOS 3.5 V5 frame. No og:image, twitter:image, or image_src candidate found on page.
+- **Notes:** Official AOS RC design page for AOS 3.5 V5 frame. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.aos-rc.com/media/e57211_169c9796b4d84a99962ba83b277e0a93~mv2.jpg/v1/fill/w_400,h_400,al_c,q_80/ZgZph9Cz_400x400.jpg
 
-### 2. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
+### 2. AOS 3.5 V5 (`aos-3-5-v5`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://www.aos-rc.com/designs/aos-3.5-v5
+- **Exact image URL downloaded:** https://www.aos-rc.com/309042611_3964021680488767_2817508092278289292_n_edited.jpg
+- **Local file path:** public/parts/frames/aos-3-5-v5.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official AOS RC design page for AOS 3.5 V5 frame. Candidate URL identified but no local JPG saved yet. HTTP 400 for image https://www.aos-rc.com/309042611_3964021680488767_2817508092278289292_n_edited.jpg
+
+### 3. AOS 3.5 V5 (`aos-3-5-v5`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://www.aos-rc.com/designs/aos-3.5-v5
+- **Exact image URL downloaded:** https://www.aos-rc.com/media/e57211_8185d85b60de428aa5da573546d1fff9%7Emv2.jpg
+- **Local file path:** public/parts/frames/aos-3-5-v5.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official AOS RC design page for AOS 3.5 V5 frame. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.aos-rc.com/media/e57211_8185d85b60de428aa5da573546d1fff9%7Emv2.jpg
+
+### 4. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://betafpv.com/products/0802se-22000kv-brushless-motors
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_4319d714-8323-44ca-bf80-77c15f7badf3_1200x630.jpg?v=1666348352
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_1080x.jpg?v=1673001540%201080w%201080h,%20%20//betafpv.com/cdn/
 - **Local file path:** public/parts/motors/betafpv-0802se-19500kv.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_1080x.jpg?v=1673001540%201080w%201080h,%20%20//betafpv.com/cdn/
 
-### 3. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
+### 5. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/0802se-22000kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_1296x.jpg?v=1673001540%201296w%201296h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/motors/betafpv-0802se-19500kv.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_1296x.jpg?v=1673001540%201296w%201296h,%20%20//betafpv.com/cdn/
+
+### 6. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/0802se-22000kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_180x.jpg?v=1673001540%20180w%20180h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/motors/betafpv-0802se-19500kv.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_bad9db0d-c380-4150-bd73-e58a3271ccf6_180x.jpg?v=1673001540%20180w%20180h,%20%20//betafpv.com/cdn/
+
+### 7. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://betafpv.com/products/1102-13500kv-brushless-motors
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_f7a20941-d790-4480-9c37-a4e829a8cd8e_1200x630.jpg?v=1662720960
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_1080x.jpg?v=1683857714%201080w%201080h,%20%20//betafpv.com/cdn/
 - **Local file path:** public/parts/motors/betafpv-1102-18000kv.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_1080x.jpg?v=1683857714%201080w%201080h,%20%20//betafpv.com/cdn/
 
-### 4. BETAFPV 1S 5A AIO ESC (`betafpv-1s-5a-aio-esc`)
+### 8. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/1102-13500kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_1296x.jpg?v=1683857714%201296w%201296h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/motors/betafpv-1102-18000kv.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_1296x.jpg?v=1683857714%201296w%201296h,%20%20//betafpv.com/cdn/
+
+### 9. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/1102-13500kv-brushless-motors
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_180x.jpg?v=1683857714%20180w%20180h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/motors/betafpv-1102-18000kv.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5e8abf1a-ae0b-4cea-bafc-5cbd4ea48b81_180x.jpg?v=1683857714%20180w%20180h,%20%20//betafpv.com/cdn/
+
+### 10. BETAFPV 1S 5A AIO ESC (`betafpv-1s-5a-aio-esc`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g
@@ -296,37 +566,112 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** 5A ESC integrated into F4 1S 5A AIO FC; not sold standalone. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 5. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
+### 11. BETAFPV 1S 5A AIO ESC (`betafpv-1s-5a-aio-esc`)
+
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/betafpv-1s-5a-aio-esc.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** 5A ESC integrated into F4 1S 5A AIO FC; not sold standalone. Manufacturer page is AIO combo; no isolated ESC packshot.
+
+### 12. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/6391ace427ade714b70fb966024ae804_d937718f-4491-4bef-a2e5-a84d1fad945d_1200x630.jpg?v=1668653169
+- **Exact image URL downloaded:** https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_1080x.jpg?v=1668653169%201080w%201080h,%20%20//betafpv.com/cdn/
 - **Local file path:** public/parts/batteries/betafpv-2s-450-xt30.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** logo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_1080x.jpg?v=1668653169%201080w%201080h,%20%20//betafpv.com/cdn/
 
-### 6. BETAFPV ELRS Lite 2.4GHz (`betafpv-elrs-nano`)
+### 13. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs
+- **Exact image URL downloaded:** https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_1296x.jpg?v=1668653169%201296w%201296h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/batteries/betafpv-2s-450-xt30.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** logo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_1296x.jpg?v=1668653169%201296w%201296h,%20%20//betafpv.com/cdn/
+
+### 14. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs
+- **Exact image URL downloaded:** https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_180x.jpg?v=1668653169%20180w%20180h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/batteries/betafpv-2s-450-xt30.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** logo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/019287d85a5ece20b74e63f0e78b066a_98fd40f8-1094-4585-8084-e5e98069abfd_180x.jpg?v=1668653169%20180w%20180h,%20%20//betafpv.com/cdn/
+
+### 15. BETAFPV ELRS Lite 2.4GHz (`betafpv-elrs-nano`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://betafpv.com/products/elrs-nano-receiver
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_1200x630.jpg?v=1713320529
+- **Exact image URL downloaded:** https://betafpv.com/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_1024x1024.jpg?v=1713320529&amp;de
 - **Local file path:** public/parts/receivers/betafpv-elrs-nano.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_1024x1024.jpg?v=1713320529&amp;de
 
-### 7. BETAFPV F4 1S AIO FC (`betafpv-f4-1s-aio-fc`)
+### 16. BETAFPV ELRS Lite 2.4GHz (`betafpv-elrs-nano`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://betafpv.com/products/elrs-nano-receiver
+- **Exact image URL downloaded:** https://betafpv.com/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_%7Bwidth%7Dx.jpg?v=1713320529
+- **Local file path:** public/parts/receivers/betafpv-elrs-nano.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/041efb152c0233f560a630c60b42c08a_5154ef68-32d1-4f39-a90b-472492787800_%7Bwidth%7Dx.jpg?v=1713320529
+
+### 17. BETAFPV ELRS Lite 2.4GHz (`betafpv-elrs-nano`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://betafpv.com/products/elrs-nano-receiver
+- **Exact image URL downloaded:** https://betafpv.com/f1d3f2e934a7f7df4970562b60a46e3c_426c0b91-f133-4470-ba32-e9be27cfc376_%7Bwidth%7Dx.jpg?v=1713320529
+- **Local file path:** public/parts/receivers/betafpv-elrs-nano.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/f1d3f2e934a7f7df4970562b60a46e3c_426c0b91-f133-4470-ba32-e9be27cfc376_%7Bwidth%7Dx.jpg?v=1713320529
+
+### 18. BETAFPV F4 1S AIO FC (`betafpv-f4-1s-aio-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-aio-brushless-flight-controller
@@ -341,52 +686,157 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official F4 1S AIO brushless flight controller product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 8. BETAFPV M03 5.8GHz VTX (`betafpv-m03-vtx`)
+### 19. BETAFPV F4 1S AIO FC (`betafpv-f4-1s-aio-fc`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-aio-brushless-flight-controller
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official F4 1S AIO brushless flight controller product page. Manufacturer page is AIO combo; no isolated FC packshot.
+
+### 20. BETAFPV M03 5.8GHz VTX (`betafpv-m03-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://betafpv.com/products/m03-25-350mw-5-8g-vtx
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_1200x630.jpg?v=1634390917
+- **Exact image URL downloaded:** https://betafpv.com/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_1024x1024.jpg?v=1634390917&amp;de
 - **Local file path:** public/parts/vtx/betafpv-m03-vtx.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Replaced fictitious N03 VTX; official BETAFPV M03 5.8GHz analog VTX page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Replaced fictitious N03 VTX; official BETAFPV M03 5.8GHz analog VTX page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_1024x1024.jpg?v=1634390917&amp;de
 
-### 9. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
+### 21. BETAFPV M03 5.8GHz VTX (`betafpv-m03-vtx`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://betafpv.com/products/m03-25-350mw-5-8g-vtx
+- **Exact image URL downloaded:** https://betafpv.com/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_%7Bwidth%7Dx.jpg?v=1634390917
+- **Local file path:** public/parts/vtx/betafpv-m03-vtx.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced fictitious N03 VTX; official BETAFPV M03 5.8GHz analog VTX page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/8b465053d72bf33c227fa9eedfc2486b_fc68eae8-4737-4d0c-9f12-a75e2b5c93aa_%7Bwidth%7Dx.jpg?v=1634390917
+
+### 22. BETAFPV M03 5.8GHz VTX (`betafpv-m03-vtx`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://betafpv.com/products/m03-25-350mw-5-8g-vtx
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_2b134fba-582f-40a9-8475-cbfc789a6091_%7Bwidth%7Dx.jpg?v=1634390917
+- **Local file path:** public/parts/vtx/betafpv-m03-vtx.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Replaced fictitious N03 VTX; official BETAFPV M03 5.8GHz analog VTX page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_2b134fba-582f-40a9-8475-cbfc789a6091_%7Bwidth%7Dx.jpg?v=1634390917
+
+### 23. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://betafpv.com/products/meteor75-pro-brushless-whoop-frame
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/fc5c15b0efaca7433a404b65da841a73_8fa87a72-be3d-4f6f-b734-d61a7ad49bf4_1200x630.jpg?v=1676356562
+- **Exact image URL downloaded:** https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_1080x.jpg?v=1676356562%201080w%201080h,%20%20//betafpv.com/cdn/
 - **Local file path:** public/parts/frames/betafpv-meteor75-pro-frame.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official Meteor75 Pro whoop frame product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official Meteor75 Pro whoop frame product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_1080x.jpg?v=1676356562%201080w%201080h,%20%20//betafpv.com/cdn/
 
-### 10. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
+### 24. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/meteor75-pro-brushless-whoop-frame
+- **Exact image URL downloaded:** https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_1296x.jpg?v=1676356562%201296w%201296h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/frames/betafpv-meteor75-pro-frame.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Meteor75 Pro whoop frame product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_1296x.jpg?v=1676356562%201296w%201296h,%20%20//betafpv.com/cdn/
+
+### 25. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/meteor75-pro-brushless-whoop-frame
+- **Exact image URL downloaded:** https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_180x.jpg?v=1676356562%20180w%20180h,%20%20//betafpv.com/cdn/
+- **Local file path:** public/parts/frames/betafpv-meteor75-pro-frame.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Meteor75 Pro whoop frame product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/764fc12e1068c186aa3ad9973597c82e_58852a14-4bb5-4cf5-b810-cc1453127c3f_180x.jpg?v=1676356562%20180w%20180h,%20%20//betafpv.com/cdn/
+
+### 26. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://betafpv.com/products/pavo25-frame-kit
-- **Exact image URL downloaded:** http://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_1200x630.jpg?v=1697077778
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_1024x1024.jpg?v=1697077778&amp;de
 - **Local file path:** public/parts/frames/betafpv-pavo25-frame.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
-- **Appears to be:** render
-- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official Pavo25 frame kit page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official Pavo25 frame kit page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_1024x1024.jpg?v=1697077778&amp;de
 
-### 11. BrotherHobby Avenger 2806.5 1300KV (`brotherhobby-avenger-2806-5-1300`)
+### 27. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/pavo25-frame-kit
+- **Exact image URL downloaded:** https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_%7Bwidth%7Dx.jpg?v=1697077778
+- **Local file path:** public/parts/frames/betafpv-pavo25-frame.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Pavo25 frame kit page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/74b96dbb2d19db9758ba306fc55ad040_5a9081bb-d986-45cd-a322-69b21567637a_%7Bwidth%7Dx.jpg?v=1697077778
+
+### 28. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://betafpv.com/products/pavo25-frame-kit
+- **Exact image URL downloaded:** https://betafpv.com/996c0314d3c9f4f6a92e228ed4c8e264_951d135b-8c2c-4d29-b7f3-5c587a843f8e_%7Bwidth%7Dx.jpg?v=1697077778
+- **Local file path:** public/parts/frames/betafpv-pavo25-frame.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Pavo25 frame kit page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/996c0314d3c9f4f6a92e228ed4c8e264_951d135b-8c2c-4d29-b7f3-5c587a843f8e_%7Bwidth%7Dx.jpg?v=1697077778
+
+### 29. BrotherHobby Avenger 2806.5 1300KV (`brotherhobby-avenger-2806-5-1300`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://brotherhobby.com/avenger-28065-motor-p00132p1.html
@@ -398,40 +848,100 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
-- **Recommendation:** unsure
+- **Recommendation:** remove
 - **Notes:** Official Avenger 2806.5 motor family page; KV variants share one URL. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 12. Caddx Ant Nano (`caddx-ant-nano`)
+### 30. Caddx Ant Nano (`caddx-ant-nano`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/caddx-ant-analog-camera
-- **Exact image URL downloaded:** http://www.caddxfpv.com/cdn/shop/files/CADDXFPVAntCamera.png?v=1725966515&width=2048
+- **Exact image URL downloaded:** https://www.caddxfpv.com/cdn/shop/files/CADDXFPVAntCamera.png?crop=center&height=1200&v=1725966515&width=1200
 - **Local file path:** public/parts/cameras/caddx-ant-nano.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official Caddx Ant analog camera page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official Caddx Ant analog camera page. Candidate URL identified but no local JPG saved yet. Unsupported webp format for https://www.caddxfpv.com/cdn/shop/files/CADDXFPVAntCamera.png?crop=center&height=1200&v=1725966515&width=1200
 
-### 13. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
+### 31. Caddx Ant Nano (`caddx-ant-nano`)
+
+- **Category:** Camera
+- **Manufacturer/source page URL:** https://www.caddxfpv.com/products/caddx-ant-analog-camera
+- **Exact image URL downloaded:** https://www.caddxfpv.com/AnalogFPVCameraCaddxAnt1.jpg?v=1616109799&amp;width=200%20200w,%20//www.caddxfpv.com/cdn/
+- **Local file path:** public/parts/cameras/caddx-ant-nano.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Caddx Ant analog camera page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.caddxfpv.com/AnalogFPVCameraCaddxAnt1.jpg?v=1616109799&amp;width=200%20200w,%20//www.caddxfpv.com/cdn/
+
+### 32. Caddx Ant Nano (`caddx-ant-nano`)
+
+- **Category:** Camera
+- **Manufacturer/source page URL:** https://www.caddxfpv.com/products/caddx-ant-analog-camera
+- **Exact image URL downloaded:** https://www.caddxfpv.com/AnalogFPVCameraCaddxAnt1.jpg?v=1616109799&amp;width=300%20300w,%20//www.caddxfpv.com/cdn/
+- **Local file path:** public/parts/cameras/caddx-ant-nano.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Caddx Ant analog camera page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.caddxfpv.com/AnalogFPVCameraCaddxAnt1.jpg?v=1616109799&amp;width=300%20300w,%20//www.caddxfpv.com/cdn/
+
+### 33. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug
-- **Exact image URL downloaded:** https://chinahobbyline.com/cdn/shop/files/1_883e2525-41c0-4434-b870-328ee3fb73c9_1200x1200.jpg?v=1728638515
+- **Exact image URL downloaded:** https://chinahobbyline.com/480349632_17968550738837212_4710958137847822817_n_150x150_crop_center.jpg?v=1772001464%202x,%20//chinahobbyline.com/cdn/
 - **Local file path:** public/parts/batteries/cnhl-black-6s-1300.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official CNHL store Black Series V2.0 6S 1300mAh listing. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official CNHL store Black Series V2.0 6S 1300mAh listing. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://chinahobbyline.com/480349632_17968550738837212_4710958137847822817_n_150x150_crop_center.jpg?v=1772001464%202x,%20//chinahobbyline.com/cdn/
 
-### 14. DJI O3 Air Unit (`dji-o3-air-unit`)
+### 34. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug
+- **Exact image URL downloaded:** https://chinahobbyline.com/480349632_17968550738837212_4710958137847822817_n_225x225_crop_center.jpg?v=1772001464%203x,%20//chinahobbyline.com/cdn/
+- **Local file path:** public/parts/batteries/cnhl-black-6s-1300.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official CNHL store Black Series V2.0 6S 1300mAh listing. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://chinahobbyline.com/480349632_17968550738837212_4710958137847822817_n_225x225_crop_center.jpg?v=1772001464%203x,%20//chinahobbyline.com/cdn/
+
+### 35. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
+
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug
+- **Exact image URL downloaded:** https://chinahobbyline.com/488494994_1065245348973820_7589171731168175857_n_150x150_crop_center.jpg?v=1772001464%202x,%20//chinahobbyline.com/cdn/
+- **Local file path:** public/parts/batteries/cnhl-black-6s-1300.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official CNHL store Black Series V2.0 6S 1300mAh listing. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://chinahobbyline.com/488494994_1065245348973820_7589171731168175857_n_150x150_crop_center.jpg?v=1772001464%202x,%20//chinahobbyline.com/cdn/
+
+### 36. DJI O3 Air Unit (`dji-o3-air-unit`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://store.dji.com/product/dji-o3-air-unit
@@ -446,7 +956,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official DJI store O3 Air Unit kit page. Candidate URL identified but no local JPG saved yet. Unsupported png format — not saved without conversion dependencies.
 
-### 15. DJI O3 Camera (`dji-o3-camera`)
+### 37. DJI O3 Air Unit (`dji-o3-air-unit`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://store.dji.com/product/dji-o3-air-unit
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/vtx/dji-o3-air-unit.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official DJI store O3 Air Unit kit page. No manufacturer-owned JPEG candidates found on page.
+
+### 38. DJI O3 Camera (`dji-o3-camera`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://store.dji.com/sg/product/dji-o3-air-unit-camera-module
@@ -461,7 +986,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official DJI store O3 camera module page. Candidate URL identified but no local JPG saved yet. Unsupported png format — not saved without conversion dependencies.
 
-### 16. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
+### 39. DJI O3 Camera (`dji-o3-camera`)
+
+- **Category:** Camera
+- **Manufacturer/source page URL:** https://store.dji.com/sg/product/dji-o3-air-unit-camera-module
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/cameras/dji-o3-camera.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official DJI store O3 camera module page. No manufacturer-owned JPEG candidates found on page.
+
+### 40. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583
@@ -476,7 +1016,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Candidate URL identified but no local JPG saved yet. Unsupported png format — not saved without conversion dependencies.
 
-### 17. Gemfan Hurricane 51466 (`gemfan-51466`)
+### 41. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. No manufacturer-owned JPEG candidates found on page.
+
+### 42. Gemfan Hurricane 51466 (`gemfan-51466`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/51466-hurricane-pc-3-blade.html
@@ -491,7 +1046,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Replaced DAL Cyclone T5046C; official Gemfan Hurricane 51466 page. HTTP 404 for page https://www.gemfanhobby.com/51466-hurricane-pc-3-blade.html
 
-### 18. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
+### 43. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/
@@ -506,7 +1061,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official full-drone listing; frame-only SKU not clearly separated. Source page appears to show a complete aircraft, not an isolated frame SKU. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 19. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
+### 44. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/geprc-cinelog35-v2.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** lifestyle photo
+- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official full-drone listing; frame-only SKU not clearly separated. Source page appears to show a complete aircraft, not an isolated frame SKU. Frame listing shows complete aircraft; no isolated frame packshot expected.
+
+### 45. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
@@ -521,7 +1091,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 20. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
+### 46. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
+
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/geprc-gep-f411-35a-aio-esc.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Manufacturer page is AIO combo; no isolated ESC packshot.
+
+### 47. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
@@ -536,7 +1121,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 21. GNB 4S 1500mAh 120C (`gnb-4s-1500`)
+### 48. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Manufacturer page is AIO combo; no isolated FC packshot.
+
+### 49. GNB 4S 1500mAh 120C (`gnb-4s-1500`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.gaoneng.shop/products/gaoneng-gnb-4s-14-8v-1850mah-100c-xt60-lipo-battery
@@ -548,10 +1148,10 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
-- **Recommendation:** unsure
+- **Recommendation:** remove
 - **Notes:** Replaced gnb-4s-1500-cine duplicate; no exact 1500mAh page on gaoneng.shop — closest official GNB 4S listing is 1850mAh. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 22. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+### 50. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
@@ -566,7 +1166,37 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING-2205/2205-shaft-2.png
 
-### 23. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
+### 51. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+
+### 52. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+
+### 53. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482
@@ -581,7 +1211,37 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260317/165007/admin15/68890.png?imageView2/1/w/100/h/100/
 
-### 24. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
+### 54. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+- **Local file path:** public/parts/motors/iflight-xing2-1404-3800.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+
+### 55. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+- **Local file path:** public/parts/motors/iflight-xing2-1404-3800.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+
+### 56. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
@@ -596,11 +1256,41 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260529/103309/admin15/20143.png?imageView2/1/w/100/h/100/
 
-### 25. Matek H743 Mini LR (`matek-h743-mini-lr`)
+### 57. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+- **Local file path:** public/parts/motors/iflight-xing2-2207-1855.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
+
+### 58. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
+- **Exact image URL downloaded:** https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+- **Local file path:** public/parts/motors/iflight-xing2-2207-1855.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
+
+### 59. Matek H743 Mini LR (`matek-h743-mini-lr`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
-- **Exact image URL downloaded:** —
+- **Exact image URL downloaded:** https://www.mateksys.com/2020/10/H743-mini_layout1.5.jpg
 - **Local file path:** public/parts/flight-controllers/matek-h743-mini-lr.jpg
 - **Status:** failed
 - **Source type:** manufacturer page
@@ -609,39 +1299,129 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official Matek H743-MINI portfolio page. No og:image, twitter:image, or image_src candidate found on page.
+- **Notes:** Official Matek H743-MINI portfolio page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.mateksys.com/2020/10/H743-mini_layout1.5.jpg
 
-### 26. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+### 60. Matek H743 Mini LR (`matek-h743-mini-lr`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
+- **Exact image URL downloaded:** https://www.mateksys.com/2020/10/H743-mini_layout_V3.jpg
+- **Local file path:** public/parts/flight-controllers/matek-h743-mini-lr.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Matek H743-MINI portfolio page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.mateksys.com/2020/10/H743-mini_layout_V3.jpg
+
+### 61. Matek H743 Mini LR (`matek-h743-mini-lr`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
+- **Exact image URL downloaded:** https://www.mateksys.com/2020/10/H743-mini_layout.jpg
+- **Local file path:** public/parts/flight-controllers/matek-h743-mini-lr.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Matek H743-MINI portfolio page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://www.mateksys.com/2020/10/H743-mini_layout.jpg
+
+### 62. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
-- **Exact image URL downloaded:** http://radiomasterrc.com/cdn/shop/files/ER6-1.jpg?v=1750061572
+- **Exact image URL downloaded:** https://radiomasterrc.com/1920_800_RM_957f43f9-79f8-49c7-baff-54ed48f2acac_400x.jpg?v=1769848936)
 - **Local file path:** public/parts/receivers/radiomaster-er6-elrs.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official RadioMaster ER6 ELRS receiver product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official RadioMaster ER6 ELRS receiver product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920_800_RM_957f43f9-79f8-49c7-baff-54ed48f2acac_400x.jpg?v=1769848936)
 
-### 27. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+### 63. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)
+- **Local file path:** public/parts/receivers/radiomaster-er6-elrs.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RadioMaster ER6 ELRS receiver product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)
+
+### 64. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/ER6-10_635b65ba-0ed2-41ec-bd89-5cd99930013b_480x480.jpg?v=1686640468
+- **Local file path:** public/parts/receivers/radiomaster-er6-elrs.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RadioMaster ER6 ELRS receiver product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/ER6-10_635b65ba-0ed2-41ec-bd89-5cd99930013b_480x480.jpg?v=1686640468
+
+### 65. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
-- **Exact image URL downloaded:** http://radiomasterrc.com/cdn/shop/files/RP1-V240123.jpg?v=1750061953
+- **Exact image URL downloaded:** https://radiomasterrc.com/RP1-V2-1000X1000-2_eca0abf4-54f6-484c-aaa4-543f741f7b4a_480x480.jpg?v=1692697671
 - **Local file path:** public/parts/receivers/radiomaster-rp1-elrs.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/RP1-V2-1000X1000-2_eca0abf4-54f6-484c-aaa4-543f741f7b4a_480x480.jpg?v=1692697671
 
-### 28. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+### 66. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/1920_800_RM_957f43f9-79f8-49c7-baff-54ed48f2acac_400x.jpg?v=1769848936)
+- **Local file path:** public/parts/receivers/radiomaster-rp1-elrs.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920_800_RM_957f43f9-79f8-49c7-baff-54ed48f2acac_400x.jpg?v=1769848936)
+
+### 67. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+
+- **Category:** Receiver
+- **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
+- **Exact image URL downloaded:** https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)
+- **Local file path:** public/parts/receivers/radiomaster-rp1-elrs.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)
+
+### 68. Rekon7 Pro Long Range (`rekon7-pro-lr`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
@@ -656,22 +1436,67 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official complete drone page for Rekon7 Pro long range. Source page appears to show a complete aircraft, not an isolated frame SKU. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 29. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 69. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/rekon7-pro-lr.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** lifestyle photo
+- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official complete drone page for Rekon7 Pro long range. Source page appears to show a complete aircraft, not an isolated frame SKU. Frame listing shows complete aircraft; no isolated frame packshot expected.
+
+### 70. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
-- **Exact image URL downloaded:** http://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
+- **Exact image URL downloaded:** https://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
 - **Local file path:** public/parts/vtx/rush-tank-solo.jpg
-- **Status:** rejected
+- **Status:** failed
 - **Source type:** manufacturer page
 - **Confidence:** high
 - **Appears to be:** product photo
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
+- **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format for https://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
 
-### 30. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+### 71. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
+- **Exact image URL downloaded:** http://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
+- **Local file path:** public/parts/vtx/rush-tank-solo.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format for http://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
+
+### 72. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+
+- **Category:** VTX
+- **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
+- **Exact image URL downloaded:** https://rushfpv.net/6aeccf1e-313e-4762-a4b4-9ef9405d6453_%7Bwidth%7Dx.jpg?v=1659579811
+- **Local file path:** public/parts/vtx/rush-tank-solo.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://rushfpv.net/6aeccf1e-313e-4762-a4b4-9ef9405d6453_%7Bwidth%7Dx.jpg?v=1659579811
+
+### 73. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
@@ -686,7 +1511,7 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM55A 4-in-1 ESC product page. fetch failed
 
-### 31. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+### 74. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
@@ -701,7 +1526,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official SpeedyBee F7 V3 + BL32 50A ESC stack page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 32. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+### 75. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/speedybee-bl32-50a.jpg
+- **Status:** skipped
+- **Source type:** unknown
+- **Confidence:** low
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official SpeedyBee F7 V3 + BL32 50A ESC stack page. Manufacturer page is FC+ESC stack; no isolated ESC packshot.
+
+### 76. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -716,7 +1556,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Renamed from Mini BL32 35A; official SpeedyBee F405 Mini + BLS 35A stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 33. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+### 77. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/speedybee-bls-35a-4in1.jpg
+- **Status:** skipped
+- **Source type:** unknown
+- **Confidence:** low
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Renamed from Mini BL32 35A; official SpeedyBee F405 Mini + BLS 35A stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Manufacturer page is FC+ESC stack; no isolated ESC packshot.
+
+### 78. SpeedyBee F405 Mini (`speedybee-f405-mini`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -731,7 +1586,22 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **Recommendation:** remove
 - **Notes:** Official F405 Mini + BLS 35A 20x20 stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 34. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+### 79. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/speedybee-f405-mini.jpg
+- **Status:** skipped
+- **Source type:** unknown
+- **Confidence:** low
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official F405 Mini + BLS 35A 20x20 stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Manufacturer page is FC+ESC stack; no isolated FC packshot.
+
+### 80. TBS Source One V5 5-inch (`tbs-source-one-v5`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
@@ -745,6 +1615,21 @@ Last local cleanup: 2026-06-28 — removed 5 unsure local JPG(s); **14** retaine
 - **imageNeedsReview:** true
 - **Recommendation:** remove
 - **Notes:** Official open-source Source One project repo (V5 files). Candidate URL identified but no local JPG saved yet. Unsupported png format — not saved without conversion dependencies.
+
+### 81. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/tbs-source-one-v5.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** diagram
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official open-source Source One project repo (V5 files). GitHub project page only exposes social/diagram og:image.
 
 ## Manual review checklist
 

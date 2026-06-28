@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "audit:images": "node scripts/auditPresetImages.js",
+    "audit:all-images": "node scripts/auditAllPartImages.js",
     "images:fetch-presets": "node scripts/fetchPresetImages.js",
     "images:report": "node scripts/presetImageDownloadReport.js",
     "images:folders": "node scripts/createImageFolders.js",

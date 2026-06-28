@@ -8,6 +8,7 @@ import {
   formatPresetImageAuditReport,
 } from "./auditPresetImages.js";
 import {
+  cleanupDisallowedLocalImages,
   createCandidateRecord,
   loadDownloadManifest,
   saveDownloadManifest,
@@ -34,6 +35,35 @@ const BLOCKED_HOST_PATTERNS = [
   /(^|\.)rdq\.com$/i,
 ];
 
+const DISCOURAGED_IMAGE_URL_PATTERNS = [
+  /1200x630/i,
+  /opengraph\.githubassets/i,
+  /imageview2\/1\/w\/100\/h\/100/i,
+  /\.images\.100x100\./i,
+  /@ultra\.png/i,
+  /\/thumb(?:s|nail)?\//i,
+  /\/favicon/i,
+  /\/logo/i,
+  /\/icon/i,
+  /social[-_]?share/i,
+  /judgeme\.imgix\.net/i,
+];
+
+const PROACTIVE_SKIP_PART_IDS = new Map([
+  ["geprc-cinelog35-v2", "Frame listing shows complete aircraft; no isolated frame packshot expected."],
+  ["rekon7-pro-lr", "Frame listing shows complete aircraft; no isolated frame packshot expected."],
+  ["geprc-gep-f411-35a-aio-esc", "Manufacturer page is AIO combo; no isolated ESC packshot."],
+  ["geprc-gep-f411-35a-aio-fc", "Manufacturer page is AIO combo; no isolated FC packshot."],
+  ["speedybee-bls-35a-4in1", "Manufacturer page is FC+ESC stack; no isolated ESC packshot."],
+  ["speedybee-f405-mini", "Manufacturer page is FC+ESC stack; no isolated FC packshot."],
+  ["speedybee-bl32-50a", "Manufacturer page is FC+ESC stack; no isolated ESC packshot."],
+  ["betafpv-1s-5a-aio-esc", "Manufacturer page is AIO combo; no isolated ESC packshot."],
+  ["betafpv-f4-1s-aio-fc", "Manufacturer page is AIO combo; no isolated FC packshot."],
+  ["tbs-source-one-v5", "GitHub project page only exposes social/diagram og:image."],
+]);
+
+const MAX_CANDIDATES_PER_PART = 20;
+
 const sourceByPartId = new Map(
   presetPartImageSources.map((entry) => [entry.partId, entry]),
 );
@@ -42,6 +72,7 @@ function parseFlags(argv) {
   return {
     includeLowConfidence: argv.includes("--include-low-confidence"),
     force: argv.includes("--force"),
+    all: argv.includes("--all"),
   };
 }
 
@@ -105,8 +136,146 @@ function extractImageSrcLink(html) {
   return match?.[1] ? decodeHtmlEntities(match[1].trim()) : null;
 }
 
-function extractPageImageCandidates(html) {
-  const candidates = [
+function extractJsonLdImages(html) {
+  const images = [];
+  const scriptPattern =
+    /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+
+  for (const match of html.matchAll(scriptPattern)) {
+    try {
+      const parsed = JSON.parse(match[1].trim());
+      const nodes = Array.isArray(parsed)
+        ? parsed
+        : parsed["@graph"]
+          ? parsed["@graph"]
+          : [parsed];
+
+      for (const node of nodes) {
+        if (!node?.image) {
+          continue;
+        }
+
+        const nodeImages = Array.isArray(node.image) ? node.image : [node.image];
+
+        for (const image of nodeImages) {
+          if (typeof image === "string") {
+            images.push(image);
+          } else if (image?.url) {
+            images.push(image.url);
+          }
+        }
+      }
+    } catch {
+      // Ignore malformed JSON-LD blocks.
+    }
+  }
+
+  return images;
+}
+
+function extractEmbeddedJsonImageUrls(html) {
+  const urls = [];
+
+  for (const match of html.matchAll(
+    /"url"\s*:\s*"(https?:\\\/\\\/[^"]+\.jpe?g[^"]*)"/gi,
+  )) {
+    urls.push(JSON.parse(`"${match[1]}"`));
+  }
+
+  for (const match of html.matchAll(/"url"\s*:\s*"(https?:\/\/[^"]+\.jpe?g[^"]*)"/gi)) {
+    urls.push(match[1]);
+  }
+
+  return urls;
+}
+
+function extractHtmlJpegUrls(html) {
+  const urls = new Set();
+
+  for (const match of html.matchAll(
+    /https?:\/\/[^"'\\s>]+\.jpe?g(?:\?[^"'\\s>]*)?/gi,
+  )) {
+    urls.add(match[0]);
+  }
+
+  for (const match of html.matchAll(/\/\/[^"'\\s>]+\.jpe?g(?:\?[^"'\\s>]*)?/gi)) {
+    urls.add(`https:${match[0]}`);
+  }
+
+  return [...urls];
+}
+
+function isDiscouragedImageUrl(url) {
+  return DISCOURAGED_IMAGE_URL_PATTERNS.some((pattern) => pattern.test(url));
+}
+
+function scoreImageCandidate(url) {
+  let score = 0;
+  const lower = url.toLowerCase();
+
+  if (/\.jpe?g(?:\?|$)/i.test(url)) {
+    score += 12;
+  }
+
+  if (lower.includes("/cdn/shop/products/")) {
+    score += 10;
+  }
+
+  if (lower.includes("/cdn/shop/files/")) {
+    score += 9;
+  }
+
+  if (lower.includes("wp-content/uploads")) {
+    score += 9;
+  }
+
+  if (lower.includes("/u_file/")) {
+    score += 9;
+  }
+
+  if (lower.includes("bigcommerce.com") && lower.includes("/products/")) {
+    score += 8;
+  }
+
+  if (lower.includes("/products/") && lower.includes(".jpg")) {
+    score += 6;
+  }
+
+  if (lower.includes("img03.71360.com")) {
+    score += 7;
+  }
+
+  if (lower.includes("static.wixstatic.com")) {
+    score += 8;
+  }
+
+  if (lower.includes("1200x630")) {
+    score -= 30;
+  }
+
+  if (lower.includes(".webp")) {
+    score -= 8;
+  }
+
+  if (lower.includes(".png")) {
+    score -= 5;
+  }
+
+  if (lower.includes("thumb")) {
+    score -= 12;
+  }
+
+  return score;
+}
+
+function rankImageCandidates(urls) {
+  return [...new Set(urls)].sort(
+    (left, right) => scoreImageCandidate(right) - scoreImageCandidate(left),
+  );
+}
+
+function extractPageImageCandidates(html, pageUrl) {
+  const metaCandidates = [
     extractMetaContent(html, "property", "og:image"),
     extractMetaContent(html, "property", "og:image:url"),
     extractMetaContent(html, "property", "og:image:secure_url"),
@@ -115,7 +284,19 @@ function extractPageImageCandidates(html) {
     extractImageSrcLink(html),
   ].filter(Boolean);
 
-  return [...new Set(candidates)];
+  const galleryCandidates = [
+    ...extractEmbeddedJsonImageUrls(html),
+    ...extractJsonLdImages(html),
+    ...extractHtmlJpegUrls(html),
+  ];
+
+  const combined = [...galleryCandidates, ...metaCandidates]
+    .map((candidate) => resolveUrl(pageUrl, candidate))
+    .filter(Boolean)
+    .filter((candidate) => !isDiscouragedImageUrl(candidate))
+    .filter((candidate) => !isBlockedRetailerUrl(candidate));
+
+  return rankImageCandidates(combined);
 }
 
 function detectImageFormat(buffer) {
@@ -198,7 +379,7 @@ async function fetchWithTimeout(url, options = {}) {
 
 async function fetchHtml(pageUrl) {
   const response = await fetchWithTimeout(pageUrl, {
-    accept: "text/html,application/xhtml+xml",
+    accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
   });
 
   if (!response.ok) {
@@ -209,23 +390,44 @@ async function fetchHtml(pageUrl) {
 }
 
 async function fetchImageBuffer(imageUrl) {
-  const response = await fetchWithTimeout(imageUrl, {
-    accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-  });
+  const acceptHeaders = [
+    "image/jpeg",
+    "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+  ];
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status} for image ${imageUrl}`);
+  let lastError = null;
+
+  for (const accept of acceptHeaders) {
+    try {
+      const response = await fetchWithTimeout(imageUrl, { accept });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status} for image ${imageUrl}`);
+      }
+
+      const buffer = Buffer.from(await response.arrayBuffer());
+      const headerFormat = detectImageFormat(buffer);
+      const contentTypeFormat = formatFromContentType(
+        response.headers.get("content-type"),
+      );
+      const format =
+        headerFormat !== "unknown" ? headerFormat : contentTypeFormat;
+
+      if (format === "jpeg") {
+        return {
+          buffer,
+          format,
+          contentType: response.headers.get("content-type"),
+        };
+      }
+
+      lastError = new Error(`Unsupported ${format} format for ${imageUrl}`);
+    } catch (error) {
+      lastError = error;
+    }
   }
 
-  const buffer = Buffer.from(await response.arrayBuffer());
-  const headerFormat = detectImageFormat(buffer);
-  const contentTypeFormat = formatFromContentType(
-    response.headers.get("content-type"),
-  );
-  const format =
-    headerFormat !== "unknown" ? headerFormat : contentTypeFormat;
-
-  return { buffer, format, contentType: response.headers.get("content-type") };
+  throw lastError ?? new Error(`Could not fetch JPEG for ${imageUrl}`);
 }
 
 function ensureDirectory(filePath) {
@@ -241,11 +443,13 @@ function createReportBucket() {
     downloaded: [],
     skippedExisting: [],
     skippedLowConfidence: [],
+    skippedProactive: [],
     noOfficialUrl: [],
     blockedRetailer: [],
     noImageFound: [],
     unsupportedFormat: [],
     failedDownload: [],
+    removedAfterReview: [],
   };
 }
 
@@ -289,6 +493,27 @@ async function processPart(todoEntry, flags, report, manifest) {
       );
     }
 
+    return;
+  }
+
+  const proactiveSkipReason = PROACTIVE_SKIP_PART_IDS.get(todoEntry.partId);
+
+  if (proactiveSkipReason) {
+    report.skippedProactive.push({
+      partId: todoEntry.partId,
+      detail: proactiveSkipReason,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source?.officialUrl ?? null,
+        imageUrl: null,
+        status: "skipped",
+        detail: proactiveSkipReason,
+      }),
+    );
     return;
   }
 
@@ -361,9 +586,10 @@ async function processPart(todoEntry, flags, report, manifest) {
     return;
   }
 
-  const candidates = extractPageImageCandidates(html)
-    .map((candidate) => resolveUrl(source.officialUrl, candidate))
-    .filter(Boolean);
+  const candidates = extractPageImageCandidates(html, source.officialUrl).slice(
+    0,
+    MAX_CANDIDATES_PER_PART,
+  );
 
   if (candidates.length === 0) {
     report.noImageFound.push({
@@ -378,7 +604,7 @@ async function processPart(todoEntry, flags, report, manifest) {
         sourcePageUrl: source.officialUrl,
         imageUrl: null,
         status: "failed",
-        detail: "No og:image, twitter:image, or image_src candidate found on page.",
+        detail: "No manufacturer-owned JPEG candidates found on page.",
       }),
     );
     return;
@@ -496,19 +722,38 @@ export async function fetchPresetImageCandidates(options = {}) {
   const flags = {
     includeLowConfidence: false,
     force: false,
+    all: false,
     ...options,
   };
   const report = createReportBucket();
   const manifest = loadDownloadManifest();
+  const auditReport = auditPresetImagePaths(PRESET_PART_IMAGE_TODO, {
+    publicRoot,
+  });
+  const missingPartIds = new Set(
+    auditReport.missingItems.map((entry) => entry.partId),
+  );
 
-  for (const todoEntry of PRESET_PART_IMAGE_TODO) {
+  const todoEntries = flags.all
+    ? PRESET_PART_IMAGE_TODO
+    : PRESET_PART_IMAGE_TODO.filter((entry) => missingPartIds.has(entry.partId));
+
+  for (const todoEntry of todoEntries) {
     await processPart(todoEntry, flags, report, manifest);
   }
 
   saveDownloadManifest(manifest);
+
+  const { removedPartIds } = cleanupDisallowedLocalImages(manifest);
+  report.removedAfterReview = removedPartIds.map((partId) => ({
+    partId,
+    detail: "Removed after recommendation review (remove/unsure).",
+  }));
+
+  saveDownloadManifest(manifest);
   writeDownloadReport(manifest);
 
-  return { report, manifest };
+  return { report, manifest, auditReport };
 }
 
 function printReport(report) {
@@ -522,7 +767,9 @@ function printReport(report) {
 
   printBucket("Downloaded", report.downloaded);
   printBucket("Skipped existing", report.skippedExisting);
+  printBucket("Skipped proactive", report.skippedProactive);
   printBucket("Skipped low-confidence", report.skippedLowConfidence);
+  printBucket("Removed after review", report.removedAfterReview);
   printBucket("No official URL", report.noOfficialUrl);
   printBucket("Blocked retailer URL", report.blockedRetailer);
   printBucket("No image found", report.noImageFound);

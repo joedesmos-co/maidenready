@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { PRESET_PART_IMAGE_TODO } from "../src/data/presetPartImages.js";
@@ -104,7 +104,8 @@ export function classifySourceType(sourcePageUrl, imageUrl) {
     pageHost.includes("caddxfpv.com") ||
     pageHost.includes("aos-rc.com") ||
     pageHost.includes("skystars-rc.com") ||
-    pageHost.includes("brotherhobby.com")
+    pageHost.includes("brotherhobby.com") ||
+    imageHost.includes("wixstatic.com")
   ) {
     return "manufacturer page";
   }
@@ -139,7 +140,7 @@ export function classifyAppearance(sourceEntry, imageUrl, sourcePageUrl) {
     return "diagram";
   }
 
-  if (haystack.includes("logo") || haystack.includes("brand")) {
+  if (/\blogo\b/i.test(haystack)) {
     return "logo";
   }
 
@@ -207,9 +208,10 @@ export function recommendCandidate(record) {
     status,
     notes,
     confidence,
+    partId,
   } = record;
 
-  if (status === "rejected" || status === "failed") {
+  if (status === "rejected" || status === "failed" || status === "skipped") {
     return "remove";
   }
 
@@ -218,33 +220,64 @@ export function recommendCandidate(record) {
   }
 
   if (
-    watermarkOrBranding.toLowerCase().includes("watermark") ||
-    watermarkOrBranding.toLowerCase().includes("third-party store")
+    /\bwatermark(ed)?\b/i.test(watermarkOrBranding) &&
+    !/\bno (obvious )?watermark/i.test(watermarkOrBranding)
   ) {
     return "remove";
   }
 
-  if (appearance === "lifestyle photo") {
-    return "unsure";
+  if (watermarkOrBranding.toLowerCase().includes("third-party store")) {
+    return "remove";
   }
 
-  if (appearance === "diagram" || appearance === "logo") {
-    return "unsure";
+  if (
+    appearance === "lifestyle photo" ||
+    appearance === "diagram" ||
+    appearance === "logo" ||
+    appearance === "render"
+  ) {
+    return "remove";
   }
 
-  if (notes?.includes("duplicate") || notes?.includes("stack photo")) {
-    return "unsure";
+  if (
+    notes?.includes("combined AIO") ||
+    notes?.includes("Same source image") ||
+    notes?.includes("Stack marketing photo") ||
+    notes?.includes("complete aircraft") ||
+    notes?.includes("full-drone") ||
+    notes?.includes("complete drone")
+  ) {
+    return "remove";
   }
 
   if (confidence === "low") {
-    return "unsure";
+    return "remove";
+  }
+
+  const stackOrAioPartIds = new Set([
+    "geprc-gep-f411-35a-aio-esc",
+    "geprc-gep-f411-35a-aio-fc",
+    "speedybee-bls-35a-4in1",
+    "speedybee-f405-mini",
+    "speedybee-bl32-50a",
+    "betafpv-1s-5a-aio-esc",
+    "betafpv-f4-1s-aio-fc",
+  ]);
+
+  const fullDroneFramePartIds = new Set([
+    "geprc-cinelog35-v2",
+    "rekon7-pro-lr",
+  ]);
+
+  if (stackOrAioPartIds.has(partId) || fullDroneFramePartIds.has(partId)) {
+    return "remove";
   }
 
   if (status === "downloaded") {
     return "keep for review";
   }
 
-  return "unsure";
+  return "remove";
 }
 
 export function upsertCandidate(manifest, candidate) {
@@ -464,9 +497,75 @@ export function formatDownloadReportMarkdown(manifest) {
   return lines.join("\n");
 }
 
+export function compactDownloadManifest(manifest = loadDownloadManifest()) {
+  const grouped = new Map();
+
+  for (const entry of manifest.candidates) {
+    const existing = grouped.get(entry.partId) ?? {
+      downloaded: null,
+      removedLocal: null,
+      others: [],
+    };
+
+    if (entry.status === "downloaded") {
+      if (
+        !existing.downloaded ||
+        scoreManifestEntry(entry) > scoreManifestEntry(existing.downloaded)
+      ) {
+        existing.downloaded = entry;
+      }
+    } else if (entry.status === "removed_local") {
+      if (
+        !existing.removedLocal ||
+        scoreManifestEntry(entry) > scoreManifestEntry(existing.removedLocal)
+      ) {
+        existing.removedLocal = entry;
+      }
+    } else {
+      existing.others.push(entry);
+    }
+
+    grouped.set(entry.partId, existing);
+  }
+
+  const compacted = [];
+
+  for (const [partId, bucket] of grouped.entries()) {
+    if (bucket.downloaded) {
+      compacted.push(bucket.downloaded);
+    } else if (bucket.removedLocal) {
+      compacted.push(bucket.removedLocal);
+    }
+
+    const latestOther = bucket.others
+      .sort((left, right) =>
+        (right.notes?.length ?? 0) - (left.notes?.length ?? 0),
+      )
+      .slice(0, 3);
+
+    compacted.push(...latestOther);
+  }
+
+  manifest.candidates = compacted.sort((left, right) =>
+    left.partId.localeCompare(right.partId),
+  );
+
+  return manifest;
+}
+
+function scoreManifestEntry(entry) {
+  return (
+    (entry.imageUrl ? 4 : 0) +
+    (entry.confidence === "high" ? 3 : entry.confidence === "medium" ? 2 : 1) +
+    (entry.sourceType === "manufacturer page" ? 2 : 0)
+  );
+}
+
 export function writeDownloadReport(manifest = loadDownloadManifest()) {
-  writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
-  writeFileSync(reportPath, formatDownloadReportMarkdown(manifest), "utf8");
+  const compacted = compactDownloadManifest({ ...manifest, candidates: [...manifest.candidates] });
+  writeFileSync(manifestPath, `${JSON.stringify(compacted, null, 2)}\n`, "utf8");
+  writeFileSync(reportPath, formatDownloadReportMarkdown(compacted), "utf8");
+  return compacted;
 }
 
 export function syncDownloadedFilesToManifest(manifest = loadDownloadManifest()) {
@@ -504,12 +603,97 @@ export function syncDownloadedFilesToManifest(manifest = loadDownloadManifest())
   return manifest;
 }
 
+function pickBestDownloadedCandidate(manifest, partId) {
+  const candidates = manifest.candidates.filter(
+    (entry) =>
+      entry.partId === partId &&
+      entry.imageUrl &&
+      (entry.status === "downloaded" || entry.status === "removed_local"),
+  );
+
+  if (candidates.length === 0) {
+    return null;
+  }
+
+  return candidates.sort((left, right) => {
+    const leftScore =
+      (left.status === "downloaded" ? 4 : 0) +
+      (left.confidence === "high" ? 3 : left.confidence === "medium" ? 2 : 1) +
+      (left.sourceType === "manufacturer page" ? 2 : 0);
+    const rightScore =
+      (right.status === "downloaded" ? 4 : 0) +
+      (right.confidence === "high" ? 3 : right.confidence === "medium" ? 2 : 1) +
+      (right.sourceType === "manufacturer page" ? 2 : 0);
+
+    return rightScore - leftScore;
+  })[0];
+}
+
+export function cleanupDisallowedLocalImages(manifest = loadDownloadManifest()) {
+  const removedPartIds = [];
+
+  for (const todoEntry of PRESET_PART_IMAGE_TODO) {
+    const relativePath = todoEntry.expectedPath.replace(/^\//, "");
+    const absolutePath = join(publicRoot, relativePath);
+
+    if (!existsSync(absolutePath)) {
+      continue;
+    }
+
+    const sourceEntry = sourceByPartId.get(todoEntry.partId);
+    let downloadedEntry = pickBestDownloadedCandidate(manifest, todoEntry.partId);
+
+    if (!downloadedEntry) {
+      downloadedEntry = createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: sourceEntry?.officialUrl ?? null,
+        imageUrl: null,
+        localPath: absolutePath,
+        status: "downloaded",
+        detail: "Local JPG present; re-evaluating recommendation before retention.",
+      });
+      upsertCandidate(manifest, downloadedEntry);
+    } else {
+      downloadedEntry.status = "downloaded";
+      downloadedEntry.recommendation = recommendCandidate(downloadedEntry);
+    }
+
+    if (
+      downloadedEntry.recommendation === "remove" ||
+      downloadedEntry.recommendation === "unsure"
+    ) {
+      unlinkSync(absolutePath);
+      downloadedEntry.status = "removed_local";
+      removedPartIds.push(todoEntry.partId);
+    }
+  }
+
+  const retainedDownloadedCount = manifest.candidates.filter(
+    (entry) =>
+      entry.status === "downloaded" &&
+      entry.recommendation === "keep for review",
+  ).length;
+
+  manifest.lastCleanup = {
+    date: new Date().toISOString(),
+    removedPartIds,
+    retainedDownloadedCount,
+  };
+  manifest.updatedAt = new Date().toISOString();
+
+  return { manifest, removedPartIds, retainedDownloadedCount };
+}
+
 const isDirectRun =
   process.argv[1] &&
   fileURLToPath(import.meta.url) === join(process.argv[1]);
 
 if (isDirectRun) {
   const manifest = syncDownloadedFilesToManifest(loadDownloadManifest());
+  const { removedPartIds } = cleanupDisallowedLocalImages(manifest);
   writeDownloadReport(manifest);
   console.log(`Wrote ${reportPath}`);
+  if (removedPartIds.length > 0) {
+    console.log(`Removed ${removedPartIds.length} disallowed local JPG(s): ${removedPartIds.join(", ")}`);
+  }
 }
