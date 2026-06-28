@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T05:38:02.364Z",
+  "updatedAt": "2026-06-28T05:49:06.583Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -768,6 +768,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official DJI store O3 Air Unit kit page. No manufacturer-owned image candidates found on page."
+    },
+    {
+      "partId": "dji-o3-camera",
+      "partName": "DJI O3 Camera",
+      "category": "Camera",
+      "sourcePageUrl": "https://store.dji.com/sg/product/dji-o3-air-unit-camera-module",
+      "imageUrl": null,
+      "localPath": "public/parts/cameras/dji-o3-camera.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official DJI store O3 camera module page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "dji-o3-camera",
@@ -1827,11 +1843,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T05:38:02.363Z",
-    "removedPartIds": [
-      "brotherhobby-avenger-2806-5-1300",
-      "foxeer-reaper-nano-v2-vtx"
-    ],
-    "retainedDownloadedCount": 22
+    "date": "2026-06-28T05:49:06.583Z",
+    "removedPartIds": [],
+    "retainedDownloadedCount": 23
   }
 }

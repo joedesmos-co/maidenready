@@ -137,7 +137,9 @@ export const presetPartImageSources = [
     category: "Motors",
     brand: "BrotherHobby",
     officialUrl: "https://brotherhobby.com/avenger-28065-motor-p00132p1.html",
-    urlConfidence: "low",
+    preferredImageUrl:
+      "https://brotherhobby.com/u_file/1906/products/05/1caf0345b0.jpg.500x500.jpg",
+    urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
     notes: "Official Avenger 2806.5 motor family page; KV variants share one URL.",
@@ -185,6 +187,8 @@ export const presetPartImageSources = [
     category: "Camera",
     brand: "DJI",
     officialUrl: "https://store.dji.com/sg/product/dji-o3-air-unit-camera-module",
+    preferredImageUrl:
+      "https://se-cdn.djiits.com/tpc/uploads/spu/cover/684a5cf519e5d94b534f77d2fb0fc737@ultra.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/cameras/dji-o3-camera.jpg",
@@ -341,7 +345,7 @@ export const presetPartImageSources = [
     category: "Motors",
     brand: "iFlight",
     officialUrl: "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-    urlConfidence: "high",
+    urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/iflight-xing-2005-2550.jpg",
     notes: "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page.",
@@ -353,6 +357,8 @@ export const presetPartImageSources = [
     category: "Motors",
     brand: "iFlight",
     officialUrl: "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+    preferredImageUrl:
+      "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-1404/XING2-1404-3800KV.M2.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/iflight-xing2-1404-3800.jpg",
@@ -364,7 +370,9 @@ export const presetPartImageSources = [
     categoryKey: "motors",
     category: "Motors",
     brand: "iFlight",
-    officialUrl: "https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610",
+    officialUrl: "https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464",
+    preferredImageUrl:
+      "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-2207/XING2_2207-1855.M2.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/iflight-xing2-2207-1855.jpg",

@@ -440,10 +440,25 @@ export async function fetchHtml(pageUrl) {
   return response.text();
 }
 
+function imageFetchHeaders(imageUrl) {
+  try {
+    const hostname = new URL(imageUrl).hostname.toLowerCase();
+
+    if (hostname.includes("iflight.oss-cn-hongkong.aliyuncs.com")) {
+      return { Referer: "https://shop.iflight.com/" };
+    }
+  } catch {
+    // Ignore malformed URLs.
+  }
+
+  return {};
+}
+
 export async function fetchImageBuffer(imageUrl) {
   const response = await fetchWithTimeout(imageUrl, {
     accept:
       "image/avif,image/webp,image/apng,image/png,image/jpeg,image/*,*/*;q=0.8",
+    headers: imageFetchHeaders(imageUrl),
   });
 
   if (!response.ok) {

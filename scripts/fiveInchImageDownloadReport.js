@@ -656,7 +656,6 @@ const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
   "geprc-mark4-frame",
   "happymodel-ep2-5inch-elrs",
   "hdzero-nano-90",
-  "hqprop-5x4-5x3-v1s",
   "hypetrain-blaster-2450",
   "lumenier-qav-s-johnnyfpv",
   "walksnail-avatar-gt-vtx",
@@ -947,6 +946,10 @@ export function cleanupDisallowedLocalImages(manifest = loadDownloadManifest()) 
       upsertCandidate(manifest, downloadedEntry);
     } else {
       downloadedEntry.status = "downloaded";
+      if (sourceEntry?.urlConfidence) {
+        downloadedEntry.confidence =
+          sourceEntry.urlConfidence === "low" ? "low" : "high";
+      }
       downloadedEntry.recommendation = recommendCandidate(downloadedEntry);
     }
 

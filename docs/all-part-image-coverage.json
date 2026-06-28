@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-28T05:38:09.324Z",
+  "generatedAt": "2026-06-28T06:03:01.965Z",
   "summary": {
     "total": 294,
-    "found": 38,
-    "missing": 256,
+    "found": 57,
+    "missing": 237,
     "presetPartTotal": 48,
-    "presetPartFound": 22,
-    "presetPartMissing": 26,
+    "presetPartFound": 26,
+    "presetPartMissing": 22,
     "missingByPriority": {
-      "1": 26,
-      "2": 107,
+      "1": 22,
+      "2": 92,
       "3": 123
     }
   },
@@ -70,27 +70,6 @@
         "compatibleClasses": [
           "5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "dji-o3-camera",
-        "partName": "DJI O3 Camera",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/dji-o3-camera.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "camera"
-          }
-        ],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "cinewhoop",
-          "7-inch-long-range"
         ],
         "priority": 1
       },
@@ -375,25 +354,6 @@
         "priority": 1
       },
       {
-        "partId": "brotherhobby-avenger-2806-5-1300",
-        "partName": "BrotherHobby Avenger 2806.5 1300KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "7-long-range-explorer",
-            "presetName": "7\" Long Range Explorer",
-            "buildClass": "7-inch-long-range",
-            "categoryKey": "motors"
-          }
-        ],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "priority": 1
-      },
-      {
         "partId": "iflight-xing-2005-2550",
         "partName": "iFlight XING 2005 2550KV",
         "categoryKey": "motors",
@@ -409,44 +369,6 @@
         ],
         "compatibleClasses": [
           "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "iflight-xing2-1404-3800",
-        "partName": "iFlight XING2 1404 3800KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/iflight-xing2-1404-3800.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "3-5-park-freestyle",
-            "presetName": "3.5\" Park Freestyle",
-            "buildClass": "3.5-inch-freestyle",
-            "categoryKey": "motors"
-          }
-        ],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "iflight-xing2-2207-1855",
-        "partName": "iFlight XING2 2207 1855KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/iflight-xing2-2207-1855.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "standard-5-freestyle",
-            "presetName": "Standard 5\" Freestyle",
-            "buildClass": "5-inch-freestyle",
-            "categoryKey": "motors"
-          }
-        ],
-        "compatibleClasses": [
-          "5-inch-freestyle"
         ],
         "priority": 1
       },
@@ -659,18 +581,6 @@
         "compatibleClasses": [
           "5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "tattu-rline-6s-1050",
-        "partName": "Tattu R-Line 6S 1050mAh 120C",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/tattu-rline-6s-1050.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
         ],
         "priority": 2
       },
@@ -1277,42 +1187,6 @@
         "priority": 2
       },
       {
-        "partId": "brotherhobby-avenger-2507-1850",
-        "partName": "BrotherHobby Avenger 2507 1850KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/brotherhobby-avenger-2507.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "brotherhobby-returner-r6-2207-1850kv",
-        "partName": "BrotherHobby Returner R6 2207 1850KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "emax-eco-ii-2207-1900kv",
-        "partName": "EMAX ECO II 2207 1900KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/emax-eco-ii-2207-1900kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "emax-eco-ii-2306-1900",
         "partName": "EMAX ECO II 2306 1900KV",
         "categoryKey": "motors",
@@ -1361,30 +1235,6 @@
         "priority": 2
       },
       {
-        "partId": "hypetrain-blaster-2450",
-        "partName": "Hypetrain Blaster 2207 2450KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/hypetrain-blaster-2207.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "iflight-xing2-2207-2750kv",
-        "partName": "iFlight XING2 2207 2750KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/iflight-xing2-2207-2750kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "johnnyfpv-motor-v2-2207-1960kv",
         "partName": "JohnnyFPV V2 2207 1960KV",
         "categoryKey": "motors",
@@ -1401,30 +1251,6 @@
         "partName": "Lumenier AX 2207 1800KV",
         "categoryKey": "motors",
         "imagePath": "/parts/motors/lumenier-2207-1800kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "rcinpower-gts-v2-2207-1950kv",
-        "partName": "RCinPower GTS V2 2207 1950KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "rcinpower-gts-v3-2207-1860",
-        "partName": "RCinPower GTS V3 2207 1860KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/rcinpower-gts-v3-2207.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1517,18 +1343,6 @@
         "priority": 2
       },
       {
-        "partId": "xing-e-pro-2207-1800",
-        "partName": "iFlight XING-E Pro 2207 1800KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/xing-e-pro-2207.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "azure-5148",
         "partName": "Azure Power 5148",
         "categoryKey": "props",
@@ -1601,18 +1415,6 @@
         "priority": 2
       },
       {
-        "partId": "gemfan-5152",
-        "partName": "Gemfan Hurricane 5152",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/gemfan-5152.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "gemfan-hurricane-mck-51433",
         "partName": "Gemfan Hurricane MCK 51433",
         "categoryKey": "props",
@@ -1625,70 +1427,10 @@
         "priority": 2
       },
       {
-        "partId": "hqprop-5135-v2",
-        "partName": "HQProp 5135 V2",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/hqprop-5135-v2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hqprop-5x4-5x3-v1s",
-        "partName": "HQProp 5x4.5x3 V1S",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/hqprop-5x4-5x3-v1s.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hqprop-durable-5040-v2",
-        "partName": "HQProp Durable 5040 V2",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/hqprop-durable-5040-v2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hqprop-ethix-s5",
-        "partName": "HQProp Ethix S5 5x4x3",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/hqprop-ethix-s5.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "hqprop-t3x2-5x3-515",
         "partName": "HQProp T3x2.5x3 515",
         "categoryKey": "props",
         "imagePath": "/parts/props/hqprop-t3x2-5x3-515.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hqprop-v2s-5043",
-        "partName": "HQProp V2S 5x4.3x3",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/hqprop-v2s-5043.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -3336,7 +3078,6 @@
       "ovonic-6s-1300",
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
-      "tattu-rline-6s-1050",
       "tattu-rline-6s-1550",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
@@ -3356,18 +3097,6 @@
       "tattu-4s-1300-cine",
       "tattu-6s-2800-lr-lipo",
       "tattu-rline-4s-650"
-    ],
-    "camera": [
-      "dji-o3-camera",
-      "caddx-turtle-v2",
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "hdzero-nano-90",
-      "walksnail-avatar-micro",
-      "caddx-proview-cine-digital",
-      "caddx-ratel-lucky-whoop",
-      "foxeer-pico-r-whoop"
     ],
     "esc": [
       "betafpv-1s-5a-aio-esc",
@@ -3473,25 +3202,15 @@
       "tbs-source-one7-lr-frame"
     ],
     "motors": [
-      "brotherhobby-avenger-2806-5-1300",
       "iflight-xing-2005-2550",
-      "iflight-xing2-1404-3800",
-      "iflight-xing2-2207-1855",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
-      "brotherhobby-avenger-2507-1850",
-      "brotherhobby-returner-r6-2207-1850kv",
-      "emax-eco-ii-2207-1900kv",
       "emax-eco-ii-2306-1900",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
-      "hypetrain-blaster-2450",
-      "iflight-xing2-2207-2750kv",
       "johnnyfpv-motor-v2-2207-1960kv",
       "lumenier-2207-1800kv",
-      "rcinpower-gts-v2-2207-1950kv",
-      "rcinpower-gts-v3-2207-1860",
       "samguk-v-2207-1960kv",
       "skystars-km2207-1910kv",
       "skystars-km2306-1950kv",
@@ -3499,7 +3218,6 @@
       "tmotor-f60-pro-v-1950",
       "tmotor-velox-v3-1750",
       "tmotor-velox-v3-2207-1950kv",
-      "xing-e-pro-2207-1800",
       "axisflying-2808-1150kv-lr",
       "betafpv-0802-25000kv",
       "betafpv-1404-4600kv",
@@ -3558,6 +3276,17 @@
       "rush-nano-ultimate-whoop-vtx",
       "rush-nano-vtx-park"
     ],
+    "camera": [
+      "caddx-turtle-v2",
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
+      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "walksnail-avatar-micro",
+      "caddx-proview-cine-digital",
+      "caddx-ratel-lucky-whoop",
+      "foxeer-pico-r-whoop"
+    ],
     "props": [
       "azure-5148",
       "azure-vanover-5140",
@@ -3565,14 +3294,8 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
-      "gemfan-5152",
       "gemfan-hurricane-mck-51433",
-      "hqprop-5135-v2",
-      "hqprop-5x4-5x3-v1s",
-      "hqprop-durable-5040-v2",
-      "hqprop-ethix-s5",
       "hqprop-t3x2-5x3-515",
-      "hqprop-v2s-5043",
       "apc-7x4-2-lr",
       "avan-3540-cine-d5",
       "avan-rush-3528",
@@ -3601,7 +3324,6 @@
     "cinewhoop": [
       "betafpv-2s-450-xt30",
       "gnb-4s-1500",
-      "dji-o3-camera",
       "geprc-gep-f411-35a-aio-esc",
       "speedybee-bls-35a-4in1",
       "geprc-gep-f411-35a-aio-fc",
@@ -3652,11 +3374,9 @@
     "5-inch-freestyle": [
       "cnhl-black-6s-1300",
       "gnb-4s-1500",
-      "dji-o3-camera",
       "speedybee-bl32-50a",
       "speedybee-f405-v4",
       "tbs-source-one-v5",
-      "iflight-xing2-2207-1855",
       "dji-o3-air-unit",
       "rush-tank-solo",
       "cnhl-4s-1500-freestyle",
@@ -3669,7 +3389,6 @@
       "ovonic-6s-1300",
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
-      "tattu-rline-6s-1050",
       "tattu-rline-6s-1550",
       "caddx-turtle-v2",
       "foxeer-falkor-2",
@@ -3719,19 +3438,12 @@
       "tbs-source-one-v6-frame",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
-      "brotherhobby-avenger-2507-1850",
-      "brotherhobby-returner-r6-2207-1850kv",
-      "emax-eco-ii-2207-1900kv",
       "emax-eco-ii-2306-1900",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
-      "hypetrain-blaster-2450",
-      "iflight-xing2-2207-2750kv",
       "johnnyfpv-motor-v2-2207-1960kv",
       "lumenier-2207-1800kv",
-      "rcinpower-gts-v2-2207-1950kv",
-      "rcinpower-gts-v3-2207-1860",
       "samguk-v-2207-1960kv",
       "skystars-km2207-1910kv",
       "skystars-km2306-1950kv",
@@ -3739,21 +3451,14 @@
       "tmotor-f60-pro-v-1950",
       "tmotor-velox-v3-1750",
       "tmotor-velox-v3-2207-1950kv",
-      "xing-e-pro-2207-1800",
       "azure-5148",
       "azure-vanover-5140",
       "dalprop-cyclone-5046",
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
-      "gemfan-5152",
       "gemfan-hurricane-mck-51433",
-      "hqprop-5135-v2",
-      "hqprop-5x4-5x3-v1s",
-      "hqprop-durable-5040-v2",
-      "hqprop-ethix-s5",
       "hqprop-t3x2-5x3-515",
-      "hqprop-v2s-5043",
       "frsky-r-xsr",
       "frsky-xsr-sbus",
       "happymodel-ep2-5inch-elrs",
@@ -3767,12 +3472,44 @@
       "tbs-unify-pro32-nano-vtx",
       "walksnail-avatar-gt-vtx"
     ],
+    "tiny-whoop": [
+      "betafpv-1s-5a-aio-esc",
+      "betafpv-f4-1s-aio-fc",
+      "happymodel-ep2-elrs",
+      "foxeer-reaper-nano-v2-vtx",
+      "betafpv-1s-300-hv-bt2",
+      "betafpv-2s-300-ph2",
+      "gn-1s-550-bt2",
+      "tattu-1s-300-hv",
+      "caddx-ratel-lucky-whoop",
+      "foxeer-pico-r-whoop",
+      "betafpv-brushless-1s-aio-esc",
+      "happymodel-happywhoop-aio-esc",
+      "betafpv-f411-1s-aio-fc",
+      "geprc-gep-aio-1s-fc",
+      "happymodel-happywhoop-aio-fc",
+      "geprc-rocket-lite-75-frame",
+      "happymodel-moblite7-frame",
+      "happymodel-mobula7-v2-frame",
+      "newbee-drone-75-pro-frame",
+      "betafpv-0802-25000kv",
+      "emax-e1106-7200kv",
+      "geprc-0901-11000kv",
+      "happymodel-ex0802-19000kv",
+      "happymodel-se0802-22000kv",
+      "newbee-0802-17500kv",
+      "betafpv-40mm-4blade-1535",
+      "emax-avan-40mm-whoop",
+      "gemfan-31mm-4blade-whoop",
+      "hqprop-t65x30-whoop",
+      "happymodel-ep1-dual-elrs",
+      "akk-a5-nano-vtx",
+      "rush-nano-ultimate-whoop-vtx"
+    ],
     "7-inch-long-range": [
-      "dji-o3-camera",
       "skystars-km55a-4in1",
       "matek-h743-mini-lr",
       "rekon7-pro-lr",
-      "brotherhobby-avenger-2806-5-1300",
       "dji-o3-air-unit",
       "rush-tank-solo",
       "foxeer-toothless-2",
@@ -3814,45 +3551,10 @@
       "radiomaster-er5-915-lr",
       "tbs-crossfire-micro-lr"
     ],
-    "tiny-whoop": [
-      "betafpv-1s-5a-aio-esc",
-      "betafpv-f4-1s-aio-fc",
-      "happymodel-ep2-elrs",
-      "foxeer-reaper-nano-v2-vtx",
-      "betafpv-1s-300-hv-bt2",
-      "betafpv-2s-300-ph2",
-      "gn-1s-550-bt2",
-      "tattu-1s-300-hv",
-      "caddx-ratel-lucky-whoop",
-      "foxeer-pico-r-whoop",
-      "betafpv-brushless-1s-aio-esc",
-      "happymodel-happywhoop-aio-esc",
-      "betafpv-f411-1s-aio-fc",
-      "geprc-gep-aio-1s-fc",
-      "happymodel-happywhoop-aio-fc",
-      "geprc-rocket-lite-75-frame",
-      "happymodel-moblite7-frame",
-      "happymodel-mobula7-v2-frame",
-      "newbee-drone-75-pro-frame",
-      "betafpv-0802-25000kv",
-      "emax-e1106-7200kv",
-      "geprc-0901-11000kv",
-      "happymodel-ex0802-19000kv",
-      "happymodel-se0802-22000kv",
-      "newbee-0802-17500kv",
-      "betafpv-40mm-4blade-1535",
-      "emax-avan-40mm-whoop",
-      "gemfan-31mm-4blade-whoop",
-      "hqprop-t65x30-whoop",
-      "happymodel-ep1-dual-elrs",
-      "akk-a5-nano-vtx",
-      "rush-nano-ultimate-whoop-vtx"
-    ],
     "3.5-inch-freestyle": [
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
       "aos-3-5-v5",
-      "iflight-xing2-1404-3800",
       "happymodel-ep2-elrs",
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
@@ -4047,7 +3749,7 @@
       "partName": "DJI O3 Camera",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/dji-o3-camera.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4493,7 +4195,7 @@
       "partName": "BrotherHobby Avenger 2806.5 1300KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4533,7 +4235,7 @@
       "partName": "iFlight XING2 1404 3800KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-1404-3800.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4553,7 +4255,7 @@
       "partName": "iFlight XING2 2207 1855KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-2207-1855.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -5069,7 +4771,7 @@
       "partName": "Tattu R-Line 6S 1050mAh 120C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-6s-1050.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5879,7 +5581,7 @@
       "partName": "BrotherHobby Avenger 2507 1850KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-avenger-2507.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5892,7 +5594,7 @@
       "partName": "BrotherHobby Returner R6 2207 1850KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5905,7 +5607,7 @@
       "partName": "EMAX ECO II 2207 1900KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/emax-eco-ii-2207-1900kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5970,7 +5672,7 @@
       "partName": "Hypetrain Blaster 2207 2450KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/hypetrain-blaster-2207.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5983,7 +5685,7 @@
       "partName": "iFlight XING2 2207 2750KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-2207-2750kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6022,7 +5724,7 @@
       "partName": "RCinPower GTS V2 2207 1950KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6035,7 +5737,7 @@
       "partName": "RCinPower GTS V3 2207 1860KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/rcinpower-gts-v3-2207.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6139,7 +5841,7 @@
       "partName": "iFlight XING-E Pro 2207 1800KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/xing-e-pro-2207.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6243,7 +5945,7 @@
       "partName": "Gemfan Hurricane 5152",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-5152.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6295,7 +5997,7 @@
       "partName": "HQProp 5135 V2",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-5135-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6308,7 +6010,7 @@
       "partName": "HQProp 5x4.5x3 V1S",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-5x4-5x3-v1s.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6321,7 +6023,7 @@
       "partName": "HQProp Durable 5040 V2",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-durable-5040-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6334,7 +6036,7 @@
       "partName": "HQProp Ethix S5 5x4x3",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-ethix-s5.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6360,7 +6062,7 @@
       "partName": "HQProp V2S 5x4.3x3",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-v2s-5043.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

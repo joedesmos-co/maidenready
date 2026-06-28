@@ -11,8 +11,12 @@
     "audit:all-images": "node scripts/auditAllPartImages.js",
     "images:fetch-presets": "node scripts/fetchPresetImages.js",
     "images:fetch-five-inch": "node scripts/fetchFiveInchImages.js",
+    "images:fetch-easy-categories": "node scripts/fetchEasyCategoryImages.js",
+    "images:fetch-motors": "node scripts/fetchMotorImages.js",
     "images:report": "node scripts/presetImageDownloadReport.js",
     "images:report-five-inch": "node scripts/fiveInchImageDownloadReport.js",
+    "images:report-easy-categories": "node scripts/easyCategoryImageDownloadReport.js",
+    "images:report-motors": "node scripts/motorImageDownloadReport.js",
     "images:folders": "node scripts/createImageFolders.js",
     "validate:stats": "node scripts/validatePresetStats.js"
   },

@@ -5,15 +5,15 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-28T05:38:02.364Z
+Last updated: 2026-06-28T05:49:06.583Z
 
-Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); **22** retained for review.
+Last local cleanup: 2026-06-28T05:49:06.583Z — removed 0 unsure local JPG(s); **23** retained for review.
 
 ## Summary
 
-- Downloaded local JPG candidates: **22**
+- Downloaded local JPG candidates: **23**
 - Rejected / not saved candidates: **92**
-- Recommendation counts: **22 keep for review**, **0 unsure**, **92 remove**
+- Recommendation counts: **23 keep for review**, **0 unsure**, **92 remove**
 
 ## Rules applied
 
@@ -129,7 +129,22 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Caddx Ant analog camera page.
 
-### 8. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
+### 8. DJI O3 Camera (`dji-o3-camera`)
+
+- **Category:** Camera
+- **Manufacturer/source page URL:** https://store.dji.com/sg/product/dji-o3-air-unit-camera-module
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/cameras/dji-o3-camera.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official DJI store O3 camera module page. Local JPG present; re-evaluating recommendation before retention.
+
+### 9. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/35mm-pc-3-blade.html
@@ -144,7 +159,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 35mm 3-blade whoop prop page.
 
-### 9. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
+### 10. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/40mm-1613-pc-4-blade.html
@@ -159,7 +174,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 40mm 4-blade whoop prop page.
 
-### 10. Gemfan Hurricane 51466 (`gemfan-51466`)
+### 11. Gemfan Hurricane 51466 (`gemfan-51466`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html
@@ -174,7 +189,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Replaced DAL Cyclone T5046C; official Gemfan Hurricane 51466 page.
 
-### 11. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
+### 12. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/3520-hurricane-pc-3-blade-t-mount.html
@@ -189,7 +204,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 3520 3-blade prop page.
 
-### 12. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
+### 13. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.hqprop.com/hq-durable-prop-7x35x3v1s-2cw2ccw-poly-carbonate-p0132.html
@@ -204,7 +219,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 7x3.5x3 prop page.
 
-### 13. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
+### 14. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hqprop-duct-t90mmx3-for-cinewhoop-grey-2cw2ccw-poly-carbonate-p0351.html
@@ -219,7 +234,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Renamed from Duct-T90 3.5x2.8x5 to match official HQProp Duct T90 3-blade page.
 
-### 14. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+### 15. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
@@ -234,7 +249,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster ER6 ELRS receiver product page.
 
-### 15. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+### 16. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
@@ -249,7 +264,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page.
 
-### 16. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
+### 17. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-4-ntsc-only/
@@ -264,7 +279,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Nano 4 whoop camera page.
 
-### 17. RunCam Phoenix 2 (`runcam-phoenix-2`)
+### 18. RunCam Phoenix 2 (`runcam-phoenix-2`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-phoenix-2/
@@ -279,7 +294,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Phoenix 2 camera page.
 
-### 18. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
+### 19. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-450mah-3.8v-high-voltage-75c-1s1p-lipo-battery-pack-with-bt-2.0-plug-5pcs/
@@ -294,7 +309,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu/Grepow 1S 450mAh HV BT2.0 page.
 
-### 19. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
+### 20. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug.html
@@ -309,7 +324,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 4S 850mAh page.
 
-### 20. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
+### 21. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-2200mah-6s-95c-22-2v-r-line-lipo-battery-with-xt60-plug-for-7-quad/
@@ -324,7 +339,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Replaced Molicel custom Li-ion pack; official Tattu R-Line 6S 2200mAh for 7-inch page.
 
-### 21. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
+### 22. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_nano_rx
@@ -339,7 +354,7 @@ Last local cleanup: 2026-06-28T05:38:02.363Z — removed 2 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Crossfire Nano RX store page.
 
-### 22. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
+### 23. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_hv

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T05:38:02.191Z",
+  "updatedAt": "2026-06-28T05:50:07.933Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -921,13 +921,13 @@
       "imageUrl": "https://img03.71360.com/w3/5p3560/20251221/e0d67d0ab3f1e8eda68c5f74a53ca5da.jpg",
       "localPath": "public/parts/props/gemfan-5152.jpg",
       "sourceType": "manufacturer page",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "Manufacturer CDN host; no watermark noted from URL review only.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "No Hurricane 5152 listing; Gemfan 5152S Flash 3-blade is closest official 5152-class prop. Rejected after manual review: low-confidence source; removed per cleanup policy."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "No Hurricane 5152 listing; Gemfan 5152S Flash 3-blade is closest official 5152-class prop. Rejected after manual review: low-confidence source; removed per cleanup policy. Rejected after manual review: low-confidence source; removed per cleanup policy. Rejected after manual review: low-confidence source; removed per cleanup policy."
     },
     {
       "partId": "gemfan-5152",
@@ -1253,6 +1253,22 @@
       "partId": "hqprop-5135-v2",
       "partName": "HQProp 5135 V2",
       "category": "Props",
+      "sourcePageUrl": "https://hqprop.com/hq-durable-prop-5135-v2-2cw2ccw-poly-carbonate-p0123.html",
+      "imageUrl": null,
+      "localPath": "public/parts/props/hqprop-5135-v2.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HQProp 5135 V2 prop page. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "hqprop-5135-v2",
+      "partName": "HQProp 5135 V2",
+      "category": "Props",
       "sourcePageUrl": "https://www.hqprop.com/hqprop-5135-v2-p00144p1.html",
       "imageUrl": null,
       "localPath": "public/parts/props/hqprop-5135-v2.jpg",
@@ -1277,9 +1293,25 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official HQProp 5x4.5x3 V1S durable prop page. Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HQProp 5x4.5x3 V1S durable prop page. Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU. Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU."
+    },
+    {
+      "partId": "hqprop-durable-5040-v2",
+      "partName": "HQProp Durable 5040 V2",
+      "category": "Props",
+      "sourcePageUrl": "https://hqprop.com/hq-durable-prop-5040-v2-2cw2ccw-poly-carbonate-p0144.html",
+      "imageUrl": null,
+      "localPath": "public/parts/props/hqprop-durable-5040-v2.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HQProp Durable 5040 V2 prop page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "hqprop-durable-5040-v2",
@@ -1296,6 +1328,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official HQProp Durable 5040 V2 prop page. HTTP 404 for page https://www.hqprop.com/hqprop-durable-5040-v2-p00145p1.html"
+    },
+    {
+      "partId": "hqprop-ethix-s5",
+      "partName": "HQProp Ethix S5 5x4x3",
+      "category": "Props",
+      "sourcePageUrl": "https://hqprop.com/hq-durable-prop-ethix-s5-5x4x3-2cw2ccw-poly-carbonate-p0201.html",
+      "imageUrl": null,
+      "localPath": "public/parts/props/hqprop-ethix-s5.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HQProp Ethix S5 5x4x3 prop page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "hqprop-ethix-s5",
@@ -1328,6 +1376,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official HQProp T3x2.5x3 515 prop page. HTTP 404 for page https://www.hqprop.com/hqprop-t3x2-5x3-515-p00147p1.html"
+    },
+    {
+      "partId": "hqprop-v2s-5043",
+      "partName": "HQProp V2S 5x4.3x3",
+      "category": "Props",
+      "sourcePageUrl": "https://hqprop.com/hq-durable-prop-5x43x3v2s-2cw2ccw-poly-carbonate-p0098.html",
+      "imageUrl": null,
+      "localPath": "public/parts/props/hqprop-v2s-5043.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HQProp V2S 5x4.3x3 prop page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "hqprop-v2s-5043",
@@ -2341,6 +2405,22 @@
       "partId": "tattu-rline-6s-1050",
       "partName": "Tattu R-Line 6S 1050mAh 120C",
       "category": "Battery",
+      "sourcePageUrl": "https://www.genstattu.com/ta-rl3-120c-1050-6s1p.html",
+      "imageUrl": null,
+      "localPath": "public/parts/batteries/tattu-rline-6s-1050.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Tattu R-Line 6S 1050mAh 120C battery page. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "tattu-rline-6s-1050",
+      "partName": "Tattu R-Line 6S 1050mAh 120C",
+      "category": "Battery",
       "sourcePageUrl": "https://www.genstattu.com/tattu-r-line-1050mah-22-2v-6s-120c-lipo-battery-pack-with-xt60-plug.html",
       "imageUrl": null,
       "localPath": "public/parts/batteries/tattu-rline-6s-1050.jpg",
@@ -2675,44 +2755,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T05:38:02.191Z",
-    "removedPartIds": [
-      "armattan-badger5-frame",
-      "geprc-mark4-frame",
-      "lumenier-qav-s-johnnyfpv",
-      "brotherhobby-avenger-2507-1850",
-      "brotherhobby-returner-r6-2207-1850kv",
-      "emax-eco-ii-2207-1900kv",
-      "emax-eco-ii-2306-1900",
-      "fpvcycle-2207-1780kv",
-      "fpvcycle-2207-1960",
-      "hypetrain-acer-2306-1950kv",
-      "hypetrain-blaster-2450",
-      "johnnyfpv-motor-v2-2207-1960kv",
-      "lumenier-2207-1800kv",
-      "foxeer-reaper-f4-65a",
-      "meps-konvex-f55-55a-4in1",
-      "meps-konvex-g2-50a",
-      "diatone-mamba-f722",
-      "foxeer-f722-v4",
-      "foxeer-h743-f722-fc",
-      "matek-h743-slate-freestyle",
-      "ethix-p3-peanut-butter",
-      "ethix-s3-5050",
-      "gemfan-5152",
-      "gemfan-hurricane-mck-51433",
-      "hqprop-5x4-5x3-v1s",
-      "cnhl-6s-1500-freestyle",
-      "frsky-r-xsr",
-      "frsky-xsr-sbus",
-      "happymodel-ep2-5inch-elrs",
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "hdzero-nano-90",
-      "walksnail-avatar-micro",
-      "walksnail-avatar-gt-vtx"
-    ],
-    "retainedDownloadedCount": 16
+    "date": "2026-06-28T05:50:07.933Z",
+    "removedPartIds": [],
+    "retainedDownloadedCount": 24
   }
 }
