@@ -10,14 +10,18 @@
     "audit:images": "node scripts/auditPresetImages.js",
     "audit:all-images": "node scripts/auditAllPartImages.js",
     "images:fetch-presets": "node scripts/fetchPresetImages.js",
+    "images:fetch-five-inch": "node scripts/fetchFiveInchImages.js",
     "images:report": "node scripts/presetImageDownloadReport.js",
+    "images:report-five-inch": "node scripts/fiveInchImageDownloadReport.js",
     "images:folders": "node scripts/createImageFolders.js",
     "validate:stats": "node scripts/validatePresetStats.js"
   },
   "dependencies": {
-    "vite": "^8.1.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "vite": "^8.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sharp": "^0.35.2"
+  }
 }

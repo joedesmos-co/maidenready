@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T04:44:30.663Z",
+  "updatedAt": "2026-06-28T05:38:02.364Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -13,9 +13,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "keep for review",
-      "status": "downloaded",
-      "notes": "Official AOS RC design page for AOS 3.5 V5 frame."
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official AOS RC design page for AOS 3.5 V5 frame. Local JPG missing on disk during report sync."
     },
     {
       "partId": "aos-3-5-v5",
@@ -237,9 +237,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "keep for review",
-      "status": "downloaded",
-      "notes": "Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page."
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Local JPG missing on disk during report sync."
     },
     {
       "partId": "betafpv-2s-450-xt30",
@@ -582,6 +582,22 @@
       "partName": "BrotherHobby Avenger 2806.5 1300KV",
       "category": "Motors",
       "sourcePageUrl": "https://brotherhobby.com/avenger-28065-motor-p00132p1.html",
+      "imageUrl": "https://brotherhobby.com/u_file/1906/products/05/1caf0345b0.jpg.500x500.jpg",
+      "localPath": "public/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official Avenger 2806.5 motor family page; KV variants share one URL."
+    },
+    {
+      "partId": "brotherhobby-avenger-2806-5-1300",
+      "partName": "BrotherHobby Avenger 2806.5 1300KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://brotherhobby.com/avenger-28065-motor-p00132p1.html",
       "imageUrl": null,
       "localPath": "public/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
       "sourceType": "manufacturer page",
@@ -592,6 +608,22 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official Avenger 2806.5 motor family page; KV variants share one URL. Skipped low-confidence source URL (use --include-low-confidence)."
+    },
+    {
+      "partId": "caddx-ant-nano",
+      "partName": "Caddx Ant Nano",
+      "category": "Camera",
+      "sourcePageUrl": "https://www.caddxfpv.com/products/caddx-ant-analog-camera",
+      "imageUrl": "https://www.caddxfpv.com/cdn/shop/products/AnalogFPVCameraCaddxAnt2.jpg?v=1616109799",
+      "localPath": "public/parts/cameras/caddx-ant-nano.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Caddx Ant analog camera page."
     },
     {
       "partId": "caddx-ant-nano",
@@ -645,7 +677,7 @@
       "partId": "cnhl-black-6s-1300",
       "partName": "CNHL Black Series 6S 1300mAh 100C",
       "category": "Battery",
-      "sourcePageUrl": "https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug",
+      "sourcePageUrl": "https://chinahobbyline.com/products/cnhl-black-series-1300mah-22-2v-6s-100c-lipo-battery-with-xt60-plug-4-packs",
       "imageUrl": "https://chinahobbyline.com/cdn/shop/files/1_883e2525-41c0-4434-b870-328ee3fb73c9_1024x1024.jpg?v=1728638515",
       "localPath": "public/parts/batteries/cnhl-black-6s-1300.jpg",
       "sourceType": "manufacturer page",
@@ -653,9 +685,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "keep for review",
-      "status": "downloaded",
-      "notes": "Official CNHL store Black Series V2.0 6S 1300mAh listing."
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official CNHL Black Series 6S 1300mAh 100C listing (stock 1301006BK); manufacturer store only sells multi-pack bundles. Local JPG missing on disk during report sync."
     },
     {
       "partId": "cnhl-black-6s-1300",
@@ -735,7 +767,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Official DJI store O3 Air Unit kit page. No manufacturer-owned JPEG candidates found on page."
+      "notes": "Official DJI store O3 Air Unit kit page. No manufacturer-owned image candidates found on page."
     },
     {
       "partId": "dji-o3-camera",
@@ -767,7 +799,23 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Official DJI store O3 camera module page. No manufacturer-owned JPEG candidates found on page."
+      "notes": "Official DJI store O3 camera module page. No manufacturer-owned image candidates found on page."
+    },
+    {
+      "partId": "foxeer-reaper-nano-v2-vtx",
+      "partName": "Foxeer Reaper Nano V2 VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583",
+      "imageUrl": "https://inew.foxeer.com//upload/s/goods/2024-12-13/15-48-28-675be6ccb8c74.images.800x800.png",
+      "localPath": "public/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
     },
     {
       "partId": "foxeer-reaper-nano-v2-vtx",
@@ -991,7 +1039,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Replaced gnb-4s-1500-cine duplicate; no exact 1500mAh page on gaoneng.shop — closest official GNB 4S listing is 1850mAh. Skipped low-confidence source URL (use --include-low-confidence)."
+      "notes": "Replaced gnb-4s-1500-cine duplicate; no exact 1500mAh page on gaoneng.shop — closest official GNB 4S listing is 1850mAh. No exact 1500mAh official product page; closest gaoneng.shop listing is a different capacity."
     },
     {
       "partId": "happymodel-ep2-elrs",
@@ -1005,9 +1053,25 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "keep for review",
-      "status": "downloaded",
-      "notes": "Official Happymodel EP2 ELRS receiver product page."
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official Happymodel EP2 ELRS receiver product page. Local JPG missing on disk during report sync."
+    },
+    {
+      "partId": "happymodel-ep2-elrs",
+      "partName": "Happymodel EP2 ELRS",
+      "category": "Receiver",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/happymodel-ep2-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official Happymodel EP2 ELRS receiver product page. Manufacturer page only exposes a shared EP1/EP2/EP1 Dual comparison image."
     },
     {
       "partId": "hqprop-7x3-5x3",
@@ -1046,7 +1110,7 @@
       "partName": "iFlight XING 2005 2550KV",
       "category": "Motors",
       "sourcePageUrl": "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING-2205/2205-shaft-2.png",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
       "localPath": "public/parts/motors/iflight-xing-2005-2550.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
@@ -1055,14 +1119,14 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING-2205/2205-shaft-2.png"
+      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
     },
     {
       "partId": "iflight-xing-2005-2550",
       "partName": "iFlight XING 2005 2550KV",
       "category": "Motors",
       "sourcePageUrl": "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-      "imageUrl": "https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
       "localPath": "public/parts/motors/iflight-xing-2005-2550.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
@@ -1071,14 +1135,14 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
+      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
     },
     {
       "partId": "iflight-xing-2005-2550",
       "partName": "iFlight XING 2005 2550KV",
       "category": "Motors",
       "sourcePageUrl": "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-      "imageUrl": "https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260609/084249/admin15/34846.png?imageView2/1/w/200/h/200/",
       "localPath": "public/parts/motors/iflight-xing-2005-2550.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
@@ -1087,7 +1151,39 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
+      "notes": "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260609/084249/admin15/34846.png?imageView2/1/w/200/h/200/"
+    },
+    {
+      "partId": "iflight-xing2-1404-3800",
+      "partName": "iFlight XING2 1404 3800KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
+      "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "failed",
+      "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
+    },
+    {
+      "partId": "iflight-xing2-1404-3800",
+      "partName": "iFlight XING2 1404 3800KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
+      "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "failed",
+      "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
     },
     {
       "partId": "iflight-xing2-1404-3800",
@@ -1106,12 +1202,12 @@
       "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260317/165007/admin15/68890.png?imageView2/1/w/100/h/100/"
     },
     {
-      "partId": "iflight-xing2-1404-3800",
-      "partName": "iFlight XING2 1404 3800KV",
+      "partId": "iflight-xing2-2207-1855",
+      "partName": "iFlight XING2 2207 1855KV",
       "category": "Motors",
-      "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
-      "imageUrl": "https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
-      "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
+      "sourcePageUrl": "https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
+      "localPath": "public/parts/motors/iflight-xing2-2207-1855.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
       "appearance": "product photo",
@@ -1119,15 +1215,15 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
+      "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
     },
     {
-      "partId": "iflight-xing2-1404-3800",
-      "partName": "iFlight XING2 1404 3800KV",
+      "partId": "iflight-xing2-2207-1855",
+      "partName": "iFlight XING2 2207 1855KV",
       "category": "Motors",
-      "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
-      "imageUrl": "https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
-      "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
+      "sourcePageUrl": "https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
+      "localPath": "public/parts/motors/iflight-xing2-2207-1855.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
       "appearance": "product photo",
@@ -1135,7 +1231,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
+      "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
     },
     {
       "partId": "iflight-xing2-2207-1855",
@@ -1154,36 +1250,20 @@
       "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260529/103309/admin15/20143.png?imageView2/1/w/100/h/100/"
     },
     {
-      "partId": "iflight-xing2-2207-1855",
-      "partName": "iFlight XING2 2207 1855KV",
-      "category": "Motors",
-      "sourcePageUrl": "https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610",
-      "imageUrl": "https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
-      "localPath": "public/parts/motors/iflight-xing2-2207-1855.jpg",
+      "partId": "matek-h743-mini-lr",
+      "partName": "Matek H743 Mini LR",
+      "category": "Flight Controller",
+      "sourcePageUrl": "https://www.mateksys.com/?portfolio=h743-mini",
+      "imageUrl": "https://www.mateksys.com/wp-content/uploads/2020/10/H743-MINI_1.jpg",
+      "localPath": "public/parts/flight-controllers/matek-h743-mini-lr.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
       "recommendation": "remove",
-      "status": "failed",
-      "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg"
-    },
-    {
-      "partId": "iflight-xing2-2207-1855",
-      "partName": "iFlight XING2 2207 1855KV",
-      "category": "Motors",
-      "sourcePageUrl": "https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610",
-      "imageUrl": "https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
-      "localPath": "public/parts/motors/iflight-xing2-2207-1855.jpg",
-      "sourceType": "manufacturer page",
-      "confidence": "high",
-      "appearance": "product photo",
-      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
-      "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "failed",
-      "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://shop.iflight.com/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg"
+      "status": "removed_local",
+      "notes": "Official Matek H743-MINI portfolio page. Rejected after manual review: manufacturer spec-sheet composite (FC photo + specs text), not an isolated product packshot. Local JPG missing on disk during report sync."
     },
     {
       "partId": "matek-h743-mini-lr",
@@ -1430,6 +1510,22 @@
       "partName": "Rush Tank Solo 5.8GHz",
       "category": "VTX",
       "sourcePageUrl": "https://rushfpv.net/products/tank-solo-vtx",
+      "imageUrl": "http://rushfpv.net/cdn/shop/products/005d8391-1615-49d1-a617-2913ee50b36d_1200x1200.jpg?v=1659590919",
+      "localPath": "public/parts/vtx/rush-tank-solo.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: official gallery images are macro marketing crops or lifestyle scenes, not isolated VTX packshots. Local JPG missing on disk during report sync."
+    },
+    {
+      "partId": "rush-tank-solo",
+      "partName": "Rush Tank Solo 5.8GHz",
+      "category": "VTX",
+      "sourcePageUrl": "https://rushfpv.net/products/tank-solo-vtx",
       "imageUrl": "https://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920",
       "localPath": "public/parts/vtx/rush-tank-solo.jpg",
       "sourceType": "manufacturer page",
@@ -1597,9 +1693,25 @@
       "appearance": "product photo",
       "watermarkOrBranding": "No obvious watermark seen in URL metadata; official store CDN image — still unverified for reuse.",
       "imageNeedsReview": true,
-      "recommendation": "keep for review",
-      "status": "downloaded",
-      "notes": "Official F405 V4 stack page."
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official F405 V4 stack page. Local JPG missing on disk during report sync."
+    },
+    {
+      "partId": "speedybee-f405-v4",
+      "partName": "SpeedyBee F405 V4",
+      "category": "Flight Controller",
+      "sourcePageUrl": "https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/",
+      "imageUrl": null,
+      "localPath": "public/parts/flight-controllers/speedybee-f405-v4.jpg",
+      "sourceType": "unknown",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official F405 V4 stack page. Manufacturer page is FC+ESC stack; no isolated FC packshot."
     },
     {
       "partId": "tattu-1s-450-hv",
@@ -1715,8 +1827,11 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T04:44:30.662Z",
-    "removedPartIds": [],
-    "retainedDownloadedCount": 26
+    "date": "2026-06-28T05:38:02.363Z",
+    "removedPartIds": [
+      "brotherhobby-avenger-2806-5-1300",
+      "foxeer-reaper-nano-v2-vtx"
+    ],
+    "retainedDownloadedCount": 22
   }
 }

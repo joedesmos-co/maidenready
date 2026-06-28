@@ -1,20 +1,58 @@
 {
-  "generatedAt": "2026-06-28T04:45:16.886Z",
+  "generatedAt": "2026-06-28T05:38:09.324Z",
   "summary": {
     "total": 294,
-    "found": 26,
-    "missing": 268,
+    "found": 38,
+    "missing": 256,
     "presetPartTotal": 48,
-    "presetPartFound": 26,
-    "presetPartMissing": 22,
+    "presetPartFound": 22,
+    "presetPartMissing": 26,
     "missingByPriority": {
-      "1": 22,
-      "2": 123,
+      "1": 26,
+      "2": 107,
       "3": 123
     }
   },
   "missingByPriority": {
     "1": [
+      {
+        "partId": "betafpv-2s-450-xt30",
+        "partName": "BETAFPV 450mAh 2S 45C XT30",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "cnhl-black-6s-1300",
+        "partName": "CNHL Black Series 6S 1300mAh 100C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 1
+      },
       {
         "partId": "gnb-4s-1500",
         "partName": "GNB 4S 1500mAh 120C",
@@ -32,32 +70,6 @@
         "compatibleClasses": [
           "5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "caddx-ant-nano",
-        "partName": "Caddx Ant Nano",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/caddx-ant-nano.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-beginner",
-            "presetName": "Tiny Whoop Beginner",
-            "buildClass": "tiny-whoop",
-            "categoryKey": "camera"
-          },
-          {
-            "presetId": "3-5-park-freestyle",
-            "presetName": "3.5\" Park Freestyle",
-            "buildClass": "3.5-inch-freestyle",
-            "categoryKey": "camera"
-          }
-        ],
-        "compatibleClasses": [
-          "tiny-whoop",
-          "3.5-inch-freestyle"
         ],
         "priority": 1
       },
@@ -268,6 +280,44 @@
         "priority": 1
       },
       {
+        "partId": "speedybee-f405-v4",
+        "partName": "SpeedyBee F405 V4",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/speedybee-f405-v4.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "flightController"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "aos-3-5-v5",
+        "partName": "AOS 3.5 V5",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/aos-3-5-v5.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
         "partId": "geprc-cinelog35-v2",
         "partName": "GEPRC Cinelog35 V2",
         "categoryKey": "frame",
@@ -401,6 +451,32 @@
         "priority": 1
       },
       {
+        "partId": "happymodel-ep2-elrs",
+        "partName": "Happymodel EP2 ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "receiver"
+          },
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
         "partId": "dji-o3-air-unit",
         "partName": "DJI O3 Air Unit",
         "categoryKey": "vtx",
@@ -485,19 +561,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "cnhl-ministar-6s-1500",
-        "partName": "CNHL Ministar 6S 1500mAh 120C",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/cnhl-ministar-6s-1500.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "cinewhoop"
         ],
         "priority": 2
       },
@@ -612,18 +675,6 @@
         "priority": 2
       },
       {
-        "partId": "tattu-rline-6s-1400",
-        "partName": "Tattu R-Line 6S 1400mAh 130C",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/tattu-rline-6s-1400.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "tattu-rline-6s-1550",
         "partName": "Tattu R-Line 6S 1550mAh 130C",
         "categoryKey": "battery",
@@ -632,20 +683,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "caddx-ratel-2",
-        "partName": "Caddx Ratel 2",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/caddx-ratel-2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle",
-          "5-inch-freestyle",
-          "cinewhoop"
         ],
         "priority": 2
       },
@@ -714,30 +751,6 @@
         "priority": 2
       },
       {
-        "partId": "runcam-nano-2",
-        "partName": "RunCam Nano 2",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/runcam-nano-2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "runcam-racer-2",
-        "partName": "RunCam Racer 2",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/runcam-racer-2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "walksnail-avatar-micro",
         "partName": "Walksnail Avatar Micro",
         "categoryKey": "camera",
@@ -774,30 +787,6 @@
           "3.5-inch-freestyle",
           "5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "diatone-mamba-f55-128k",
-        "partName": "Diatone Mamba F55 128K 4-in-1",
-        "categoryKey": "esc",
-        "imagePath": "/parts/escs/diatone-mamba-f55-128k.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "diatone-mamba-f55-pro-esc",
-        "partName": "Diatone Mamba F55 Pro 55A 4-in-1",
-        "categoryKey": "esc",
-        "imagePath": "/parts/escs/diatone-mamba-f55-pro-esc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
         ],
         "priority": 2
       },
@@ -1022,19 +1011,6 @@
         "priority": 2
       },
       {
-        "partId": "holybro-kakute-h7-v2",
-        "partName": "Holybro Kakute H7 V2",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/holybro-kakute-h7-v2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "7-inch-long-range"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "iflight-beast-f722-fc",
         "partName": "iFlight Beast F722 FC",
         "categoryKey": "flightController",
@@ -1145,30 +1121,6 @@
         "priority": 2
       },
       {
-        "partId": "armattan-marmotte",
-        "partName": "Armattan Marmotte 5-inch",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/armattan-marmotte.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "diatone-roma-f5-frame",
-        "partName": "Diatone Roma F5 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/diatone-roma-f5-frame.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "ethix-lithium5-frame",
         "partName": "Ethix Lithium5 Frame",
         "categoryKey": "frame",
@@ -1197,18 +1149,6 @@
         "partName": "GEPRC Mark4 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/geprc-mark4-frame.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "geprc-mark5",
-        "partName": "GEPRC Mark5 Deadcat",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-mark5-deadcat.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1293,18 +1233,6 @@
         "partName": "Lumenier QAV-S JohnnyFPV SE",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "rotor-riot-cl2",
-        "partName": "Rotor Riot CL2 5-inch",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/rotor-riot-cl2.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1673,46 +1601,10 @@
         "priority": 2
       },
       {
-        "partId": "gemfan-51433",
-        "partName": "Gemfan Hurricane 51433",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "gemfan-5152",
         "partName": "Gemfan Hurricane 5152",
         "categoryKey": "props",
         "imagePath": "/parts/props/gemfan-5152.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "gemfan-5236",
-        "partName": "Gemfan Hurricane 5236",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/gemfan-hurricane-5236.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "gemfan-hurricane-51499",
-        "partName": "Gemfan Hurricane 51499",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/gemfan-hurricane-51499.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1946,20 +1838,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "walksnail-avatar-hd-v2",
-        "partName": "Walksnail Avatar HD V2 VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/walksnail-avatar-hd-v2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "cinewhoop",
-          "7-inch-long-range"
         ],
         "priority": 2
       }
@@ -3445,10 +3323,11 @@
   },
   "missingByCategory": {
     "battery": [
+      "betafpv-2s-450-xt30",
+      "cnhl-black-6s-1300",
       "gnb-4s-1500",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
-      "cnhl-ministar-6s-1500",
       "gnb-6s-1300-hv",
       "gnb-6s-1400-freestyle",
       "lumenier-6s-1100",
@@ -3458,7 +3337,6 @@
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
       "tattu-rline-6s-1050",
-      "tattu-rline-6s-1400",
       "tattu-rline-6s-1550",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
@@ -3480,16 +3358,12 @@
       "tattu-rline-4s-650"
     ],
     "camera": [
-      "caddx-ant-nano",
       "dji-o3-camera",
-      "caddx-ratel-2",
       "caddx-turtle-v2",
       "foxeer-falkor-2",
       "foxeer-predator-v5",
       "foxeer-toothless-2",
       "hdzero-nano-90",
-      "runcam-nano-2",
-      "runcam-racer-2",
       "walksnail-avatar-micro",
       "caddx-proview-cine-digital",
       "caddx-ratel-lucky-whoop",
@@ -3503,8 +3377,6 @@
       "speedybee-bls-35a-4in1",
       "aikon-ak32-50a-4in1",
       "aikon-f7-mini-35a",
-      "diatone-mamba-f55-128k",
-      "diatone-mamba-f55-pro-esc",
       "foxeer-reaper-f4-65a",
       "hglrc-tekko32-f55-mini-esc",
       "hobbywing-xrotor-60a",
@@ -3534,6 +3406,7 @@
       "geprc-gep-f411-35a-aio-fc",
       "matek-h743-mini-lr",
       "speedybee-f405-mini",
+      "speedybee-f405-v4",
       "atomrc-f405-fc",
       "axisflying-h743-mini",
       "diatone-mamba-f722",
@@ -3541,7 +3414,6 @@
       "foxeer-f722-v4",
       "foxeer-h743-f722-fc",
       "hglrc-f722-silver-fc",
-      "holybro-kakute-h7-v2",
       "iflight-beast-f722-fc",
       "jhemcu-g743-pro-fc",
       "matek-f405-se-fc",
@@ -3563,17 +3435,15 @@
       "matek-h743-wing-lr-fc"
     ],
     "frame": [
+      "aos-3-5-v5",
       "geprc-cinelog35-v2",
       "rekon7-pro-lr",
       "tbs-source-one-v5",
       "aos-5-v5",
       "armattan-badger5-frame",
-      "armattan-marmotte",
-      "diatone-roma-f5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
       "geprc-mark4-frame",
-      "geprc-mark5",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
       "iflight-nazgul5-v3-frame",
@@ -3581,7 +3451,6 @@
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
       "lumenier-qav-s-johnnyfpv",
-      "rotor-riot-cl2",
       "tbs-source-one-v6-frame",
       "betafpv-pavo30-cine-frame",
       "betafpv-pavo3516-frame",
@@ -3659,6 +3528,19 @@
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
     ],
+    "receiver": [
+      "happymodel-ep2-elrs",
+      "frsky-r-xsr",
+      "frsky-xsr-sbus",
+      "happymodel-ep2-5inch-elrs",
+      "imm-rc-fusion-v2-elrs",
+      "jhemcu-ep28-elrs",
+      "tbs-crossfire-micro-v2",
+      "happymodel-cine-ep2-elrs",
+      "happymodel-ep1-dual-elrs",
+      "radiomaster-er5-915-lr",
+      "tbs-crossfire-micro-lr"
+    ],
     "vtx": [
       "dji-o3-air-unit",
       "foxeer-reaper-nano-v2-vtx",
@@ -3669,7 +3551,6 @@
       "rush-tank-ii-vtx",
       "tbs-unify-pro32-nano-vtx",
       "walksnail-avatar-gt-vtx",
-      "walksnail-avatar-hd-v2",
       "akk-a3-nano-vtx-park",
       "akk-a5-nano-vtx",
       "hdzero-cine-nano-vtx",
@@ -3684,10 +3565,7 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
-      "gemfan-51433",
       "gemfan-5152",
-      "gemfan-5236",
-      "gemfan-hurricane-51499",
       "gemfan-hurricane-mck-51433",
       "hqprop-5135-v2",
       "hqprop-5x4-5x3-v1s",
@@ -3717,154 +3595,11 @@
       "hqprop-7035-2-lr",
       "hqprop-durable-3530-cine",
       "hqprop-t65x30-whoop"
-    ],
-    "receiver": [
-      "frsky-r-xsr",
-      "frsky-xsr-sbus",
-      "happymodel-ep2-5inch-elrs",
-      "imm-rc-fusion-v2-elrs",
-      "jhemcu-ep28-elrs",
-      "tbs-crossfire-micro-v2",
-      "happymodel-cine-ep2-elrs",
-      "happymodel-ep1-dual-elrs",
-      "radiomaster-er5-915-lr",
-      "tbs-crossfire-micro-lr"
     ]
   },
   "missingByBuildClass": {
-    "5-inch-freestyle": [
-      "gnb-4s-1500",
-      "dji-o3-camera",
-      "speedybee-bl32-50a",
-      "tbs-source-one-v5",
-      "iflight-xing2-2207-1855",
-      "dji-o3-air-unit",
-      "rush-tank-solo",
-      "cnhl-4s-1500-freestyle",
-      "cnhl-6s-1500-freestyle",
-      "cnhl-ministar-6s-1500",
-      "gnb-6s-1300-hv",
-      "gnb-6s-1400-freestyle",
-      "lumenier-6s-1100",
-      "lumenier-6s-1250-freestyle",
-      "ovonic-4s-1400-freestyle",
-      "ovonic-6s-1300",
-      "tattu-4s-1300-freestyle",
-      "tattu-4s-1550",
-      "tattu-rline-6s-1050",
-      "tattu-rline-6s-1400",
-      "tattu-rline-6s-1550",
-      "caddx-ratel-2",
-      "caddx-turtle-v2",
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "hdzero-nano-90",
-      "runcam-nano-2",
-      "runcam-racer-2",
-      "walksnail-avatar-micro",
-      "aikon-ak32-50a-4in1",
-      "aikon-f7-mini-35a",
-      "diatone-mamba-f55-128k",
-      "diatone-mamba-f55-pro-esc",
-      "foxeer-reaper-f4-65a",
-      "hglrc-tekko32-f55-mini-esc",
-      "hobbywing-xrotor-60a",
-      "hobbywing-xrotor-g2-50a",
-      "iflight-succex-e-f4-50a",
-      "meps-konvex-f55-55a-4in1",
-      "meps-konvex-g2-50a",
-      "rush-blade-f7-60a-4in1",
-      "speedybee-bl32-55a-4in1",
-      "tmotor-f55a-pro-ii",
-      "tmotor-velox45a-4in1",
-      "atomrc-f405-fc",
-      "axisflying-h743-mini",
-      "diatone-mamba-f722",
-      "diatone-mamba-f722-s-fc",
-      "foxeer-f722-v4",
-      "foxeer-h743-f722-fc",
-      "hglrc-f722-silver-fc",
-      "holybro-kakute-h7-v2",
-      "iflight-beast-f722-fc",
-      "jhemcu-g743-pro-fc",
-      "matek-f405-se-fc",
-      "matek-f722-mini",
-      "matek-f722-std-fc",
-      "matek-h743-slate-freestyle",
-      "speedybee-f7-v3-fc",
-      "aos-5-v5",
-      "armattan-badger5-frame",
-      "armattan-marmotte",
-      "diatone-roma-f5-frame",
-      "ethix-lithium5-frame",
-      "flywoo-explorer5-frame",
-      "geprc-mark4-frame",
-      "geprc-mark5",
-      "hglrc-zeus5-frame",
-      "iflight-nazgul-eco5-frame",
-      "iflight-nazgul5-v3-frame",
-      "iflight-xl5-v6",
-      "impulserc-apexdc",
-      "impulserc-reverb5-frame",
-      "lumenier-qav-s-johnnyfpv",
-      "rotor-riot-cl2",
-      "tbs-source-one-v6-frame",
-      "axisflying-ae2207-1960",
-      "axisflying-joker-2207-1920kv",
-      "brotherhobby-avenger-2507-1850",
-      "brotherhobby-returner-r6-2207-1850kv",
-      "emax-eco-ii-2207-1900kv",
-      "emax-eco-ii-2306-1900",
-      "fpvcycle-2207-1780kv",
-      "fpvcycle-2207-1960",
-      "hypetrain-acer-2306-1950kv",
-      "hypetrain-blaster-2450",
-      "iflight-xing2-2207-2750kv",
-      "johnnyfpv-motor-v2-2207-1960kv",
-      "lumenier-2207-1800kv",
-      "rcinpower-gts-v2-2207-1950kv",
-      "rcinpower-gts-v3-2207-1860",
-      "samguk-v-2207-1960kv",
-      "skystars-km2207-1910kv",
-      "skystars-km2306-1950kv",
-      "tmotor-f40-pro-2207-1950kv",
-      "tmotor-f60-pro-v-1950",
-      "tmotor-velox-v3-1750",
-      "tmotor-velox-v3-2207-1950kv",
-      "xing-e-pro-2207-1800",
-      "azure-5148",
-      "azure-vanover-5140",
-      "dalprop-cyclone-5046",
-      "dalprop-fold-f5-5040",
-      "ethix-p3-peanut-butter",
-      "ethix-s3-5050",
-      "gemfan-51433",
-      "gemfan-5152",
-      "gemfan-5236",
-      "gemfan-hurricane-51499",
-      "gemfan-hurricane-mck-51433",
-      "hqprop-5135-v2",
-      "hqprop-5x4-5x3-v1s",
-      "hqprop-durable-5040-v2",
-      "hqprop-ethix-s5",
-      "hqprop-t3x2-5x3-515",
-      "hqprop-v2s-5043",
-      "frsky-r-xsr",
-      "frsky-xsr-sbus",
-      "happymodel-ep2-5inch-elrs",
-      "imm-rc-fusion-v2-elrs",
-      "jhemcu-ep28-elrs",
-      "tbs-crossfire-micro-v2",
-      "akk-x2-ultimate-vtx",
-      "hdzero-freestyle-vtx",
-      "hdzero-race-vtx",
-      "rush-tank-ii-vtx",
-      "tbs-unify-pro32-nano-vtx",
-      "walksnail-avatar-gt-vtx",
-      "walksnail-avatar-hd-v2"
-    ],
     "cinewhoop": [
+      "betafpv-2s-450-xt30",
       "gnb-4s-1500",
       "dji-o3-camera",
       "geprc-gep-f411-35a-aio-esc",
@@ -3875,15 +3610,12 @@
       "iflight-xing-2005-2550",
       "dji-o3-air-unit",
       "rush-tank-solo",
-      "cnhl-ministar-6s-1500",
       "tattu-4s-1550",
-      "caddx-ratel-2",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
-      "walksnail-avatar-hd-v2",
       "gnb-4s-1300-cine",
       "iflight-4s-1800-cine",
       "tattu-4s-1300-cine",
@@ -3917,10 +3649,175 @@
       "hdzero-cine-nano-vtx",
       "rush-mini-tank-cine-vtx"
     ],
+    "5-inch-freestyle": [
+      "cnhl-black-6s-1300",
+      "gnb-4s-1500",
+      "dji-o3-camera",
+      "speedybee-bl32-50a",
+      "speedybee-f405-v4",
+      "tbs-source-one-v5",
+      "iflight-xing2-2207-1855",
+      "dji-o3-air-unit",
+      "rush-tank-solo",
+      "cnhl-4s-1500-freestyle",
+      "cnhl-6s-1500-freestyle",
+      "gnb-6s-1300-hv",
+      "gnb-6s-1400-freestyle",
+      "lumenier-6s-1100",
+      "lumenier-6s-1250-freestyle",
+      "ovonic-4s-1400-freestyle",
+      "ovonic-6s-1300",
+      "tattu-4s-1300-freestyle",
+      "tattu-4s-1550",
+      "tattu-rline-6s-1050",
+      "tattu-rline-6s-1550",
+      "caddx-turtle-v2",
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
+      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "walksnail-avatar-micro",
+      "aikon-ak32-50a-4in1",
+      "aikon-f7-mini-35a",
+      "foxeer-reaper-f4-65a",
+      "hglrc-tekko32-f55-mini-esc",
+      "hobbywing-xrotor-60a",
+      "hobbywing-xrotor-g2-50a",
+      "iflight-succex-e-f4-50a",
+      "meps-konvex-f55-55a-4in1",
+      "meps-konvex-g2-50a",
+      "rush-blade-f7-60a-4in1",
+      "speedybee-bl32-55a-4in1",
+      "tmotor-f55a-pro-ii",
+      "tmotor-velox45a-4in1",
+      "atomrc-f405-fc",
+      "axisflying-h743-mini",
+      "diatone-mamba-f722",
+      "diatone-mamba-f722-s-fc",
+      "foxeer-f722-v4",
+      "foxeer-h743-f722-fc",
+      "hglrc-f722-silver-fc",
+      "iflight-beast-f722-fc",
+      "jhemcu-g743-pro-fc",
+      "matek-f405-se-fc",
+      "matek-f722-mini",
+      "matek-f722-std-fc",
+      "matek-h743-slate-freestyle",
+      "speedybee-f7-v3-fc",
+      "aos-5-v5",
+      "armattan-badger5-frame",
+      "ethix-lithium5-frame",
+      "flywoo-explorer5-frame",
+      "geprc-mark4-frame",
+      "hglrc-zeus5-frame",
+      "iflight-nazgul-eco5-frame",
+      "iflight-nazgul5-v3-frame",
+      "iflight-xl5-v6",
+      "impulserc-apexdc",
+      "impulserc-reverb5-frame",
+      "lumenier-qav-s-johnnyfpv",
+      "tbs-source-one-v6-frame",
+      "axisflying-ae2207-1960",
+      "axisflying-joker-2207-1920kv",
+      "brotherhobby-avenger-2507-1850",
+      "brotherhobby-returner-r6-2207-1850kv",
+      "emax-eco-ii-2207-1900kv",
+      "emax-eco-ii-2306-1900",
+      "fpvcycle-2207-1780kv",
+      "fpvcycle-2207-1960",
+      "hypetrain-acer-2306-1950kv",
+      "hypetrain-blaster-2450",
+      "iflight-xing2-2207-2750kv",
+      "johnnyfpv-motor-v2-2207-1960kv",
+      "lumenier-2207-1800kv",
+      "rcinpower-gts-v2-2207-1950kv",
+      "rcinpower-gts-v3-2207-1860",
+      "samguk-v-2207-1960kv",
+      "skystars-km2207-1910kv",
+      "skystars-km2306-1950kv",
+      "tmotor-f40-pro-2207-1950kv",
+      "tmotor-f60-pro-v-1950",
+      "tmotor-velox-v3-1750",
+      "tmotor-velox-v3-2207-1950kv",
+      "xing-e-pro-2207-1800",
+      "azure-5148",
+      "azure-vanover-5140",
+      "dalprop-cyclone-5046",
+      "dalprop-fold-f5-5040",
+      "ethix-p3-peanut-butter",
+      "ethix-s3-5050",
+      "gemfan-5152",
+      "gemfan-hurricane-mck-51433",
+      "hqprop-5135-v2",
+      "hqprop-5x4-5x3-v1s",
+      "hqprop-durable-5040-v2",
+      "hqprop-ethix-s5",
+      "hqprop-t3x2-5x3-515",
+      "hqprop-v2s-5043",
+      "frsky-r-xsr",
+      "frsky-xsr-sbus",
+      "happymodel-ep2-5inch-elrs",
+      "imm-rc-fusion-v2-elrs",
+      "jhemcu-ep28-elrs",
+      "tbs-crossfire-micro-v2",
+      "akk-x2-ultimate-vtx",
+      "hdzero-freestyle-vtx",
+      "hdzero-race-vtx",
+      "rush-tank-ii-vtx",
+      "tbs-unify-pro32-nano-vtx",
+      "walksnail-avatar-gt-vtx"
+    ],
+    "7-inch-long-range": [
+      "dji-o3-camera",
+      "skystars-km55a-4in1",
+      "matek-h743-mini-lr",
+      "rekon7-pro-lr",
+      "brotherhobby-avenger-2806-5-1300",
+      "dji-o3-air-unit",
+      "rush-tank-solo",
+      "foxeer-toothless-2",
+      "walksnail-avatar-micro",
+      "foxeer-reaper-f4-65a",
+      "hobbywing-xrotor-60a",
+      "cnhl-6s-1800-lr-lipo",
+      "gnb-6s-2500-lr-lipo",
+      "lumenier-6s-2200-lr-lipo",
+      "molicel-6s-4000-liion",
+      "ovonic-6s-3000-lr-lipo",
+      "sanyo-6s-3500-liion",
+      "tattu-6s-2800-lr-lipo",
+      "aikon-65a-lr-esc",
+      "diatone-mamba-f55-lr-esc",
+      "meps-konvex-55a-lr-esc",
+      "diatone-mamba-h743-lr-fc",
+      "geprc-f745-lr-fc",
+      "iflight-beast-h743-lr-fc",
+      "matek-h743-wing-lr-fc",
+      "flywoo-explorer7-lr-frame",
+      "geprc-crocodile7-lr-frame",
+      "hglrc-sector7-lr-frame",
+      "iflight-chimera7-lr-frame",
+      "tbs-source-one7-lr-frame",
+      "axisflying-2808-1150kv-lr",
+      "brotherhobby-2806-1400kv-lr",
+      "emax-eco-ii-2806-1280kv",
+      "iflight-xing-e-pro-2806-1300kv",
+      "iflight-xing2-2807-1280kv-lr",
+      "rcinpower-2807-1350kv-lr",
+      "tmotor-2807-1300kv-lr",
+      "apc-7x4-2-lr",
+      "gemfan-7035-2-lr",
+      "gemfan-7036-3-lr",
+      "geprc-7038-2-lr",
+      "hqprop-7030-3-lr",
+      "hqprop-7035-2-lr",
+      "radiomaster-er5-915-lr",
+      "tbs-crossfire-micro-lr"
+    ],
     "tiny-whoop": [
-      "caddx-ant-nano",
       "betafpv-1s-5a-aio-esc",
       "betafpv-f4-1s-aio-fc",
+      "happymodel-ep2-elrs",
       "foxeer-reaper-nano-v2-vtx",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
@@ -3952,13 +3849,13 @@
       "rush-nano-ultimate-whoop-vtx"
     ],
     "3.5-inch-freestyle": [
-      "caddx-ant-nano",
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
+      "aos-3-5-v5",
       "iflight-xing2-1404-3800",
+      "happymodel-ep2-elrs",
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
-      "caddx-ratel-2",
       "foxeer-toothless-2",
       "hdzero-nano-90",
       "aikon-f7-mini-35a",
@@ -3994,55 +3891,6 @@
       "hqprop-3535-pc",
       "akk-a3-nano-vtx-park",
       "rush-nano-vtx-park"
-    ],
-    "7-inch-long-range": [
-      "dji-o3-camera",
-      "skystars-km55a-4in1",
-      "matek-h743-mini-lr",
-      "rekon7-pro-lr",
-      "brotherhobby-avenger-2806-5-1300",
-      "dji-o3-air-unit",
-      "rush-tank-solo",
-      "foxeer-toothless-2",
-      "walksnail-avatar-micro",
-      "foxeer-reaper-f4-65a",
-      "hobbywing-xrotor-60a",
-      "holybro-kakute-h7-v2",
-      "walksnail-avatar-hd-v2",
-      "cnhl-6s-1800-lr-lipo",
-      "gnb-6s-2500-lr-lipo",
-      "lumenier-6s-2200-lr-lipo",
-      "molicel-6s-4000-liion",
-      "ovonic-6s-3000-lr-lipo",
-      "sanyo-6s-3500-liion",
-      "tattu-6s-2800-lr-lipo",
-      "aikon-65a-lr-esc",
-      "diatone-mamba-f55-lr-esc",
-      "meps-konvex-55a-lr-esc",
-      "diatone-mamba-h743-lr-fc",
-      "geprc-f745-lr-fc",
-      "iflight-beast-h743-lr-fc",
-      "matek-h743-wing-lr-fc",
-      "flywoo-explorer7-lr-frame",
-      "geprc-crocodile7-lr-frame",
-      "hglrc-sector7-lr-frame",
-      "iflight-chimera7-lr-frame",
-      "tbs-source-one7-lr-frame",
-      "axisflying-2808-1150kv-lr",
-      "brotherhobby-2806-1400kv-lr",
-      "emax-eco-ii-2806-1280kv",
-      "iflight-xing-e-pro-2806-1300kv",
-      "iflight-xing2-2807-1280kv-lr",
-      "rcinpower-2807-1350kv-lr",
-      "tmotor-2807-1300kv-lr",
-      "apc-7x4-2-lr",
-      "gemfan-7035-2-lr",
-      "gemfan-7036-3-lr",
-      "geprc-7038-2-lr",
-      "hqprop-7030-3-lr",
-      "hqprop-7035-2-lr",
-      "radiomaster-er5-915-lr",
-      "tbs-crossfire-micro-lr"
     ]
   },
   "checked": [
@@ -4051,7 +3899,7 @@
       "partName": "BETAFPV 450mAh 2S 45C XT30",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4071,7 +3919,7 @@
       "partName": "CNHL Black Series 6S 1300mAh 100C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4172,7 +4020,7 @@
       "partName": "Caddx Ant Nano",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-ant-nano.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4465,7 +4313,7 @@
       "partName": "SpeedyBee F405 V4",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/speedybee-f405-v4.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4485,7 +4333,7 @@
       "partName": "AOS 3.5 V5",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/aos-3-5-v5.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4869,7 +4717,7 @@
       "partName": "Happymodel EP2 ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -5101,7 +4949,7 @@
       "partName": "CNHL Ministar 6S 1500mAh 120C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/cnhl-ministar-6s-1500.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5234,7 +5082,7 @@
       "partName": "Tattu R-Line 6S 1400mAh 130C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-6s-1400.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5260,7 +5108,7 @@
       "partName": "Caddx Ratel 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-ratel-2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5344,7 +5192,7 @@
       "partName": "RunCam Nano 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-nano-2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5357,7 +5205,7 @@
       "partName": "RunCam Racer 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-racer-2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5413,7 +5261,7 @@
       "partName": "Diatone Mamba F55 128K 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/diatone-mamba-f55-128k.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5426,7 +5274,7 @@
       "partName": "Diatone Mamba F55 Pro 55A 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/diatone-mamba-f55-pro-esc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5677,7 +5525,7 @@
       "partName": "Holybro Kakute H7 V2",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/holybro-kakute-h7-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5810,7 +5658,7 @@
       "partName": "Armattan Marmotte 5-inch",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/armattan-marmotte.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5823,7 +5671,7 @@
       "partName": "Diatone Roma F5 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/diatone-roma-f5-frame.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5875,7 +5723,7 @@
       "partName": "GEPRC Mark5 Deadcat",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-mark5-deadcat.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5979,7 +5827,7 @@
       "partName": "Rotor Riot CL2 5-inch",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/rotor-riot-cl2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6382,7 +6230,7 @@
       "partName": "Gemfan Hurricane 51433",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6408,7 +6256,7 @@
       "partName": "Gemfan Hurricane 5236",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-5236.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6421,7 +6269,7 @@
       "partName": "Gemfan Hurricane 51499",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51499.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6682,7 +6530,7 @@
       "partName": "Walksnail Avatar HD V2 VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-hd-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

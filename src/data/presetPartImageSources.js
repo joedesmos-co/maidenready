@@ -68,7 +68,7 @@ export const presetPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/betafpv-2s-450-xt30.jpg",
-    notes: "Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page.",
+    notes: "Official BETAFPV 450mAh 2S 45C XT30 page; manufacturer only publishes a 2pcs bundle listing.",
   },
   {
     partId: "betafpv-elrs-nano",
@@ -160,11 +160,11 @@ export const presetPartImageSources = [
     categoryKey: "battery",
     category: "Battery",
     brand: "CNHL",
-    officialUrl: "https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1300mah-22-2v-6s-130c-lipo-battery-with-xt60-plug",
+    officialUrl: "https://chinahobbyline.com/products/cnhl-black-series-1300mah-22-2v-6s-100c-lipo-battery-with-xt60-plug-4-packs",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-black-6s-1300.jpg",
-    notes: "Official CNHL store Black Series V2.0 6S 1300mAh listing.",
+    notes: "Official CNHL Black Series 6S 1300mAh 100C listing (stock 1301006BK); manufacturer store only sells multi-pack bundles.",
   },
   {
     partId: "dji-o3-air-unit",

@@ -47,6 +47,16 @@ const DISCOURAGED_IMAGE_URL_PATTERNS = [
   /\/icon/i,
   /social[-_]?share/i,
   /judgeme\.imgix\.net/i,
+  /AOS%203\.5%20V5%20\(1\)/i,
+  /\/X2\.jpg/i,
+  /[_-]x2[_-]/i,
+  /%7Bwidth%7D/i,
+  /\{width\}/i,
+  /_150x150\./i,
+  /_180x\./i,
+  /[/_-]layout/i,
+  /[/_-]wiring/i,
+  /matek-m\.jpg/i,
 ];
 
 const PROACTIVE_SKIP_PART_IDS = new Map([
@@ -59,7 +69,13 @@ const PROACTIVE_SKIP_PART_IDS = new Map([
   ["speedybee-bl32-50a", "Manufacturer page is FC+ESC stack; no isolated ESC packshot."],
   ["betafpv-1s-5a-aio-esc", "Manufacturer page is AIO combo; no isolated ESC packshot."],
   ["betafpv-f4-1s-aio-fc", "Manufacturer page is AIO combo; no isolated FC packshot."],
+  ["speedybee-f405-v4", "Manufacturer page is FC+ESC stack; no isolated FC packshot."],
   ["tbs-source-one-v5", "GitHub project page only exposes social/diagram og:image."],
+  ["happymodel-ep2-elrs", "Manufacturer page only exposes a shared EP1/EP2/EP1 Dual comparison image."],
+  ["betafpv-2s-450-xt30", "Manufacturer 2pcs listing image shows two batteries for a single-pack catalog line."],
+  ["aos-3-5-v5", "Official design page has no isolated frame JPEG; hero assets are lifestyle or unrelated."],
+  ["cnhl-black-6s-1300", "Manufacturer listing images include multi-pack X2/X4 promo overlays on store CDN."],
+  ["gnb-4s-1500", "No exact 1500mAh official product page; closest gaoneng.shop listing is a different capacity."],
 ]);
 
 const MAX_CANDIDATES_PER_PART = 20;
@@ -109,23 +125,25 @@ function extractMetaContent(html, attrName, attrValue) {
   const patterns = [
     new RegExp(
       `<meta[^>]+${attrName}=["']${attrValue}["'][^>]+content=["']([^"']+)["']`,
-      "i",
+      "gi",
     ),
     new RegExp(
       `<meta[^>]+content=["']([^"']+)["'][^>]+${attrName}=["']${attrValue}["']`,
-      "i",
+      "gi",
     ),
   ];
 
-  for (const pattern of patterns) {
-    const match = html.match(pattern);
+  const values = [];
 
-    if (match?.[1]) {
-      return decodeHtmlEntities(match[1].trim());
+  for (const pattern of patterns) {
+    for (const match of html.matchAll(pattern)) {
+      if (match?.[1]) {
+        values.push(decodeHtmlEntities(match[1].trim()));
+      }
     }
   }
 
-  return null;
+  return values.length > 0 ? values : null;
 }
 
 function extractImageSrcLink(html) {
@@ -173,32 +191,51 @@ function extractJsonLdImages(html) {
   return images;
 }
 
+function unescapeEmbeddedJsonUrl(value) {
+  try {
+    return JSON.parse(`"${value}"`);
+  } catch {
+    return value.replaceAll("\\/", "/");
+  }
+}
+
 function extractEmbeddedJsonImageUrls(html) {
   const urls = [];
+  const rasterPattern = String.raw`(?:jpe?g|png|webp)`;
 
   for (const match of html.matchAll(
-    /"url"\s*:\s*"(https?:\\\/\\\/[^"]+\.jpe?g[^"]*)"/gi,
+    new RegExp(`"url"\\s*:\\s*"(https?:\\\\/\\\\/[^"]+\\.${rasterPattern}[^"]*)"`, "gi"),
   )) {
-    urls.push(JSON.parse(`"${match[1]}"`));
+    urls.push(unescapeEmbeddedJsonUrl(match[1]));
   }
 
-  for (const match of html.matchAll(/"url"\s*:\s*"(https?:\/\/[^"]+\.jpe?g[^"]*)"/gi)) {
+  for (const match of html.matchAll(
+    new RegExp(`"url"\\s*:\\s*"(https?:\\/\\/[^"]+\\.${rasterPattern}[^"]*)"`, "gi"),
+  )) {
     urls.push(match[1]);
+  }
+
+  for (const match of html.matchAll(
+    new RegExp(`"src"\\s*:\\s*"(\\\\/\\\\/[^"]+\\.${rasterPattern}[^"]*)"`, "gi"),
+  )) {
+    urls.push(unescapeEmbeddedJsonUrl(match[1]));
   }
 
   return urls;
 }
 
-function extractHtmlJpegUrls(html) {
+function extractHtmlImageUrls(html) {
   const urls = new Set();
+  const absolutePattern =
+    /https?:\/\/[^"'\s>]+\.(?:jpe?g|png|webp)(?:\?[^"'\s>]*)?/gi;
+  const protocolRelativePattern =
+    /\/\/[^"'\s>]+\.(?:jpe?g|png|webp)(?:\?[^"'\s>]*)?/gi;
 
-  for (const match of html.matchAll(
-    /https?:\/\/[^"'\\s>]+\.jpe?g(?:\?[^"'\\s>]*)?/gi,
-  )) {
+  for (const match of html.matchAll(absolutePattern)) {
     urls.add(match[0]);
   }
 
-  for (const match of html.matchAll(/\/\/[^"'\\s>]+\.jpe?g(?:\?[^"'\\s>]*)?/gi)) {
+  for (const match of html.matchAll(protocolRelativePattern)) {
     urls.add(`https:${match[0]}`);
   }
 
@@ -213,7 +250,7 @@ function scoreImageCandidate(url) {
   let score = 0;
   const lower = url.toLowerCase();
 
-  if (/\.jpe?g(?:\?|$)/i.test(url)) {
+  if (/\.(?:jpe?g|png|webp)(?:\?|$)/i.test(url)) {
     score += 12;
   }
 
@@ -254,15 +291,31 @@ function scoreImageCandidate(url) {
   }
 
   if (lower.includes(".webp")) {
-    score -= 8;
+    score -= 2;
   }
 
   if (lower.includes(".png")) {
-    score -= 5;
+    score -= 1;
   }
 
   if (lower.includes("thumb")) {
     score -= 12;
+  }
+
+  if (lower.includes("layout") || lower.includes("wiring")) {
+    score -= 20;
+  }
+
+  if (lower.includes("matek-m.jpg")) {
+    score -= 25;
+  }
+
+  if (lower.includes("_150x150") || lower.includes("{width}")) {
+    score -= 18;
+  }
+
+  if (lower.includes("_1200x1200")) {
+    score += 4;
   }
 
   return score;
@@ -274,25 +327,36 @@ function rankImageCandidates(urls) {
   );
 }
 
+function flattenMetaValues(value) {
+  if (!value) {
+    return [];
+  }
+
+  return Array.isArray(value) ? value : [value];
+}
+
 function extractPageImageCandidates(html, pageUrl) {
   const metaCandidates = [
-    extractMetaContent(html, "property", "og:image"),
-    extractMetaContent(html, "property", "og:image:url"),
-    extractMetaContent(html, "property", "og:image:secure_url"),
-    extractMetaContent(html, "name", "twitter:image"),
-    extractMetaContent(html, "name", "twitter:image:src"),
+    ...flattenMetaValues(extractMetaContent(html, "property", "og:image")),
+    ...flattenMetaValues(extractMetaContent(html, "property", "og:image:url")),
+    ...flattenMetaValues(
+      extractMetaContent(html, "property", "og:image:secure_url"),
+    ),
+    ...flattenMetaValues(extractMetaContent(html, "name", "twitter:image")),
+    ...flattenMetaValues(extractMetaContent(html, "name", "twitter:image:src")),
     extractImageSrcLink(html),
   ].filter(Boolean);
 
   const galleryCandidates = [
     ...extractEmbeddedJsonImageUrls(html),
     ...extractJsonLdImages(html),
-    ...extractHtmlJpegUrls(html),
+    ...extractHtmlImageUrls(html),
   ];
 
   const combined = [...galleryCandidates, ...metaCandidates]
     .map((candidate) => resolveUrl(pageUrl, candidate))
     .filter(Boolean)
+    .filter((candidate) => /\.(?:jpe?g|png|webp)(?:\?|$)/i.test(candidate))
     .filter((candidate) => !isDiscouragedImageUrl(candidate))
     .filter((candidate) => !isBlockedRetailerUrl(candidate));
 
@@ -357,6 +421,42 @@ function formatFromContentType(contentType) {
   return "unknown";
 }
 
+const CONVERTIBLE_FORMATS = new Set(["jpeg", "png", "webp"]);
+
+let sharpModule = null;
+
+async function getSharp() {
+  if (!sharpModule) {
+    sharpModule = (await import("sharp")).default;
+  }
+
+  return sharpModule;
+}
+
+async function convertRasterToJpeg(buffer, sourceFormat) {
+  const sharp = await getSharp();
+
+  return sharp(buffer, sourceFormat === "webp" ? { animated: false } : undefined)
+    .flatten({ background: "#ffffff" })
+    .jpeg({ quality: 90, mozjpeg: true })
+    .toBuffer();
+}
+
+async function prepareJpegBuffer(buffer, format) {
+  if (format === "jpeg") {
+    return { jpegBuffer: buffer, convertedFrom: null };
+  }
+
+  if (format === "png" || format === "webp") {
+    return {
+      jpegBuffer: await convertRasterToJpeg(buffer, format),
+      convertedFrom: format,
+    };
+  }
+
+  throw new Error(`Unsupported ${format} format`);
+}
+
 async function fetchWithTimeout(url, options = {}) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
@@ -390,44 +490,31 @@ async function fetchHtml(pageUrl) {
 }
 
 async function fetchImageBuffer(imageUrl) {
-  const acceptHeaders = [
-    "image/jpeg",
-    "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-  ];
+  const response = await fetchWithTimeout(imageUrl, {
+    accept:
+      "image/avif,image/webp,image/apng,image/png,image/jpeg,image/*,*/*;q=0.8",
+  });
 
-  let lastError = null;
-
-  for (const accept of acceptHeaders) {
-    try {
-      const response = await fetchWithTimeout(imageUrl, { accept });
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status} for image ${imageUrl}`);
-      }
-
-      const buffer = Buffer.from(await response.arrayBuffer());
-      const headerFormat = detectImageFormat(buffer);
-      const contentTypeFormat = formatFromContentType(
-        response.headers.get("content-type"),
-      );
-      const format =
-        headerFormat !== "unknown" ? headerFormat : contentTypeFormat;
-
-      if (format === "jpeg") {
-        return {
-          buffer,
-          format,
-          contentType: response.headers.get("content-type"),
-        };
-      }
-
-      lastError = new Error(`Unsupported ${format} format for ${imageUrl}`);
-    } catch (error) {
-      lastError = error;
-    }
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} for image ${imageUrl}`);
   }
 
-  throw lastError ?? new Error(`Could not fetch JPEG for ${imageUrl}`);
+  const buffer = Buffer.from(await response.arrayBuffer());
+  const headerFormat = detectImageFormat(buffer);
+  const contentTypeFormat = formatFromContentType(
+    response.headers.get("content-type"),
+  );
+  const format = headerFormat !== "unknown" ? headerFormat : contentTypeFormat;
+
+  if (!CONVERTIBLE_FORMATS.has(format)) {
+    throw new Error(`Unsupported ${format} format for ${imageUrl}`);
+  }
+
+  return {
+    buffer,
+    format,
+    contentType: response.headers.get("content-type"),
+  };
 }
 
 function ensureDirectory(filePath) {
@@ -441,6 +528,7 @@ function toPublicAbsolutePath(expectedPath) {
 function createReportBucket() {
   return {
     downloaded: [],
+    converted: [],
     skippedExisting: [],
     skippedLowConfidence: [],
     skippedProactive: [],
@@ -604,7 +692,7 @@ async function processPart(todoEntry, flags, report, manifest) {
         sourcePageUrl: source.officialUrl,
         imageUrl: null,
         status: "failed",
-        detail: "No manufacturer-owned JPEG candidates found on page.",
+        detail: "No manufacturer-owned image candidates found on page.",
       }),
     );
     return;
@@ -623,35 +711,26 @@ async function processPart(todoEntry, flags, report, manifest) {
 
     try {
       const { buffer, format } = await fetchImageBuffer(imageUrl);
-
-      if (format !== "jpeg") {
-        report.unsupportedFormat.push({
-          partId: todoEntry.partId,
-          detail: `${format} from ${imageUrl}`,
-        });
-
-        if (!recordedUnsupported) {
-          upsertCandidate(
-            manifest,
-            createCandidateRecord({
-              partId: todoEntry.partId,
-              sourcePageUrl: source.officialUrl,
-              imageUrl,
-              status: "rejected",
-              detail: `Unsupported ${format} format — not saved without conversion dependencies.`,
-            }),
-          );
-          recordedUnsupported = true;
-        }
-
-        continue;
-      }
+      const { jpegBuffer, convertedFrom } = await prepareJpegBuffer(buffer, format);
 
       ensureDirectory(absolutePath);
-      writeFileSync(absolutePath, buffer);
+      writeFileSync(absolutePath, jpegBuffer);
+
+      const conversionNote = convertedFrom
+        ? ` (converted ${convertedFrom.toUpperCase()} → JPG via sharp)`
+        : "";
+      const detail = `${todoEntry.expectedPath} <= ${imageUrl}${conversionNote}`;
+
+      if (convertedFrom) {
+        report.converted.push({
+          partId: todoEntry.partId,
+          detail,
+        });
+      }
+
       report.downloaded.push({
         partId: todoEntry.partId,
-        detail: `${todoEntry.expectedPath} <= ${imageUrl}`,
+        detail,
       });
 
       upsertCandidate(
@@ -662,10 +741,39 @@ async function processPart(todoEntry, flags, report, manifest) {
           imageUrl,
           localPath: absolutePath,
           status: "downloaded",
+          detail: convertedFrom
+            ? `Converted official ${convertedFrom.toUpperCase()} source to local JPG (dev script only).`
+            : "",
         }),
       );
       return;
     } catch (error) {
+      if (
+        error.message.includes("Unsupported") &&
+        !error.message.includes("sharp")
+      ) {
+        report.unsupportedFormat.push({
+          partId: todoEntry.partId,
+          detail: `${error.message} (${imageUrl})`,
+        });
+
+        if (!recordedUnsupported) {
+          upsertCandidate(
+            manifest,
+            createCandidateRecord({
+              partId: todoEntry.partId,
+              sourcePageUrl: source.officialUrl,
+              imageUrl,
+              status: "rejected",
+              detail: error.message,
+            }),
+          );
+          recordedUnsupported = true;
+        }
+
+        continue;
+      }
+
       report.failedDownload.push({
         partId: todoEntry.partId,
         detail: `Image fetch failed (${imageUrl}): ${error.message}`,
@@ -712,7 +820,7 @@ async function processPart(todoEntry, flags, report, manifest) {
         sourcePageUrl: source.officialUrl,
         imageUrl: null,
         status: "failed",
-        detail: "Candidate URLs found but none produced a saved JPEG.",
+        detail: "Candidate URLs found but none produced a saved JPG.",
       }),
     );
   }
@@ -766,6 +874,7 @@ function printReport(report) {
   console.log("");
 
   printBucket("Downloaded", report.downloaded);
+  printBucket("Converted PNG/WebP → JPG", report.converted);
   printBucket("Skipped existing", report.skippedExisting);
   printBucket("Skipped proactive", report.skippedProactive);
   printBucket("Skipped low-confidence", report.skippedLowConfidence);

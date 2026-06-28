@@ -34,6 +34,27 @@ The script reads `PRESET_PART_IMAGE_TODO` from `src/data/presetPartImages.js` an
 
 Exit code is `1` when any files are missing — useful locally, but **do not add `npm run audit:images` to the production Cloudflare build**, because the build would fail while images are still pending.
 
+## Fetch 5-inch freestyle image candidates (developer only)
+
+Attempt to download **manufacturer-page image candidates** for priority-2 catalog parts (5-inch freestyle build class, not preset):
+
+```bash
+npm run images:fetch-five-inch
+```
+
+Optional flags match the preset fetch script (`--include-low-confidence`, `--force`).
+
+Source URLs live in `src/data/fiveInchPartImageSources.js`. Review output:
+
+```bash
+npm run images:report-five-inch
+```
+
+Report output:
+
+- `docs/FIVE_INCH_IMAGE_DOWNLOAD_REPORT.md`
+- `docs/five-inch-image-download-manifest.json`
+
 ## Fetch manufacturer image candidates (developer only)
 
 Attempt to download **manufacturer-page image candidates** for preset parts from URLs in `src/data/presetPartImageSources.js`:
@@ -60,9 +81,11 @@ The script:
 
 - Reads `PRESET_PART_IMAGE_TODO` and matches `officialUrl` entries in `presetPartImageSources.js`
 - Skips third-party retailers (Amazon, GetFPV, RaceDayQuads, AliExpress, etc.)
-- Parses `og:image`, `twitter:image`, and `link rel="image_src"` from HTML
-- Saves **JPEG only** to the expected `public/parts/.../<part-id>.jpg` paths (no image-processing dependencies)
-- Prints a report: downloaded, skipped existing, skipped low-confidence, no official URL, no image found, unsupported format, failed download, and total found from `npm run audit:images`
+- Parses `og:image`, `twitter:image`, embedded product JSON, and other manufacturer-page image URLs from HTML
+- Downloads official-source **JPEG, PNG, or WebP** candidates
+- Saves **local JPG** files to the expected `public/parts/.../<part-id>.jpg` paths
+- **Dev-only conversion:** when a candidate is PNG or WebP, the script converts it to JPG using [`sharp`](https://sharp.pixelplumbing.com/) (a `devDependency` only — not used by the deployed app bundle)
+- Prints a report: downloaded, converted PNG/WebP → JPG, skipped existing, skipped low-confidence, no official URL, no image found, unsupported format, failed download, and total found from `npm run audit:images`
 
 Example workflow:
 
@@ -71,7 +94,7 @@ npm run images:fetch-presets
 npm run audit:images
 ```
 
-Manually review every downloaded file before treating it as production-ready.
+Manually review every downloaded file before treating it as production-ready. Pay extra attention to files marked as converted from PNG/WebP — confirm they are isolated product photos, not lifestyle shots, watermarked promos, or wrong variants.
 
 After fetching or selecting candidates, review the generated report:
 
@@ -117,6 +140,6 @@ When all 49 preset images exist, the audit reports `Missing: 0` and exits succes
 |------|---------|
 | `src/data/presetPartImages.js` | Expected paths, credits, `PRESET_PART_IMAGE_TODO` |
 | `scripts/auditPresetImages.js` | Checks files on disk |
-| `scripts/fetchPresetImages.js` | Developer-only manufacturer-page candidate downloader |
+| `scripts/fetchPresetImages.js` | Developer-only manufacturer-page candidate downloader (JPEG direct save; PNG/WebP → JPG via sharp) |
 | `scripts/presetImageDownloadReport.js` | Generates `docs/PRESET_IMAGE_DOWNLOAD_REPORT.md` |
 | `scripts/createImageFolders.js` | Creates `public/parts/*` folders |

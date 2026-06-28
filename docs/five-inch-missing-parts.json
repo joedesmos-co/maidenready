@@ -1,0 +1,863 @@
+[
+  {
+    "partId": "aos-5-v5",
+    "partName": "AOS 5 V5",
+    "brand": "AOS",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/aos-5-v5.jpg"
+  },
+  {
+    "partId": "armattan-badger5-frame",
+    "partName": "Armattan Badger 5 Frame",
+    "brand": "Armattan",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/armattan-badger5-frame.jpg"
+  },
+  {
+    "partId": "armattan-marmotte",
+    "partName": "Armattan Marmotte 5-inch",
+    "brand": "Armattan",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/armattan-marmotte.jpg"
+  },
+  {
+    "partId": "diatone-roma-f5-frame",
+    "partName": "Diatone Roma F5 Frame",
+    "brand": "Diatone",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/diatone-roma-f5-frame.jpg"
+  },
+  {
+    "partId": "ethix-lithium5-frame",
+    "partName": "Ethix Lithium5 Frame",
+    "brand": "Ethix",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/ethix-lithium5.jpg"
+  },
+  {
+    "partId": "flywoo-explorer5-frame",
+    "partName": "Flywoo Explorer 5 Frame",
+    "brand": "Flywoo",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/flywoo-explorer5-frame.jpg"
+  },
+  {
+    "partId": "geprc-mark4-frame",
+    "partName": "GEPRC Mark4 Frame",
+    "brand": "GEPRC",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/geprc-mark4-frame.jpg"
+  },
+  {
+    "partId": "geprc-mark5",
+    "partName": "GEPRC Mark5 Deadcat",
+    "brand": "GEPRC",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/geprc-mark5-deadcat.jpg"
+  },
+  {
+    "partId": "hglrc-zeus5-frame",
+    "partName": "HGLRC Zeus5 Frame",
+    "brand": "HGLRC",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/hglrc-zeus5-frame.jpg"
+  },
+  {
+    "partId": "iflight-nazgul-eco5-frame",
+    "partName": "iFlight Nazgul Eco5 Frame",
+    "brand": "iFlight",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/iflight-nazgul-eco5.jpg"
+  },
+  {
+    "partId": "iflight-nazgul5-v3-frame",
+    "partName": "iFlight Nazgul5 V3 Frame",
+    "brand": "iFlight",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/iflight-nazgul5-v3-frame.jpg"
+  },
+  {
+    "partId": "iflight-xl5-v6",
+    "partName": "iFlight XL5 V6 5-inch",
+    "brand": "iFlight",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/iflight-xl5-v6.jpg"
+  },
+  {
+    "partId": "impulserc-apexdc",
+    "partName": "ImpulseRC ApexDC 5-inch",
+    "brand": "ImpulseRC",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/impulserc-apexdc.jpg"
+  },
+  {
+    "partId": "impulserc-reverb5-frame",
+    "partName": "ImpulseRC Reverb 5 Frame",
+    "brand": "ImpulseRC",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/impulserc-reverb5-frame.jpg"
+  },
+  {
+    "partId": "lumenier-qav-s-johnnyfpv",
+    "partName": "Lumenier QAV-S JohnnyFPV SE",
+    "brand": "Lumenier",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg"
+  },
+  {
+    "partId": "rotor-riot-cl2",
+    "partName": "Rotor Riot CL2 5-inch",
+    "brand": "Rotor Riot",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/rotor-riot-cl2.jpg"
+  },
+  {
+    "partId": "tbs-source-one-v6-frame",
+    "partName": "TBS Source One V6 Frame",
+    "brand": "TBS",
+    "categoryKey": "frame",
+    "imagePath": "/parts/frames/tbs-source-one-v6-frame.jpg"
+  },
+  {
+    "partId": "axisflying-ae2207-1960",
+    "partName": "AxisFlying AE 2207 1960KV",
+    "brand": "AxisFlying",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/axisflying-ae2207.jpg"
+  },
+  {
+    "partId": "axisflying-joker-2207-1920kv",
+    "partName": "AxisFlying Joker 2207 1920KV",
+    "brand": "AxisFlying",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/axisflying-joker-2207-1920kv.jpg"
+  },
+  {
+    "partId": "brotherhobby-avenger-2507-1850",
+    "partName": "BrotherHobby Avenger 2507 1850KV",
+    "brand": "BrotherHobby",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/brotherhobby-avenger-2507.jpg"
+  },
+  {
+    "partId": "brotherhobby-returner-r6-2207-1850kv",
+    "partName": "BrotherHobby Returner R6 2207 1850KV",
+    "brand": "BrotherHobby",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg"
+  },
+  {
+    "partId": "emax-eco-ii-2207-1900kv",
+    "partName": "EMAX ECO II 2207 1900KV",
+    "brand": "EMAX",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/emax-eco-ii-2207-1900kv.jpg"
+  },
+  {
+    "partId": "emax-eco-ii-2306-1900",
+    "partName": "EMAX ECO II 2306 1900KV",
+    "brand": "EMAX",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/emax-eco-ii-2306.jpg"
+  },
+  {
+    "partId": "fpvcycle-2207-1780kv",
+    "partName": "FPVCycle 2207 1780KV",
+    "brand": "FPVCycle",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/fpvcycle-2207-1780kv.jpg"
+  },
+  {
+    "partId": "fpvcycle-2207-1960",
+    "partName": "FPVCycle Motor 2207 1960KV",
+    "brand": "FPVCycle",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/fpvcycle-2207.jpg"
+  },
+  {
+    "partId": "hypetrain-acer-2306-1950kv",
+    "partName": "Hypetrain Acer 2306 1950KV",
+    "brand": "Rotor Riot",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/hypetrain-acer-2306-1950kv.jpg"
+  },
+  {
+    "partId": "hypetrain-blaster-2450",
+    "partName": "Hypetrain Blaster 2207 2450KV",
+    "brand": "Rotor Riot",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/hypetrain-blaster-2207.jpg"
+  },
+  {
+    "partId": "iflight-xing2-2207-2750kv",
+    "partName": "iFlight XING2 2207 2750KV",
+    "brand": "iFlight",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/iflight-xing2-2207-2750kv.jpg"
+  },
+  {
+    "partId": "johnnyfpv-motor-v2-2207-1960kv",
+    "partName": "JohnnyFPV V2 2207 1960KV",
+    "brand": "JohnnyFPV",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/johnnyfpv-motor-v2-2207.jpg"
+  },
+  {
+    "partId": "lumenier-2207-1800kv",
+    "partName": "Lumenier AX 2207 1800KV",
+    "brand": "Lumenier",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/lumenier-2207-1800kv.jpg"
+  },
+  {
+    "partId": "rcinpower-gts-v2-2207-1950kv",
+    "partName": "RCinPower GTS V2 2207 1950KV",
+    "brand": "RCinPower",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg"
+  },
+  {
+    "partId": "rcinpower-gts-v3-2207-1860",
+    "partName": "RCinPower GTS V3 2207 1860KV",
+    "brand": "RCinPower",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/rcinpower-gts-v3-2207.jpg"
+  },
+  {
+    "partId": "samguk-v-2207-1960kv",
+    "partName": "Samguk Series V 2207 1960KV",
+    "brand": "Samguk",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/samguk-v-2207-1960kv.jpg"
+  },
+  {
+    "partId": "skystars-km2207-1910kv",
+    "partName": "Skystars KM2207 1910KV",
+    "brand": "Skystars",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/skystars-km2207-1910kv.jpg"
+  },
+  {
+    "partId": "skystars-km2306-1950kv",
+    "partName": "Skystars KM2306 1950KV",
+    "brand": "Skystars",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/skystars-km2306-1950kv.jpg"
+  },
+  {
+    "partId": "tmotor-f40-pro-2207-1950kv",
+    "partName": "T-Motor F40 Pro V 2207 1950KV",
+    "brand": "T-Motor",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/tmotor-f40-pro-2207-1950kv.jpg"
+  },
+  {
+    "partId": "tmotor-f60-pro-v-1950",
+    "partName": "T-Motor F60 Pro V 2207 1950KV",
+    "brand": "T-Motor",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/tmotor-f60-pro-v.jpg"
+  },
+  {
+    "partId": "tmotor-velox-v3-1750",
+    "partName": "T-Motor Velox V3 2207 1750KV",
+    "brand": "T-Motor",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/tmotor-velox-v3.jpg"
+  },
+  {
+    "partId": "tmotor-velox-v3-2207-1950kv",
+    "partName": "T-Motor Velox V3 2207 1950KV",
+    "brand": "T-Motor",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/tmotor-velox-v3-2207-1950kv.jpg"
+  },
+  {
+    "partId": "xing-e-pro-2207-1800",
+    "partName": "iFlight XING-E Pro 2207 1800KV",
+    "brand": "iFlight",
+    "categoryKey": "motors",
+    "imagePath": "/parts/motors/xing-e-pro-2207.jpg"
+  },
+  {
+    "partId": "aikon-ak32-50a-4in1",
+    "partName": "Aikon AK32 50A 4-in-1",
+    "brand": "Aikon",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/aikon-ak32-50a-4in1.jpg"
+  },
+  {
+    "partId": "aikon-f7-mini-35a",
+    "partName": "Aikon F7 Mini 35A 4-in-1",
+    "brand": "Aikon",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/aikon-f7-mini-35a.jpg"
+  },
+  {
+    "partId": "diatone-mamba-f55-128k",
+    "partName": "Diatone Mamba F55 128K 4-in-1",
+    "brand": "Diatone",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/diatone-mamba-f55-128k.jpg"
+  },
+  {
+    "partId": "diatone-mamba-f55-pro-esc",
+    "partName": "Diatone Mamba F55 Pro 55A 4-in-1",
+    "brand": "Diatone",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/diatone-mamba-f55-pro-esc.jpg"
+  },
+  {
+    "partId": "foxeer-reaper-f4-65a",
+    "partName": "Foxeer Reaper F4 65A 4-in-1",
+    "brand": "Foxeer",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/foxeer-reaper-f4-65a.jpg"
+  },
+  {
+    "partId": "hglrc-tekko32-f55-mini-esc",
+    "partName": "HGLRC Tekko32 F55 Mini 55A 4-in-1",
+    "brand": "HGLRC",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/hglrc-tekko32-f55-mini-esc.jpg"
+  },
+  {
+    "partId": "hobbywing-xrotor-60a",
+    "partName": "Hobbywing XRotor 60A 4-in-1",
+    "brand": "Hobbywing",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/hobbywing-xrotor-60a.jpg"
+  },
+  {
+    "partId": "hobbywing-xrotor-g2-50a",
+    "partName": "Hobbywing XRotor G2 50A 4-in-1",
+    "brand": "Hobbywing",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/hobbywing-xrotor-g2-50a.jpg"
+  },
+  {
+    "partId": "iflight-succex-e-f4-50a",
+    "partName": "iFlight SucceX-E F4 50A 4-in-1",
+    "brand": "iFlight",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/iflight-succex-e-f4-50a.jpg"
+  },
+  {
+    "partId": "meps-konvex-f55-55a-4in1",
+    "partName": "MEPS Konvex F55 55A 4-in-1",
+    "brand": "MEPS",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/meps-konvex-f55-55a-4in1.jpg"
+  },
+  {
+    "partId": "meps-konvex-g2-50a",
+    "partName": "MEPS Konvex G2 50A 4-in-1",
+    "brand": "MEPS",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/meps-konvex-g2-50a.jpg"
+  },
+  {
+    "partId": "rush-blade-f7-60a-4in1",
+    "partName": "Rush Blade F7 60A 4-in-1",
+    "brand": "RushFPV",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/rush-blade-f7-60a-4in1.jpg"
+  },
+  {
+    "partId": "speedybee-bl32-55a-4in1",
+    "partName": "SpeedyBee BL32 55A 4-in-1",
+    "brand": "SpeedyBee",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/speedybee-bl32-55a-4in1.jpg"
+  },
+  {
+    "partId": "tmotor-f55a-pro-ii",
+    "partName": "T-Motor F55A Pro II 4-in-1",
+    "brand": "T-Motor",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/tmotor-f55a-pro-ii.jpg"
+  },
+  {
+    "partId": "tmotor-velox45a-4in1",
+    "partName": "T-Motor Velox 45A 4-in-1",
+    "brand": "T-Motor",
+    "categoryKey": "esc",
+    "imagePath": "/parts/escs/tmotor-velox45a-4in1.jpg"
+  },
+  {
+    "partId": "atomrc-f405-fc",
+    "partName": "AtomRC F405 FC",
+    "brand": "AtomRC",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/atomrc-f405-fc.jpg"
+  },
+  {
+    "partId": "axisflying-h743-mini",
+    "partName": "AxisFlying H743 Mini",
+    "brand": "AxisFlying",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/axisflying-h743-mini.jpg"
+  },
+  {
+    "partId": "diatone-mamba-f722",
+    "partName": "Diatone Mamba F722 MK4",
+    "brand": "Diatone",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/diatone-mamba-f722.jpg"
+  },
+  {
+    "partId": "diatone-mamba-f722-s-fc",
+    "partName": "Diatone Mamba F722 S FC",
+    "brand": "Diatone",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/diatone-mamba-f722-s-fc.jpg"
+  },
+  {
+    "partId": "foxeer-f722-v4",
+    "partName": "Foxeer F722 V4",
+    "brand": "Foxeer",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/foxeer-f722-v4.jpg"
+  },
+  {
+    "partId": "foxeer-h743-f722-fc",
+    "partName": "Foxeer H743 F722 FC",
+    "brand": "Foxeer",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/foxeer-h743-f722-fc.jpg"
+  },
+  {
+    "partId": "hglrc-f722-silver-fc",
+    "partName": "HGLRC F722 Silver FC",
+    "brand": "HGLRC",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/hglrc-f722-silver-fc.jpg"
+  },
+  {
+    "partId": "holybro-kakute-h7-v2",
+    "partName": "Holybro Kakute H7 V2",
+    "brand": "Holybro",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/holybro-kakute-h7-v2.jpg"
+  },
+  {
+    "partId": "iflight-beast-f722-fc",
+    "partName": "iFlight Beast F722 FC",
+    "brand": "iFlight",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/iflight-beast-f722-fc.jpg"
+  },
+  {
+    "partId": "jhemcu-g743-pro-fc",
+    "partName": "JHEMCU G743 Pro FC",
+    "brand": "JHEMCU",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/jhemcu-g743-pro-fc.jpg"
+  },
+  {
+    "partId": "matek-f405-se-fc",
+    "partName": "Matek F405-SE FC",
+    "brand": "Matek",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/matek-f405-se-fc.jpg"
+  },
+  {
+    "partId": "matek-f722-mini",
+    "partName": "Matek F722 Mini",
+    "brand": "Matek",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/matek-f722-mini.jpg"
+  },
+  {
+    "partId": "matek-f722-std-fc",
+    "partName": "Matek F722-STD FC",
+    "brand": "Matek",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/matek-f722-std-fc.jpg"
+  },
+  {
+    "partId": "matek-h743-slate-freestyle",
+    "partName": "Matek H743 Slate Freestyle",
+    "brand": "Matek",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/matek-h743-slate-freestyle.jpg"
+  },
+  {
+    "partId": "speedybee-f7-v3-fc",
+    "partName": "SpeedyBee F7 V3 FC",
+    "brand": "SpeedyBee",
+    "categoryKey": "flightController",
+    "imagePath": "/parts/flight-controllers/speedybee-f7-v3-fc.jpg"
+  },
+  {
+    "partId": "azure-5148",
+    "partName": "Azure Power 5148",
+    "brand": "Azure",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/azure-5148.jpg"
+  },
+  {
+    "partId": "azure-vanover-5140",
+    "partName": "Azure Power Vanover 5140",
+    "brand": "Azure",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/azure-vanover-5140.jpg"
+  },
+  {
+    "partId": "dalprop-cyclone-5046",
+    "partName": "DAL Cyclone T5046C",
+    "brand": "DAL",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/dalprop-cyclone-5046.jpg"
+  },
+  {
+    "partId": "dalprop-fold-f5-5040",
+    "partName": "DAL Fold F5 5040",
+    "brand": "DAL",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/dalprop-fold-f5-5040.jpg"
+  },
+  {
+    "partId": "ethix-p3-peanut-butter",
+    "partName": "HQProp Ethix P3 5x3x3",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/ethix-p3-peanut-butter.jpg"
+  },
+  {
+    "partId": "ethix-s3-5050",
+    "partName": "HQProp Ethix S3 5x5x3",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/ethix-s3-5050.jpg"
+  },
+  {
+    "partId": "gemfan-51433",
+    "partName": "Gemfan Hurricane 51433",
+    "brand": "Gemfan",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/gemfan-hurricane-51433.jpg"
+  },
+  {
+    "partId": "gemfan-5152",
+    "partName": "Gemfan Hurricane 5152",
+    "brand": "Gemfan",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/gemfan-5152.jpg"
+  },
+  {
+    "partId": "gemfan-5236",
+    "partName": "Gemfan Hurricane 5236",
+    "brand": "Gemfan",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/gemfan-hurricane-5236.jpg"
+  },
+  {
+    "partId": "gemfan-hurricane-51499",
+    "partName": "Gemfan Hurricane 51499",
+    "brand": "Gemfan",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/gemfan-hurricane-51499.jpg"
+  },
+  {
+    "partId": "gemfan-hurricane-mck-51433",
+    "partName": "Gemfan Hurricane MCK 51433",
+    "brand": "Gemfan",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/gemfan-hurricane-mck-51433.jpg"
+  },
+  {
+    "partId": "hqprop-5135-v2",
+    "partName": "HQProp 5135 V2",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-5135-v2.jpg"
+  },
+  {
+    "partId": "hqprop-5x4-5x3-v1s",
+    "partName": "HQProp 5x4.5x3 V1S",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-5x4-5x3-v1s.jpg"
+  },
+  {
+    "partId": "hqprop-durable-5040-v2",
+    "partName": "HQProp Durable 5040 V2",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-durable-5040-v2.jpg"
+  },
+  {
+    "partId": "hqprop-ethix-s5",
+    "partName": "HQProp Ethix S5 5x4x3",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-ethix-s5.jpg"
+  },
+  {
+    "partId": "hqprop-t3x2-5x3-515",
+    "partName": "HQProp T3x2.5x3 515",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-t3x2-5x3-515.jpg"
+  },
+  {
+    "partId": "hqprop-v2s-5043",
+    "partName": "HQProp V2S 5x4.3x3",
+    "brand": "HQProp",
+    "categoryKey": "props",
+    "imagePath": "/parts/props/hqprop-v2s-5043.jpg"
+  },
+  {
+    "partId": "cnhl-4s-1500-freestyle",
+    "partName": "CNHL 4S 1500mAh 100C",
+    "brand": "CNHL",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/cnhl-4s-1500-freestyle.jpg"
+  },
+  {
+    "partId": "cnhl-6s-1500-freestyle",
+    "partName": "CNHL Black Series 6S 1500mAh 100C",
+    "brand": "CNHL",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/cnhl-6s-1500-freestyle.jpg"
+  },
+  {
+    "partId": "cnhl-ministar-6s-1500",
+    "partName": "CNHL Ministar 6S 1500mAh 120C",
+    "brand": "CNHL",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/cnhl-ministar-6s-1500.jpg"
+  },
+  {
+    "partId": "gnb-6s-1300-hv",
+    "partName": "GNB 6S 1300mAh HV 120C",
+    "brand": "GNB",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/gnb-6s-1300-hv.jpg"
+  },
+  {
+    "partId": "gnb-6s-1400-freestyle",
+    "partName": "GNB 6S 1400mAh 120C",
+    "brand": "GNB",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/gnb-6s-1400-freestyle.jpg"
+  },
+  {
+    "partId": "lumenier-6s-1100",
+    "partName": "Lumenier N2O 6S 1100mAh 120C",
+    "brand": "Lumenier",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/lumenier-n2o-6s-1100.jpg"
+  },
+  {
+    "partId": "lumenier-6s-1250-freestyle",
+    "partName": "Lumenier N2O 6S 1250mAh 120C",
+    "brand": "Lumenier",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/lumenier-6s-1250-freestyle.jpg"
+  },
+  {
+    "partId": "ovonic-4s-1400-freestyle",
+    "partName": "Ovonic 4S 1400mAh 100C",
+    "brand": "Ovonic",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/ovonic-4s-1400-freestyle.jpg"
+  },
+  {
+    "partId": "ovonic-6s-1300",
+    "partName": "Ovonic 6S 1300mAh 100C",
+    "brand": "Ovonic",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/ovonic-6s-1300.jpg"
+  },
+  {
+    "partId": "tattu-4s-1300-freestyle",
+    "partName": "Tattu 4S 1300mAh 95C",
+    "brand": "Tattu",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/tattu-4s-1300-freestyle.jpg"
+  },
+  {
+    "partId": "tattu-4s-1550",
+    "partName": "Tattu 4S 1550mAh 95C",
+    "brand": "Tattu",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/tattu-4s-1550.jpg"
+  },
+  {
+    "partId": "tattu-rline-6s-1050",
+    "partName": "Tattu R-Line 6S 1050mAh 120C",
+    "brand": "Tattu",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/tattu-rline-6s-1050.jpg"
+  },
+  {
+    "partId": "tattu-rline-6s-1400",
+    "partName": "Tattu R-Line 6S 1400mAh 130C",
+    "brand": "Tattu",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/tattu-rline-6s-1400.jpg"
+  },
+  {
+    "partId": "tattu-rline-6s-1550",
+    "partName": "Tattu R-Line 6S 1550mAh 130C",
+    "brand": "Tattu",
+    "categoryKey": "battery",
+    "imagePath": "/parts/batteries/tattu-rline-6s-1550.jpg"
+  },
+  {
+    "partId": "frsky-r-xsr",
+    "partName": "FrSky R-XSR",
+    "brand": "FrSky",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/frsky-r-xsr.jpg"
+  },
+  {
+    "partId": "frsky-xsr-sbus",
+    "partName": "FrSky XSR SBUS",
+    "brand": "FrSky",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/frsky-xsr-sbus.jpg"
+  },
+  {
+    "partId": "happymodel-ep2-5inch-elrs",
+    "partName": "Happymodel EP2 2.4GHz ELRS",
+    "brand": "Happymodel",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/happymodel-ep2-5inch-elrs.jpg"
+  },
+  {
+    "partId": "imm-rc-fusion-v2-elrs",
+    "partName": "ImmersionRC Fusion V2 ELRS",
+    "brand": "ImmersionRC",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/imm-rc-fusion-v2-elrs.jpg"
+  },
+  {
+    "partId": "jhemcu-ep28-elrs",
+    "partName": "JHEMCU EP28 2.4GHz ELRS",
+    "brand": "JHEMCU",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/jhemcu-ep28-elrs.jpg"
+  },
+  {
+    "partId": "tbs-crossfire-micro-v2",
+    "partName": "TBS Crossfire Micro V2",
+    "brand": "TBS",
+    "categoryKey": "receiver",
+    "imagePath": "/parts/receivers/tbs-crossfire-micro-v2.jpg"
+  },
+  {
+    "partId": "caddx-ratel-2",
+    "partName": "Caddx Ratel 2",
+    "brand": "Caddx",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/caddx-ratel-2.jpg"
+  },
+  {
+    "partId": "caddx-turtle-v2",
+    "partName": "Caddx Turtle V2",
+    "brand": "Caddx",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/caddx-turtle-v2.jpg"
+  },
+  {
+    "partId": "foxeer-falkor-2",
+    "partName": "Foxeer Falkor 2",
+    "brand": "Foxeer",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/foxeer-falkor-2.jpg"
+  },
+  {
+    "partId": "foxeer-predator-v5",
+    "partName": "Foxeer Predator V5",
+    "brand": "Foxeer",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/foxeer-predator-v5.jpg"
+  },
+  {
+    "partId": "foxeer-toothless-2",
+    "partName": "Foxeer Toothless 2",
+    "brand": "Foxeer",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/foxeer-toothless-2.jpg"
+  },
+  {
+    "partId": "hdzero-nano-90",
+    "partName": "HDZero Nano 90",
+    "brand": "HDZero",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/hdzero-nano-90.jpg"
+  },
+  {
+    "partId": "runcam-nano-2",
+    "partName": "RunCam Nano 2",
+    "brand": "RunCam",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/runcam-nano-2.jpg"
+  },
+  {
+    "partId": "runcam-racer-2",
+    "partName": "RunCam Racer 2",
+    "brand": "RunCam",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/runcam-racer-2.jpg"
+  },
+  {
+    "partId": "walksnail-avatar-micro",
+    "partName": "Walksnail Avatar Micro",
+    "brand": "Walksnail",
+    "categoryKey": "camera",
+    "imagePath": "/parts/cameras/walksnail-avatar-micro.jpg"
+  },
+  {
+    "partId": "akk-x2-ultimate-vtx",
+    "partName": "AKK X2 Ultimate VTX",
+    "brand": "AKK",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/akk-x2-ultimate-vtx.jpg"
+  },
+  {
+    "partId": "hdzero-freestyle-vtx",
+    "partName": "HDZero Freestyle VTX",
+    "brand": "HDZero",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg"
+  },
+  {
+    "partId": "hdzero-race-vtx",
+    "partName": "HDZero Race VTX",
+    "brand": "HDZero",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/hdzero-race-vtx.jpg"
+  },
+  {
+    "partId": "rush-tank-ii-vtx",
+    "partName": "Rush Tank II 5.8GHz VTX",
+    "brand": "RushFPV",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/rush-tank-ii-vtx.jpg"
+  },
+  {
+    "partId": "tbs-unify-pro32-nano-vtx",
+    "partName": "TBS Unify Pro32 Nano VTX",
+    "brand": "TBS",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/tbs-unify-pro32-nano-vtx.jpg"
+  },
+  {
+    "partId": "walksnail-avatar-gt-vtx",
+    "partName": "Walksnail Avatar GT VTX",
+    "brand": "Walksnail",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg"
+  },
+  {
+    "partId": "walksnail-avatar-hd-v2",
+    "partName": "Walksnail Avatar HD V2 VTX",
+    "brand": "Walksnail",
+    "categoryKey": "vtx",
+    "imagePath": "/parts/vtx/walksnail-avatar-hd-v2.jpg"
+  }
+]

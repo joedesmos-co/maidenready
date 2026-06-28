@@ -1,14 +1,13 @@
 import { existsSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { PRESET_PART_IMAGE_TODO } from "../src/data/presetPartImages.js";
-import { presetPartImageSources } from "../src/data/presetPartImageSources.js";
+import { fiveInchPartImageSources } from "../src/data/fiveInchPartImageSources.js";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(scriptDir, "..");
 const publicRoot = join(projectRoot, "public");
-const manifestPath = join(projectRoot, "docs/preset-image-download-manifest.json");
-const reportPath = join(projectRoot, "docs/PRESET_IMAGE_DOWNLOAD_REPORT.md");
+const manifestPath = join(projectRoot, "docs/five-inch-image-download-manifest.json");
+const reportPath = join(projectRoot, "docs/FIVE_INCH_IMAGE_DOWNLOAD_REPORT.md");
 
 const BLOCKED_RETAILER_HOST_PATTERNS = [
   /(^|\.)amazon\./i,
@@ -31,10 +30,39 @@ const MANUFACTURER_STORE_HOSTS = [
   "chinahobbyline.com",
   "gaoneng.shop",
   "team-blacksheep.com",
+  "rotorriot.com",
+  "getlumenier.com",
+  "lumenier.com",
+  "holybro.com",
+  "store.tmotor.com",
+  "tmotor.com",
+  "hobbywing.com",
+  "shop.aikon.com",
+  "diatone.us",
+  "ethixrc.com",
+  "flywoo.net",
+  "fpvcycle.com",
+  "rcinpower.com",
+  "emaxmodel.com",
+  "axisflying.com",
+  "hdzero.com",
+  "immersionrc.com",
+  "walksnail.com",
+  "hglrc.com",
+  "jhemcu.com",
+  "atomrc.com",
+  "mepsking.com",
+  "samgukfpv.com",
 ];
 
+const FIVE_INCH_PART_TODO = fiveInchPartImageSources.map((entry) => ({
+  partId: entry.partId,
+  expectedPath: entry.expectedImagePath,
+  categoryKey: entry.categoryKey,
+}));
+
 const sourceByPartId = new Map(
-  presetPartImageSources.map((entry) => [entry.partId, entry]),
+  fiveInchPartImageSources.map((entry) => [entry.partId, entry]),
 );
 
 export function loadDownloadManifest() {
@@ -105,6 +133,10 @@ export function classifySourceType(sourcePageUrl, imageUrl) {
     pageHost.includes("aos-rc.com") ||
     pageHost.includes("skystars-rc.com") ||
     pageHost.includes("brotherhobby.com") ||
+    pageHost.includes("armattan") ||
+    pageHost.includes("impulserc.com") ||
+    pageHost.includes("rushfpv.com") ||
+    pageHost.includes("inew.foxeer.com") ||
     imageHost.includes("wixstatic.com")
   ) {
     return "manufacturer page";
@@ -289,14 +321,30 @@ export function recommendCandidate(record) {
 
   const promoOrSharedImagePartIds = new Set([
     "cnhl-black-6s-1300",
+    "cnhl-4s-1500-freestyle",
     "betafpv-2s-450-xt30",
     "happymodel-ep2-elrs",
     "aos-3-5-v5",
+    "aos-5-v5",
+  ]);
+
+  const stackEscOrFcOnlyPartIds = new Set([
+    "speedybee-bl32-55a-4in1",
+    "diatone-mamba-f722-s-fc",
+    "speedybee-f7-v3-fc",
+  ]);
+
+  const fullDroneFramePartIdsFiveInch = new Set([
+    "geprc-cinelog35-v2",
+    "rekon7-pro-lr",
+    "iflight-nazgul-eco5-frame",
   ]);
 
   if (
     stackOrAioPartIds.has(partId) ||
     fullDroneFramePartIds.has(partId) ||
+    fullDroneFramePartIdsFiveInch.has(partId) ||
+    stackEscOrFcOnlyPartIds.has(partId) ||
     promoOrSharedImagePartIds.has(partId)
   ) {
     return "remove";
@@ -373,7 +421,7 @@ export function createCandidateRecord({
   detail = "",
 }) {
   const sourceEntry = sourceByPartId.get(partId);
-  const todoEntry = PRESET_PART_IMAGE_TODO.find((entry) => entry.partId === partId);
+  const todoEntry = FIVE_INCH_PART_TODO.find((entry) => entry.partId === partId);
   const expectedPath = sourceEntry?.expectedImagePath ?? todoEntry?.expectedPath ?? null;
   const relativeLocalPath = localPath
     ? localPath.replace(`${projectRoot}/`, "")
@@ -459,7 +507,7 @@ export function formatDownloadReportMarkdown(manifest) {
   ).length;
 
   const lines = [
-    "# Preset image download report",
+    "# 5-inch freestyle image download report",
     "",
     "Developer-only review log for manufacturer-source image **candidates**.",
     "",
@@ -594,20 +642,174 @@ function localFileExists(localPath) {
   return existsSync(absolutePath);
 }
 
-const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set(["foxeer-reaper-nano-v2-vtx"]);
+const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
+  "armattan-badger5-frame",
+  "cnhl-6s-1500-freestyle",
+  "diatone-mamba-f722",
+  "ethix-p3-peanut-butter",
+  "foxeer-f722-v4",
+  "foxeer-falkor-2",
+  "foxeer-h743-f722-fc",
+  "foxeer-predator-v5",
+  "foxeer-reaper-f4-65a",
+  "foxeer-toothless-2",
+  "geprc-mark4-frame",
+  "happymodel-ep2-5inch-elrs",
+  "hdzero-nano-90",
+  "hqprop-5x4-5x3-v1s",
+  "hypetrain-blaster-2450",
+  "lumenier-qav-s-johnnyfpv",
+  "walksnail-avatar-gt-vtx",
+]);
 
 const MANUAL_REJECTION_NOTES = new Map([
   [
-    "matek-h743-mini-lr",
-    "Rejected after manual review: manufacturer spec-sheet composite (FC photo + specs text), not an isolated product packshot.",
+    "matek-f405-se-fc",
+    "Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot.",
   ],
   [
-    "rush-tank-solo",
-    "Rejected after manual review: official gallery images are macro marketing crops or lifestyle scenes, not isolated VTX packshots.",
+    "matek-f722-mini",
+    "Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot.",
   ],
   [
-    "foxeer-reaper-nano-v2-vtx",
-    "Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU.",
+    "matek-f722-std-fc",
+    "Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot.",
+  ],
+  [
+    "matek-h743-slate-freestyle",
+    "Rejected after manual review: H743-SLIM-V4 spec-sheet composite; wrong variant for Slate Freestyle SKU.",
+  ],
+  [
+    "foxeer-h743-f722-fc",
+    "Rejected after manual review: downloaded image appears to be a VTX/heatsink product, not the H743 F722 FC SKU.",
+  ],
+  [
+    "foxeer-f722-v4",
+    "Rejected after manual review: page scrape saved a generic support icon, not the F722 V4 flight controller.",
+  ],
+  [
+    "foxeer-reaper-f4-65a",
+    "Rejected after manual review: page scrape saved a generic support icon, not the Reaper F4 65A ESC.",
+  ],
+  [
+    "foxeer-toothless-2",
+    "Rejected after manual review: page scrape saved a generic support icon, not the Toothless 2 camera.",
+  ],
+  [
+    "foxeer-falkor-2",
+    "Rejected after manual review: image shows a Foxeer VTX/heatsink module, not the Falkor 2 camera SKU.",
+  ],
+  [
+    "foxeer-predator-v5",
+    "Rejected after manual review: image shows a video-switch PCB accessory, not the Predator V5 camera.",
+  ],
+  [
+    "diatone-mamba-f722",
+    "Rejected after manual review: FC+O3 VTX/camera marketing composite, not an isolated Mamba F722 FC.",
+  ],
+  [
+    "armattan-badger5-frame",
+    "Rejected after manual review: source asset filename references Badger 6-inch frame, not Badger 5 SKU.",
+  ],
+  [
+    "geprc-mark4-frame",
+    "Rejected after manual review: partial build with motors and camera installed, not an isolated frame SKU.",
+  ],
+  [
+    "lumenier-qav-s-johnnyfpv",
+    "Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line.",
+  ],
+  [
+    "hypetrain-blaster-2450",
+    "Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor.",
+  ],
+  [
+    "hdzero-nano-90",
+    "Rejected after manual review: manufacturer logo graphic only, not the HDZero Nano 90 camera product.",
+  ],
+  [
+    "hqprop-5x4-5x3-v1s",
+    "Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU.",
+  ],
+  [
+    "happymodel-ep2-5inch-elrs",
+    "Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU.",
+  ],
+  [
+    "ethix-p3-peanut-butter",
+    "Rejected after manual review: heavy Ethix/HQProp marketing logo overlay on prop packshot.",
+  ],
+  [
+    "cnhl-6s-1500-freestyle",
+    "Rejected after manual review: 130C two-pack promo image; catalog line is single 6S 1500mAh 100C.",
+  ],
+  [
+    "ethix-s3-5050",
+    "Rejected after manual review: low-confidence source; image shows HQProp R29 prop, not Ethix S3 5x5x3.",
+  ],
+  [
+    "fpvcycle-2207-1780kv",
+    "Rejected after manual review: low-confidence source; image has FPV Cycle watermark on motor bell crop.",
+  ],
+  [
+    "fpvcycle-2207-1960",
+    "Rejected after manual review: low-confidence source; image has FPV Cycle watermark on motor bell crop.",
+  ],
+  [
+    "hypetrain-acer-2306-1950kv",
+    "Rejected after manual review: low-confidence source; image shows Hypetrain Revo 5 1860KV motor, wrong SKU.",
+  ],
+  [
+    "johnnyfpv-motor-v2-2207-1960kv",
+    "Rejected after manual review: low-confidence source; image shows Lumenier 2307 1750KV V3 motor, wrong SKU.",
+  ],
+  [
+    "lumenier-2207-1800kv",
+    "Rejected after manual review: low-confidence source; image shows Lumenier ZIP V2 3115 900KV motor, wrong SKU.",
+  ],
+  [
+    "brotherhobby-avenger-2507-1850",
+    "Rejected after manual review: low-confidence source; image shows Avenger V3 2812 motor, wrong variant.",
+  ],
+  [
+    "brotherhobby-returner-r6-2207-1850kv",
+    "Rejected after manual review: low-confidence source; thumbnail product image retained without verified match.",
+  ],
+  [
+    "emax-eco-ii-2207-1900kv",
+    "Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy.",
+  ],
+  [
+    "emax-eco-ii-2306-1900",
+    "Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy.",
+  ],
+  [
+    "frsky-r-xsr",
+    "Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo.",
+  ],
+  [
+    "frsky-xsr-sbus",
+    "Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo.",
+  ],
+  [
+    "gemfan-5152",
+    "Rejected after manual review: low-confidence source; removed per cleanup policy.",
+  ],
+  [
+    "gemfan-hurricane-mck-51433",
+    "Rejected after manual review: low-confidence source; multi-color lineup from wrong prop page.",
+  ],
+  [
+    "meps-konvex-f55-55a-4in1",
+    "Rejected after manual review: low-confidence source; homepage NEW UPDATE banner, not ESC product photo.",
+  ],
+  [
+    "meps-konvex-g2-50a",
+    "Rejected after manual review: low-confidence source; homepage NEW UPDATE banner, not ESC product photo.",
+  ],
+  [
+    "walksnail-avatar-micro",
+    "Rejected after manual review: low-confidence source; generic camera render from V2 page, not Micro SKU.",
   ],
 ]);
 
@@ -659,7 +861,7 @@ export function writeDownloadReport(manifest = loadDownloadManifest()) {
 }
 
 export function syncDownloadedFilesToManifest(manifest = loadDownloadManifest()) {
-  for (const todoEntry of PRESET_PART_IMAGE_TODO) {
+  for (const todoEntry of FIVE_INCH_PART_TODO) {
     const absolutePath = join(publicRoot, todoEntry.expectedPath.replace(/^\//, ""));
 
     if (!existsSync(absolutePath)) {
@@ -722,7 +924,7 @@ function pickBestDownloadedCandidate(manifest, partId) {
 export function cleanupDisallowedLocalImages(manifest = loadDownloadManifest()) {
   const removedPartIds = [];
 
-  for (const todoEntry of PRESET_PART_IMAGE_TODO) {
+  for (const todoEntry of FIVE_INCH_PART_TODO) {
     const relativePath = todoEntry.expectedPath.replace(/^\//, "");
     const absolutePath = join(publicRoot, relativePath);
 
