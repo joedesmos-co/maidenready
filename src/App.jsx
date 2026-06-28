@@ -52,6 +52,8 @@ import {
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
 import { PartCategoryPlaceholder } from "./components/PartCategoryPlaceholder.jsx";
+import { LegalPanel } from "./components/LegalPanel.jsx";
+import { SiteFooter } from "./components/SiteFooter.jsx";
 import {
   formatPartImageAttribution,
   hasPartImageMetadata,
@@ -188,6 +190,7 @@ function App() {
   const [activePartKey, setActivePartKey] = useState(null);
   const [activeTab, setActiveTab] = useState("custom");
   const [presetStatus, setPresetStatus] = useState("");
+  const [legalPageId, setLegalPageId] = useState(null);
 
   const filteredParts = useMemo(
     () => filterPartsForBuildClass(parts, buildClass),
@@ -554,6 +557,10 @@ function App() {
         info={activePartInfo}
         onClose={() => setActivePartKey(null)}
       />
+
+      <LegalPanel pageId={legalPageId} onClose={() => setLegalPageId(null)} />
+
+      <SiteFooter onOpenLegalPage={setLegalPageId} />
     </main>
   );
 }
@@ -583,35 +590,20 @@ function TabNav({ activeTab, tabs, onTabChange }) {
 
 function LearnPanel({ entries }) {
   return (
-    <>
-      <section aria-labelledby="learn-heading">
-        <div className="section-heading">
-          <p className="eyebrow">Reference</p>
-          <h2 id="learn-heading">Field glossary</h2>
-        </div>
-        <dl className="learn-glossary">
-          {entries.map((entry) => (
-            <div className="learn-entry" key={entry.term}>
-              <dt>{entry.term}</dt>
-              <dd>{entry.definition}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
-      <section aria-labelledby="contact-heading" className="learn-contact">
-        <div className="section-heading">
-          <p className="eyebrow">Support</p>
-          <h2 id="contact-heading">Contact</h2>
-        </div>
-        <p className="learn-contact-copy">
-          Send feedback, bug reports, part corrections, or image/source issues.
-        </p>
-        <p className="learn-contact-email">
-          Contact:{" "}
-          <a href="mailto:joedesmos.co@gmail.com">joedesmos.co@gmail.com</a>
-        </p>
-      </section>
-    </>
+    <section aria-labelledby="learn-heading">
+      <div className="section-heading">
+        <p className="eyebrow">Reference</p>
+        <h2 id="learn-heading">Field glossary</h2>
+      </div>
+      <dl className="learn-glossary">
+        {entries.map((entry) => (
+          <div className="learn-entry" key={entry.term}>
+            <dt>{entry.term}</dt>
+            <dd>{entry.definition}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   );
 }
 
