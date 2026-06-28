@@ -1,0 +1,559 @@
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { PRESET_PART_IMAGE_TODO } from "../src/data/presetPartImages.js";
+import { presetPartImageSources } from "../src/data/presetPartImageSources.js";
+import {
+  auditPresetImagePaths,
+  formatPresetImageAuditReport,
+} from "./auditPresetImages.js";
+import {
+  createCandidateRecord,
+  loadDownloadManifest,
+  saveDownloadManifest,
+  upsertCandidate,
+  writeDownloadReport,
+} from "./presetImageDownloadReport.js";
+
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const projectRoot = join(scriptDir, "..");
+const publicRoot = join(projectRoot, "public");
+
+const FETCH_TIMEOUT_MS = 20_000;
+const USER_AGENT = "MaidenReadyDevImageFetcher/1.0 (+local developer script)";
+
+const BLOCKED_HOST_PATTERNS = [
+  /(^|\.)amazon\./i,
+  /(^|\.)getfpv\.com$/i,
+  /(^|\.)racedayquads\.com$/i,
+  /(^|\.)aliexpress\.com$/i,
+  /(^|\.)banggood\.com$/i,
+  /(^|\.)ebay\./i,
+  /(^|\.)hobbyking\.com$/i,
+  /(^|\.)pyrodrone\.com$/i,
+  /(^|\.)rdq\.com$/i,
+];
+
+const sourceByPartId = new Map(
+  presetPartImageSources.map((entry) => [entry.partId, entry]),
+);
+
+function parseFlags(argv) {
+  return {
+    includeLowConfidence: argv.includes("--include-low-confidence"),
+    force: argv.includes("--force"),
+  };
+}
+
+function isBlockedRetailerUrl(urlString) {
+  let hostname;
+
+  try {
+    hostname = new URL(urlString).hostname.toLowerCase();
+  } catch {
+    return true;
+  }
+
+  return BLOCKED_HOST_PATTERNS.some((pattern) => pattern.test(hostname));
+}
+
+function resolveUrl(baseUrl, candidateUrl) {
+  try {
+    return new URL(candidateUrl, baseUrl).href;
+  } catch {
+    return null;
+  }
+}
+
+function decodeHtmlEntities(value) {
+  return value
+    .replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#39;", "'")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">");
+}
+
+function extractMetaContent(html, attrName, attrValue) {
+  const patterns = [
+    new RegExp(
+      `<meta[^>]+${attrName}=["']${attrValue}["'][^>]+content=["']([^"']+)["']`,
+      "i",
+    ),
+    new RegExp(
+      `<meta[^>]+content=["']([^"']+)["'][^>]+${attrName}=["']${attrValue}["']`,
+      "i",
+    ),
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+
+    if (match?.[1]) {
+      return decodeHtmlEntities(match[1].trim());
+    }
+  }
+
+  return null;
+}
+
+function extractImageSrcLink(html) {
+  const match = html.match(
+    /<link[^>]+rel=["']image_src["'][^>]+href=["']([^"']+)["']/i,
+  );
+
+  return match?.[1] ? decodeHtmlEntities(match[1].trim()) : null;
+}
+
+function extractPageImageCandidates(html) {
+  const candidates = [
+    extractMetaContent(html, "property", "og:image"),
+    extractMetaContent(html, "property", "og:image:url"),
+    extractMetaContent(html, "property", "og:image:secure_url"),
+    extractMetaContent(html, "name", "twitter:image"),
+    extractMetaContent(html, "name", "twitter:image:src"),
+    extractImageSrcLink(html),
+  ].filter(Boolean);
+
+  return [...new Set(candidates)];
+}
+
+function detectImageFormat(buffer) {
+  if (!buffer || buffer.length < 12) {
+    return "unknown";
+  }
+
+  if (buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) {
+    return "jpeg";
+  }
+
+  if (
+    buffer[0] === 0x89 &&
+    buffer[1] === 0x50 &&
+    buffer[2] === 0x4e &&
+    buffer[3] === 0x47
+  ) {
+    return "png";
+  }
+
+  if (buffer[0] === 0x47 && buffer[1] === 0x49 && buffer[2] === 0x46) {
+    return "gif";
+  }
+
+  if (
+    buffer.toString("ascii", 0, 4) === "RIFF" &&
+    buffer.toString("ascii", 8, 12) === "WEBP"
+  ) {
+    return "webp";
+  }
+
+  return "unknown";
+}
+
+function formatFromContentType(contentType) {
+  if (!contentType) {
+    return "unknown";
+  }
+
+  const normalized = contentType.split(";")[0].trim().toLowerCase();
+
+  if (normalized === "image/jpeg" || normalized === "image/jpg") {
+    return "jpeg";
+  }
+
+  if (normalized === "image/png") {
+    return "png";
+  }
+
+  if (normalized === "image/webp") {
+    return "webp";
+  }
+
+  if (normalized === "image/gif") {
+    return "gif";
+  }
+
+  return "unknown";
+}
+
+async function fetchWithTimeout(url, options = {}) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+
+  try {
+    return await fetch(url, {
+      ...options,
+      signal: controller.signal,
+      headers: {
+        "User-Agent": USER_AGENT,
+        Accept: options.accept ?? "*/*",
+        ...(options.headers ?? {}),
+      },
+      redirect: "follow",
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function fetchHtml(pageUrl) {
+  const response = await fetchWithTimeout(pageUrl, {
+    accept: "text/html,application/xhtml+xml",
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} for page ${pageUrl}`);
+  }
+
+  return response.text();
+}
+
+async function fetchImageBuffer(imageUrl) {
+  const response = await fetchWithTimeout(imageUrl, {
+    accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} for image ${imageUrl}`);
+  }
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+  const headerFormat = detectImageFormat(buffer);
+  const contentTypeFormat = formatFromContentType(
+    response.headers.get("content-type"),
+  );
+  const format =
+    headerFormat !== "unknown" ? headerFormat : contentTypeFormat;
+
+  return { buffer, format, contentType: response.headers.get("content-type") };
+}
+
+function ensureDirectory(filePath) {
+  mkdirSync(dirname(filePath), { recursive: true });
+}
+
+function toPublicAbsolutePath(expectedPath) {
+  return join(publicRoot, expectedPath.replace(/^\//, ""));
+}
+
+function createReportBucket() {
+  return {
+    downloaded: [],
+    skippedExisting: [],
+    skippedLowConfidence: [],
+    noOfficialUrl: [],
+    blockedRetailer: [],
+    noImageFound: [],
+    unsupportedFormat: [],
+    failedDownload: [],
+  };
+}
+
+function printBucket(title, items) {
+  console.log(`${title}: ${items.length}`);
+
+  items.forEach((item) => {
+    console.log(`  - ${item.partId}: ${item.detail}`);
+  });
+}
+
+async function processPart(todoEntry, flags, report, manifest) {
+  const source = sourceByPartId.get(todoEntry.partId);
+  const absolutePath = toPublicAbsolutePath(todoEntry.expectedPath);
+
+  if (existsSync(absolutePath) && !flags.force) {
+    report.skippedExisting.push({
+      partId: todoEntry.partId,
+      detail: todoEntry.expectedPath,
+    });
+
+    const existingDownload = manifest.candidates.find(
+      (entry) =>
+        entry.partId === todoEntry.partId && entry.status === "downloaded",
+    );
+
+    if (existingDownload) {
+      upsertCandidate(manifest, existingDownload);
+    } else {
+      upsertCandidate(
+        manifest,
+        createCandidateRecord({
+          partId: todoEntry.partId,
+          sourcePageUrl: source?.officialUrl ?? null,
+          imageUrl: null,
+          localPath: absolutePath,
+          status: "downloaded",
+          detail:
+            "Local JPG already present; exact image URL not captured on this run.",
+        }),
+      );
+    }
+
+    return;
+  }
+
+  if (!source?.officialUrl) {
+    report.noOfficialUrl.push({
+      partId: todoEntry.partId,
+      detail: "No officialUrl in presetPartImageSources.js",
+    });
+    return;
+  }
+
+  if (source.urlConfidence === "low" && !flags.includeLowConfidence) {
+    report.skippedLowConfidence.push({
+      partId: todoEntry.partId,
+      detail: source.officialUrl,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source.officialUrl,
+        imageUrl: null,
+        status: "skipped",
+        detail: "Skipped low-confidence source URL (use --include-low-confidence).",
+      }),
+    );
+    return;
+  }
+
+  if (isBlockedRetailerUrl(source.officialUrl)) {
+    report.blockedRetailer.push({
+      partId: todoEntry.partId,
+      detail: source.officialUrl,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source.officialUrl,
+        imageUrl: null,
+        status: "rejected",
+        detail: "Blocked third-party retailer source page.",
+      }),
+    );
+    return;
+  }
+
+  let html;
+
+  try {
+    html = await fetchHtml(source.officialUrl);
+  } catch (error) {
+    report.failedDownload.push({
+      partId: todoEntry.partId,
+      detail: `Page fetch failed (${source.officialUrl}): ${error.message}`,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source.officialUrl,
+        imageUrl: null,
+        status: "failed",
+        detail: error.message,
+      }),
+    );
+    return;
+  }
+
+  const candidates = extractPageImageCandidates(html)
+    .map((candidate) => resolveUrl(source.officialUrl, candidate))
+    .filter(Boolean);
+
+  if (candidates.length === 0) {
+    report.noImageFound.push({
+      partId: todoEntry.partId,
+      detail: source.officialUrl,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source.officialUrl,
+        imageUrl: null,
+        status: "failed",
+        detail: "No og:image, twitter:image, or image_src candidate found on page.",
+      }),
+    );
+    return;
+  }
+
+  let recordedUnsupported = false;
+
+  let sawCandidateAttempt = false;
+
+  for (const imageUrl of candidates) {
+    if (isBlockedRetailerUrl(imageUrl)) {
+      continue;
+    }
+
+    sawCandidateAttempt = true;
+
+    try {
+      const { buffer, format } = await fetchImageBuffer(imageUrl);
+
+      if (format !== "jpeg") {
+        report.unsupportedFormat.push({
+          partId: todoEntry.partId,
+          detail: `${format} from ${imageUrl}`,
+        });
+
+        if (!recordedUnsupported) {
+          upsertCandidate(
+            manifest,
+            createCandidateRecord({
+              partId: todoEntry.partId,
+              sourcePageUrl: source.officialUrl,
+              imageUrl,
+              status: "rejected",
+              detail: `Unsupported ${format} format — not saved without conversion dependencies.`,
+            }),
+          );
+          recordedUnsupported = true;
+        }
+
+        continue;
+      }
+
+      ensureDirectory(absolutePath);
+      writeFileSync(absolutePath, buffer);
+      report.downloaded.push({
+        partId: todoEntry.partId,
+        detail: `${todoEntry.expectedPath} <= ${imageUrl}`,
+      });
+
+      upsertCandidate(
+        manifest,
+        createCandidateRecord({
+          partId: todoEntry.partId,
+          sourcePageUrl: source.officialUrl,
+          imageUrl,
+          localPath: absolutePath,
+          status: "downloaded",
+        }),
+      );
+      return;
+    } catch (error) {
+      report.failedDownload.push({
+        partId: todoEntry.partId,
+        detail: `Image fetch failed (${imageUrl}): ${error.message}`,
+      });
+
+      upsertCandidate(
+        manifest,
+        createCandidateRecord({
+          partId: todoEntry.partId,
+          sourcePageUrl: source.officialUrl,
+          imageUrl,
+          status: "failed",
+          detail: error.message,
+        }),
+      );
+    }
+  }
+
+  const partDownloaded = report.downloaded.some(
+    (entry) => entry.partId === todoEntry.partId,
+  );
+  const partUnsupported = report.unsupportedFormat.some(
+    (entry) => entry.partId === todoEntry.partId,
+  );
+  const partFailed = report.failedDownload.some(
+    (entry) => entry.partId === todoEntry.partId,
+  );
+
+  if (!partDownloaded && !partUnsupported && !partFailed && !sawCandidateAttempt) {
+    report.noImageFound.push({
+      partId: todoEntry.partId,
+      detail: `${source.officialUrl} (image URLs blocked or missing)`,
+    });
+  } else if (!partDownloaded && !partUnsupported && !partFailed && sawCandidateAttempt) {
+    report.noImageFound.push({
+      partId: todoEntry.partId,
+      detail: source.officialUrl,
+    });
+
+    upsertCandidate(
+      manifest,
+      createCandidateRecord({
+        partId: todoEntry.partId,
+        sourcePageUrl: source.officialUrl,
+        imageUrl: null,
+        status: "failed",
+        detail: "Candidate URLs found but none produced a saved JPEG.",
+      }),
+    );
+  }
+}
+
+export async function fetchPresetImageCandidates(options = {}) {
+  const flags = {
+    includeLowConfidence: false,
+    force: false,
+    ...options,
+  };
+  const report = createReportBucket();
+  const manifest = loadDownloadManifest();
+
+  for (const todoEntry of PRESET_PART_IMAGE_TODO) {
+    await processPart(todoEntry, flags, report, manifest);
+  }
+
+  saveDownloadManifest(manifest);
+  writeDownloadReport(manifest);
+
+  return { report, manifest };
+}
+
+function printReport(report) {
+  console.log("MaidenReady preset image candidate fetch");
+  console.log("---------------------------------------");
+  console.log(
+    "Developer-only: downloads manufacturer-page candidates for local review.",
+  );
+  console.log("These files are NOT approved for public use automatically.");
+  console.log("");
+
+  printBucket("Downloaded", report.downloaded);
+  printBucket("Skipped existing", report.skippedExisting);
+  printBucket("Skipped low-confidence", report.skippedLowConfidence);
+  printBucket("No official URL", report.noOfficialUrl);
+  printBucket("Blocked retailer URL", report.blockedRetailer);
+  printBucket("No image found", report.noImageFound);
+  printBucket("Unsupported format", report.unsupportedFormat);
+  printBucket("Failed download", report.failedDownload);
+
+  const auditReport = auditPresetImagePaths(PRESET_PART_IMAGE_TODO, {
+    publicRoot,
+  });
+
+  console.log("");
+  console.log(formatPresetImageAuditReport(auditReport));
+  console.log("");
+  console.log(`Total found after fetch: ${auditReport.found}/${auditReport.total}`);
+}
+
+async function main() {
+  const flags = parseFlags(process.argv);
+  const { report } = await fetchPresetImageCandidates(flags);
+  printReport(report);
+  console.log("");
+  console.log("Download review report: docs/PRESET_IMAGE_DOWNLOAD_REPORT.md");
+}
+
+const isDirectRun =
+  process.argv[1] &&
+  fileURLToPath(import.meta.url) === join(process.argv[1]);
+
+if (isDirectRun) {
+  main().catch((error) => {
+    console.error("[MaidenReady] fetchPresetImages failed:", error);
+    process.exitCode = 1;
+  });
+}

@@ -1,4 +1,5 @@
 import { presetBuilds } from "./presets.js";
+import { getPresetPartImageSource } from "./presetPartImageSources.js";
 
 const categoryFolders = {
   frame: "frames",
@@ -110,6 +111,7 @@ export const applyPresetPartImageFields = (partId, categoryKey) => {
   return {
     imagePath: `/parts/${folder}/${partId}.jpg`,
     imageCredit: presetPartImageCredits[partId] ?? "Unknown manufacturer",
+    imageSourceUrl: getPresetPartImageSource(partId)?.officialUrl ?? undefined,
     imageLicense: "No verified license on file",
     imageNeedsReview: true,
   };
