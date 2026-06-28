@@ -49,6 +49,7 @@ import {
   inferBuildClassFromSelections,
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
+import { PartCategoryPlaceholder } from "./components/PartCategoryPlaceholder.jsx";
 
 const getInitialBuildClass = () => {
   if (typeof window === "undefined") {
@@ -117,6 +118,57 @@ const statCards = [
   },
 ];
 
+const appTabs = [
+  { id: "presets", label: "Presets" },
+  { id: "custom", label: "Custom Build" },
+  { id: "saved", label: "Saved Builds" },
+  { id: "compare", label: "Compare" },
+  { id: "learn", label: "Learn" },
+];
+
+const learnEntries = [
+  {
+    term: "Build class",
+    definition:
+      "Airframe mode that filters compatible parts and tunes estimate models. Each class (whoop, 3.5\", 5\", cinewhoop, 7\" LR) uses different prop limits, efficiency, and warning rules.",
+  },
+  {
+    term: "Motor KV",
+    definition:
+      "RPM per volt unloaded. Higher KV spins faster on the same cell count — more top speed and current draw. Match KV to prop size, frame class, and battery voltage.",
+  },
+  {
+    term: "Battery cells / voltage",
+    definition:
+      "Cell count sets nominal pack voltage (1S ≈ 3.7V, 6S ≈ 22.2V). Motors, ESC, and FC must support the selected cell count. Capacity (mAh) and C rating affect burst current and flight time.",
+  },
+  {
+    term: "Prop pitch",
+    definition:
+      "Inches of forward travel per revolution. Higher pitch loads the motors harder, increases thrust and current, and usually reduces efficiency at cruise.",
+  },
+  {
+    term: "ESC amp rating",
+    definition:
+      "Continuous current the ESC can deliver per motor (or total on 4-in-1 boards). Undersized ESCs overheat when motor + prop draw exceeds rating under load.",
+  },
+  {
+    term: "Thrust-to-weight (T:W)",
+    definition:
+      "Estimated total thrust divided by all-up mass. Higher ratios mean stronger punchout and recovery margin. Ducted and long-range builds often target lower T:W than freestyle.",
+  },
+  {
+    term: "Flight time estimate",
+    definition:
+      "Mixed-throttle model from pack capacity, voltage, and estimated draw. Real flight time varies with tune, sag, wind, and how hard you fly.",
+  },
+  {
+    term: "Top speed estimate",
+    definition:
+      "No-wind model from KV, cell count, prop pitch, and class efficiency factor. Useful for comparing setups — not a GPS or radar measurement.",
+  },
+];
+
 function App() {
   const [buildClass, setBuildClass] = useState(getInitialBuildClass);
   const [selectedIds, setSelectedIds] = useState(() =>
@@ -128,6 +180,8 @@ function App() {
   const [savedBuildName, setSavedBuildName] = useState("");
   const [savedBuildStatus, setSavedBuildStatus] = useState("");
   const [activePartKey, setActivePartKey] = useState(null);
+  const [activeTab, setActiveTab] = useState("custom");
+  const [presetStatus, setPresetStatus] = useState("");
 
   const filteredParts = useMemo(
     () => filterPartsForBuildClass(parts, buildClass),
@@ -243,12 +297,13 @@ function App() {
 
     setBuildClass(presetBuildClass);
     setSelectedIds(resolved.selections);
-    setBuildClassStatus(
+    setPresetStatus(
       isComplete
-        ? "Preset loaded."
-        : "Preset loaded; some parts were adjusted for compatibility.",
+        ? `${preset.name} loaded — open Custom Build to review.`
+        : `${preset.name} loaded with compatibility adjustments.`,
     );
-    window.setTimeout(() => setBuildClassStatus(""), 2200);
+    setActiveTab("custom");
+    window.setTimeout(() => setPresetStatus(""), 3200);
   };
 
   const handleCopyBuildLink = async () => {
@@ -302,9 +357,10 @@ function App() {
     setSelectedIds(classResolved.selections);
     setSavedBuildStatus(
       resolved.isComplete
-        ? "Saved build loaded."
+        ? "Saved build loaded — switched to Custom Build."
         : `${resolved.missing.length} part${resolved.missing.length === 1 ? "" : "s"} missing from catalog — defaults applied.`,
     );
+    setActiveTab("custom");
     window.setTimeout(() => setSavedBuildStatus(""), 2200);
   };
 
@@ -314,6 +370,11 @@ function App() {
     window.setTimeout(() => setSavedBuildStatus(""), 1800);
   };
 
+  const visiblePresets = useMemo(
+    () => presetBuilds.filter((preset) => preset.buildClass === buildClass),
+    [buildClass],
+  );
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -322,29 +383,137 @@ function App() {
           <h1>FPV build calculator</h1>
         </div>
         <div className="topbar-actions">
-          <ShareBuildButton
-            status={copyStatus}
-            onCopyBuildLink={handleCopyBuildLink}
-          />
           <GradePill grade={grades.overall.grade} label="Overall" />
         </div>
       </header>
 
-      <section className="workspace" aria-label="Build planner">
-        <section className="picker-column module-panel" aria-labelledby="picker-heading">
+      <TabNav activeTab={activeTab} tabs={appTabs} onTabChange={setActiveTab} />
+
+      {activeTab === "presets" && (
+        <section className="tab-panel module-panel" aria-label="Preset builds">
           <CornerMarks />
           <div className="section-heading">
-            <p className="eyebrow">Part picker</p>
-            <h2 id="picker-heading">Build list</h2>
+            <p className="eyebrow">Quick start</p>
+            <h2>Preset builds</h2>
           </div>
-
           <BuildClassSelector
             buildClass={buildClass}
             buildClasses={buildClasses}
-            status={buildClassStatus}
+            status={presetStatus}
             onBuildClassChange={handleBuildClassChange}
           />
-          <PresetBuilds presets={presetBuilds} onLoadPreset={handlePresetLoad} />
+          <PresetBuilds
+            compact
+            presets={visiblePresets}
+            onLoadPreset={handlePresetLoad}
+          />
+        </section>
+      )}
+
+      {activeTab === "custom" && (
+        <section className="workspace workspace-custom" aria-label="Custom build">
+          <section className="picker-column module-panel" aria-labelledby="picker-heading">
+            <CornerMarks />
+            <div className="section-heading">
+              <p className="eyebrow">Part picker</p>
+              <h2 id="picker-heading">Build list</h2>
+            </div>
+
+            <BuildClassSelector
+              buildClass={buildClass}
+              buildClasses={buildClasses}
+              status={buildClassStatus}
+              onBuildClassChange={handleBuildClassChange}
+            />
+
+            <div className="part-list">
+              {buildSteps.map((step, index) => (
+                <PartPicker
+                  key={step.key}
+                  index={index + 1}
+                  step={step}
+                  selectedPart={selectedParts[step.key]}
+                  options={filteredParts[step.key]}
+                  onChange={handleSelectionChange}
+                  onOpenDetails={setActivePartKey}
+                />
+              ))}
+            </div>
+          </section>
+
+          <div className="results-column">
+            <section className="results-section module-panel" aria-labelledby="stats-heading">
+              <CornerMarks />
+              <div className="section-heading">
+                <p className="eyebrow">Estimates</p>
+                <h2 id="stats-heading">Build stats</h2>
+              </div>
+              <div className="stats-grid">
+                {statCards.map((stat) => (
+                  <StatCard
+                    key={stat.key}
+                    label={stat.label}
+                    value={stat.format(stats[stat.key])}
+                    confidence={stat.confidence}
+                  />
+                ))}
+              </div>
+              <EstimateAccuracy />
+            </section>
+
+            <section className="results-section module-panel" aria-labelledby="grades-heading">
+              <CornerMarks />
+              <div className="section-heading">
+                <p className="eyebrow">Grades</p>
+                <h2 id="grades-heading">Build score</h2>
+              </div>
+              <div className="grade-grid">
+                {Object.values(grades).map((grade) => (
+                  <GradeCard key={grade.label} grade={grade} />
+                ))}
+              </div>
+            </section>
+
+            <section className="results-section module-panel" aria-labelledby="warnings-heading">
+              <CornerMarks />
+              <div className="section-heading">
+                <p className="eyebrow">Compatibility</p>
+                <h2 id="warnings-heading">Warnings</h2>
+              </div>
+              <WarningList buildClass={buildClass} warnings={warnings} />
+            </section>
+
+            <section className="results-section module-panel" aria-labelledby="explain-heading">
+              <CornerMarks />
+              <div className="section-heading">
+                <p className="eyebrow">Explain my build</p>
+                <h2 id="explain-heading">Rule readout</h2>
+              </div>
+              <ExplainBuildPanel explanation={buildExplanation} />
+            </section>
+
+            <section className="results-section module-panel share-panel" aria-labelledby="share-heading">
+              <CornerMarks />
+              <div className="section-heading">
+                <p className="eyebrow">Share</p>
+                <h2 id="share-heading">Build link</h2>
+              </div>
+              <ShareBuildButton
+                status={copyStatus}
+                onCopyBuildLink={handleCopyBuildLink}
+              />
+            </section>
+          </div>
+        </section>
+      )}
+
+      {activeTab === "saved" && (
+        <section className="tab-panel module-panel" aria-label="Saved builds">
+          <CornerMarks />
+          <div className="section-heading">
+            <p className="eyebrow">Saved builds</p>
+            <h2>Local store</h2>
+          </div>
           <SavedBuilds
             buildName={savedBuildName}
             savedBuilds={savedBuilds}
@@ -354,81 +523,74 @@ function App() {
             onLoadSavedBuild={handleLoadSavedBuild}
             onSaveBuild={handleSaveBuild}
           />
-          <CompareBuilds savedBuilds={savedBuilds} partsCatalog={parts} />
-
-          <div className="part-list">
-            {buildSteps.map((step, index) => (
-              <PartPicker
-                key={step.key}
-                index={index + 1}
-                step={step}
-                selectedPart={selectedParts[step.key]}
-                options={filteredParts[step.key]}
-                onChange={handleSelectionChange}
-                onOpenDetails={setActivePartKey}
-              />
-            ))}
-          </div>
         </section>
+      )}
 
-        <div className="results-column">
-          <section className="results-section module-panel" aria-labelledby="stats-heading">
-            <CornerMarks />
-            <div className="section-heading">
-              <p className="eyebrow">Estimates</p>
-              <h2 id="stats-heading">Build stats</h2>
-            </div>
-            <div className="stats-grid">
-              {statCards.map((stat) => (
-                <StatCard
-                  key={stat.key}
-                  label={stat.label}
-                  value={stat.format(stats[stat.key])}
-                  confidence={stat.confidence}
-                />
-              ))}
-            </div>
-            <EstimateAccuracy />
-          </section>
+      {activeTab === "compare" && (
+        <section className="tab-panel module-panel" aria-label="Compare builds">
+          <CornerMarks />
+          <div className="section-heading">
+            <p className="eyebrow">Compare builds</p>
+            <h2>Saved delta</h2>
+          </div>
+          <CompareBuilds savedBuilds={savedBuilds} partsCatalog={parts} />
+        </section>
+      )}
 
-          <section className="results-section module-panel" aria-labelledby="grades-heading">
-            <CornerMarks />
-            <div className="section-heading">
-              <p className="eyebrow">Grades</p>
-              <h2 id="grades-heading">Build score</h2>
-            </div>
-            <div className="grade-grid">
-              {Object.values(grades).map((grade) => (
-                <GradeCard key={grade.label} grade={grade} />
-              ))}
-            </div>
-          </section>
-
-          <section className="results-section module-panel" aria-labelledby="explain-heading">
-            <CornerMarks />
-            <div className="section-heading">
-              <p className="eyebrow">Explain my build</p>
-              <h2 id="explain-heading">Rule readout</h2>
-            </div>
-            <ExplainBuildPanel explanation={buildExplanation} />
-          </section>
-
-          <section className="results-section module-panel" aria-labelledby="warnings-heading">
-            <CornerMarks />
-            <div className="section-heading">
-              <p className="eyebrow">Compatibility</p>
-              <h2 id="warnings-heading">Warnings</h2>
-            </div>
-            <WarningList buildClass={buildClass} warnings={warnings} />
-          </section>
-        </div>
-      </section>
+      {activeTab === "learn" && (
+        <section className="tab-panel module-panel" aria-label="Learn">
+          <CornerMarks />
+          <LearnPanel entries={learnEntries} />
+        </section>
+      )}
 
       <PartInfoDrawer
         info={activePartInfo}
         onClose={() => setActivePartKey(null)}
       />
     </main>
+  );
+}
+
+function TabNav({ activeTab, tabs, onTabChange }) {
+  return (
+    <nav aria-label="Main sections" className="tab-nav">
+      {tabs.map((tab) => {
+        const isActive = activeTab === tab.id;
+
+        return (
+          <button
+            key={tab.id}
+            aria-selected={isActive}
+            className={`tab-button ${isActive ? "active" : ""}`}
+            role="tab"
+            type="button"
+            onClick={() => onTabChange(tab.id)}
+          >
+            {tab.label}
+          </button>
+        );
+      })}
+    </nav>
+  );
+}
+
+function LearnPanel({ entries }) {
+  return (
+    <section aria-labelledby="learn-heading">
+      <div className="section-heading">
+        <p className="eyebrow">Reference</p>
+        <h2 id="learn-heading">Field glossary</h2>
+      </div>
+      <dl className="learn-glossary">
+        {entries.map((entry) => (
+          <div className="learn-entry" key={entry.term}>
+            <dt>{entry.term}</dt>
+            <dd>{entry.definition}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   );
 }
 
@@ -529,7 +691,7 @@ function PartInfoDrawer({ info, onClose }) {
         </div>
 
         <div className="part-info-image">
-          <PartImage part={part} partType={categoryLabel} />
+          <PartImage categoryKey={step.key} part={part} partType={categoryLabel} />
         </div>
 
         <div className="part-info-title">
@@ -653,15 +815,10 @@ function CompareBuilds({ savedBuilds, partsCatalog }) {
   }, [leftBuild, partsCatalog, rightBuild]);
 
   return (
-    <section className="compare-module" aria-labelledby="compare-heading">
-      <div className="section-heading compact-heading">
-        <p className="eyebrow">Compare builds</p>
-        <h2 id="compare-heading">Saved delta</h2>
-      </div>
-
+    <section className="compare-module compare-module-standalone" aria-label="Compare saved builds">
       {savedBuilds.length < 2 ? (
         <div className="compare-empty">
-          Save at least two builds locally to compare estimated stats side by side.
+          Save at least two builds on the Saved Builds tab to compare estimated stats.
         </div>
       ) : (
         <>
@@ -787,12 +944,7 @@ function SavedBuilds({
   const autoName = useMemo(() => createAutoBuildName(), []);
 
   return (
-    <section className="saved-module" aria-labelledby="saved-heading">
-      <div className="section-heading compact-heading">
-        <p className="eyebrow">Saved builds</p>
-        <h2 id="saved-heading">Local store</h2>
-      </div>
-
+    <section className="saved-module saved-module-standalone" aria-label="Saved build controls">
       <div className="save-controls">
         <input
           aria-label="Build name"
@@ -809,7 +961,7 @@ function SavedBuilds({
 
       {savedBuilds.length === 0 ? (
         <div className="saved-empty">
-          No saved builds yet. Name the current configuration above, then save it locally.
+          No saved builds yet. Configure a build in Custom Build, then save it here.
         </div>
       ) : (
         <div className="saved-list">
@@ -864,7 +1016,10 @@ function SavedBuildRow({ savedBuild, onDeleteSavedBuild, onLoadSavedBuild }) {
 
 function ShareBuildButton({ status, onCopyBuildLink }) {
   return (
-    <div className="share-build">
+    <div className="share-build share-build-panel">
+      <p className="share-build-copy">
+        Copies a URL with your current class and part selections. Share links stay in sync as you edit.
+      </p>
       <button type="button" onClick={onCopyBuildLink}>
         Copy build link
       </button>
@@ -873,20 +1028,30 @@ function ShareBuildButton({ status, onCopyBuildLink }) {
   );
 }
 
-function PresetBuilds({ presets, onLoadPreset }) {
-  return (
-    <section className="preset-module" aria-labelledby="preset-heading">
-      <div className="section-heading compact-heading">
-        <p className="eyebrow">Preset builds</p>
-        <h2 id="preset-heading">Quick load</h2>
+function PresetBuilds({ presets, onLoadPreset, compact = false }) {
+  if (presets.length === 0) {
+    return (
+      <div className="preset-empty">
+        No presets for this build class. Switch class or use Custom Build.
       </div>
+    );
+  }
+
+  return (
+    <section
+      className={`preset-module ${compact ? "preset-module-compact" : ""}`}
+      aria-label="Preset build cards"
+    >
       <div className="preset-grid">
         {presets.map((preset) => (
           <article className="preset-card" key={preset.id}>
             <div>
               <span className="preset-role">{preset.role}</span>
               <h3>{preset.name}</h3>
-              <p>{preset.description}</p>
+              {!compact && <p>{preset.description}</p>}
+              {compact && (
+                <p className="preset-summary">{preset.description}</p>
+              )}
             </div>
             <button type="button" onClick={() => onLoadPreset(preset)}>
               Load preset
@@ -949,6 +1114,7 @@ function PartPicker({
       <div className="part-preview-stack">
         <PartImage
           key={`${step.key}-${activePart.id}`}
+          categoryKey={step.key}
           part={activePart}
           partType={step.label}
         />
@@ -992,7 +1158,7 @@ function PartPicker({
   );
 }
 
-function PartImage({ part, partType }) {
+function PartImage({ part, partType, categoryKey }) {
   const [failed, setFailed] = useState(false);
   const showPlaceholder = failed || !part.imagePath;
 
@@ -1000,8 +1166,13 @@ function PartImage({ part, partType }) {
     <div className="part-preview" aria-label={`${part.name} preview`}>
       {showPlaceholder ? (
         <div className="part-placeholder">
-          <span>{partType}</span>
-          <strong>{part.name}</strong>
+          <div className="part-placeholder-graphic">
+            <PartCategoryPlaceholder categoryKey={categoryKey} />
+          </div>
+          <div className="part-placeholder-caption">
+            <span>{partType}</span>
+            <strong title={part.name}>{part.name}</strong>
+          </div>
         </div>
       ) : (
         <img
