@@ -1,0 +1,464 @@
+# FC, ESC, and AIO electronics image download report
+
+Developer-only review log for **flight controllers, ESCs, and AIO boards** manufacturer-source image **candidates**.
+
+> **Not approved for public use.** Keep `imageNeedsReview: true` and
+> `imageLicense: "No verified license on file"` until permission is verified.
+
+Last updated: 2026-06-28T13:51:10.997Z
+
+Last local cleanup: 2026-06-28T13:51:10.996Z — removed **0** JPG(s); **7** retained.
+
+## Summary
+
+- Downloaded local JPG candidates: **7**
+- Rejected / skipped / failed: **33**
+
+## Downloaded candidates (local JPG on disk)
+
+### 1. BETAFPV 1S 5A AIO ESC (`betafpv-1s-5a-aio-esc`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/dc3ebdb3ce4965130693f4d92cc0cf72_8dbfe3d8-a802-491c-a82f-eb130808b51d_1024x1024.jpg?v=1675236594
+- **Local file path:** public/parts/escs/betafpv-1s-5a-aio-esc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Family / AIO note:** Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board.
+- **Notes:** 5A ESC integrated into F4 1S 5A AIO FC; not sold standalone. Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board. Converted official WEBP source to local JPG (dev script only). AIO board image retained for split FC/ESC catalog entries.
+### 2. BETAFPV F4 1S AIO FC (`betafpv-f4-1s-aio-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://betafpv.com/products/f4-1s-aio-brushless-flight-controller
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_c4ea2654-223f-4b1c-8960-d44eba3840ca_1024x1024.jpg?v=1604547015
+- **Local file path:** public/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Family / AIO note:** Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board.
+- **Notes:** Official F4 1S AIO brushless flight controller product page. Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board. Converted official WEBP source to local JPG (dev script only). AIO board image retained for split FC/ESC catalog entries.
+### 3. Diatone Mamba F55 128K 4-in-1 (`diatone-mamba-f55-128k`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.diatone.us/products/mb-f55_128k-bl32-esc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/diatone-mamba-f55-128k.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Diatone Mamba F55_128K AM32 4-in-1 ESC page. Local JPG present; re-evaluating before retention.
+### 4. Diatone Mamba F55 Pro 55A 4-in-1 (`diatone-mamba-f55-pro-esc`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.diatone.us/products/mamba-f55_bls-dshot600-4in1-esc-40a-6s-2
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/diatone-mamba-f55-pro-esc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Diatone Mamba F55_BLS 55A 4-in-1 ESC page. Local JPG present; re-evaluating before retention.
+### 5. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
+- **Exact image URL downloaded:** https://geprc.com/wp-content/uploads/2021/07/4-15.jpg
+- **Local file path:** public/parts/escs/geprc-gep-f411-35a-aio-esc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Family / AIO note:** Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board.
+- **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board. AIO board image retained for split FC/ESC catalog entries.
+### 6. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
+- **Exact image URL downloaded:** https://geprc.com/wp-content/uploads/2021/07/4-15.jpg
+- **Local file path:** public/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Family / AIO note:** Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board.
+- **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Official manufacturer image is the combined AIO board; FC and ESC catalog entries represent the same physical board. AIO board image retained for split FC/ESC catalog entries.
+### 7. Holybro Kakute H7 V2 (`holybro-kakute-h7-v2`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://holybro.com/products/kakute-h7-v2
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/holybro-kakute-h7-v2.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Holybro Kakute H7 V2 flight controller page. Local JPG present; re-evaluating before retention.
+## Rejected, skipped, or failed
+
+### 1. Aikon AK32 50A 4-in-1 (`aikon-ak32-50a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://shop.aikon.com/products/ak32-50a-4-in-1-esc-v3
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/aikon-ak32-50a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Aikon AK32 50A 4-in-1 ESC page. Aikon official store blocks automated fetch; no verified direct ESC packshot URL.
+### 2. Aikon F7 Mini 35A 4-in-1 (`aikon-f7-mini-35a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://shop.aikon.com/products/f7-mini-35a-4-in-1-esc-v3
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/aikon-f7-mini-35a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Aikon F7 Mini 35A 4-in-1 ESC page. Aikon official store blocks automated fetch; no verified direct ESC packshot URL.
+### 3. AtomRC F405 FC (`atomrc-f405-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.atomrc.com/atomrc-f405-fc-p00136p1.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/atomrc-f405-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AtomRC F405 flight controller page. AtomRC official product page 404; no verified FC packshot URL.
+### 4. AxisFlying H743 Mini (`axisflying-h743-mini`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-h743-mini-fc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/axisflying-h743-mini.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying H743 Mini flight controller page. AxisFlying official product page 404; no verified FC packshot URL.
+### 5. Diatone Mamba F722 MK4 (`diatone-mamba-f722`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.diatone.us/products/mamba-mk4-f722-app-flight-controller
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/diatone-mamba-f722.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Diatone Mamba MK4 F722 flight controller page. Official Diatone page only exposes FC+O3/camera marketing composite, not an isolated Mamba F722 FC.
+### 6. Diatone Mamba F722 S FC (`diatone-mamba-f722-s-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.diatone.us/products/mb-mk4-f722-app-fc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/diatone-mamba-f722-s-fc.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Diatone Mamba MK4 F722 stack page; F722 S variant not separately listed. F722 S variant not separately listed; stack page has no verified isolated FC packshot.
+### 7. Foxeer F722 V4 (`foxeer-f722-v4`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-f722-v4-flight-controller-g-586
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/foxeer-f722-v4.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Foxeer F722 V4 flight controller page. Foxeer page scrape only exposes generic /upload/ad/ icons, not F722 V4 FC packshot.
+### 8. Foxeer H743 F722 FC (`foxeer-h743-f722-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-h743-f722-flight-controller-g-587
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/foxeer-h743-f722-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Foxeer H743 F722 flight controller page. Prior review: downloaded Foxeer asset matched VTX/heatsink module, not H743 F722 FC SKU.
+### 9. Foxeer Reaper F4 65A 4-in-1 (`foxeer-reaper-f4-65a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-reaper-f4-65a-4in1-esc-g-584
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/foxeer-reaper-f4-65a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Foxeer Reaper F4 65A 4-in-1 ESC page. Foxeer page scrape only exposes generic /upload/ad/ icons, not Reaper F4 65A ESC packshot.
+### 10. HGLRC F722 Silver FC (`hglrc-f722-silver-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.hglrc.com/products/hglrc-f722-silver-flight-controller
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/hglrc-f722-silver-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official HGLRC F722 Silver flight controller page. HGLRC official F722 Silver product page 404 from automated fetch.
+### 11. HGLRC Tekko32 F55 Mini 55A 4-in-1 (`hglrc-tekko32-f55-mini-esc`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.hglrc.com/products/hglrc-tekko32-f55-mini-55a-4in1-esc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/hglrc-tekko32-f55-mini-esc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official HGLRC Tekko32 F55 Mini 55A 4-in-1 ESC page. HGLRC official Tekko32 F55 Mini ESC product page 404 from automated fetch.
+### 12. Hobbywing XRotor 60A 4-in-1 (`hobbywing-xrotor-60a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.hobbywing.com/en/products/xrotor-g2-60a-4in1-esc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/hobbywing-xrotor-60a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Hobbywing XRotor G2 60A 4-in-1 ESC page. Hobbywing official page has no isolated 4-in-1 ESC packshot in page HTML.
+### 13. Hobbywing XRotor G2 50A 4-in-1 (`hobbywing-xrotor-g2-50a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.hobbywing.com/en/products/xrotor-g2-50a-4in1-esc
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/hobbywing-xrotor-g2-50a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Hobbywing XRotor G2 50A 4-in-1 ESC page. Hobbywing official page has no isolated 4-in-1 ESC packshot in page HTML.
+### 14. iFlight Beast F722 FC (`iflight-beast-f722-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://shop.iflight.com/Beast-F722-Flight-Controller-Pro1430
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/iflight-beast-f722-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight Beast F722 flight controller page. iFlight Beast F722 product page 404 from automated fetch.
+### 15. iFlight SucceX-E F4 50A 4-in-1 (`iflight-succex-e-f4-50a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://shop.iflight.com/SucceX-E-F4-50A-4-in-1-ESC-Pro1420
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/iflight-succex-e-f4-50a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight SucceX-E F4 50A 4-in-1 ESC page. iFlight SucceX-E F4 50A ESC product page 404 from automated fetch.
+### 16. JHEMCU G743 Pro FC (`jhemcu-g743-pro-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.jhemcu.com/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/jhemcu-g743-pro-fc.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official JHEMCU store homepage; G743 Pro FC has no stable direct product URL. JHEMCU store homepage only; no stable G743 Pro FC product URL or packshot.
+### 17. Matek F405-SE FC (`matek-f405-se-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f405-se
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/matek-f405-se-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Matek F405-SE flight controller portfolio page. Matek portfolio only exposes spec-sheet composite, not an isolated F405-SE FC packshot.
+### 18. Matek F722 Mini (`matek-f722-mini`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-mini
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/matek-f722-mini.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Matek F722 Mini flight controller portfolio page. Matek portfolio only exposes spec-sheet composite, not an isolated F722 Mini FC packshot.
+### 19. Matek F722-STD FC (`matek-f722-std-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-std
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/matek-f722-std-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Matek F722-STD flight controller portfolio page. Matek portfolio only exposes spec-sheet composite, not an isolated F722-STD FC packshot.
+### 20. Matek H743 Mini LR (`matek-h743-mini-lr`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/matek-h743-mini-lr.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Matek H743-MINI portfolio page. Matek H743-MINI portfolio only exposes spec-sheet/layout composites, not an isolated FC packshot.
+### 21. Matek H743 Slate Freestyle (`matek-h743-slate-freestyle`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-slim-v4
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/matek-h743-slate-freestyle.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** No H743 Slate SKU on Matek; H743-SLIM-V4 is closest official H743 freestyle board. No H743 Slate SKU on Matek; H743-SLIM-V4 substitute is a different board family.
+### 22. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.mepsking.com/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/meps-konvex-f55-55a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** MEPS Konvex F55 not on standalone product page; official MEPS manufacturer store homepage. MEPS homepage only; no standalone Konvex F55 product URL or packshot.
+### 23. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.mepsking.com/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/meps-konvex-g2-50a.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** MEPS Konvex G2 not on standalone product page; official MEPS manufacturer store homepage. MEPS homepage only; no standalone Konvex G2 product URL or packshot.
+### 24. Rush Blade F7 60A 4-in-1 (`rush-blade-f7-60a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.rushfpv.com/rush-blade-f7-60a-4in1-esc-g-585
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/rush-blade-f7-60a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official RushFPV Blade F7 60A 4-in-1 ESC page. RushFPV Blade F7 ESC product page unreachable from automated fetch.
+### 25. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/skystars-km55a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM55A 4-in-1 ESC product page. Skystars official store unreachable from automated fetch.
+### 26. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/speedybee-bl32-50a.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official SpeedyBee F7 V3 + BL32 50A ESC stack page. Catalog entry is individual ESC; official source is F7 V3 stack page with FC+ESC combo imagery only.
+### 27. SpeedyBee BL32 55A 4-in-1 (`speedybee-bl32-55a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/speedybee-bl32-55a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** No standalone BL32 55A listing; official BLS 55A 4-in-1 ESC sold on F405 V4 BLS 55A stack page. Skipped low-confidence source.
+### 28. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/speedybee-bls-35a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Renamed from Mini BL32 35A; official SpeedyBee F405 Mini + BLS 35A stack page. Catalog entry is individual ESC; official source is F405 Mini stack page with FC+ESC combo imagery only.
+### 29. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/speedybee-f405-mini.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official F405 Mini + BLS 35A 20x20 stack page. Catalog entry is individual FC; official source is F405 Mini stack page with FC+ESC combo imagery only.
+### 30. SpeedyBee F405 V4 (`speedybee-f405-v4`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/speedybee-f405-v4.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official F405 V4 stack page. Catalog entry is individual FC; official source is F405 V4 stack page with FC+ESC combo imagery only.
+### 31. SpeedyBee F7 V3 FC (`speedybee-f7-v3-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/speedybee-f7-v3-fc.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official SpeedyBee F7 V3 stack page; FC sold as part of F7 V3 BL32 50A stack. Catalog entry is individual FC; official source is F7 V3 stack page with FC+ESC combo imagery only.
+### 32. T-Motor F55A Pro II 4-in-1 (`tmotor-f55a-pro-ii`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f55a-pro-ii-4in1-esc.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/tmotor-f55a-pro-ii.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F55A Pro II 4-in-1 ESC page. T-Motor store product page 404 from automated fetch.
+### 33. T-Motor Velox 45A 4-in-1 (`tmotor-velox45a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/velox-45a-4in1-esc.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/escs/tmotor-velox45a-4in1.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor Velox 45A 4-in-1 ESC page. T-Motor store product page 404 from automated fetch.

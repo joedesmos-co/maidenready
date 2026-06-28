@@ -55,6 +55,8 @@ export const presetPartImageSources = [
     category: "ESC",
     brand: "BETAFPV",
     officialUrl: "https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g",
+    preferredImageUrl:
+      "https://betafpv.com/cdn/shop/products/dc3ebdb3ce4965130693f4d92cc0cf72_8dbfe3d8-a802-491c-a82f-eb130808b51d_1024x1024.jpg?v=1675236594",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/escs/betafpv-1s-5a-aio-esc.jpg",
@@ -91,6 +93,8 @@ export const presetPartImageSources = [
     category: "Flight Controller",
     brand: "BETAFPV",
     officialUrl: "https://betafpv.com/products/f4-1s-aio-brushless-flight-controller",
+    preferredImageUrl:
+      "https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_c4ea2654-223f-4b1c-8960-d44eba3840ca_1024x1024.jpg?v=1604547015",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
@@ -293,6 +297,7 @@ export const presetPartImageSources = [
     category: "ESC",
     brand: "GEPRC",
     officialUrl: "https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/",
+    preferredImageUrl: "https://geprc.com/wp-content/uploads/2021/07/4-15.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/escs/geprc-gep-f411-35a-aio-esc.jpg",
@@ -305,6 +310,7 @@ export const presetPartImageSources = [
     category: "Flight Controller",
     brand: "GEPRC",
     officialUrl: "https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/",
+    preferredImageUrl: "https://geprc.com/wp-content/uploads/2021/07/4-15.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg",

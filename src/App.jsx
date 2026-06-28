@@ -51,13 +51,11 @@ import {
   inferBuildClassFromSelections,
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
-import { PartCategoryPlaceholder } from "./components/PartCategoryPlaceholder.jsx";
 import { LegalPanel } from "./components/LegalPanel.jsx";
+import { PartImage } from "./components/PartImage.jsx";
+import { PartImageAttribution } from "./components/PartImageAttribution.jsx";
 import { SiteFooter } from "./components/SiteFooter.jsx";
-import {
-  formatPartImageAttribution,
-  hasPartImageMetadata,
-} from "./utils/partImageMeta.js";
+import { hasPartImageMetadata } from "./utils/partImageMeta.js";
 
 const getInitialBuildClass = () => {
   if (typeof window === "undefined") {
@@ -141,6 +139,26 @@ const learnEntries = [
       "Airframe mode that filters compatible parts and tunes estimate models. Each class (whoop, 3.5\", 5\", cinewhoop, 7\" LR) uses different prop limits, efficiency, and warning rules.",
   },
   {
+    term: "Flight controller (FC)",
+    definition:
+      "The brain of the quad — gyro, CPU, and firmware (Betaflight, etc.). Must match battery voltage and often stacks with the ESC on the same board (AIO) or mounting pattern.",
+  },
+  {
+    term: "Stack / AIO",
+    definition:
+      "FC and ESC mounted together. AIO (all-in-one) boards combine both on one PCB — common on tiny whoops. Separate FC + 4-in-1 ESC stacks use standoffs; mount patterns must match the frame.",
+  },
+  {
+    term: "Receiver (RX)",
+    definition:
+      "Radio link to your transmitter — ELRS, Crossfire, or analog protocols. Must match your radio module and firmware. Range and latency vary by protocol and antenna placement.",
+  },
+  {
+    term: "VTX",
+    definition:
+      "Video transmitter that sends the camera feed to goggles or a monitor. Analog (5.8 GHz) and digital (HDZero, Walksnail, O3) systems are not interchangeable without matching camera and goggles.",
+  },
+  {
     term: "Motor KV",
     definition:
       "RPM per volt unloaded. Higher KV spins faster on the same cell count — more top speed and current draw. Match KV to prop size, frame class, and battery voltage.",
@@ -188,7 +206,7 @@ function App() {
   const [savedBuildName, setSavedBuildName] = useState("");
   const [savedBuildStatus, setSavedBuildStatus] = useState("");
   const [activePartKey, setActivePartKey] = useState(null);
-  const [activeTab, setActiveTab] = useState("custom");
+  const [activeTab, setActiveTab] = useState("presets");
   const [presetStatus, setPresetStatus] = useState("");
   const [legalPageId, setLegalPageId] = useState(null);
 
@@ -390,6 +408,9 @@ function App() {
         <div>
           <p className="eyebrow">MaidenReady.com</p>
           <h1>FPV build calculator</h1>
+          <p className="topbar-tagline">
+            Plan parts, estimates, and compatibility — not a store.
+          </p>
         </div>
         <div className="topbar-actions">
           <GradePill grade={grades.overall.grade} label="Overall" />
@@ -405,6 +426,9 @@ function App() {
             <p className="eyebrow">Quick start</p>
             <h2>Preset builds</h2>
           </div>
+          <p className="section-intro">
+            Curated starter part lists for common goals. Pick a build class, load a preset, then fine-tune in Custom Build.
+          </p>
           <BuildClassSelector
             buildClass={buildClass}
             buildClasses={buildClasses}
@@ -427,6 +451,9 @@ function App() {
               <p className="eyebrow">Part picker</p>
               <h2 id="picker-heading">Build list</h2>
             </div>
+            <p className="section-intro">
+              Work through all nine parts in order. Stats and compatibility checks update as you go. Save builds on the Saved Builds tab; compare two saves on Compare.
+            </p>
 
             <BuildClassSelector
               buildClass={buildClass}
@@ -487,7 +514,7 @@ function App() {
               <CornerMarks />
               <div className="section-heading">
                 <p className="eyebrow">Compatibility</p>
-                <h2 id="warnings-heading">Warnings</h2>
+                <h2 id="warnings-heading">Compatibility checks</h2>
               </div>
               <WarningList buildClass={buildClass} warnings={warnings} />
             </section>
@@ -521,8 +548,11 @@ function App() {
           <CornerMarks />
           <div className="section-heading">
             <p className="eyebrow">Saved builds</p>
-            <h2>Local store</h2>
+            <h2>On this device</h2>
           </div>
+          <p className="section-intro">
+            Saves your current Custom Build selections to this browser only. Name optional — a date stamp is used if left blank.
+          </p>
           <SavedBuilds
             buildName={savedBuildName}
             savedBuilds={savedBuilds}
@@ -540,8 +570,11 @@ function App() {
           <CornerMarks />
           <div className="section-heading">
             <p className="eyebrow">Compare builds</p>
-            <h2>Saved delta</h2>
+            <h2>Side by side</h2>
           </div>
+          <p className="section-intro">
+            Compare estimated stats from two builds you saved on the Saved Builds tab.
+          </p>
           <CompareBuilds savedBuilds={savedBuilds} partsCatalog={parts} />
         </section>
       )}
@@ -595,6 +628,9 @@ function LearnPanel({ entries }) {
         <p className="eyebrow">Reference</p>
         <h2 id="learn-heading">Field glossary</h2>
       </div>
+      <p className="section-intro">
+        Plain-language definitions for specs and stats you will see while building. Numbers on Custom Build are estimates — see the accuracy notes there.
+      </p>
       <dl className="learn-glossary">
         {entries.map((entry) => (
           <div className="learn-entry" key={entry.term}>
@@ -678,9 +714,6 @@ function PartInfoDrawer({ info, onClose }) {
   const categoryLabel = categoryMeta[step.key]?.label ?? step.label;
   const bestFor = asList(part.bestFor).slice(0, 4);
   const watchOutFor = asList(part.watchOutFor).slice(0, 4);
-  const imageAttribution = formatPartImageAttribution(part);
-  const imageSourceTitle = part.imageSourceUrl || undefined;
-
   return (
     <div className="part-info-layer">
       <button
@@ -706,15 +739,13 @@ function PartInfoDrawer({ info, onClose }) {
         </div>
 
         <div className="part-info-image">
-          <PartImage categoryKey={step.key} part={part} partType={categoryLabel} />
-          {hasPartImageMetadata(part) && imageAttribution && (
-            <p
-              className="part-info-image-meta"
-              title={imageSourceTitle}
-            >
-              {imageAttribution}
-            </p>
-          )}
+          <PartImage
+            categoryKey={step.key}
+            part={part}
+            partType={categoryLabel}
+            variant="drawer"
+          />
+          {hasPartImageMetadata(part) && <PartImageAttribution part={part} />}
         </div>
 
         <div className="part-info-title">
@@ -1052,7 +1083,7 @@ function ShareBuildButton({ status, onCopyBuildLink }) {
   return (
     <div className="share-build share-build-panel">
       <p className="share-build-copy">
-        Copies a URL with your current class and part selections. Share links stay in sync as you edit.
+        Copies a URL with your current class and part selections. Anyone with the link can open the same build. The URL updates as you edit.
       </p>
       <button type="button" onClick={onCopyBuildLink}>
         Copy build link
@@ -1189,38 +1220,6 @@ function PartPicker({
         </div>
       </div>
     </article>
-  );
-}
-
-function PartImage({ part, partType, categoryKey }) {
-  const [failed, setFailed] = useState(false);
-  const showPlaceholder = failed || !part.imagePath;
-
-  useEffect(() => {
-    setFailed(false);
-  }, [part.id, part.imagePath]);
-
-  return (
-    <div className="part-preview" aria-label={`${part.name} preview`}>
-      {showPlaceholder ? (
-        <div className="part-placeholder">
-          <div className="part-placeholder-graphic">
-            <PartCategoryPlaceholder categoryKey={categoryKey} />
-          </div>
-          <div className="part-placeholder-caption">
-            <span>{partType}</span>
-            <strong title={part.name}>{part.name}</strong>
-          </div>
-        </div>
-      ) : (
-        <img
-          src={part.imagePath}
-          alt={part.name}
-          loading="lazy"
-          onError={() => setFailed(true)}
-        />
-      )}
-    </div>
   );
 }
 
@@ -1374,9 +1373,6 @@ function EstimateAccuracy() {
         <li>
           Top speed uses pitch-speed math as one input, then applies class caps and drag correction. It is not GPS-verified performance.
         </li>
-        <li>
-          Speed and flight time are conservative comparison estimates, not GPS-verified performance.
-        </li>
         <li>Use these numbers to compare configurations, not to certify airworthiness or range.</li>
       </ul>
     </section>
@@ -1412,9 +1408,9 @@ function WarningList({ buildClass, warnings }) {
 
     return (
       <div className="empty-warning">
-        <strong>No compatibility warnings</strong>
+        <strong>No issues flagged</strong>
         <span>
-          Static checks pass for this {buildClassLabel.toLowerCase()} configuration. Verify wiring, stack fit, and tune before arming.
+          Basic checks pass for this {buildClassLabel.toLowerCase()} configuration. Still verify wiring, stack fit, and tune before arming.
         </span>
       </div>
     );

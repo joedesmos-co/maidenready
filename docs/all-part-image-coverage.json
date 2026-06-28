@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-28T13:44:03.738Z",
+  "generatedAt": "2026-06-28T13:51:11.096Z",
   "summary": {
     "total": 294,
-    "found": 72,
-    "missing": 222,
+    "found": 76,
+    "missing": 218,
     "presetPartTotal": 48,
-    "presetPartFound": 28,
-    "presetPartMissing": 20,
+    "presetPartFound": 32,
+    "presetPartMissing": 16,
     "missingByPriority": {
-      "1": 20,
+      "1": 16,
       "2": 84,
       "3": 118
     }
@@ -74,44 +74,6 @@
         "priority": 1
       },
       {
-        "partId": "betafpv-1s-5a-aio-esc",
-        "partName": "BETAFPV 1S 5A AIO ESC",
-        "categoryKey": "esc",
-        "imagePath": "/parts/escs/betafpv-1s-5a-aio-esc.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-beginner",
-            "presetName": "Tiny Whoop Beginner",
-            "buildClass": "tiny-whoop",
-            "categoryKey": "esc"
-          }
-        ],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "geprc-gep-f411-35a-aio-esc",
-        "partName": "GEPRC GEP-F411-35A AIO ESC",
-        "categoryKey": "esc",
-        "imagePath": "/parts/escs/geprc-gep-f411-35a-aio-esc.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-2s-outdoor",
-            "presetName": "2.5\" Outdoor Whoop",
-            "buildClass": "cinewhoop",
-            "categoryKey": "esc"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
         "partId": "skystars-km55a-4in1",
         "partName": "Skystars KM55A 4-in-1",
         "categoryKey": "esc",
@@ -171,44 +133,6 @@
         ],
         "compatibleClasses": [
           "3.5-inch-freestyle",
-          "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "betafpv-f4-1s-aio-fc",
-        "partName": "BETAFPV F4 1S AIO FC",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-beginner",
-            "presetName": "Tiny Whoop Beginner",
-            "buildClass": "tiny-whoop",
-            "categoryKey": "flightController"
-          }
-        ],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "geprc-gep-f411-35a-aio-fc",
-        "partName": "GEPRC GEP-F411-35A AIO FC",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-2s-outdoor",
-            "presetName": "2.5\" Outdoor Whoop",
-            "buildClass": "cinewhoop",
-            "categoryKey": "flightController"
-          }
-        ],
-        "compatibleClasses": [
           "cinewhoop"
         ],
         "priority": 1
@@ -2896,8 +2820,6 @@
       "tattu-rline-4s-650"
     ],
     "esc": [
-      "betafpv-1s-5a-aio-esc",
-      "geprc-gep-f411-35a-aio-esc",
       "skystars-km55a-4in1",
       "speedybee-bl32-50a",
       "speedybee-bls-35a-4in1",
@@ -2928,8 +2850,6 @@
       "tmotor-pacer-f35-cine-esc"
     ],
     "flightController": [
-      "betafpv-f4-1s-aio-fc",
-      "geprc-gep-f411-35a-aio-fc",
       "matek-h743-mini-lr",
       "speedybee-f405-mini",
       "speedybee-f405-v4",
@@ -3106,9 +3026,7 @@
     "cinewhoop": [
       "betafpv-2s-450-xt30",
       "gnb-4s-1500",
-      "geprc-gep-f411-35a-aio-esc",
       "speedybee-bls-35a-4in1",
-      "geprc-gep-f411-35a-aio-fc",
       "speedybee-f405-mini",
       "geprc-cinelog35-v2",
       "iflight-xing-2005-2550",
@@ -3243,37 +3161,6 @@
       "hdzero-race-vtx",
       "rush-tank-ii-vtx"
     ],
-    "tiny-whoop": [
-      "betafpv-1s-5a-aio-esc",
-      "betafpv-f4-1s-aio-fc",
-      "foxeer-reaper-nano-v2-vtx",
-      "betafpv-1s-300-hv-bt2",
-      "betafpv-2s-300-ph2",
-      "gn-1s-550-bt2",
-      "tattu-1s-300-hv",
-      "caddx-ratel-lucky-whoop",
-      "foxeer-pico-r-whoop",
-      "betafpv-brushless-1s-aio-esc",
-      "happymodel-happywhoop-aio-esc",
-      "betafpv-f411-1s-aio-fc",
-      "geprc-gep-aio-1s-fc",
-      "happymodel-happywhoop-aio-fc",
-      "geprc-rocket-lite-75-frame",
-      "newbee-drone-75-pro-frame",
-      "betafpv-0802-25000kv",
-      "emax-e1106-7200kv",
-      "geprc-0901-11000kv",
-      "happymodel-ex0802-19000kv",
-      "happymodel-se0802-22000kv",
-      "newbee-0802-17500kv",
-      "betafpv-40mm-4blade-1535",
-      "emax-avan-40mm-whoop",
-      "gemfan-31mm-4blade-whoop",
-      "hqprop-t65x30-whoop",
-      "happymodel-ep1-dual-elrs",
-      "akk-a5-nano-vtx",
-      "rush-nano-ultimate-whoop-vtx"
-    ],
     "7-inch-long-range": [
       "skystars-km55a-4in1",
       "matek-h743-mini-lr",
@@ -3357,6 +3244,35 @@
       "hqprop-3535-pc",
       "akk-a3-nano-vtx-park",
       "rush-nano-vtx-park"
+    ],
+    "tiny-whoop": [
+      "foxeer-reaper-nano-v2-vtx",
+      "betafpv-1s-300-hv-bt2",
+      "betafpv-2s-300-ph2",
+      "gn-1s-550-bt2",
+      "tattu-1s-300-hv",
+      "caddx-ratel-lucky-whoop",
+      "foxeer-pico-r-whoop",
+      "betafpv-brushless-1s-aio-esc",
+      "happymodel-happywhoop-aio-esc",
+      "betafpv-f411-1s-aio-fc",
+      "geprc-gep-aio-1s-fc",
+      "happymodel-happywhoop-aio-fc",
+      "geprc-rocket-lite-75-frame",
+      "newbee-drone-75-pro-frame",
+      "betafpv-0802-25000kv",
+      "emax-e1106-7200kv",
+      "geprc-0901-11000kv",
+      "happymodel-ex0802-19000kv",
+      "happymodel-se0802-22000kv",
+      "newbee-0802-17500kv",
+      "betafpv-40mm-4blade-1535",
+      "emax-avan-40mm-whoop",
+      "gemfan-31mm-4blade-whoop",
+      "hqprop-t65x30-whoop",
+      "happymodel-ep1-dual-elrs",
+      "akk-a5-nano-vtx",
+      "rush-nano-ultimate-whoop-vtx"
     ]
   },
   "checked": [
@@ -3585,7 +3501,7 @@
       "partName": "BETAFPV 1S 5A AIO ESC",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/betafpv-1s-5a-aio-esc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3605,7 +3521,7 @@
       "partName": "GEPRC GEP-F411-35A AIO ESC",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/geprc-gep-f411-35a-aio-esc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3692,7 +3608,7 @@
       "partName": "BETAFPV F4 1S AIO FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3712,7 +3628,7 @@
       "partName": "GEPRC GEP-F411-35A AIO FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
