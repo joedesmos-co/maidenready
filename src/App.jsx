@@ -50,6 +50,10 @@ import {
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
 import { PartCategoryPlaceholder } from "./components/PartCategoryPlaceholder.jsx";
+import {
+  formatPartImageAttribution,
+  hasPartImageMetadata,
+} from "./utils/partImageMeta.js";
 
 const getInitialBuildClass = () => {
   if (typeof window === "undefined") {
@@ -665,6 +669,8 @@ function PartInfoDrawer({ info, onClose }) {
   const categoryLabel = categoryMeta[step.key]?.label ?? step.label;
   const bestFor = asList(part.bestFor).slice(0, 4);
   const watchOutFor = asList(part.watchOutFor).slice(0, 4);
+  const imageAttribution = formatPartImageAttribution(part);
+  const imageSourceTitle = part.imageSourceUrl || undefined;
 
   return (
     <div className="part-info-layer">
@@ -692,6 +698,14 @@ function PartInfoDrawer({ info, onClose }) {
 
         <div className="part-info-image">
           <PartImage categoryKey={step.key} part={part} partType={categoryLabel} />
+          {hasPartImageMetadata(part) && imageAttribution && (
+            <p
+              className="part-info-image-meta"
+              title={imageSourceTitle}
+            >
+              {imageAttribution}
+            </p>
+          )}
         </div>
 
         <div className="part-info-title">
@@ -1162,6 +1176,10 @@ function PartImage({ part, partType, categoryKey }) {
   const [failed, setFailed] = useState(false);
   const showPlaceholder = failed || !part.imagePath;
 
+  useEffect(() => {
+    setFailed(false);
+  }, [part.id, part.imagePath]);
+
   return (
     <div className="part-preview" aria-label={`${part.name} preview`}>
       {showPlaceholder ? (
@@ -1178,6 +1196,7 @@ function PartImage({ part, partType, categoryKey }) {
         <img
           src={part.imagePath}
           alt={part.name}
+          loading="lazy"
           onError={() => setFailed(true)}
         />
       )}

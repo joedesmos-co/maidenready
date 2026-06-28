@@ -924,6 +924,19 @@ h2 {
   min-height: 164px;
 }
 
+.part-info-image-meta {
+  margin: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-top: 0;
+  background: #080809;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
 .part-info-title {
   display: grid;
   gap: 3px;

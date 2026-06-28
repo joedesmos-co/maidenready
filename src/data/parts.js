@@ -1,3 +1,5 @@
+import { applyPresetPartImageFields } from "./presetPartImages.js";
+
 export const buildSteps = [
   { key: "frame", label: "Frame" },
   { key: "motors", label: "Motors" },
@@ -313,20 +315,52 @@ const getCompatibleClasses = (part) =>
     defaultBuildClass,
   ]);
 
-// Expose a snake_case catalog contract for future data imports while preserving
-// the camelCase aliases already used by the MVP calculator.
-const normalizeCommonFields = (part, categoryKey) => ({
-  ...part,
-  category: categoryKey,
-  type: part.type ?? categoryType[categoryKey] ?? categoryKey,
-  compatibleClasses: getCompatibleClasses(part),
-  imagePath: part.imagePath,
-  keySpecs: part.keySpecs ?? [],
-  price_usd: firstValue(part.price_usd, part.price),
-  weight_g: firstValue(part.weight_g, part.weightG),
-  price: firstValue(part.price, part.price_usd),
-  weightG: firstValue(part.weightG, part.weight_g),
-});
+/*
+ * Part image catalog checklist (developer-facing):
+ * - Do not scrape random store images for public use.
+ * - Prefer own photos, manufacturer-approved images, or properly licensed images.
+ * - Keep SVG placeholders when image rights are unclear.
+ * - Local assets live under public/parts/... and are referenced via imagePath.
+ * - Optional metadata: imageCredit, imageSourceUrl, imageLicense, imageNeedsReview.
+ */
+const normalizeCommonFields = (part, categoryKey) => {
+  const presetImageFields = applyPresetPartImageFields(part.id, categoryKey);
+
+  return {
+    ...part,
+    category: categoryKey,
+    type: part.type ?? categoryType[categoryKey] ?? categoryKey,
+    compatibleClasses: getCompatibleClasses(part),
+    imagePath: firstValue(presetImageFields?.imagePath, part.imagePath),
+    imageCredit: firstValue(
+      part.imageCredit,
+      part.image_credit,
+      presetImageFields?.imageCredit,
+    ),
+    imageSourceUrl: firstValue(
+      part.imageSourceUrl,
+      part.image_source_url,
+      presetImageFields?.imageSourceUrl,
+    ),
+    imageLicense: firstValue(
+      part.imageLicense,
+      part.image_license,
+      presetImageFields?.imageLicense,
+    ),
+    imageNeedsReview: presetImageFields
+      ? firstValue(
+          part.imageNeedsReview,
+          part.image_needs_review,
+          presetImageFields.imageNeedsReview,
+        )
+      : Boolean(firstValue(part.imageNeedsReview, part.image_needs_review, false)),
+    keySpecs: part.keySpecs ?? [],
+    price_usd: firstValue(part.price_usd, part.price),
+    weight_g: firstValue(part.weight_g, part.weightG),
+    price: firstValue(part.price, part.price_usd),
+    weightG: firstValue(part.weightG, part.weight_g),
+  };
+};
 
 const normalizeCategoryFields = (part, categoryKey) => {
   switch (categoryKey) {
