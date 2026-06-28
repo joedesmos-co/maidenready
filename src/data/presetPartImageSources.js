@@ -175,6 +175,8 @@ export const presetPartImageSources = [
     category: "VTX",
     brand: "DJI",
     officialUrl: "https://store.dji.com/product/dji-o3-air-unit",
+    preferredImageUrl:
+      "https://se-cdn.djiits.com/tpc/uploads/spu/cover/ab3dc2b84c1fc9f7542f21030d7b5c17@origin.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/vtx/dji-o3-air-unit.jpg",
@@ -201,6 +203,8 @@ export const presetPartImageSources = [
     category: "VTX",
     brand: "Foxeer",
     officialUrl: "https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583",
+    preferredImageUrl:
+      "https://inew.foxeer.com//upload/s/goods/2024-12-13/15-48-28-675be6ccb8c74.images.800x800.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
@@ -309,6 +313,8 @@ export const presetPartImageSources = [
     category: "Receiver",
     brand: "Happymodel",
     officialUrl: "https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/",
+    preferredImageUrl:
+      "https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/receivers/happymodel-ep2-elrs.jpg",
@@ -457,6 +463,8 @@ export const presetPartImageSources = [
     category: "VTX",
     brand: "RushFPV",
     officialUrl: "https://rushfpv.net/products/tank-solo-vtx",
+    preferredImageUrl:
+      "https://rushfpv.net/cdn/shop/products/005d8391-1615-49d1-a617-2913ee50b36d_1200x1200.jpg?v=1659590919",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/vtx/rush-tank-solo.jpg",

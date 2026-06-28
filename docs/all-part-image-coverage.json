@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-28T06:03:01.965Z",
+  "generatedAt": "2026-06-28T13:29:25.554Z",
   "summary": {
     "total": 294,
-    "found": 57,
-    "missing": 237,
+    "found": 63,
+    "missing": 231,
     "presetPartTotal": 48,
-    "presetPartFound": 26,
-    "presetPartMissing": 22,
+    "presetPartFound": 27,
+    "presetPartMissing": 21,
     "missingByPriority": {
-      "1": 22,
-      "2": 92,
-      "3": 123
+      "1": 21,
+      "2": 88,
+      "3": 122
     }
   },
   "missingByPriority": {
@@ -373,48 +373,21 @@
         "priority": 1
       },
       {
-        "partId": "happymodel-ep2-elrs",
-        "partName": "Happymodel EP2 ELRS",
+        "partId": "tbs-crossfire-nano",
+        "partName": "TBS Crossfire Nano RX",
         "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
+        "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
         "usedInPreset": true,
         "presetUsage": [
           {
-            "presetId": "tiny-whoop-beginner",
-            "presetName": "Tiny Whoop Beginner",
-            "buildClass": "tiny-whoop",
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
             "categoryKey": "receiver"
-          },
-          {
-            "presetId": "3-5-park-freestyle",
-            "presetName": "3.5\" Park Freestyle",
-            "buildClass": "3.5-inch-freestyle",
-            "categoryKey": "receiver"
-          }
-        ],
-        "compatibleClasses": [
-          "tiny-whoop",
-          "3.5-inch-freestyle"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "dji-o3-air-unit",
-        "partName": "DJI O3 Air Unit",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/dji-o3-air-unit.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "vtx"
           }
         ],
         "compatibleClasses": [
           "5-inch-freestyle",
-          "cinewhoop",
           "7-inch-long-range"
         ],
         "priority": 1
@@ -1463,18 +1436,6 @@
         "priority": 2
       },
       {
-        "partId": "happymodel-ep2-5inch-elrs",
-        "partName": "Happymodel EP2 2.4GHz ELRS",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/happymodel-ep2-5inch-elrs.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "imm-rc-fusion-v2-elrs",
         "partName": "ImmersionRC Fusion V2 ELRS",
         "categoryKey": "receiver",
@@ -1523,19 +1484,6 @@
         "priority": 2
       },
       {
-        "partId": "hdzero-freestyle-vtx",
-        "partName": "HDZero Freestyle VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle",
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "hdzero-race-vtx",
         "partName": "HDZero Race VTX",
         "categoryKey": "vtx",
@@ -1552,30 +1500,6 @@
         "partName": "Rush Tank II 5.8GHz VTX",
         "categoryKey": "vtx",
         "imagePath": "/parts/vtx/rush-tank-ii-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "tbs-unify-pro32-nano-vtx",
-        "partName": "TBS Unify Pro32 Nano VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/tbs-unify-pro32-nano-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "walksnail-avatar-gt-vtx",
-        "partName": "Walksnail Avatar GT VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2942,18 +2866,6 @@
         "priority": 3
       },
       {
-        "partId": "happymodel-cine-ep2-elrs",
-        "partName": "Happymodel EP2 Cine ELRS",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/happymodel-cine-ep2-elrs.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "happymodel-ep1-dual-elrs",
         "partName": "Happymodel EP1 Dual ELRS",
         "categoryKey": "receiver",
@@ -3247,28 +3159,22 @@
       "tmotor-mn2004-2550kv"
     ],
     "receiver": [
-      "happymodel-ep2-elrs",
+      "tbs-crossfire-nano",
       "frsky-r-xsr",
       "frsky-xsr-sbus",
-      "happymodel-ep2-5inch-elrs",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "tbs-crossfire-micro-v2",
-      "happymodel-cine-ep2-elrs",
       "happymodel-ep1-dual-elrs",
       "radiomaster-er5-915-lr",
       "tbs-crossfire-micro-lr"
     ],
     "vtx": [
-      "dji-o3-air-unit",
       "foxeer-reaper-nano-v2-vtx",
       "rush-tank-solo",
       "akk-x2-ultimate-vtx",
-      "hdzero-freestyle-vtx",
       "hdzero-race-vtx",
       "rush-tank-ii-vtx",
-      "tbs-unify-pro32-nano-vtx",
-      "walksnail-avatar-gt-vtx",
       "akk-a3-nano-vtx-park",
       "akk-a5-nano-vtx",
       "hdzero-cine-nano-vtx",
@@ -3330,7 +3236,6 @@
       "speedybee-f405-mini",
       "geprc-cinelog35-v2",
       "iflight-xing-2005-2550",
-      "dji-o3-air-unit",
       "rush-tank-solo",
       "tattu-4s-1550",
       "foxeer-toothless-2",
@@ -3367,7 +3272,6 @@
       "gemfan-floppypop3-3518",
       "hqprop-3536-cine-d5",
       "hqprop-durable-3530-cine",
-      "happymodel-cine-ep2-elrs",
       "hdzero-cine-nano-vtx",
       "rush-mini-tank-cine-vtx"
     ],
@@ -3377,7 +3281,7 @@
       "speedybee-bl32-50a",
       "speedybee-f405-v4",
       "tbs-source-one-v5",
-      "dji-o3-air-unit",
+      "tbs-crossfire-nano",
       "rush-tank-solo",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
@@ -3461,21 +3365,16 @@
       "hqprop-t3x2-5x3-515",
       "frsky-r-xsr",
       "frsky-xsr-sbus",
-      "happymodel-ep2-5inch-elrs",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "tbs-crossfire-micro-v2",
       "akk-x2-ultimate-vtx",
-      "hdzero-freestyle-vtx",
       "hdzero-race-vtx",
-      "rush-tank-ii-vtx",
-      "tbs-unify-pro32-nano-vtx",
-      "walksnail-avatar-gt-vtx"
+      "rush-tank-ii-vtx"
     ],
     "tiny-whoop": [
       "betafpv-1s-5a-aio-esc",
       "betafpv-f4-1s-aio-fc",
-      "happymodel-ep2-elrs",
       "foxeer-reaper-nano-v2-vtx",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
@@ -3510,7 +3409,7 @@
       "skystars-km55a-4in1",
       "matek-h743-mini-lr",
       "rekon7-pro-lr",
-      "dji-o3-air-unit",
+      "tbs-crossfire-nano",
       "rush-tank-solo",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
@@ -3555,7 +3454,6 @@
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
       "aos-3-5-v5",
-      "happymodel-ep2-elrs",
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
       "foxeer-toothless-2",
@@ -3563,7 +3461,6 @@
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
-      "hdzero-freestyle-vtx",
       "cnhl-ministar-4s-900",
       "gnb-4s-1100-park",
       "gnb-4s-750-mini",
@@ -4419,7 +4316,7 @@
       "partName": "Happymodel EP2 ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4491,7 +4388,7 @@
       "partName": "TBS Crossfire Nano RX",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4539,7 +4436,7 @@
       "partName": "DJI O3 Air Unit",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/dji-o3-air-unit.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -6101,7 +5998,7 @@
       "partName": "Happymodel EP2 2.4GHz ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep2-5inch-elrs.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6166,7 +6063,7 @@
       "partName": "HDZero Freestyle VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6206,7 +6103,7 @@
       "partName": "TBS Unify Pro32 Nano VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/tbs-unify-pro32-nano-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6219,7 +6116,7 @@
       "partName": "Walksnail Avatar GT VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7716,7 +7613,7 @@
       "partName": "Happymodel EP2 Cine ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-cine-ep2-elrs.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

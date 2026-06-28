@@ -13,10 +13,12 @@
     "images:fetch-five-inch": "node scripts/fetchFiveInchImages.js",
     "images:fetch-easy-categories": "node scripts/fetchEasyCategoryImages.js",
     "images:fetch-motors": "node scripts/fetchMotorImages.js",
+    "images:fetch-receiver-vtx": "node scripts/fetchReceiverVtxImages.js",
     "images:report": "node scripts/presetImageDownloadReport.js",
     "images:report-five-inch": "node scripts/fiveInchImageDownloadReport.js",
     "images:report-easy-categories": "node scripts/easyCategoryImageDownloadReport.js",
     "images:report-motors": "node scripts/motorImageDownloadReport.js",
+    "images:report-receiver-vtx": "node scripts/receiverVtxImageDownloadReport.js",
     "images:folders": "node scripts/createImageFolders.js",
     "validate:stats": "node scripts/validatePresetStats.js"
   },
