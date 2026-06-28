@@ -18,6 +18,8 @@ export const fiveInchPartImageSources = [
     category: "Frame",
     brand: "AOS",
     officialUrl: "https://www.aos-rc.com/designs/aos-5-v5",
+    preferredImageUrl:
+      "https://static.wixstatic.com/media/e57211_5a539ff67e794c83aa16d962133b02f6~mv2.png/v1/fill/w_1920,h_1200,al_c/AOS%205%20V5.774.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/aos-5-v5.jpg",
@@ -90,6 +92,8 @@ export const fiveInchPartImageSources = [
     category: "Frame",
     brand: "GEPRC",
     officialUrl: "https://geprc.com/product/gep-mark4-frame/",
+    preferredImageUrl:
+      "https://geprc.com/wp-content/uploads/2019/06/03-2845615995-1200x1200.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/geprc-mark4-frame.jpg",
@@ -138,6 +142,8 @@ export const fiveInchPartImageSources = [
     category: "Frame",
     brand: "iFlight",
     officialUrl: "https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197",
+    preferredImageUrl:
+      "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul5/Nazgul-XL5-V1.1-NF0.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/iflight-nazgul5-v3-frame.jpg",
@@ -186,6 +192,8 @@ export const fiveInchPartImageSources = [
     category: "Frame",
     brand: "Lumenier",
     officialUrl: "https://www.lumenier.com/products/lumenier-qav-s-2-johnnyfpv-se-5-frame-kit",
+    preferredImageUrl:
+      "https://cdn.shopify.com/s/files/1/0698/9525/8342/files/lumenier-qav-s-2-johnnyfpv-se-5inch-frame-kit-_1.jpg?v=1734560533",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/qav-s-johnnyfpv-se.jpg",

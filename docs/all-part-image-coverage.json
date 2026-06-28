@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-28T13:29:25.554Z",
+  "generatedAt": "2026-06-28T13:44:03.738Z",
   "summary": {
     "total": 294,
-    "found": 63,
-    "missing": 231,
+    "found": 72,
+    "missing": 222,
     "presetPartTotal": 48,
-    "presetPartFound": 27,
-    "presetPartMissing": 21,
+    "presetPartFound": 28,
+    "presetPartMissing": 20,
     "missingByPriority": {
-      "1": 21,
-      "2": 88,
-      "3": 122
+      "1": 20,
+      "2": 84,
+      "3": 118
     }
   },
   "missingByPriority": {
@@ -274,25 +274,6 @@
         ],
         "compatibleClasses": [
           "5-inch-freestyle"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "aos-3-5-v5",
-        "partName": "AOS 3.5 V5",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/aos-3-5-v5.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "3-5-park-freestyle",
-            "presetName": "3.5\" Park Freestyle",
-            "buildClass": "3.5-inch-freestyle",
-            "categoryKey": "frame"
-          }
-        ],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
         ],
         "priority": 1
       },
@@ -980,18 +961,6 @@
         "priority": 2
       },
       {
-        "partId": "aos-5-v5",
-        "partName": "AOS 5 V5",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/aos-5-v5.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "armattan-badger5-frame",
         "partName": "Armattan Badger 5 Frame",
         "categoryKey": "frame",
@@ -1028,18 +997,6 @@
         "priority": 2
       },
       {
-        "partId": "geprc-mark4-frame",
-        "partName": "GEPRC Mark4 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-mark4-frame.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "hglrc-zeus5-frame",
         "partName": "HGLRC Zeus5 Frame",
         "categoryKey": "frame",
@@ -1056,18 +1013,6 @@
         "partName": "iFlight Nazgul Eco5 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/iflight-nazgul-eco5.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "iflight-nazgul5-v3-frame",
-        "partName": "iFlight Nazgul5 V3 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-nazgul5-v3-frame.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1104,18 +1049,6 @@
         "partName": "ImpulseRC Reverb 5 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/impulserc-reverb5-frame.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "lumenier-qav-s-johnnyfpv",
-        "partName": "Lumenier QAV-S JohnnyFPV SE",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2050,18 +1983,6 @@
         "priority": 3
       },
       {
-        "partId": "betafpv-pavo30-cine-frame",
-        "partName": "BETAFPV Pavo30 Cine Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/betafpv-pavo30-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "betafpv-pavo3516-frame",
         "partName": "BETAFPV Pavo3516 Frame",
         "categoryKey": "frame",
@@ -2170,30 +2091,6 @@
         "priority": 3
       },
       {
-        "partId": "happymodel-moblite7-frame",
-        "partName": "Happymodel Moblite7 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/happymodel-moblite7.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "happymodel-mobula7-v2-frame",
-        "partName": "Happymodel Mobula7 V2 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/happymodel-mobula7-v2.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "hglrc-sector7-lr-frame",
         "partName": "HGLRC Sector7 LR Frame",
         "categoryKey": "frame",
@@ -2226,18 +2123,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-chimera7-lr-frame",
-        "partName": "iFlight Chimera7 LR Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-chimera7-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
         ],
         "priority": 3
       },
@@ -3076,24 +2961,18 @@
       "matek-h743-wing-lr-fc"
     ],
     "frame": [
-      "aos-3-5-v5",
       "geprc-cinelog35-v2",
       "rekon7-pro-lr",
       "tbs-source-one-v5",
-      "aos-5-v5",
       "armattan-badger5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
-      "geprc-mark4-frame",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
-      "iflight-nazgul5-v3-frame",
       "iflight-xl5-v6",
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
-      "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
-      "betafpv-pavo30-cine-frame",
       "betafpv-pavo3516-frame",
       "diatone-taycan35-frame",
       "flywoo-explorer35-cine-frame",
@@ -3103,12 +2982,9 @@
       "geprc-crocodile7-lr-frame",
       "geprc-rocket-3-5-frame",
       "geprc-rocket-lite-75-frame",
-      "happymodel-moblite7-frame",
-      "happymodel-mobula7-v2-frame",
       "hglrc-sector7-lr-frame",
       "iflight-chimera3-frame",
       "iflight-chimera35-cine-frame",
-      "iflight-chimera7-lr-frame",
       "iflight-cidatel35-cine-frame",
       "newbee-drone-75-pro-frame",
       "tbs-source-one7-lr-frame"
@@ -3254,7 +3130,6 @@
       "geprc-f722-cine-mini-fc",
       "iflight-beast-h743-cine-fc",
       "matek-f722-cine-mini-fc",
-      "betafpv-pavo30-cine-frame",
       "flywoo-explorer35-cine-frame",
       "geprc-cinebee35-hd-frame",
       "iflight-chimera35-cine-frame",
@@ -3327,18 +3202,14 @@
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
       "speedybee-f7-v3-fc",
-      "aos-5-v5",
       "armattan-badger5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
-      "geprc-mark4-frame",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
-      "iflight-nazgul5-v3-frame",
       "iflight-xl5-v6",
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
-      "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
@@ -3388,8 +3259,6 @@
       "geprc-gep-aio-1s-fc",
       "happymodel-happywhoop-aio-fc",
       "geprc-rocket-lite-75-frame",
-      "happymodel-moblite7-frame",
-      "happymodel-mobula7-v2-frame",
       "newbee-drone-75-pro-frame",
       "betafpv-0802-25000kv",
       "emax-e1106-7200kv",
@@ -3432,7 +3301,6 @@
       "flywoo-explorer7-lr-frame",
       "geprc-crocodile7-lr-frame",
       "hglrc-sector7-lr-frame",
-      "iflight-chimera7-lr-frame",
       "tbs-source-one7-lr-frame",
       "axisflying-2808-1150kv-lr",
       "brotherhobby-2806-1400kv-lr",
@@ -3453,7 +3321,6 @@
     "3.5-inch-freestyle": [
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
-      "aos-3-5-v5",
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
       "foxeer-toothless-2",
@@ -3932,7 +3799,7 @@
       "partName": "AOS 3.5 V5",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/aos-3-5-v5.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -5231,7 +5098,7 @@
       "partName": "AOS 5 V5",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/aos-5-v5.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5309,7 +5176,7 @@
       "partName": "GEPRC Mark4 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-mark4-frame.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5361,7 +5228,7 @@
       "partName": "iFlight Nazgul5 V3 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-nazgul5-v3-frame.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5413,7 +5280,7 @@
       "partName": "Lumenier QAV-S JohnnyFPV SE",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6729,7 +6596,7 @@
       "partName": "BETAFPV Pavo30 Cine Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-pavo30-cine.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6859,7 +6726,7 @@
       "partName": "Happymodel Moblite7 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/happymodel-moblite7.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6872,7 +6739,7 @@
       "partName": "Happymodel Mobula7 V2 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/happymodel-mobula7-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6924,7 +6791,7 @@
       "partName": "iFlight Chimera7 LR Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-chimera7-lr.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

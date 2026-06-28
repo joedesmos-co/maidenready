@@ -26,6 +26,7 @@ export const DISCOURAGED_IMAGE_URL_PATTERNS = [
   /social[-_]?share/i,
   /judgeme\.imgix\.net/i,
   /AOS%203\.5%20V5%20\(1\)/i,
+  /AOS%205%20V5%20\(1\)/i,
   /\/X2\.jpg/i,
   /[_-]x2[_-]/i,
   /%7Bwidth%7D/i,
