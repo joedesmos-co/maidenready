@@ -2,29 +2,29 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-29T20:47:10.841Z
+Generated: 2026-06-29T21:51:06.292Z
 
 ## Baseline coverage
 
 | Metric | Count |
 | --- | ---: |
 | Total catalog parts | 294 |
-| Found under public/ | 93 |
-| Missing | 201 |
+| Found under public/ | 95 |
+| Missing | 199 |
 | Preset parts found | 38/48 |
 
 ## Classification summary
 
 | Classification | Count |
 | --- | ---: |
-| Fetchable now | 1 |
-| Needs better official URL | 72 |
-| Official source blocked | 23 |
-| No clean packshot found | 52 |
-| Should remain SVG placeholder | 24 |
-| Unsafe — likely mismatch | 29 |
+| Fetchable now | 0 |
+| Needs better official URL | 49 |
+| Official source blocked | 25 |
+| No clean packshot found | 62 |
+| Should remain SVG placeholder | 29 |
+| Unsafe — likely mismatch | 34 |
 
-**Should remain SVG placeholder (incl. unsafe / no packshot):** 105
+**Should remain SVG placeholder (incl. unsafe / no packshot):** 125
 
 ## Queue tiers
 
@@ -34,15 +34,13 @@ Generated: 2026-06-29T20:47:10.841Z
 | 2 | 5-inch freestyle catalog | 79 |
 | 3 | Multi build-class catalog | 0 |
 | 4 | Easy-match: props, batteries, cameras, motors | 66 |
-| 5 | Receivers / VTX | 7 |
+| 5 | Receivers / VTX | 6 |
 | 6 | Frames | 15 |
-| 7 | Electronics: FC / ESC / stack / AIO | 24 |
+| 7 | Electronics: FC / ESC / stack / AIO | 23 |
 
 ## Fetchable now
 
-- **Rush Nano Ultimate Whoop VTX** (`rush-nano-ultimate-whoop-vtx`) — /parts/vtx/rush-nano-ultimate-whoop.jpg
-  - URL: https://rushfpv.net/cdn/shop/products/d60a4673-2782-4af7-9ac9-383088cf5367_1200x1200.jpg
-  - Script: `images:fetch-receiver-vtx`
+_None at generation time._
 
 ## Top 20 manual research targets
 
@@ -1954,19 +1952,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 156. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
-
-- **Tier:** 5 — Receivers / VTX
-- **Classification:** Fetchable now (`fetchable_now`)
-- **Category:** VTX (`vtx`)
-- **Preset part:** no
-- **Image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
-- **Official URL:** https://rushfpv.net/products/tank-ultimate-mini-vtx
-- **Preferred image URL:** https://rushfpv.net/cdn/shop/products/d60a4673-2782-4af7-9ac9-383088cf5367_1200x1200.jpg
-- **URL confidence:** high
-- **Reason:** Verified manufacturer preferredImageUrl with high URL confidence.
-
-### 157. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
+### 156. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1978,7 +1964,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
-### 158. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
+### 157. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1990,7 +1976,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
-### 159. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
+### 158. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2002,7 +1988,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No HDZero Cine Nano VTX product page on hd-zero.com shop.
 
-### 160. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
+### 159. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2014,7 +2000,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No RushFPV Mini Tank Cine VTX product page on rushfpv.net.
 
-### 161. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
+### 160. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2026,7 +2012,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 162. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
+### 161. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2038,7 +2024,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 163. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
+### 162. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -2050,7 +2036,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 164. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
+### 163. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -2062,7 +2048,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 165. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
+### 164. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2074,7 +2060,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No BETAFPV Pavo3516 frame or kit listing on betafpv.com.
 
-### 166. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
+### 165. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2086,7 +2072,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Diatone store has Taycan accessories only; no 3.5-inch frame kit page.
 
-### 167. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
+### 166. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2098,7 +2084,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.
 
-### 168. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+### 167. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2110,7 +2096,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 3.5 frame kit on flywoo.net.
 
-### 169. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
+### 168. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2122,7 +2108,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 7 LR frame kit on flywoo.net.
 
-### 170. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
+### 169. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2134,7 +2120,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.
 
-### 171. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
+### 170. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2146,7 +2132,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Crocodile7 LR frame product on geprc.com.
 
-### 172. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+### 171. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2158,7 +2144,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket 3.5 frame kit product page on geprc.com.
 
-### 173. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
+### 172. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2170,7 +2156,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket Lite 75 frame kit product page on geprc.com.
 
-### 174. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
+### 173. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2182,7 +2168,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only.
 
-### 175. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+### 174. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2194,7 +2180,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product.
 
-### 176. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
+### 175. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2206,7 +2192,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.
 
-### 177. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
+### 176. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2218,283 +2204,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.
 
-### 178. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/aikon-65a-lr-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 179. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/betafpv-brushless-1s-aio-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 180. Diatone Mamba F35 Cine ESC (`diatone-mamba-f35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/diatone-mamba-f35-cine-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 181. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/diatone-mamba-f35-mini.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 182. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/diatone-mamba-f55-lr-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 183. GEPRC GEP35A Cine ESC (`geprc-gep35a-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/geprc-gep35a-cine-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 184. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/happymodel-happywhoop-aio-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 185. HGLRC Tekko32 F35 Mini 35A (`hglrc-tekko32-f35-mini`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/hglrc-tekko32-f35-mini.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 186. iFlight SucceX-D35 Cine ESC (`iflight-succexd35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/iflight-succexd35-cine-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 187. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/meps-konvex-55a-lr-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 188. T-Motor F35A Mini 4-in-1 (`tmotor-f35a-mini-4in1`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/tmotor-f35a-mini-4in1.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 189. T-Motor Pacer F35 Cine ESC (`tmotor-pacer-f35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/tmotor-pacer-f35-cine-esc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 190. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 191. Diatone Mamba F405 Mini (`diatone-mamba-f405-mini`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/diatone-mamba-f405-mini.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 192. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/diatone-mamba-h743-lr-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 193. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/geprc-f405-20x20-mini.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 194. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 195. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/geprc-f745-lr-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 196. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/geprc-gep-aio-1s-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 197. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/happymodel-happywhoop-aio-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 198. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 199. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 200. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/matek-f722-cine-mini-fc.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 201. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
+### 177. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -2505,3 +2215,267 @@ _High-value missing parts that need a better official direct packshot URL._
 - **Preferred image URL:** —
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
+
+### 178. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Official source blocked (`official_source_blocked`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/aikon-65a-lr-esc.jpg`
+- **Official URL:** https://shop.aikon.com/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Aikon official store (shop.aikon.com) unreachable from automated fetch.
+
+### 179. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Official source blocked (`official_source_blocked`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/meps-konvex-55a-lr-esc.jpg`
+- **Official URL:** https://www.mepsking.com/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** MEPS official store API returns no products; no verified Konvex 55A LR URL.
+
+### 180. Diatone Mamba F35 Cine ESC (`diatone-mamba-f35-cine-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/diatone-mamba-f35-cine-esc.jpg`
+- **Official URL:** https://www.diatone.us/collections/esc
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini line only.
+
+### 181. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/diatone-mamba-f55-lr-esc.jpg`
+- **Official URL:** https://www.diatone.us/products/mamba-f55_bls-dshot600-4in1-esc-40a-6s-2
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Diatone F55_BLS page packshot filename references F50; LR suffix not a separate SKU.
+
+### 182. GEPRC GEP35A Cine ESC (`geprc-gep35a-cine-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/geprc-gep35a-cine-esc.jpg`
+- **Official URL:** https://geprc.com/product-category/esc/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No GEPRC GEP35A Cine ESC on geprc.com; Taker ESC line only.
+
+### 183. HGLRC Tekko32 F35 Mini 35A (`hglrc-tekko32-f35-mini`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/hglrc-tekko32-f35-mini.jpg`
+- **Official URL:** https://www.hglrc.com/collections/esc
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No HGLRC Tekko32 F35 Mini product page on hglrc.com.
+
+### 184. iFlight SucceX-D35 Cine ESC (`iflight-succexd35-cine-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/iflight-succexd35-cine-esc.jpg`
+- **Official URL:** https://shop.iflight.com/esc-cat343
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.
+
+### 185. T-Motor F35A Mini 4-in-1 (`tmotor-f35a-mini-4in1`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/tmotor-f35a-mini-4in1.jpg`
+- **Official URL:** https://store.tmotor.com/category/uav-esc-1.html
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.
+
+### 186. T-Motor Pacer F35 Cine ESC (`tmotor-pacer-f35-cine-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/tmotor-pacer-f35-cine-esc.jpg`
+- **Official URL:** https://store.tmotor.com/category/uav-esc-1.html
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.
+
+### 187. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/geprc-f405-20x20-mini.jpg`
+- **Official URL:** https://geprc.com/product/gep-f405-hd-v3-flight-controller/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** GEPRC store lists GEP-F405-HD variants only; no F405 20x20 Mini SKU.
+
+### 188. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg`
+- **Official URL:** https://geprc.com/product/gep-f722-hd-flight-controller/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU.
+
+### 189. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/matek-f722-cine-mini-fc.jpg`
+- **Official URL:** https://www.mateksys.com/?portfolio=f722-mini
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU.
+
+### 190. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/betafpv-brushless-1s-aio-esc.jpg`
+- **Official URL:** https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
+
+### 191. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/happymodel-happywhoop-aio-esc.jpg`
+- **Official URL:** https://www.happymodel.cn/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
+
+### 192. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/diatone-mamba-h743-lr-fc.jpg`
+- **Official URL:** https://www.diatone.us/products/mb-mk4-h743-v2-fc
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
+
+### 193. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/geprc-gep-aio-1s-fc.jpg`
+- **Official URL:** https://geprc.com/product/gep-taker-f411-12a-e-12s-aio/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
+
+### 194. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/happymodel-happywhoop-aio-fc.jpg`
+- **Official URL:** https://www.happymodel.cn/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
+
+### 195. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/diatone-mamba-f35-mini.jpg`
+- **Official URL:** https://www.diatone.us/products/mb-f40_128k-bl32-mini-esc
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
+
+### 196. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg`
+- **Official URL:** https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
+
+### 197. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/geprc-f745-lr-fc.jpg`
+- **Official URL:** https://geprc.com/product/geprc-taker-h743-mini-flight-controller/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
+
+### 198. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg`
+- **Official URL:** https://shop.iflight.com/flight-controller-cat342
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
+
+### 199. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
+
+- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** Flight controller (`flightController`)
+- **Preset part:** no
+- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg`
+- **Official URL:** https://shop.iflight.com/flight-controller-cat342
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.

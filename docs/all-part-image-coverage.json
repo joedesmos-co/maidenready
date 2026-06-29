@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-29T19:42:55.130Z",
+  "generatedAt": "2026-06-29T21:51:06.187Z",
   "summary": {
     "total": 294,
-    "found": 93,
-    "missing": 201,
+    "found": 95,
+    "missing": 199,
     "presetPartTotal": 48,
     "presetPartFound": 38,
     "presetPartMissing": 10,
     "missingByPriority": {
       "1": 10,
       "2": 79,
-      "3": 112
+      "3": 110
     }
   },
   "missingByPriority": {
@@ -1585,18 +1585,6 @@
         "priority": 3
       },
       {
-        "partId": "diatone-mamba-f405-mini",
-        "partName": "Diatone Mamba F405 Mini",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/diatone-mamba-f405-mini.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "diatone-mamba-h743-lr-fc",
         "partName": "Diatone Mamba H743 LR FC",
         "categoryKey": "flightController",
@@ -2509,18 +2497,6 @@
         "priority": 3
       },
       {
-        "partId": "rush-nano-ultimate-whoop-vtx",
-        "partName": "Rush Nano Ultimate Whoop VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/rush-nano-ultimate-whoop.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "rush-nano-vtx-park",
         "partName": "RushFPV Nano VTX Park",
         "categoryKey": "vtx",
@@ -2611,7 +2587,6 @@
       "matek-h743-slate-freestyle",
       "speedybee-f7-v3-fc",
       "betafpv-f411-1s-aio-fc",
-      "diatone-mamba-f405-mini",
       "diatone-mamba-h743-lr-fc",
       "geprc-f405-20x20-mini",
       "geprc-f722-cine-mini-fc",
@@ -2705,7 +2680,6 @@
       "akk-a5-nano-vtx",
       "hdzero-cine-nano-vtx",
       "rush-mini-tank-cine-vtx",
-      "rush-nano-ultimate-whoop-vtx",
       "rush-nano-vtx-park"
     ],
     "camera": [
@@ -2900,7 +2874,6 @@
       "diatone-mamba-f35-mini-esc",
       "hglrc-tekko32-f35-mini",
       "tmotor-f35a-mini-4in1",
-      "diatone-mamba-f405-mini",
       "geprc-f405-20x20-mini",
       "betafpv-pavo3516-frame",
       "diatone-taycan35-frame",
@@ -2983,8 +2956,7 @@
       "emax-avan-40mm-whoop",
       "gemfan-31mm-4blade-whoop",
       "hqprop-t65x30-whoop",
-      "akk-a5-nano-vtx",
-      "rush-nano-ultimate-whoop-vtx"
+      "akk-a5-nano-vtx"
     ]
   },
   "checked": [
@@ -6081,7 +6053,7 @@
       "partName": "Diatone Mamba F405 Mini",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/diatone-mamba-f405-mini.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7212,7 +7184,7 @@
       "partName": "Rush Nano Ultimate Whoop VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/rush-nano-ultimate-whoop.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

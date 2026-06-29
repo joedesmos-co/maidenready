@@ -29,6 +29,12 @@ export const STACK_ONLY_INDIVIDUAL_PART_IDS = new Set([
   "aikon-f7-mini-35a",
   "iflight-succex-e-f4-50a",
   "rush-blade-f7-60a-4in1",
+  "betafpv-brushless-1s-aio-esc",
+  "betafpv-f411-1s-aio-fc",
+  "happymodel-happywhoop-aio-esc",
+  "happymodel-happywhoop-aio-fc",
+  "geprc-gep-aio-1s-fc",
+  "diatone-mamba-h743-lr-fc",
 ]);
 
 /** Full-aircraft listings without isolated frame-kit packshots. */
@@ -74,6 +80,11 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "cnhl-6s-1800-lr-lipo",
   "radiomaster-er5-915-lr",
   "rush-nano-vtx-park",
+  "betafpv-f411-1s-aio-fc",
+  "diatone-mamba-f35-mini-esc",
+  "geprc-f745-lr-fc",
+  "iflight-beast-h743-cine-fc",
+  "iflight-beast-h743-lr-fc",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
@@ -91,6 +102,8 @@ export const OFFICIAL_SOURCE_BLOCKED_PART_IDS = new Map([
   ["akk-x2-ultimate-vtx", "AKK official store blocks automated fetch."],
   ["akk-a3-nano-vtx-park", "AKK official store (akktek.com) blocks automated fetch."],
   ["akk-a5-nano-vtx", "AKK official store (akktek.com) blocks automated fetch."],
+  ["aikon-65a-lr-esc", "Aikon official store (shop.aikon.com) unreachable from automated fetch."],
+  ["meps-konvex-55a-lr-esc", "MEPS official store API returns no products; no verified Konvex 55A LR URL."],
   ["rush-tank-ii-vtx", "RushFPV Tank II product page unreachable from automated fetch."],
   ["gnb-4s-1500", "No exact 1500mAh official GNB/Gaoneng product page."],
   ["gn-1s-550-bt2", "GNB/Gaoneng official store blocks automated fetch; no verified 1S 550mAh BT2.0 URL."],
@@ -170,6 +183,18 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["iflight-chimera3-frame", "Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product."],
   ["iflight-chimera35-cine-frame", "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com."],
   ["iflight-cidatel35-cine-frame", "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com."],
+  ["aikon-65a-lr-esc", "Aikon official store unreachable; no verified 65A LR ESC product URL on file."],
+  ["diatone-mamba-f35-cine-esc", "No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini line only."],
+  ["diatone-mamba-f35-mini-esc", "No Diatone Mamba F35 Mini ESC on diatone.us; closest is F40 mini (different SKU)."],
+  ["diatone-mamba-f55-lr-esc", "Diatone F55_BLS page packshot filename references F50; LR suffix not a separate SKU."],
+  ["geprc-gep35a-cine-esc", "No GEPRC GEP35A Cine ESC on geprc.com; Taker ESC line only."],
+  ["hglrc-tekko32-f35-mini", "No HGLRC Tekko32 F35 Mini product page on hglrc.com."],
+  ["iflight-succexd35-cine-esc", "Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com."],
+  ["tmotor-f35a-mini-4in1", "No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com."],
+  ["tmotor-pacer-f35-cine-esc", "No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com."],
+  ["geprc-f405-20x20-mini", "GEPRC store lists GEP-F405-HD variants only; no F405 20x20 Mini SKU."],
+  ["geprc-f722-cine-mini-fc", "GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU."],
+  ["matek-f722-cine-mini-fc", "Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU."],
 ]);
 
 export const CLASSIFICATION_LABELS = {

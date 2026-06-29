@@ -4,13 +4,13 @@ Developer-facing TODO for every part in `src/data/parts.js`.
 
 > No images are downloaded by this report. Add local JPGs under `public/` manually or via the preset image workflow.
 
-Generated: 2026-06-29T19:42:55.130Z
+Generated: 2026-06-29T21:51:06.187Z
 
 ## Summary
 
 - Total catalog parts: **294**
-- Found under `public/`: **93**
-- Missing local JPGs: **201**
+- Found under `public/`: **95**
+- Missing local JPGs: **199**
 - Preset parts: **38/48** found
 
 ### Missing by priority
@@ -19,7 +19,7 @@ Generated: 2026-06-29T19:42:55.130Z
 | --- | --- | ---: |
 | 1 | Preset parts | **10** |
 | 2 | 5-inch freestyle catalog | **79** |
-| 3 | Other build-class catalog | **112** |
+| 3 | Other build-class catalog | **110** |
 
 ## Priority TODO (missing only)
 
@@ -917,7 +917,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/rush-tank-ii-vtx.jpg`
 - **Status:** missing local JPG
 
-### Priority 3 — Other build-class catalog (112)
+### Priority 3 — Other build-class catalog (110)
 
 ### 1. BETAFPV 2S 300mAh PH2.0 (`betafpv-2s-300-ph2`)
 
@@ -1249,17 +1249,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg`
 - **Status:** missing local JPG
 
-### 34. Diatone Mamba F405 Mini (`diatone-mamba-f405-mini`)
-
-- **Category:** Flight controller (`flightController`)
-- **Build classes:** 3.5" Freestyle
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/flight-controllers/diatone-mamba-f405-mini.jpg`
-- **Status:** missing local JPG
-
-### 35. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
+### 34. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -1269,7 +1259,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/diatone-mamba-h743-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 36. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+### 35. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 3.5" Freestyle
@@ -1279,7 +1269,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f405-20x20-mini.jpg`
 - **Status:** missing local JPG
 
-### 37. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
+### 36. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -1289,7 +1279,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg`
 - **Status:** missing local JPG
 
-### 38. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
+### 37. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -1299,7 +1289,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f745-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 39. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
+### 38. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Tiny Whoop
@@ -1309,7 +1299,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-gep-aio-1s-fc.jpg`
 - **Status:** missing local JPG
 
-### 40. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
+### 39. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Tiny Whoop
@@ -1319,7 +1309,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/happymodel-happywhoop-aio-fc.jpg`
 - **Status:** missing local JPG
 
-### 41. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
+### 40. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -1329,7 +1319,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg`
 - **Status:** missing local JPG
 
-### 42. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
+### 41. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -1339,7 +1329,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 43. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
+### 42. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -1349,7 +1339,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/matek-f722-cine-mini-fc.jpg`
 - **Status:** missing local JPG
 
-### 44. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
+### 43. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -1359,7 +1349,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/matek-h743-wing-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 45. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
+### 44. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -1369,7 +1359,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/betafpv-pavo3516.jpg`
 - **Status:** missing local JPG
 
-### 46. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
+### 45. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -1379,7 +1369,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/diatone-taycan35.jpg`
 - **Status:** missing local JPG
 
-### 47. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
+### 46. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Cinewhoop
@@ -1389,7 +1379,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/flywoo-explorer35-cine.jpg`
 - **Status:** missing local JPG
 
-### 48. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+### 47. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -1399,7 +1389,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/flywoo-explorer35.jpg`
 - **Status:** missing local JPG
 
-### 49. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
+### 48. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 7" Long Range
@@ -1409,7 +1399,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/flywoo-explorer7-lr.jpg`
 - **Status:** missing local JPG
 
-### 50. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
+### 49. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Cinewhoop
@@ -1419,7 +1409,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/geprc-cinebee35-hd.jpg`
 - **Status:** missing local JPG
 
-### 51. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
+### 50. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 7" Long Range
@@ -1429,7 +1419,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/geprc-crocodile7-lr.jpg`
 - **Status:** missing local JPG
 
-### 52. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+### 51. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -1439,7 +1429,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/geprc-rocket-3-5.jpg`
 - **Status:** missing local JPG
 
-### 53. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
+### 52. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Tiny Whoop
@@ -1449,7 +1439,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/geprc-rocket-lite-75.jpg`
 - **Status:** missing local JPG
 
-### 54. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
+### 53. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 7" Long Range
@@ -1459,7 +1449,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/hglrc-sector7-lr.jpg`
 - **Status:** missing local JPG
 
-### 55. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+### 54. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -1469,7 +1459,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/iflight-chimera3.jpg`
 - **Status:** missing local JPG
 
-### 56. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
+### 55. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Cinewhoop
@@ -1479,7 +1469,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/iflight-chimera35-cine.jpg`
 - **Status:** missing local JPG
 
-### 57. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
+### 56. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Cinewhoop
@@ -1489,7 +1479,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/iflight-cidatel35-cine.jpg`
 - **Status:** missing local JPG
 
-### 58. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
+### 57. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** Tiny Whoop
@@ -1499,7 +1489,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/newbee-drone-75-pro.jpg`
 - **Status:** missing local JPG
 
-### 59. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
+### 58. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 7" Long Range
@@ -1509,7 +1499,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/frames/tbs-source-one7-lr.jpg`
 - **Status:** missing local JPG
 
-### 60. AxisFlying 2808 1150KV LR (`axisflying-2808-1150kv-lr`)
+### 59. AxisFlying 2808 1150KV LR (`axisflying-2808-1150kv-lr`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1519,7 +1509,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/axisflying-2808-1150kv-lr.jpg`
 - **Status:** missing local JPG
 
-### 61. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
+### 60. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1529,7 +1519,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/betafpv-1404-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 62. BrotherHobby 1507 3700KV (`brotherhobby-1507-3700kv`)
+### 61. BrotherHobby 1507 3700KV (`brotherhobby-1507-3700kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1539,7 +1529,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/brotherhobby-1507-3700kv.jpg`
 - **Status:** missing local JPG
 
-### 63. BrotherHobby 2004 2600KV (`brotherhobby-2004-2600kv`)
+### 62. BrotherHobby 2004 2600KV (`brotherhobby-2004-2600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1549,7 +1539,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/brotherhobby-2004-2600kv.jpg`
 - **Status:** missing local JPG
 
-### 64. BrotherHobby 2806 1400KV LR (`brotherhobby-2806-1400kv-lr`)
+### 63. BrotherHobby 2806 1400KV LR (`brotherhobby-2806-1400kv-lr`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1559,7 +1549,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/brotherhobby-2806-1400kv-lr.jpg`
 - **Status:** missing local JPG
 
-### 65. EMAX E1106 7200KV (`emax-e1106-7200kv`)
+### 64. EMAX E1106 7200KV (`emax-e1106-7200kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Tiny Whoop
@@ -1569,7 +1559,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/emax-e1106-7200kv.jpg`
 - **Status:** missing local JPG
 
-### 66. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
+### 65. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1579,7 +1569,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/emax-eco-1404-4000kv.jpg`
 - **Status:** missing local JPG
 
-### 67. EMAX ECO 2004 2550KV (`emax-eco-2004-2550kv`)
+### 66. EMAX ECO 2004 2550KV (`emax-eco-2004-2550kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1589,7 +1579,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/emax-eco-2004-2550kv.jpg`
 - **Status:** missing local JPG
 
-### 68. EMAX ECO II 2806 1280KV (`emax-eco-ii-2806-1280kv`)
+### 67. EMAX ECO II 2806 1280KV (`emax-eco-ii-2806-1280kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1599,7 +1589,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/emax-eco-ii-2806-1280kv.jpg`
 - **Status:** missing local JPG
 
-### 69. GEPRC 0901 11000KV (`geprc-0901-11000kv`)
+### 68. GEPRC 0901 11000KV (`geprc-0901-11000kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Tiny Whoop
@@ -1609,7 +1599,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/geprc-0901-11000kv.jpg`
 - **Status:** missing local JPG
 
-### 70. GEPRC 2005 2200KV (`geprc-2005-2200kv`)
+### 69. GEPRC 2005 2200KV (`geprc-2005-2200kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1619,7 +1609,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/geprc-2005-2200kv.jpg`
 - **Status:** missing local JPG
 
-### 71. Happymodel Cine 2004 2400KV (`happymodel-cine-2004-2400kv`)
+### 70. Happymodel Cine 2004 2400KV (`happymodel-cine-2004-2400kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1629,7 +1619,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/happymodel-cine-2004-2400kv.jpg`
 - **Status:** missing local JPG
 
-### 72. iFlight XING-E Pro 2806 1300KV (`iflight-xing-e-pro-2806-1300kv`)
+### 71. iFlight XING-E Pro 2806 1300KV (`iflight-xing-e-pro-2806-1300kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1639,7 +1629,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/iflight-xing-e-pro-2806-1300kv.jpg`
 - **Status:** missing local JPG
 
-### 73. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
+### 72. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1649,7 +1639,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/iflight-xing2-1404-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 74. iFlight XING2 1507 4600KV (`iflight-xing2-1507-4600kv`)
+### 73. iFlight XING2 1507 4600KV (`iflight-xing2-1507-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1659,7 +1649,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/iflight-xing2-1507-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 75. iFlight XING2 2203 2350KV (`iflight-xing2-2203-2350kv`)
+### 74. iFlight XING2 2203 2350KV (`iflight-xing2-2203-2350kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1669,7 +1659,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/iflight-xing2-2203-2350kv.jpg`
 - **Status:** missing local JPG
 
-### 76. iFlight XING2 2807 1280KV LR (`iflight-xing2-2807-1280kv-lr`)
+### 75. iFlight XING2 2807 1280KV LR (`iflight-xing2-2807-1280kv-lr`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1679,7 +1669,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/iflight-xing2-2807-1280kv-lr.jpg`
 - **Status:** missing local JPG
 
-### 77. NewBeeDrone 0802 17500KV (`newbee-0802-17500kv`)
+### 76. NewBeeDrone 0802 17500KV (`newbee-0802-17500kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Tiny Whoop
@@ -1689,7 +1679,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/newbee-0802-17500kv.jpg`
 - **Status:** missing local JPG
 
-### 78. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
+### 77. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1699,7 +1689,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/rcinpower-1404-3800kv.jpg`
 - **Status:** missing local JPG
 
-### 79. RCinPower 2203 2300KV (`rcinpower-2203-2300kv`)
+### 78. RCinPower 2203 2300KV (`rcinpower-2203-2300kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1709,7 +1699,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/rcinpower-2203-2300kv.jpg`
 - **Status:** missing local JPG
 
-### 80. RCinPower 2807 1350KV LR (`rcinpower-2807-1350kv-lr`)
+### 79. RCinPower 2807 1350KV LR (`rcinpower-2807-1350kv-lr`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1719,7 +1709,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/rcinpower-2807-1350kv-lr.jpg`
 - **Status:** missing local JPG
 
-### 81. T-Motor 2807 1300KV LR (`tmotor-2807-1300kv-lr`)
+### 80. T-Motor 2807 1300KV LR (`tmotor-2807-1300kv-lr`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 7" Long Range
@@ -1729,7 +1719,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/tmotor-2807-1300kv-lr.jpg`
 - **Status:** missing local JPG
 
-### 82. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
+### 81. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -1739,7 +1729,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/tmotor-f1404-3800kv.jpg`
 - **Status:** missing local JPG
 
-### 83. T-Motor MN2004 2550KV (`tmotor-mn2004-2550kv`)
+### 82. T-Motor MN2004 2550KV (`tmotor-mn2004-2550kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** Cinewhoop
@@ -1749,7 +1739,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/motors/tmotor-mn2004-2550kv.jpg`
 - **Status:** missing local JPG
 
-### 84. APC 7x4x2 LR (`apc-7x4-2-lr`)
+### 83. APC 7x4x2 LR (`apc-7x4-2-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1759,7 +1749,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/apc-7x4-2-lr.jpg`
 - **Status:** missing local JPG
 
-### 85. EMAX Avan 3.5x4.0 Cinewhoop D5 (`avan-3540-cine-d5`)
+### 84. EMAX Avan 3.5x4.0 Cinewhoop D5 (`avan-3540-cine-d5`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1769,7 +1759,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/avan-3540-cine-d5.jpg`
 - **Status:** missing local JPG
 
-### 86. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
+### 85. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1779,7 +1769,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/avan-rush-3528.jpg`
 - **Status:** missing local JPG
 
-### 87. BETAFPV 40mm 4-Blade 1.5x3.5 (`betafpv-40mm-4blade-1535`)
+### 86. BETAFPV 40mm 4-Blade 1.5x3.5 (`betafpv-40mm-4blade-1535`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Tiny Whoop
@@ -1789,7 +1779,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/betafpv-40mm-1535.jpg`
 - **Status:** missing local JPG
 
-### 88. DAL 3.5x4.35 Cinewhoop D5 (`dal-35435-cine-d5`)
+### 87. DAL 3.5x4.35 Cinewhoop D5 (`dal-35435-cine-d5`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1799,7 +1789,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/dal-35435-cine-d5.jpg`
 - **Status:** missing local JPG
 
-### 89. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
+### 88. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1809,7 +1799,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/dal-prop-3530-cyclone.jpg`
 - **Status:** missing local JPG
 
-### 90. EMAX Avan 40mm Whoop (`emax-avan-40mm-whoop`)
+### 89. EMAX Avan 40mm Whoop (`emax-avan-40mm-whoop`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Tiny Whoop
@@ -1819,7 +1809,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/emax-avan-40mm-whoop.jpg`
 - **Status:** missing local JPG
 
-### 91. Gemfan 31mm 4-Blade Whoop (`gemfan-31mm-4blade-whoop`)
+### 90. Gemfan 31mm 4-Blade Whoop (`gemfan-31mm-4blade-whoop`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Tiny Whoop
@@ -1829,7 +1819,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-31mm-whoop.jpg`
 - **Status:** missing local JPG
 
-### 92. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
+### 91. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1839,7 +1829,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-3522-hurricane.jpg`
 - **Status:** missing local JPG
 
-### 93. Gemfan 3.5x2.8 Cinewhoop D5 (`gemfan-3528-cine-d5`)
+### 92. Gemfan 3.5x2.8 Cinewhoop D5 (`gemfan-3528-cine-d5`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1849,7 +1839,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-3528-cine-d5.jpg`
 - **Status:** missing local JPG
 
-### 94. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
+### 93. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1859,7 +1849,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-3528-freestyle.jpg`
 - **Status:** missing local JPG
 
-### 95. Gemfan 7x3.5x2 LR (`gemfan-7035-2-lr`)
+### 94. Gemfan 7x3.5x2 LR (`gemfan-7035-2-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1869,7 +1859,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-7035-2-lr.jpg`
 - **Status:** missing local JPG
 
-### 96. Gemfan 7x3.6x3 LR (`gemfan-7036-3-lr`)
+### 95. Gemfan 7x3.6x3 LR (`gemfan-7036-3-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1879,7 +1869,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-7036-3-lr.jpg`
 - **Status:** missing local JPG
 
-### 97. Gemfan FloppyPop3 3.5x1.8 (`gemfan-floppypop3-3518`)
+### 96. Gemfan FloppyPop3 3.5x1.8 (`gemfan-floppypop3-3518`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1889,7 +1879,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/gemfan-floppypop3-3518.jpg`
 - **Status:** missing local JPG
 
-### 98. GEPRC 7x3.8x2 LR (`geprc-7038-2-lr`)
+### 97. GEPRC 7x3.8x2 LR (`geprc-7038-2-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1899,7 +1889,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/geprc-7038-2-lr.jpg`
 - **Status:** missing local JPG
 
-### 99. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
+### 98. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1909,7 +1899,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-3525-pc.jpg`
 - **Status:** missing local JPG
 
-### 100. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
+### 99. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -1919,7 +1909,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-3535-pc.jpg`
 - **Status:** missing local JPG
 
-### 101. HQProp 3.5x3.6 Cinewhoop D5 (`hqprop-3536-cine-d5`)
+### 100. HQProp 3.5x3.6 Cinewhoop D5 (`hqprop-3536-cine-d5`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1929,7 +1919,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-3536-cine-d5.jpg`
 - **Status:** missing local JPG
 
-### 102. HQProp 7x3.0x3 LR (`hqprop-7030-3-lr`)
+### 101. HQProp 7x3.0x3 LR (`hqprop-7030-3-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1939,7 +1929,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-7030-3-lr.jpg`
 - **Status:** missing local JPG
 
-### 103. HQProp 7x3.5x2 LR (`hqprop-7035-2-lr`)
+### 102. HQProp 7x3.5x2 LR (`hqprop-7035-2-lr`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 7" Long Range
@@ -1949,7 +1939,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-7035-2-lr.jpg`
 - **Status:** missing local JPG
 
-### 104. HQProp Durable 3.5x3.0 Cine (`hqprop-durable-3530-cine`)
+### 103. HQProp Durable 3.5x3.0 Cine (`hqprop-durable-3530-cine`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Cinewhoop
@@ -1959,7 +1949,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-durable-3530-cine.jpg`
 - **Status:** missing local JPG
 
-### 105. HQProp T65x30 Whoop (`hqprop-t65x30-whoop`)
+### 104. HQProp T65x30 Whoop (`hqprop-t65x30-whoop`)
 
 - **Category:** Props (`props`)
 - **Build classes:** Tiny Whoop
@@ -1969,7 +1959,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/props/hqprop-t65x30-whoop.jpg`
 - **Status:** missing local JPG
 
-### 106. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
+### 105. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
 
 - **Category:** Receiver (`receiver`)
 - **Build classes:** 7" Long Range
@@ -1979,7 +1969,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/receivers/radiomaster-er5-915-lr.jpg`
 - **Status:** missing local JPG
 
-### 107. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
+### 106. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** 3.5" Freestyle
@@ -1989,7 +1979,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/akk-a3-nano-vtx-park.jpg`
 - **Status:** missing local JPG
 
-### 108. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
+### 107. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** Tiny Whoop
@@ -1999,7 +1989,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/akk-a5-nano-vtx.jpg`
 - **Status:** missing local JPG
 
-### 109. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
+### 108. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** Cinewhoop
@@ -2009,7 +1999,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/hdzero-cine-nano-vtx.jpg`
 - **Status:** missing local JPG
 
-### 110. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
+### 109. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** Cinewhoop
@@ -2019,17 +2009,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/rush-mini-tank-cine-vtx.jpg`
 - **Status:** missing local JPG
 
-### 111. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
-
-- **Category:** VTX (`vtx`)
-- **Build classes:** Tiny Whoop
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
-- **Status:** missing local JPG
-
-### 112. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
+### 110. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** 3.5" Freestyle
@@ -2667,7 +2647,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/escs/tmotor-pacer-f35-cine-esc.jpg`
 - **Status:** missing local JPG
 
-### Flight controller (`flightController`) — 27 missing
+### Flight controller (`flightController`) — 26 missing
 
 ### 1. SpeedyBee F405 Mini (`speedybee-f405-mini`)
 
@@ -2829,17 +2809,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg`
 - **Status:** missing local JPG
 
-### 17. Diatone Mamba F405 Mini (`diatone-mamba-f405-mini`)
-
-- **Category:** Flight controller (`flightController`)
-- **Build classes:** 3.5" Freestyle
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/flight-controllers/diatone-mamba-f405-mini.jpg`
-- **Status:** missing local JPG
-
-### 18. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
+### 17. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -2849,7 +2819,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/diatone-mamba-h743-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 19. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+### 18. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 3.5" Freestyle
@@ -2859,7 +2829,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f405-20x20-mini.jpg`
 - **Status:** missing local JPG
 
-### 20. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
+### 19. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -2869,7 +2839,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg`
 - **Status:** missing local JPG
 
-### 21. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
+### 20. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -2879,7 +2849,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-f745-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 22. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
+### 21. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Tiny Whoop
@@ -2889,7 +2859,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/geprc-gep-aio-1s-fc.jpg`
 - **Status:** missing local JPG
 
-### 23. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
+### 22. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Tiny Whoop
@@ -2899,7 +2869,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/happymodel-happywhoop-aio-fc.jpg`
 - **Status:** missing local JPG
 
-### 24. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
+### 23. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -2909,7 +2879,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg`
 - **Status:** missing local JPG
 
-### 25. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
+### 24. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -2919,7 +2889,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg`
 - **Status:** missing local JPG
 
-### 26. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
+### 25. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** Cinewhoop
@@ -2929,7 +2899,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/flight-controllers/matek-f722-cine-mini-fc.jpg`
 - **Status:** missing local JPG
 
-### 27. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
+### 26. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 7" Long Range
@@ -3977,7 +3947,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/receivers/radiomaster-er5-915-lr.jpg`
 - **Status:** missing local JPG
 
-### VTX (`vtx`) — 9 missing
+### VTX (`vtx`) — 8 missing
 
 ### 1. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
 
@@ -4049,17 +4019,7 @@ Generated: 2026-06-29T19:42:55.130Z
 - **Expected image path:** `public/parts/vtx/rush-mini-tank-cine-vtx.jpg`
 - **Status:** missing local JPG
 
-### 8. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
-
-- **Category:** VTX (`vtx`)
-- **Build classes:** Tiny Whoop
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
-- **Status:** missing local JPG
-
-### 9. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
+### 8. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** 3.5" Freestyle
@@ -4073,7 +4033,7 @@ Generated: 2026-06-29T19:42:55.130Z
 
 _Parts compatible with multiple build classes appear once per class below._
 
-### 3.5" Freestyle (`3.5-inch-freestyle`) — 37 missing slot(s)
+### 3.5" Freestyle (`3.5-inch-freestyle`) — 36 missing slot(s)
 
 ### 1. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
 
@@ -4225,17 +4185,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/escs/tmotor-f35a-mini-4in1.jpg`
 - **Status:** missing local JPG
 
-### 16. Diatone Mamba F405 Mini (`diatone-mamba-f405-mini`)
-
-- **Category:** Flight controller (`flightController`)
-- **Build classes:** 3.5" Freestyle
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/flight-controllers/diatone-mamba-f405-mini.jpg`
-- **Status:** missing local JPG
-
-### 17. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+### 16. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
 
 - **Category:** Flight controller (`flightController`)
 - **Build classes:** 3.5" Freestyle
@@ -4245,7 +4195,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/flight-controllers/geprc-f405-20x20-mini.jpg`
 - **Status:** missing local JPG
 
-### 18. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
+### 17. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -4255,7 +4205,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/frames/betafpv-pavo3516.jpg`
 - **Status:** missing local JPG
 
-### 19. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
+### 18. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -4265,7 +4215,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/frames/diatone-taycan35.jpg`
 - **Status:** missing local JPG
 
-### 20. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+### 19. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -4275,7 +4225,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/frames/flywoo-explorer35.jpg`
 - **Status:** missing local JPG
 
-### 21. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+### 20. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -4285,7 +4235,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/frames/geprc-rocket-3-5.jpg`
 - **Status:** missing local JPG
 
-### 22. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+### 21. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
 
 - **Category:** Frame (`frame`)
 - **Build classes:** 3.5" Freestyle
@@ -4295,7 +4245,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/frames/iflight-chimera3.jpg`
 - **Status:** missing local JPG
 
-### 23. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
+### 22. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4305,7 +4255,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/betafpv-1404-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 24. BrotherHobby 1507 3700KV (`brotherhobby-1507-3700kv`)
+### 23. BrotherHobby 1507 3700KV (`brotherhobby-1507-3700kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4315,7 +4265,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/brotherhobby-1507-3700kv.jpg`
 - **Status:** missing local JPG
 
-### 25. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
+### 24. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4325,7 +4275,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/emax-eco-1404-4000kv.jpg`
 - **Status:** missing local JPG
 
-### 26. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
+### 25. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4335,7 +4285,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/iflight-xing2-1404-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 27. iFlight XING2 1507 4600KV (`iflight-xing2-1507-4600kv`)
+### 26. iFlight XING2 1507 4600KV (`iflight-xing2-1507-4600kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4345,7 +4295,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/iflight-xing2-1507-4600kv.jpg`
 - **Status:** missing local JPG
 
-### 28. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
+### 27. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4355,7 +4305,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/rcinpower-1404-3800kv.jpg`
 - **Status:** missing local JPG
 
-### 29. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
+### 28. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
 
 - **Category:** Motors (`motors`)
 - **Build classes:** 3.5" Freestyle
@@ -4365,7 +4315,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/motors/tmotor-f1404-3800kv.jpg`
 - **Status:** missing local JPG
 
-### 30. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
+### 29. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4375,7 +4325,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/avan-rush-3528.jpg`
 - **Status:** missing local JPG
 
-### 31. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
+### 30. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4385,7 +4335,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/dal-prop-3530-cyclone.jpg`
 - **Status:** missing local JPG
 
-### 32. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
+### 31. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4395,7 +4345,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/gemfan-3522-hurricane.jpg`
 - **Status:** missing local JPG
 
-### 33. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
+### 32. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4405,7 +4355,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/gemfan-3528-freestyle.jpg`
 - **Status:** missing local JPG
 
-### 34. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
+### 33. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4415,7 +4365,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/hqprop-3525-pc.jpg`
 - **Status:** missing local JPG
 
-### 35. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
+### 34. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
 
 - **Category:** Props (`props`)
 - **Build classes:** 3.5" Freestyle
@@ -4425,7 +4375,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/props/hqprop-3535-pc.jpg`
 - **Status:** missing local JPG
 
-### 36. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
+### 35. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** 3.5" Freestyle
@@ -4435,7 +4385,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/vtx/akk-a3-nano-vtx-park.jpg`
 - **Status:** missing local JPG
 
-### 37. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
+### 36. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Category:** VTX (`vtx`)
 - **Build classes:** 3.5" Freestyle
@@ -6061,7 +6011,7 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Expected image path:** `public/parts/vtx/rush-mini-tank-cine-vtx.jpg`
 - **Status:** missing local JPG
 
-### Tiny Whoop (`tiny-whoop`) — 22 missing slot(s)
+### Tiny Whoop (`tiny-whoop`) — 21 missing slot(s)
 
 ### 1. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
 
@@ -6271,14 +6221,4 @@ _Parts compatible with multiple build classes appear once per class below._
 - **Preset usage:** —
 - **Priority:** 3 (Other build-class catalog)
 - **Expected image path:** `public/parts/vtx/akk-a5-nano-vtx.jpg`
-- **Status:** missing local JPG
-
-### 22. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
-
-- **Category:** VTX (`vtx`)
-- **Build classes:** Tiny Whoop
-- **Used in preset:** no
-- **Preset usage:** —
-- **Priority:** 3 (Other build-class catalog)
-- **Expected image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
 - **Status:** missing local JPG

@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–175** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–200** (`docs/IMAGE_COMPLETION_QUEUE.md`).
 
 ## Summary (ranks 51–75)
 
@@ -52,6 +52,16 @@ Structured research log for image-completion queue parts where official packshot
 | Exact official packshot found | 0 |
 | Acceptable family/variant packshot found | 1 |
 | New fetchable after source update | 1 (`rush-nano-ultimate-whoop-vtx`) |
+| Permanent SVG placeholders (this batch) | 24 |
+
+## Summary (ranks 176–200)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 25 |
+| Exact official packshot found | 1 |
+| Acceptable family/variant packshot found | 0 |
+| New fetchable after source update | 1 (`diatone-mamba-f405-mini`) |
 | Permanent SVG placeholders (this batch) | 24 |
 
 ## Catalog review candidates
@@ -104,6 +114,17 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | `hglrc-sector7-lr-frame` | No Sector7 LR frame; HGLRC Sector D5/X5 are 5-inch only |
 | `iflight-chimera3-frame`, `iflight-chimera35-cine-frame`, `iflight-cidatel35-cine-frame` | Legacy iFlight 3.5-inch frame-kit URLs 404; Chimera7 kits are different product line |
 | `diatone-taycan35-frame` | Diatone store has MXC Taycan accessories only, not a 3.5-inch frame kit |
+| `betafpv-f411-1s-aio-fc` | Official BETAFPV listing is F4 1S 5A combined AIO, not F411 FC-only |
+| `betafpv-brushless-1s-aio-esc`, `happymodel-happywhoop-aio-esc`, `happymodel-happywhoop-aio-fc` | Manufacturer sells combined AIO boards only; catalog splits FC/ESC halves |
+| `geprc-gep-aio-1s-fc` | Official GEP-TAKER F411-12A-E is combined 1~2S AIO, not isolated 1S FC |
+| `diatone-mamba-f35-cine-esc`, `diatone-mamba-f35-mini-esc` | No Mamba F35 ESC on diatone.us; F40 mini is closest but different amp/SKU |
+| `hglrc-tekko32-f35-mini`, `tmotor-f35a-mini-4in1`, `tmotor-pacer-f35-cine-esc` | No matching official product pages on manufacturer stores |
+| `geprc-gep35a-cine-esc` | GEPRC ESC category is Taker line only; no GEP35A Cine SKU |
+| `iflight-succexd35-cine-esc`, `iflight-beast-h743-cine-fc`, `iflight-beast-h743-lr-fc` | Legacy Beast/SucceX-D35 URLs 404; BLITZ Wing H743 is different product |
+| `geprc-f405-20x20-mini`, `geprc-f722-cine-mini-fc`, `geprc-f745-lr-fc` | GEPRC store has GEP-F405/F722 HD and TAKER H743 MINI; catalog SKUs do not match |
+| `matek-f722-cine-mini-fc` | Matek F722-mini is EOL; no Cine Mini FC SKU |
+| `aikon-65a-lr-esc` | Aikon store unreachable; no verified 65A LR ESC URL |
+| `meps-konvex-55a-lr-esc` | MEPS store API returns no Konvex 55A LR product listing |
 
 ---
 
@@ -1246,3 +1267,229 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Catalog status** | Likely outdated/deprecated |
 | **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
 | **Notes** | Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com. |
+
+## Rank 176 — `iflight-chimera35-cine-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
+| **Notes** | Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com. Re-confirmed in shifted queue. |
+
+## Rank 177 — `iflight-cidatel35-cine-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
+| **Notes** | Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com. Re-confirmed in shifted queue. |
+
+## Rank 178 — `aikon-65a-lr-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://shop.aikon.com/ |
+| **Notes** | Aikon official store (shop.aikon.com) unreachable from automated fetch; no verified 65A LR ESC product URL. |
+
+## Rank 179 — `betafpv-brushless-1s-aio-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller |
+| **Notes** | Official BETAFPV F4 1S 5A AIO is combined FC+ESC; catalog ESC-only half cannot use stack imagery. |
+
+## Rank 180 — `diatone-mamba-f35-cine-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.diatone.us/collections/esc |
+| **Notes** | No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini and F55 lines only. |
+
+## Rank 181 — `diatone-mamba-f35-mini-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.diatone.us/products/mb-f40_128k-bl32-mini-esc |
+| **Notes** | No Mamba F35 Mini ESC; closest is Mamba F40_128K AM32 Mini 4-in-1 (40A, not 35A F35). |
+
+## Rank 182 — `diatone-mamba-f55-lr-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.diatone.us/products/mamba-f55_bls-dshot600-4in1-esc-40a-6s-2 |
+| **Notes** | Closest official SKU is Mamba F55_BLS 55A; no separate LR listing and Shopify image asset references F50_BLS. |
+
+## Rank 183 — `geprc-gep35a-cine-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product-category/esc/ |
+| **Notes** | No GEPRC GEP35A Cine ESC on geprc.com; Taker H/S ESC line only. |
+
+## Rank 184 — `happymodel-happywhoop-aio-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://www.happymodel.cn/ |
+| **Notes** | Happymodel sells combined Mobula7 AIO boards only; no isolated 5A ESC-half product page. |
+
+## Rank 185 — `hglrc-tekko32-f35-mini`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.hglrc.com/collections/esc |
+| **Notes** | No HGLRC Tekko32 F35 Mini product page on hglrc.com. |
+
+## Rank 186 — `iflight-succexd35-cine-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/esc-cat343 |
+| **Notes** | Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com. |
+
+## Rank 187 — `meps-konvex-55a-lr-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.mepsking.com/ |
+| **Notes** | MEPS Konvex 55A LR not on standalone product page; store API returns no listings. |
+
+## Rank 188 — `tmotor-f35a-mini-4in1`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://store.tmotor.com/category/uav-esc-1.html |
+| **Notes** | No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com. |
+
+## Rank 189 — `tmotor-pacer-f35-cine-esc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://store.tmotor.com/category/uav-esc-1.html |
+| **Notes** | No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com. |
+
+## Rank 190 — `betafpv-f411-1s-aio-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller |
+| **Notes** | Official listing is F4 1S 5A combined AIO; catalog F411 FC-only line does not match manufacturer SKU. |
+
+## Rank 191 — `diatone-mamba-f405-mini`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Exact official packshot found |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.diatone.us/products/mamba-mk4-f405mini-flight-control-20mm-m2 |
+| **Preferred image URL** | https://cdn.shopify.com/s/files/1/0027/2708/4144/products/03_c983ba34-da59-4cb3-91c1-94e3868b767f.jpg?v=1677554263 |
+| **Notes** | Official Diatone MAMBA MK4 F405MINI isolated flight controller page on diatone.us. |
+
+## Rank 192 — `diatone-mamba-h743-lr-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://www.diatone.us/products/mb-mk4-h743-v2-fc |
+| **Notes** | Official MK4 H743 V2 page is combined FC+ESC stack; catalog FC-only line cannot use stack packshot. |
+
+## Rank 193 — `geprc-f405-20x20-mini`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://geprc.com/product/gep-f405-hd-v3-flight-controller/ |
+| **Notes** | GEPRC store lists GEP-F405-HD V3 digital FC; catalog F405 20x20 Mini analog line does not match. |
+
+## Rank 194 — `geprc-f722-cine-mini-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product/gep-f722-hd-flight-controller/ |
+| **Notes** | GEPRC GEP-F722 HD line exists; no F722 Cine Mini FC product page. |
+
+## Rank 195 — `geprc-f745-lr-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://geprc.com/product/geprc-taker-h743-mini-flight-controller/ |
+| **Notes** | No GEPRC F745 LR FC; closest is GEPRC TAKER H743 MINI (H743, not F745). |
+
+## Rank 196 — `geprc-gep-aio-1s-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://geprc.com/product/gep-taker-f411-12a-e-12s-aio/ |
+| **Notes** | Official GEP-TAKER F411-12A-E 1~2S AIO is combined board; catalog FC-only 1S line cannot use stack imagery. |
+
+## Rank 197 — `happymodel-happywhoop-aio-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://www.happymodel.cn/ |
+| **Notes** | Happymodel sells combined Mobula7 AIO boards only; no isolated FC-half product page. |
+
+## Rank 198 — `iflight-beast-h743-cine-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/flight-controller-cat342 |
+| **Notes** | No Beast H743 Cine FC on shop.iflight.com; BLITZ Wing H743 is a different wing FC line. |
+
+## Rank 199 — `iflight-beast-h743-lr-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/flight-controller-cat342 |
+| **Notes** | No Beast H743 LR FC on shop.iflight.com; BLITZ Wing H743 is a different wing FC line. |
+
+## Rank 200 — `matek-f722-cine-mini-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.mateksys.com/?portfolio=f722-mini |
+| **Notes** | Matek F722-mini portfolio is EOL spec-sheet composite only; no F722 Cine Mini FC SKU. |
