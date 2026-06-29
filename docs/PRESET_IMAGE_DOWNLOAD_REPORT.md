@@ -5,9 +5,9 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-29T03:17:03.175Z
+Last updated: 2026-06-29T14:25:10.633Z
 
-Last local cleanup: 2026-06-29T03:17:03.175Z — removed 1 unsure local JPG(s); **37** retained for review.
+Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); **37** retained for review.
 
 ## Summary
 
@@ -1179,7 +1179,7 @@ Last local cleanup: 2026-06-29T03:17:03.175Z — removed 1 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU.
+- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU.
 
 ### 41. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
 

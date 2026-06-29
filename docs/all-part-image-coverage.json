@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-29T03:17:03.473Z",
+  "generatedAt": "2026-06-29T14:26:48.404Z",
   "summary": {
     "total": 294,
-    "found": 80,
-    "missing": 214,
+    "found": 86,
+    "missing": 208,
     "presetPartTotal": 48,
-    "presetPartFound": 37,
-    "presetPartMissing": 11,
+    "presetPartFound": 38,
+    "presetPartMissing": 10,
     "missingByPriority": {
-      "1": 11,
-      "2": 87,
+      "1": 10,
+      "2": 82,
       "3": 116
     }
   },
@@ -219,26 +219,6 @@
           "cinewhoop"
         ],
         "priority": 1
-      },
-      {
-        "partId": "foxeer-reaper-nano-v2-vtx",
-        "partName": "Foxeer Reaper Nano V2 VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "3-5-park-freestyle",
-            "presetName": "3.5\" Park Freestyle",
-            "buildClass": "3.5-inch-freestyle",
-            "categoryKey": "vtx"
-          }
-        ],
-        "compatibleClasses": [
-          "tiny-whoop",
-          "3.5-inch-freestyle"
-        ],
-        "priority": 1
       }
     ],
     "2": [
@@ -328,18 +308,6 @@
         "priority": 2
       },
       {
-        "partId": "ovonic-6s-1300",
-        "partName": "Ovonic 6S 1300mAh 100C",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/ovonic-6s-1300.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "tattu-4s-1300-freestyle",
         "partName": "Tattu 4S 1300mAh 95C",
         "categoryKey": "battery",
@@ -369,18 +337,6 @@
         "partName": "Tattu R-Line 6S 1550mAh 130C",
         "categoryKey": "battery",
         "imagePath": "/parts/batteries/tattu-rline-6s-1550.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "caddx-turtle-v2",
-        "partName": "Caddx Turtle V2",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/caddx-turtle-v2.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -955,18 +911,6 @@
         "priority": 2
       },
       {
-        "partId": "emax-eco-ii-2306-1900",
-        "partName": "EMAX ECO II 2306 1900KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/emax-eco-ii-2306.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "fpvcycle-2207-1780kv",
         "partName": "FPVCycle 2207 1780KV",
         "categoryKey": "motors",
@@ -1195,6 +1139,18 @@
         "priority": 2
       },
       {
+        "partId": "gemfan-51433",
+        "partName": "Gemfan Hurricane 51433",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "gemfan-hurricane-mck-51433",
         "partName": "Gemfan Hurricane MCK 51433",
         "categoryKey": "props",
@@ -1255,47 +1211,10 @@
         "priority": 2
       },
       {
-        "partId": "hdzero-freestyle-vtx",
-        "partName": "HDZero Freestyle VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle",
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hdzero-race-vtx",
-        "partName": "HDZero Race VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/hdzero-race-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "rush-tank-ii-vtx",
         "partName": "Rush Tank II 5.8GHz VTX",
         "categoryKey": "vtx",
         "imagePath": "/parts/vtx/rush-tank-ii-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "walksnail-avatar-gt-vtx",
-        "partName": "Walksnail Avatar GT VTX",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2709,7 +2628,6 @@
       "lumenier-6s-1100",
       "lumenier-6s-1250-freestyle",
       "ovonic-4s-1400-freestyle",
-      "ovonic-6s-1300",
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
       "tattu-rline-6s-1550",
@@ -2828,7 +2746,6 @@
       "iflight-xing-2005-2550",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
-      "emax-eco-ii-2306-1900",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
@@ -2870,22 +2787,7 @@
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
     ],
-    "vtx": [
-      "foxeer-reaper-nano-v2-vtx",
-      "akk-x2-ultimate-vtx",
-      "hdzero-freestyle-vtx",
-      "hdzero-race-vtx",
-      "rush-tank-ii-vtx",
-      "walksnail-avatar-gt-vtx",
-      "akk-a3-nano-vtx-park",
-      "akk-a5-nano-vtx",
-      "hdzero-cine-nano-vtx",
-      "rush-mini-tank-cine-vtx",
-      "rush-nano-ultimate-whoop-vtx",
-      "rush-nano-vtx-park"
-    ],
     "camera": [
-      "caddx-turtle-v2",
       "foxeer-falkor-2",
       "foxeer-predator-v5",
       "foxeer-toothless-2",
@@ -2902,6 +2804,7 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
+      "gemfan-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
       "apc-7x4-2-lr",
@@ -2931,6 +2834,16 @@
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "radiomaster-er5-915-lr"
+    ],
+    "vtx": [
+      "akk-x2-ultimate-vtx",
+      "rush-tank-ii-vtx",
+      "akk-a3-nano-vtx-park",
+      "akk-a5-nano-vtx",
+      "hdzero-cine-nano-vtx",
+      "rush-mini-tank-cine-vtx",
+      "rush-nano-ultimate-whoop-vtx",
+      "rush-nano-vtx-park"
     ]
   },
   "missingByBuildClass": {
@@ -2946,11 +2859,9 @@
       "lumenier-6s-1100",
       "lumenier-6s-1250-freestyle",
       "ovonic-4s-1400-freestyle",
-      "ovonic-6s-1300",
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
       "tattu-rline-6s-1550",
-      "caddx-turtle-v2",
       "foxeer-falkor-2",
       "foxeer-predator-v5",
       "foxeer-toothless-2",
@@ -2997,7 +2908,6 @@
       "tbs-source-one-v6-frame",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
-      "emax-eco-ii-2306-1900",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
@@ -3017,15 +2927,13 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
+      "gemfan-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "akk-x2-ultimate-vtx",
-      "hdzero-freestyle-vtx",
-      "hdzero-race-vtx",
-      "rush-tank-ii-vtx",
-      "walksnail-avatar-gt-vtx"
+      "rush-tank-ii-vtx"
     ],
     "cinewhoop": [
       "gnb-4s-1500",
@@ -3113,14 +3021,12 @@
     "3.5-inch-freestyle": [
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
-      "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
       "foxeer-toothless-2",
       "hdzero-nano-90",
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
-      "hdzero-freestyle-vtx",
       "cnhl-ministar-4s-900",
       "gnb-4s-1100-park",
       "gnb-4s-750-mini",
@@ -3152,7 +3058,6 @@
       "rush-nano-vtx-park"
     ],
     "tiny-whoop": [
-      "foxeer-reaper-nano-v2-vtx",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
       "gn-1s-550-bt2",
@@ -4146,7 +4051,7 @@
       "partName": "Foxeer Reaper Nano V2 VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4316,7 +4221,7 @@
       "partName": "Ovonic 6S 1300mAh 100C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/ovonic-6s-1300.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4410,7 +4315,7 @@
       "partName": "Caddx Turtle V2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-turtle-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5205,7 +5110,7 @@
       "partName": "EMAX ECO II 2306 1900KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/emax-eco-ii-2306.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5517,7 +5422,7 @@
       "partName": "Gemfan Hurricane 51433",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5751,7 +5656,7 @@
       "partName": "HDZero Freestyle VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5765,7 +5670,7 @@
       "partName": "HDZero Race VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-race-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5804,7 +5709,7 @@
       "partName": "Walksnail Avatar GT VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:17:03.279Z",
+  "updatedAt": "2026-06-29T14:26:25.458Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -48,6 +48,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official AKK X2 Ultimate VTX page. HTTP 403 for page https://www.akktek.com/akk-x2-ultimate-vtx.html"
+    },
+    {
+      "partId": "akk-x2-ultimate-vtx",
+      "partName": "AKK X2 Ultimate VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.akktek.com/akk-x2-ultimate-vtx.html",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/akk-x2-ultimate-vtx.jpg",
+      "sourceType": "unknown",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official AKK X2 Ultimate VTX page. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "aos-5-v5",
@@ -320,6 +336,22 @@
       "recommendation": "keep for review",
       "status": "downloaded",
       "notes": "Official Caddx Ratel 2 analog camera page."
+    },
+    {
+      "partId": "caddx-turtle-v2",
+      "partName": "Caddx Turtle V2",
+      "category": "Camera",
+      "sourcePageUrl": "https://www.caddxfpv.com/products/turtle-v2-fpv-camera",
+      "imageUrl": null,
+      "localPath": "public/parts/cameras/caddx-turtle-v2.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Caddx Turtle V2 FPV camera page (URL updated from retired caddx-turtle-v2-fpv-camera slug). Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "caddx-turtle-v2",
@@ -601,13 +633,13 @@
       "imageUrl": "https://emax-usa.com/cdn/shop/products/569A1011.jpg?v=1602262173",
       "localPath": "public/parts/motors/emax-eco-ii-2306.jpg",
       "sourceType": "unknown",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. Converted official WEBP source to local JPG (dev script only)."
     },
     {
       "partId": "ethix-lithium5-frame",
@@ -1103,7 +1135,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP2 Cine shares manufacturer product photo. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP2 Cine shares manufacturer product photo. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "happymodel-ep1-dual-elrs",
@@ -1119,7 +1151,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "happymodel-ep2-5inch-elrs",
@@ -1150,8 +1182,8 @@
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
       "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official HDZero Freestyle V2 VTX page; catalog Freestyle VTX maps to current V2 listing. Local JPG present; re-evaluating recommendation before retention. Local JPG missing on disk during report sync."
+      "status": "downloaded",
+      "notes": "Official HDZero Freestyle V2 VTX page; catalog Freestyle VTX maps to current V2 listing. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "hdzero-freestyle-vtx",
@@ -1214,8 +1246,8 @@
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
       "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Local JPG present; re-evaluating recommendation before retention. Local JPG missing on disk during report sync."
+      "status": "downloaded",
+      "notes": "Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "hdzero-race-vtx",
@@ -1535,7 +1567,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor."
+      "notes": "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor."
     },
     {
       "partId": "iflight-beast-f722-fc",
@@ -2245,6 +2277,22 @@
       "partId": "ovonic-6s-1300",
       "partName": "Ovonic 6S 1300mAh 100C",
       "category": "Battery",
+      "sourcePageUrl": "https://ovonicshop.com/products/ovonic-1300mah-6s-22-2v-100c-lipo-battery-with-xt60-for-fpv",
+      "imageUrl": "https://www.ovonicshop.com/cdn/shop/products/O-100C-1300-6S1P-XT60-2_1200x1200.jpg?v=1744855680",
+      "localPath": "public/parts/batteries/ovonic-6s-1300.jpg",
+      "sourceType": "unknown",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Ovonic 6S 1300mAh 100C battery page. Converted official WEBP source to local JPG (dev script only)."
+    },
+    {
+      "partId": "ovonic-6s-1300",
+      "partName": "Ovonic 6S 1300mAh 100C",
+      "category": "Battery",
       "sourcePageUrl": "https://ovonicshop.com/products/ovonic-6s-1300mah-100c-lipo-battery-pack-with-xt60-plug",
       "imageUrl": null,
       "localPath": "public/parts/batteries/ovonic-6s-1300.jpg",
@@ -2400,6 +2448,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official RushFPV Blade F7 60A 4-in-1 ESC page. fetch failed"
+    },
+    {
+      "partId": "rush-tank-ii-vtx",
+      "partName": "Rush Tank II 5.8GHz VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.rushfpv.com/rush-tank-ii-5-8ghz-vtx-g-591",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/rush-tank-ii-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official RushFPV Tank II 5.8GHz VTX page. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "rush-tank-ii-vtx",
@@ -2623,7 +2687,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "tbs-crossfire-micro-v2",
@@ -2639,7 +2703,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official TBS Crossfire Micro RX V2 receiver page. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official TBS Crossfire Micro RX V2 receiver page. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "tbs-crossfire-micro-v2",
@@ -2687,7 +2751,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official TBS Unify Pro32 Nano VTX page. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official TBS Unify Pro32 Nano VTX page. Local JPG exists; exact source image URL not recorded in manifest yet."
     },
     {
       "partId": "tbs-unify-pro32-nano-vtx",
@@ -2877,8 +2941,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official Walksnail Avatar GT VTX page on Caddx store."
     },
     {
@@ -2963,16 +3027,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T03:17:03.279Z",
-    "removedPartIds": [
-      "aos-5-v5",
-      "geprc-mark4-frame",
-      "lumenier-qav-s-johnnyfpv",
-      "hypetrain-blaster-2450",
-      "hdzero-freestyle-vtx",
-      "hdzero-race-vtx",
-      "walksnail-avatar-gt-vtx"
-    ],
-    "retainedDownloadedCount": 42
+    "date": "2026-06-29T14:26:25.458Z",
+    "removedPartIds": [],
+    "retainedDownloadedCount": 43
   }
 }

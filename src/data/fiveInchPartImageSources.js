@@ -8,7 +8,7 @@
  * - imageStatus is always "needs review" until a verified licensed asset is on file.
  * - officialUrl values are brand-domain pages only (no third-party retailers).
  *
- * Last researched: 2026-06-28 (123 parts)
+ * Last researched: 2026-06-29 (high-value 5-inch catalog image pass)
  */
 export const fiveInchPartImageSources = [
   {
@@ -296,6 +296,8 @@ export const fiveInchPartImageSources = [
     category: "Motors",
     brand: "EMAX",
     officialUrl: "https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv",
+    preferredImageUrl:
+      "https://emax-usa.com/cdn/shop/products/569A1011_7c9e3630-d345-48ae-b663-42c765b19e32.jpg?v=1602262523",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/emax-eco-ii-2306.jpg",
@@ -1176,10 +1178,12 @@ export const fiveInchPartImageSources = [
     category: "Battery",
     brand: "Ovonic",
     officialUrl: "https://ovonicshop.com/products/ovonic-1300mah-6s-22-2v-100c-lipo-battery-with-xt60-for-fpv",
+    preferredImageUrl:
+      "https://www.ovonicshop.com/cdn/shop/products/O-100C-1300-6S1P-XT60-8_994x994.jpg?v=1773303961",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/ovonic-6s-1300.jpg",
-    notes: "Official Ovonic 6S 1300mAh 100C battery page.",
+    notes: "Official Ovonic 6S 1300mAh 100C battery page; single-pack XT60 product gallery image.",
   },
   {
     partId: "tattu-4s-1300-freestyle",
@@ -1339,11 +1343,13 @@ export const fiveInchPartImageSources = [
     categoryKey: "camera",
     category: "Camera",
     brand: "Caddx",
-    officialUrl: "https://www.caddxfpv.com/products/caddx-turtle-v2-fpv-camera",
+    officialUrl: "https://www.caddxfpv.com/products/turtle-v2-fpv-camera",
+    preferredImageUrl:
+      "https://www.caddxfpv.com/cdn/shop/files/01_2_29417c25-4297-4be1-bb2a-72c354e141b7.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/cameras/caddx-turtle-v2.jpg",
-    notes: "Official Caddx Turtle V2 FPV camera page.",
+    notes: "Official Caddx Turtle V2 FPV camera page (URL updated from retired caddx-turtle-v2-fpv-camera slug).",
   },
   {
     partId: "foxeer-falkor-2",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:17:03.175Z",
+  "updatedAt": "2026-06-29T14:25:10.633Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -879,7 +879,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
+      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
     },
     {
       "partId": "foxeer-reaper-nano-v2-vtx",
@@ -1923,7 +1923,7 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T03:17:03.175Z",
+    "date": "2026-06-29T14:25:10.633Z",
     "removedPartIds": [
       "foxeer-reaper-nano-v2-vtx"
     ],

@@ -61,10 +61,6 @@ const MANUAL_REJECTION_NOTES = new Map([
     "cnhl-6s-1500-freestyle",
     "Rejected after review: CNHL CDN asset includes X2 multi-pack overlay and 130C label; catalog line is single 6S 1500mAh 100C.",
   ],
-  [
-    "ovonic-6s-1300",
-    "Rejected after review: only multi-pack promo imagery available for this SKU.",
-  ],
 ]);
 
 export { EASY_CATEGORY_KEYS, allSources as easyCategoryImageSources };

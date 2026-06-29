@@ -211,7 +211,9 @@ export function classifyAppearance(sourceEntry, imageUrl, sourcePageUrl) {
     haystack.includes("wp-content/uploads") ||
     haystack.includes("/products/") ||
     haystack.includes("/u_file/") ||
-    haystack.includes("img03.71360.com")
+    haystack.includes("img03.71360.com") ||
+    haystack.includes("wixstatic.com") ||
+    haystack.includes("/cdn/shop/files/")
   ) {
     return "product photo";
   }
@@ -655,7 +657,7 @@ const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
   "hdzero-nano-90",
   "hypetrain-blaster-2450",
   "lumenier-qav-s-johnnyfpv",
-  "walksnail-avatar-gt-vtx",
+  "gemfan-hurricane-mck-51433",
 ]);
 
 const MANUAL_REJECTION_NOTES = new Map([
@@ -769,10 +771,6 @@ const MANUAL_REJECTION_NOTES = new Map([
   ],
   [
     "emax-eco-ii-2207-1900kv",
-    "Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy.",
-  ],
-  [
-    "emax-eco-ii-2306-1900",
     "Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy.",
   ],
   [
@@ -915,8 +913,13 @@ function pickBestDownloadedCandidate(manifest, partId) {
 
 export function cleanupDisallowedLocalImages(manifest = loadDownloadManifest()) {
   const removedPartIds = [];
+  const dedicatedReportCategoryKeys = new Set(["receiver", "vtx"]);
 
   for (const todoEntry of FIVE_INCH_PART_TODO) {
+    if (dedicatedReportCategoryKeys.has(todoEntry.categoryKey)) {
+      continue;
+    }
+
     const relativePath = todoEntry.expectedPath.replace(/^\//, "");
     const absolutePath = join(publicRoot, relativePath);
 
