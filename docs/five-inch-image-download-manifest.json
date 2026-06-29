@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T05:50:07.933Z",
+  "updatedAt": "2026-06-29T03:17:03.279Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -48,6 +48,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official AKK X2 Ultimate VTX page. HTTP 403 for page https://www.akktek.com/akk-x2-ultimate-vtx.html"
+    },
+    {
+      "partId": "aos-5-v5",
+      "partName": "AOS 5 V5",
+      "category": "Frame",
+      "sourcePageUrl": "https://www.aos-rc.com/designs/aos-5-v5",
+      "imageUrl": null,
+      "localPath": "public/parts/frames/aos-5-v5.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official AOS RC design page for AOS 5 V5 frame. Local JPG present; re-evaluating recommendation before retention. Local JPG missing on disk during report sync."
     },
     {
       "partId": "aos-5-v5",
@@ -233,12 +249,12 @@
       "imageUrl": "https://brotherhobby.com/u_file/2011/products/28/3a07565520.jpg.500x500.jpg",
       "localPath": "public/parts/motors/brotherhobby-avenger-2507.jpg",
       "sourceType": "manufacturer page",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official BrotherHobby Avenger 2507 motor family page; KV variants share one URL. Rejected after manual review: low-confidence source; image shows Avenger V3 2812 motor, wrong variant."
     },
     {
@@ -265,12 +281,12 @@
       "imageUrl": "https://brotherhobby.com/u_file/1906/products/05/142a5fbc18.jpg.500x500.jpg",
       "localPath": "public/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg",
       "sourceType": "manufacturer page",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official BrotherHobby Returner R6 2207 motor family page; 1850KV is a listed variant. Rejected after manual review: low-confidence source; thumbnail product image retained without verified match."
     },
     {
@@ -569,12 +585,12 @@
       "imageUrl": "https://emax-usa.com/cdn/shop/products/569A1011_7c9e3630-d345-48ae-b663-42c765b19e32.jpg?v=1602262521",
       "localPath": "public/parts/motors/emax-eco-ii-2207-1900kv.jpg",
       "sourceType": "unknown",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official EMAX ECO II 2207 motor page; 1900KV is a listed variant. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy."
     },
     {
@@ -873,12 +889,12 @@
       "imageUrl": "https://www.frsky-rc.com/wp-content/uploads/2018/05/R-XSR-Rx.jpg",
       "localPath": "public/parts/receivers/frsky-r-xsr.jpg",
       "sourceType": "unknown",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official FrSky R-XSR receiver page. Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo."
     },
     {
@@ -889,12 +905,12 @@
       "imageUrl": "https://www.frsky-rc.com/wp-content/uploads/2017/05/%E5%8E%8B%E7%BC%A9%E7%89%88XSR.jpg",
       "localPath": "public/parts/receivers/frsky-xsr-sbus.jpg",
       "sourceType": "unknown",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official FrSky XSR SBUS receiver page. Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo."
     },
     {
@@ -1023,7 +1039,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Official GEPRC GEP-Mark4 frame page; select 5-inch variant. Rejected after manual review: partial build with motors and camera installed, not an isolated frame SKU."
+      "notes": "Official GEPRC GEP-Mark4 frame page; select 5-inch variant. Rejected after manual review: partial build with motors and camera installed, not an isolated frame SKU. Rejected after manual review: partial build with motors and camera installed, not an isolated frame SKU."
     },
     {
       "partId": "geprc-mark5",
@@ -1074,6 +1090,38 @@
       "notes": "Official GNB 6S 1400mAh 120C battery page on GNB/Tattu store. HTTP 404 for page https://www.genstattu.com/gnb-6s-1400mah-120c-lipo-battery-pack-with-xt60-plug.html"
     },
     {
+      "partId": "happymodel-cine-ep2-elrs",
+      "partName": "Happymodel EP2 Cine ELRS",
+      "category": "Receiver",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/happymodel-cine-ep2-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP2 Cine shares manufacturer product photo. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "happymodel-ep1-dual-elrs",
+      "partName": "Happymodel EP1 Dual ELRS",
+      "category": "Receiver",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/happymodel-ep1-dual-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
       "partId": "happymodel-ep2-5inch-elrs",
       "partName": "Happymodel EP2 2.4GHz ELRS",
       "category": "Receiver",
@@ -1085,9 +1133,25 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EP2 2.4GHz ELRS receiver page. Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU."
+    },
+    {
+      "partId": "hdzero-freestyle-vtx",
+      "partName": "HDZero Freestyle VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.hd-zero.com/product-page/freestyle-v2-vtx",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/hdzero-freestyle-vtx.jpg",
+      "sourceType": "unknown",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Official Happymodel EP2 2.4GHz ELRS receiver page. Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU."
+      "notes": "Official HDZero Freestyle V2 VTX page; catalog Freestyle VTX maps to current V2 listing. Local JPG present; re-evaluating recommendation before retention. Local JPG missing on disk during report sync."
     },
     {
       "partId": "hdzero-freestyle-vtx",
@@ -1136,6 +1200,22 @@
       "recommendation": "remove",
       "status": "rejected",
       "notes": "Official HDZero Nano 90 V2 camera page; supersedes original Nano 90. Candidate URL identified but no local JPG saved yet. Unsupported unknown format for https://static.wixstatic.com/media/890e45_551682214f814de7a6cc8a0c66bce772~mv2.jpg/v1/fill/w_147,h_110,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/890e45_551682214f814de7a6cc8a0c66bce772~mv2.jpg"
+    },
+    {
+      "partId": "hdzero-race-vtx",
+      "partName": "HDZero Race VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.hd-zero.com/product-page/hdzero-race-v3-vtx",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/hdzero-race-vtx.jpg",
+      "sourceType": "unknown",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "removed_local",
+      "notes": "Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Local JPG present; re-evaluating recommendation before retention. Local JPG missing on disk during report sync."
     },
     {
       "partId": "hdzero-race-vtx",
@@ -1455,7 +1535,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor."
+      "notes": "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor."
     },
     {
       "partId": "iflight-beast-f722-fc",
@@ -1488,6 +1568,22 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Full BNF drone listing; frame-only SKU not clearly separated on manufacturer store. Manufacturer listing is complete BNF aircraft; no isolated frame packshot."
+    },
+    {
+      "partId": "iflight-nazgul5-v3-frame",
+      "partName": "iFlight Nazgul5 V3 Frame",
+      "category": "Frame",
+      "sourcePageUrl": "https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197",
+      "imageUrl": null,
+      "localPath": "public/parts/frames/iflight-nazgul5-v3-frame.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "iflight-nazgul5-v3-frame",
@@ -1552,6 +1648,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official iFlight SucceX-E F4 50A 4-in-1 ESC page. HTTP 404 for page https://shop.iflight.com/SucceX-E-F4-50A-4-in-1-ESC-Pro1420"
+    },
+    {
+      "partId": "iflight-xing2-2207-2750kv",
+      "partName": "iFlight XING2 2207 2750KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/iflight-xing2-2207-2750kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "iflight-xing2-2207-2750kv",
@@ -1887,7 +1999,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Official Lumenier QAV-S 2 JohnnyFPV SE 5-inch frame kit page. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line."
+      "notes": "Official Lumenier QAV-S 2 JohnnyFPV SE 5-inch frame kit page. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line. Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line."
     },
     {
       "partId": "matek-f405-se-fc",
@@ -2157,9 +2269,41 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official RCinPower GTS V2 2207 Plus motor page; 1950KV is a listed variant. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "rcinpower-gts-v2-2207-1950kv",
+      "partName": "RCinPower GTS V2 2207 1950KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://www.rcinpower.com/G-SERIES/29.html",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official RCinPower GTS V2 2207 Plus motor page; 1950KV is a listed variant. No manufacturer-owned image candidates found on page."
+    },
+    {
+      "partId": "rcinpower-gts-v3-2207-1860",
+      "partName": "RCinPower GTS V3 2207 1860KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://www.rcinpower.com/G-SERIES/61.html",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/rcinpower-gts-v3-2207.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official RCinPower GTS V3 2207 family page (AOS Supernova 2207 listing); 1860KV variant not separately listed. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "rcinpower-gts-v3-2207-1860",
@@ -2466,6 +2610,38 @@
       "notes": "Official Tattu R-Line 6S 1550mAh 130C battery page. HTTP 404 for page https://www.genstattu.com/tattu-r-line-1550mah-22-2v-6s-130c-lipo-battery-pack-with-xt60-plug.html"
     },
     {
+      "partId": "tbs-crossfire-micro-lr",
+      "partName": "TBS Crossfire Micro LR",
+      "category": "Receiver",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:crossfire_mrx",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/tbs-crossfire-micro-lr.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "tbs-crossfire-micro-v2",
+      "partName": "TBS Crossfire Micro V2",
+      "category": "Receiver",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:crossfire_mrx",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/tbs-crossfire-micro-v2.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official TBS Crossfire Micro RX V2 receiver page. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
       "partId": "tbs-crossfire-micro-v2",
       "partName": "TBS Crossfire Micro V2",
       "category": "Receiver",
@@ -2496,6 +2672,22 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official TBS Source One open-source frame repository; V6 is the current revision. Open-source GitHub project page; no isolated frame product photo expected."
+    },
+    {
+      "partId": "tbs-unify-pro32-nano-vtx",
+      "partName": "TBS Unify Pro32 Nano VTX",
+      "category": "VTX",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:unifypro32_nano",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/tbs-unify-pro32-nano-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official TBS Unify Pro32 Nano VTX page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "tbs-unify-pro32-nano-vtx",
@@ -2741,6 +2933,22 @@
       "partId": "xing-e-pro-2207-1800",
       "partName": "iFlight XING-E Pro 2207 1800KV",
       "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing-e-pro-2207-2-6s-fpv-nextgen-motor-pro874",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/xing-e-pro-2207.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official iFlight XING-E Pro 2207 motor family page; 1800KV is a listed variant. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "xing-e-pro-2207-1800",
+      "partName": "iFlight XING-E Pro 2207 1800KV",
+      "category": "Motors",
       "sourcePageUrl": "https://shop.iflight.com/XING-E-Pro-2207-1800KV-4S-6S-FPV-Motor-Pro1650",
       "imageUrl": null,
       "localPath": "public/parts/motors/xing-e-pro-2207.jpg",
@@ -2755,8 +2963,16 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T05:50:07.933Z",
-    "removedPartIds": [],
-    "retainedDownloadedCount": 24
+    "date": "2026-06-29T03:17:03.279Z",
+    "removedPartIds": [
+      "aos-5-v5",
+      "geprc-mark4-frame",
+      "lumenier-qav-s-johnnyfpv",
+      "hypetrain-blaster-2450",
+      "hdzero-freestyle-vtx",
+      "hdzero-race-vtx",
+      "walksnail-avatar-gt-vtx"
+    ],
+    "retainedDownloadedCount": 42
   }
 }

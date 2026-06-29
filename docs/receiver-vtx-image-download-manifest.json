@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-06-28T13:29:25.422Z",
+  "updatedAt": "2026-06-29T03:17:03.371Z",
   "candidates": [
+    {
+      "partId": "akk-x2-ultimate-vtx",
+      "partName": "AKK X2 Ultimate VTX",
+      "category": "VTX",
+      "categoryKey": "vtx",
+      "sourcePageUrl": "https://www.akktek.com/akk-x2-ultimate-vtx.html",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/akk-x2-ultimate-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official AKK X2 Ultimate VTX page. AKK official store blocks automated fetch; no verified direct packshot URL."
+    },
     {
       "partId": "akk-x2-ultimate-vtx",
       "partName": "AKK X2 Ultimate VTX",
@@ -96,6 +114,24 @@
       "visualAuditDecision": "remove"
     },
     {
+      "partId": "foxeer-reaper-nano-v2-vtx",
+      "partName": "Foxeer Reaper Nano V2 VTX",
+      "category": "VTX",
+      "categoryKey": "vtx",
+      "sourcePageUrl": "https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583",
+      "imageUrl": "https://inew.foxeer.com//upload/s/goods/2024-12-13/15-48-28-675be6ccb8c74.images.800x800.png",
+      "localPath": "public/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only)."
+    },
+    {
       "partId": "frsky-r-xsr",
       "partName": "FrSky R-XSR",
       "category": "Receiver",
@@ -115,6 +151,24 @@
       "visualAuditDecision": "remove"
     },
     {
+      "partId": "frsky-r-xsr",
+      "partName": "FrSky R-XSR",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.frsky-rc.com/product/r-xsr/",
+      "imageUrl": "https://www.frsky-rc.com/wp-content/uploads/2018/05/R-XSR-Rx.jpg",
+      "localPath": "public/parts/receivers/frsky-r-xsr.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official FrSky R-XSR receiver page."
+    },
+    {
       "partId": "frsky-xsr-sbus",
       "partName": "FrSky XSR SBUS",
       "category": "Receiver",
@@ -132,6 +186,24 @@
       "status": "removed_visual_audit",
       "notes": "Official FrSky XSR SBUS receiver page. Visual audit remove: stylized XSR icon graphic, not hardware photo.",
       "visualAuditDecision": "remove"
+    },
+    {
+      "partId": "frsky-xsr-sbus",
+      "partName": "FrSky XSR SBUS",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.frsky-rc.com/product/xsr/",
+      "imageUrl": "https://www.frsky-rc.com/wp-content/uploads/2017/05/%E5%8E%8B%E7%BC%A9%E7%89%88XSR.jpg",
+      "localPath": "public/parts/receivers/frsky-xsr-sbus.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official FrSky XSR SBUS receiver page."
     },
     {
       "partId": "happymodel-cine-ep2-elrs",
@@ -170,6 +242,24 @@
       "status": "removed_visual_audit",
       "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Official manufacturer image represents this product family; catalog variant shares the same PCB/render. Visual audit remove: EP2 single-antenna PCB, not EP1 Dual hardware.",
       "visualAuditDecision": "remove"
+    },
+    {
+      "partId": "happymodel-ep1-dual-elrs",
+      "partName": "Happymodel EP1 Dual ELRS",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/",
+      "imageUrl": "https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg",
+      "localPath": "public/parts/receivers/happymodel-ep1-dual-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Official manufacturer image represents this product family; catalog variant shares the same PCB/render."
     },
     {
       "partId": "happymodel-ep2-5inch-elrs",
@@ -248,6 +338,24 @@
       "visualAuditDecision": "remove"
     },
     {
+      "partId": "hdzero-race-vtx",
+      "partName": "HDZero Race VTX",
+      "category": "VTX",
+      "categoryKey": "vtx",
+      "sourcePageUrl": "https://www.hd-zero.com/product-page/hdzero-race-v3-vtx",
+      "imageUrl": "https://static.wixstatic.com/media/967e02_db5e7888e2be46118233015691feb26b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+      "localPath": "public/parts/vtx/hdzero-race-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Official manufacturer image represents this product family; catalog variant shares the same PCB/render."
+    },
+    {
       "partId": "imm-rc-fusion-v2-elrs",
       "partName": "ImmersionRC Fusion V2 ELRS",
       "category": "Receiver",
@@ -264,6 +372,42 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official ImmersionRC Fusion product family page; V2 ELRS variant not separately listed. ImmersionRC Fusion family page is not a verified V2 ELRS receiver packshot."
+    },
+    {
+      "partId": "imm-rc-fusion-v2-elrs",
+      "partName": "ImmersionRC Fusion V2 ELRS",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.immersionrc.com/fusion/",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/imm-rc-fusion-v2-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official ImmersionRC Fusion product family page; V2 ELRS variant not separately listed. ImmersionRC Fusion family page is not a verified V2 ELRS receiver packshot."
+    },
+    {
+      "partId": "jhemcu-ep28-elrs",
+      "partName": "JHEMCU EP28 2.4GHz ELRS",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.jhemcu.com/",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/jhemcu-ep28-elrs.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official JHEMCU store homepage; EP28 ELRS has no stable direct product URL. JHEMCU store homepage only; no stable EP28 ELRS product URL or packshot."
     },
     {
       "partId": "jhemcu-ep28-elrs",
@@ -340,6 +484,24 @@
       "notes": "Official RushFPV Tank II 5.8GHz VTX page. RushFPV Tank II product page unreachable from automated fetch."
     },
     {
+      "partId": "rush-tank-ii-vtx",
+      "partName": "Rush Tank II 5.8GHz VTX",
+      "category": "VTX",
+      "categoryKey": "vtx",
+      "sourcePageUrl": "https://www.rushfpv.com/rush-tank-ii-5-8ghz-vtx-g-591",
+      "imageUrl": null,
+      "localPath": "public/parts/vtx/rush-tank-ii-vtx.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Official RushFPV Tank II 5.8GHz VTX page. RushFPV Tank II product page unreachable from automated fetch."
+    },
+    {
       "partId": "rush-tank-solo",
       "partName": "Rush Tank Solo 5.8GHz",
       "category": "VTX",
@@ -357,6 +519,24 @@
       "status": "removed_visual_audit",
       "notes": "Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only). Visual audit remove: promo close-up with arrows and blurred watermark area.",
       "visualAuditDecision": "remove"
+    },
+    {
+      "partId": "rush-tank-solo",
+      "partName": "Rush Tank Solo 5.8GHz",
+      "category": "VTX",
+      "categoryKey": "vtx",
+      "sourcePageUrl": "https://rushfpv.net/products/tank-solo-vtx",
+      "imageUrl": "https://rushfpv.net/cdn/shop/products/005d8391-1615-49d1-a617-2913ee50b36d_1200x1200.jpg?v=1659590919",
+      "localPath": "public/parts/vtx/rush-tank-solo.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official RushFPV Tank Solo VTX product page. Local JPG present; re-evaluating before retention."
     },
     {
       "partId": "tbs-crossfire-micro-lr",
@@ -378,6 +558,24 @@
       "visualAuditDecision": "remove"
     },
     {
+      "partId": "tbs-crossfire-micro-lr",
+      "partName": "TBS Crossfire Micro LR",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:crossfire_mrx",
+      "imageUrl": "https://www.team-blacksheep.com/img/gallery/DSC07342zz.jpg",
+      "localPath": "public/parts/receivers/tbs-crossfire-micro-lr.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Official manufacturer image represents this product family; catalog variant shares the same PCB/render."
+    },
+    {
       "partId": "tbs-crossfire-micro-v2",
       "partName": "TBS Crossfire Micro V2",
       "category": "Receiver",
@@ -397,6 +595,24 @@
       "visualAuditDecision": "remove"
     },
     {
+      "partId": "tbs-crossfire-micro-v2",
+      "partName": "TBS Crossfire Micro V2",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:crossfire_mrx",
+      "imageUrl": "https://www.team-blacksheep.com/img/gallery/DSC07342zz.jpg",
+      "localPath": "public/parts/receivers/tbs-crossfire-micro-v2.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official TBS Crossfire Micro RX V2 receiver page. Official manufacturer image represents this product family; catalog variant shares the same PCB/render."
+    },
+    {
       "partId": "tbs-crossfire-nano",
       "partName": "TBS Crossfire Nano RX",
       "category": "Receiver",
@@ -414,6 +630,24 @@
       "status": "removed_visual_audit",
       "notes": "Official Team BlackSheep Crossfire Nano RX store page. Local JPG present; re-evaluating before retention. Visual audit remove: unbranded generic nano RX PCB.",
       "visualAuditDecision": "remove"
+    },
+    {
+      "partId": "tbs-crossfire-nano",
+      "partName": "TBS Crossfire Nano RX",
+      "category": "Receiver",
+      "categoryKey": "receiver",
+      "sourcePageUrl": "https://www.team-blacksheep.com/products/prod:crossfire_nano_rx",
+      "imageUrl": null,
+      "localPath": "public/parts/receivers/tbs-crossfire-nano.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Team BlackSheep Crossfire Nano RX store page. Local JPG present; re-evaluating before retention."
     },
     {
       "partId": "tbs-unify-pro32-hv",
@@ -493,7 +727,7 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T13:14:41.307Z",
+    "date": "2026-06-29T03:17:03.371Z",
     "removedPartIds": [],
     "retainedDownloadedCount": 22
   },

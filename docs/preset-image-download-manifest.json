@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-06-28T05:49:06.583Z",
+  "updatedAt": "2026-06-29T03:17:03.175Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
       "partName": "AOS 3.5 V5",
       "category": "Frame",
       "sourcePageUrl": "https://www.aos-rc.com/designs/aos-3.5-v5",
-      "imageUrl": "https://static.wixstatic.com/media/e57211_e232808460f149bcaa893ea59d49fa64~mv2.jpg/v1/fill/w_4080,h_3072,al_c,q_90/AOS%203.5%20V5%20(1)%20(1).jpg",
+      "imageUrl": "https://static.wixstatic.com/media/e57211_169c9796b4d84a99962ba83b277e0a93~mv2.jpg/v1/fill/w_400,h_400,al_c,q_80/ZgZph9Cz_400x400.jpg",
       "localPath": "public/parts/frames/aos-3-5-v5.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official AOS RC design page for AOS 3.5 V5 frame. Local JPG missing on disk during report sync."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official AOS RC design page for AOS 3.5 V5 frame; Wix hero render is an isolated frame CAD packshot."
     },
     {
       "partId": "aos-3-5-v5",
@@ -198,6 +198,22 @@
       "partName": "BETAFPV 1S 5A AIO ESC",
       "category": "ESC",
       "sourcePageUrl": "https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g",
+      "imageUrl": "https://betafpv.com/cdn/shop/products/dc3ebdb3ce4965130693f4d92cc0cf72_8dbfe3d8-a802-491c-a82f-eb130808b51d_1024x1024.jpg?v=1675236594",
+      "localPath": "public/parts/escs/betafpv-1s-5a-aio-esc.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "5A ESC integrated into F4 1S 5A AIO FC; not sold standalone. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "betafpv-1s-5a-aio-esc",
+      "partName": "BETAFPV 1S 5A AIO ESC",
+      "category": "ESC",
+      "sourcePageUrl": "https://betafpv.com/products/f4-1s-5a-aio-brushless-flight-controller-elrs-2-4g",
       "imageUrl": "http://betafpv.com/cdn/shop/products/dc3ebdb3ce4965130693f4d92cc0cf72_8dbfe3d8-a802-491c-a82f-eb130808b51d_1200x630.jpg?v=1675236594",
       "localPath": "public/parts/escs/betafpv-1s-5a-aio-esc.jpg",
       "sourceType": "manufacturer page",
@@ -237,8 +253,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Replaced Happymodel-branded pack; official BETAFPV 450mAh 2S 45C XT30 page. Local JPG missing on disk during report sync."
     },
     {
@@ -352,6 +368,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Replaced Super Nano naming; official BETAFPV ELRS Nano Receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://betafpv.com/f1d3f2e934a7f7df4970562b60a46e3c_426c0b91-f133-4470-ba32-e9be27cfc376_%7Bwidth%7Dx.jpg?v=1713320529"
+    },
+    {
+      "partId": "betafpv-f4-1s-aio-fc",
+      "partName": "BETAFPV F4 1S AIO FC",
+      "category": "Flight Controller",
+      "sourcePageUrl": "https://betafpv.com/products/f4-1s-aio-brushless-flight-controller",
+      "imageUrl": "https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_c4ea2654-223f-4b1c-8960-d44eba3840ca_1024x1024.jpg?v=1604547015",
+      "localPath": "public/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official F4 1S AIO brushless flight controller product page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "betafpv-f4-1s-aio-fc",
@@ -585,12 +617,12 @@
       "imageUrl": "https://brotherhobby.com/u_file/1906/products/05/1caf0345b0.jpg.500x500.jpg",
       "localPath": "public/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
       "sourceType": "manufacturer page",
-      "confidence": "low",
+      "confidence": "high",
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official Avenger 2806.5 motor family page; KV variants share one URL."
     },
     {
@@ -685,8 +717,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official CNHL Black Series 6S 1300mAh 100C listing (stock 1301006BK); manufacturer store only sells multi-pack bundles. Local JPG missing on disk during report sync."
     },
     {
@@ -746,6 +778,22 @@
       "localPath": "public/parts/vtx/dji-o3-air-unit.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official DJI store O3 Air Unit kit page. Converted official PNG source to local JPG (dev script only)."
+    },
+    {
+      "partId": "dji-o3-air-unit",
+      "partName": "DJI O3 Air Unit",
+      "category": "VTX",
+      "sourcePageUrl": "https://store.dji.com/product/dji-o3-air-unit",
+      "imageUrl": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/ab3dc2b84c1fc9f7542f21030d7b5c17@ultra.png",
+      "localPath": "public/parts/vtx/dji-o3-air-unit.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
       "appearance": "render",
       "watermarkOrBranding": "Marketing-style asset; check for composite branding or scene elements.",
       "imageNeedsReview": true,
@@ -774,7 +822,7 @@
       "partName": "DJI O3 Camera",
       "category": "Camera",
       "sourcePageUrl": "https://store.dji.com/sg/product/dji-o3-air-unit-camera-module",
-      "imageUrl": null,
+      "imageUrl": "https://se-cdn.djiits.com/tpc/uploads/spu/cover/684a5cf519e5d94b534f77d2fb0fc737@ultra.png",
       "localPath": "public/parts/cameras/dji-o3-camera.jpg",
       "sourceType": "manufacturer page",
       "confidence": "high",
@@ -783,7 +831,7 @@
       "imageNeedsReview": true,
       "recommendation": "keep for review",
       "status": "downloaded",
-      "notes": "Official DJI store O3 camera module page. Local JPG present; re-evaluating recommendation before retention."
+      "notes": "Official DJI store O3 camera module page. Converted official PNG source to local JPG (dev script only)."
     },
     {
       "partId": "dji-o3-camera",
@@ -831,7 +879,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
+      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
     },
     {
       "partId": "foxeer-reaper-nano-v2-vtx",
@@ -989,8 +1037,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image."
     },
     {
@@ -1021,8 +1069,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image."
     },
     {
@@ -1055,7 +1103,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Replaced gnb-4s-1500-cine duplicate; no exact 1500mAh page on gaoneng.shop — closest official GNB 4S listing is 1850mAh. No exact 1500mAh official product page; closest gaoneng.shop listing is a different capacity."
+      "notes": "No exact 1500mAh official product page on gaoneng.shop or genstattu.com; closest GNB listing is 1850mAh — do not substitute retailer images. No exact 1500mAh official product page; closest gaoneng.shop listing is a different capacity."
     },
     {
       "partId": "happymodel-ep2-elrs",
@@ -1069,9 +1117,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official Happymodel EP2 ELRS receiver product page. Local JPG missing on disk during report sync."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EP2 ELRS receiver product page; manufacturer product photo shows EP2 PCB with ceramic antenna."
     },
     {
       "partId": "happymodel-ep2-elrs",
@@ -1174,6 +1222,22 @@
       "partName": "iFlight XING2 1404 3800KV",
       "category": "Motors",
       "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-1404/XING2-1404-3800KV.M2.png",
+      "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "iflight-xing2-1404-3800",
+      "partName": "iFlight XING2 1404 3800KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
       "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg",
       "localPath": "public/parts/motors/iflight-xing2-1404-3800.jpg",
       "sourceType": "manufacturer page",
@@ -1216,6 +1280,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official iFlight XING2 1404 motor page with 3800KV option. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260317/165007/admin15/68890.png?imageView2/1/w/100/h/100/"
+    },
+    {
+      "partId": "iflight-xing2-2207-1855",
+      "partName": "iFlight XING2 2207 1855KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464",
+      "imageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-2207/XING2_2207-1855.M2.png",
+      "localPath": "public/parts/motors/iflight-xing2-2207-1855.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "iflight-xing2-2207-1855",
@@ -1277,9 +1357,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official Matek H743-MINI portfolio page. Rejected after manual review: manufacturer spec-sheet composite (FC photo + specs text), not an isolated product packshot. Local JPG missing on disk during report sync."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Matek H743-MINI portfolio page."
     },
     {
       "partId": "matek-h743-mini-lr",
@@ -1533,9 +1613,9 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
-      "notes": "Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: official gallery images are macro marketing crops or lifestyle scenes, not isolated VTX packshots. Local JPG missing on disk during report sync."
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only)."
     },
     {
       "partId": "rush-tank-solo",
@@ -1599,7 +1679,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "failed",
-      "notes": "Official Skystars KM55A 4-in-1 ESC product page. fetch failed"
+      "notes": "Official Skystars KM55A 4-in-1 ESC product page; store TLS blocks automated page scrape — image fetch pending direct CDN URL research. fetch failed"
     },
     {
       "partId": "speedybee-bl32-50a",
@@ -1843,8 +1923,10 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-28T05:49:06.583Z",
-    "removedPartIds": [],
-    "retainedDownloadedCount": 23
+    "date": "2026-06-29T03:17:03.175Z",
+    "removedPartIds": [
+      "foxeer-reaper-nano-v2-vtx"
+    ],
+    "retainedDownloadedCount": 37
   }
 }

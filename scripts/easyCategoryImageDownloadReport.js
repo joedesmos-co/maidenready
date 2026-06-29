@@ -62,10 +62,6 @@ const MANUAL_REJECTION_NOTES = new Map([
     "Rejected after review: CNHL CDN asset includes X2 multi-pack overlay and 130C label; catalog line is single 6S 1500mAh 100C.",
   ],
   [
-    "cnhl-black-6s-1300",
-    "Rejected after review: manufacturer listing is a multi-pack bundle, not a single-battery packshot.",
-  ],
-  [
     "ovonic-6s-1300",
     "Rejected after review: only multi-pack promo imagery available for this SKU.",
   ],

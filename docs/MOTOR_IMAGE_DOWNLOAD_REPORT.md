@@ -5,14 +5,14 @@ Developer-only review log for **motor** manufacturer-source image **candidates**
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-28T06:03:01.866Z
+Last updated: 2026-06-29T03:14:56.508Z
 
-Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** retained.
+Last local cleanup: 2026-06-29T03:14:56.508Z — removed **0** JPG(s); **13** retained.
 
 ## Summary
 
 - Downloaded local JPG candidates: **13**
-- Rejected / skipped / failed: **16**
+- Rejected / skipped / failed: **80**
 
 ## Downloaded candidates (local JPG on disk)
 
@@ -181,7 +181,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
-### 2. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
+### 2. AxisFlying AE 2207 1960KV (`axisflying-ae2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-ae-series-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-ae2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 3. AxisFlying AE 2207 1960KV (`axisflying-ae2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-ae-series-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-ae2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 4. AxisFlying AE 2207 1960KV (`axisflying-ae2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-ae-series-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-ae2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 5. AxisFlying AE 2207 1960KV (`axisflying-ae2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-ae-series-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-ae2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 6. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
 - **Exact image URL downloaded:** —
@@ -192,7 +236,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
-### 3. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+### 7. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-joker-2207-1920kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 8. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-joker-2207-1920kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 9. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-joker-2207-1920kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 10. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/axisflying-joker-2207-1920kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL.
+### 11. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
 - **Exact image URL downloaded:** —
@@ -203,7 +291,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. EMAX ECO II 2306 page only exposes 2207-sized gallery assets; no verified 2306 stator packshot.
-### 4. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+### 12. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/emax-eco-ii-2306.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. EMAX ECO II 2306 page only exposes 2207-sized gallery assets; no verified 2306 stator packshot.
+### 13. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/emax-eco-ii-2306.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. EMAX ECO II 2306 page only exposes 2207-sized gallery assets; no verified 2306 stator packshot.
+### 14. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/emax-eco-ii-2306.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. EMAX ECO II 2306 page only exposes 2207-sized gallery assets; no verified 2306 stator packshot.
+### 15. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/emax-eco-ii-2306.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. EMAX ECO II 2306 page only exposes 2207-sized gallery assets; no verified 2306 stator packshot.
+### 16. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
 - **Exact image URL downloaded:** —
@@ -214,7 +346,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. FPVCycle official packshots carry a visible watermark.
-### 5. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+### 17. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207-1780kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. FPVCycle official packshots carry a visible watermark.
+### 18. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207-1780kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. FPVCycle official packshots carry a visible watermark.
+### 19. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207-1780kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. FPVCycle official packshots carry a visible watermark.
+### 20. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207-1780kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. FPVCycle official packshots carry a visible watermark.
+### 21. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
 - **Exact image URL downloaded:** —
@@ -225,7 +401,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark.
-### 6. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+### 22. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark.
+### 23. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark.
+### 24. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark.
+### 25. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://fpvcycle.com/products/fpvcycle-5-motor-choose-options
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/fpvcycle-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark.
+### 26. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor
 - **Exact image URL downloaded:** —
@@ -236,7 +456,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Only Rotor Riot Revo 5 2207 substitute page on file — wrong Hypetrain motor family/size.
-### 7. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+### 27. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/hypetrain-acer-2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Only Rotor Riot Revo 5 2207 substitute page on file — wrong Hypetrain motor family/size.
+### 28. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/hypetrain-acer-2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Only Rotor Riot Revo 5 2207 substitute page on file — wrong Hypetrain motor family/size.
+### 29. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/hypetrain-acer-2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Only Rotor Riot Revo 5 2207 substitute page on file — wrong Hypetrain motor family/size.
+### 30. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/hypetrain-acer-2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Only Rotor Riot Revo 5 2207 substitute page on file — wrong Hypetrain motor family/size.
+### 31. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
 - **Exact image URL downloaded:** —
@@ -247,7 +511,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. Official iFlight page only exposes a XING-2205 shaft diagram, not a 2005 motor packshot.
-### 8. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+### 32. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset). Official iFlight page only exposes a XING-2205 shaft diagram, not a 2005 motor packshot.
+### 33. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset). Official iFlight page only exposes a XING-2205 shaft diagram, not a 2005 motor packshot.
+### 34. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset). Official iFlight page only exposes a XING-2205 shaft diagram, not a 2005 motor packshot.
+### 35. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/iflight-xing-2005-2550.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset). Official iFlight page only exposes a XING-2205 shaft diagram, not a 2005 motor packshot.
+### 36. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
 - **Exact image URL downloaded:** —
@@ -258,7 +566,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Closest official Lumenier listing is JohnnyFPV V3 2307 — wrong motor size/family.
-### 9. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+### 37. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/johnnyfpv-motor-v2-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Closest official Lumenier listing is JohnnyFPV V3 2307 — wrong motor size/family.
+### 38. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/johnnyfpv-motor-v2-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Closest official Lumenier listing is JohnnyFPV V3 2307 — wrong motor size/family.
+### 39. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/johnnyfpv-motor-v2-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Closest official Lumenier listing is JohnnyFPV V3 2307 — wrong motor size/family.
+### 40. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/johnnyfpv-motor-v2-2207.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Closest official Lumenier listing is JohnnyFPV V3 2307 — wrong motor size/family.
+### 41. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
 - **Exact image URL downloaded:** —
@@ -269,7 +621,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. No dedicated Lumenier AX 2207 product page; motors collection is not a SKU-specific packshot.
-### 10. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+### 42. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/lumenier-2207-1800kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. No dedicated Lumenier AX 2207 product page; motors collection is not a SKU-specific packshot.
+### 43. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/lumenier-2207-1800kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. No dedicated Lumenier AX 2207 product page; motors collection is not a SKU-specific packshot.
+### 44. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/lumenier-2207-1800kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. No dedicated Lumenier AX 2207 product page; motors collection is not a SKU-specific packshot.
+### 45. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/lumenier-2207-1800kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. No dedicated Lumenier AX 2207 product page; motors collection is not a SKU-specific packshot.
+### 46. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
 - **Exact image URL downloaded:** —
@@ -280,7 +676,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Samguk official store unreachable from automated fetch.
-### 11. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+### 47. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/samguk-v-2207-1960kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Samguk official store unreachable from automated fetch.
+### 48. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/samguk-v-2207-1960kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Samguk official store unreachable from automated fetch.
+### 49. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/samguk-v-2207-1960kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Samguk official store unreachable from automated fetch.
+### 50. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/samguk-v-2207-1960kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Samguk official store unreachable from automated fetch.
+### 51. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
 - **Exact image URL downloaded:** —
@@ -291,7 +731,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM2207 1910KV motor page. Skystars official store unreachable from automated fetch.
-### 12. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+### 52. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2207-1910kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2207 1910KV motor page. Skystars official store unreachable from automated fetch.
+### 53. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2207-1910kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2207 1910KV motor page. Skystars official store unreachable from automated fetch.
+### 54. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2207-1910kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2207 1910KV motor page. Skystars official store unreachable from automated fetch.
+### 55. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2207-1910kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2207 1910KV motor page. Skystars official store unreachable from automated fetch.
+### 56. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
 - **Exact image URL downloaded:** —
@@ -302,7 +786,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM2306 1950KV motor page. Skystars official store unreachable from automated fetch.
-### 13. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+### 57. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2306 1950KV motor page. Skystars official store unreachable from automated fetch.
+### 58. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2306 1950KV motor page. Skystars official store unreachable from automated fetch.
+### 59. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2306 1950KV motor page. Skystars official store unreachable from automated fetch.
+### 60. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/skystars-km2306-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Skystars KM2306 1950KV motor page. Skystars official store unreachable from automated fetch.
+### 61. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
 - **Exact image URL downloaded:** —
@@ -313,7 +841,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. T-Motor store blocks automated fetch; no verified direct packshot URL.
-### 14. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+### 62. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f40-pro-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 63. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f40-pro-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 64. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f40-pro-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 65. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f40-pro-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 66. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
 - **Exact image URL downloaded:** —
@@ -324,7 +896,51 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
-### 15. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+### 67. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f60-pro-v.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 68. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f60-pro-v.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 69. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f60-pro-v.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 70. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-f60-pro-v.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 71. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
 - **Exact image URL downloaded:** —
@@ -335,7 +951,95 @@ Last local cleanup: 2026-06-28T06:03:01.865Z — removed **0** JPG(s); **13** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
-### 16. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+### 72. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 73. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 74. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 75. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 76. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 77. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 78. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 79. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/tmotor-velox-v3-2207-1950kv.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. T-Motor store blocks automated fetch; no verified direct packshot URL.
+### 80. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
 - **Exact image URL downloaded:** —

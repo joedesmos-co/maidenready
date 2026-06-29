@@ -7,7 +7,7 @@
  * - imageStatus is always "needs review" until a verified licensed asset is on file.
  * - officialUrl values are brand-domain pages only (no third-party retailers).
  *
- * Last researched: 2026-06-27 (catalog realism cleanup pass)
+ * Last researched: 2026-06-29 (targeted official-source image pass)
  */
 export const presetPartImageSources = [
   {
@@ -22,7 +22,7 @@ export const presetPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/aos-3-5-v5.jpg",
-    notes: "Official AOS RC design page for AOS 3.5 V5 frame.",
+    notes: "Official AOS RC design page for AOS 3.5 V5 frame; Wix hero render is an isolated frame CAD packshot.",
   },
   {
     partId: "betafpv-0802se-19500kv",
@@ -69,10 +69,12 @@ export const presetPartImageSources = [
     category: "Battery",
     brand: "BETAFPV",
     officialUrl: "https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs",
+    preferredImageUrl:
+      "https://betafpv.com/cdn/shop/products/6391ace427ade714b70fb966024ae804_d937718f-4491-4bef-a2e5-a84d1fad945d_1024x1024.jpg?v=1668653169",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/betafpv-2s-450-xt30.jpg",
-    notes: "Official BETAFPV 450mAh 2S 45C XT30 page; manufacturer only publishes a 2pcs bundle listing.",
+    notes: "Official BETAFPV 450mAh 2S 45C XT30 page (2pcs listing); product photo may show one or two packs.",
   },
   {
     partId: "betafpv-elrs-nano",
@@ -183,10 +185,12 @@ export const presetPartImageSources = [
     category: "Battery",
     brand: "CNHL",
     officialUrl: "https://chinahobbyline.com/products/cnhl-black-series-1300mah-22-2v-6s-100c-lipo-battery-with-xt60-plug-4-packs",
+    preferredImageUrl:
+      "https://chinahobbyline.com/cdn/shop/files/1_eb0ec870-931a-497b-8cec-8c3277f7cf30.jpg?v=1772001464",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-black-6s-1300.jpg",
-    notes: "Official CNHL Black Series 6S 1300mAh 100C listing (stock 1301006BK); manufacturer store only sells multi-pack bundles.",
+    notes: "Official CNHL Black Series 6S 1300mAh listing (stock 1301006BK); manufacturer store uses multi-pack pages — packshot from product gallery.",
   },
   {
     partId: "dji-o3-air-unit",
@@ -261,6 +265,8 @@ export const presetPartImageSources = [
     category: "Props",
     brand: "Gemfan",
     officialUrl: "https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html",
+    preferredImageUrl:
+      "https://img03.71360.com/w3/5p3560/20251209/e7b601fd0f15c88c340397d0effa882d.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/gemfan-51466.jpg",
@@ -273,6 +279,8 @@ export const presetPartImageSources = [
     category: "Props",
     brand: "Gemfan",
     officialUrl: "https://www.gemfanhobby.com/3520-hurricane-pc-3-blade-t-mount.html",
+    preferredImageUrl:
+      "https://img03.71360.com/w3/5p3560/20251209/5de85443dac9a88c64202e0cd6954a2a.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/gemfan-hurricane-3520.jpg",
@@ -326,7 +334,7 @@ export const presetPartImageSources = [
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/gnb-4s-1500.jpg",
-    notes: "Replaced gnb-4s-1500-cine duplicate; no exact 1500mAh page on gaoneng.shop — closest official GNB 4S listing is 1850mAh.",
+    notes: "No exact 1500mAh official product page on gaoneng.shop or genstattu.com; closest GNB listing is 1850mAh — do not substitute retailer images.",
   },
   {
     partId: "happymodel-ep2-elrs",
@@ -340,7 +348,7 @@ export const presetPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/receivers/happymodel-ep2-elrs.jpg",
-    notes: "Official Happymodel EP2 ELRS receiver product page.",
+    notes: "Official Happymodel EP2 ELRS receiver product page; manufacturer product photo shows EP2 PCB with ceramic antenna.",
   },
   {
     partId: "happymodel-moblite7-frame",
@@ -375,6 +383,7 @@ export const presetPartImageSources = [
     category: "Props",
     brand: "HQProp",
     officialUrl: "https://www.hqprop.com/hq-durable-prop-7x35x3v1s-2cw2ccw-poly-carbonate-p0132.html",
+    preferredImageUrl: "https://www.hqprop.com/u_file/1907/products/13/fe71a64018.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/hqprop-7x3-5x3.jpg",
@@ -402,7 +411,7 @@ export const presetPartImageSources = [
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/iflight-xing-2005-2550.jpg",
-    notes: "Renamed from XING 2004 to match official iFlight XING 2005 2550KV page.",
+    notes: "Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset).",
   },
   {
     partId: "iflight-chimera7-lr-frame",
@@ -453,10 +462,12 @@ export const presetPartImageSources = [
     category: "Flight Controller",
     brand: "Matek",
     officialUrl: "https://www.mateksys.com/?portfolio=h743-mini",
+    preferredImageUrl:
+      "https://www.mateksys.com/wp-content/uploads/2020/10/H743-MINI_2.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/flight-controllers/matek-h743-mini-lr.jpg",
-    notes: "Official Matek H743-MINI portfolio page.",
+    notes: "Official Matek H743-MINI portfolio; H743-MINI_2.jpg is an isolated board product photo.",
   },
   {
     partId: "radiomaster-er6-elrs",
@@ -542,7 +553,7 @@ export const presetPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/escs/skystars-km55a-4in1.jpg",
-    notes: "Official Skystars KM55A 4-in-1 ESC product page.",
+    notes: "Official Skystars KM55A 4-in-1 ESC product page; store TLS blocks automated page scrape — image fetch pending direct CDN URL research.",
   },
   {
     partId: "speedybee-bl32-50a",

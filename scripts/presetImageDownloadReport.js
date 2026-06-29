@@ -145,11 +145,12 @@ export function classifyAppearance(sourceEntry, imageUrl, sourcePageUrl) {
   }
 
   if (
-    haystack.includes("1200x630") ||
-    haystack.includes("social") ||
-    haystack.includes("cover/") ||
-    haystack.includes("@ultra.png") ||
-    haystack.includes("aos%203.5%20v5%20(1)")
+    !haystack.includes("djiits.com") &&
+    (haystack.includes("1200x630") ||
+      haystack.includes("social") ||
+      (haystack.includes("cover/") && !haystack.includes("djiits.com")) ||
+      haystack.includes("@ultra.png") ||
+      haystack.includes("aos%203.5%20v5%20(1)"))
   ) {
     return "lifestyle photo";
   }
@@ -179,7 +180,9 @@ export function classifyAppearance(sourceEntry, imageUrl, sourcePageUrl) {
     haystack.includes("wp-content/uploads") ||
     haystack.includes("/products/") ||
     haystack.includes("/u_file/") ||
-    haystack.includes("img03.71360.com")
+    haystack.includes("img03.71360.com") ||
+    haystack.includes("djiits.com") ||
+    haystack.includes("wixstatic.com")
   ) {
     return "product photo";
   }
@@ -229,6 +232,13 @@ export function recommendCandidate(record) {
   }
 
   if (
+    status === "downloaded" &&
+    (AIO_BOARD_PART_IDS.has(partId) || MULTIPACK_OK_PART_IDS.has(partId))
+  ) {
+    return "keep for review";
+  }
+
+  if (
     /\bwatermark(ed)?\b/i.test(watermarkOrBranding) &&
     !/\bno (obvious )?watermark/i.test(watermarkOrBranding)
   ) {
@@ -271,31 +281,15 @@ export function recommendCandidate(record) {
     return "remove";
   }
 
-  const stackOrAioPartIds = new Set([
-    "geprc-gep-f411-35a-aio-esc",
-    "geprc-gep-f411-35a-aio-fc",
-    "speedybee-bls-35a-4in1",
-    "speedybee-f405-mini",
-    "speedybee-bl32-50a",
-    "speedybee-f405-v4",
-    "betafpv-1s-5a-aio-esc",
-    "betafpv-f4-1s-aio-fc",
-  ]);
-
   const fullDroneFramePartIds = new Set([
     "geprc-cinelog35-v2",
     "rekon7-pro-lr",
   ]);
 
-  const promoOrSharedImagePartIds = new Set([
-    "cnhl-black-6s-1300",
-    "betafpv-2s-450-xt30",
-    "happymodel-ep2-elrs",
-    "aos-3-5-v5",
-  ]);
+  const promoOrSharedImagePartIds = new Set([]);
 
   if (
-    stackOrAioPartIds.has(partId) ||
+    STACK_ONLY_INDIVIDUAL_PART_IDS.has(partId) ||
     fullDroneFramePartIds.has(partId) ||
     promoOrSharedImagePartIds.has(partId)
   ) {
@@ -596,11 +590,26 @@ function localFileExists(localPath) {
 
 const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set(["foxeer-reaper-nano-v2-vtx"]);
 
+const MULTIPACK_OK_PART_IDS = new Set([
+  "betafpv-2s-450-xt30",
+  "cnhl-black-6s-1300",
+]);
+
+const AIO_BOARD_PART_IDS = new Set([
+  "betafpv-1s-5a-aio-esc",
+  "betafpv-f4-1s-aio-fc",
+  "geprc-gep-f411-35a-aio-esc",
+  "geprc-gep-f411-35a-aio-fc",
+]);
+
+const STACK_ONLY_INDIVIDUAL_PART_IDS = new Set([
+  "speedybee-bls-35a-4in1",
+  "speedybee-f405-mini",
+  "speedybee-bl32-50a",
+  "speedybee-f405-v4",
+]);
+
 const MANUAL_REJECTION_NOTES = new Map([
-  [
-    "matek-h743-mini-lr",
-    "Rejected after manual review: manufacturer spec-sheet composite (FC photo + specs text), not an isolated product packshot.",
-  ],
   [
     "rush-tank-solo",
     "Rejected after manual review: official gallery images are macro marketing crops or lifestyle scenes, not isolated VTX packshots.",
@@ -737,14 +746,21 @@ export function cleanupDisallowedLocalImages(manifest = loadDownloadManifest()) 
       downloadedEntry = createCandidateRecord({
         partId: todoEntry.partId,
         sourcePageUrl: sourceEntry?.officialUrl ?? null,
-        imageUrl: null,
+        imageUrl: sourceEntry?.preferredImageUrl ?? null,
         localPath: absolutePath,
         status: "downloaded",
         detail: "Local JPG present; re-evaluating recommendation before retention.",
       });
+      if (sourceEntry?.urlConfidence) {
+        downloadedEntry.confidence = sourceEntry.urlConfidence;
+      }
+      downloadedEntry.recommendation = recommendCandidate(downloadedEntry);
       upsertCandidate(manifest, downloadedEntry);
     } else {
       downloadedEntry.status = "downloaded";
+      if (sourceEntry?.urlConfidence) {
+        downloadedEntry.confidence = sourceEntry.urlConfidence;
+      }
       downloadedEntry.recommendation = recommendCandidate(downloadedEntry);
     }
 

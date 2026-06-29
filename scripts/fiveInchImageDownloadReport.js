@@ -323,8 +323,6 @@ export function recommendCandidate(record) {
     "cnhl-black-6s-1300",
     "cnhl-4s-1500-freestyle",
     "betafpv-2s-450-xt30",
-    "happymodel-ep2-elrs",
-    "aos-3-5-v5",
     "aos-5-v5",
   ]);
 
@@ -654,7 +652,6 @@ const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
   "foxeer-reaper-f4-65a",
   "foxeer-toothless-2",
   "geprc-mark4-frame",
-  "happymodel-ep2-5inch-elrs",
   "hdzero-nano-90",
   "hypetrain-blaster-2450",
   "lumenier-qav-s-johnnyfpv",
@@ -729,10 +726,6 @@ const MANUAL_REJECTION_NOTES = new Map([
   [
     "hqprop-5x4-5x3-v1s",
     "Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU.",
-  ],
-  [
-    "happymodel-ep2-5inch-elrs",
-    "Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU.",
   ],
   [
     "ethix-p3-peanut-butter",

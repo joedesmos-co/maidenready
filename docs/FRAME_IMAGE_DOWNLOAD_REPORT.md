@@ -5,14 +5,14 @@ Developer-only review log for **frame** manufacturer-source image **candidates**
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-28T13:44:03.635Z
+Last updated: 2026-06-29T03:16:52.068Z
 
-Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** retained.
+Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** retained.
 
 ## Summary
 
 - Downloaded local JPG candidates: **15**
-- Rejected / skipped / failed: **12**
+- Rejected / skipped / failed: **24**
 
 ## Downloaded candidates (local JPG on disk)
 
@@ -197,7 +197,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Armattan Badger 5 frame kit; select 5-inch size. Official Armattan Badger page only exposes a 6-inch frame packshot; catalog entry is 5-inch frame-only.
-### 2. Ethix Lithium5 Frame (`ethix-lithium5-frame`)
+### 2. Armattan Badger 5 Frame (`armattan-badger5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://armattanquads.com/products/badger-1
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/armattan-badger5-frame.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Armattan Badger 5 frame kit; select 5-inch size. Official Armattan Badger page only exposes a 6-inch frame packshot; catalog entry is 5-inch frame-only.
+### 3. Ethix Lithium5 Frame (`ethix-lithium5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://ethixrc.com/product/lithium-5-frame-kit/
 - **Exact image URL downloaded:** —
@@ -208,7 +219,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Ethix Lithium5 frame page; ethixrc.com intermittently unreachable from automated checks. Ethix official store intermittently unreachable from automated fetch.
-### 3. Flywoo Explorer 5 Frame (`flywoo-explorer5-frame`)
+### 4. Ethix Lithium5 Frame (`ethix-lithium5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://ethixrc.com/product/lithium-5-frame-kit/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/ethix-lithium5.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Ethix Lithium5 frame page; ethixrc.com intermittently unreachable from automated checks. Ethix official store intermittently unreachable from automated fetch.
+### 5. Flywoo Explorer 5 Frame (`flywoo-explorer5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://flywoo.net/products/explorer-lr4-o3-5-long-range-freestyle-frame
 - **Exact image URL downloaded:** —
@@ -219,7 +241,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official Flywoo Explorer long-range 5-inch frame family page; closest manufacturer listing. Official Flywoo Explorer page is a long-range BNF-style listing without a verified frame-kit packshot.
-### 4. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
+### 6. Flywoo Explorer 5 Frame (`flywoo-explorer5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://flywoo.net/products/explorer-lr4-o3-5-long-range-freestyle-frame
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/flywoo-explorer5-frame.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official Flywoo Explorer long-range 5-inch frame family page; closest manufacturer listing. Official Flywoo Explorer page is a long-range BNF-style listing without a verified frame-kit packshot.
+### 7. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/
 - **Exact image URL downloaded:** —
@@ -230,7 +263,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official full-drone listing; frame-only SKU not clearly separated. Official GEPRC listing is a full BNF drone; no separated frame-kit packshot.
-### 5. HGLRC Zeus5 Frame (`hglrc-zeus5-frame`)
+### 8. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/geprc-cinelog35-v2.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official full-drone listing; frame-only SKU not clearly separated. Official GEPRC listing is a full BNF drone; no separated frame-kit packshot.
+### 9. HGLRC Zeus5 Frame (`hglrc-zeus5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.hglrc.com/products/hglrc-sector-x5-fr-5-inch-freestyle-fpv-frame
 - **Exact image URL downloaded:** —
@@ -241,7 +285,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** No Zeus5 frame SKU on HGLRC store; Sector X5 is the current 5-inch freestyle frame using Zeus FC/ESC ecosystem. No Zeus5 frame SKU on HGLRC store; Sector X5 substitute is a different frame family.
-### 6. iFlight Nazgul Eco5 Frame (`iflight-nazgul-eco5-frame`)
+### 10. HGLRC Zeus5 Frame (`hglrc-zeus5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://www.hglrc.com/products/hglrc-sector-x5-fr-5-inch-freestyle-fpv-frame
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/hglrc-zeus5-frame.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** No Zeus5 frame SKU on HGLRC store; Sector X5 is the current 5-inch freestyle frame using Zeus FC/ESC ecosystem. No Zeus5 frame SKU on HGLRC store; Sector X5 substitute is a different frame family.
+### 11. iFlight Nazgul Eco5 Frame (`iflight-nazgul-eco5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-6S-Pro2193
 - **Exact image URL downloaded:** —
@@ -252,7 +307,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Full BNF drone listing; frame-only SKU not clearly separated on manufacturer store. Official iFlight listing is a full BNF drone; frame-only SKU not clearly separated.
-### 7. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
+### 12. iFlight Nazgul Eco5 Frame (`iflight-nazgul-eco5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-6S-Pro2193
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/iflight-nazgul-eco5.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Full BNF drone listing; frame-only SKU not clearly separated on manufacturer store. Official iFlight listing is a full BNF drone; frame-only SKU not clearly separated.
+### 13. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/replacement-parts-for-xl5-v5-frame-pro1303
 - **Exact image URL downloaded:** —
@@ -264,7 +330,19 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **Recommendation:** remove
 - **Family variant note:** Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
 - **Notes:** XL5 V6 frame discontinued; manufacturer replacement-parts page covers XL5/Nazgul5 V3 frame family. Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant. XL5 V6 discontinued; replacement-parts page has no verified V6 frame-kit packshot.
-### 8. ImpulseRC ApexDC 5-inch (`impulserc-apexdc`)
+### 14. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://shop.iflight.com/replacement-parts-for-xl5-v5-frame-pro1303
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/iflight-xl5-v6.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Family variant note:** Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
+- **Notes:** XL5 V6 frame discontinued; manufacturer replacement-parts page covers XL5/Nazgul5 V3 frame family. Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant. XL5 V6 discontinued; replacement-parts page has no verified V6 frame-kit packshot.
+### 15. ImpulseRC ApexDC 5-inch (`impulserc-apexdc`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://apex-docs.impulserc.com/
 - **Exact image URL downloaded:** —
@@ -275,7 +353,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** ImpulseRC closed; official Apex build guide is the best remaining manufacturer reference for ApexDC frames. ImpulseRC closed; remaining docs page has no verified frame-kit packshot.
-### 9. ImpulseRC Reverb 5 Frame (`impulserc-reverb5-frame`)
+### 16. ImpulseRC ApexDC 5-inch (`impulserc-apexdc`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://apex-docs.impulserc.com/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/impulserc-apexdc.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** ImpulseRC closed; official Apex build guide is the best remaining manufacturer reference for ApexDC frames. ImpulseRC closed; remaining docs page has no verified frame-kit packshot.
+### 17. ImpulseRC Reverb 5 Frame (`impulserc-reverb5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://impulserc.com/
 - **Exact image URL downloaded:** —
@@ -286,7 +375,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** ImpulseRC closed; manufacturer homepage is the remaining official reference for Reverb frames. ImpulseRC closed; homepage has no verified Reverb 5 frame-kit packshot.
-### 10. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+### 18. ImpulseRC Reverb 5 Frame (`impulserc-reverb5-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://impulserc.com/
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/impulserc-reverb5-frame.jpg
+- **Status:** skipped
+- **Confidence:** low
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** ImpulseRC closed; manufacturer homepage is the remaining official reference for Reverb frames. ImpulseRC closed; homepage has no verified Reverb 5 frame-kit packshot.
+### 19. Rekon7 Pro Long Range (`rekon7-pro-lr`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
 - **Exact image URL downloaded:** —
@@ -297,7 +397,18 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official complete drone page for Rekon7 Pro long range. Official RekonFPV listing is a complete drone; frame-only SKU not separated.
-### 11. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+### 20. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/rekon7-pro-lr.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official complete drone page for Rekon7 Pro long range. Official RekonFPV listing is a complete drone; frame-only SKU not separated.
+### 21. TBS Source One V5 5-inch (`tbs-source-one-v5`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
 - **Exact image URL downloaded:** —
@@ -308,7 +419,29 @@ Last local cleanup: 2026-06-28T13:44:03.634Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** remove
 - **Notes:** Official open-source Source One project repo (V5 files). Official GitHub repo only exposes a social OG card, not a frame-kit packshot.
-### 12. TBS Source One V6 Frame (`tbs-source-one-v6-frame`)
+### 22. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/tbs-source-one-v5.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official open-source Source One project repo (V5 files). Official GitHub repo only exposes a social OG card, not a frame-kit packshot.
+### 23. TBS Source One V6 Frame (`tbs-source-one-v6-frame`)
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/tbs-source-one-v6-frame.jpg
+- **Status:** skipped
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** remove
+- **Notes:** Official TBS Source One open-source frame repository; V6 is the current revision. Official GitHub repo only exposes a social OG card, not a frame-kit packshot.
+### 24. TBS Source One V6 Frame (`tbs-source-one-v6-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
 - **Exact image URL downloaded:** —

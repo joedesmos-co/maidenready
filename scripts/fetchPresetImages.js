@@ -62,19 +62,11 @@ const DISCOURAGED_IMAGE_URL_PATTERNS = [
 const PROACTIVE_SKIP_PART_IDS = new Map([
   ["geprc-cinelog35-v2", "Frame listing shows complete aircraft; no isolated frame packshot expected."],
   ["rekon7-pro-lr", "Frame listing shows complete aircraft; no isolated frame packshot expected."],
-  ["geprc-gep-f411-35a-aio-esc", "Manufacturer page is AIO combo; no isolated ESC packshot."],
-  ["geprc-gep-f411-35a-aio-fc", "Manufacturer page is AIO combo; no isolated FC packshot."],
   ["speedybee-bls-35a-4in1", "Manufacturer page is FC+ESC stack; no isolated ESC packshot."],
   ["speedybee-f405-mini", "Manufacturer page is FC+ESC stack; no isolated FC packshot."],
   ["speedybee-bl32-50a", "Manufacturer page is FC+ESC stack; no isolated ESC packshot."],
-  ["betafpv-1s-5a-aio-esc", "Manufacturer page is AIO combo; no isolated ESC packshot."],
-  ["betafpv-f4-1s-aio-fc", "Manufacturer page is AIO combo; no isolated FC packshot."],
   ["speedybee-f405-v4", "Manufacturer page is FC+ESC stack; no isolated FC packshot."],
   ["tbs-source-one-v5", "GitHub project page only exposes social/diagram og:image."],
-  ["happymodel-ep2-elrs", "Manufacturer page only exposes a shared EP1/EP2/EP1 Dual comparison image."],
-  ["betafpv-2s-450-xt30", "Manufacturer 2pcs listing image shows two batteries for a single-pack catalog line."],
-  ["aos-3-5-v5", "Official design page has no isolated frame JPEG; hero assets are lifestyle or unrelated."],
-  ["cnhl-black-6s-1300", "Manufacturer listing images include multi-pack X2/X4 promo overlays on store CDN."],
   ["gnb-4s-1500", "No exact 1500mAh official product page; closest gaoneng.shop listing is a different capacity."],
 ]);
 
@@ -243,6 +235,10 @@ function extractHtmlImageUrls(html) {
 }
 
 function isDiscouragedImageUrl(url) {
+  if (/djiits\.com/i.test(url) && /@(?:ultra|origin)\.png/i.test(url)) {
+    return false;
+  }
+
   return DISCOURAGED_IMAGE_URL_PATTERNS.some((pattern) => pattern.test(url));
 }
 

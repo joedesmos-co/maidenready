@@ -50,8 +50,6 @@ const PROACTIVE_SKIP_PART_IDS = new Map([
   ["hqprop-t3x2-5x3-515", "HQProp T3x2.5x3 515 product page not found on official store."],
   ["ovonic-6s-1300", "Official Ovonic listing is a 2-pack bundle; no single-battery packshot on manufacturer store."],
   ["walksnail-avatar-micro", "Low-confidence substitute page (Avatar V2 camera), not Micro SKU."],
-  ["cnhl-black-6s-1300", "Official CNHL listing is multi-pack only; catalog line is single battery."],
-  ["betafpv-2s-450-xt30", "Official BETAFPV listing is 2pcs bundle only; catalog line is single battery."],
   ["foxeer-toothless-2", "Foxeer official page only exposes /upload/ad/ marketing assets."],
   ["foxeer-falkor-2", "Foxeer official page images are VTX modules, not Falkor 2 camera packshots."],
   ["foxeer-predator-v5", "Foxeer official page images are accessory/VTX boards, not Predator V5 camera packshots."],

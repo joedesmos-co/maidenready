@@ -1654,7 +1654,7 @@ const expansionParts = {
       id: "skystars-km55a-4in1",
       name: "Skystars KM55A 4-in-1",
       brand: "Skystars",
-      imagePath: "/parts/escs/skystars-km55a.jpg",
+      imagePath: "/parts/escs/skystars-km55a-4in1.jpg",
       description: "55A full-size ESC suitable for efficient 6S long range builds.",
       price: 69.99,
       weightG: 13.5,

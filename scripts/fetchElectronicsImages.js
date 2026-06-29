@@ -111,10 +111,6 @@ const PROACTIVE_SKIP_PART_IDS = new Map([
     "Matek portfolio only exposes spec-sheet composite, not an isolated F722-STD FC packshot.",
   ],
   [
-    "matek-h743-mini-lr",
-    "Matek H743-MINI portfolio only exposes spec-sheet/layout composites, not an isolated FC packshot.",
-  ],
-  [
     "matek-h743-slate-freestyle",
     "No H743 Slate SKU on Matek; H743-SLIM-V4 substitute is a different board family.",
   ],

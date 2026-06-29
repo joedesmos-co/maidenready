@@ -10,6 +10,33 @@ Structured data: [`src/data/presetPartImageSources.js`](../src/data/presetPartIm
 
 Preset parts with missing or low-confidence official pages were renamed or replaced with verified manufacturer products. Unique preset part count is now **48** (M03 VTX shared across two whoop presets).
 
+## Targeted official-source image pass (2026-06-29)
+
+Coverage **76 → 80** catalog images; preset parts **33 → 37/48**.
+
+**Newly fetched (official source, `imageNeedsReview: true`):**
+
+| Part ID | Source |
+| --- | --- |
+| `betafpv-2s-450-xt30` | BETAFPV Shopify CDN product photo |
+| `cnhl-black-6s-1300` | CNHL official gallery (single-pack style) |
+| `matek-h743-mini-lr` | Matek `H743-MINI_2.jpg` isolated board |
+| `dji-o3-air-unit`, `dji-o3-camera` | DJI store CDN (`djiits.com` cover assets) |
+| `happymodel-ep2-elrs` | Happymodel `wp-content/uploads/2022/11/5.jpg` |
+| `aos-3-5-v5` | AOS Wix frame CAD render |
+| `brotherhobby-avenger-2806-5-1300` | BrotherHobby official product CDN |
+
+**5-inch RX/VTX additions (same review status):** FrSky R-XSR, FrSky XSR SBUS, TBS Crossfire Micro V2/LR, Happymodel EP1 Dual / EP2 5-inch / Cine EP2.
+
+**Still missing — no clean official packshot (do not substitute):**
+
+- `gnb-4s-1500` — no exact 1500mAh manufacturer SKU page
+- `skystars-km55a-4in1` — official page TLS-blocked; CDN URL not yet verified
+- SpeedyBee stack parts (`speedybee-bl32-50a`, `speedybee-bls-35a-4in1`, `speedybee-f405-mini`, `speedybee-f405-v4`) — stack-only imagery
+- `geprc-cinelog35-v2`, `rekon7-pro-lr`, `tbs-source-one-v5` — full drone / GitHub OG only
+- `iflight-xing-2005-2550` — no isolated 2005 motor packshot on official page
+- `foxeer-reaper-nano-v2-vtx` — prior manual reject (wrong product type in official gallery)
+
 ## Summary
 
 | Metric | Count |
@@ -24,7 +51,7 @@ Preset parts with missing or low-confidence official pages were renamed or repla
 
 | Part ID | Name | Brand | Official URL | URL confidence | Image status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| `aos-3-5-v5` | AOS 3.5 V5 | AOS | [link](https://www.aos-rc.com/designs/aos-3.5-v5) | high | needs review | Official AOS RC design page for AOS 3.5 V5 frame. |
+| `aos-3-5-v5` | AOS 3.5 V5 | AOS | [link](https://www.aos-rc.com/designs/aos-3.5-v5) | high | needs review | Official AOS RC design page; Wix hero render is an isolated frame CAD packshot. |
 | `betafpv-meteor75-pro-frame` | BETAFPV Meteor75 Pro Whoop Frame | BETAFPV | [link](https://betafpv.com/products/meteor75-pro-brushless-whoop-frame) | high | needs review | Official Meteor75 Pro whoop frame product page. |
 | `betafpv-pavo25-frame` | BETAFPV Pavo25 Frame | BETAFPV | [link](https://betafpv.com/products/pavo25-frame-kit) | high | needs review | Official Pavo25 frame kit page. |
 | `geprc-cinelog35-v2` | GEPRC Cinelog35 V2 | GEPRC | [link](https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/) | high | needs review | Official full-drone listing; frame-only SKU not clearly separated. |
@@ -37,8 +64,8 @@ Preset parts with missing or low-confidence official pages were renamed or repla
 | --- | --- | --- | --- | --- | --- | --- |
 | `betafpv-0802se-19500kv` | BETAFPV 0802SE 19500KV | BETAFPV | [link](https://betafpv.com/products/0802se-22000kv-brushless-motors) | high | needs review | Official BETAFPV 0802SE motor page; 19500KV is a listed variant. |
 | `betafpv-1102-18000kv` | BETAFPV 1102 18000KV | BETAFPV | [link](https://betafpv.com/products/1102-13500kv-brushless-motors) | high | needs review | Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). |
-| `brotherhobby-avenger-2806-5-1300` | BrotherHobby Avenger 2806.5 1300KV | BrotherHobby | [link](https://brotherhobby.com/avenger-28065-motor-p00132p1.html) | low | needs review | Official Avenger 2806.5 motor family page; KV variants share one URL. |
-| `iflight-xing-2005-2550` | iFlight XING 2005 2550KV | iFlight | [link](https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381) | high | needs review | Renamed from XING 2004 to match official iFlight XING 2005 2550KV page. |
+| `brotherhobby-avenger-2806-5-1300` | BrotherHobby Avenger 2806.5 1300KV | BrotherHobby | [link](https://brotherhobby.com/avenger-28065-motor-p00132p1.html) | high | needs review | Official Avenger 2806.5 motor family page; KV variants share one URL. |
+| `iflight-xing-2005-2550` | iFlight XING 2005 2550KV | iFlight | [link](https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381) | low | needs review | Official page lists 2550KV but lacks isolated 2005 motor packshot. |
 | `iflight-xing2-1404-3800` | iFlight XING2 1404 3800KV | iFlight | [link](https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482) | high | needs review | Official iFlight XING2 1404 motor page with 3800KV option. |
 | `iflight-xing2-2207-1855` | iFlight XING2 2207 1855KV | iFlight | [link](https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610) | high | needs review | Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. |
 

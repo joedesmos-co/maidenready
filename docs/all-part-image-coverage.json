@@ -1,58 +1,20 @@
 {
-  "generatedAt": "2026-06-28T13:51:11.096Z",
+  "generatedAt": "2026-06-29T03:17:03.473Z",
   "summary": {
     "total": 294,
-    "found": 76,
-    "missing": 218,
+    "found": 80,
+    "missing": 214,
     "presetPartTotal": 48,
-    "presetPartFound": 32,
-    "presetPartMissing": 16,
+    "presetPartFound": 37,
+    "presetPartMissing": 11,
     "missingByPriority": {
-      "1": 16,
-      "2": 84,
-      "3": 118
+      "1": 11,
+      "2": 87,
+      "3": 116
     }
   },
   "missingByPriority": {
     "1": [
-      {
-        "partId": "betafpv-2s-450-xt30",
-        "partName": "BETAFPV 450mAh 2S 45C XT30",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "tiny-whoop-2s-outdoor",
-            "presetName": "2.5\" Outdoor Whoop",
-            "buildClass": "cinewhoop",
-            "categoryKey": "battery"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "cnhl-black-6s-1300",
-        "partName": "CNHL Black Series 6S 1300mAh 100C",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "standard-5-freestyle",
-            "presetName": "Standard 5\" Freestyle",
-            "buildClass": "5-inch-freestyle",
-            "categoryKey": "battery"
-          }
-        ],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 1
-      },
       {
         "partId": "gnb-4s-1500",
         "partName": "GNB 4S 1500mAh 120C",
@@ -134,25 +96,6 @@
         "compatibleClasses": [
           "3.5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "matek-h743-mini-lr",
-        "partName": "Matek H743 Mini LR",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/matek-h743-mini-lr.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "7-long-range-explorer",
-            "presetName": "7\" Long Range Explorer",
-            "buildClass": "7-inch-long-range",
-            "categoryKey": "flightController"
-          }
-        ],
-        "compatibleClasses": [
-          "7-inch-long-range"
         ],
         "priority": 1
       },
@@ -278,26 +221,6 @@
         "priority": 1
       },
       {
-        "partId": "tbs-crossfire-nano",
-        "partName": "TBS Crossfire Nano RX",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "7-long-range-explorer",
-            "presetName": "7\" Long Range Explorer",
-            "buildClass": "7-inch-long-range",
-            "categoryKey": "receiver"
-          }
-        ],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "7-inch-long-range"
-        ],
-        "priority": 1
-      },
-      {
         "partId": "foxeer-reaper-nano-v2-vtx",
         "partName": "Foxeer Reaper Nano V2 VTX",
         "categoryKey": "vtx",
@@ -314,27 +237,6 @@
         "compatibleClasses": [
           "tiny-whoop",
           "3.5-inch-freestyle"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "rush-tank-solo",
-        "partName": "Rush Tank Solo 5.8GHz",
-        "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/rush-tank-solo.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "standard-5-freestyle",
-            "presetName": "Standard 5\" Freestyle",
-            "buildClass": "5-inch-freestyle",
-            "categoryKey": "vtx"
-          }
-        ],
-        "compatibleClasses": [
-          "5-inch-freestyle",
-          "cinewhoop",
-          "7-inch-long-range"
         ],
         "priority": 1
       }
@@ -885,6 +787,18 @@
         "priority": 2
       },
       {
+        "partId": "aos-5-v5",
+        "partName": "AOS 5 V5",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/aos-5-v5.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "armattan-badger5-frame",
         "partName": "Armattan Badger 5 Frame",
         "categoryKey": "frame",
@@ -913,6 +827,18 @@
         "partName": "Flywoo Explorer 5 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/flywoo-explorer5-frame.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "geprc-mark4-frame",
+        "partName": "GEPRC Mark4 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/geprc-mark4-frame.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -973,6 +899,18 @@
         "partName": "ImpulseRC Reverb 5 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/impulserc-reverb5-frame.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "lumenier-qav-s-johnnyfpv",
+        "partName": "Lumenier QAV-S JohnnyFPV SE",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1057,6 +995,18 @@
         "partName": "Hypetrain Acer 2306 1950KV",
         "categoryKey": "motors",
         "imagePath": "/parts/motors/hypetrain-acer-2306-1950kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hypetrain-blaster-2450",
+        "partName": "Hypetrain Blaster 2207 2450KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/hypetrain-blaster-2207.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1269,30 +1219,6 @@
         "priority": 2
       },
       {
-        "partId": "frsky-r-xsr",
-        "partName": "FrSky R-XSR",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/frsky-r-xsr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "frsky-xsr-sbus",
-        "partName": "FrSky XSR SBUS",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/frsky-xsr-sbus.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "imm-rc-fusion-v2-elrs",
         "partName": "ImmersionRC Fusion V2 ELRS",
         "categoryKey": "receiver",
@@ -1317,10 +1243,10 @@
         "priority": 2
       },
       {
-        "partId": "tbs-crossfire-micro-v2",
-        "partName": "TBS Crossfire Micro V2",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/tbs-crossfire-micro-v2.jpg",
+        "partId": "akk-x2-ultimate-vtx",
+        "partName": "AKK X2 Ultimate VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/akk-x2-ultimate-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1329,13 +1255,14 @@
         "priority": 2
       },
       {
-        "partId": "akk-x2-ultimate-vtx",
-        "partName": "AKK X2 Ultimate VTX",
+        "partId": "hdzero-freestyle-vtx",
+        "partName": "HDZero Freestyle VTX",
         "categoryKey": "vtx",
-        "imagePath": "/parts/vtx/akk-x2-ultimate-vtx.jpg",
+        "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
+          "3.5-inch-freestyle",
           "5-inch-freestyle"
         ],
         "priority": 2
@@ -1357,6 +1284,18 @@
         "partName": "Rush Tank II 5.8GHz VTX",
         "categoryKey": "vtx",
         "imagePath": "/parts/vtx/rush-tank-ii-vtx.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "walksnail-avatar-gt-vtx",
+        "partName": "Walksnail Avatar GT VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2675,34 +2614,10 @@
         "priority": 3
       },
       {
-        "partId": "happymodel-ep1-dual-elrs",
-        "partName": "Happymodel EP1 Dual ELRS",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/happymodel-ep1-dual-elrs.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "radiomaster-er5-915-lr",
         "partName": "Radiomaster ER5 915 LR",
         "categoryKey": "receiver",
         "imagePath": "/parts/receivers/radiomaster-er5-915-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "tbs-crossfire-micro-lr",
-        "partName": "TBS Crossfire Micro LR",
-        "categoryKey": "receiver",
-        "imagePath": "/parts/receivers/tbs-crossfire-micro-lr.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2786,8 +2701,6 @@
   },
   "missingByCategory": {
     "battery": [
-      "betafpv-2s-450-xt30",
-      "cnhl-black-6s-1300",
       "gnb-4s-1500",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
@@ -2850,7 +2763,6 @@
       "tmotor-pacer-f35-cine-esc"
     ],
     "flightController": [
-      "matek-h743-mini-lr",
       "speedybee-f405-mini",
       "speedybee-f405-v4",
       "atomrc-f405-fc",
@@ -2884,14 +2796,17 @@
       "geprc-cinelog35-v2",
       "rekon7-pro-lr",
       "tbs-source-one-v5",
+      "aos-5-v5",
       "armattan-badger5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
+      "geprc-mark4-frame",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
       "iflight-xl5-v6",
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
+      "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
       "betafpv-pavo3516-frame",
       "diatone-taycan35-frame",
@@ -2917,6 +2832,7 @@
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
+      "hypetrain-blaster-2450",
       "johnnyfpv-motor-v2-2207-1960kv",
       "lumenier-2207-1800kv",
       "samguk-v-2207-1960kv",
@@ -2954,23 +2870,13 @@
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
     ],
-    "receiver": [
-      "tbs-crossfire-nano",
-      "frsky-r-xsr",
-      "frsky-xsr-sbus",
-      "imm-rc-fusion-v2-elrs",
-      "jhemcu-ep28-elrs",
-      "tbs-crossfire-micro-v2",
-      "happymodel-ep1-dual-elrs",
-      "radiomaster-er5-915-lr",
-      "tbs-crossfire-micro-lr"
-    ],
     "vtx": [
       "foxeer-reaper-nano-v2-vtx",
-      "rush-tank-solo",
       "akk-x2-ultimate-vtx",
+      "hdzero-freestyle-vtx",
       "hdzero-race-vtx",
       "rush-tank-ii-vtx",
+      "walksnail-avatar-gt-vtx",
       "akk-a3-nano-vtx-park",
       "akk-a5-nano-vtx",
       "hdzero-cine-nano-vtx",
@@ -3020,62 +2926,19 @@
       "hqprop-7035-2-lr",
       "hqprop-durable-3530-cine",
       "hqprop-t65x30-whoop"
+    ],
+    "receiver": [
+      "imm-rc-fusion-v2-elrs",
+      "jhemcu-ep28-elrs",
+      "radiomaster-er5-915-lr"
     ]
   },
   "missingByBuildClass": {
-    "cinewhoop": [
-      "betafpv-2s-450-xt30",
-      "gnb-4s-1500",
-      "speedybee-bls-35a-4in1",
-      "speedybee-f405-mini",
-      "geprc-cinelog35-v2",
-      "iflight-xing-2005-2550",
-      "rush-tank-solo",
-      "tattu-4s-1550",
-      "foxeer-toothless-2",
-      "walksnail-avatar-micro",
-      "aikon-f7-mini-35a",
-      "axisflying-h743-mini",
-      "matek-f722-mini",
-      "gnb-4s-1300-cine",
-      "iflight-4s-1800-cine",
-      "tattu-4s-1300-cine",
-      "caddx-proview-cine-digital",
-      "diatone-mamba-f35-cine-esc",
-      "geprc-gep35a-cine-esc",
-      "iflight-succexd35-cine-esc",
-      "tmotor-pacer-f35-cine-esc",
-      "geprc-f722-cine-mini-fc",
-      "iflight-beast-h743-cine-fc",
-      "matek-f722-cine-mini-fc",
-      "flywoo-explorer35-cine-frame",
-      "geprc-cinebee35-hd-frame",
-      "iflight-chimera35-cine-frame",
-      "iflight-cidatel35-cine-frame",
-      "brotherhobby-2004-2600kv",
-      "emax-eco-2004-2550kv",
-      "geprc-2005-2200kv",
-      "happymodel-cine-2004-2400kv",
-      "iflight-xing2-2203-2350kv",
-      "rcinpower-2203-2300kv",
-      "tmotor-mn2004-2550kv",
-      "avan-3540-cine-d5",
-      "dal-35435-cine-d5",
-      "gemfan-3528-cine-d5",
-      "gemfan-floppypop3-3518",
-      "hqprop-3536-cine-d5",
-      "hqprop-durable-3530-cine",
-      "hdzero-cine-nano-vtx",
-      "rush-mini-tank-cine-vtx"
-    ],
     "5-inch-freestyle": [
-      "cnhl-black-6s-1300",
       "gnb-4s-1500",
       "speedybee-bl32-50a",
       "speedybee-f405-v4",
       "tbs-source-one-v5",
-      "tbs-crossfire-nano",
-      "rush-tank-solo",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
       "gnb-6s-1300-hv",
@@ -3120,14 +2983,17 @@
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
       "speedybee-f7-v3-fc",
+      "aos-5-v5",
       "armattan-badger5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
+      "geprc-mark4-frame",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
       "iflight-xl5-v6",
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
+      "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
       "axisflying-ae2207-1960",
       "axisflying-joker-2207-1920kv",
@@ -3135,6 +3001,7 @@
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
+      "hypetrain-blaster-2450",
       "johnnyfpv-motor-v2-2207-1960kv",
       "lumenier-2207-1800kv",
       "samguk-v-2207-1960kv",
@@ -3152,21 +3019,60 @@
       "ethix-s3-5050",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
-      "frsky-r-xsr",
-      "frsky-xsr-sbus",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
-      "tbs-crossfire-micro-v2",
       "akk-x2-ultimate-vtx",
+      "hdzero-freestyle-vtx",
       "hdzero-race-vtx",
-      "rush-tank-ii-vtx"
+      "rush-tank-ii-vtx",
+      "walksnail-avatar-gt-vtx"
+    ],
+    "cinewhoop": [
+      "gnb-4s-1500",
+      "speedybee-bls-35a-4in1",
+      "speedybee-f405-mini",
+      "geprc-cinelog35-v2",
+      "iflight-xing-2005-2550",
+      "tattu-4s-1550",
+      "foxeer-toothless-2",
+      "walksnail-avatar-micro",
+      "aikon-f7-mini-35a",
+      "axisflying-h743-mini",
+      "matek-f722-mini",
+      "gnb-4s-1300-cine",
+      "iflight-4s-1800-cine",
+      "tattu-4s-1300-cine",
+      "caddx-proview-cine-digital",
+      "diatone-mamba-f35-cine-esc",
+      "geprc-gep35a-cine-esc",
+      "iflight-succexd35-cine-esc",
+      "tmotor-pacer-f35-cine-esc",
+      "geprc-f722-cine-mini-fc",
+      "iflight-beast-h743-cine-fc",
+      "matek-f722-cine-mini-fc",
+      "flywoo-explorer35-cine-frame",
+      "geprc-cinebee35-hd-frame",
+      "iflight-chimera35-cine-frame",
+      "iflight-cidatel35-cine-frame",
+      "brotherhobby-2004-2600kv",
+      "emax-eco-2004-2550kv",
+      "geprc-2005-2200kv",
+      "happymodel-cine-2004-2400kv",
+      "iflight-xing2-2203-2350kv",
+      "rcinpower-2203-2300kv",
+      "tmotor-mn2004-2550kv",
+      "avan-3540-cine-d5",
+      "dal-35435-cine-d5",
+      "gemfan-3528-cine-d5",
+      "gemfan-floppypop3-3518",
+      "hqprop-3536-cine-d5",
+      "hqprop-durable-3530-cine",
+      "hdzero-cine-nano-vtx",
+      "rush-mini-tank-cine-vtx"
     ],
     "7-inch-long-range": [
       "skystars-km55a-4in1",
-      "matek-h743-mini-lr",
       "rekon7-pro-lr",
-      "tbs-crossfire-nano",
-      "rush-tank-solo",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
       "foxeer-reaper-f4-65a",
@@ -3202,8 +3108,7 @@
       "geprc-7038-2-lr",
       "hqprop-7030-3-lr",
       "hqprop-7035-2-lr",
-      "radiomaster-er5-915-lr",
-      "tbs-crossfire-micro-lr"
+      "radiomaster-er5-915-lr"
     ],
     "3.5-inch-freestyle": [
       "speedybee-bls-35a-4in1",
@@ -3215,6 +3120,7 @@
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
+      "hdzero-freestyle-vtx",
       "cnhl-ministar-4s-900",
       "gnb-4s-1100-park",
       "gnb-4s-750-mini",
@@ -3270,7 +3176,6 @@
       "emax-avan-40mm-whoop",
       "gemfan-31mm-4blade-whoop",
       "hqprop-t65x30-whoop",
-      "happymodel-ep1-dual-elrs",
       "akk-a5-nano-vtx",
       "rush-nano-ultimate-whoop-vtx"
     ]
@@ -3281,7 +3186,7 @@
       "partName": "BETAFPV 450mAh 2S 45C XT30",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3301,7 +3206,7 @@
       "partName": "CNHL Black Series 6S 1300mAh 100C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3648,7 +3553,7 @@
       "partName": "Matek H743 Mini LR",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/matek-h743-mini-lr.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4171,7 +4076,7 @@
       "partName": "TBS Crossfire Nano RX",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4262,7 +4167,7 @@
       "partName": "Rush Tank Solo 5.8GHz",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/rush-tank-solo.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -5014,7 +4919,7 @@
       "partName": "AOS 5 V5",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/aos-5-v5.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5092,7 +4997,7 @@
       "partName": "GEPRC Mark4 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-mark4-frame.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5196,7 +5101,7 @@
       "partName": "Lumenier QAV-S JohnnyFPV SE",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5352,7 +5257,7 @@
       "partName": "Hypetrain Blaster 2207 2450KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/hypetrain-blaster-2207.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5755,7 +5660,7 @@
       "partName": "FrSky R-XSR",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/frsky-r-xsr.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5768,7 +5673,7 @@
       "partName": "FrSky XSR SBUS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/frsky-xsr-sbus.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5820,7 +5725,7 @@
       "partName": "TBS Crossfire Micro V2",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-micro-v2.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5846,7 +5751,7 @@
       "partName": "HDZero Freestyle VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5899,7 +5804,7 @@
       "partName": "Walksnail Avatar GT VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7409,7 +7314,7 @@
       "partName": "Happymodel EP1 Dual ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep1-dual-elrs.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7435,7 +7340,7 @@
       "partName": "TBS Crossfire Micro LR",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-micro-lr.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
