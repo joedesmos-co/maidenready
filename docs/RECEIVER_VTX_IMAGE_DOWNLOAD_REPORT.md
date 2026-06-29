@@ -5,9 +5,9 @@ Developer-only review log for **receiver and VTX** manufacturer-source image **c
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T19:01:41.979Z
+Last updated: 2026-06-29T19:22:32.483Z
 
-Last local cleanup: 2026-06-29T19:01:41.979Z — removed **0** JPG(s); **22** retained.
+Last local cleanup: 2026-06-29T19:22:32.482Z — removed **0** JPG(s); **22** retained.
 
 ## Summary
 

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:01:41.752Z",
+  "updatedAt": "2026-06-29T19:22:32.282Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -256,6 +256,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official Azure Power Vanover 5140 propeller page. fetch failed"
+    },
+    {
+      "partId": "betafpv-1s-300-hv-bt2",
+      "partName": "BETAFPV 1S 300mAh HV BT2.0",
+      "category": "Battery",
+      "sourcePageUrl": "https://betafpv.com/products/lava-1s-300mah-75c-battery-5pcs",
+      "imageUrl": null,
+      "localPath": "public/parts/batteries/betafpv-1s-300-hv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official BETAFPV LAVA 1S 300mAh LiHV 75C BT2.0 battery (5-pack listing); Shopify gallery shows isolated packs with LiHV/BT2.0 label. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "brotherhobby-avenger-2507-1850",
@@ -1213,8 +1229,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official HDZero Nano 90 V2 camera page; supersedes original Nano 90. Converted official PNG source to local JPG (dev script only). Rejected after manual review: manufacturer logo graphic only, not the HDZero Nano 90 camera product."
     },
     {
@@ -3027,8 +3043,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:01:41.752Z",
+    "date": "2026-06-29T19:22:32.282Z",
     "removedPartIds": [],
-    "retainedDownloadedCount": 45
+    "retainedDownloadedCount": 46
   }
 }

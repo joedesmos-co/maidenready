@@ -5,18 +5,28 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T19:01:41.644Z
+Last updated: 2026-06-29T19:22:32.172Z
 
-Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** retained.
+Last local cleanup: 2026-06-29T19:22:32.172Z — removed **0** JPG(s); **33** retained.
 
 ## Summary
 
-- Downloaded local JPG candidates: **31**
+- Downloaded local JPG candidates: **33**
 - Rejected / skipped / failed: **231**
 
 ## Downloaded candidates (local JPG on disk)
 
-### 1. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
+### 1. BETAFPV 1S 300mAh HV BT2.0 (`betafpv-1s-300-hv-bt2`)
+- **Category:** Battery
+- **Manufacturer/source page URL:** https://betafpv.com/products/lava-1s-300mah-75c-battery-5pcs
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/batteries/betafpv-1s-300-hv.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official BETAFPV LAVA 1S 300mAh LiHV 75C BT2.0 battery (5-pack listing); Shopify gallery shows isolated packs with LiHV/BT2.0 label. Local JPG present; re-evaluating before retention.
+### 2. BETAFPV 450mAh 2S 45C XT30 (`betafpv-2s-450-xt30`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://betafpv.com/products/450mah-2s-45c-lipo-battery-2pcs
 - **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/6391ace427ade714b70fb966024ae804_d937718f-4491-4bef-a2e5-a84d1fad945d_1024x1024.jpg?v=1668653169
@@ -26,7 +36,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official BETAFPV 450mAh 2S 45C XT30 page (2pcs listing); product photo may show one or two packs. Converted official WEBP source to local JPG (dev script only).
-### 2. Caddx Ant Nano (`caddx-ant-nano`)
+### 3. Caddx Ant Nano (`caddx-ant-nano`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/caddx-ant-analog-camera
 - **Exact image URL downloaded:** —
@@ -36,7 +46,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Caddx Ant analog camera page. Local JPG present; re-evaluating before retention.
-### 3. Caddx Ratel 2 (`caddx-ratel-2`)
+### 4. Caddx Ratel 2 (`caddx-ratel-2`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera
 - **Exact image URL downloaded:** —
@@ -46,7 +56,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Caddx Ratel 2 analog camera page. Local JPG present; re-evaluating before retention.
-### 4. Caddx Turtle V2 (`caddx-turtle-v2`)
+### 5. Caddx Turtle V2 (`caddx-turtle-v2`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/turtle-v2-fpv-camera
 - **Exact image URL downloaded:** https://www.caddxfpv.com/cdn/shop/files/01_2_29417c25-4297-4be1-bb2a-72c354e141b7.png
@@ -56,7 +66,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Caddx Turtle V2 FPV camera page (URL updated from retired caddx-turtle-v2-fpv-camera slug). Converted official PNG source to local JPG (dev script only).
-### 5. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
+### 6. CNHL Black Series 6S 1300mAh 100C (`cnhl-black-6s-1300`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://chinahobbyline.com/products/cnhl-black-series-1300mah-22-2v-6s-100c-lipo-battery-with-xt60-plug-4-packs
 - **Exact image URL downloaded:** https://chinahobbyline.com/cdn/shop/files/1_eb0ec870-931a-497b-8cec-8c3277f7cf30.jpg?v=1772001464
@@ -66,7 +76,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official CNHL Black Series 6S 1300mAh listing (stock 1301006BK); manufacturer store uses multi-pack pages — packshot from product gallery. Converted official WEBP source to local JPG (dev script only).
-### 6. CNHL Ministar 6S 1500mAh 120C (`cnhl-ministar-6s-1500`)
+### 7. CNHL Ministar 6S 1500mAh 120C (`cnhl-ministar-6s-1500`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://chinahobbyline.com/products/cnhl-ministar-series-1500mah-22-2v-6s-120c-lipo-battery-with-xt60-plug
 - **Exact image URL downloaded:** —
@@ -76,7 +86,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official CNHL Ministar 6S 1500mAh 120C battery page. Local JPG present; re-evaluating before retention.
-### 7. DJI O3 Camera (`dji-o3-camera`)
+### 8. DJI O3 Camera (`dji-o3-camera`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://store.dji.com/sg/product/dji-o3-air-unit-camera-module
 - **Exact image URL downloaded:** https://se-cdn.djiits.com/tpc/uploads/spu/cover/684a5cf519e5d94b534f77d2fb0fc737@ultra.png
@@ -86,7 +96,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official DJI store O3 camera module page. Converted official PNG source to local JPG (dev script only).
-### 8. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
+### 9. Gemfan 35mm 3-Blade Whoop (`gemfan-35mm-3blade-whoop`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/35mm-pc-3-blade.html
 - **Exact image URL downloaded:** —
@@ -96,7 +106,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 35mm 3-blade whoop prop page. Local JPG present; re-evaluating before retention.
-### 9. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
+### 10. Gemfan 40mm 4-Blade Whoop (`gemfan-40mm-4blade-whoop`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/40mm-1613-pc-4-blade.html
 - **Exact image URL downloaded:** —
@@ -106,7 +116,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan 40mm 4-blade whoop prop page. Local JPG present; re-evaluating before retention.
-### 10. Gemfan Hurricane 51433 (`gemfan-51433`)
+### 11. Gemfan Hurricane 51433 (`gemfan-51433`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/51433-hurricane-pc-3-blade.html
 - **Exact image URL downloaded:** —
@@ -116,7 +126,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 51433 prop page. Local JPG present; re-evaluating before retention.
-### 11. Gemfan Hurricane 51466 (`gemfan-51466`)
+### 12. Gemfan Hurricane 51466 (`gemfan-51466`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html
 - **Exact image URL downloaded:** —
@@ -126,7 +136,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Replaced DAL Cyclone T5046C; official Gemfan Hurricane 51466 page. Local JPG present; re-evaluating before retention.
-### 12. Gemfan Hurricane 5152 (`gemfan-5152`)
+### 13. Gemfan Hurricane 5152 (`gemfan-5152`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/5152s-flash-pc-3-blade.html
 - **Exact image URL downloaded:** https://img03.71360.com/w3/5p3560/20251221/e0d67d0ab3f1e8eda68c5f74a53ca5da.jpg
@@ -136,7 +146,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** No Hurricane 5152 listing; Gemfan 5152S Flash 3-blade is closest official 5152-class prop.
-### 13. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
+### 14. Gemfan Hurricane 3520 (`gemfan-hurricane-3520`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/3520-hurricane-pc-3-blade-t-mount.html
 - **Exact image URL downloaded:** —
@@ -146,7 +156,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 3520 3-blade prop page. Local JPG present; re-evaluating before retention.
-### 14. Gemfan Hurricane 51499 (`gemfan-hurricane-51499`)
+### 15. Gemfan Hurricane 51499 (`gemfan-hurricane-51499`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/51499-hurricane-pc-3-blade.html
 - **Exact image URL downloaded:** —
@@ -156,7 +166,17 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 51499 prop page. Local JPG present; re-evaluating before retention.
-### 15. HQProp 5135 V2 (`hqprop-5135-v2`)
+### 16. HDZero Nano 90 (`hdzero-nano-90`)
+- **Category:** Camera
+- **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/hdzero-nano-90-v2
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/cameras/hdzero-nano-90.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official HDZero Nano 90 V2 product page; Wix gallery image is an isolated RunCam HDZero Nano 90 camera packshot on black (HDZERO / Nano 90 silkscreen on backplate). Local JPG present; re-evaluating before retention.
+### 17. HQProp 5135 V2 (`hqprop-5135-v2`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5135-v2-2cw2ccw-poly-carbonate-p0123.html
 - **Exact image URL downloaded:** https://hqprop.com/u_file/1907/products/13/f0b76688cc.jpg
@@ -166,7 +186,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 5135 V2 prop page.
-### 16. HQProp 5x4.5x3 V1S (`hqprop-5x4-5x3-v1s`)
+### 18. HQProp 5x4.5x3 V1S (`hqprop-5x4-5x3-v1s`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5x45x3v1s-2cw2ccw-poly-carbonate-p0052.html
 - **Exact image URL downloaded:** https://hqprop.com/u_file/1907/products/09/a1787f3bcd.jpg
@@ -176,7 +196,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 5x4.5x3 V1S durable prop page.
-### 17. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
+### 19. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.hqprop.com/hq-durable-prop-7x35x3v1s-2cw2ccw-poly-carbonate-p0132.html
 - **Exact image URL downloaded:** —
@@ -186,7 +206,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 7x3.5x3 prop page. Local JPG present; re-evaluating before retention.
-### 18. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
+### 20. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hqprop-duct-t90mmx3-for-cinewhoop-grey-2cw2ccw-poly-carbonate-p0351.html
 - **Exact image URL downloaded:** —
@@ -196,7 +216,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Renamed from Duct-T90 3.5x2.8x5 to match official HQProp Duct T90 3-blade page. Local JPG present; re-evaluating before retention.
-### 19. HQProp Durable 5040 V2 (`hqprop-durable-5040-v2`)
+### 21. HQProp Durable 5040 V2 (`hqprop-durable-5040-v2`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5040-v2-2cw2ccw-poly-carbonate-p0144.html
 - **Exact image URL downloaded:** https://hqprop.com/u_file/2103/products/01/fa271e025a.jpg
@@ -206,7 +226,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp Durable 5040 V2 prop page.
-### 20. HQProp Ethix S5 5x4x3 (`hqprop-ethix-s5`)
+### 22. HQProp Ethix S5 5x4x3 (`hqprop-ethix-s5`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-ethix-s5-5x4x3-2cw2ccw-poly-carbonate-p0201.html
 - **Exact image URL downloaded:** https://hqprop.com/u_file/2103/products/24/44b0c5a3d1.jpg
@@ -216,7 +236,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp Ethix S5 5x4x3 prop page.
-### 21. HQProp V2S 5x4.3x3 (`hqprop-v2s-5043`)
+### 23. HQProp V2S 5x4.3x3 (`hqprop-v2s-5043`)
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5x43x3v2s-2cw2ccw-poly-carbonate-p0098.html
 - **Exact image URL downloaded:** https://hqprop.com/u_file/1907/products/13/a0a6136700.jpg
@@ -226,7 +246,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp V2S 5x4.3x3 prop page.
-### 22. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
+### 24. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://ovonicshop.com/products/ovonic-1300mah-6s-22-2v-100c-lipo-battery-with-xt60-for-fpv
 - **Exact image URL downloaded:** —
@@ -236,7 +256,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Ovonic 6S 1300mAh 100C battery page. Local JPG present; re-evaluating before retention.
-### 23. RunCam Nano 2 (`runcam-nano-2`)
+### 25. RunCam Nano 2 (`runcam-nano-2`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-2/
 - **Exact image URL downloaded:** —
@@ -246,7 +266,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam Nano 2 camera page on RunCam store. Local JPG present; re-evaluating before retention.
-### 24. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
+### 26. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-4-ntsc-only/
 - **Exact image URL downloaded:** —
@@ -256,7 +276,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Nano 4 whoop camera page. Local JPG present; re-evaluating before retention.
-### 25. RunCam Phoenix 2 (`runcam-phoenix-2`)
+### 27. RunCam Phoenix 2 (`runcam-phoenix-2`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-phoenix-2/
 - **Exact image URL downloaded:** —
@@ -266,7 +286,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Phoenix 2 camera page. Local JPG present; re-evaluating before retention.
-### 26. RunCam Racer 2 (`runcam-racer-2`)
+### 28. RunCam Racer 2 (`runcam-racer-2`)
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-racer-2/
 - **Exact image URL downloaded:** —
@@ -276,7 +296,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam Racer 2 camera page on RunCam store. Local JPG present; re-evaluating before retention.
-### 27. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
+### 29. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-450mah-3.8v-high-voltage-75c-1s1p-lipo-battery-pack-with-bt-2.0-plug-5pcs/
 - **Exact image URL downloaded:** —
@@ -286,7 +306,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu/Grepow 1S 450mAh HV BT2.0 page. Local JPG present; re-evaluating before retention.
-### 28. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
+### 30. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug.html
 - **Exact image URL downloaded:** —
@@ -296,7 +316,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 4S 850mAh page. Local JPG present; re-evaluating before retention.
-### 29. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
+### 31. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/ta-rl3-120c-1050-6s1p.html
 - **Exact image URL downloaded:** https://cdn11.bigcommerce.com/s-99ohneivnb/products/2759/images/8424/_36a1362__46064.1627187690.386.513.jpg?c=1
@@ -306,7 +326,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 6S 1050mAh 120C battery page.
-### 30. Tattu R-Line 6S 1400mAh 130C (`tattu-rline-6s-1400`)
+### 32. Tattu R-Line 6S 1400mAh 130C (`tattu-rline-6s-1400`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/ta-rl3-120c-1400-6s1p.html
 - **Exact image URL downloaded:** —
@@ -316,7 +336,7 @@ Last local cleanup: 2026-06-29T19:01:41.643Z — removed **0** JPG(s); **31** re
 - **imageNeedsReview:** true
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 6S 1400mAh 120C battery page (R-Line V3). Local JPG present; re-evaluating before retention.
-### 31. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
+### 33. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-2200mah-6s-95c-22-2v-r-line-lipo-battery-with-xt60-plug-for-7-quad/
 - **Exact image URL downloaded:** —

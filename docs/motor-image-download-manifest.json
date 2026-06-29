@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:01:41.875Z",
+  "updatedAt": "2026-06-29T19:22:32.380Z",
   "candidates": [
     {
       "partId": "axisflying-ae2207-1960",
@@ -2253,7 +2253,7 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:01:41.874Z",
+    "date": "2026-06-29T19:22:32.380Z",
     "removedPartIds": [],
     "retainedDownloadedCount": 14
   }

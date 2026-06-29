@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:01:42.082Z",
+  "updatedAt": "2026-06-29T19:22:32.586Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -705,7 +705,7 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:01:42.081Z",
+    "date": "2026-06-29T19:22:32.585Z",
     "removedPartIds": [],
     "retainedDownloadedCount": 15
   }

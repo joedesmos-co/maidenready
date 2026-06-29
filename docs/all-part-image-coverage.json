@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-29T19:01:42.195Z",
+  "generatedAt": "2026-06-29T19:22:32.698Z",
   "summary": {
     "total": 294,
-    "found": 88,
-    "missing": 206,
+    "found": 90,
+    "missing": 204,
     "presetPartTotal": 48,
     "presetPartFound": 38,
     "presetPartMissing": 10,
     "missingByPriority": {
       "1": 10,
-      "2": 80,
-      "3": 116
+      "2": 79,
+      "3": 115
     }
   },
   "missingByPriority": {
@@ -381,19 +381,6 @@
           "5-inch-freestyle",
           "cinewhoop",
           "7-inch-long-range"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "hdzero-nano-90",
-        "partName": "HDZero Nano 90",
-        "categoryKey": "camera",
-        "imagePath": "/parts/cameras/hdzero-nano-90.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle",
-          "5-inch-freestyle"
         ],
         "priority": 2
       },
@@ -1201,18 +1188,6 @@
       }
     ],
     "3": [
-      {
-        "partId": "betafpv-1s-300-hv-bt2",
-        "partName": "BETAFPV 1S 300mAh HV BT2.0",
-        "categoryKey": "battery",
-        "imagePath": "/parts/batteries/betafpv-1s-300-hv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
       {
         "partId": "betafpv-2s-300-ph2",
         "partName": "BETAFPV 2S 300mAh PH2.0",
@@ -2608,7 +2583,6 @@
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
       "tattu-rline-6s-1550",
-      "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
       "cnhl-6s-1800-lr-lipo",
       "cnhl-ministar-4s-900",
@@ -2777,7 +2751,6 @@
       "foxeer-falkor-2",
       "foxeer-predator-v5",
       "foxeer-toothless-2",
-      "hdzero-nano-90",
       "walksnail-avatar-micro",
       "caddx-proview-cine-digital",
       "caddx-ratel-lucky-whoop",
@@ -2840,7 +2813,6 @@
       "foxeer-falkor-2",
       "foxeer-predator-v5",
       "foxeer-toothless-2",
-      "hdzero-nano-90",
       "walksnail-avatar-micro",
       "aikon-ak32-50a-4in1",
       "aikon-f7-mini-35a",
@@ -2957,7 +2929,6 @@
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
       "foxeer-toothless-2",
-      "hdzero-nano-90",
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
@@ -3032,7 +3003,6 @@
     ],
     "tiny-whoop": [
       "foxeer-reaper-nano-v2-vtx",
-      "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
       "gn-1s-550-bt2",
       "tattu-1s-300-hv",
@@ -4344,7 +4314,7 @@
       "partName": "HDZero Nano 90",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/hdzero-nano-90.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5711,7 +5681,7 @@
       "partName": "BETAFPV 1S 300mAh HV BT2.0",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/betafpv-1s-300-hv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

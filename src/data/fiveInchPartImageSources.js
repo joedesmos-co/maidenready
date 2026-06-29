@@ -35,7 +35,8 @@ export const fiveInchPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/armattan-badger5-frame.jpg",
-    notes: "Official Armattan Badger 5 frame kit; select 5-inch size.",
+    notes:
+      "Official Armattan Badger product page; Shopify CDN asset filename references Badger 6-inch frame, not Badger 5 SKU.",
   },
   {
     partId: "armattan-marmotte",
@@ -97,7 +98,8 @@ export const fiveInchPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/frames/geprc-mark4-frame.jpg",
-    notes: "Official GEPRC GEP-Mark4 frame page; select 5-inch variant.",
+    notes:
+      "Official GEPRC GEP-Mark4 frame page; primary gallery image is a partial build with motors and camera installed, not an isolated frame-kit packshot.",
   },
   {
     partId: "geprc-mark5",
@@ -313,7 +315,8 @@ export const fiveInchPartImageSources = [
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/fpvcycle-2207-1780kv.jpg",
-    notes: "Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing.",
+    notes:
+      "Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1780KV line does not match current manufacturer product.",
   },
   {
     partId: "fpvcycle-2207-1960",
@@ -325,33 +328,34 @@ export const fiveInchPartImageSources = [
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/fpvcycle-2207.jpg",
-    notes: "Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance.",
+    notes:
+      "Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1960KV line does not match current manufacturer product.",
   },
   {
     partId: "hypetrain-acer-2306-1950kv",
     partName: "Hypetrain Acer 2306 1950KV",
     categoryKey: "motors",
     category: "Motors",
-    brand: "Rotor Riot",
+    brand: "Hypetrain",
     officialUrl: "https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor",
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/hypetrain-acer-2306-1950kv.jpg",
-    notes: "Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page.",
+    notes:
+      "Hypetrain Acer 2306 1950KV has no manufacturer-owned product page; Rotor Riot retailer listing 404. Hypetrain is retailer-exclusive — not a valid official manufacturer source.",
   },
   {
     partId: "hypetrain-blaster-2450",
     partName: "Hypetrain Blaster 2207 2450KV",
     categoryKey: "motors",
     category: "Motors",
-    brand: "Rotor Riot",
+    brand: "Hypetrain",
     officialUrl: "https://rotorriot.com/products/hypetrain-blaster-2207-2450kv-motor",
-    preferredImageUrl:
-      "https://rotorriot.com/cdn/shop/products/1_1200x1200_6728619b-dbf0-4edd-a29f-4c2115937b49.jpg?v=1651161600",
-    urlConfidence: "high",
+    urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/motors/hypetrain-blaster-2207.jpg",
-    notes: "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page.",
+    notes:
+      "Hypetrain has no manufacturer store; Rotor Riot retailer page gallery image is a Gemfan propeller, not the Blaster motor SKU.",
   },
   {
     partId: "iflight-xing2-2207-2750kv",
@@ -938,7 +942,8 @@ export const fiveInchPartImageSources = [
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/ethix-p3-peanut-butter.jpg",
-    notes: "Official HQProp Ethix P3 Peanut Butter & Jelly prop page.",
+    notes:
+      "Official HQProp Ethix P3 Peanut Butter & Jelly prop page; gallery image includes large Ethix graffiti logo overlay on prop packshot.",
   },
   {
     partId: "ethix-s3-5050",
@@ -1116,6 +1121,139 @@ export const fiveInchPartImageSources = [
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-ministar-6s-1500.jpg",
     notes: "Official CNHL Ministar 6S 1500mAh 120C battery page.",
+  },
+  {
+    partId: "betafpv-1s-300-hv-bt2",
+    partName: "BETAFPV 1S 300mAh HV BT2.0",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "BETAFPV",
+    officialUrl: "https://betafpv.com/products/lava-1s-300mah-75c-battery-5pcs",
+    preferredImageUrl:
+      "https://betafpv.com/cdn/shop/files/300_4163113a-27e7-4975-b80c-7c359025ff08_1024x1024.jpg?v=1700569670",
+    urlConfidence: "high",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/betafpv-1s-300-hv.jpg",
+    notes:
+      "Official BETAFPV LAVA 1S 300mAh LiHV 75C BT2.0 battery (5-pack listing); Shopify gallery shows isolated packs with LiHV/BT2.0 label.",
+  },
+  {
+    partId: "betafpv-2s-300-ph2",
+    partName: "BETAFPV 2S 300mAh PH2.0",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "BETAFPV",
+    officialUrl: "https://betafpv.com/products/300mah-2s-lipo-battery-2pcs",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/betafpv-2s-300-ph2.jpg",
+    notes:
+      "Closest official BETAFPV 300mAh 2S listing is 45C with XT30 connector; catalog line is 75C PH2.0 — SKU mismatch.",
+  },
+  {
+    partId: "cnhl-6s-1800-lr-lipo",
+    partName: "CNHL 6S 1800mAh LR LiPo",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "CNHL",
+    officialUrl:
+      "https://chinahobbyline.com/products/cnhl-ministar-series-1800mah-22-2v-6s-120c-lipo-battery-with-xt60-plug",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/cnhl-6s-1800-lr-lipo.jpg",
+    notes:
+      "Official CNHL Ministar 6S 1800mAh 120C page exists; catalog LR LiPo line implies lower-C long-range SKU not listed on manufacturer store.",
+  },
+  {
+    partId: "cnhl-ministar-4s-900",
+    partName: "CNHL Ministar 4S 900mAh 100C",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "CNHL",
+    officialUrl: "https://chinahobbyline.com/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/cnhl-ministar-4s-900.jpg",
+    notes:
+      "No CNHL Ministar 4S 900mAh 100C XT30 listing on chinahobbyline.com; closest official sizes are 850mAh 4S or 1300mAh+ 4S Ministar lines.",
+  },
+  {
+    partId: "gn-1s-550-bt2",
+    partName: "GNB 1S 550mAh HV BT2.0",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "GNB",
+    officialUrl: "https://www.gaoneng.shop/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/gnb-1s-550-bt2.jpg",
+    notes:
+      "GNB/Gaoneng official store blocks automated fetch (HTTP 403); no verified 1S 550mAh BT2.0 product URL confirmed.",
+  },
+  {
+    partId: "gnb-4s-1100-park",
+    partName: "GNB 4S 1100mAh 120C Park",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "GNB",
+    officialUrl: "https://www.gaoneng.shop/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/gnb-4s-1100-park.jpg",
+    notes:
+      "GNB/Gaoneng official store blocks automated fetch; Genstattu GNB 4S 1100mAh product page 404.",
+  },
+  {
+    partId: "gnb-4s-1300-cine",
+    partName: "GNB 4S 1300mAh 120C Cine",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "GNB",
+    officialUrl: "https://www.gaoneng.shop/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/gnb-4s-1300-cine.jpg",
+    notes:
+      "GNB/Gaoneng official store blocks automated fetch; Genstattu GNB 4S 1300mAh product page 404.",
+  },
+  {
+    partId: "gnb-4s-750-mini",
+    partName: "GNB 4S 750mAh 120C Mini",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "GNB",
+    officialUrl: "https://www.gaoneng.shop/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/gnb-4s-750-mini.jpg",
+    notes:
+      "GNB/Gaoneng official store blocks automated fetch; Genstattu GNB 4S 750mAh product page 404.",
+  },
+  {
+    partId: "gnb-6s-2500-lr-lipo",
+    partName: "GNB 6S 2500mAh LR LiPo",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "GNB",
+    officialUrl: "https://www.gaoneng.shop/",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/gnb-6s-2500-lr-lipo.jpg",
+    notes:
+      "GNB/Gaoneng official store blocks automated fetch; Genstattu GNB 6S 2500mAh product page 404.",
+  },
+  {
+    partId: "iflight-4s-1800-cine",
+    partName: "iFlight 4S 1800mAh 120C Cine",
+    categoryKey: "battery",
+    category: "Battery",
+    brand: "iFlight",
+    officialUrl: "https://shop.iflight.com/batteries-cat342",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/batteries/iflight-4s-1800-cine.jpg",
+    notes:
+      "No iFlight 4S 1800mAh 120C cinewhoop battery SKU on official shop.iflight.com store at research time.",
   },
   {
     partId: "gnb-6s-1300-hv",

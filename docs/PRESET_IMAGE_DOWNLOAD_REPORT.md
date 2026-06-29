@@ -5,9 +5,9 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-29T19:01:41.539Z
+Last updated: 2026-06-29T19:22:32.059Z
 
-Last local cleanup: 2026-06-29T19:01:41.539Z — removed 0 unsure local JPG(s); **38** retained for review.
+Last local cleanup: 2026-06-29T19:22:32.059Z — removed 0 unsure local JPG(s); **38** retained for review.
 
 ## Summary
 

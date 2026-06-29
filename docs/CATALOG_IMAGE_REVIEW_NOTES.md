@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–75** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–100** (`docs/IMAGE_COMPLETION_QUEUE.md`).
 
 ## Summary (ranks 51–75)
 
@@ -13,6 +13,15 @@ Structured research log for image-completion queue parts where official packshot
 | Parts researched | 25 |
 | Exact official packshot found | 1 |
 | New fetchable after source update | 1 (`hdzero-nano-90`) |
+| Permanent SVG placeholders (this batch) | 24 |
+
+## Summary (ranks 76–100)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 25 |
+| Exact official packshot found | 1 |
+| New fetchable after source update | 1 (`betafpv-1s-300-hv-bt2`) |
 | Permanent SVG placeholders (this batch) | 24 |
 
 ## Catalog review candidates
@@ -30,6 +39,15 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | `flywoo-explorer5-frame` | Explorer LR4/O3 long-range listing; "Explorer 5" naming may not match current Flywoo SKU |
 | `axisflying-ae2207-1960` | Product page 404 at time of research; family listing only |
 | `axisflying-joker-2207-1920kv` | Product page 404 at time of research; family listing only |
+| `fpvcycle-2207-1780kv`, `fpvcycle-2207-1960` | Catalog 2207 KV lines; manufacturer now sells 25mm 1870/2150Kv bell/stator parts only |
+| `johnnyfpv-motor-v2-2207-1960kv` | V2 2207 discontinued; Lumenier only lists JohnnyFPV V3 2307/2807 |
+| `hypetrain-acer-2306-1950kv`, `hypetrain-blaster-2450` | Hypetrain has no manufacturer store; Rotor Riot retailer-only |
+| `lumenier-qav-s-johnnyfpv` | Official page is QAV-S 2 JohnnyFPV SE; catalog name omits "V2" |
+| `cnhl-ministar-4s-900` | No 4S 900mAh Ministar SKU on CNHL official store |
+| `cnhl-6s-1800-lr-lipo` | Catalog LR LiPo vs official Ministar 6S 1800mAh 120C high-C line |
+| `betafpv-2s-300-ph2` | Official BETAFPV 300mAh 2S is 45C XT30, not 75C PH2.0 |
+| `iflight-4s-1800-cine` | No matching iFlight 4S 1800mAh battery on official store |
+| `gn-1s-550-bt2`, `gnb-4s-750-mini`, `gnb-4s-1100-park`, `gnb-4s-1300-cine`, `gnb-6s-2500-lr-lipo` | GNB/Gaoneng store blocks fetch; Genstattu product pages 404 |
 
 ---
 
@@ -259,3 +277,234 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Preferred image URL** | https://static.wixstatic.com/media/967e02_0728e46bd18842b6b0523962ec7841f4~mv2.png/v1/fill/w_1000,h_1000,al_c,usm_0.66_1.00_0.01/967e02_0728e46bd18842b6b0523962ec7841f4~mv2.png |
 | **URL confidence** | high |
 | **Notes** | HDZero Nano 90 V2 Wix gallery asset verified visually: isolated RunCam HDZero Nano 90 camera on black (HDZERO / Nano 90 silkscreen). Prior reject (logo-only) was incorrect. Source updated in `fiveInchPartImageSources.js`; removed from unsafe/blocked skip lists. **Fetchable now** — run pipeline when ready. |
+
+---
+
+## Rank 76 — `foxeer-reaper-f4-65a`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.foxeer.com/foxeer-reaper-f4-65a-4in1-esc-g-584 |
+| **Notes** | Foxeer product pages share generic `/upload/ad/` marketing assets and support icons across FC/ESC SKUs; no isolated Reaper F4 65A ESC packshot. Prior manual reject retained. |
+
+## Rank 77 — `foxeer-f722-v4`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.foxeer.com/foxeer-f722-v4-flight-controller-g-586 |
+| **Notes** | Same Foxeer CDN pool as other products; scraped assets are generic icons, not F722 V4 FC packshots. |
+
+## Rank 78 — `foxeer-h743-f722-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.foxeer.com/foxeer-h743-f722-flight-controller-g-587 |
+| **Notes** | Foxeer gallery images on H743 F722 page are VTX/heatsink modules, not the flight controller SKU. Prior manual reject retained. |
+
+## Rank 79 — `armattan-badger5-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://armattanquads.com/products/badger-1 |
+| **Notes** | Armattan Shopify CDN primary image filename is `Badger_6_inch_frame`; not a verified Badger 5 frame-kit packshot. Prior manual reject retained. |
+
+## Rank 80 — `geprc-mark4-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://geprc.com/product/gep-mark4-frame/ |
+| **Preferred image URL** | https://geprc.com/wp-content/uploads/2019/06/03-2845615995-1200x1200.jpg |
+| **Notes** | Verified visually: gallery image is a partial build with motors and camera installed, not an isolated Mark4 frame kit. Prior manual reject retained. |
+
+## Rank 81 — `lumenier-qav-s-johnnyfpv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.lumenier.com/products/lumenier-qav-s-2-johnnyfpv-se-5-frame-kit |
+| **Preferred image URL** | https://cdn.shopify.com/s/files/1/0698/9525/8342/files/lumenier-qav-s-2-johnnyfpv-se-5inch-frame-kit-_1.jpg?v=1734560533 |
+| **Notes** | Official Lumenier page and images are QAV-S **2** JohnnyFPV SE; catalog entry name omits V2. Frame packshots look valid for the official SKU but catalog naming mismatch flagged. Prior manual reject retained. |
+
+## Rank 82 — `fpvcycle-2207-1780kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://fpvcycle.com/products/fpvcycle-5-motor-choose-options |
+| **Notes** | Official FPVCycle page is current 25mm motor sold as separate 1870/2150Kv bell/stator parts; no 2207 1780KV variant listed. |
+
+## Rank 83 — `fpvcycle-2207-1960`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://fpvcycle.com/products/fpvcycle-5-motor-choose-options |
+| **Notes** | Same as rank 82; catalog 2207 1960KV does not match current 25mm 1870/2150Kv manufacturer product line. |
+
+## Rank 84 — `hypetrain-acer-2306-1950kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://rotorriot.com/products/hypetrain-revo-5-2207-1860kv-motor (retailer; 404) |
+| **Notes** | Hypetrain has no manufacturer-owned store. Rotor Riot is a retailer, not an acceptable official source per project rules. Acer listing unavailable. |
+
+## Rank 85 — `hypetrain-blaster-2450`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://rotorriot.com/products/hypetrain-blaster-2207-2450kv-motor (retailer) |
+| **Notes** | Rotor Riot gallery image verified as a Gemfan propeller, not a Hypetrain Blaster motor. Retailer source rejected. Prior manual reject retained. |
+
+## Rank 86 — `johnnyfpv-motor-v2-2207-1960kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor |
+| **Notes** | JohnnyFPV V2 2207 1960KV discontinued; Lumenier only lists JohnnyFPV V3 2307/2807 motors — wrong stator size and generation. |
+
+## Rank 87 — `lumenier-2207-1800kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.lumenier.com/collections/motors |
+| **Notes** | Lumenier AX 2207 1800KV has no dedicated product page on lumenier.com; motors collection only. |
+
+## Rank 88 — `ethix-p3-peanut-butter`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://hqprop.com/ethix-p3-peanut-butter-jelly-prop-2cw2ccw-poly-carbonate-p0276.html |
+| **Notes** | HQProp official gallery (`ec35c7f631.jpg`) verified: prop packshot with large Ethix graffiti logo overlay — rejected per marketing-overlay rule. Prior manual reject retained. |
+
+## Rank 89 — `ethix-s3-5050`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.hqprop.com/search/?Keyword=ethix+s3 |
+| **Notes** | No dedicated Ethix S3 5x5x3 product URL on HQProp official store; search page only. |
+
+## Rank 90 — `gemfan-hurricane-mck-51433`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html |
+| **Notes** | Closest Gemfan listing is Hurricane **51466** V2, not MCK **51433** — wrong prop size/family. Prior manual reject retained. |
+
+## Rank 91 — `betafpv-1s-300-hv-bt2`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Exact official packshot found |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://betafpv.com/products/lava-1s-300mah-75c-battery-5pcs |
+| **Preferred image URL** | https://betafpv.com/cdn/shop/files/300_4163113a-27e7-4975-b80c-7c359025ff08_1024x1024.jpg?v=1700569670 |
+| **URL confidence** | high |
+| **Notes** | BETAFPV LAVA 1S 300mAh LiHV 75C BT2.0 verified on pack label (5-pack listing). **Fetchable now** — run pipeline when ready. |
+
+## Rank 92 — `betafpv-2s-300-ph2`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://betafpv.com/products/300mah-2s-lipo-battery-2pcs |
+| **Notes** | Closest official BETAFPV 300mAh 2S listing is 45C with XT30; catalog specifies 75C PH2.0. Image shows XT30, not PH2.0. |
+
+## Rank 93 — `cnhl-6s-1800-lr-lipo`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://chinahobbyline.com/products/cnhl-ministar-series-1800mah-22-2v-6s-120c-lipo-battery-with-xt60-plug |
+| **Notes** | Official CNHL Ministar 6S 1800mAh **120C** exists; catalog LR LiPo line implies a lower-C long-range SKU not on manufacturer store. |
+
+## Rank 94 — `cnhl-ministar-4s-900`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://chinahobbyline.com/ |
+| **Notes** | No CNHL Ministar 4S 900mAh 100C XT30 listing found; official store has 850mAh 4S and 1300mAh+ 4S Ministar lines instead. |
+
+## Rank 95 — `gn-1s-550-bt2`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | gaoneng.shop returns HTTP 403 to automated fetch; Genstattu GNB 1S 550mAh page 404. |
+
+## Rank 96 — `gnb-4s-1100-park`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | GNB/Gaoneng store blocks automated fetch; no verified 4S 1100mAh packshot URL. |
+
+## Rank 97 — `gnb-4s-1300-cine`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | GNB/Gaoneng store blocks automated fetch; Genstattu 4S 1300mAh page 404. |
+
+## Rank 98 — `gnb-4s-750-mini`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | GNB/Gaoneng store blocks automated fetch; Genstattu 4S 750mAh page 404. |
+
+## Rank 99 — `gnb-6s-2500-lr-lipo`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | GNB/Gaoneng store blocks automated fetch; Genstattu 6S 2500mAh page 404. |
+
+## Rank 100 — `iflight-4s-1800-cine`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/batteries-cat342 |
+| **Notes** | No iFlight 4S 1800mAh 120C cinewhoop battery SKU found on official shop.iflight.com at research time. |

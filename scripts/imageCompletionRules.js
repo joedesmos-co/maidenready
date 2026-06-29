@@ -82,6 +82,11 @@ export const OFFICIAL_SOURCE_BLOCKED_PART_IDS = new Map([
   ["akk-x2-ultimate-vtx", "AKK official store blocks automated fetch."],
   ["rush-tank-ii-vtx", "RushFPV Tank II product page unreachable from automated fetch."],
   ["gnb-4s-1500", "No exact 1500mAh official GNB/Gaoneng product page."],
+  ["gn-1s-550-bt2", "GNB/Gaoneng official store blocks automated fetch; no verified 1S 550mAh BT2.0 URL."],
+  ["gnb-4s-750-mini", "GNB/Gaoneng store blocks fetch; Genstattu 4S 750mAh page 404."],
+  ["gnb-4s-1100-park", "GNB/Gaoneng store blocks fetch; Genstattu 4S 1100mAh page 404."],
+  ["gnb-4s-1300-cine", "GNB/Gaoneng store blocks fetch; Genstattu 4S 1300mAh page 404."],
+  ["gnb-6s-2500-lr-lipo", "GNB/Gaoneng store blocks fetch; Genstattu 6S 2500mAh page 404."],
   ["gnb-6s-1300-hv", "Genstattu/GNB product page 404 or blocks automated fetch."],
   ["gnb-6s-1400-freestyle", "Genstattu/GNB product page 404 or blocks automated fetch."],
   ["ethix-lithium5-frame", "Ethix official store intermittently unreachable."],
@@ -118,6 +123,9 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["walksnail-avatar-micro", "Avatar V2 page does not expose Micro SKU packshot."],
   ["jhemcu-ep28-elrs", "JHEMCU store homepage only; no stable EP28 product URL."],
   ["imm-rc-fusion-v2-elrs", "ImmersionRC page is not a verified V2 ELRS packshot."],
+  ["cnhl-ministar-4s-900", "No CNHL Ministar 4S 900mAh listing on official store."],
+  ["iflight-4s-1800-cine", "No iFlight 4S 1800mAh 120C battery on official store."],
+  ["betafpv-2s-300-ph2", "Official BETAFPV 300mAh 2S is 45C XT30; catalog line is 75C PH2.0."],
 ]);
 
 export const CLASSIFICATION_LABELS = {

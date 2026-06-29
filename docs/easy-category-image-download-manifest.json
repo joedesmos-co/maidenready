@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:01:41.644Z",
+  "updatedAt": "2026-06-29T19:22:32.172Z",
   "candidates": [
     {
       "partId": "azure-5148",
@@ -306,6 +306,23 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official Azure Power Vanover 5140 propeller page. Azure Power site unreachable; no reliable official product photo URL."
+    },
+    {
+      "partId": "betafpv-1s-300-hv-bt2",
+      "partName": "BETAFPV 1S 300mAh HV BT2.0",
+      "category": "Battery",
+      "categoryKey": "battery",
+      "sourcePageUrl": "https://betafpv.com/products/lava-1s-300mah-75c-battery-5pcs",
+      "imageUrl": null,
+      "localPath": "public/parts/batteries/betafpv-1s-300-hv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official BETAFPV LAVA 1S 300mAh LiHV 75C BT2.0 battery (5-pack listing); Shopify gallery shows isolated packs with LiHV/BT2.0 label. Local JPG present; re-evaluating before retention."
     },
     {
       "partId": "betafpv-2s-450-xt30",
@@ -2824,6 +2841,23 @@
       "notes": "Official HDZero Nano 90 V2 camera page; supersedes original Nano 90. HDZero official page only exposes promo banners/spec composites, not an isolated camera packshot."
     },
     {
+      "partId": "hdzero-nano-90",
+      "partName": "HDZero Nano 90",
+      "category": "Camera",
+      "categoryKey": "camera",
+      "sourcePageUrl": "https://www.hd-zero.com/product-page/hdzero-nano-90-v2",
+      "imageUrl": null,
+      "localPath": "public/parts/cameras/hdzero-nano-90.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official HDZero Nano 90 V2 product page; Wix gallery image is an isolated RunCam HDZero Nano 90 camera packshot on black (HDZERO / Nano 90 silkscreen on backplate). Local JPG present; re-evaluating before retention."
+    },
+    {
       "partId": "hqprop-5135-v2",
       "partName": "HQProp 5135 V2",
       "category": "Props",
@@ -4457,8 +4491,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:01:41.643Z",
+    "date": "2026-06-29T19:22:32.172Z",
     "removedPartIds": [],
-    "retainedDownloadedCount": 31
+    "retainedDownloadedCount": 33
   }
 }
