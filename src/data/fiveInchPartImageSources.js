@@ -1485,7 +1485,7 @@ export const fiveInchPartImageSources = [
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-6s-1800-lr-lipo.jpg",
     notes:
-      "Official CNHL Ministar 6S 1800mAh 120C page exists; catalog LR LiPo line implies lower-C long-range SKU not listed on manufacturer store.",
+      "Official CNHL Ministar 6S 1800mAh 120C page and packshot exist; catalog LR LiPo line implies lower-C long-range SKU — 120C image rejected as mismatch.",
   },
   {
     partId: "cnhl-ministar-4s-900",
@@ -1493,12 +1493,13 @@ export const fiveInchPartImageSources = [
     categoryKey: "battery",
     category: "Battery",
     brand: "CNHL",
-    officialUrl: "https://chinahobbyline.com/",
+    officialUrl:
+      "https://chinahobbyline.com/products/cnhl-ministar-series-850mah-14-8v-4s-70c-lipo-battery-with-xt60-plug",
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-ministar-4s-900.jpg",
     notes:
-      "No CNHL Ministar 4S 900mAh 100C XT30 listing on chinahobbyline.com; closest official sizes are 850mAh 4S or 1300mAh+ 4S Ministar lines.",
+      "No CNHL Ministar 4S 900mAh 100C XT30 on chinahobbyline.com; official 900mAh Ministar is 2S PH2.0 only. Closest 4S Ministar is 850mAh 70C XT60.",
   },
   {
     partId: "gn-1s-550-bt2",

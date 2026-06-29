@@ -71,6 +71,7 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "emax-e1106-7200kv",
   "emax-eco-1404-4000kv",
   "iflight-xing-e-pro-2806-1300kv",
+  "cnhl-6s-1800-lr-lipo",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
@@ -129,7 +130,7 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["walksnail-avatar-micro", "Avatar V2 page does not expose Micro SKU packshot."],
   ["jhemcu-ep28-elrs", "JHEMCU store homepage only; no stable EP28 product URL."],
   ["imm-rc-fusion-v2-elrs", "ImmersionRC page is not a verified V2 ELRS packshot."],
-  ["cnhl-ministar-4s-900", "No CNHL Ministar 4S 900mAh listing on official store."],
+  ["cnhl-ministar-4s-900", "No CNHL Ministar 4S 900mAh listing; official 900mAh is 2S only; closest 4S is 850mAh."],
   ["iflight-4s-1800-cine", "No iFlight 4S 1800mAh 120C battery on official store."],
   ["betafpv-2s-300-ph2", "Official BETAFPV 300mAh 2S is 45C XT30; catalog line is 75C PH2.0."],
   ["axisflying-2808-1150kv-lr", "No AxisFlying 2808 1150KV LR product page on axisflying.com."],

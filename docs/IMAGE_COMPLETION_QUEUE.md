@@ -2,7 +2,7 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-29T19:42:55.133Z
+Generated: 2026-06-29T20:10:22.612Z
 
 ## Baseline coverage
 
@@ -21,8 +21,8 @@ Generated: 2026-06-29T19:42:55.133Z
 | Needs better official URL | 92 |
 | Official source blocked | 21 |
 | No clean packshot found | 37 |
-| Should remain SVG placeholder | 25 |
-| Unsafe — likely mismatch | 26 |
+| Should remain SVG placeholder | 24 |
+| Unsafe — likely mismatch | 27 |
 
 **Should remain SVG placeholder (incl. unsafe / no packshot):** 88
 
@@ -1659,10 +1659,10 @@ _High-value missing parts that need a better official direct packshot URL._
 - **Category:** Battery (`battery`)
 - **Preset part:** no
 - **Image path:** `public/parts/batteries/cnhl-ministar-4s-900.jpg`
-- **Official URL:** https://chinahobbyline.com/
+- **Official URL:** https://chinahobbyline.com/products/cnhl-ministar-series-850mah-14-8v-4s-70c-lipo-battery-with-xt60-plug
 - **Preferred image URL:** —
 - **URL confidence:** low
-- **Reason:** No CNHL Ministar 4S 900mAh listing on official store.
+- **Reason:** No CNHL Ministar 4S 900mAh listing; official 900mAh is 2S only; closest 4S is 850mAh.
 
 ### 132. iFlight 4S 1800mAh 120C Cine (`iflight-4s-1800-cine`)
 
@@ -1871,14 +1871,14 @@ _High-value missing parts that need a better official direct packshot URL._
 ### 149. CNHL 6S 1800mAh LR LiPo (`cnhl-6s-1800-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
 - **Category:** Battery (`battery`)
 - **Preset part:** no
 - **Image path:** `public/parts/batteries/cnhl-6s-1800-lr-lipo.jpg`
 - **Official URL:** https://chinahobbyline.com/products/cnhl-ministar-series-1800mah-22-2v-6s-120c-lipo-battery-with-xt60-plug
 - **Preferred image URL:** —
 - **URL confidence:** low
-- **Reason:** Official CNHL Ministar 6S 1800mAh 120C page exists; catalog LR LiPo line implies lower-C long-range SKU not listed on manufacturer store.
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
 ### 150. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
 

@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–125** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–150** (`docs/IMAGE_COMPLETION_QUEUE.md`).
 
 ## Summary (ranks 51–75)
 
@@ -33,6 +33,16 @@ Structured research log for image-completion queue parts where official packshot
 | Acceptable family/variant packshot found | 2 |
 | New fetchable after source update | 3 (`betafpv-0802-25000kv`, `happymodel-ex0802-19000kv`, `happymodel-se0802-22000kv`) |
 | Permanent SVG placeholders (this batch) | 22 |
+
+## Summary (ranks 126–150)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 25 |
+| Exact official packshot found | 0 |
+| Acceptable family/variant packshot found | 0 |
+| New fetchable after source update | 0 |
+| Permanent SVG placeholders (this batch) | 25 |
 
 ## Catalog review candidates
 
@@ -765,3 +775,228 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Catalog status** | Likely outdated/deprecated |
 | **Official URL** | https://store.tmotor.com/ |
 | **Notes** | No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com. |
+
+## Rank 126 — `gnb-4s-1100-park`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | gaoneng.shop returns HTTP 403; Genstattu GNB 4S 1100mAh product page 404. Re-confirmed in shifted queue. |
+
+## Rank 127 — `gnb-4s-1300-cine`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | gaoneng.shop returns HTTP 403; Genstattu GNB 4S 1300mAh product page 404. Re-confirmed in shifted queue. |
+
+## Rank 128 — `gnb-4s-750-mini`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | gaoneng.shop returns HTTP 403; Genstattu GNB 4S 750mAh product page 404. Re-confirmed in shifted queue. |
+
+## Rank 129 — `gnb-6s-2500-lr-lipo`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.gaoneng.shop/ |
+| **Notes** | gaoneng.shop returns HTTP 403; Genstattu GNB 6S 2500mAh product page 404. Re-confirmed in shifted queue. |
+
+## Rank 130 — `betafpv-2s-300-ph2`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://betafpv.com/products/300mah-2s-lipo-battery-2pcs |
+| **Notes** | Closest official BETAFPV 300mAh 2S is 45C with XT30; no PH2.0 75C listing found. Re-confirmed in shifted queue. |
+
+## Rank 131 — `cnhl-ministar-4s-900`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://chinahobbyline.com/products/cnhl-ministar-series-850mah-14-8v-4s-70c-lipo-battery-with-xt60-plug |
+| **Notes** | No 4S 900mAh Ministar on CNHL store; official 900mAh Ministar is 2S PH2.0. Closest 4S is 850mAh 70C — not catalog 900mAh 100C. |
+
+## Rank 132 — `iflight-4s-1800-cine`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/batteries-cat342 |
+| **Notes** | No iFlight 4S 1800mAh 120C cinewhoop battery on shop.iflight.com; Fullsend/Defender lines are other capacities. Re-confirmed. |
+
+## Rank 133 — `axisflying-2808-1150kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.axisflying.com/collections/motors |
+| **Notes** | No AxisFlying 2808 1150KV LR product page on axisflying.com. Re-confirmed in shifted queue. |
+
+## Rank 134 — `brotherhobby-1507-3700kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://brotherhobby.com/ |
+| **Notes** | No BrotherHobby 1507 3700KV product listing on brotherhobby.com. Re-confirmed in shifted queue. |
+
+## Rank 135 — `emax-eco-2004-2550kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://emax-usa.com/products/eco-ii-2004-brushless-motor |
+| **Notes** | Official EMAX ECO II 2004 page lists 1700/2200/2400KV only; catalog 2550KV not found. Re-confirmed. |
+
+## Rank 136 — `emax-eco-ii-2806-1280kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://emax-usa.com/products/eco-ii-2807-long-range-brushless-motor |
+| **Notes** | Closest official EMAX LR motor is ECO II 2807 1280KV; catalog stator 2806 does not match. Re-confirmed. |
+
+## Rank 137 — `geprc-0901-11000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/ |
+| **Notes** | No GEPRC 0901 11000KV motor product page on geprc.com. Re-confirmed. |
+
+## Rank 138 — `geprc-2005-2200kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/ |
+| **Notes** | No GEPRC 2005 2200KV motor product page on geprc.com. Re-confirmed. |
+
+## Rank 139 — `happymodel-cine-2004-2400kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.happymodel.cn/index.php/category/product/motor/ |
+| **Notes** | No Happymodel Cine 2004 2400KV standalone motor page; Cine8 kit/frame listings only. Re-confirmed. |
+
+## Rank 140 — `iflight-xing2-1404-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482 |
+| **Notes** | Page lists 4600KV but gallery packshots are 3800KV-labelled; 4600KV OSS assets return 404. Re-confirmed. |
+
+## Rank 141 — `iflight-xing2-1507-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 1507 product URL 404 on shop.iflight.com. Re-confirmed. |
+
+## Rank 142 — `iflight-xing2-2203-2350kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 2203 product URL 404 on shop.iflight.com. Re-confirmed. |
+
+## Rank 143 — `iflight-xing2-2807-1280kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 2807 LR URL 404; closest iFlight LR motor is NIDICI 2807 1300KV. Re-confirmed. |
+
+## Rank 144 — `newbee-0802-17500kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.newbeedrone.com/collections/motors |
+| **Notes** | No NewBeeDrone 0802 17500KV product page; store lists 13000/14000/19000/25000/30000KV instead. Re-confirmed. |
+
+## Rank 145 — `rcinpower-1404-3800kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.rcinpower.com/SmooX/48.html |
+| **Notes** | SmooX 1404 Plus page is tall spec-sheet composite; GTS V3 1404 page embeds 1203 imagery. Re-confirmed. |
+
+## Rank 146 — `rcinpower-2203-2300kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.rcinpower.com/G-SERIES/ |
+| **Notes** | No RCinPower G-SERIES 2203 2300KV product page; GTS V2 2207 Plus exists instead. Re-confirmed. |
+
+## Rank 147 — `rcinpower-2807-1350kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.rcinpower.com/G-SERIES/ |
+| **Notes** | No RCinPower 2807 1350KV LR product page on rcinpower.com. Re-confirmed. |
+
+## Rank 148 — `tmotor-2807-1300kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://store.tmotor.com/ |
+| **Notes** | No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com. Re-confirmed. |
+
+## Rank 149 — `cnhl-6s-1800-lr-lipo`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://chinahobbyline.com/products/cnhl-ministar-series-1800mah-22-2v-6s-120c-lipo-battery-with-xt60-plug |
+| **Notes** | Official CNHL Ministar 6S 1800mAh **120C** page and packshot exist; catalog LR LiPo line implies lower-C long-range SKU — 120C image rejected. Added to unsafe mismatch list. |
+
+## Rank 150 — `betafpv-1404-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://betafpv.com/products/1404-4500kv-brushless-motors |
+| **Notes** | Closest official BETAFPV 1404 listing is 4500KV; packshot bell reads 4500KV, not catalog 4600KV. Re-confirmed in shifted queue. |
