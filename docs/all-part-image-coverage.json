@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-29T19:22:32.698Z",
+  "generatedAt": "2026-06-29T19:42:55.130Z",
   "summary": {
     "total": 294,
-    "found": 90,
-    "missing": 204,
+    "found": 93,
+    "missing": 201,
     "presetPartTotal": 48,
     "presetPartFound": 38,
     "presetPartMissing": 10,
     "missingByPriority": {
       "1": 10,
       "2": 79,
-      "3": 115
+      "3": 112
     }
   },
   "missingByPriority": {
@@ -1909,18 +1909,6 @@
         "priority": 3
       },
       {
-        "partId": "betafpv-0802-25000kv",
-        "partName": "BETAFPV 0802 25000KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/betafpv-0802-25000kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "betafpv-1404-4600kv",
         "partName": "BETAFPV 1404 4600KV",
         "categoryKey": "motors",
@@ -2049,30 +2037,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "happymodel-ex0802-19000kv",
-        "partName": "Happymodel EX0802 19000KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/happymodel-ex0802-19000kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "happymodel-se0802-22000kv",
-        "partName": "Happymodel SE0802 22000KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/happymodel-se0802-22000kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
         ],
         "priority": 3
       },
@@ -2709,7 +2673,6 @@
       "tmotor-velox-v3-1750",
       "tmotor-velox-v3-2207-1950kv",
       "axisflying-2808-1150kv-lr",
-      "betafpv-0802-25000kv",
       "betafpv-1404-4600kv",
       "brotherhobby-1507-3700kv",
       "brotherhobby-2004-2600kv",
@@ -2721,8 +2684,6 @@
       "geprc-0901-11000kv",
       "geprc-2005-2200kv",
       "happymodel-cine-2004-2400kv",
-      "happymodel-ex0802-19000kv",
-      "happymodel-se0802-22000kv",
       "iflight-xing-e-pro-2806-1300kv",
       "iflight-xing2-1404-4600kv",
       "iflight-xing2-1507-4600kv",
@@ -3015,11 +2976,8 @@
       "happymodel-happywhoop-aio-fc",
       "geprc-rocket-lite-75-frame",
       "newbee-drone-75-pro-frame",
-      "betafpv-0802-25000kv",
       "emax-e1106-7200kv",
       "geprc-0901-11000kv",
-      "happymodel-ex0802-19000kv",
-      "happymodel-se0802-22000kv",
       "newbee-0802-17500kv",
       "betafpv-40mm-4blade-1535",
       "emax-avan-40mm-whoop",
@@ -6526,7 +6484,7 @@
       "partName": "BETAFPV 0802 25000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/betafpv-0802-25000kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6682,7 +6640,7 @@
       "partName": "Happymodel EX0802 19000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/happymodel-ex0802-19000kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6695,7 +6653,7 @@
       "partName": "Happymodel SE0802 22000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/happymodel-se0802-22000kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

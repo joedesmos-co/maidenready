@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:22:32.282Z",
+  "updatedAt": "2026-06-29T19:42:54.724Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -256,6 +256,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official Azure Power Vanover 5140 propeller page. fetch failed"
+    },
+    {
+      "partId": "betafpv-0802-25000kv",
+      "partName": "BETAFPV 0802 25000KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://betafpv.com/products/0802-brushless-motors-2026",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/betafpv-0802-25000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official BETAFPV 0802 2026 motor page; Racing gallery packshot shows 25000KV on motor bell. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "betafpv-1s-300-hv-bt2",
@@ -1184,6 +1200,38 @@
       "recommendation": "keep for review",
       "status": "downloaded",
       "notes": "Official Happymodel EP2 2.4GHz ELRS receiver page. Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU."
+    },
+    {
+      "partId": "happymodel-ex0802-19000kv",
+      "partName": "Happymodel EX0802 19000KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/happymodel-ex0802-19000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EX0802 family page lists 19000KV; isolated packshot has no conflicting KV marking. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "happymodel-se0802-22000kv",
+      "partName": "Happymodel SE0802 22000KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/happymodel-se0802-22000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EX0802 family page lists 22000KV; SE0802 naming superseded but KV variant verified on manufacturer page. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "hdzero-freestyle-vtx",
@@ -3043,8 +3091,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:22:32.282Z",
+    "date": "2026-06-29T19:42:54.723Z",
     "removedPartIds": [],
-    "retainedDownloadedCount": 46
+    "retainedDownloadedCount": 49
   }
 }

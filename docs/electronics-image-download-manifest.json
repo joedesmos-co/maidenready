@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:22:32.688Z",
+  "updatedAt": "2026-06-29T19:42:55.121Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -3081,7 +3081,7 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:22:32.688Z",
+    "date": "2026-06-29T19:42:55.120Z",
     "removedPartIds": [],
     "retainedDownloadedCount": 10
   }

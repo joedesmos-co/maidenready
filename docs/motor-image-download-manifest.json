@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:22:32.380Z",
+  "updatedAt": "2026-06-29T19:42:54.825Z",
   "candidates": [
     {
       "partId": "axisflying-ae2207-1960",
@@ -252,6 +252,24 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant. AxisFlying official product pages unreachable from automated fetch; no verified packshot URL."
+    },
+    {
+      "partId": "betafpv-0802-25000kv",
+      "partName": "BETAFPV 0802 25000KV",
+      "category": "Motors",
+      "categoryKey": "motors",
+      "sourcePageUrl": "https://betafpv.com/products/0802-brushless-motors-2026",
+      "imageUrl": "https://betafpv.com/cdn/shop/files/0802_Brushless_Motors_2026_Racing_1024x1024.jpg?v=1769069910",
+      "localPath": "public/parts/motors/betafpv-0802-25000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official BETAFPV 0802 2026 motor page; Racing gallery packshot shows 25000KV on motor bell. Local JPG present; re-evaluating before retention."
     },
     {
       "partId": "betafpv-0802se-19500kv",
@@ -738,6 +756,42 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. FPVCycle official packshots carry a visible watermark."
+    },
+    {
+      "partId": "happymodel-ex0802-19000kv",
+      "partName": "Happymodel EX0802 19000KV",
+      "category": "Motors",
+      "categoryKey": "motors",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/",
+      "imageUrl": "https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg",
+      "localPath": "public/parts/motors/happymodel-ex0802-19000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EX0802 family page lists 19000KV; isolated packshot has no conflicting KV marking. Local JPG present; re-evaluating before retention."
+    },
+    {
+      "partId": "happymodel-se0802-22000kv",
+      "partName": "Happymodel SE0802 22000KV",
+      "category": "Motors",
+      "categoryKey": "motors",
+      "sourcePageUrl": "https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/",
+      "imageUrl": "https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg",
+      "localPath": "public/parts/motors/happymodel-se0802-22000kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "imageLicense": "No verified license on file",
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Happymodel EX0802 family page lists 22000KV; SE0802 naming superseded but KV variant verified on manufacturer page. Local JPG present; re-evaluating before retention."
     },
     {
       "partId": "hypetrain-acer-2306-1950kv",
@@ -2253,8 +2307,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:22:32.380Z",
+    "date": "2026-06-29T19:42:54.825Z",
     "removedPartIds": [],
-    "retainedDownloadedCount": 14
+    "retainedDownloadedCount": 17
   }
 }

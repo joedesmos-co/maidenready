@@ -5,9 +5,9 @@ Developer-only review log for **frame** manufacturer-source image **candidates**
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T19:22:32.586Z
+Last updated: 2026-06-29T19:42:55.018Z
 
-Last local cleanup: 2026-06-29T19:22:32.585Z — removed **0** JPG(s); **15** retained.
+Last local cleanup: 2026-06-29T19:42:55.017Z — removed **0** JPG(s); **15** retained.
 
 ## Summary
 

@@ -65,6 +65,12 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "brotherhobby-avenger-2507-1850",
   "brotherhobby-returner-r6-2207-1850kv",
   "rush-tank-solo",
+  "betafpv-1404-4600kv",
+  "brotherhobby-2004-2600kv",
+  "brotherhobby-2806-1400kv-lr",
+  "emax-e1106-7200kv",
+  "emax-eco-1404-4000kv",
+  "iflight-xing-e-pro-2806-1300kv",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
@@ -126,6 +132,22 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["cnhl-ministar-4s-900", "No CNHL Ministar 4S 900mAh listing on official store."],
   ["iflight-4s-1800-cine", "No iFlight 4S 1800mAh 120C battery on official store."],
   ["betafpv-2s-300-ph2", "Official BETAFPV 300mAh 2S is 45C XT30; catalog line is 75C PH2.0."],
+  ["axisflying-2808-1150kv-lr", "No AxisFlying 2808 1150KV LR product page on axisflying.com."],
+  ["brotherhobby-1507-3700kv", "No BrotherHobby 1507 3700KV product listing on brotherhobby.com."],
+  ["emax-eco-2004-2550kv", "Official EMAX ECO II 2004 page lists 1700/2200/2400KV only; no 2550KV SKU."],
+  ["emax-eco-ii-2806-1280kv", "Closest EMAX LR motor is ECO II 2807 1280KV; no verified 2806 packshot URL."],
+  ["geprc-0901-11000kv", "No GEPRC 0901 11000KV motor product page on geprc.com."],
+  ["geprc-2005-2200kv", "No GEPRC 2005 2200KV motor product page on geprc.com."],
+  ["happymodel-cine-2004-2400kv", "No Happymodel Cine 2004 2400KV standalone motor product page."],
+  ["iflight-xing2-1404-4600kv", "XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled only."],
+  ["iflight-xing2-1507-4600kv", "Legacy XING2 1507 product URL 404 on shop.iflight.com."],
+  ["iflight-xing2-2203-2350kv", "Legacy XING2 2203 product URL 404 on shop.iflight.com."],
+  ["iflight-xing2-2807-1280kv-lr", "Legacy XING2 2807 LR product URL 404; no 1280KV packshot on iFlight store."],
+  ["newbee-0802-17500kv", "No NewBeeDrone 0802 17500KV product page on newbeedrone.com."],
+  ["rcinpower-1404-3800kv", "SmooX 1404 page is spec-sheet composite; GTS V3 1404 page uses 1203 imagery."],
+  ["rcinpower-2203-2300kv", "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com."],
+  ["rcinpower-2807-1350kv-lr", "No RCinPower 2807 1350KV LR product page on rcinpower.com."],
+  ["tmotor-2807-1300kv-lr", "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com."],
 ]);
 
 export const CLASSIFICATION_LABELS = {

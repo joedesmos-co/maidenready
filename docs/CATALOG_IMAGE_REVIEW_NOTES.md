@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–100** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–125** (`docs/IMAGE_COMPLETION_QUEUE.md`).
 
 ## Summary (ranks 51–75)
 
@@ -23,6 +23,16 @@ Structured research log for image-completion queue parts where official packshot
 | Exact official packshot found | 1 |
 | New fetchable after source update | 1 (`betafpv-1s-300-hv-bt2`) |
 | Permanent SVG placeholders (this batch) | 24 |
+
+## Summary (ranks 101–125)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 25 |
+| Exact official packshot found | 1 |
+| Acceptable family/variant packshot found | 2 |
+| New fetchable after source update | 3 (`betafpv-0802-25000kv`, `happymodel-ex0802-19000kv`, `happymodel-se0802-22000kv`) |
+| Permanent SVG placeholders (this batch) | 22 |
 
 ## Catalog review candidates
 
@@ -48,6 +58,22 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | `betafpv-2s-300-ph2` | Official BETAFPV 300mAh 2S is 45C XT30, not 75C PH2.0 |
 | `iflight-4s-1800-cine` | No matching iFlight 4S 1800mAh battery on official store |
 | `gn-1s-550-bt2`, `gnb-4s-750-mini`, `gnb-4s-1100-park`, `gnb-4s-1300-cine`, `gnb-6s-2500-lr-lipo` | GNB/Gaoneng store blocks fetch; Genstattu product pages 404 |
+| `betafpv-1404-4600kv` | Official BETAFPV 1404 is 4500KV; catalog 4600KV does not match manufacturer SKU |
+| `brotherhobby-1507-3700kv` | No BrotherHobby 1507 listing on manufacturer store |
+| `brotherhobby-2004-2600kv` | Legacy 2004 URL serves Avenger 0804 content |
+| `brotherhobby-2806-1400kv-lr` | Official Avenger line is 2806.5 1300KV, not 2806 1400KV LR |
+| `emax-eco-1404-4000kv` | Official EMAX ECO Micro 1404 lists 3700KV only |
+| `emax-eco-2004-2550kv` | Official EMAX ECO II 2004 lists 1700/2200/2400KV; no 2550KV |
+| `emax-eco-ii-2806-1280kv` | Official EMAX LR motor is ECO II 2807 1280KV, not 2806 |
+| `geprc-0901-11000kv`, `geprc-2005-2200kv` | No matching GEPRC motor SKUs on geprc.com |
+| `happymodel-cine-2004-2400kv` | No Cine 2004 motor page; Cine8 kit/frame listings only |
+| `happymodel-se0802-22000kv` | SE0802 naming superseded by EX0802/RS0802 on Happymodel site |
+| `iflight-xing-e-pro-2806-1300kv` | Closest official SKU is XING 2806.5 Cinelifter, not XING-E Pro 2806 |
+| `iflight-xing2-1507-4600kv`, `iflight-xing2-2203-2350kv`, `iflight-xing2-2807-1280kv-lr` | Legacy iFlight product URLs 404; not on current motor category |
+| `newbee-0802-17500kv` | No 17500KV SKU on NewBeeDrone store |
+| `rcinpower-2203-2300kv`, `rcinpower-2807-1350kv-lr` | No matching RCinPower G-SERIES product pages |
+| `tmotor-2807-1300kv-lr` | No T-Motor FPV 2807 LR listing on store.tmotor.com |
+| `axisflying-2808-1150kv-lr` | No AxisFlying 2808 product page on axisflying.com |
 
 ---
 
@@ -508,3 +534,234 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Catalog status** | Likely outdated/deprecated |
 | **Official URL** | https://shop.iflight.com/batteries-cat342 |
 | **Notes** | No iFlight 4S 1800mAh 120C cinewhoop battery SKU found on official shop.iflight.com at research time. |
+
+## Rank 101 — `axisflying-2808-1150kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.axisflying.com/collections/motors |
+| **Notes** | No AxisFlying 2808 1150KV LR product page found; motors collection only. |
+
+## Rank 102 — `betafpv-0802-25000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Exact official packshot found |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://betafpv.com/products/0802-brushless-motors-2026 |
+| **Preferred image URL** | https://betafpv.com/cdn/shop/files/0802_Brushless_Motors_2026_Racing_1024x1024.jpg?v=1769069910 |
+| **URL confidence** | high |
+| **Notes** | BETAFPV 0802 2026 Racing gallery packshot verified 25000KV on motor bell. **Fetchable now.** |
+
+## Rank 103 — `betafpv-1404-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://betafpv.com/products/1404-4500kv-brushless-motors |
+| **Notes** | Closest official BETAFPV 1404 listing is 4500KV; packshot bell reads 4500KV, not catalog 4600KV. |
+
+## Rank 104 — `brotherhobby-1507-3700kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://brotherhobby.com/ |
+| **Notes** | No BrotherHobby 1507 3700KV product listing found on manufacturer store. |
+
+## Rank 105 — `brotherhobby-2004-2600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://brotherhobby.com/2004-motor-p00129p1.html |
+| **Notes** | Legacy 2004 URL resolves but page content is Avenger 0804 motors, not 2004 2600KV. |
+
+## Rank 106 — `brotherhobby-2806-1400kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://brotherhobby.com/avenger-28065-motor-p00132p1.html |
+| **Notes** | Official Avenger 2806.5 page packshot bell reads 1300KV; catalog line is 2806 1400KV LR. |
+
+## Rank 107 — `emax-e1106-7200kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://emax-usa.com/products/emax-rs1106-micro-brushless-motor-1-pcs |
+| **Notes** | EMAX RS1106 page lists 7200KV variant but primary packshot bell reads 7500KV. |
+
+## Rank 108 — `emax-eco-1404-4000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://emax-usa.com/products/eco-micro-1404-brushless-motor |
+| **Notes** | Official EMAX ECO Micro 1404 lists 3700KV; no 4000KV variant on manufacturer store. |
+
+## Rank 109 — `emax-eco-2004-2550kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://emax-usa.com/products/eco-ii-2004-brushless-motor |
+| **Notes** | Official EMAX ECO II 2004 choose-KV page lists 1700/2200/2400KV only; catalog 2550KV not found. |
+
+## Rank 110 — `emax-eco-ii-2806-1280kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://emax-usa.com/products/eco-ii-2807-long-range-brushless-motor |
+| **Notes** | Closest official EMAX LR motor is ECO II 2807 1280KV; catalog stator 2806 does not match manufacturer 2807 SKU. |
+
+## Rank 111 — `geprc-0901-11000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/ |
+| **Notes** | No GEPRC 0901 11000KV motor product page found on geprc.com. |
+
+## Rank 112 — `geprc-2005-2200kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/ |
+| **Notes** | No GEPRC 2005 2200KV motor product page found on geprc.com. |
+
+## Rank 113 — `happymodel-cine-2004-2400kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.happymodel.cn/index.php/category/product/motor/ |
+| **Notes** | No Happymodel Cine 2004 2400KV standalone motor page; Cine8 frame/kit listings only. |
+
+## Rank 114 — `happymodel-ex0802-19000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Acceptable family/variant official packshot found |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/ |
+| **Preferred image URL** | https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg |
+| **URL confidence** | high |
+| **Notes** | Official EX0802 family page lists 19000KV; isolated packshot has no conflicting KV marking. **Fetchable now.** |
+
+## Rank 115 — `happymodel-se0802-22000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Acceptable family/variant official packshot found |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/ |
+| **Preferred image URL** | https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg |
+| **URL confidence** | high |
+| **Notes** | SE0802 naming superseded by EX0802/RS0802; manufacturer page lists 22000KV variant. **Fetchable now.** |
+
+## Rank 116 — `iflight-xing-e-pro-2806-1300kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://shop.iflight.com/xing-x2806-5-fpv-nextgen-motor-pro1001 |
+| **Notes** | Closest official listing is XING 2806.5 Cinelifter; OSS asset labeled 1300KV shows 1500KV on bell. |
+
+## Rank 117 — `iflight-xing2-1404-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482 |
+| **Notes** | Page lists 4600KV but gallery packshots are 3800KV-labelled; 4600KV OSS assets return 404. |
+
+## Rank 118 — `iflight-xing2-1507-4600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 1507 product URL returns 404; not on current iFlight motor category. |
+
+## Rank 119 — `iflight-xing2-2203-2350kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 2203 product URL returns 404; not on current iFlight motor category. |
+
+## Rank 120 — `iflight-xing2-2807-1280kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://shop.iflight.com/motor-cat341 |
+| **Notes** | Legacy XING2 2807 LR URL 404; closest iFlight LR motor is NIDICI 2807 1300KV, not 1280KV. |
+
+## Rank 121 — `newbee-0802-17500kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.newbeedrone.com/collections/motors |
+| **Notes** | No NewBeeDrone 0802 17500KV product page; store lists 13000/14000/19000/25000/30000KV instead. |
+
+## Rank 122 — `rcinpower-1404-3800kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.rcinpower.com/SmooX/48.html |
+| **Notes** | SmooX 1404 Plus page is tall spec-sheet composite only; GTS V3 1404 page embeds 1203 product images. |
+
+## Rank 123 — `rcinpower-2203-2300kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.rcinpower.com/G-SERIES/ |
+| **Notes** | No RCinPower G-SERIES 2203 2300KV product page found on rcinpower.com. |
+
+## Rank 124 — `rcinpower-2807-1350kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.rcinpower.com/G-SERIES/ |
+| **Notes** | No RCinPower 2807 1350KV LR product page found on rcinpower.com. |
+
+## Rank 125 — `tmotor-2807-1300kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://store.tmotor.com/ |
+| **Notes** | No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com. |

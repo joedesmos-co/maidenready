@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-06-29T19:22:32.700Z",
+  "generatedAt": "2026-06-29T19:42:55.133Z",
   "baseline": {
     "total": 294,
-    "found": 90,
-    "missing": 204,
+    "found": 93,
+    "missing": 201,
     "presetPartFound": 38,
     "presetPartTotal": 48,
     "presetPartMissing": 10
   },
   "summary": {
-    "queueTotal": 204,
+    "queueTotal": 201,
     "classificationCounts": {
       "official_source_blocked": 21,
-      "no_clean_packshot_found": 21,
+      "no_clean_packshot_found": 37,
       "should_remain_svg_placeholder": 25,
-      "unsafe_likely_mismatch": 20,
-      "needs_better_official_url": 117
+      "unsafe_likely_mismatch": 26,
+      "needs_better_official_url": 92
     },
     "tierCounts": {
       "1": 10,
       "2": 79,
-      "4": 69,
+      "4": 66,
       "5": 7,
       "6": 15,
       "7": 24
@@ -1730,7 +1730,7 @@
         "fetchScript": null
       },
       {
-        "rank": 155,
+        "rank": 130,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "betafpv-2s-300-ph2",
@@ -1756,7 +1756,7 @@
         "fetchScript": null
       },
       {
-        "rank": 156,
+        "rank": 131,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "cnhl-ministar-4s-900",
@@ -1782,7 +1782,7 @@
         "fetchScript": null
       },
       {
-        "rank": 157,
+        "rank": 132,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "iflight-4s-1800-cine",
@@ -1808,7 +1808,423 @@
         "fetchScript": null
       },
       {
-        "rank": 158,
+        "rank": 133,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "axisflying-2808-1150kv-lr",
+        "partName": "AxisFlying 2808 1150KV LR",
+        "brand": "AxisFlying",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No AxisFlying 2808 1150KV LR product page on axisflying.com.",
+        "officialUrl": "https://www.axisflying.com/collections/motors",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No AxisFlying 2808 1150KV LR product page on axisflying.com; motors collection is the only manufacturer reference.",
+        "fetchScript": null
+      },
+      {
+        "rank": 134,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "brotherhobby-1507-3700kv",
+        "partName": "BrotherHobby 1507 3700KV",
+        "brand": "BrotherHobby",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No BrotherHobby 1507 3700KV product listing on brotherhobby.com.",
+        "officialUrl": "https://brotherhobby.com/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No BrotherHobby 1507 3700KV product listing found on brotherhobby.com at research time.",
+        "fetchScript": null
+      },
+      {
+        "rank": 135,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "emax-eco-2004-2550kv",
+        "partName": "EMAX ECO 2004 2550KV",
+        "brand": "EMAX",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/emax-eco-2004-2550kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "Official EMAX ECO II 2004 page lists 1700/2200/2400KV only; no 2550KV SKU.",
+        "officialUrl": "https://emax-usa.com/products/eco-ii-2004-brushless-motor",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Official EMAX ECO II 2004 choose-KV page lists 1700/2200/2400KV only; catalog 2550KV not on manufacturer store.",
+        "fetchScript": null
+      },
+      {
+        "rank": 136,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "emax-eco-ii-2806-1280kv",
+        "partName": "EMAX ECO II 2806 1280KV",
+        "brand": "EMAX",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/emax-eco-ii-2806-1280kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "Closest EMAX LR motor is ECO II 2807 1280KV; no verified 2806 packshot URL.",
+        "officialUrl": "https://emax-usa.com/products/eco-ii-2807-long-range-brushless-motor",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Closest official EMAX LR motor is ECO II 2807 1280KV; catalog stator size 2806 does not match manufacturer 2807 SKU.",
+        "fetchScript": null
+      },
+      {
+        "rank": 137,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "geprc-0901-11000kv",
+        "partName": "GEPRC 0901 11000KV",
+        "brand": "GEPRC",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No GEPRC 0901 11000KV motor product page on geprc.com.",
+        "officialUrl": "https://geprc.com/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No GEPRC 0901 11000KV motor product page found on geprc.com.",
+        "fetchScript": null
+      },
+      {
+        "rank": 138,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "geprc-2005-2200kv",
+        "partName": "GEPRC 2005 2200KV",
+        "brand": "GEPRC",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No GEPRC 2005 2200KV motor product page on geprc.com.",
+        "officialUrl": "https://geprc.com/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No GEPRC 2005 2200KV motor product page found on geprc.com.",
+        "fetchScript": null
+      },
+      {
+        "rank": 139,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "happymodel-cine-2004-2400kv",
+        "partName": "Happymodel Cine 2004 2400KV",
+        "brand": "Happymodel",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No Happymodel Cine 2004 2400KV standalone motor product page.",
+        "officialUrl": "https://www.happymodel.cn/index.php/category/product/motor/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No Happymodel Cine 2004 2400KV standalone motor product page; Cine8 frame/kit listings only.",
+        "fetchScript": null
+      },
+      {
+        "rank": 140,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "iflight-xing2-1404-4600kv",
+        "partName": "iFlight XING2 1404 4600KV",
+        "brand": "iFlight",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled only.",
+        "officialUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Official XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled; 4600KV OSS assets return 404.",
+        "fetchScript": null
+      },
+      {
+        "rank": 141,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "iflight-xing2-1507-4600kv",
+        "partName": "iFlight XING2 1507 4600KV",
+        "brand": "iFlight",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "Legacy XING2 1507 product URL 404 on shop.iflight.com.",
+        "officialUrl": "https://shop.iflight.com/motor-cat341",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Legacy XING2 1507 product URL returns 404; not listed on current shop.iflight.com motor category.",
+        "fetchScript": null
+      },
+      {
+        "rank": 142,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "iflight-xing2-2203-2350kv",
+        "partName": "iFlight XING2 2203 2350KV",
+        "brand": "iFlight",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "Legacy XING2 2203 product URL 404 on shop.iflight.com.",
+        "officialUrl": "https://shop.iflight.com/motor-cat341",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Legacy XING2 2203 product URL returns 404; not listed on current shop.iflight.com motor category.",
+        "fetchScript": null
+      },
+      {
+        "rank": 143,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "iflight-xing2-2807-1280kv-lr",
+        "partName": "iFlight XING2 2807 1280KV LR",
+        "brand": "iFlight",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/iflight-xing2-2807-1280kv-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "Legacy XING2 2807 LR product URL 404; no 1280KV packshot on iFlight store.",
+        "officialUrl": "https://shop.iflight.com/motor-cat341",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Legacy XING2 2807 LR product URL returns 404; closest iFlight LR motor is NIDICI 2807 1300KV, not 1280KV.",
+        "fetchScript": null
+      },
+      {
+        "rank": 144,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "newbee-0802-17500kv",
+        "partName": "NewBeeDrone 0802 17500KV",
+        "brand": "NewBeeDrone",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No NewBeeDrone 0802 17500KV product page on newbeedrone.com.",
+        "officialUrl": "https://www.newbeedrone.com/collections/motors",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No NewBeeDrone 0802 17500KV product page; official store lists 13000/14000/19000/25000/30000KV 0802 lines instead.",
+        "fetchScript": null
+      },
+      {
+        "rank": 145,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "rcinpower-1404-3800kv",
+        "partName": "RCinPower 1404 3800KV",
+        "brand": "RCinPower",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/rcinpower-1404-3800kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "SmooX 1404 page is spec-sheet composite; GTS V3 1404 page uses 1203 imagery.",
+        "officialUrl": "https://www.rcinpower.com/SmooX/48.html",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "SmooX 1404 Plus page only exposes tall spec-sheet composite; GTS V3 1404 page embeds 1203 product images.",
+        "fetchScript": null
+      },
+      {
+        "rank": 146,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "rcinpower-2203-2300kv",
+        "partName": "RCinPower 2203 2300KV",
+        "brand": "RCinPower",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com.",
+        "officialUrl": "https://www.rcinpower.com/G-SERIES/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No RCinPower G-SERIES 2203 2300KV product page found on rcinpower.com.",
+        "fetchScript": null
+      },
+      {
+        "rank": 147,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "rcinpower-2807-1350kv-lr",
+        "partName": "RCinPower 2807 1350KV LR",
+        "brand": "RCinPower",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No RCinPower 2807 1350KV LR product page on rcinpower.com.",
+        "officialUrl": "https://www.rcinpower.com/G-SERIES/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No RCinPower 2807 1350KV LR product page found on rcinpower.com.",
+        "fetchScript": null
+      },
+      {
+        "rank": 148,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "tmotor-2807-1300kv-lr",
+        "partName": "T-Motor 2807 1300KV LR",
+        "brand": "T-Motor",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com.",
+        "officialUrl": "https://store.tmotor.com/",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com.",
+        "fetchScript": null
+      },
+      {
+        "rank": 149,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "cnhl-6s-1800-lr-lipo",
@@ -1831,6 +2247,162 @@
         "preferredImageUrl": null,
         "urlConfidence": "low",
         "sourceNotes": "Official CNHL Ministar 6S 1800mAh 120C page exists; catalog LR LiPo line implies lower-C long-range SKU not listed on manufacturer store.",
+        "fetchScript": null
+      },
+      {
+        "rank": 150,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "betafpv-1404-4600kv",
+        "partName": "BETAFPV 1404 4600KV",
+        "brand": "BETAFPV",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/betafpv-1404-4600kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://betafpv.com/products/1404-4500kv-brushless-motors",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Closest official BETAFPV 1404 listing is 4500KV; packshot bell reads 4500KV, not catalog 4600KV.",
+        "fetchScript": null
+      },
+      {
+        "rank": 151,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "brotherhobby-2004-2600kv",
+        "partName": "BrotherHobby 2004 2600KV",
+        "brand": "BrotherHobby",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://brotherhobby.com/2004-motor-p00129p1.html",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Legacy 2004 URL resolves but page content is Avenger 0804 motors; no verified 2004 2600KV packshot.",
+        "fetchScript": null
+      },
+      {
+        "rank": 152,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "brotherhobby-2806-1400kv-lr",
+        "partName": "BrotherHobby 2806 1400KV LR",
+        "brand": "BrotherHobby",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/brotherhobby-2806-1400kv-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://brotherhobby.com/avenger-28065-motor-p00132p1.html",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Official Avenger 2806.5 motor page; gallery packshot bell reads 1300KV, not catalog 1400KV LR.",
+        "fetchScript": null
+      },
+      {
+        "rank": 153,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "emax-e1106-7200kv",
+        "partName": "EMAX E1106 7200KV",
+        "brand": "EMAX",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/emax-e1106-7200kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://emax-usa.com/products/emax-rs1106-micro-brushless-motor-1-pcs",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Official EMAX RS1106 page lists 7200KV variant but primary packshot bell reads 7500KV.",
+        "fetchScript": null
+      },
+      {
+        "rank": 154,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "emax-eco-1404-4000kv",
+        "partName": "EMAX ECO 1404 4000KV",
+        "brand": "EMAX",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/emax-eco-1404-4000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://emax-usa.com/products/eco-micro-1404-brushless-motor",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Official EMAX ECO Micro 1404 page lists 3700KV; no 4000KV variant or matching packshot found.",
+        "fetchScript": null
+      },
+      {
+        "rank": 155,
+        "queueTier": 4,
+        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+        "partId": "iflight-xing-e-pro-2806-1300kv",
+        "partName": "iFlight XING-E Pro 2806 1300KV",
+        "brand": "iFlight",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/iflight-xing-e-pro-2806-1300kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://shop.iflight.com/xing-x2806-5-fpv-nextgen-motor-pro1001",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Closest official listing is XING 2806.5 Cinelifter motor; OSS asset labeled 1300KV shows 1500KV on bell.",
         "fetchScript": null
       }
     ],
@@ -4832,656 +5404,6 @@
       "rank": 101,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "axisflying-2808-1150kv-lr",
-      "partName": "AxisFlying 2808 1150KV LR",
-      "brand": "AxisFlying",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 102,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "betafpv-0802-25000kv",
-      "partName": "BETAFPV 0802 25000KV",
-      "brand": "BETAFPV",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/betafpv-0802-25000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 103,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "betafpv-1404-4600kv",
-      "partName": "BETAFPV 1404 4600KV",
-      "brand": "BETAFPV",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/betafpv-1404-4600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 104,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "brotherhobby-1507-3700kv",
-      "partName": "BrotherHobby 1507 3700KV",
-      "brand": "BrotherHobby",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 105,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "brotherhobby-2004-2600kv",
-      "partName": "BrotherHobby 2004 2600KV",
-      "brand": "BrotherHobby",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 106,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "brotherhobby-2806-1400kv-lr",
-      "partName": "BrotherHobby 2806 1400KV LR",
-      "brand": "BrotherHobby",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/brotherhobby-2806-1400kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 107,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "emax-e1106-7200kv",
-      "partName": "EMAX E1106 7200KV",
-      "brand": "EMAX",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/emax-e1106-7200kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 108,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "emax-eco-1404-4000kv",
-      "partName": "EMAX ECO 1404 4000KV",
-      "brand": "EMAX",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/emax-eco-1404-4000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 109,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "emax-eco-2004-2550kv",
-      "partName": "EMAX ECO 2004 2550KV",
-      "brand": "EMAX",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/emax-eco-2004-2550kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 110,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "emax-eco-ii-2806-1280kv",
-      "partName": "EMAX ECO II 2806 1280KV",
-      "brand": "EMAX",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/emax-eco-ii-2806-1280kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 111,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "geprc-0901-11000kv",
-      "partName": "GEPRC 0901 11000KV",
-      "brand": "GEPRC",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 112,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "geprc-2005-2200kv",
-      "partName": "GEPRC 2005 2200KV",
-      "brand": "GEPRC",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 113,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "happymodel-cine-2004-2400kv",
-      "partName": "Happymodel Cine 2004 2400KV",
-      "brand": "Happymodel",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 114,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "happymodel-ex0802-19000kv",
-      "partName": "Happymodel EX0802 19000KV",
-      "brand": "Happymodel",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/happymodel-ex0802-19000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 115,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "happymodel-se0802-22000kv",
-      "partName": "Happymodel SE0802 22000KV",
-      "brand": "Happymodel",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/happymodel-se0802-22000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 116,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing-e-pro-2806-1300kv",
-      "partName": "iFlight XING-E Pro 2806 1300KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing-e-pro-2806-1300kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 117,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-1404-4600kv",
-      "partName": "iFlight XING2 1404 4600KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 118,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-1507-4600kv",
-      "partName": "iFlight XING2 1507 4600KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 119,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-2203-2350kv",
-      "partName": "iFlight XING2 2203 2350KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 120,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-2807-1280kv-lr",
-      "partName": "iFlight XING2 2807 1280KV LR",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-2807-1280kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 121,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "newbee-0802-17500kv",
-      "partName": "NewBeeDrone 0802 17500KV",
-      "brand": "NewBeeDrone",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 122,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "rcinpower-1404-3800kv",
-      "partName": "RCinPower 1404 3800KV",
-      "brand": "RCinPower",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/rcinpower-1404-3800kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 123,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "rcinpower-2203-2300kv",
-      "partName": "RCinPower 2203 2300KV",
-      "brand": "RCinPower",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 124,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "rcinpower-2807-1350kv-lr",
-      "partName": "RCinPower 2807 1350KV LR",
-      "brand": "RCinPower",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 125,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "tmotor-2807-1300kv-lr",
-      "partName": "T-Motor 2807 1300KV LR",
-      "brand": "T-Motor",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 126,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tmotor-f1404-3800kv",
       "partName": "T-Motor F1404 3800KV",
       "brand": "T-Motor",
@@ -5505,7 +5427,7 @@
       "fetchScript": null
     },
     {
-      "rank": 127,
+      "rank": 102,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tmotor-mn2004-2550kv",
@@ -5531,7 +5453,7 @@
       "fetchScript": null
     },
     {
-      "rank": 128,
+      "rank": 103,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "apc-7x4-2-lr",
@@ -5557,7 +5479,7 @@
       "fetchScript": null
     },
     {
-      "rank": 129,
+      "rank": 104,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "avan-3540-cine-d5",
@@ -5583,7 +5505,7 @@
       "fetchScript": null
     },
     {
-      "rank": 130,
+      "rank": 105,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "avan-rush-3528",
@@ -5609,7 +5531,7 @@
       "fetchScript": null
     },
     {
-      "rank": 131,
+      "rank": 106,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "betafpv-40mm-4blade-1535",
@@ -5635,7 +5557,7 @@
       "fetchScript": null
     },
     {
-      "rank": 132,
+      "rank": 107,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "dal-35435-cine-d5",
@@ -5661,7 +5583,7 @@
       "fetchScript": null
     },
     {
-      "rank": 133,
+      "rank": 108,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "dal-prop-3530-cyclone",
@@ -5687,7 +5609,7 @@
       "fetchScript": null
     },
     {
-      "rank": 134,
+      "rank": 109,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-avan-40mm-whoop",
@@ -5713,7 +5635,7 @@
       "fetchScript": null
     },
     {
-      "rank": 135,
+      "rank": 110,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-31mm-4blade-whoop",
@@ -5739,7 +5661,7 @@
       "fetchScript": null
     },
     {
-      "rank": 136,
+      "rank": 111,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3522-hurricane",
@@ -5765,7 +5687,7 @@
       "fetchScript": null
     },
     {
-      "rank": 137,
+      "rank": 112,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3528-cine-d5",
@@ -5791,7 +5713,7 @@
       "fetchScript": null
     },
     {
-      "rank": 138,
+      "rank": 113,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3528-freestyle",
@@ -5817,7 +5739,7 @@
       "fetchScript": null
     },
     {
-      "rank": 139,
+      "rank": 114,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-7035-2-lr",
@@ -5843,7 +5765,7 @@
       "fetchScript": null
     },
     {
-      "rank": 140,
+      "rank": 115,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-7036-3-lr",
@@ -5869,7 +5791,7 @@
       "fetchScript": null
     },
     {
-      "rank": 141,
+      "rank": 116,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-floppypop3-3518",
@@ -5895,7 +5817,7 @@
       "fetchScript": null
     },
     {
-      "rank": 142,
+      "rank": 117,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "geprc-7038-2-lr",
@@ -5921,7 +5843,7 @@
       "fetchScript": null
     },
     {
-      "rank": 143,
+      "rank": 118,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3525-pc",
@@ -5947,7 +5869,7 @@
       "fetchScript": null
     },
     {
-      "rank": 144,
+      "rank": 119,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3535-pc",
@@ -5973,7 +5895,7 @@
       "fetchScript": null
     },
     {
-      "rank": 145,
+      "rank": 120,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3536-cine-d5",
@@ -5999,7 +5921,7 @@
       "fetchScript": null
     },
     {
-      "rank": 146,
+      "rank": 121,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-7030-3-lr",
@@ -6025,7 +5947,7 @@
       "fetchScript": null
     },
     {
-      "rank": 147,
+      "rank": 122,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-7035-2-lr",
@@ -6051,7 +5973,7 @@
       "fetchScript": null
     },
     {
-      "rank": 148,
+      "rank": 123,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-durable-3530-cine",
@@ -6077,7 +5999,7 @@
       "fetchScript": null
     },
     {
-      "rank": 149,
+      "rank": 124,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-t65x30-whoop",
@@ -6103,7 +6025,7 @@
       "fetchScript": null
     },
     {
-      "rank": 150,
+      "rank": 125,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gn-1s-550-bt2",
@@ -6129,7 +6051,7 @@
       "fetchScript": null
     },
     {
-      "rank": 151,
+      "rank": 126,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-1100-park",
@@ -6155,7 +6077,7 @@
       "fetchScript": null
     },
     {
-      "rank": 152,
+      "rank": 127,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-1300-cine",
@@ -6181,7 +6103,7 @@
       "fetchScript": null
     },
     {
-      "rank": 153,
+      "rank": 128,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-750-mini",
@@ -6207,7 +6129,7 @@
       "fetchScript": null
     },
     {
-      "rank": 154,
+      "rank": 129,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-6s-2500-lr-lipo",
@@ -6233,7 +6155,7 @@
       "fetchScript": null
     },
     {
-      "rank": 155,
+      "rank": 130,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "betafpv-2s-300-ph2",
@@ -6259,7 +6181,7 @@
       "fetchScript": null
     },
     {
-      "rank": 156,
+      "rank": 131,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "cnhl-ministar-4s-900",
@@ -6285,7 +6207,7 @@
       "fetchScript": null
     },
     {
-      "rank": 157,
+      "rank": 132,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "iflight-4s-1800-cine",
@@ -6311,7 +6233,423 @@
       "fetchScript": null
     },
     {
-      "rank": 158,
+      "rank": 133,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "axisflying-2808-1150kv-lr",
+      "partName": "AxisFlying 2808 1150KV LR",
+      "brand": "AxisFlying",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No AxisFlying 2808 1150KV LR product page on axisflying.com.",
+      "officialUrl": "https://www.axisflying.com/collections/motors",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No AxisFlying 2808 1150KV LR product page on axisflying.com; motors collection is the only manufacturer reference.",
+      "fetchScript": null
+    },
+    {
+      "rank": 134,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "brotherhobby-1507-3700kv",
+      "partName": "BrotherHobby 1507 3700KV",
+      "brand": "BrotherHobby",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No BrotherHobby 1507 3700KV product listing on brotherhobby.com.",
+      "officialUrl": "https://brotherhobby.com/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No BrotherHobby 1507 3700KV product listing found on brotherhobby.com at research time.",
+      "fetchScript": null
+    },
+    {
+      "rank": 135,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "emax-eco-2004-2550kv",
+      "partName": "EMAX ECO 2004 2550KV",
+      "brand": "EMAX",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/emax-eco-2004-2550kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "Official EMAX ECO II 2004 page lists 1700/2200/2400KV only; no 2550KV SKU.",
+      "officialUrl": "https://emax-usa.com/products/eco-ii-2004-brushless-motor",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Official EMAX ECO II 2004 choose-KV page lists 1700/2200/2400KV only; catalog 2550KV not on manufacturer store.",
+      "fetchScript": null
+    },
+    {
+      "rank": 136,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "emax-eco-ii-2806-1280kv",
+      "partName": "EMAX ECO II 2806 1280KV",
+      "brand": "EMAX",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/emax-eco-ii-2806-1280kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "Closest EMAX LR motor is ECO II 2807 1280KV; no verified 2806 packshot URL.",
+      "officialUrl": "https://emax-usa.com/products/eco-ii-2807-long-range-brushless-motor",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Closest official EMAX LR motor is ECO II 2807 1280KV; catalog stator size 2806 does not match manufacturer 2807 SKU.",
+      "fetchScript": null
+    },
+    {
+      "rank": 137,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "geprc-0901-11000kv",
+      "partName": "GEPRC 0901 11000KV",
+      "brand": "GEPRC",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No GEPRC 0901 11000KV motor product page on geprc.com.",
+      "officialUrl": "https://geprc.com/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No GEPRC 0901 11000KV motor product page found on geprc.com.",
+      "fetchScript": null
+    },
+    {
+      "rank": 138,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "geprc-2005-2200kv",
+      "partName": "GEPRC 2005 2200KV",
+      "brand": "GEPRC",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No GEPRC 2005 2200KV motor product page on geprc.com.",
+      "officialUrl": "https://geprc.com/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No GEPRC 2005 2200KV motor product page found on geprc.com.",
+      "fetchScript": null
+    },
+    {
+      "rank": 139,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "happymodel-cine-2004-2400kv",
+      "partName": "Happymodel Cine 2004 2400KV",
+      "brand": "Happymodel",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No Happymodel Cine 2004 2400KV standalone motor product page.",
+      "officialUrl": "https://www.happymodel.cn/index.php/category/product/motor/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No Happymodel Cine 2004 2400KV standalone motor product page; Cine8 frame/kit listings only.",
+      "fetchScript": null
+    },
+    {
+      "rank": 140,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "iflight-xing2-1404-4600kv",
+      "partName": "iFlight XING2 1404 4600KV",
+      "brand": "iFlight",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled only.",
+      "officialUrl": "https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Official XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled; 4600KV OSS assets return 404.",
+      "fetchScript": null
+    },
+    {
+      "rank": 141,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "iflight-xing2-1507-4600kv",
+      "partName": "iFlight XING2 1507 4600KV",
+      "brand": "iFlight",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "Legacy XING2 1507 product URL 404 on shop.iflight.com.",
+      "officialUrl": "https://shop.iflight.com/motor-cat341",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Legacy XING2 1507 product URL returns 404; not listed on current shop.iflight.com motor category.",
+      "fetchScript": null
+    },
+    {
+      "rank": 142,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "iflight-xing2-2203-2350kv",
+      "partName": "iFlight XING2 2203 2350KV",
+      "brand": "iFlight",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "Legacy XING2 2203 product URL 404 on shop.iflight.com.",
+      "officialUrl": "https://shop.iflight.com/motor-cat341",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Legacy XING2 2203 product URL returns 404; not listed on current shop.iflight.com motor category.",
+      "fetchScript": null
+    },
+    {
+      "rank": 143,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "iflight-xing2-2807-1280kv-lr",
+      "partName": "iFlight XING2 2807 1280KV LR",
+      "brand": "iFlight",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/iflight-xing2-2807-1280kv-lr.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "Legacy XING2 2807 LR product URL 404; no 1280KV packshot on iFlight store.",
+      "officialUrl": "https://shop.iflight.com/motor-cat341",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Legacy XING2 2807 LR product URL returns 404; closest iFlight LR motor is NIDICI 2807 1300KV, not 1280KV.",
+      "fetchScript": null
+    },
+    {
+      "rank": 144,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "newbee-0802-17500kv",
+      "partName": "NewBeeDrone 0802 17500KV",
+      "brand": "NewBeeDrone",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No NewBeeDrone 0802 17500KV product page on newbeedrone.com.",
+      "officialUrl": "https://www.newbeedrone.com/collections/motors",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No NewBeeDrone 0802 17500KV product page; official store lists 13000/14000/19000/25000/30000KV 0802 lines instead.",
+      "fetchScript": null
+    },
+    {
+      "rank": 145,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "rcinpower-1404-3800kv",
+      "partName": "RCinPower 1404 3800KV",
+      "brand": "RCinPower",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/rcinpower-1404-3800kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "SmooX 1404 page is spec-sheet composite; GTS V3 1404 page uses 1203 imagery.",
+      "officialUrl": "https://www.rcinpower.com/SmooX/48.html",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "SmooX 1404 Plus page only exposes tall spec-sheet composite; GTS V3 1404 page embeds 1203 product images.",
+      "fetchScript": null
+    },
+    {
+      "rank": 146,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "rcinpower-2203-2300kv",
+      "partName": "RCinPower 2203 2300KV",
+      "brand": "RCinPower",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com.",
+      "officialUrl": "https://www.rcinpower.com/G-SERIES/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No RCinPower G-SERIES 2203 2300KV product page found on rcinpower.com.",
+      "fetchScript": null
+    },
+    {
+      "rank": 147,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "rcinpower-2807-1350kv-lr",
+      "partName": "RCinPower 2807 1350KV LR",
+      "brand": "RCinPower",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No RCinPower 2807 1350KV LR product page on rcinpower.com.",
+      "officialUrl": "https://www.rcinpower.com/G-SERIES/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No RCinPower 2807 1350KV LR product page found on rcinpower.com.",
+      "fetchScript": null
+    },
+    {
+      "rank": 148,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "tmotor-2807-1300kv-lr",
+      "partName": "T-Motor 2807 1300KV LR",
+      "brand": "T-Motor",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com.",
+      "officialUrl": "https://store.tmotor.com/",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com.",
+      "fetchScript": null
+    },
+    {
+      "rank": 149,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "cnhl-6s-1800-lr-lipo",
@@ -6337,7 +6675,163 @@
       "fetchScript": null
     },
     {
-      "rank": 159,
+      "rank": 150,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "betafpv-1404-4600kv",
+      "partName": "BETAFPV 1404 4600KV",
+      "brand": "BETAFPV",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/betafpv-1404-4600kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://betafpv.com/products/1404-4500kv-brushless-motors",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Closest official BETAFPV 1404 listing is 4500KV; packshot bell reads 4500KV, not catalog 4600KV.",
+      "fetchScript": null
+    },
+    {
+      "rank": 151,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "brotherhobby-2004-2600kv",
+      "partName": "BrotherHobby 2004 2600KV",
+      "brand": "BrotherHobby",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://brotherhobby.com/2004-motor-p00129p1.html",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Legacy 2004 URL resolves but page content is Avenger 0804 motors; no verified 2004 2600KV packshot.",
+      "fetchScript": null
+    },
+    {
+      "rank": 152,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "brotherhobby-2806-1400kv-lr",
+      "partName": "BrotherHobby 2806 1400KV LR",
+      "brand": "BrotherHobby",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/brotherhobby-2806-1400kv-lr.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://brotherhobby.com/avenger-28065-motor-p00132p1.html",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Official Avenger 2806.5 motor page; gallery packshot bell reads 1300KV, not catalog 1400KV LR.",
+      "fetchScript": null
+    },
+    {
+      "rank": 153,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "emax-e1106-7200kv",
+      "partName": "EMAX E1106 7200KV",
+      "brand": "EMAX",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/emax-e1106-7200kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://emax-usa.com/products/emax-rs1106-micro-brushless-motor-1-pcs",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Official EMAX RS1106 page lists 7200KV variant but primary packshot bell reads 7500KV.",
+      "fetchScript": null
+    },
+    {
+      "rank": 154,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "emax-eco-1404-4000kv",
+      "partName": "EMAX ECO 1404 4000KV",
+      "brand": "EMAX",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/emax-eco-1404-4000kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://emax-usa.com/products/eco-micro-1404-brushless-motor",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Official EMAX ECO Micro 1404 page lists 3700KV; no 4000KV variant or matching packshot found.",
+      "fetchScript": null
+    },
+    {
+      "rank": 155,
+      "queueTier": 4,
+      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
+      "partId": "iflight-xing-e-pro-2806-1300kv",
+      "partName": "iFlight XING-E Pro 2806 1300KV",
+      "brand": "iFlight",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/iflight-xing-e-pro-2806-1300kv.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://shop.iflight.com/xing-x2806-5-fpv-nextgen-motor-pro1001",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Closest official listing is XING 2806.5 Cinelifter motor; OSS asset labeled 1300KV shows 1500KV on bell.",
+      "fetchScript": null
+    },
+    {
+      "rank": 156,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "radiomaster-er5-915-lr",
@@ -6363,7 +6857,7 @@
       "fetchScript": null
     },
     {
-      "rank": 160,
+      "rank": 157,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "akk-a3-nano-vtx-park",
@@ -6389,7 +6883,7 @@
       "fetchScript": null
     },
     {
-      "rank": 161,
+      "rank": 158,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "akk-a5-nano-vtx",
@@ -6415,7 +6909,7 @@
       "fetchScript": null
     },
     {
-      "rank": 162,
+      "rank": 159,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "hdzero-cine-nano-vtx",
@@ -6441,7 +6935,7 @@
       "fetchScript": null
     },
     {
-      "rank": 163,
+      "rank": 160,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "rush-mini-tank-cine-vtx",
@@ -6467,7 +6961,7 @@
       "fetchScript": null
     },
     {
-      "rank": 164,
+      "rank": 161,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "rush-nano-ultimate-whoop-vtx",
@@ -6493,7 +6987,7 @@
       "fetchScript": null
     },
     {
-      "rank": 165,
+      "rank": 162,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "rush-nano-vtx-park",
@@ -6519,7 +7013,7 @@
       "fetchScript": null
     },
     {
-      "rank": 166,
+      "rank": 163,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "betafpv-pavo3516-frame",
@@ -6545,7 +7039,7 @@
       "fetchScript": null
     },
     {
-      "rank": 167,
+      "rank": 164,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "diatone-taycan35-frame",
@@ -6571,7 +7065,7 @@
       "fetchScript": null
     },
     {
-      "rank": 168,
+      "rank": 165,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-cine-frame",
@@ -6597,7 +7091,7 @@
       "fetchScript": null
     },
     {
-      "rank": 169,
+      "rank": 166,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-frame",
@@ -6623,7 +7117,7 @@
       "fetchScript": null
     },
     {
-      "rank": 170,
+      "rank": 167,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer7-lr-frame",
@@ -6649,7 +7143,7 @@
       "fetchScript": null
     },
     {
-      "rank": 171,
+      "rank": 168,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-cinebee35-hd-frame",
@@ -6675,7 +7169,7 @@
       "fetchScript": null
     },
     {
-      "rank": 172,
+      "rank": 169,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-crocodile7-lr-frame",
@@ -6701,7 +7195,7 @@
       "fetchScript": null
     },
     {
-      "rank": 173,
+      "rank": 170,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-3-5-frame",
@@ -6727,7 +7221,7 @@
       "fetchScript": null
     },
     {
-      "rank": 174,
+      "rank": 171,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-lite-75-frame",
@@ -6753,7 +7247,7 @@
       "fetchScript": null
     },
     {
-      "rank": 175,
+      "rank": 172,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "hglrc-sector7-lr-frame",
@@ -6779,7 +7273,7 @@
       "fetchScript": null
     },
     {
-      "rank": 176,
+      "rank": 173,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera3-frame",
@@ -6805,7 +7299,7 @@
       "fetchScript": null
     },
     {
-      "rank": 177,
+      "rank": 174,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera35-cine-frame",
@@ -6831,7 +7325,7 @@
       "fetchScript": null
     },
     {
-      "rank": 178,
+      "rank": 175,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-cidatel35-cine-frame",
@@ -6857,7 +7351,7 @@
       "fetchScript": null
     },
     {
-      "rank": 179,
+      "rank": 176,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "newbee-drone-75-pro-frame",
@@ -6883,7 +7377,7 @@
       "fetchScript": null
     },
     {
-      "rank": 180,
+      "rank": 177,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "tbs-source-one7-lr-frame",
@@ -6909,7 +7403,7 @@
       "fetchScript": null
     },
     {
-      "rank": 181,
+      "rank": 178,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "aikon-65a-lr-esc",
@@ -6935,7 +7429,7 @@
       "fetchScript": null
     },
     {
-      "rank": 182,
+      "rank": 179,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-brushless-1s-aio-esc",
@@ -6961,7 +7455,7 @@
       "fetchScript": null
     },
     {
-      "rank": 183,
+      "rank": 180,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-cine-esc",
@@ -6987,7 +7481,7 @@
       "fetchScript": null
     },
     {
-      "rank": 184,
+      "rank": 181,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-mini-esc",
@@ -7013,7 +7507,7 @@
       "fetchScript": null
     },
     {
-      "rank": 185,
+      "rank": 182,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f55-lr-esc",
@@ -7039,7 +7533,7 @@
       "fetchScript": null
     },
     {
-      "rank": 186,
+      "rank": 183,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep35a-cine-esc",
@@ -7065,7 +7559,7 @@
       "fetchScript": null
     },
     {
-      "rank": 187,
+      "rank": 184,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-esc",
@@ -7091,7 +7585,7 @@
       "fetchScript": null
     },
     {
-      "rank": 188,
+      "rank": 185,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "hglrc-tekko32-f35-mini",
@@ -7117,7 +7611,7 @@
       "fetchScript": null
     },
     {
-      "rank": 189,
+      "rank": 186,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-succexd35-cine-esc",
@@ -7143,7 +7637,7 @@
       "fetchScript": null
     },
     {
-      "rank": 190,
+      "rank": 187,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "meps-konvex-55a-lr-esc",
@@ -7169,7 +7663,7 @@
       "fetchScript": null
     },
     {
-      "rank": 191,
+      "rank": 188,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "tmotor-f35a-mini-4in1",
@@ -7195,7 +7689,7 @@
       "fetchScript": null
     },
     {
-      "rank": 192,
+      "rank": 189,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "tmotor-pacer-f35-cine-esc",
@@ -7221,7 +7715,7 @@
       "fetchScript": null
     },
     {
-      "rank": 193,
+      "rank": 190,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-f411-1s-aio-fc",
@@ -7247,7 +7741,7 @@
       "fetchScript": null
     },
     {
-      "rank": 194,
+      "rank": 191,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f405-mini",
@@ -7273,7 +7767,7 @@
       "fetchScript": null
     },
     {
-      "rank": 195,
+      "rank": 192,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-h743-lr-fc",
@@ -7299,7 +7793,7 @@
       "fetchScript": null
     },
     {
-      "rank": 196,
+      "rank": 193,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f405-20x20-mini",
@@ -7325,7 +7819,7 @@
       "fetchScript": null
     },
     {
-      "rank": 197,
+      "rank": 194,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f722-cine-mini-fc",
@@ -7351,7 +7845,7 @@
       "fetchScript": null
     },
     {
-      "rank": 198,
+      "rank": 195,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f745-lr-fc",
@@ -7377,7 +7871,7 @@
       "fetchScript": null
     },
     {
-      "rank": 199,
+      "rank": 196,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep-aio-1s-fc",
@@ -7403,7 +7897,7 @@
       "fetchScript": null
     },
     {
-      "rank": 200,
+      "rank": 197,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-fc",
@@ -7429,7 +7923,7 @@
       "fetchScript": null
     },
     {
-      "rank": 201,
+      "rank": 198,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-beast-h743-cine-fc",
@@ -7455,7 +7949,7 @@
       "fetchScript": null
     },
     {
-      "rank": 202,
+      "rank": 199,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-beast-h743-lr-fc",
@@ -7481,7 +7975,7 @@
       "fetchScript": null
     },
     {
-      "rank": 203,
+      "rank": 200,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "matek-f722-cine-mini-fc",
@@ -7507,7 +8001,7 @@
       "fetchScript": null
     },
     {
-      "rank": 204,
+      "rank": 201,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "matek-h743-wing-lr-fc",

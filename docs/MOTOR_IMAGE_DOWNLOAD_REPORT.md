@@ -5,18 +5,29 @@ Developer-only review log for **motor** manufacturer-source image **candidates**
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T19:22:32.380Z
+Last updated: 2026-06-29T19:42:54.825Z
 
-Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** retained.
+Last local cleanup: 2026-06-29T19:42:54.825Z — removed **0** JPG(s); **17** retained.
 
 ## Summary
 
-- Downloaded local JPG candidates: **13**
+- Downloaded local JPG candidates: **16**
 - Rejected / skipped / failed: **111**
 
 ## Downloaded candidates (local JPG on disk)
 
-### 1. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
+### 1. BETAFPV 0802 25000KV (`betafpv-0802-25000kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://betafpv.com/products/0802-brushless-motors-2026
+- **Exact image URL downloaded:** https://betafpv.com/cdn/shop/files/0802_Brushless_Motors_2026_Racing_1024x1024.jpg?v=1769069910
+- **Local file path:** public/parts/motors/betafpv-0802-25000kv.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official BETAFPV 0802 2026 motor page; Racing gallery packshot shows 25000KV on motor bell. Local JPG present; re-evaluating before retention.
+### 2. BETAFPV 0802SE 19500KV (`betafpv-0802se-19500kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://betafpv.com/products/0802se-22000kv-brushless-motors
 - **Exact image URL downloaded:** —
@@ -27,7 +38,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official BETAFPV 0802SE motor page; 19500KV is a listed variant. Local JPG present; re-evaluating before retention.
-### 2. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
+### 3. BETAFPV 1102 18000KV (`betafpv-1102-18000kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://betafpv.com/products/1102-13500kv-brushless-motors
 - **Exact image URL downloaded:** —
@@ -38,7 +49,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Renamed from 11500KV to match official BETAFPV 1102 motor listing (18000KV variant). Local JPG present; re-evaluating before retention.
-### 3. BrotherHobby Avenger 2507 1850KV (`brotherhobby-avenger-2507-1850`)
+### 4. BrotherHobby Avenger 2507 1850KV (`brotherhobby-avenger-2507-1850`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://brotherhobby.com/avenger-2507-motor-p00133p1.html
 - **Exact image URL downloaded:** https://brotherhobby.com/u_file/2011/products/28/3a07565520.jpg.500x500.jpg
@@ -50,7 +61,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official BrotherHobby Avenger 2507 motor family page; KV variants share one URL. Official manufacturer image represents this motor family; multiple KV options share the same product render.
-### 4. BrotherHobby Avenger 2806.5 1300KV (`brotherhobby-avenger-2806-5-1300`)
+### 5. BrotherHobby Avenger 2806.5 1300KV (`brotherhobby-avenger-2806-5-1300`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://brotherhobby.com/avenger-28065-motor-p00132p1.html
 - **Exact image URL downloaded:** https://brotherhobby.com/u_file/1906/products/05/1caf0345b0.jpg.500x500.jpg
@@ -62,7 +73,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official Avenger 2806.5 motor family page; KV variants share one URL. Official manufacturer image represents this motor family; multiple KV options share the same product render.
-### 5. BrotherHobby Returner R6 2207 1850KV (`brotherhobby-returner-r6-2207-1850kv`)
+### 6. BrotherHobby Returner R6 2207 1850KV (`brotherhobby-returner-r6-2207-1850kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://brotherhobby.com/returner-r6-2207-rainbow-motor-p00147p1.html
 - **Exact image URL downloaded:** https://brotherhobby.com/u_file/1906/products/05/142a5fbc18.jpg.500x500.jpg
@@ -74,7 +85,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official BrotherHobby Returner R6 2207 motor family page; 1850KV is a listed variant. Official manufacturer image represents this motor family; multiple KV options share the same product render.
-### 6. EMAX ECO II 2207 1900KV (`emax-eco-ii-2207-1900kv`)
+### 7. EMAX ECO II 2207 1900KV (`emax-eco-ii-2207-1900kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2207-brushless-motor-1700kv-1900kv-2400kv
 - **Exact image URL downloaded:** https://emax-usa.com/cdn/shop/products/569A1011_7c9e3630-d345-48ae-b663-42c765b19e32.jpg?v=1602262523
@@ -86,7 +97,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official EMAX ECO II 2207 motor page; 1900KV is a listed variant. Official manufacturer image represents this motor family; multiple KV options share the same product render. Converted official WEBP source to local JPG (dev script only).
-### 7. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+### 8. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
 - **Exact image URL downloaded:** —
@@ -97,7 +108,29 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. Local JPG present; re-evaluating before retention.
-### 8. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
+### 9. Happymodel EX0802 19000KV (`happymodel-ex0802-19000kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/
+- **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg
+- **Local file path:** public/parts/motors/happymodel-ex0802-19000kv.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Happymodel EX0802 family page lists 19000KV; isolated packshot has no conflicting KV marking. Local JPG present; re-evaluating before retention.
+### 10. Happymodel SE0802 22000KV (`happymodel-se0802-22000kv`)
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/
+- **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2020/07/11.jpg
+- **Local file path:** public/parts/motors/happymodel-se0802-22000kv.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Happymodel EX0802 family page lists 22000KV; SE0802 naming superseded but KV variant verified on manufacturer page. Local JPG present; re-evaluating before retention.
+### 11. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-1404/XING2-1404-3800KV.M2.png
@@ -108,7 +141,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight XING2 1404 motor page with 3800KV option. Converted official PNG source to local JPG (dev script only).
-### 9. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
+### 12. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-2207/XING2_2207-1855.M2.png
@@ -120,7 +153,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Official manufacturer image represents this motor family; multiple KV options share the same product render. Converted official PNG source to local JPG (dev script only).
-### 10. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
+### 13. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING2-2207/XING2-2207.M4.png
@@ -132,7 +165,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Official manufacturer image represents this motor family; multiple KV options share the same product render. Converted official PNG source to local JPG (dev script only).
-### 11. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
+### 14. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/29.html
 - **Exact image URL downloaded:** https://www.rcinpower.com/upload/2020-10/13/2207Pluschanpinyemiangai101_01.jpg
@@ -144,7 +177,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official RCinPower GTS V2 2207 Plus motor page; 1950KV is a listed variant. Official manufacturer image represents this motor family; multiple KV options share the same product render.
-### 12. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
+### 15. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/61.html
 - **Exact image URL downloaded:** https://www.rcinpower.com/upload/2023-12/27/AOSSupernova2207chanpinyemian101.jpg
@@ -156,7 +189,7 @@ Last local cleanup: 2026-06-29T19:22:32.380Z — removed **0** JPG(s); **14** re
 - **Recommendation:** keep for review
 - **Family KV note:** Official manufacturer image covers multiple KV variants of this motor family.
 - **Notes:** Official RCinPower GTS V3 2207 family page (AOS Supernova 2207 listing); 1860KV variant not separately listed. Official manufacturer image represents this motor family; multiple KV options share the same product render.
-### 13. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
+### 16. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing-e-pro-2207-2-6s-fpv-nextgen-motor-pro874
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/FPV-Motor/XING-E-Pro-2207/XING-E-Pro-2207.M2.png
