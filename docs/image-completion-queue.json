@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T21:51:06.292Z",
+  "generatedAt": "2026-06-29T22:38:04.544Z",
   "baseline": {
     "total": 294,
     "found": 95,
@@ -12,10 +12,10 @@
     "queueTotal": 199,
     "classificationCounts": {
       "official_source_blocked": 25,
-      "no_clean_packshot_found": 62,
+      "no_clean_packshot_found": 63,
       "should_remain_svg_placeholder": 29,
-      "unsafe_likely_mismatch": 34,
-      "needs_better_official_url": 49
+      "unsafe_likely_mismatch": 36,
+      "needs_better_official_url": 46
     },
     "tierCounts": {
       "1": 10,
@@ -2510,7 +2510,7 @@
         "fetchScript": null
       },
       {
-        "rank": 164,
+        "rank": 162,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "betafpv-pavo3516-frame",
@@ -2536,7 +2536,7 @@
         "fetchScript": null
       },
       {
-        "rank": 165,
+        "rank": 163,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "diatone-taycan35-frame",
@@ -2562,7 +2562,7 @@
         "fetchScript": null
       },
       {
-        "rank": 166,
+        "rank": 164,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "flywoo-explorer35-cine-frame",
@@ -2588,7 +2588,7 @@
         "fetchScript": null
       },
       {
-        "rank": 167,
+        "rank": 165,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "flywoo-explorer35-frame",
@@ -2614,7 +2614,7 @@
         "fetchScript": null
       },
       {
-        "rank": 168,
+        "rank": 166,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "flywoo-explorer7-lr-frame",
@@ -2640,7 +2640,7 @@
         "fetchScript": null
       },
       {
-        "rank": 169,
+        "rank": 167,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-cinebee35-hd-frame",
@@ -2666,7 +2666,7 @@
         "fetchScript": null
       },
       {
-        "rank": 170,
+        "rank": 168,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-crocodile7-lr-frame",
@@ -2692,7 +2692,7 @@
         "fetchScript": null
       },
       {
-        "rank": 171,
+        "rank": 169,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-3-5-frame",
@@ -2718,7 +2718,7 @@
         "fetchScript": null
       },
       {
-        "rank": 172,
+        "rank": 170,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-lite-75-frame",
@@ -2744,7 +2744,7 @@
         "fetchScript": null
       },
       {
-        "rank": 173,
+        "rank": 171,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "hglrc-sector7-lr-frame",
@@ -2770,7 +2770,7 @@
         "fetchScript": null
       },
       {
-        "rank": 174,
+        "rank": 172,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-chimera3-frame",
@@ -2796,7 +2796,7 @@
         "fetchScript": null
       },
       {
-        "rank": 175,
+        "rank": 173,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-chimera35-cine-frame",
@@ -2822,7 +2822,7 @@
         "fetchScript": null
       },
       {
-        "rank": 176,
+        "rank": 174,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-cidatel35-cine-frame",
@@ -2848,7 +2848,59 @@
         "fetchScript": null
       },
       {
-        "rank": 180,
+        "rank": 175,
+        "queueTier": 6,
+        "queueTierLabel": "Frames",
+        "partId": "tbs-source-one7-lr-frame",
+        "partName": "TBS Source One 7 LR Frame",
+        "brand": "TBS",
+        "categoryKey": "frame",
+        "categoryLabel": "Frame",
+        "imagePath": "/parts/frames/tbs-source-one7-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "no_clean_packshot_found",
+        "classificationLabel": "No clean packshot found",
+        "classificationRank": 3,
+        "reason": "No TBS Source One 7 open-source repository or product page with isolated frame packshot.",
+        "officialUrl": "https://github.com/tbs-trappy/source_one",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No TBS Source One 7 repository or product page found; tbs-trappy/source_one is the 5-inch Source One project only.",
+        "fetchScript": null
+      },
+      {
+        "rank": 176,
+        "queueTier": 6,
+        "queueTierLabel": "Frames",
+        "partId": "newbee-drone-75-pro-frame",
+        "partName": "NewBeeDrone 75 Pro Frame",
+        "brand": "NewBeeDrone",
+        "categoryKey": "frame",
+        "categoryLabel": "Frame",
+        "imagePath": "/parts/frames/newbee-drone-75-pro.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://www.newbeedrone.com/products/newbeedrone-75mm-cockroach75-brushless-extreme-durable-frame",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "No NewBeeDrone Drone 75 Pro frame SKU on newbeedrone.com; closest official listing is 75mm Cockroach75 frame (different product name).",
+        "fetchScript": null
+      },
+      {
+        "rank": 179,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f35-cine-esc",
@@ -2874,7 +2926,7 @@
         "fetchScript": null
       },
       {
-        "rank": 181,
+        "rank": 180,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f55-lr-esc",
@@ -2900,7 +2952,7 @@
         "fetchScript": null
       },
       {
-        "rank": 182,
+        "rank": 181,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-gep35a-cine-esc",
@@ -2926,7 +2978,7 @@
         "fetchScript": null
       },
       {
-        "rank": 183,
+        "rank": 182,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "hglrc-tekko32-f35-mini",
@@ -2952,7 +3004,7 @@
         "fetchScript": null
       },
       {
-        "rank": 184,
+        "rank": 183,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "iflight-succexd35-cine-esc",
@@ -2978,7 +3030,7 @@
         "fetchScript": null
       },
       {
-        "rank": 185,
+        "rank": 184,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "tmotor-f35a-mini-4in1",
@@ -3004,7 +3056,7 @@
         "fetchScript": null
       },
       {
-        "rank": 186,
+        "rank": 185,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "tmotor-pacer-f35-cine-esc",
@@ -3030,7 +3082,7 @@
         "fetchScript": null
       },
       {
-        "rank": 187,
+        "rank": 186,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f405-20x20-mini",
@@ -3056,7 +3108,7 @@
         "fetchScript": null
       },
       {
-        "rank": 188,
+        "rank": 187,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f722-cine-mini-fc",
@@ -3082,7 +3134,7 @@
         "fetchScript": null
       },
       {
-        "rank": 189,
+        "rank": 188,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "matek-f722-cine-mini-fc",
@@ -3108,7 +3160,7 @@
         "fetchScript": null
       },
       {
-        "rank": 190,
+        "rank": 189,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-brushless-1s-aio-esc",
@@ -3134,7 +3186,7 @@
         "fetchScript": null
       },
       {
-        "rank": 191,
+        "rank": 190,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-esc",
@@ -3160,7 +3212,7 @@
         "fetchScript": null
       },
       {
-        "rank": 192,
+        "rank": 191,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-h743-lr-fc",
@@ -3186,7 +3238,7 @@
         "fetchScript": null
       },
       {
-        "rank": 193,
+        "rank": 192,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-gep-aio-1s-fc",
@@ -3212,7 +3264,7 @@
         "fetchScript": null
       },
       {
-        "rank": 194,
+        "rank": 193,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-fc",
@@ -3238,7 +3290,7 @@
         "fetchScript": null
       },
       {
-        "rank": 195,
+        "rank": 194,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f35-mini-esc",
@@ -3264,7 +3316,7 @@
         "fetchScript": null
       },
       {
-        "rank": 196,
+        "rank": 195,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-f411-1s-aio-fc",
@@ -3290,7 +3342,7 @@
         "fetchScript": null
       },
       {
-        "rank": 197,
+        "rank": 196,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f745-lr-fc",
@@ -3316,7 +3368,7 @@
         "fetchScript": null
       },
       {
-        "rank": 198,
+        "rank": 197,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "iflight-beast-h743-cine-fc",
@@ -3342,7 +3394,7 @@
         "fetchScript": null
       },
       {
-        "rank": 199,
+        "rank": 198,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "iflight-beast-h743-lr-fc",
@@ -3365,6 +3417,32 @@
         "preferredImageUrl": null,
         "urlConfidence": "low",
         "sourceNotes": "No iFlight Beast H743 LR FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
+        "fetchScript": null
+      },
+      {
+        "rank": 199,
+        "queueTier": 7,
+        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
+        "partId": "matek-h743-wing-lr-fc",
+        "partName": "Matek H743 Wing LR FC",
+        "brand": "Matek",
+        "categoryKey": "flightController",
+        "categoryLabel": "Flight controller",
+        "imagePath": "/parts/flight-controllers/matek-h743-wing-lr-fc.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 3,
+        "classification": "unsafe_likely_mismatch",
+        "classificationLabel": "Unsafe — likely mismatch",
+        "classificationRank": 5,
+        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+        "officialUrl": "https://www.mateksys.com/?portfolio=h743-wlite",
+        "preferredImageUrl": null,
+        "urlConfidence": "low",
+        "sourceNotes": "Closest Matek SKU is EOL H743-WLITE wing FC (ICM42688); catalog H743 Wing LR line specifies BMI270 — gyro mismatch.",
         "fetchScript": null
       }
     ],
@@ -7952,58 +8030,6 @@
       "rank": 162,
       "queueTier": 6,
       "queueTierLabel": "Frames",
-      "partId": "newbee-drone-75-pro-frame",
-      "partName": "NewBeeDrone 75 Pro Frame",
-      "brand": "NewBeeDrone",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/newbee-drone-75-pro.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 163,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "tbs-source-one7-lr-frame",
-      "partName": "TBS Source One 7 LR Frame",
-      "brand": "TBS",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/tbs-source-one7-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
-      "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
-      "fetchScript": null
-    },
-    {
-      "rank": 164,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
       "partId": "betafpv-pavo3516-frame",
       "partName": "BETAFPV Pavo3516 Frame",
       "brand": "BETAFPV",
@@ -8027,7 +8053,7 @@
       "fetchScript": null
     },
     {
-      "rank": 165,
+      "rank": 163,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "diatone-taycan35-frame",
@@ -8053,7 +8079,7 @@
       "fetchScript": null
     },
     {
-      "rank": 166,
+      "rank": 164,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-cine-frame",
@@ -8079,7 +8105,7 @@
       "fetchScript": null
     },
     {
-      "rank": 167,
+      "rank": 165,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-frame",
@@ -8105,7 +8131,7 @@
       "fetchScript": null
     },
     {
-      "rank": 168,
+      "rank": 166,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer7-lr-frame",
@@ -8131,7 +8157,7 @@
       "fetchScript": null
     },
     {
-      "rank": 169,
+      "rank": 167,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-cinebee35-hd-frame",
@@ -8157,7 +8183,7 @@
       "fetchScript": null
     },
     {
-      "rank": 170,
+      "rank": 168,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-crocodile7-lr-frame",
@@ -8183,7 +8209,7 @@
       "fetchScript": null
     },
     {
-      "rank": 171,
+      "rank": 169,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-3-5-frame",
@@ -8209,7 +8235,7 @@
       "fetchScript": null
     },
     {
-      "rank": 172,
+      "rank": 170,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-lite-75-frame",
@@ -8235,7 +8261,7 @@
       "fetchScript": null
     },
     {
-      "rank": 173,
+      "rank": 171,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "hglrc-sector7-lr-frame",
@@ -8261,7 +8287,7 @@
       "fetchScript": null
     },
     {
-      "rank": 174,
+      "rank": 172,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera3-frame",
@@ -8287,7 +8313,7 @@
       "fetchScript": null
     },
     {
-      "rank": 175,
+      "rank": 173,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera35-cine-frame",
@@ -8313,7 +8339,7 @@
       "fetchScript": null
     },
     {
-      "rank": 176,
+      "rank": 174,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-cidatel35-cine-frame",
@@ -8339,33 +8365,59 @@
       "fetchScript": null
     },
     {
-      "rank": 177,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "matek-h743-wing-lr-fc",
-      "partName": "Matek H743 Wing LR FC",
-      "brand": "Matek",
-      "categoryKey": "flightController",
-      "categoryLabel": "Flight controller",
-      "imagePath": "/parts/flight-controllers/matek-h743-wing-lr-fc.jpg",
+      "rank": 175,
+      "queueTier": 6,
+      "queueTierLabel": "Frames",
+      "partId": "tbs-source-one7-lr-frame",
+      "partName": "TBS Source One 7 LR Frame",
+      "brand": "TBS",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/tbs-source-one7-lr.jpg",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
         "7-inch-long-range"
       ],
       "auditPriority": 3,
-      "classification": "needs_better_official_url",
-      "classificationLabel": "Needs better official URL",
-      "classificationRank": 1,
-      "reason": "No official manufacturer product page recorded in image source files.",
-      "officialUrl": null,
+      "classification": "no_clean_packshot_found",
+      "classificationLabel": "No clean packshot found",
+      "classificationRank": 3,
+      "reason": "No TBS Source One 7 open-source repository or product page with isolated frame packshot.",
+      "officialUrl": "https://github.com/tbs-trappy/source_one",
       "preferredImageUrl": null,
-      "urlConfidence": null,
-      "sourceNotes": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No TBS Source One 7 repository or product page found; tbs-trappy/source_one is the 5-inch Source One project only.",
       "fetchScript": null
     },
     {
-      "rank": 178,
+      "rank": 176,
+      "queueTier": 6,
+      "queueTierLabel": "Frames",
+      "partId": "newbee-drone-75-pro-frame",
+      "partName": "NewBeeDrone 75 Pro Frame",
+      "brand": "NewBeeDrone",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/newbee-drone-75-pro.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://www.newbeedrone.com/products/newbeedrone-75mm-cockroach75-brushless-extreme-durable-frame",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "No NewBeeDrone Drone 75 Pro frame SKU on newbeedrone.com; closest official listing is 75mm Cockroach75 frame (different product name).",
+      "fetchScript": null
+    },
+    {
+      "rank": 177,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "aikon-65a-lr-esc",
@@ -8391,7 +8443,7 @@
       "fetchScript": null
     },
     {
-      "rank": 179,
+      "rank": 178,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "meps-konvex-55a-lr-esc",
@@ -8417,7 +8469,7 @@
       "fetchScript": null
     },
     {
-      "rank": 180,
+      "rank": 179,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-cine-esc",
@@ -8443,7 +8495,7 @@
       "fetchScript": null
     },
     {
-      "rank": 181,
+      "rank": 180,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f55-lr-esc",
@@ -8469,7 +8521,7 @@
       "fetchScript": null
     },
     {
-      "rank": 182,
+      "rank": 181,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep35a-cine-esc",
@@ -8495,7 +8547,7 @@
       "fetchScript": null
     },
     {
-      "rank": 183,
+      "rank": 182,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "hglrc-tekko32-f35-mini",
@@ -8521,7 +8573,7 @@
       "fetchScript": null
     },
     {
-      "rank": 184,
+      "rank": 183,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-succexd35-cine-esc",
@@ -8547,7 +8599,7 @@
       "fetchScript": null
     },
     {
-      "rank": 185,
+      "rank": 184,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "tmotor-f35a-mini-4in1",
@@ -8573,7 +8625,7 @@
       "fetchScript": null
     },
     {
-      "rank": 186,
+      "rank": 185,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "tmotor-pacer-f35-cine-esc",
@@ -8599,7 +8651,7 @@
       "fetchScript": null
     },
     {
-      "rank": 187,
+      "rank": 186,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f405-20x20-mini",
@@ -8625,7 +8677,7 @@
       "fetchScript": null
     },
     {
-      "rank": 188,
+      "rank": 187,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f722-cine-mini-fc",
@@ -8651,7 +8703,7 @@
       "fetchScript": null
     },
     {
-      "rank": 189,
+      "rank": 188,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "matek-f722-cine-mini-fc",
@@ -8677,7 +8729,7 @@
       "fetchScript": null
     },
     {
-      "rank": 190,
+      "rank": 189,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-brushless-1s-aio-esc",
@@ -8703,7 +8755,7 @@
       "fetchScript": null
     },
     {
-      "rank": 191,
+      "rank": 190,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-esc",
@@ -8729,7 +8781,7 @@
       "fetchScript": null
     },
     {
-      "rank": 192,
+      "rank": 191,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-h743-lr-fc",
@@ -8755,7 +8807,7 @@
       "fetchScript": null
     },
     {
-      "rank": 193,
+      "rank": 192,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep-aio-1s-fc",
@@ -8781,7 +8833,7 @@
       "fetchScript": null
     },
     {
-      "rank": 194,
+      "rank": 193,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-fc",
@@ -8807,7 +8859,7 @@
       "fetchScript": null
     },
     {
-      "rank": 195,
+      "rank": 194,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-mini-esc",
@@ -8833,7 +8885,7 @@
       "fetchScript": null
     },
     {
-      "rank": 196,
+      "rank": 195,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-f411-1s-aio-fc",
@@ -8859,7 +8911,7 @@
       "fetchScript": null
     },
     {
-      "rank": 197,
+      "rank": 196,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f745-lr-fc",
@@ -8885,7 +8937,7 @@
       "fetchScript": null
     },
     {
-      "rank": 198,
+      "rank": 197,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-beast-h743-cine-fc",
@@ -8911,7 +8963,7 @@
       "fetchScript": null
     },
     {
-      "rank": 199,
+      "rank": 198,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "iflight-beast-h743-lr-fc",
@@ -8934,6 +8986,32 @@
       "preferredImageUrl": null,
       "urlConfidence": "low",
       "sourceNotes": "No iFlight Beast H743 LR FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
+      "fetchScript": null
+    },
+    {
+      "rank": 199,
+      "queueTier": 7,
+      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
+      "partId": "matek-h743-wing-lr-fc",
+      "partName": "Matek H743 Wing LR FC",
+      "brand": "Matek",
+      "categoryKey": "flightController",
+      "categoryLabel": "Flight controller",
+      "imagePath": "/parts/flight-controllers/matek-h743-wing-lr-fc.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 3,
+      "classification": "unsafe_likely_mismatch",
+      "classificationLabel": "Unsafe — likely mismatch",
+      "classificationRank": 5,
+      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
+      "officialUrl": "https://www.mateksys.com/?portfolio=h743-wlite",
+      "preferredImageUrl": null,
+      "urlConfidence": "low",
+      "sourceNotes": "Closest Matek SKU is EOL H743-WLITE wing FC (ICM42688); catalog H743 Wing LR line specifies BMI270 — gyro mismatch.",
       "fetchScript": null
     }
   ]

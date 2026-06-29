@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–200** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–199** (`docs/IMAGE_COMPLETION_QUEUE.md`). Queue has **199** missing entries total; ranks 200+ do not exist at current coverage.
 
 ## Summary (ranks 51–75)
 
@@ -125,6 +125,9 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | `matek-f722-cine-mini-fc` | Matek F722-mini is EOL; no Cine Mini FC SKU |
 | `aikon-65a-lr-esc` | Aikon store unreachable; no verified 65A LR ESC URL |
 | `meps-konvex-55a-lr-esc` | MEPS store API returns no Konvex 55A LR product listing |
+| `newbee-drone-75-pro-frame` | No Drone 75 Pro SKU; closest is Cockroach75 frame (different name) |
+| `tbs-source-one7-lr-frame` | No Source One 7 repository; tbs-trappy/source_one is 5-inch only |
+| `matek-h743-wing-lr-fc` | Closest H743-WLITE uses ICM42688; catalog specifies BMI270 |
 
 ---
 
@@ -1493,3 +1496,50 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Catalog status** | Likely outdated/deprecated |
 | **Official URL** | https://www.mateksys.com/?portfolio=f722-mini |
 | **Notes** | Matek F722-mini portfolio is EOL spec-sheet composite only; no F722 Cine Mini FC SKU. |
+
+## Summary (ranks 151–199)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 49 |
+| Exact official packshot found | 0 |
+| Acceptable family/variant packshot found | 0 |
+| New fetchable after source update | 0 |
+| Permanent SVG placeholders (this batch) | 49 |
+
+**Note:** Requested ranks 201–250 are not present in the current queue (199 missing parts total after coverage recovery). This pass covers **current queue ranks 151–199**, which align with the former 201–249 tail after rank shifts from fetched images (`rush-nano-ultimate-whoop-vtx`, `diatone-mamba-f405-mini`).
+
+### Re-confirmed under current queue order (no new fetchable)
+
+Ranks **151–161** — motors, VTX, receiver (`brotherhobby-2004-2600kv` through `rush-nano-vtx-park`): classifications unchanged from prior passes; see entries above for `betafpv-1404-4600kv` (150) and ranks 151–162 in earlier sections (part IDs unchanged, queue ranks shifted).
+
+Ranks **164–176** — frames (`betafpv-pavo3516-frame` through `iflight-cidatel35-cine-frame`): re-confirmed; no isolated official frame-kit packshots.
+
+Ranks **178–199** — ESC/FC electronics (`aikon-65a-lr-esc` through `iflight-beast-h743-lr-fc`): source entries and rules from ranks 176–200 pass re-confirmed; no new `preferredImageUrl` candidates.
+
+## Rank 162 — `newbee-drone-75-pro-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.newbeedrone.com/products/newbeedrone-75mm-cockroach75-brushless-extreme-durable-frame |
+| **Notes** | No NewBeeDrone Drone 75 Pro frame SKU; closest official listing is 75mm Cockroach75 extreme-durable frame (isolated frame packshot exists but product name does not match catalog). |
+
+## Rank 163 — `tbs-source-one7-lr-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://github.com/tbs-trappy/source_one |
+| **Notes** | No TBS Source One 7 open-source repository (`SourceOne7` 404); official `source_one` repo is 5-inch Source One only — same limitation as Source One V5/V6 GitHub OG cards. |
+
+## Rank 177 — `matek-h743-wing-lr-fc`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.mateksys.com/?portfolio=h743-wlite |
+| **Notes** | Closest Matek SKU is EOL H743-WLITE wing FC (ICM42688, spec-sheet style gallery); catalog H743 Wing LR specifies BMI270 — gyro mismatch; do not substitute WLITE packshot. |

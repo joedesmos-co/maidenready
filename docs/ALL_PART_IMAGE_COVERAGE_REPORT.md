@@ -4,7 +4,7 @@ Developer-facing TODO for every part in `src/data/parts.js`.
 
 > No images are downloaded by this report. Add local JPGs under `public/` manually or via the preset image workflow.
 
-Generated: 2026-06-29T21:51:06.187Z
+Generated: 2026-06-29T22:38:05.404Z
 
 ## Summary
 

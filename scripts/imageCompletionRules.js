@@ -85,6 +85,8 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "geprc-f745-lr-fc",
   "iflight-beast-h743-cine-fc",
   "iflight-beast-h743-lr-fc",
+  "newbee-drone-75-pro-frame",
+  "matek-h743-wing-lr-fc",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
@@ -195,6 +197,9 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["geprc-f405-20x20-mini", "GEPRC store lists GEP-F405-HD variants only; no F405 20x20 Mini SKU."],
   ["geprc-f722-cine-mini-fc", "GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU."],
   ["matek-f722-cine-mini-fc", "Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU."],
+  ["newbee-drone-75-pro-frame", "No NewBeeDrone Drone 75 Pro frame SKU; closest is Cockroach75 frame (different product name)."],
+  ["tbs-source-one7-lr-frame", "No TBS Source One 7 open-source repository or product page with isolated frame packshot."],
+  ["matek-h743-wing-lr-fc", "Matek H743-WLITE/WING line uses ICM42688; catalog H743 Wing LR specifies BMI270 — gyro mismatch."],
 ]);
 
 export const CLASSIFICATION_LABELS = {

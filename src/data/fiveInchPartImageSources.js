@@ -2582,4 +2582,43 @@ export const fiveInchPartImageSources = [
     notes:
       "Matek F722-mini portfolio is EOL and exposes spec-sheet composites only; no Matek F722 Cine Mini FC SKU on mateksys.com.",
   },
+  {
+    partId: "newbee-drone-75-pro-frame",
+    partName: "NewBeeDrone 75 Pro Frame",
+    categoryKey: "frame",
+    category: "Frame",
+    brand: "NewBeeDrone",
+    officialUrl: "https://www.newbeedrone.com/products/newbeedrone-75mm-cockroach75-brushless-extreme-durable-frame",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/frames/newbee-drone-75-pro.jpg",
+    notes:
+      "No NewBeeDrone Drone 75 Pro frame SKU on newbeedrone.com; closest official listing is 75mm Cockroach75 frame (different product name).",
+  },
+  {
+    partId: "tbs-source-one7-lr-frame",
+    partName: "TBS Source One 7 LR Frame",
+    categoryKey: "frame",
+    category: "Frame",
+    brand: "TBS",
+    officialUrl: "https://github.com/tbs-trappy/source_one",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/frames/tbs-source-one7-lr.jpg",
+    notes:
+      "No TBS Source One 7 repository or product page found; tbs-trappy/source_one is the 5-inch Source One project only.",
+  },
+  {
+    partId: "matek-h743-wing-lr-fc",
+    partName: "Matek H743 Wing LR FC",
+    categoryKey: "flightController",
+    category: "Flight Controller",
+    brand: "Matek",
+    officialUrl: "https://www.mateksys.com/?portfolio=h743-wlite",
+    urlConfidence: "low",
+    imageStatus: "needs review",
+    expectedImagePath: "/parts/flight-controllers/matek-h743-wing-lr-fc.jpg",
+    notes:
+      "Closest Matek SKU is EOL H743-WLITE wing FC (ICM42688); catalog H743 Wing LR line specifies BMI270 — gyro mismatch.",
+  },
 ];
