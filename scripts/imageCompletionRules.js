@@ -72,6 +72,8 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "emax-eco-1404-4000kv",
   "iflight-xing-e-pro-2806-1300kv",
   "cnhl-6s-1800-lr-lipo",
+  "radiomaster-er5-915-lr",
+  "rush-nano-vtx-park",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
@@ -87,6 +89,8 @@ export const OFFICIAL_SOURCE_BLOCKED_PART_IDS = new Map([
   ["tmotor-velox-v3-1750", "T-Motor store blocks automated fetch."],
   ["tmotor-velox-v3-2207-1950kv", "T-Motor store blocks automated fetch."],
   ["akk-x2-ultimate-vtx", "AKK official store blocks automated fetch."],
+  ["akk-a3-nano-vtx-park", "AKK official store (akktek.com) blocks automated fetch."],
+  ["akk-a5-nano-vtx", "AKK official store (akktek.com) blocks automated fetch."],
   ["rush-tank-ii-vtx", "RushFPV Tank II product page unreachable from automated fetch."],
   ["gnb-4s-1500", "No exact 1500mAh official GNB/Gaoneng product page."],
   ["gn-1s-550-bt2", "GNB/Gaoneng official store blocks automated fetch; no verified 1S 550mAh BT2.0 URL."],
@@ -149,6 +153,23 @@ export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
   ["rcinpower-2203-2300kv", "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com."],
   ["rcinpower-2807-1350kv-lr", "No RCinPower 2807 1350KV LR product page on rcinpower.com."],
   ["tmotor-2807-1300kv-lr", "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com."],
+  ["akk-a3-nano-vtx-park", "AKK official store (akktek.com) blocks automated fetch; no verified A3 Nano URL."],
+  ["akk-a5-nano-vtx", "AKK official store (akktek.com) blocks automated fetch; no verified A5 Nano URL."],
+  ["hdzero-cine-nano-vtx", "No HDZero Cine Nano VTX product page on hd-zero.com shop."],
+  ["rush-mini-tank-cine-vtx", "No RushFPV Mini Tank Cine VTX product page on rushfpv.net."],
+  ["betafpv-pavo3516-frame", "No BETAFPV Pavo3516 frame or kit listing on betafpv.com."],
+  ["diatone-taycan35-frame", "Diatone store has Taycan accessories only; no 3.5-inch frame kit page."],
+  ["flywoo-explorer35-cine-frame", "No Flywoo Explorer 3.5 Cine frame kit on flywoo.net."],
+  ["flywoo-explorer35-frame", "No Flywoo Explorer 3.5 frame kit on flywoo.net."],
+  ["flywoo-explorer7-lr-frame", "No Flywoo Explorer 7 LR frame kit on flywoo.net."],
+  ["geprc-cinebee35-hd-frame", "No GEPRC CineBee35 HD isolated frame-kit page on geprc.com."],
+  ["geprc-crocodile7-lr-frame", "No GEPRC Crocodile7 LR frame product on geprc.com."],
+  ["geprc-rocket-3-5-frame", "No GEPRC Rocket 3.5 frame kit product page on geprc.com."],
+  ["geprc-rocket-lite-75-frame", "No GEPRC Rocket Lite 75 frame kit product page on geprc.com."],
+  ["hglrc-sector7-lr-frame", "No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only."],
+  ["iflight-chimera3-frame", "Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product."],
+  ["iflight-chimera35-cine-frame", "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com."],
+  ["iflight-cidatel35-cine-frame", "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com."],
 ]);
 
 export const CLASSIFICATION_LABELS = {

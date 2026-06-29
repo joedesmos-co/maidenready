@@ -2,7 +2,7 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-29T20:10:22.612Z
+Generated: 2026-06-29T20:47:10.841Z
 
 ## Baseline coverage
 
@@ -17,14 +17,14 @@ Generated: 2026-06-29T20:10:22.612Z
 
 | Classification | Count |
 | --- | ---: |
-| Fetchable now | 0 |
-| Needs better official URL | 92 |
-| Official source blocked | 21 |
-| No clean packshot found | 37 |
+| Fetchable now | 1 |
+| Needs better official URL | 72 |
+| Official source blocked | 23 |
+| No clean packshot found | 52 |
 | Should remain SVG placeholder | 24 |
-| Unsafe — likely mismatch | 27 |
+| Unsafe — likely mismatch | 29 |
 
-**Should remain SVG placeholder (incl. unsafe / no packshot):** 88
+**Should remain SVG placeholder (incl. unsafe / no packshot):** 105
 
 ## Queue tiers
 
@@ -40,7 +40,9 @@ Generated: 2026-06-29T20:10:22.612Z
 
 ## Fetchable now
 
-_None at generation time._
+- **Rush Nano Ultimate Whoop VTX** (`rush-nano-ultimate-whoop-vtx`) — /parts/vtx/rush-nano-ultimate-whoop.jpg
+  - URL: https://rushfpv.net/cdn/shop/products/d60a4673-2782-4af7-9ac9-383088cf5367_1200x1200.jpg
+  - Script: `images:fetch-receiver-vtx`
 
 ## Top 20 manual research targets
 
@@ -1952,247 +1954,91 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 156. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
+### 156. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Receiver (`receiver`)
+- **Classification:** Fetchable now (`fetchable_now`)
+- **Category:** VTX (`vtx`)
 - **Preset part:** no
-- **Image path:** `public/parts/receivers/radiomaster-er5-915-lr.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **Image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
+- **Official URL:** https://rushfpv.net/products/tank-ultimate-mini-vtx
+- **Preferred image URL:** https://rushfpv.net/cdn/shop/products/d60a4673-2782-4af7-9ac9-383088cf5367_1200x1200.jpg
+- **URL confidence:** high
+- **Reason:** Verified manufacturer preferredImageUrl with high URL confidence.
 
 ### 157. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Classification:** Official source blocked (`official_source_blocked`)
 - **Category:** VTX (`vtx`)
 - **Preset part:** no
 - **Image path:** `public/parts/vtx/akk-a3-nano-vtx-park.jpg`
-- **Official URL:** —
+- **Official URL:** https://www.akktek.com/
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
 ### 158. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Classification:** Official source blocked (`official_source_blocked`)
 - **Category:** VTX (`vtx`)
 - **Preset part:** no
 - **Image path:** `public/parts/vtx/akk-a5-nano-vtx.jpg`
-- **Official URL:** —
+- **Official URL:** https://www.akktek.com/
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
 ### 159. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
 - **Category:** VTX (`vtx`)
 - **Preset part:** no
 - **Image path:** `public/parts/vtx/hdzero-cine-nano-vtx.jpg`
-- **Official URL:** —
+- **Official URL:** https://www.hd-zero.com/shop
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** No HDZero Cine Nano VTX product page on hd-zero.com shop.
 
 ### 160. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
 - **Category:** VTX (`vtx`)
 - **Preset part:** no
 - **Image path:** `public/parts/vtx/rush-mini-tank-cine-vtx.jpg`
-- **Official URL:** —
+- **Official URL:** https://rushfpv.net/collections/vtx
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** No RushFPV Mini Tank Cine VTX product page on rushfpv.net.
 
-### 161. Rush Nano Ultimate Whoop VTX (`rush-nano-ultimate-whoop-vtx`)
+### 161. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** VTX (`vtx`)
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
+- **Category:** Receiver (`receiver`)
 - **Preset part:** no
-- **Image path:** `public/parts/vtx/rush-nano-ultimate-whoop.jpg`
-- **Official URL:** —
+- **Image path:** `public/parts/receivers/radiomaster-er5-915-lr.jpg`
+- **Official URL:** https://www.radiomasterrc.com/products/bandit-br1-expresslrs-receiver
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
 ### 162. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
-- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
 - **Category:** VTX (`vtx`)
 - **Preset part:** no
 - **Image path:** `public/parts/vtx/rush-nano-vtx-park.jpg`
-- **Official URL:** —
+- **Official URL:** https://rushfpv.net/products/tank-tiny-vtx
 - **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
+- **URL confidence:** low
+- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 163. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/betafpv-pavo3516.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 164. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/diatone-taycan35.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 165. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/flywoo-explorer35-cine.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 166. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/flywoo-explorer35.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 167. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/flywoo-explorer7-lr.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 168. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-cinebee35-hd.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 169. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-crocodile7-lr.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 170. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-rocket-3-5.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 171. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-rocket-lite-75.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 172. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/hglrc-sector7-lr.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 173. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/iflight-chimera3.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 174. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/iflight-chimera35-cine.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 175. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** Needs better official URL (`needs_better_official_url`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/iflight-cidatel35-cine.jpg`
-- **Official URL:** —
-- **Preferred image URL:** —
-- **URL confidence:** —
-- **Reason:** No official manufacturer product page recorded in image source files.
-
-### 176. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
+### 163. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -2204,7 +2050,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 177. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
+### 164. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -2215,6 +2061,162 @@ _High-value missing parts that need a better official direct packshot URL._
 - **Preferred image URL:** —
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
+
+### 165. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/betafpv-pavo3516.jpg`
+- **Official URL:** https://betafpv.com/collections/frames
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No BETAFPV Pavo3516 frame or kit listing on betafpv.com.
+
+### 166. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/diatone-taycan35.jpg`
+- **Official URL:** https://www.diatone.us/products/diatone-mxc-taycan-fpv-accessories
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Diatone store has Taycan accessories only; no 3.5-inch frame kit page.
+
+### 167. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/flywoo-explorer35-cine.jpg`
+- **Official URL:** https://flywoo.net/collections/frames
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.
+
+### 168. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/flywoo-explorer35.jpg`
+- **Official URL:** https://flywoo.net/collections/frames
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No Flywoo Explorer 3.5 frame kit on flywoo.net.
+
+### 169. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/flywoo-explorer7-lr.jpg`
+- **Official URL:** https://flywoo.net/collections/frames
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No Flywoo Explorer 7 LR frame kit on flywoo.net.
+
+### 170. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/geprc-cinebee35-hd.jpg`
+- **Official URL:** https://geprc.com/product-category/frame-kit/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.
+
+### 171. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/geprc-crocodile7-lr.jpg`
+- **Official URL:** https://geprc.com/product-category/frame-kit/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No GEPRC Crocodile7 LR frame product on geprc.com.
+
+### 172. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/geprc-rocket-3-5.jpg`
+- **Official URL:** https://geprc.com/product-category/frame-kit/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No GEPRC Rocket 3.5 frame kit product page on geprc.com.
+
+### 173. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/geprc-rocket-lite-75.jpg`
+- **Official URL:** https://geprc.com/product-category/frame-kit/
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No GEPRC Rocket Lite 75 frame kit product page on geprc.com.
+
+### 174. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/hglrc-sector7-lr.jpg`
+- **Official URL:** https://www.hglrc.com/collections/frames
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only.
+
+### 175. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/iflight-chimera3.jpg`
+- **Official URL:** https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product.
+
+### 176. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/iflight-chimera35-cine.jpg`
+- **Official URL:** https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.
+
+### 177. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** No clean packshot found (`no_clean_packshot_found`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/iflight-cidatel35-cine.jpg`
+- **Official URL:** https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346
+- **Preferred image URL:** —
+- **URL confidence:** low
+- **Reason:** Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.
 
 ### 178. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
 

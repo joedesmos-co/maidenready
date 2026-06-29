@@ -4,7 +4,7 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–150** (`docs/IMAGE_COMPLETION_QUEUE.md`).
+**Last updated:** 2026-06-29 — queue ranks **51–175** (`docs/IMAGE_COMPLETION_QUEUE.md`).
 
 ## Summary (ranks 51–75)
 
@@ -43,6 +43,16 @@ Structured research log for image-completion queue parts where official packshot
 | Acceptable family/variant packshot found | 0 |
 | New fetchable after source update | 0 |
 | Permanent SVG placeholders (this batch) | 25 |
+
+## Summary (ranks 151–175)
+
+| Metric | Count |
+| --- | ---: |
+| Parts researched | 25 |
+| Exact official packshot found | 0 |
+| Acceptable family/variant packshot found | 1 |
+| New fetchable after source update | 1 (`rush-nano-ultimate-whoop-vtx`) |
+| Permanent SVG placeholders (this batch) | 24 |
 
 ## Catalog review candidates
 
@@ -84,6 +94,16 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | `rcinpower-2203-2300kv`, `rcinpower-2807-1350kv-lr` | No matching RCinPower G-SERIES product pages |
 | `tmotor-2807-1300kv-lr` | No T-Motor FPV 2807 LR listing on store.tmotor.com |
 | `axisflying-2808-1150kv-lr` | No AxisFlying 2808 product page on axisflying.com |
+| `radiomaster-er5-915-lr` | Radiomaster ER5 is 2.4GHz ELRS PWM only; no ER5 915 SKU — closest 915MHz ELRS is Bandit BR1 |
+| `hdzero-cine-nano-vtx` | No Cine Nano VTX product page on hd-zero.com shop |
+| `rush-mini-tank-cine-vtx` | No RushFPV Mini Tank Cine listing on rushfpv.net |
+| `rush-nano-vtx-park` | Closest Tank Tiny VTX is 800mW max; catalog Nano VTX Park specifies 400mW |
+| `betafpv-pavo3516-frame` | No Pavo3516 frame or kit on betafpv.com |
+| `flywoo-explorer35-frame`, `flywoo-explorer35-cine-frame`, `flywoo-explorer7-lr-frame` | No Explorer 3.5/7 LR frame-kit pages on flywoo.net |
+| `geprc-cinebee35-hd-frame`, `geprc-crocodile7-lr-frame`, `geprc-rocket-3-5-frame`, `geprc-rocket-lite-75-frame` | No matching GEPRC isolated frame-kit product pages |
+| `hglrc-sector7-lr-frame` | No Sector7 LR frame; HGLRC Sector D5/X5 are 5-inch only |
+| `iflight-chimera3-frame`, `iflight-chimera35-cine-frame`, `iflight-cidatel35-cine-frame` | Legacy iFlight 3.5-inch frame-kit URLs 404; Chimera7 kits are different product line |
+| `diatone-taycan35-frame` | Diatone store has MXC Taycan accessories only, not a 3.5-inch frame kit |
 
 ---
 
@@ -1000,3 +1020,229 @@ Parts that may need replacement, rename, or removal in a future catalog cleanup 
 | **Catalog status** | Possible wrong catalog entry |
 | **Official URL** | https://betafpv.com/products/1404-4500kv-brushless-motors |
 | **Notes** | Closest official BETAFPV 1404 listing is 4500KV; packshot bell reads 4500KV, not catalog 4600KV. Re-confirmed in shifted queue. |
+
+## Rank 151 — `brotherhobby-2004-2600kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.brotherhobby.com/goods-107.html |
+| **Notes** | Legacy BrotherHobby 2004 URL serves Avenger 0804 content. Re-confirmed in shifted queue. |
+
+## Rank 152 — `brotherhobby-2806-1400kv-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.brotherhobby.com/goods-107.html |
+| **Notes** | Official Avenger 2806.5 page packshot shows 1300KV, not catalog 2806 1400KV LR. Re-confirmed. |
+
+## Rank 153 — `emax-e1106-7200kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://emaxmodel.com/collections/1106-motors |
+| **Notes** | E1106 page lists 7200KV but manufacturer packshot bell reads 7500KV. Re-confirmed. |
+
+## Rank 154 — `emax-eco-1404-4000kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://emaxmodel.com/products/emax-eco-micro-series-1404-3700kv-brushless-motor |
+| **Notes** | Official EMAX ECO Micro 1404 is 3700KV only; no 4000KV SKU on manufacturer store. Re-confirmed. |
+
+## Rank 155 — `iflight-xing-e-pro-2806-1300kv`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://shop.iflight.com/xing-2806-5-cinelifter-motor |
+| **Notes** | Closest official SKU is XING 2806.5 Cinelifter; OSS asset labeled 1300KV shows 1500KV on bell. Re-confirmed. |
+
+## Rank 156 — `radiomaster-er5-915-lr`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.radiomasterrc.com/products/bandit-br1-expresslrs-receiver |
+| **Notes** | No Radiomaster ER5 915 SKU; ER5A/ER5C are 2.4GHz ELRS PWM. Closest 915MHz ELRS is Bandit BR1 — do not use BR1 packshot for ER5 catalog ID. |
+
+## Rank 157 — `akk-a3-nano-vtx-park`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.akktek.com/ |
+| **Notes** | AKK official store (akktek.com) returns HTTP 403 to automated fetch; A3 Nano VTX product URLs blocked. |
+
+## Rank 158 — `akk-a5-nano-vtx`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official source blocked |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://www.akktek.com/ |
+| **Notes** | AKK official store (akktek.com) returns HTTP 403 to automated fetch; A5 Nano VTX product URLs blocked. |
+
+## Rank 159 — `hdzero-cine-nano-vtx`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://www.hd-zero.com/shop |
+| **Notes** | No HDZero Cine Nano VTX product page on hd-zero.com; shop lists Whoop Lite V2, Freestyle V2, and Race V3 lines instead. |
+
+## Rank 160 — `rush-mini-tank-cine-vtx`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://rushfpv.net/collections/vtx |
+| **Notes** | No RushFPV Mini Tank Cine VTX product listing on rushfpv.net; Tank Solo/Tiny/Ultimate Mini/III Ultimate/Race II lines only. |
+
+## Rank 161 — `rush-nano-ultimate-whoop-vtx`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Acceptable family/variant official packshot found |
+| **Catalog status** | Current valid SKU |
+| **Official URL** | https://rushfpv.net/products/tank-ultimate-mini-vtx |
+| **Preferred image URL** | https://rushfpv.net/cdn/shop/products/d60a4673-2782-4af7-9ac9-383088cf5367_1200x1200.jpg |
+| **Notes** | Official RushFPV Tank Ultimate Mini VTX page; 25–500mW spec matches catalog. Catalog "Nano Ultimate Whoop" naming maps to Tank Ultimate Mini family line. |
+
+## Rank 162 — `rush-nano-vtx-park`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Mismatch risk |
+| **Catalog status** | Should consider replacement/removal later |
+| **Official URL** | https://rushfpv.net/products/tank-tiny-vtx |
+| **Notes** | Closest official listing is Tank Tiny VTX (800mW max); catalog Nano VTX Park specifies 25–400mW — power rating mismatch. |
+
+## Rank 163 — `betafpv-pavo3516-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://betafpv.com/collections/frames |
+| **Notes** | No BETAFPV Pavo3516 frame or frame-kit product page; Pavo20/Pico/Femto whoops only. |
+
+## Rank 164 — `diatone-taycan35-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Discontinued but still common |
+| **Official URL** | https://www.diatone.us/products/diatone-mxc-taycan-fpv-accessories |
+| **Notes** | Diatone MXC Taycan accessories page only; no isolated 3.5-inch Taycan frame-kit listing. |
+
+## Rank 165 — `flywoo-explorer35-cine-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://flywoo.net/collections/frames |
+| **Notes** | No Flywoo Explorer 3.5 Cine frame-kit product page on flywoo.net. |
+
+## Rank 166 — `flywoo-explorer35-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://flywoo.net/collections/frames |
+| **Notes** | No Flywoo Explorer 3.5 frame-kit product page on flywoo.net. |
+
+## Rank 167 — `flywoo-explorer7-lr-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Should remain SVG placeholder |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://flywoo.net/collections/frames |
+| **Notes** | No Explorer 7 LR frame-kit; Explorer LR4 listings are complete aircraft, not isolated frame kits. |
+
+## Rank 168 — `geprc-cinebee35-hd-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product-category/frame-kit/ |
+| **Notes** | No GEPRC CineBee35 HD isolated frame-kit product page on geprc.com. |
+
+## Rank 169 — `geprc-crocodile7-lr-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product-category/frame-kit/ |
+| **Notes** | No GEPRC Crocodile7 LR frame product; Crocodile Baby 4 micro-LR drones only (wrong size). |
+
+## Rank 170 — `geprc-rocket-3-5-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product-category/frame-kit/ |
+| **Notes** | No GEPRC Rocket 3.5 frame-kit product page on geprc.com. |
+
+## Rank 171 — `geprc-rocket-lite-75-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://geprc.com/product-category/frame-kit/ |
+| **Notes** | No GEPRC Rocket Lite 75 frame-kit product page on geprc.com. |
+
+## Rank 172 — `hglrc-sector7-lr-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Possible wrong catalog entry |
+| **Official URL** | https://www.hglrc.com/collections/frames |
+| **Notes** | No HGLRC Sector7 LR frame; Sector D5/X5 are 5-inch freestyle frames, not 7-inch LR. |
+
+## Rank 173 — `iflight-chimera3-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
+| **Notes** | Legacy iFlight Chimera3 3.5-inch frame-kit URL 404; current frame category lists Chimera7 kits only. |
+
+## Rank 174 — `iflight-chimera35-cine-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
+| **Notes** | Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com. |
+
+## Rank 175 — `iflight-cidatel35-cine-frame`
+
+| Field | Value |
+| --- | --- |
+| **Image status** | Official page found but no usable packshot |
+| **Catalog status** | Likely outdated/deprecated |
+| **Official URL** | https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346 |
+| **Notes** | Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com. |
