@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-29T14:26:48.404Z",
+  "generatedAt": "2026-06-29T19:01:42.195Z",
   "summary": {
     "total": 294,
-    "found": 86,
-    "missing": 208,
+    "found": 88,
+    "missing": 206,
     "presetPartTotal": 48,
     "presetPartFound": 38,
     "presetPartMissing": 10,
     "missingByPriority": {
       "1": 10,
-      "2": 82,
+      "2": 80,
       "3": 116
     }
   },
@@ -32,25 +32,6 @@
         "compatibleClasses": [
           "5-inch-freestyle",
           "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "skystars-km55a-4in1",
-        "partName": "Skystars KM55A 4-in-1",
-        "categoryKey": "esc",
-        "imagePath": "/parts/escs/skystars-km55a-4in1.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "7-long-range-explorer",
-            "presetName": "7\" Long Range Explorer",
-            "buildClass": "7-inch-long-range",
-            "categoryKey": "esc"
-          }
-        ],
-        "compatibleClasses": [
-          "7-inch-long-range"
         ],
         "priority": 1
       },
@@ -217,6 +198,26 @@
         ],
         "compatibleClasses": [
           "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "foxeer-reaper-nano-v2-vtx",
+        "partName": "Foxeer Reaper Nano V2 VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "vtx"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "3.5-inch-freestyle"
         ],
         "priority": 1
       }
@@ -681,18 +682,6 @@
         "priority": 2
       },
       {
-        "partId": "matek-f405-se-fc",
-        "partName": "Matek F405-SE FC",
-        "categoryKey": "flightController",
-        "imagePath": "/parts/flight-controllers/matek-f405-se-fc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
         "partId": "matek-f722-mini",
         "partName": "Matek F722 Mini",
         "categoryKey": "flightController",
@@ -1131,18 +1120,6 @@
         "partName": "HQProp Ethix S3 5x5x3",
         "categoryKey": "props",
         "imagePath": "/parts/props/ethix-s3-5050.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "priority": 2
-      },
-      {
-        "partId": "gemfan-51433",
-        "partName": "Gemfan Hurricane 51433",
-        "categoryKey": "props",
-        "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2651,7 +2628,6 @@
       "tattu-rline-4s-650"
     ],
     "esc": [
-      "skystars-km55a-4in1",
       "speedybee-bl32-50a",
       "speedybee-bls-35a-4in1",
       "aikon-ak32-50a-4in1",
@@ -2692,7 +2668,6 @@
       "hglrc-f722-silver-fc",
       "iflight-beast-f722-fc",
       "jhemcu-g743-pro-fc",
-      "matek-f405-se-fc",
       "matek-f722-mini",
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
@@ -2787,6 +2762,17 @@
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
     ],
+    "vtx": [
+      "foxeer-reaper-nano-v2-vtx",
+      "akk-x2-ultimate-vtx",
+      "rush-tank-ii-vtx",
+      "akk-a3-nano-vtx-park",
+      "akk-a5-nano-vtx",
+      "hdzero-cine-nano-vtx",
+      "rush-mini-tank-cine-vtx",
+      "rush-nano-ultimate-whoop-vtx",
+      "rush-nano-vtx-park"
+    ],
     "camera": [
       "foxeer-falkor-2",
       "foxeer-predator-v5",
@@ -2804,7 +2790,6 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
-      "gemfan-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
       "apc-7x4-2-lr",
@@ -2834,16 +2819,6 @@
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "radiomaster-er5-915-lr"
-    ],
-    "vtx": [
-      "akk-x2-ultimate-vtx",
-      "rush-tank-ii-vtx",
-      "akk-a3-nano-vtx-park",
-      "akk-a5-nano-vtx",
-      "hdzero-cine-nano-vtx",
-      "rush-mini-tank-cine-vtx",
-      "rush-nano-ultimate-whoop-vtx",
-      "rush-nano-vtx-park"
     ]
   },
   "missingByBuildClass": {
@@ -2889,7 +2864,6 @@
       "hglrc-f722-silver-fc",
       "iflight-beast-f722-fc",
       "jhemcu-g743-pro-fc",
-      "matek-f405-se-fc",
       "matek-f722-mini",
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
@@ -2927,7 +2901,6 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
-      "gemfan-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
       "imm-rc-fusion-v2-elrs",
@@ -2978,8 +2951,47 @@
       "hdzero-cine-nano-vtx",
       "rush-mini-tank-cine-vtx"
     ],
+    "3.5-inch-freestyle": [
+      "speedybee-bls-35a-4in1",
+      "speedybee-f405-mini",
+      "foxeer-reaper-nano-v2-vtx",
+      "lumenier-6s-1100",
+      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "aikon-f7-mini-35a",
+      "axisflying-h743-mini",
+      "matek-f722-mini",
+      "cnhl-ministar-4s-900",
+      "gnb-4s-1100-park",
+      "gnb-4s-750-mini",
+      "tattu-rline-4s-650",
+      "diatone-mamba-f35-mini-esc",
+      "hglrc-tekko32-f35-mini",
+      "tmotor-f35a-mini-4in1",
+      "diatone-mamba-f405-mini",
+      "geprc-f405-20x20-mini",
+      "betafpv-pavo3516-frame",
+      "diatone-taycan35-frame",
+      "flywoo-explorer35-frame",
+      "geprc-rocket-3-5-frame",
+      "iflight-chimera3-frame",
+      "betafpv-1404-4600kv",
+      "brotherhobby-1507-3700kv",
+      "emax-eco-1404-4000kv",
+      "iflight-xing2-1404-4600kv",
+      "iflight-xing2-1507-4600kv",
+      "rcinpower-1404-3800kv",
+      "tmotor-f1404-3800kv",
+      "avan-rush-3528",
+      "dal-prop-3530-cyclone",
+      "gemfan-3522-hurricane",
+      "gemfan-3528-freestyle",
+      "hqprop-3525-pc",
+      "hqprop-3535-pc",
+      "akk-a3-nano-vtx-park",
+      "rush-nano-vtx-park"
+    ],
     "7-inch-long-range": [
-      "skystars-km55a-4in1",
       "rekon7-pro-lr",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
@@ -3018,46 +3030,8 @@
       "hqprop-7035-2-lr",
       "radiomaster-er5-915-lr"
     ],
-    "3.5-inch-freestyle": [
-      "speedybee-bls-35a-4in1",
-      "speedybee-f405-mini",
-      "lumenier-6s-1100",
-      "foxeer-toothless-2",
-      "hdzero-nano-90",
-      "aikon-f7-mini-35a",
-      "axisflying-h743-mini",
-      "matek-f722-mini",
-      "cnhl-ministar-4s-900",
-      "gnb-4s-1100-park",
-      "gnb-4s-750-mini",
-      "tattu-rline-4s-650",
-      "diatone-mamba-f35-mini-esc",
-      "hglrc-tekko32-f35-mini",
-      "tmotor-f35a-mini-4in1",
-      "diatone-mamba-f405-mini",
-      "geprc-f405-20x20-mini",
-      "betafpv-pavo3516-frame",
-      "diatone-taycan35-frame",
-      "flywoo-explorer35-frame",
-      "geprc-rocket-3-5-frame",
-      "iflight-chimera3-frame",
-      "betafpv-1404-4600kv",
-      "brotherhobby-1507-3700kv",
-      "emax-eco-1404-4000kv",
-      "iflight-xing2-1404-4600kv",
-      "iflight-xing2-1507-4600kv",
-      "rcinpower-1404-3800kv",
-      "tmotor-f1404-3800kv",
-      "avan-rush-3528",
-      "dal-prop-3530-cyclone",
-      "gemfan-3522-hurricane",
-      "gemfan-3528-freestyle",
-      "hqprop-3525-pc",
-      "hqprop-3535-pc",
-      "akk-a3-nano-vtx-park",
-      "rush-nano-vtx-park"
-    ],
     "tiny-whoop": [
+      "foxeer-reaper-nano-v2-vtx",
       "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
       "gn-1s-550-bt2",
@@ -3351,7 +3325,7 @@
       "partName": "Skystars KM55A 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/skystars-km55a-4in1.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4051,7 +4025,7 @@
       "partName": "Foxeer Reaper Nano V2 VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4757,7 +4731,7 @@
       "partName": "Matek F405-SE FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/matek-f405-se-fc.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5422,7 +5396,7 @@
       "partName": "Gemfan Hurricane 51433",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

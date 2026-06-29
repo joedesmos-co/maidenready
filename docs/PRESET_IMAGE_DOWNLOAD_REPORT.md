@@ -5,15 +5,15 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-29T14:25:10.633Z
+Last updated: 2026-06-29T19:01:41.539Z
 
-Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); **37** retained for review.
+Last local cleanup: 2026-06-29T19:01:41.539Z — removed 0 unsure local JPG(s); **38** retained for review.
 
 ## Summary
 
-- Downloaded local JPG candidates: **37**
+- Downloaded local JPG candidates: **38**
 - Rejected / not saved candidates: **83**
-- Recommendation counts: **37 keep for review**, **0 unsure**, **83 remove**
+- Recommendation counts: **38 keep for review**, **0 unsure**, **83 remove**
 
 ## Rules applied
 
@@ -504,7 +504,22 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only).
 
-### 33. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
+### 33. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
+- **Exact image URL downloaded:** http://www.skystars-rc.com/wp-content/uploads/2022/10/AM32-KM55-4IN1-ESC-1.jpg
+- **Local file path:** public/parts/escs/skystars-km55a-4in1.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official Skystars AM32 KM55A 4-in-1 ESC product page; wp-content gallery image is an isolated 1000×1000 ESC packshot labeled KM55A / 3-6S AM_32 on the red heatsink. Local JPG present; re-evaluating recommendation before retention.
+
+### 34. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-450mah-3.8v-high-voltage-75c-1s1p-lipo-battery-pack-with-bt-2.0-plug-5pcs/
@@ -519,7 +534,7 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu/Grepow 1S 450mAh HV BT2.0 page.
 
-### 34. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
+### 35. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug.html
@@ -534,7 +549,7 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 4S 850mAh page.
 
-### 35. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
+### 36. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-2200mah-6s-95c-22-2v-r-line-lipo-battery-with-xt60-plug-for-7-quad/
@@ -549,7 +564,7 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Replaced Molicel custom Li-ion pack; official Tattu R-Line 6S 2200mAh for 7-inch page.
 
-### 36. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
+### 37. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_nano_rx
@@ -564,7 +579,7 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Crossfire Nano RX store page.
 
-### 37. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
+### 38. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_hv
@@ -1179,7 +1194,7 @@ Last local cleanup: 2026-06-29T14:25:10.633Z — removed 1 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU.
+- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU.
 
 ### 41. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
 

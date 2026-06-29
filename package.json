@@ -23,6 +23,9 @@
     "images:report-receiver-vtx": "node scripts/receiverVtxImageDownloadReport.js",
     "images:report-frames": "node scripts/frameImageDownloadReport.js",
     "images:report-electronics": "node scripts/electronicsImageDownloadReport.js",
+    "images:completion-queue": "node scripts/generateImageCompletionQueue.js",
+    "images:fetch-completion-queue": "node scripts/fetchCompletionQueue.js",
+    "images:completion-pipeline": "node scripts/runImageCompletionPipeline.js",
     "images:folders": "node scripts/createImageFolders.js",
     "validate:stats": "node scripts/validatePresetStats.js"
   },

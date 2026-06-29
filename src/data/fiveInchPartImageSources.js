@@ -824,10 +824,13 @@ export const fiveInchPartImageSources = [
     category: "Flight Controller",
     brand: "Matek",
     officialUrl: "https://www.mateksys.com/?portfolio=f405-se",
+    preferredImageUrl:
+      "https://www.mateksys.com/wp-content/uploads/2020/07/F405-SE_2.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/flight-controllers/matek-f405-se-fc.jpg",
-    notes: "Official Matek F405-SE flight controller portfolio page.",
+    notes:
+      "Official Matek F405-SE portfolio page; wp-content gallery photo is an isolated top/bottom F405-SE FC packshot on white (STM32F405 + AT7456E silkscreen visible).",
   },
   {
     partId: "matek-f722-mini",
@@ -956,6 +959,8 @@ export const fiveInchPartImageSources = [
     category: "Props",
     brand: "Gemfan",
     officialUrl: "https://www.gemfanhobby.com/51433-hurricane-pc-3-blade.html",
+    preferredImageUrl:
+      "https://img03.71360.com/w3/5p3560/20251211/c12899f7cea9f3ff2a63ddebb57e7656.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/props/gemfan-hurricane-51433.jpg",
@@ -1081,11 +1086,12 @@ export const fiveInchPartImageSources = [
     categoryKey: "battery",
     category: "Battery",
     brand: "CNHL",
-    officialUrl: "https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1500mah-14-8v-4s-130c-lipo-battery-with-xt60-plug",
+    officialUrl: "https://chinahobbyline.com/products/cnhl-black-series-1500mah-14-8v-4s-100c-lipo-battery-with-xt60-plug",
     urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/batteries/cnhl-4s-1500-freestyle.jpg",
-    notes: "Official CNHL 4S 1500mAh Black Series page; manufacturer lists 130C variant (100C not currently listed).",
+    notes:
+      "Official CNHL store redirects single 1500mAh 100C URL to a 2-pack 130C listing; gallery image shows X2 bundle graphic and 130C label — no verified single-pack 100C packshot.",
   },
   {
     partId: "cnhl-6s-1500-freestyle",
@@ -1394,10 +1400,13 @@ export const fiveInchPartImageSources = [
     category: "Camera",
     brand: "HDZero",
     officialUrl: "https://www.hd-zero.com/product-page/hdzero-nano-90-v2",
+    preferredImageUrl:
+      "https://static.wixstatic.com/media/967e02_0728e46bd18842b6b0523962ec7841f4~mv2.png/v1/fill/w_1000,h_1000,al_c,usm_0.66_1.00_0.01/967e02_0728e46bd18842b6b0523962ec7841f4~mv2.png",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/cameras/hdzero-nano-90.jpg",
-    notes: "Official HDZero Nano 90 V2 camera page; supersedes original Nano 90.",
+    notes:
+      "Official HDZero Nano 90 V2 product page; Wix gallery image is an isolated RunCam HDZero Nano 90 camera packshot on black (HDZERO / Nano 90 silkscreen on backplate).",
   },
   {
     partId: "runcam-nano-2",

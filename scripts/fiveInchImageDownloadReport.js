@@ -654,7 +654,6 @@ const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
   "foxeer-reaper-f4-65a",
   "foxeer-toothless-2",
   "geprc-mark4-frame",
-  "hdzero-nano-90",
   "hypetrain-blaster-2450",
   "lumenier-qav-s-johnnyfpv",
   "gemfan-hurricane-mck-51433",
@@ -720,10 +719,6 @@ const MANUAL_REJECTION_NOTES = new Map([
   [
     "hypetrain-blaster-2450",
     "Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor.",
-  ],
-  [
-    "hdzero-nano-90",
-    "Rejected after manual review: manufacturer logo graphic only, not the HDZero Nano 90 camera product.",
   ],
   [
     "hqprop-5x4-5x3-v1s",

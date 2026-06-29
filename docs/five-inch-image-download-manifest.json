@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T14:26:25.458Z",
+  "updatedAt": "2026-06-29T19:01:41.752Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -2045,8 +2045,8 @@
       "appearance": "product photo",
       "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
       "imageNeedsReview": true,
-      "recommendation": "remove",
-      "status": "removed_local",
+      "recommendation": "keep for review",
+      "status": "downloaded",
       "notes": "Official Matek F405-SE flight controller portfolio page. Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot. Local JPG missing on disk during report sync."
     },
     {
@@ -3027,8 +3027,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T14:26:25.458Z",
+    "date": "2026-06-29T19:01:41.752Z",
     "removedPartIds": [],
-    "retainedDownloadedCount": 43
+    "retainedDownloadedCount": 45
   }
 }

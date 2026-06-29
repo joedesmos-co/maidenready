@@ -5,13 +5,13 @@ Developer-only review log for **receiver and VTX** manufacturer-source image **c
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T14:26:14.172Z
+Last updated: 2026-06-29T19:01:41.979Z
 
-Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** retained.
+Last local cleanup: 2026-06-29T19:01:41.979Z — removed **0** JPG(s); **22** retained.
 
 ## Summary
 
-- Downloaded local JPG candidates: **22**
+- Downloaded local JPG candidates: **21**
 - Rejected / skipped / failed: **29**
 
 ## Downloaded candidates (local JPG on disk)
@@ -49,18 +49,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official DJI store O3 Air Unit kit page. Converted official PNG source to local JPG (dev script only).
-### 4. Foxeer Reaper Nano V2 VTX (`foxeer-reaper-nano-v2-vtx`)
-- **Category:** VTX
-- **Manufacturer/source page URL:** https://www.foxeer.com/foxeer-reaper-nano-v2-vtx-5-8g-72ch-350mw-tramp-g-583
-- **Exact image URL downloaded:** https://inew.foxeer.com//upload/s/goods/2024-12-13/15-48-28-675be6ccb8c74.images.800x800.png
-- **Local file path:** public/parts/vtx/foxeer-reaper-nano-v2-vtx.jpg
-- **Status:** downloaded
-- **Confidence:** high
-- **imageNeedsReview:** true
-- **imageLicense:** No verified license on file
-- **Recommendation:** keep for review
-- **Notes:** Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only).
-### 5. FrSky R-XSR (`frsky-r-xsr`)
+### 4. FrSky R-XSR (`frsky-r-xsr`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.frsky-rc.com/product/r-xsr/
 - **Exact image URL downloaded:** https://www.frsky-rc.com/wp-content/uploads/2018/05/R-XSR-Rx.jpg
@@ -71,7 +60,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official FrSky R-XSR receiver page.
-### 6. FrSky XSR SBUS (`frsky-xsr-sbus`)
+### 5. FrSky XSR SBUS (`frsky-xsr-sbus`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.frsky-rc.com/product/xsr/
 - **Exact image URL downloaded:** https://www.frsky-rc.com/wp-content/uploads/2017/05/%E5%8E%8B%E7%BC%A9%E7%89%88XSR.jpg
@@ -82,7 +71,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official FrSky XSR SBUS receiver page.
-### 7. Happymodel EP2 Cine ELRS (`happymodel-cine-ep2-elrs`)
+### 6. Happymodel EP2 Cine ELRS (`happymodel-cine-ep2-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg
@@ -94,7 +83,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP2 Cine shares manufacturer product photo. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 8. Happymodel EP1 Dual ELRS (`happymodel-ep1-dual-elrs`)
+### 7. Happymodel EP1 Dual ELRS (`happymodel-ep1-dual-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg
@@ -106,7 +95,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 9. Happymodel EP2 2.4GHz ELRS (`happymodel-ep2-5inch-elrs`)
+### 8. Happymodel EP2 2.4GHz ELRS (`happymodel-ep2-5inch-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg
@@ -118,7 +107,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official Happymodel EP2 2.4GHz ELRS receiver page. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 10. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
+### 9. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2022/11/5.jpg
@@ -130,7 +119,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official Happymodel EP2 ELRS receiver product page. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 11. HDZero Freestyle VTX (`hdzero-freestyle-vtx`)
+### 10. HDZero Freestyle VTX (`hdzero-freestyle-vtx`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/freestyle-v2-vtx
 - **Exact image URL downloaded:** https://static.wixstatic.com/media/967e02_09f09568327c4fb69c875cc0042046fd~mv2.png/v1/fit/w_500,h_500,q_90/file.png
@@ -142,7 +131,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official HDZero Freestyle V2 VTX page; catalog Freestyle VTX maps to current V2 listing. Official manufacturer image represents this product family; catalog variant shares the same PCB/render. Converted official PNG source to local JPG (dev script only).
-### 12. HDZero Race VTX (`hdzero-race-vtx`)
+### 11. HDZero Race VTX (`hdzero-race-vtx`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/hdzero-race-v3-vtx
 - **Exact image URL downloaded:** https://static.wixstatic.com/media/967e02_db5e7888e2be46118233015691feb26b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
@@ -154,7 +143,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 13. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+### 12. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
 - **Exact image URL downloaded:** —
@@ -165,7 +154,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster ER6 ELRS receiver product page. Local JPG present; re-evaluating before retention.
-### 14. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+### 13. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
 - **Exact image URL downloaded:** —
@@ -176,7 +165,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Local JPG present; re-evaluating before retention.
-### 15. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 14. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
 - **Exact image URL downloaded:** https://rushfpv.net/cdn/shop/products/005d8391-1615-49d1-a617-2913ee50b36d_1200x1200.jpg?v=1659590919
@@ -187,7 +176,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official RushFPV Tank Solo VTX product page. Local JPG present; re-evaluating before retention.
-### 16. TBS Crossfire Micro LR (`tbs-crossfire-micro-lr`)
+### 15. TBS Crossfire Micro LR (`tbs-crossfire-micro-lr`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_mrx
 - **Exact image URL downloaded:** https://www.team-blacksheep.com/img/gallery/DSC07342zz.jpg
@@ -199,7 +188,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 17. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
+### 16. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_mrx
 - **Exact image URL downloaded:** https://www.team-blacksheep.com/img/gallery/DSC07342zz.jpg
@@ -211,7 +200,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this receiver/VTX family; catalog SKU maps to a listed variant.
 - **Notes:** Official TBS Crossfire Micro RX V2 receiver page. Official manufacturer image represents this product family; catalog variant shares the same PCB/render.
-### 18. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
+### 17. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_nano_rx
 - **Exact image URL downloaded:** —
@@ -222,7 +211,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Crossfire Nano RX store page. Local JPG present; re-evaluating before retention.
-### 19. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
+### 18. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_hv
 - **Exact image URL downloaded:** —
@@ -233,7 +222,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Unify Pro32 HV VTX store page. Local JPG present; re-evaluating before retention.
-### 20. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
+### 19. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_nano
 - **Exact image URL downloaded:** https://www.team-blacksheep.com/img/gallery/DSC01594-ga.jpg
@@ -244,7 +233,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official TBS Unify Pro32 Nano VTX page.
-### 21. Walksnail Avatar GT VTX (`walksnail-avatar-gt-vtx`)
+### 20. Walksnail Avatar GT VTX (`walksnail-avatar-gt-vtx`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-gt-vtx
 - **Exact image URL downloaded:** https://www.caddxfpv.com/cdn/shop/files/VTX_3c4773f1-1c89-4573-bc4a-97da242d676c.jpg?v=1776417772
@@ -255,7 +244,7 @@ Last local cleanup: 2026-06-29T14:26:14.172Z — removed **0** JPG(s); **22** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Walksnail Avatar GT VTX page on Caddx store. Converted official WEBP source to local JPG (dev script only).
-### 22. Walksnail Avatar HD V2 VTX (`walksnail-avatar-hd-v2`)
+### 21. Walksnail Avatar HD V2 VTX (`walksnail-avatar-hd-v2`)
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-hd-vtx-v2-only
 - **Exact image URL downloaded:** —

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T14:25:10.633Z",
+  "updatedAt": "2026-06-29T19:01:41.539Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -879,7 +879,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "removed_local",
-      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
+      "notes": "Renamed from Reaper Nano V1 to match official Foxeer Reaper Nano V2 page. Converted official PNG source to local JPG (dev script only). Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU. Rejected after manual review: image shows an ELRS receiver PCB, not the Foxeer Reaper Nano V2 VTX SKU."
     },
     {
       "partId": "foxeer-reaper-nano-v2-vtx",
@@ -1670,6 +1670,22 @@
       "partName": "Skystars KM55A 4-in-1",
       "category": "ESC",
       "sourcePageUrl": "https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/",
+      "imageUrl": "http://www.skystars-rc.com/wp-content/uploads/2022/10/AM32-KM55-4IN1-ESC-1.jpg",
+      "localPath": "public/parts/escs/skystars-km55a-4in1.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Skystars AM32 KM55A 4-in-1 ESC product page; wp-content gallery image is an isolated 1000×1000 ESC packshot labeled KM55A / 3-6S AM_32 on the red heatsink. Local JPG present; re-evaluating recommendation before retention."
+    },
+    {
+      "partId": "skystars-km55a-4in1",
+      "partName": "Skystars KM55A 4-in-1",
+      "category": "ESC",
+      "sourcePageUrl": "https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/",
       "imageUrl": null,
       "localPath": "public/parts/escs/skystars-km55a-4in1.jpg",
       "sourceType": "manufacturer page",
@@ -1923,10 +1939,8 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T14:25:10.633Z",
-    "removedPartIds": [
-      "foxeer-reaper-nano-v2-vtx"
-    ],
-    "retainedDownloadedCount": 37
+    "date": "2026-06-29T19:01:41.539Z",
+    "removedPartIds": [],
+    "retainedDownloadedCount": 38
   }
 }

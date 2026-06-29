@@ -51,7 +51,6 @@ const PROACTIVE_SKIP_PART_IDS = new Map([
   ["foxeer-toothless-2", "Foxeer official page only exposes /upload/ad/ marketing assets."],
   ["foxeer-falkor-2", "Foxeer official page images are VTX modules, not Falkor 2 camera packshots."],
   ["foxeer-predator-v5", "Foxeer official page images are accessory/VTX boards, not Predator V5 camera packshots."],
-  ["hdzero-nano-90", "HDZero official page only exposes promo banners/spec composites, not an isolated camera packshot."],
   ["cnhl-6s-1500-freestyle", "CNHL CDN asset includes X2 multi-pack overlay and 130C label; catalog line is single 6S 1500mAh 100C."],
 ]);
 

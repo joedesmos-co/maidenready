@@ -550,10 +550,13 @@ export const presetPartImageSources = [
     category: "ESC",
     brand: "Skystars",
     officialUrl: "https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/",
+    preferredImageUrl:
+      "http://www.skystars-rc.com/wp-content/uploads/2022/10/AM32-KM55-4IN1-ESC-1.jpg",
     urlConfidence: "high",
     imageStatus: "needs review",
     expectedImagePath: "/parts/escs/skystars-km55a-4in1.jpg",
-    notes: "Official Skystars KM55A 4-in-1 ESC product page; store TLS blocks automated page scrape — image fetch pending direct CDN URL research.",
+    notes:
+      "Official Skystars AM32 KM55A 4-in-1 ESC product page; wp-content gallery image is an isolated 1000×1000 ESC packshot labeled KM55A / 3-6S AM_32 on the red heatsink.",
   },
   {
     partId: "speedybee-bl32-50a",

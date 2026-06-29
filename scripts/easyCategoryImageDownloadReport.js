@@ -31,7 +31,6 @@ const MANUAL_REJECT_DOWNLOADED_PART_IDS = new Set([
   "foxeer-falkor-2",
   "foxeer-predator-v5",
   "foxeer-toothless-2",
-  "hdzero-nano-90",
   "cnhl-6s-1500-freestyle",
   "ethix-p3-peanut-butter",
 ]);
@@ -52,10 +51,6 @@ const MANUAL_REJECTION_NOTES = new Map([
   [
     "foxeer-predator-v5",
     "Rejected after review: Foxeer source image is a VS1011 video board, not the Predator V5 camera SKU.",
-  ],
-  [
-    "hdzero-nano-90",
-    "Rejected after review: HDZero assets are promo banners or lifestyle goggle-battery shots, not isolated Nano 90 camera packshots.",
   ],
   [
     "cnhl-6s-1500-freestyle",

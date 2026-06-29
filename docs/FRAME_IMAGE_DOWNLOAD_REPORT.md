@@ -5,13 +5,13 @@ Developer-only review log for **frame** manufacturer-source image **candidates**
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T03:16:52.068Z
+Last updated: 2026-06-29T19:01:42.082Z
 
-Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** retained.
+Last local cleanup: 2026-06-29T19:01:42.081Z — removed **0** JPG(s); **15** retained.
 
 ## Summary
 
-- Downloaded local JPG candidates: **15**
+- Downloaded local JPG candidates: **12**
 - Rejected / skipped / failed: **24**
 
 ## Downloaded candidates (local JPG on disk)
@@ -27,18 +27,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official AOS RC design page for AOS 3.5 V5 frame. Converted official PNG source to local JPG (dev script only).
-### 2. AOS 5 V5 (`aos-5-v5`)
-- **Category:** Frame
-- **Manufacturer/source page URL:** https://www.aos-rc.com/designs/aos-5-v5
-- **Exact image URL downloaded:** https://static.wixstatic.com/media/e57211_5a539ff67e794c83aa16d962133b02f6~mv2.png/v1/fill/w_1920,h_1200,al_c/AOS%205%20V5.774.png
-- **Local file path:** public/parts/frames/aos-5-v5.jpg
-- **Status:** downloaded
-- **Confidence:** high
-- **imageNeedsReview:** true
-- **imageLicense:** No verified license on file
-- **Recommendation:** keep for review
-- **Notes:** Official AOS RC design page for AOS 5 V5 frame. Converted official PNG source to local JPG (dev script only).
-### 3. Armattan Marmotte 5-inch (`armattan-marmotte`)
+### 2. Armattan Marmotte 5-inch (`armattan-marmotte`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://armattanquads.com/products/marmotte
 - **Exact image URL downloaded:** —
@@ -49,7 +38,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Armattan Marmotte 5-inch frame page. Local JPG present; re-evaluating before retention.
-### 4. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
+### 3. BETAFPV Meteor75 Pro Whoop Frame (`betafpv-meteor75-pro-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://betafpv.com/products/meteor75-pro-brushless-whoop-frame
 - **Exact image URL downloaded:** —
@@ -60,7 +49,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Meteor75 Pro whoop frame product page. Local JPG present; re-evaluating before retention.
-### 5. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
+### 4. BETAFPV Pavo25 Frame (`betafpv-pavo25-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://betafpv.com/products/pavo25-frame-kit
 - **Exact image URL downloaded:** —
@@ -71,7 +60,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Pavo25 frame kit page. Local JPG present; re-evaluating before retention.
-### 6. BETAFPV Pavo30 Cine Frame (`betafpv-pavo30-cine-frame`)
+### 5. BETAFPV Pavo30 Cine Frame (`betafpv-pavo30-cine-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://betafpv.com/products/pavo30-frame-kit
 - **Exact image URL downloaded:** https://betafpv.com/cdn/shop/products/PAVO30framekit.jpg?v=1618483136
@@ -82,7 +71,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Pavo30 frame kit page; frame plates only (not SMO 4K bundle photo). Converted official WEBP source to local JPG (dev script only).
-### 7. Diatone Roma F5 Frame (`diatone-roma-f5-frame`)
+### 6. Diatone Roma F5 Frame (`diatone-roma-f5-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.diatone.us/products/diatone-roma-f5-v2-frame-kit
 - **Exact image URL downloaded:** —
@@ -93,18 +82,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Diatone Roma F5 V2 frame kit; current Roma F5 generation. Local JPG present; re-evaluating before retention.
-### 8. GEPRC Mark4 Frame (`geprc-mark4-frame`)
-- **Category:** Frame
-- **Manufacturer/source page URL:** https://geprc.com/product/gep-mark4-frame/
-- **Exact image URL downloaded:** https://geprc.com/wp-content/uploads/2019/06/03-2845615995-1200x1200.jpg
-- **Local file path:** public/parts/frames/geprc-mark4-frame.jpg
-- **Status:** downloaded
-- **Confidence:** high
-- **imageNeedsReview:** true
-- **imageLicense:** No verified license on file
-- **Recommendation:** keep for review
-- **Notes:** Official GEPRC GEP-Mark4 frame page; select 5-inch variant.
-### 9. GEPRC Mark5 Deadcat (`geprc-mark5`)
+### 7. GEPRC Mark5 Deadcat (`geprc-mark5`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://geprc.com/product/geprc-gep-mk5-frame/
 - **Exact image URL downloaded:** —
@@ -116,7 +94,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
 - **Notes:** Official GEPRC GEP-MK5 frame page; deadcat is a geometry variant on same platform. Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant. Local JPG present; re-evaluating before retention.
-### 10. Happymodel Moblite7 Frame (`happymodel-moblite7-frame`)
+### 8. Happymodel Moblite7 Frame (`happymodel-moblite7-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/product/moblite7/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2025/12/2-2.jpg
@@ -127,7 +105,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel Moblite7 product page; frame kit product photo.
-### 11. Happymodel Mobula7 V2 Frame (`happymodel-mobula7-v2-frame`)
+### 9. Happymodel Mobula7 V2 Frame (`happymodel-mobula7-v2-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/product/mobula7/
 - **Exact image URL downloaded:** https://www.happymodel.cn/wp-content/uploads/2022/05/8-1.jpg
@@ -139,7 +117,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
 - **Notes:** Official Happymodel Mobula7 family page; V2 catalog entry shares Mobula7 frame family render. Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
-### 12. iFlight Chimera7 LR Frame (`iflight-chimera7-lr-frame`)
+### 10. iFlight Chimera7 LR Frame (`iflight-chimera7-lr-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Chimera7-ECO-Frame-kit-Pro2079
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Chimera7-Pro-Frame/Chimera7-ECO/C7-ECO-F1.png
@@ -150,7 +128,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight Chimera7 ECO frame kit page; LR catalog entry uses Chimera7 ECO frame family render. Converted official PNG source to local JPG (dev script only).
-### 13. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
+### 11. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197
 - **Exact image URL downloaded:** https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul5/Nazgul-XL5-V1.1-NF0.png
@@ -162,18 +140,7 @@ Last local cleanup: 2026-06-29T03:16:52.068Z — removed **0** JPG(s); **15** re
 - **Recommendation:** keep for review
 - **Family variant note:** Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant.
 - **Notes:** Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Official manufacturer image covers this frame family; catalog SKU maps to a listed size or geometry variant. Converted official PNG source to local JPG (dev script only).
-### 14. Lumenier QAV-S JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
-- **Category:** Frame
-- **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-qav-s-2-johnnyfpv-se-5-frame-kit
-- **Exact image URL downloaded:** https://cdn.shopify.com/s/files/1/0698/9525/8342/files/lumenier-qav-s-2-johnnyfpv-se-5inch-frame-kit-_1.jpg?v=1734560533
-- **Local file path:** public/parts/frames/qav-s-johnnyfpv-se.jpg
-- **Status:** downloaded
-- **Confidence:** high
-- **imageNeedsReview:** true
-- **imageLicense:** No verified license on file
-- **Recommendation:** keep for review
-- **Notes:** Official Lumenier QAV-S 2 JohnnyFPV SE 5-inch frame kit page. Converted official WEBP source to local JPG (dev script only).
-### 15. Rotor Riot CL2 5-inch (`rotor-riot-cl2`)
+### 12. Rotor Riot CL2 5-inch (`rotor-riot-cl2`)
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rotorriot.com/products/cl2-5-frame
 - **Exact image URL downloaded:** —

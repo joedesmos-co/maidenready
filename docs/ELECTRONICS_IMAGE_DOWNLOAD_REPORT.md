@@ -5,13 +5,13 @@ Developer-only review log for **flight controllers, ESCs, and AIO boards** manuf
 > **Not approved for public use.** Keep `imageNeedsReview: true` and
 > `imageLicense: "No verified license on file"` until permission is verified.
 
-Last updated: 2026-06-29T03:14:55.716Z
+Last updated: 2026-06-29T19:01:42.187Z
 
-Last local cleanup: 2026-06-29T03:14:55.716Z — removed **0** JPG(s); **8** retained.
+Last local cleanup: 2026-06-29T19:01:42.187Z — removed **0** JPG(s); **10** retained.
 
 ## Summary
 
-- Downloaded local JPG candidates: **8**
+- Downloaded local JPG candidates: **10**
 - Rejected / skipped / failed: **161**
 
 ## Downloaded candidates (local JPG on disk)
@@ -97,7 +97,18 @@ Last local cleanup: 2026-06-29T03:14:55.716Z — removed **0** JPG(s); **8** ret
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Holybro Kakute H7 V2 flight controller page. Local JPG present; re-evaluating before retention.
-### 8. Matek H743 Mini LR (`matek-h743-mini-lr`)
+### 8. Matek F405-SE FC (`matek-f405-se-fc`)
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f405-se
+- **Exact image URL downloaded:** https://www.mateksys.com/wp-content/uploads/2020/07/F405-SE_2.jpg
+- **Local file path:** public/parts/flight-controllers/matek-f405-se-fc.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Matek F405-SE portfolio page; wp-content gallery photo is an isolated top/bottom F405-SE FC packshot on white (STM32F405 + AT7456E silkscreen visible). Local JPG present; re-evaluating before retention.
+### 9. Matek H743 Mini LR (`matek-h743-mini-lr`)
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
 - **Exact image URL downloaded:** https://www.mateksys.com/wp-content/uploads/2020/10/H743-MINI_2.jpg
@@ -108,6 +119,17 @@ Last local cleanup: 2026-06-29T03:14:55.716Z — removed **0** JPG(s); **8** ret
 - **imageLicense:** No verified license on file
 - **Recommendation:** keep for review
 - **Notes:** Official Matek H743-MINI portfolio; H743-MINI_2.jpg is an isolated board product photo. Local JPG present; re-evaluating before retention.
+### 10. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+- **Category:** ESC
+- **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
+- **Exact image URL downloaded:** http://www.skystars-rc.com/wp-content/uploads/2022/10/AM32-KM55-4IN1-ESC-1.jpg
+- **Local file path:** public/parts/escs/skystars-km55a-4in1.jpg
+- **Status:** downloaded
+- **Confidence:** high
+- **imageNeedsReview:** true
+- **imageLicense:** No verified license on file
+- **Recommendation:** keep for review
+- **Notes:** Official Skystars AM32 KM55A 4-in-1 ESC product page; wp-content gallery image is an isolated 1000×1000 ESC packshot labeled KM55A / 3-6S AM_32 on the red heatsink. Local JPG present; re-evaluating before retention.
 ## Rejected, skipped, or failed
 
 ### 1. Aikon AK32 50A 4-in-1 (`aikon-ak32-50a-4in1`)

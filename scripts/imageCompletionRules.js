@@ -1,0 +1,243 @@
+/**
+ * Central classification rules for docs/image-completion-queue.json.
+ * Aligns with proactive skips and manual rejects in image fetch/report scripts.
+ */
+
+export const QUEUE_TIER_LABELS = {
+  1: "Preset parts (remaining)",
+  2: "5-inch freestyle catalog",
+  3: "Multi build-class catalog",
+  4: "Easy-match: props, batteries, cameras, motors",
+  5: "Receivers / VTX",
+  6: "Frames",
+  7: "Electronics: FC / ESC / stack / AIO",
+};
+
+export const EASY_MATCH_CATEGORIES = new Set(["props", "battery", "camera", "motors"]);
+export const RECEIVER_VTX_CATEGORIES = new Set(["receiver", "vtx"]);
+export const ELECTRONICS_CATEGORIES = new Set(["esc", "flightController"]);
+
+/** Stack pages mapped to individual FC or ESC catalog lines — do not split photos. */
+export const STACK_ONLY_INDIVIDUAL_PART_IDS = new Set([
+  "speedybee-bls-35a-4in1",
+  "speedybee-f405-mini",
+  "speedybee-bl32-50a",
+  "speedybee-f405-v4",
+  "speedybee-bl32-55a-4in1",
+  "speedybee-f7-v3-fc",
+  "diatone-mamba-f722-s-fc",
+  "aikon-f7-mini-35a",
+  "iflight-succex-e-f4-50a",
+  "rush-blade-f7-60a-4in1",
+]);
+
+/** Full-aircraft listings without isolated frame-kit packshots. */
+export const FULL_DRONE_FRAME_PART_IDS = new Set([
+  "geprc-cinelog35-v2",
+  "rekon7-pro-lr",
+  "iflight-nazgul-eco5-frame",
+  "tbs-source-one-v5",
+  "tbs-source-one-v6-frame",
+]);
+
+/** Prior manual review — downloaded asset was wrong product, variant, or composite. */
+export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
+  "foxeer-reaper-nano-v2-vtx",
+  "foxeer-falkor-2",
+  "foxeer-predator-v5",
+  "foxeer-toothless-2",
+  "foxeer-f722-v4",
+  "foxeer-h743-f722-fc",
+  "foxeer-reaper-f4-65a",
+  "geprc-mark4-frame",
+  "lumenier-qav-s-johnnyfpv",
+  "hypetrain-blaster-2450",
+  "armattan-badger5-frame",
+  "ethix-p3-peanut-butter",
+  "cnhl-6s-1500-freestyle",
+  "gemfan-hurricane-mck-51433",
+  "ethix-s3-5050",
+  "fpvcycle-2207-1780kv",
+  "fpvcycle-2207-1960",
+  "hypetrain-acer-2306-1950kv",
+  "johnnyfpv-motor-v2-2207-1960kv",
+  "lumenier-2207-1800kv",
+  "brotherhobby-avenger-2507-1850",
+  "brotherhobby-returner-r6-2207-1850kv",
+  "rush-tank-solo",
+]);
+
+/** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */
+export const OFFICIAL_SOURCE_BLOCKED_PART_IDS = new Map([
+  ["skystars-km2207-1910kv", "Skystars store unreachable from automated fetch."],
+  ["skystars-km2306-1950kv", "Skystars store unreachable from automated fetch."],
+  ["azure-5148", "Azure Power site unreachable from automated fetch."],
+  ["azure-vanover-5140", "Azure Power site unreachable from automated fetch."],
+  ["dalprop-cyclone-5046", "DAL prop site unreachable from automated fetch."],
+  ["dalprop-fold-f5-5040", "DAL prop site unreachable from automated fetch."],
+  ["tmotor-f40-pro-2207-1950kv", "T-Motor store blocks automated fetch."],
+  ["tmotor-f60-pro-v-1950", "T-Motor store blocks automated fetch."],
+  ["tmotor-velox-v3-1750", "T-Motor store blocks automated fetch."],
+  ["tmotor-velox-v3-2207-1950kv", "T-Motor store blocks automated fetch."],
+  ["akk-x2-ultimate-vtx", "AKK official store blocks automated fetch."],
+  ["rush-tank-ii-vtx", "RushFPV Tank II product page unreachable from automated fetch."],
+  ["gnb-4s-1500", "No exact 1500mAh official GNB/Gaoneng product page."],
+  ["gnb-6s-1300-hv", "Genstattu/GNB product page 404 or blocks automated fetch."],
+  ["gnb-6s-1400-freestyle", "Genstattu/GNB product page 404 or blocks automated fetch."],
+  ["ethix-lithium5-frame", "Ethix official store intermittently unreachable."],
+]);
+
+/** No isolated official packshot — keep SVG placeholder rather than substitute. */
+export const NO_CLEAN_PACKSHOT_PART_IDS = new Map([
+  ["speedybee-bl32-50a", "Official page is FC+ESC stack; no isolated ESC packshot."],
+  ["speedybee-bls-35a-4in1", "Official page is FC+ESC stack; no isolated ESC packshot."],
+  ["speedybee-f405-mini", "Official page is FC+ESC stack; no isolated FC packshot."],
+  ["speedybee-f405-v4", "Official page is FC+ESC stack; no isolated FC packshot."],
+  ["geprc-cinelog35-v2", "Official listing is complete BNF aircraft."],
+  ["rekon7-pro-lr", "Official listing is complete aircraft."],
+  ["tbs-source-one-v5", "GitHub project page only exposes social OG card."],
+  ["tbs-source-one-v6-frame", "GitHub project page only exposes social OG card."],
+  ["iflight-xing-2005-2550", "Official page lacks isolated 2005 motor packshot."],
+  ["aos-5-v5", "Official AOS design page has lifestyle hero, not isolated frame packshot."],
+  ["matek-f722-mini", "Matek portfolio only exposes spec-sheet composite."],
+  ["matek-f722-std-fc", "Matek portfolio only exposes spec-sheet composite."],
+  ["iflight-nazgul-eco5-frame", "Official listing is complete BNF aircraft."],
+  ["impulserc-apexdc", "ImpulseRC closed; no product photo source."],
+  ["impulserc-reverb5-frame", "ImpulseRC closed; no product photo source."],
+  ["hglrc-zeus5-frame", "No Zeus5 frame SKU; substitute listing is different frame."],
+  ["cnhl-4s-1500-freestyle", "Only multi-pack CNHL listing on official store."],
+  ["ovonic-4s-1400-freestyle", "No exact Ovonic 4S 1400mAh listing on official store."],
+  ["tattu-4s-1300-freestyle", "Genstattu Tattu 4S 1300mAh product page 404."],
+  ["tattu-4s-1550", "Genstattu Tattu 4S 1550mAh product page 404."],
+  ["tattu-rline-6s-1550", "Genstattu Tattu R-Line 6S 1550mAh product page 404."],
+  ["lumenier-6s-1100", "Lumenier N2O 6S 1100mAh product page 404 on official store."],
+  ["lumenier-6s-1250-freestyle", "Lumenier N2O 6S 1250mAh product page 404 on official store."],
+  ["hqprop-t3x2-5x3-515", "HQProp T3x2.5x3 515 product page 404 on official store."],
+  ["ethix-s3-5050", "No dedicated Ethix S3 product URL on official store."],
+  ["gemfan-hurricane-mck-51433", "No MCK 51433 listing; substitute is wrong prop family."],
+  ["walksnail-avatar-micro", "Avatar V2 page does not expose Micro SKU packshot."],
+  ["jhemcu-ep28-elrs", "JHEMCU store homepage only; no stable EP28 product URL."],
+  ["imm-rc-fusion-v2-elrs", "ImmersionRC page is not a verified V2 ELRS packshot."],
+]);
+
+export const CLASSIFICATION_LABELS = {
+  fetchable_now: "Fetchable now",
+  needs_better_official_url: "Needs better official URL",
+  official_source_blocked: "Official source blocked",
+  no_clean_packshot_found: "No clean packshot found",
+  should_remain_svg_placeholder: "Should remain SVG placeholder",
+  unsafe_likely_mismatch: "Unsafe — likely mismatch",
+};
+
+export function getQueueTier(entry) {
+  if (entry.usedInPreset) {
+    return 1;
+  }
+
+  if (entry.compatibleClasses?.includes("5-inch-freestyle")) {
+    return 2;
+  }
+
+  if ((entry.compatibleClasses?.length ?? 0) > 1) {
+    return 3;
+  }
+
+  if (EASY_MATCH_CATEGORIES.has(entry.categoryKey)) {
+    return 4;
+  }
+
+  if (RECEIVER_VTX_CATEGORIES.has(entry.categoryKey)) {
+    return 5;
+  }
+
+  if (entry.categoryKey === "frame") {
+    return 6;
+  }
+
+  if (ELECTRONICS_CATEGORIES.has(entry.categoryKey)) {
+    return 7;
+  }
+
+  return 7;
+}
+
+export function classifyMissingPart(entry, sourceEntry) {
+  const partId = entry.partId;
+  const notes = sourceEntry?.notes ?? "";
+  const urlConfidence = sourceEntry?.urlConfidence ?? "unknown";
+  const hasPreferredUrl = Boolean(sourceEntry?.preferredImageUrl);
+  const hasOfficialUrl = Boolean(sourceEntry?.officialUrl);
+
+  if (UNSAFE_LIKELY_MISMATCH_PART_IDS.has(partId)) {
+    return {
+      classification: "unsafe_likely_mismatch",
+      reason: "Prior manual review flagged wrong product, variant, or composite image.",
+    };
+  }
+
+  if (OFFICIAL_SOURCE_BLOCKED_PART_IDS.has(partId)) {
+    return {
+      classification: "official_source_blocked",
+      reason: OFFICIAL_SOURCE_BLOCKED_PART_IDS.get(partId),
+    };
+  }
+
+  if (STACK_ONLY_INDIVIDUAL_PART_IDS.has(partId)) {
+    return {
+      classification: "should_remain_svg_placeholder",
+      reason: "Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.",
+    };
+  }
+
+  if (FULL_DRONE_FRAME_PART_IDS.has(partId)) {
+    return {
+      classification: "should_remain_svg_placeholder",
+      reason: "Official listing is a complete aircraft, not an isolated frame-kit packshot.",
+    };
+  }
+
+  if (NO_CLEAN_PACKSHOT_PART_IDS.has(partId)) {
+    return {
+      classification: "no_clean_packshot_found",
+      reason: NO_CLEAN_PACKSHOT_PART_IDS.get(partId),
+    };
+  }
+
+  if (
+    hasPreferredUrl &&
+    urlConfidence === "high" &&
+    !UNSAFE_LIKELY_MISMATCH_PART_IDS.has(partId)
+  ) {
+    return {
+      classification: "fetchable_now",
+      reason: "Verified manufacturer preferredImageUrl with high URL confidence.",
+    };
+  }
+
+  if (urlConfidence === "low" || notes.toLowerCase().includes("substitute")) {
+    return {
+      classification: "should_remain_svg_placeholder",
+      reason: notes || "Low-confidence official source; substitute imagery risk is too high.",
+    };
+  }
+
+  if (hasOfficialUrl && !hasPreferredUrl) {
+    return {
+      classification: "needs_better_official_url",
+      reason:
+        "Official product page exists but no verified direct packshot URL is on file yet.",
+    };
+  }
+
+  if (!hasOfficialUrl) {
+    return {
+      classification: "needs_better_official_url",
+      reason: "No official manufacturer product page recorded in image source files.",
+    };
+  }
+
+  return {
+    classification: "no_clean_packshot_found",
+    reason: "Official source reviewed; no clean isolated packshot identified.",
+  };
+}
