@@ -1,67 +1,35 @@
 {
-  "generatedAt": "2026-06-30T00:20:27.469Z",
+  "generatedAt": "2026-06-30T04:57:39.403Z",
   "baseline": {
-    "total": 294,
+    "total": 267,
     "found": 95,
-    "missing": 199,
+    "missing": 172,
     "presetPartFound": 38,
     "presetPartTotal": 48,
     "presetPartMissing": 10
   },
   "summary": {
-    "queueTotal": 199,
+    "queueTotal": 172,
     "classificationCounts": {
+      "needs_better_official_url": 52,
       "official_source_blocked": 25,
-      "no_clean_packshot_found": 63,
-      "should_remain_svg_placeholder": 29,
-      "unsafe_likely_mismatch": 36,
-      "needs_better_official_url": 46
+      "should_remain_svg_placeholder": 25,
+      "unsafe_likely_mismatch": 33,
+      "no_clean_packshot_found": 37
     },
     "tierCounts": {
       "1": 10,
-      "2": 79,
-      "4": 66,
-      "5": 6,
-      "6": 15,
-      "7": 23
+      "2": 77,
+      "3": 1,
+      "4": 53,
+      "5": 4,
+      "6": 14,
+      "7": 13
     },
     "fetchableNow": [],
     "shouldRemainPlaceholder": [
       {
-        "rank": 2,
-        "queueTier": 1,
-        "queueTierLabel": "Preset parts (remaining)",
-        "partId": "iflight-xing-2005-2550",
-        "partName": "iFlight XING 2005 2550KV",
-        "brand": "iFlight",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/iflight-xing-2005-2550.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "motors"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 1,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Official page lacks isolated 2005 motor packshot.",
-        "officialUrl": "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset).",
-        "fetchScript": null
-      },
-      {
-        "rank": 3,
+        "rank": 5,
         "queueTier": 1,
         "queueTierLabel": "Preset parts (remaining)",
         "partId": "speedybee-bl32-50a",
@@ -94,7 +62,7 @@
         "fetchScript": null
       },
       {
-        "rank": 4,
+        "rank": 6,
         "queueTier": 1,
         "queueTierLabel": "Preset parts (remaining)",
         "partId": "speedybee-bls-35a-4in1",
@@ -134,7 +102,7 @@
         "fetchScript": null
       },
       {
-        "rank": 5,
+        "rank": 7,
         "queueTier": 1,
         "queueTierLabel": "Preset parts (remaining)",
         "partId": "speedybee-f405-mini",
@@ -174,7 +142,7 @@
         "fetchScript": null
       },
       {
-        "rank": 6,
+        "rank": 8,
         "queueTier": 1,
         "queueTierLabel": "Preset parts (remaining)",
         "partId": "speedybee-f405-v4",
@@ -204,72 +172,6 @@
         "preferredImageUrl": null,
         "urlConfidence": "high",
         "sourceNotes": "Official F405 V4 stack page.",
-        "fetchScript": null
-      },
-      {
-        "rank": 7,
-        "queueTier": 1,
-        "queueTierLabel": "Preset parts (remaining)",
-        "partId": "geprc-cinelog35-v2",
-        "partName": "GEPRC Cinelog35 V2",
-        "brand": "GEPRC",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/geprc-cinelog35-v2.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "frame"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 1,
-        "classification": "should_remain_svg_placeholder",
-        "classificationLabel": "Should remain SVG placeholder",
-        "classificationRank": 4,
-        "reason": "Official listing is a complete aircraft, not an isolated frame-kit packshot.",
-        "officialUrl": "https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/",
-        "preferredImageUrl": null,
-        "urlConfidence": "high",
-        "sourceNotes": "Official full-drone listing; frame-only SKU not clearly separated.",
-        "fetchScript": null
-      },
-      {
-        "rank": 8,
-        "queueTier": 1,
-        "queueTierLabel": "Preset parts (remaining)",
-        "partId": "rekon7-pro-lr",
-        "partName": "Rekon7 Pro Long Range",
-        "brand": "RekonFPV",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/rekon7-pro-lr.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "7-long-range-explorer",
-            "presetName": "7\" Long Range Explorer",
-            "buildClass": "7-inch-long-range",
-            "categoryKey": "frame"
-          }
-        ],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 1,
-        "classification": "should_remain_svg_placeholder",
-        "classificationLabel": "Should remain SVG placeholder",
-        "classificationRank": 4,
-        "reason": "Official listing is a complete aircraft, not an isolated frame-kit packshot.",
-        "officialUrl": "https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version",
-        "preferredImageUrl": null,
-        "urlConfidence": "high",
-        "sourceNotes": "Official complete drone page for Rekon7 Pro long range.",
         "fetchScript": null
       },
       {
@@ -1157,58 +1059,6 @@
         "rank": 68,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
-        "partId": "axisflying-ae2207-1960",
-        "partName": "AxisFlying AE 2207 1960KV",
-        "brand": "AxisFlying",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/axisflying-ae2207.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "auditPriority": 2,
-        "classification": "should_remain_svg_placeholder",
-        "classificationLabel": "Should remain SVG placeholder",
-        "classificationRank": 4,
-        "reason": "Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant.",
-        "officialUrl": "https://www.axisflying.com/products/axisflying-ae-series-2207-motor",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant.",
-        "fetchScript": null
-      },
-      {
-        "rank": 69,
-        "queueTier": 2,
-        "queueTierLabel": "5-inch freestyle catalog",
-        "partId": "axisflying-joker-2207-1920kv",
-        "partName": "AxisFlying Joker 2207 1920KV",
-        "brand": "AxisFlying",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/axisflying-joker-2207-1920kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "5-inch-freestyle"
-        ],
-        "auditPriority": 2,
-        "classification": "should_remain_svg_placeholder",
-        "classificationLabel": "Should remain SVG placeholder",
-        "classificationRank": 4,
-        "reason": "Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant.",
-        "officialUrl": "https://www.axisflying.com/products/axisflying-joker-2207-motor",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant.",
-        "fetchScript": null
-      },
-      {
-        "rank": 70,
-        "queueTier": 2,
-        "queueTierLabel": "5-inch freestyle catalog",
         "partId": "samguk-v-2207-1960kv",
         "partName": "Samguk Series V 2207 1960KV",
         "brand": "Samguk",
@@ -1232,7 +1082,7 @@
         "fetchScript": null
       },
       {
-        "rank": 71,
+        "rank": 69,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "cnhl-6s-1500-freestyle",
@@ -1258,7 +1108,7 @@
         "fetchScript": null
       },
       {
-        "rank": 72,
+        "rank": 70,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-falkor-2",
@@ -1284,7 +1134,7 @@
         "fetchScript": null
       },
       {
-        "rank": 73,
+        "rank": 71,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-predator-v5",
@@ -1310,7 +1160,7 @@
         "fetchScript": null
       },
       {
-        "rank": 74,
+        "rank": 72,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-toothless-2",
@@ -1339,7 +1189,7 @@
         "fetchScript": null
       },
       {
-        "rank": 75,
+        "rank": 73,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-reaper-f4-65a",
@@ -1366,7 +1216,7 @@
         "fetchScript": null
       },
       {
-        "rank": 76,
+        "rank": 74,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-f722-v4",
@@ -1392,7 +1242,7 @@
         "fetchScript": null
       },
       {
-        "rank": 77,
+        "rank": 75,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "foxeer-h743-f722-fc",
@@ -1418,7 +1268,7 @@
         "fetchScript": null
       },
       {
-        "rank": 78,
+        "rank": 76,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "armattan-badger5-frame",
@@ -1444,7 +1294,7 @@
         "fetchScript": null
       },
       {
-        "rank": 79,
+        "rank": 77,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "geprc-mark4-frame",
@@ -1470,7 +1320,7 @@
         "fetchScript": null
       },
       {
-        "rank": 80,
+        "rank": 78,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "lumenier-qav-s-johnnyfpv",
@@ -1496,7 +1346,7 @@
         "fetchScript": null
       },
       {
-        "rank": 81,
+        "rank": 79,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "fpvcycle-2207-1780kv",
@@ -1522,7 +1372,7 @@
         "fetchScript": null
       },
       {
-        "rank": 82,
+        "rank": 80,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "fpvcycle-2207-1960",
@@ -1548,7 +1398,7 @@
         "fetchScript": null
       },
       {
-        "rank": 83,
+        "rank": 81,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "hypetrain-acer-2306-1950kv",
@@ -1574,7 +1424,7 @@
         "fetchScript": null
       },
       {
-        "rank": 84,
+        "rank": 82,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "hypetrain-blaster-2450",
@@ -1600,7 +1450,7 @@
         "fetchScript": null
       },
       {
-        "rank": 85,
+        "rank": 83,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "johnnyfpv-motor-v2-2207-1960kv",
@@ -1626,7 +1476,7 @@
         "fetchScript": null
       },
       {
-        "rank": 86,
+        "rank": 84,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "lumenier-2207-1800kv",
@@ -1652,7 +1502,7 @@
         "fetchScript": null
       },
       {
-        "rank": 87,
+        "rank": 85,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "ethix-p3-peanut-butter",
@@ -1678,7 +1528,7 @@
         "fetchScript": null
       },
       {
-        "rank": 88,
+        "rank": 86,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "ethix-s3-5050",
@@ -1704,7 +1554,7 @@
         "fetchScript": null
       },
       {
-        "rank": 89,
+        "rank": 87,
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "gemfan-hurricane-mck-51433",
@@ -1730,7 +1580,7 @@
         "fetchScript": null
       },
       {
-        "rank": 130,
+        "rank": 129,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "betafpv-2s-300-ph2",
@@ -1756,7 +1606,7 @@
         "fetchScript": null
       },
       {
-        "rank": 131,
+        "rank": 130,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "cnhl-ministar-4s-900",
@@ -1782,85 +1632,7 @@
         "fetchScript": null
       },
       {
-        "rank": 132,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "iflight-4s-1800-cine",
-        "partName": "iFlight 4S 1800mAh 120C Cine",
-        "brand": "iFlight",
-        "categoryKey": "battery",
-        "categoryLabel": "Battery",
-        "imagePath": "/parts/batteries/iflight-4s-1800-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No iFlight 4S 1800mAh 120C battery on official store.",
-        "officialUrl": "https://shop.iflight.com/batteries-cat342",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No iFlight 4S 1800mAh 120C cinewhoop battery SKU on official shop.iflight.com store at research time.",
-        "fetchScript": null
-      },
-      {
-        "rank": 133,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "axisflying-2808-1150kv-lr",
-        "partName": "AxisFlying 2808 1150KV LR",
-        "brand": "AxisFlying",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No AxisFlying 2808 1150KV LR product page on axisflying.com.",
-        "officialUrl": "https://www.axisflying.com/collections/motors",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No AxisFlying 2808 1150KV LR product page on axisflying.com; motors collection is the only manufacturer reference.",
-        "fetchScript": null
-      },
-      {
-        "rank": 134,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "brotherhobby-1507-3700kv",
-        "partName": "BrotherHobby 1507 3700KV",
-        "brand": "BrotherHobby",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No BrotherHobby 1507 3700KV product listing on brotherhobby.com.",
-        "officialUrl": "https://brotherhobby.com/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No BrotherHobby 1507 3700KV product listing found on brotherhobby.com at research time.",
-        "fetchScript": null
-      },
-      {
-        "rank": 135,
+        "rank": 131,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "emax-eco-2004-2550kv",
@@ -1886,7 +1658,7 @@
         "fetchScript": null
       },
       {
-        "rank": 136,
+        "rank": 132,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "emax-eco-ii-2806-1280kv",
@@ -1912,85 +1684,7 @@
         "fetchScript": null
       },
       {
-        "rank": 137,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "geprc-0901-11000kv",
-        "partName": "GEPRC 0901 11000KV",
-        "brand": "GEPRC",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No GEPRC 0901 11000KV motor product page on geprc.com.",
-        "officialUrl": "https://geprc.com/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No GEPRC 0901 11000KV motor product page found on geprc.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 138,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "geprc-2005-2200kv",
-        "partName": "GEPRC 2005 2200KV",
-        "brand": "GEPRC",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No GEPRC 2005 2200KV motor product page on geprc.com.",
-        "officialUrl": "https://geprc.com/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No GEPRC 2005 2200KV motor product page found on geprc.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 139,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "happymodel-cine-2004-2400kv",
-        "partName": "Happymodel Cine 2004 2400KV",
-        "brand": "Happymodel",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No Happymodel Cine 2004 2400KV standalone motor product page.",
-        "officialUrl": "https://www.happymodel.cn/index.php/category/product/motor/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No Happymodel Cine 2004 2400KV standalone motor product page; Cine8 frame/kit listings only.",
-        "fetchScript": null
-      },
-      {
-        "rank": 140,
+        "rank": 133,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "iflight-xing2-1404-4600kv",
@@ -2016,59 +1710,7 @@
         "fetchScript": null
       },
       {
-        "rank": 141,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "iflight-xing2-1507-4600kv",
-        "partName": "iFlight XING2 1507 4600KV",
-        "brand": "iFlight",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Legacy XING2 1507 product URL 404 on shop.iflight.com.",
-        "officialUrl": "https://shop.iflight.com/motor-cat341",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy XING2 1507 product URL returns 404; not listed on current shop.iflight.com motor category.",
-        "fetchScript": null
-      },
-      {
-        "rank": 142,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "iflight-xing2-2203-2350kv",
-        "partName": "iFlight XING2 2203 2350KV",
-        "brand": "iFlight",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Legacy XING2 2203 product URL 404 on shop.iflight.com.",
-        "officialUrl": "https://shop.iflight.com/motor-cat341",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy XING2 2203 product URL returns 404; not listed on current shop.iflight.com motor category.",
-        "fetchScript": null
-      },
-      {
-        "rank": 143,
+        "rank": 134,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "iflight-xing2-2807-1280kv-lr",
@@ -2094,33 +1736,7 @@
         "fetchScript": null
       },
       {
-        "rank": 144,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "newbee-0802-17500kv",
-        "partName": "NewBeeDrone 0802 17500KV",
-        "brand": "NewBeeDrone",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "tiny-whoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No NewBeeDrone 0802 17500KV product page on newbeedrone.com.",
-        "officialUrl": "https://www.newbeedrone.com/collections/motors",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No NewBeeDrone 0802 17500KV product page; official store lists 13000/14000/19000/25000/30000KV 0802 lines instead.",
-        "fetchScript": null
-      },
-      {
-        "rank": 145,
+        "rank": 135,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "rcinpower-1404-3800kv",
@@ -2146,85 +1762,7 @@
         "fetchScript": null
       },
       {
-        "rank": 146,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "rcinpower-2203-2300kv",
-        "partName": "RCinPower 2203 2300KV",
-        "brand": "RCinPower",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com.",
-        "officialUrl": "https://www.rcinpower.com/G-SERIES/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No RCinPower G-SERIES 2203 2300KV product page found on rcinpower.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 147,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "rcinpower-2807-1350kv-lr",
-        "partName": "RCinPower 2807 1350KV LR",
-        "brand": "RCinPower",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No RCinPower 2807 1350KV LR product page on rcinpower.com.",
-        "officialUrl": "https://www.rcinpower.com/G-SERIES/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No RCinPower 2807 1350KV LR product page found on rcinpower.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 148,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "tmotor-2807-1300kv-lr",
-        "partName": "T-Motor 2807 1300KV LR",
-        "brand": "T-Motor",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com.",
-        "officialUrl": "https://store.tmotor.com/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 149,
+        "rank": 136,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "cnhl-6s-1800-lr-lipo",
@@ -2250,7 +1788,7 @@
         "fetchScript": null
       },
       {
-        "rank": 150,
+        "rank": 137,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "betafpv-1404-4600kv",
@@ -2276,33 +1814,7 @@
         "fetchScript": null
       },
       {
-        "rank": 151,
-        "queueTier": 4,
-        "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-        "partId": "brotherhobby-2004-2600kv",
-        "partName": "BrotherHobby 2004 2600KV",
-        "brand": "BrotherHobby",
-        "categoryKey": "motors",
-        "categoryLabel": "Motors",
-        "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "unsafe_likely_mismatch",
-        "classificationLabel": "Unsafe — likely mismatch",
-        "classificationRank": 5,
-        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-        "officialUrl": "https://brotherhobby.com/2004-motor-p00129p1.html",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy 2004 URL resolves but page content is Avenger 0804 motors; no verified 2004 2600KV packshot.",
-        "fetchScript": null
-      },
-      {
-        "rank": 152,
+        "rank": 138,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "brotherhobby-2806-1400kv-lr",
@@ -2328,7 +1840,7 @@
         "fetchScript": null
       },
       {
-        "rank": 153,
+        "rank": 139,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "emax-e1106-7200kv",
@@ -2354,7 +1866,7 @@
         "fetchScript": null
       },
       {
-        "rank": 154,
+        "rank": 140,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "emax-eco-1404-4000kv",
@@ -2380,7 +1892,7 @@
         "fetchScript": null
       },
       {
-        "rank": 155,
+        "rank": 141,
         "queueTier": 4,
         "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
         "partId": "iflight-xing-e-pro-2806-1300kv",
@@ -2406,59 +1918,7 @@
         "fetchScript": null
       },
       {
-        "rank": 158,
-        "queueTier": 5,
-        "queueTierLabel": "Receivers / VTX",
-        "partId": "hdzero-cine-nano-vtx",
-        "partName": "HDZero Cine Nano VTX",
-        "brand": "HDZero",
-        "categoryKey": "vtx",
-        "categoryLabel": "VTX",
-        "imagePath": "/parts/vtx/hdzero-cine-nano-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No HDZero Cine Nano VTX product page on hd-zero.com shop.",
-        "officialUrl": "https://www.hd-zero.com/shop",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No HDZero Cine Nano VTX product page on hd-zero.com; shop lists Whoop Lite V2 and Freestyle/Race VTX lines instead.",
-        "fetchScript": null
-      },
-      {
-        "rank": 159,
-        "queueTier": 5,
-        "queueTierLabel": "Receivers / VTX",
-        "partId": "rush-mini-tank-cine-vtx",
-        "partName": "RushFPV Mini Tank Cine VTX",
-        "brand": "RushFPV",
-        "categoryKey": "vtx",
-        "categoryLabel": "VTX",
-        "imagePath": "/parts/vtx/rush-mini-tank-cine-vtx.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No RushFPV Mini Tank Cine VTX product page on rushfpv.net.",
-        "officialUrl": "https://rushfpv.net/collections/vtx",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No RushFPV Mini Tank Cine VTX product listing on rushfpv.net at research time.",
-        "fetchScript": null
-      },
-      {
-        "rank": 160,
+        "rank": 144,
         "queueTier": 5,
         "queueTierLabel": "Receivers / VTX",
         "partId": "radiomaster-er5-915-lr",
@@ -2484,7 +1944,7 @@
         "fetchScript": null
       },
       {
-        "rank": 161,
+        "rank": 145,
         "queueTier": 5,
         "queueTierLabel": "Receivers / VTX",
         "partId": "rush-nano-vtx-park",
@@ -2510,7 +1970,7 @@
         "fetchScript": null
       },
       {
-        "rank": 162,
+        "rank": 148,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "betafpv-pavo3516-frame",
@@ -2536,7 +1996,7 @@
         "fetchScript": null
       },
       {
-        "rank": 163,
+        "rank": 149,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "diatone-taycan35-frame",
@@ -2562,7 +2022,7 @@
         "fetchScript": null
       },
       {
-        "rank": 164,
+        "rank": 150,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "flywoo-explorer35-cine-frame",
@@ -2588,7 +2048,7 @@
         "fetchScript": null
       },
       {
-        "rank": 165,
+        "rank": 151,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "flywoo-explorer35-frame",
@@ -2614,33 +2074,7 @@
         "fetchScript": null
       },
       {
-        "rank": 166,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "flywoo-explorer7-lr-frame",
-        "partName": "Flywoo Explorer 7 LR Frame",
-        "brand": "Flywoo",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/flywoo-explorer7-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No Flywoo Explorer 7 LR frame kit on flywoo.net.",
-        "officialUrl": "https://flywoo.net/collections/frames",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No Flywoo Explorer 7 LR frame-kit on flywoo.net; Explorer LR4 listings are complete aircraft, not isolated frames.",
-        "fetchScript": null
-      },
-      {
-        "rank": 167,
+        "rank": 152,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-cinebee35-hd-frame",
@@ -2666,33 +2100,7 @@
         "fetchScript": null
       },
       {
-        "rank": 168,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "geprc-crocodile7-lr-frame",
-        "partName": "GEPRC Crocodile7 LR Frame",
-        "brand": "GEPRC",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/geprc-crocodile7-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No GEPRC Crocodile7 LR frame product on geprc.com.",
-        "officialUrl": "https://geprc.com/product-category/frame-kit/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No GEPRC Crocodile7 LR frame product on geprc.com; Crocodile Baby 4 micro-LR drones only.",
-        "fetchScript": null
-      },
-      {
-        "rank": 169,
+        "rank": 153,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-3-5-frame",
@@ -2718,7 +2126,7 @@
         "fetchScript": null
       },
       {
-        "rank": 170,
+        "rank": 154,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-lite-75-frame",
@@ -2744,33 +2152,7 @@
         "fetchScript": null
       },
       {
-        "rank": 171,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "hglrc-sector7-lr-frame",
-        "partName": "HGLRC Sector7 LR Frame",
-        "brand": "HGLRC",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/hglrc-sector7-lr.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only.",
-        "officialUrl": "https://www.hglrc.com/collections/frames",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch freestyle frames, not 7-inch LR.",
-        "fetchScript": null
-      },
-      {
-        "rank": 172,
+        "rank": 155,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-chimera3-frame",
@@ -2796,7 +2178,7 @@
         "fetchScript": null
       },
       {
-        "rank": 173,
+        "rank": 156,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-chimera35-cine-frame",
@@ -2822,7 +2204,7 @@
         "fetchScript": null
       },
       {
-        "rank": 174,
+        "rank": 157,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-cidatel35-cine-frame",
@@ -2848,7 +2230,7 @@
         "fetchScript": null
       },
       {
-        "rank": 175,
+        "rank": 158,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "tbs-source-one7-lr-frame",
@@ -2874,7 +2256,7 @@
         "fetchScript": null
       },
       {
-        "rank": 176,
+        "rank": 159,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "newbee-drone-75-pro-frame",
@@ -2900,33 +2282,7 @@
         "fetchScript": null
       },
       {
-        "rank": 179,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "diatone-mamba-f35-cine-esc",
-        "partName": "Diatone Mamba F35 Cine ESC",
-        "brand": "Diatone",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/diatone-mamba-f35-cine-esc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini line only.",
-        "officialUrl": "https://www.diatone.us/collections/esc",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No Diatone Mamba F35 Cine ESC on diatone.us; store lists F40 mini and F55 lines instead.",
-        "fetchScript": null
-      },
-      {
-        "rank": 180,
+        "rank": 162,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f55-lr-esc",
@@ -2952,137 +2308,7 @@
         "fetchScript": null
       },
       {
-        "rank": 181,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "geprc-gep35a-cine-esc",
-        "partName": "GEPRC GEP35A Cine ESC",
-        "brand": "GEPRC",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/geprc-gep35a-cine-esc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No GEPRC GEP35A Cine ESC on geprc.com; Taker ESC line only.",
-        "officialUrl": "https://geprc.com/product-category/esc/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No GEPRC GEP35A Cine ESC on geprc.com; ESC category lists Taker H/S series only.",
-        "fetchScript": null
-      },
-      {
-        "rank": 182,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "hglrc-tekko32-f35-mini",
-        "partName": "HGLRC Tekko32 F35 Mini 35A",
-        "brand": "HGLRC",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/hglrc-tekko32-f35-mini.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No HGLRC Tekko32 F35 Mini product page on hglrc.com.",
-        "officialUrl": "https://www.hglrc.com/collections/esc",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No HGLRC Tekko32 F35 Mini product page on hglrc.com; Tekko32 F55 Mini is the closest family line.",
-        "fetchScript": null
-      },
-      {
-        "rank": 183,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "iflight-succexd35-cine-esc",
-        "partName": "iFlight SucceX-D35 Cine ESC",
-        "brand": "iFlight",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/iflight-succexd35-cine-esc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.",
-        "officialUrl": "https://shop.iflight.com/esc-cat343",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 184,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "tmotor-f35a-mini-4in1",
-        "partName": "T-Motor F35A Mini 4-in-1",
-        "brand": "T-Motor",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/tmotor-f35a-mini-4in1.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.",
-        "officialUrl": "https://store.tmotor.com/category/uav-esc-1.html",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 185,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "tmotor-pacer-f35-cine-esc",
-        "partName": "T-Motor Pacer F35 Cine ESC",
-        "brand": "T-Motor",
-        "categoryKey": "esc",
-        "categoryLabel": "ESC",
-        "imagePath": "/parts/escs/tmotor-pacer-f35-cine-esc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.",
-        "officialUrl": "https://store.tmotor.com/category/uav-esc-1.html",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 186,
+        "rank": 163,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f405-20x20-mini",
@@ -3108,59 +2334,7 @@
         "fetchScript": null
       },
       {
-        "rank": 187,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "geprc-f722-cine-mini-fc",
-        "partName": "GEPRC F722 Cine Mini FC",
-        "brand": "GEPRC",
-        "categoryKey": "flightController",
-        "categoryLabel": "Flight controller",
-        "imagePath": "/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU.",
-        "officialUrl": "https://geprc.com/product/gep-f722-hd-flight-controller/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "GEPRC store lists GEP-F722 HD flight controllers; no GEPRC F722 Cine Mini FC product page on geprc.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 188,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "matek-f722-cine-mini-fc",
-        "partName": "Matek F722 Cine Mini FC",
-        "brand": "Matek",
-        "categoryKey": "flightController",
-        "categoryLabel": "Flight controller",
-        "imagePath": "/parts/flight-controllers/matek-f722-cine-mini-fc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU.",
-        "officialUrl": "https://www.mateksys.com/?portfolio=f722-mini",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Matek F722-mini portfolio is EOL and exposes spec-sheet composites only; no Matek F722 Cine Mini FC SKU on mateksys.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 189,
+        "rank": 164,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-brushless-1s-aio-esc",
@@ -3186,7 +2360,7 @@
         "fetchScript": null
       },
       {
-        "rank": 190,
+        "rank": 165,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-esc",
@@ -3212,7 +2386,7 @@
         "fetchScript": null
       },
       {
-        "rank": 191,
+        "rank": 166,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-h743-lr-fc",
@@ -3238,7 +2412,7 @@
         "fetchScript": null
       },
       {
-        "rank": 192,
+        "rank": 167,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-gep-aio-1s-fc",
@@ -3264,7 +2438,7 @@
         "fetchScript": null
       },
       {
-        "rank": 193,
+        "rank": 168,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-fc",
@@ -3290,7 +2464,7 @@
         "fetchScript": null
       },
       {
-        "rank": 194,
+        "rank": 169,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f35-mini-esc",
@@ -3316,7 +2490,7 @@
         "fetchScript": null
       },
       {
-        "rank": 195,
+        "rank": 170,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-f411-1s-aio-fc",
@@ -3342,7 +2516,7 @@
         "fetchScript": null
       },
       {
-        "rank": 196,
+        "rank": 171,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f745-lr-fc",
@@ -3368,59 +2542,7 @@
         "fetchScript": null
       },
       {
-        "rank": 197,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "iflight-beast-h743-cine-fc",
-        "partName": "iFlight Beast H743 Cine FC",
-        "brand": "iFlight",
-        "categoryKey": "flightController",
-        "categoryLabel": "Flight controller",
-        "imagePath": "/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "unsafe_likely_mismatch",
-        "classificationLabel": "Unsafe — likely mismatch",
-        "classificationRank": 5,
-        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-        "officialUrl": "https://shop.iflight.com/flight-controller-cat342",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No iFlight Beast H743 Cine FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
-        "fetchScript": null
-      },
-      {
-        "rank": 198,
-        "queueTier": 7,
-        "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-        "partId": "iflight-beast-h743-lr-fc",
-        "partName": "iFlight Beast H743 LR FC",
-        "brand": "iFlight",
-        "categoryKey": "flightController",
-        "categoryLabel": "Flight controller",
-        "imagePath": "/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "7-inch-long-range"
-        ],
-        "auditPriority": 3,
-        "classification": "unsafe_likely_mismatch",
-        "classificationLabel": "Unsafe — likely mismatch",
-        "classificationRank": 5,
-        "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-        "officialUrl": "https://shop.iflight.com/flight-controller-cat342",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No iFlight Beast H743 LR FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
-        "fetchScript": null
-      },
-      {
-        "rank": 199,
+        "rank": 172,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "matek-h743-wing-lr-fc",
@@ -3447,6 +2569,105 @@
       }
     ],
     "topResearchTargets": [
+      {
+        "rank": 1,
+        "queueTier": 1,
+        "queueTierLabel": "Preset parts (remaining)",
+        "partId": "geprc-gep-cl35-v3-frame",
+        "partName": "GEPRC GEP-CL35 V3 Frame",
+        "brand": "GEPRC",
+        "categoryKey": "frame",
+        "categoryLabel": "Frame",
+        "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 1,
+        "classification": "needs_better_official_url",
+        "classificationLabel": "Needs better official URL",
+        "classificationRank": 1,
+        "reason": "No official manufacturer product page recorded in image source files.",
+        "officialUrl": null,
+        "preferredImageUrl": null,
+        "urlConfidence": null,
+        "sourceNotes": null,
+        "fetchScript": null
+      },
+      {
+        "rank": 2,
+        "queueTier": 1,
+        "queueTierLabel": "Preset parts (remaining)",
+        "partId": "rekon-hglrc-rekon7-pro-v2-frame",
+        "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
+        "brand": "RekonFPV",
+        "categoryKey": "frame",
+        "categoryLabel": "Frame",
+        "imagePath": "/parts/frames/rekon-hglrc-rekon7-pro-v2-frame.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "auditPriority": 1,
+        "classification": "needs_better_official_url",
+        "classificationLabel": "Needs better official URL",
+        "classificationRank": 1,
+        "reason": "No official manufacturer product page recorded in image source files.",
+        "officialUrl": null,
+        "preferredImageUrl": null,
+        "urlConfidence": null,
+        "sourceNotes": null,
+        "fetchScript": null
+      },
+      {
+        "rank": 3,
+        "queueTier": 1,
+        "queueTierLabel": "Preset parts (remaining)",
+        "partId": "geprc-speedx2-2105-5-2650kv",
+        "partName": "GEPRC SPEEDX2 2105.5 2650KV",
+        "brand": "GEPRC",
+        "categoryKey": "motors",
+        "categoryLabel": "Motors",
+        "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "auditPriority": 1,
+        "classification": "needs_better_official_url",
+        "classificationLabel": "Needs better official URL",
+        "classificationRank": 1,
+        "reason": "No official manufacturer product page recorded in image source files.",
+        "officialUrl": null,
+        "preferredImageUrl": null,
+        "urlConfidence": null,
+        "sourceNotes": null,
+        "fetchScript": null
+      },
       {
         "rank": 11,
         "queueTier": 2,
@@ -3735,12 +2956,138 @@
         "urlConfidence": "high",
         "sourceNotes": "Official iFlight Beast F722 flight controller page.",
         "fetchScript": null
+      },
+      {
+        "rank": 88,
+        "queueTier": 3,
+        "queueTierLabel": "Multi build-class catalog",
+        "partId": "iflight-blitz-mini-e55s-4in1",
+        "partName": "iFlight BLITZ Mini E55S 4-in-1 ESC",
+        "brand": "iFlight",
+        "categoryKey": "esc",
+        "categoryLabel": "ESC",
+        "imagePath": "/parts/escs/iflight-blitz-mini-e55s-4in1.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "auditPriority": 3,
+        "classification": "needs_better_official_url",
+        "classificationLabel": "Needs better official URL",
+        "classificationRank": 1,
+        "reason": "No official manufacturer product page recorded in image source files.",
+        "officialUrl": null,
+        "preferredImageUrl": null,
+        "urlConfidence": null,
+        "sourceNotes": null,
+        "fetchScript": null
       }
     ]
   },
   "queue": [
     {
       "rank": 1,
+      "queueTier": 1,
+      "queueTierLabel": "Preset parts (remaining)",
+      "partId": "geprc-gep-cl35-v3-frame",
+      "partName": "GEPRC GEP-CL35 V3 Frame",
+      "brand": "GEPRC",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "buildClass": "cinewhoop",
+          "categoryKey": "frame"
+        }
+      ],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 1,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 2,
+      "queueTier": 1,
+      "queueTierLabel": "Preset parts (remaining)",
+      "partId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
+      "brand": "RekonFPV",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/rekon-hglrc-rekon7-pro-v2-frame.jpg",
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "7-long-range-explorer",
+          "presetName": "7\" Long Range Explorer",
+          "buildClass": "7-inch-long-range",
+          "categoryKey": "frame"
+        }
+      ],
+      "compatibleClasses": [
+        "7-inch-long-range"
+      ],
+      "auditPriority": 1,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 3,
+      "queueTier": 1,
+      "queueTierLabel": "Preset parts (remaining)",
+      "partId": "geprc-speedx2-2105-5-2650kv",
+      "partName": "GEPRC SPEEDX2 2105.5 2650KV",
+      "brand": "GEPRC",
+      "categoryKey": "motors",
+      "categoryLabel": "Motors",
+      "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "buildClass": "cinewhoop",
+          "categoryKey": "motors"
+        }
+      ],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 1,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 4,
       "queueTier": 1,
       "queueTierLabel": "Preset parts (remaining)",
       "partId": "gnb-4s-1500",
@@ -3774,40 +3121,7 @@
       "fetchScript": null
     },
     {
-      "rank": 2,
-      "queueTier": 1,
-      "queueTierLabel": "Preset parts (remaining)",
-      "partId": "iflight-xing-2005-2550",
-      "partName": "iFlight XING 2005 2550KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing-2005-2550.jpg",
-      "usedInPreset": true,
-      "presetUsage": [
-        {
-          "presetId": "cinewhoop-cruiser",
-          "presetName": "Cinewhoop Cruiser",
-          "buildClass": "cinewhoop",
-          "categoryKey": "motors"
-        }
-      ],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 1,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Official page lacks isolated 2005 motor packshot.",
-      "officialUrl": "https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Official iFlight XING 2005 page lists 2550KV but page metadata/gallery lacks an isolated 2005 motor packshot (og:image points at unrelated XING-2205 asset).",
-      "fetchScript": null
-    },
-    {
-      "rank": 3,
+      "rank": 5,
       "queueTier": 1,
       "queueTierLabel": "Preset parts (remaining)",
       "partId": "speedybee-bl32-50a",
@@ -3840,7 +3154,7 @@
       "fetchScript": null
     },
     {
-      "rank": 4,
+      "rank": 6,
       "queueTier": 1,
       "queueTierLabel": "Preset parts (remaining)",
       "partId": "speedybee-bls-35a-4in1",
@@ -3880,7 +3194,7 @@
       "fetchScript": null
     },
     {
-      "rank": 5,
+      "rank": 7,
       "queueTier": 1,
       "queueTierLabel": "Preset parts (remaining)",
       "partId": "speedybee-f405-mini",
@@ -3920,7 +3234,7 @@
       "fetchScript": null
     },
     {
-      "rank": 6,
+      "rank": 8,
       "queueTier": 1,
       "queueTierLabel": "Preset parts (remaining)",
       "partId": "speedybee-f405-v4",
@@ -3950,72 +3264,6 @@
       "preferredImageUrl": null,
       "urlConfidence": "high",
       "sourceNotes": "Official F405 V4 stack page.",
-      "fetchScript": null
-    },
-    {
-      "rank": 7,
-      "queueTier": 1,
-      "queueTierLabel": "Preset parts (remaining)",
-      "partId": "geprc-cinelog35-v2",
-      "partName": "GEPRC Cinelog35 V2",
-      "brand": "GEPRC",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/geprc-cinelog35-v2.jpg",
-      "usedInPreset": true,
-      "presetUsage": [
-        {
-          "presetId": "cinewhoop-cruiser",
-          "presetName": "Cinewhoop Cruiser",
-          "buildClass": "cinewhoop",
-          "categoryKey": "frame"
-        }
-      ],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 1,
-      "classification": "should_remain_svg_placeholder",
-      "classificationLabel": "Should remain SVG placeholder",
-      "classificationRank": 4,
-      "reason": "Official listing is a complete aircraft, not an isolated frame-kit packshot.",
-      "officialUrl": "https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/",
-      "preferredImageUrl": null,
-      "urlConfidence": "high",
-      "sourceNotes": "Official full-drone listing; frame-only SKU not clearly separated.",
-      "fetchScript": null
-    },
-    {
-      "rank": 8,
-      "queueTier": 1,
-      "queueTierLabel": "Preset parts (remaining)",
-      "partId": "rekon7-pro-lr",
-      "partName": "Rekon7 Pro Long Range",
-      "brand": "RekonFPV",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/rekon7-pro-lr.jpg",
-      "usedInPreset": true,
-      "presetUsage": [
-        {
-          "presetId": "7-long-range-explorer",
-          "presetName": "7\" Long Range Explorer",
-          "buildClass": "7-inch-long-range",
-          "categoryKey": "frame"
-        }
-      ],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 1,
-      "classification": "should_remain_svg_placeholder",
-      "classificationLabel": "Should remain SVG placeholder",
-      "classificationRank": 4,
-      "reason": "Official listing is a complete aircraft, not an isolated frame-kit packshot.",
-      "officialUrl": "https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version",
-      "preferredImageUrl": null,
-      "urlConfidence": "high",
-      "sourceNotes": "Official complete drone page for Rekon7 Pro long range.",
       "fetchScript": null
     },
     {
@@ -5582,58 +4830,6 @@
       "rank": 68,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
-      "partId": "axisflying-ae2207-1960",
-      "partName": "AxisFlying AE 2207 1960KV",
-      "brand": "AxisFlying",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/axisflying-ae2207.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "5-inch-freestyle"
-      ],
-      "auditPriority": 2,
-      "classification": "should_remain_svg_placeholder",
-      "classificationLabel": "Should remain SVG placeholder",
-      "classificationRank": 4,
-      "reason": "Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant.",
-      "officialUrl": "https://www.axisflying.com/products/axisflying-ae-series-2207-motor",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant.",
-      "fetchScript": null
-    },
-    {
-      "rank": 69,
-      "queueTier": 2,
-      "queueTierLabel": "5-inch freestyle catalog",
-      "partId": "axisflying-joker-2207-1920kv",
-      "partName": "AxisFlying Joker 2207 1920KV",
-      "brand": "AxisFlying",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/axisflying-joker-2207-1920kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "5-inch-freestyle"
-      ],
-      "auditPriority": 2,
-      "classification": "should_remain_svg_placeholder",
-      "classificationLabel": "Should remain SVG placeholder",
-      "classificationRank": 4,
-      "reason": "Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant.",
-      "officialUrl": "https://www.axisflying.com/products/axisflying-joker-2207-motor",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant.",
-      "fetchScript": null
-    },
-    {
-      "rank": 70,
-      "queueTier": 2,
-      "queueTierLabel": "5-inch freestyle catalog",
       "partId": "samguk-v-2207-1960kv",
       "partName": "Samguk Series V 2207 1960KV",
       "brand": "Samguk",
@@ -5657,7 +4853,7 @@
       "fetchScript": null
     },
     {
-      "rank": 71,
+      "rank": 69,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "cnhl-6s-1500-freestyle",
@@ -5683,7 +4879,7 @@
       "fetchScript": null
     },
     {
-      "rank": 72,
+      "rank": 70,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-falkor-2",
@@ -5709,7 +4905,7 @@
       "fetchScript": null
     },
     {
-      "rank": 73,
+      "rank": 71,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-predator-v5",
@@ -5735,7 +4931,7 @@
       "fetchScript": null
     },
     {
-      "rank": 74,
+      "rank": 72,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-toothless-2",
@@ -5764,7 +4960,7 @@
       "fetchScript": null
     },
     {
-      "rank": 75,
+      "rank": 73,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-reaper-f4-65a",
@@ -5791,7 +4987,7 @@
       "fetchScript": null
     },
     {
-      "rank": 76,
+      "rank": 74,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-f722-v4",
@@ -5817,7 +5013,7 @@
       "fetchScript": null
     },
     {
-      "rank": 77,
+      "rank": 75,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "foxeer-h743-f722-fc",
@@ -5843,7 +5039,7 @@
       "fetchScript": null
     },
     {
-      "rank": 78,
+      "rank": 76,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "armattan-badger5-frame",
@@ -5869,7 +5065,7 @@
       "fetchScript": null
     },
     {
-      "rank": 79,
+      "rank": 77,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "geprc-mark4-frame",
@@ -5895,7 +5091,7 @@
       "fetchScript": null
     },
     {
-      "rank": 80,
+      "rank": 78,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "lumenier-qav-s-johnnyfpv",
@@ -5921,7 +5117,7 @@
       "fetchScript": null
     },
     {
-      "rank": 81,
+      "rank": 79,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "fpvcycle-2207-1780kv",
@@ -5947,7 +5143,7 @@
       "fetchScript": null
     },
     {
-      "rank": 82,
+      "rank": 80,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "fpvcycle-2207-1960",
@@ -5973,7 +5169,7 @@
       "fetchScript": null
     },
     {
-      "rank": 83,
+      "rank": 81,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "hypetrain-acer-2306-1950kv",
@@ -5999,7 +5195,7 @@
       "fetchScript": null
     },
     {
-      "rank": 84,
+      "rank": 82,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "hypetrain-blaster-2450",
@@ -6025,7 +5221,7 @@
       "fetchScript": null
     },
     {
-      "rank": 85,
+      "rank": 83,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "johnnyfpv-motor-v2-2207-1960kv",
@@ -6051,7 +5247,7 @@
       "fetchScript": null
     },
     {
-      "rank": 86,
+      "rank": 84,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "lumenier-2207-1800kv",
@@ -6077,7 +5273,7 @@
       "fetchScript": null
     },
     {
-      "rank": 87,
+      "rank": 85,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "ethix-p3-peanut-butter",
@@ -6103,7 +5299,7 @@
       "fetchScript": null
     },
     {
-      "rank": 88,
+      "rank": 86,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "ethix-s3-5050",
@@ -6129,7 +5325,7 @@
       "fetchScript": null
     },
     {
-      "rank": 89,
+      "rank": 87,
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "gemfan-hurricane-mck-51433",
@@ -6155,7 +5351,34 @@
       "fetchScript": null
     },
     {
-      "rank": 90,
+      "rank": 88,
+      "queueTier": 3,
+      "queueTierLabel": "Multi build-class catalog",
+      "partId": "iflight-blitz-mini-e55s-4in1",
+      "partName": "iFlight BLITZ Mini E55S 4-in-1 ESC",
+      "brand": "iFlight",
+      "categoryKey": "esc",
+      "categoryLabel": "ESC",
+      "imagePath": "/parts/escs/iflight-blitz-mini-e55s-4in1.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 89,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "lumenier-6s-2200-lr-lipo",
@@ -6181,7 +5404,7 @@
       "fetchScript": null
     },
     {
-      "rank": 91,
+      "rank": 90,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "molicel-6s-4000-liion",
@@ -6207,7 +5430,7 @@
       "fetchScript": null
     },
     {
-      "rank": 92,
+      "rank": 91,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "ovonic-6s-3000-lr-lipo",
@@ -6233,7 +5456,7 @@
       "fetchScript": null
     },
     {
-      "rank": 93,
+      "rank": 92,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "sanyo-6s-3500-liion",
@@ -6259,7 +5482,7 @@
       "fetchScript": null
     },
     {
-      "rank": 94,
+      "rank": 93,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tattu-1s-300-hv",
@@ -6285,7 +5508,7 @@
       "fetchScript": null
     },
     {
-      "rank": 95,
+      "rank": 94,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tattu-4s-1300-cine",
@@ -6311,7 +5534,7 @@
       "fetchScript": null
     },
     {
-      "rank": 96,
+      "rank": 95,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tattu-6s-2800-lr-lipo",
@@ -6337,7 +5560,7 @@
       "fetchScript": null
     },
     {
-      "rank": 97,
+      "rank": 96,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tattu-rline-4s-650",
@@ -6363,7 +5586,7 @@
       "fetchScript": null
     },
     {
-      "rank": 98,
+      "rank": 97,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "caddx-proview-cine-digital",
@@ -6389,7 +5612,7 @@
       "fetchScript": null
     },
     {
-      "rank": 99,
+      "rank": 98,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "caddx-ratel-lucky-whoop",
@@ -6415,7 +5638,7 @@
       "fetchScript": null
     },
     {
-      "rank": 100,
+      "rank": 99,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "foxeer-pico-r-whoop",
@@ -6441,7 +5664,7 @@
       "fetchScript": null
     },
     {
-      "rank": 101,
+      "rank": 100,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tmotor-f1404-3800kv",
@@ -6467,7 +5690,7 @@
       "fetchScript": null
     },
     {
-      "rank": 102,
+      "rank": 101,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "tmotor-mn2004-2550kv",
@@ -6493,7 +5716,7 @@
       "fetchScript": null
     },
     {
-      "rank": 103,
+      "rank": 102,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "apc-7x4-2-lr",
@@ -6519,7 +5742,7 @@
       "fetchScript": null
     },
     {
-      "rank": 104,
+      "rank": 103,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "avan-3540-cine-d5",
@@ -6545,7 +5768,7 @@
       "fetchScript": null
     },
     {
-      "rank": 105,
+      "rank": 104,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "avan-rush-3528",
@@ -6571,7 +5794,7 @@
       "fetchScript": null
     },
     {
-      "rank": 106,
+      "rank": 105,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "betafpv-40mm-4blade-1535",
@@ -6597,7 +5820,7 @@
       "fetchScript": null
     },
     {
-      "rank": 107,
+      "rank": 106,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "dal-35435-cine-d5",
@@ -6623,7 +5846,7 @@
       "fetchScript": null
     },
     {
-      "rank": 108,
+      "rank": 107,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "dal-prop-3530-cyclone",
@@ -6649,7 +5872,7 @@
       "fetchScript": null
     },
     {
-      "rank": 109,
+      "rank": 108,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-avan-40mm-whoop",
@@ -6675,7 +5898,7 @@
       "fetchScript": null
     },
     {
-      "rank": 110,
+      "rank": 109,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-31mm-4blade-whoop",
@@ -6701,7 +5924,7 @@
       "fetchScript": null
     },
     {
-      "rank": 111,
+      "rank": 110,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3522-hurricane",
@@ -6727,7 +5950,7 @@
       "fetchScript": null
     },
     {
-      "rank": 112,
+      "rank": 111,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3528-cine-d5",
@@ -6753,7 +5976,7 @@
       "fetchScript": null
     },
     {
-      "rank": 113,
+      "rank": 112,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-3528-freestyle",
@@ -6779,7 +6002,7 @@
       "fetchScript": null
     },
     {
-      "rank": 114,
+      "rank": 113,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-7035-2-lr",
@@ -6805,7 +6028,7 @@
       "fetchScript": null
     },
     {
-      "rank": 115,
+      "rank": 114,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-7036-3-lr",
@@ -6831,7 +6054,7 @@
       "fetchScript": null
     },
     {
-      "rank": 116,
+      "rank": 115,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gemfan-floppypop3-3518",
@@ -6857,7 +6080,7 @@
       "fetchScript": null
     },
     {
-      "rank": 117,
+      "rank": 116,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "geprc-7038-2-lr",
@@ -6883,7 +6106,7 @@
       "fetchScript": null
     },
     {
-      "rank": 118,
+      "rank": 117,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3525-pc",
@@ -6909,7 +6132,7 @@
       "fetchScript": null
     },
     {
-      "rank": 119,
+      "rank": 118,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3535-pc",
@@ -6935,7 +6158,7 @@
       "fetchScript": null
     },
     {
-      "rank": 120,
+      "rank": 119,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-3536-cine-d5",
@@ -6961,7 +6184,7 @@
       "fetchScript": null
     },
     {
-      "rank": 121,
+      "rank": 120,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-7030-3-lr",
@@ -6987,7 +6210,7 @@
       "fetchScript": null
     },
     {
-      "rank": 122,
+      "rank": 121,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-7035-2-lr",
@@ -7013,7 +6236,7 @@
       "fetchScript": null
     },
     {
-      "rank": 123,
+      "rank": 122,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-durable-3530-cine",
@@ -7039,7 +6262,7 @@
       "fetchScript": null
     },
     {
-      "rank": 124,
+      "rank": 123,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "hqprop-t65x30-whoop",
@@ -7065,7 +6288,7 @@
       "fetchScript": null
     },
     {
-      "rank": 125,
+      "rank": 124,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gn-1s-550-bt2",
@@ -7091,7 +6314,7 @@
       "fetchScript": null
     },
     {
-      "rank": 126,
+      "rank": 125,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-1100-park",
@@ -7117,7 +6340,7 @@
       "fetchScript": null
     },
     {
-      "rank": 127,
+      "rank": 126,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-1300-cine",
@@ -7143,7 +6366,7 @@
       "fetchScript": null
     },
     {
-      "rank": 128,
+      "rank": 127,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-4s-750-mini",
@@ -7169,7 +6392,7 @@
       "fetchScript": null
     },
     {
-      "rank": 129,
+      "rank": 128,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "gnb-6s-2500-lr-lipo",
@@ -7195,7 +6418,7 @@
       "fetchScript": null
     },
     {
-      "rank": 130,
+      "rank": 129,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "betafpv-2s-300-ph2",
@@ -7221,7 +6444,7 @@
       "fetchScript": null
     },
     {
-      "rank": 131,
+      "rank": 130,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "cnhl-ministar-4s-900",
@@ -7247,85 +6470,7 @@
       "fetchScript": null
     },
     {
-      "rank": 132,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-4s-1800-cine",
-      "partName": "iFlight 4S 1800mAh 120C Cine",
-      "brand": "iFlight",
-      "categoryKey": "battery",
-      "categoryLabel": "Battery",
-      "imagePath": "/parts/batteries/iflight-4s-1800-cine.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No iFlight 4S 1800mAh 120C battery on official store.",
-      "officialUrl": "https://shop.iflight.com/batteries-cat342",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No iFlight 4S 1800mAh 120C cinewhoop battery SKU on official shop.iflight.com store at research time.",
-      "fetchScript": null
-    },
-    {
-      "rank": 133,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "axisflying-2808-1150kv-lr",
-      "partName": "AxisFlying 2808 1150KV LR",
-      "brand": "AxisFlying",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No AxisFlying 2808 1150KV LR product page on axisflying.com.",
-      "officialUrl": "https://www.axisflying.com/collections/motors",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No AxisFlying 2808 1150KV LR product page on axisflying.com; motors collection is the only manufacturer reference.",
-      "fetchScript": null
-    },
-    {
-      "rank": 134,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "brotherhobby-1507-3700kv",
-      "partName": "BrotherHobby 1507 3700KV",
-      "brand": "BrotherHobby",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No BrotherHobby 1507 3700KV product listing on brotherhobby.com.",
-      "officialUrl": "https://brotherhobby.com/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No BrotherHobby 1507 3700KV product listing found on brotherhobby.com at research time.",
-      "fetchScript": null
-    },
-    {
-      "rank": 135,
+      "rank": 131,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-eco-2004-2550kv",
@@ -7351,7 +6496,7 @@
       "fetchScript": null
     },
     {
-      "rank": 136,
+      "rank": 132,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-eco-ii-2806-1280kv",
@@ -7377,85 +6522,7 @@
       "fetchScript": null
     },
     {
-      "rank": 137,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "geprc-0901-11000kv",
-      "partName": "GEPRC 0901 11000KV",
-      "brand": "GEPRC",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No GEPRC 0901 11000KV motor product page on geprc.com.",
-      "officialUrl": "https://geprc.com/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No GEPRC 0901 11000KV motor product page found on geprc.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 138,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "geprc-2005-2200kv",
-      "partName": "GEPRC 2005 2200KV",
-      "brand": "GEPRC",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No GEPRC 2005 2200KV motor product page on geprc.com.",
-      "officialUrl": "https://geprc.com/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No GEPRC 2005 2200KV motor product page found on geprc.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 139,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "happymodel-cine-2004-2400kv",
-      "partName": "Happymodel Cine 2004 2400KV",
-      "brand": "Happymodel",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No Happymodel Cine 2004 2400KV standalone motor product page.",
-      "officialUrl": "https://www.happymodel.cn/index.php/category/product/motor/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No Happymodel Cine 2004 2400KV standalone motor product page; Cine8 frame/kit listings only.",
-      "fetchScript": null
-    },
-    {
-      "rank": 140,
+      "rank": 133,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "iflight-xing2-1404-4600kv",
@@ -7481,59 +6548,7 @@
       "fetchScript": null
     },
     {
-      "rank": 141,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-1507-4600kv",
-      "partName": "iFlight XING2 1507 4600KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Legacy XING2 1507 product URL 404 on shop.iflight.com.",
-      "officialUrl": "https://shop.iflight.com/motor-cat341",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy XING2 1507 product URL returns 404; not listed on current shop.iflight.com motor category.",
-      "fetchScript": null
-    },
-    {
-      "rank": 142,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "iflight-xing2-2203-2350kv",
-      "partName": "iFlight XING2 2203 2350KV",
-      "brand": "iFlight",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Legacy XING2 2203 product URL 404 on shop.iflight.com.",
-      "officialUrl": "https://shop.iflight.com/motor-cat341",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy XING2 2203 product URL returns 404; not listed on current shop.iflight.com motor category.",
-      "fetchScript": null
-    },
-    {
-      "rank": 143,
+      "rank": 134,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "iflight-xing2-2807-1280kv-lr",
@@ -7559,33 +6574,7 @@
       "fetchScript": null
     },
     {
-      "rank": 144,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "newbee-0802-17500kv",
-      "partName": "NewBeeDrone 0802 17500KV",
-      "brand": "NewBeeDrone",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "tiny-whoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No NewBeeDrone 0802 17500KV product page on newbeedrone.com.",
-      "officialUrl": "https://www.newbeedrone.com/collections/motors",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No NewBeeDrone 0802 17500KV product page; official store lists 13000/14000/19000/25000/30000KV 0802 lines instead.",
-      "fetchScript": null
-    },
-    {
-      "rank": 145,
+      "rank": 135,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "rcinpower-1404-3800kv",
@@ -7611,85 +6600,7 @@
       "fetchScript": null
     },
     {
-      "rank": 146,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "rcinpower-2203-2300kv",
-      "partName": "RCinPower 2203 2300KV",
-      "brand": "RCinPower",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com.",
-      "officialUrl": "https://www.rcinpower.com/G-SERIES/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No RCinPower G-SERIES 2203 2300KV product page found on rcinpower.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 147,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "rcinpower-2807-1350kv-lr",
-      "partName": "RCinPower 2807 1350KV LR",
-      "brand": "RCinPower",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No RCinPower 2807 1350KV LR product page on rcinpower.com.",
-      "officialUrl": "https://www.rcinpower.com/G-SERIES/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No RCinPower 2807 1350KV LR product page found on rcinpower.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 148,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "tmotor-2807-1300kv-lr",
-      "partName": "T-Motor 2807 1300KV LR",
-      "brand": "T-Motor",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com.",
-      "officialUrl": "https://store.tmotor.com/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No T-Motor FPV 2807 1300KV LR motor product page found on store.tmotor.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 149,
+      "rank": 136,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "cnhl-6s-1800-lr-lipo",
@@ -7715,7 +6626,7 @@
       "fetchScript": null
     },
     {
-      "rank": 150,
+      "rank": 137,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "betafpv-1404-4600kv",
@@ -7741,33 +6652,7 @@
       "fetchScript": null
     },
     {
-      "rank": 151,
-      "queueTier": 4,
-      "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
-      "partId": "brotherhobby-2004-2600kv",
-      "partName": "BrotherHobby 2004 2600KV",
-      "brand": "BrotherHobby",
-      "categoryKey": "motors",
-      "categoryLabel": "Motors",
-      "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "unsafe_likely_mismatch",
-      "classificationLabel": "Unsafe — likely mismatch",
-      "classificationRank": 5,
-      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-      "officialUrl": "https://brotherhobby.com/2004-motor-p00129p1.html",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy 2004 URL resolves but page content is Avenger 0804 motors; no verified 2004 2600KV packshot.",
-      "fetchScript": null
-    },
-    {
-      "rank": 152,
+      "rank": 138,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "brotherhobby-2806-1400kv-lr",
@@ -7793,7 +6678,7 @@
       "fetchScript": null
     },
     {
-      "rank": 153,
+      "rank": 139,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-e1106-7200kv",
@@ -7819,7 +6704,7 @@
       "fetchScript": null
     },
     {
-      "rank": 154,
+      "rank": 140,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "emax-eco-1404-4000kv",
@@ -7845,7 +6730,7 @@
       "fetchScript": null
     },
     {
-      "rank": 155,
+      "rank": 141,
       "queueTier": 4,
       "queueTierLabel": "Easy-match: props, batteries, cameras, motors",
       "partId": "iflight-xing-e-pro-2806-1300kv",
@@ -7871,7 +6756,7 @@
       "fetchScript": null
     },
     {
-      "rank": 156,
+      "rank": 142,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "akk-a3-nano-vtx-park",
@@ -7897,7 +6782,7 @@
       "fetchScript": null
     },
     {
-      "rank": 157,
+      "rank": 143,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "akk-a5-nano-vtx",
@@ -7923,59 +6808,7 @@
       "fetchScript": null
     },
     {
-      "rank": 158,
-      "queueTier": 5,
-      "queueTierLabel": "Receivers / VTX",
-      "partId": "hdzero-cine-nano-vtx",
-      "partName": "HDZero Cine Nano VTX",
-      "brand": "HDZero",
-      "categoryKey": "vtx",
-      "categoryLabel": "VTX",
-      "imagePath": "/parts/vtx/hdzero-cine-nano-vtx.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No HDZero Cine Nano VTX product page on hd-zero.com shop.",
-      "officialUrl": "https://www.hd-zero.com/shop",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No HDZero Cine Nano VTX product page on hd-zero.com; shop lists Whoop Lite V2 and Freestyle/Race VTX lines instead.",
-      "fetchScript": null
-    },
-    {
-      "rank": 159,
-      "queueTier": 5,
-      "queueTierLabel": "Receivers / VTX",
-      "partId": "rush-mini-tank-cine-vtx",
-      "partName": "RushFPV Mini Tank Cine VTX",
-      "brand": "RushFPV",
-      "categoryKey": "vtx",
-      "categoryLabel": "VTX",
-      "imagePath": "/parts/vtx/rush-mini-tank-cine-vtx.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No RushFPV Mini Tank Cine VTX product page on rushfpv.net.",
-      "officialUrl": "https://rushfpv.net/collections/vtx",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No RushFPV Mini Tank Cine VTX product listing on rushfpv.net at research time.",
-      "fetchScript": null
-    },
-    {
-      "rank": 160,
+      "rank": 144,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "radiomaster-er5-915-lr",
@@ -8001,7 +6834,7 @@
       "fetchScript": null
     },
     {
-      "rank": 161,
+      "rank": 145,
       "queueTier": 5,
       "queueTierLabel": "Receivers / VTX",
       "partId": "rush-nano-vtx-park",
@@ -8027,7 +6860,59 @@
       "fetchScript": null
     },
     {
-      "rank": 162,
+      "rank": 146,
+      "queueTier": 6,
+      "queueTierLabel": "Frames",
+      "partId": "betafpv-pavo35-frame-kit",
+      "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
+      "brand": "BETAFPV",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/betafpv-pavo35-frame-kit.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "auditPriority": 3,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 147,
+      "queueTier": 6,
+      "queueTierLabel": "Frames",
+      "partId": "iflight-aos-3-5-v5-1-frame",
+      "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
+      "brand": "iFlight",
+      "categoryKey": "frame",
+      "categoryLabel": "Frame",
+      "imagePath": "/parts/frames/iflight-aos-3-5-v5-1.jpg",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "auditPriority": 3,
+      "classification": "needs_better_official_url",
+      "classificationLabel": "Needs better official URL",
+      "classificationRank": 1,
+      "reason": "No official manufacturer product page recorded in image source files.",
+      "officialUrl": null,
+      "preferredImageUrl": null,
+      "urlConfidence": null,
+      "sourceNotes": null,
+      "fetchScript": null
+    },
+    {
+      "rank": 148,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "betafpv-pavo3516-frame",
@@ -8053,7 +6938,7 @@
       "fetchScript": null
     },
     {
-      "rank": 163,
+      "rank": 149,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "diatone-taycan35-frame",
@@ -8079,7 +6964,7 @@
       "fetchScript": null
     },
     {
-      "rank": 164,
+      "rank": 150,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-cine-frame",
@@ -8105,7 +6990,7 @@
       "fetchScript": null
     },
     {
-      "rank": 165,
+      "rank": 151,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-frame",
@@ -8131,33 +7016,7 @@
       "fetchScript": null
     },
     {
-      "rank": 166,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "flywoo-explorer7-lr-frame",
-      "partName": "Flywoo Explorer 7 LR Frame",
-      "brand": "Flywoo",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/flywoo-explorer7-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No Flywoo Explorer 7 LR frame kit on flywoo.net.",
-      "officialUrl": "https://flywoo.net/collections/frames",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No Flywoo Explorer 7 LR frame-kit on flywoo.net; Explorer LR4 listings are complete aircraft, not isolated frames.",
-      "fetchScript": null
-    },
-    {
-      "rank": 167,
+      "rank": 152,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-cinebee35-hd-frame",
@@ -8183,33 +7042,7 @@
       "fetchScript": null
     },
     {
-      "rank": 168,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "geprc-crocodile7-lr-frame",
-      "partName": "GEPRC Crocodile7 LR Frame",
-      "brand": "GEPRC",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/geprc-crocodile7-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No GEPRC Crocodile7 LR frame product on geprc.com.",
-      "officialUrl": "https://geprc.com/product-category/frame-kit/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No GEPRC Crocodile7 LR frame product on geprc.com; Crocodile Baby 4 micro-LR drones only.",
-      "fetchScript": null
-    },
-    {
-      "rank": 169,
+      "rank": 153,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-3-5-frame",
@@ -8235,7 +7068,7 @@
       "fetchScript": null
     },
     {
-      "rank": 170,
+      "rank": 154,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-lite-75-frame",
@@ -8261,33 +7094,7 @@
       "fetchScript": null
     },
     {
-      "rank": 171,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "hglrc-sector7-lr-frame",
-      "partName": "HGLRC Sector7 LR Frame",
-      "brand": "HGLRC",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/hglrc-sector7-lr.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only.",
-      "officialUrl": "https://www.hglrc.com/collections/frames",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch freestyle frames, not 7-inch LR.",
-      "fetchScript": null
-    },
-    {
-      "rank": 172,
+      "rank": 155,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera3-frame",
@@ -8313,7 +7120,7 @@
       "fetchScript": null
     },
     {
-      "rank": 173,
+      "rank": 156,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera35-cine-frame",
@@ -8339,7 +7146,7 @@
       "fetchScript": null
     },
     {
-      "rank": 174,
+      "rank": 157,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-cidatel35-cine-frame",
@@ -8365,7 +7172,7 @@
       "fetchScript": null
     },
     {
-      "rank": 175,
+      "rank": 158,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "tbs-source-one7-lr-frame",
@@ -8391,7 +7198,7 @@
       "fetchScript": null
     },
     {
-      "rank": 176,
+      "rank": 159,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "newbee-drone-75-pro-frame",
@@ -8417,7 +7224,7 @@
       "fetchScript": null
     },
     {
-      "rank": 177,
+      "rank": 160,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "aikon-65a-lr-esc",
@@ -8443,7 +7250,7 @@
       "fetchScript": null
     },
     {
-      "rank": 178,
+      "rank": 161,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "meps-konvex-55a-lr-esc",
@@ -8469,33 +7276,7 @@
       "fetchScript": null
     },
     {
-      "rank": 179,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "diatone-mamba-f35-cine-esc",
-      "partName": "Diatone Mamba F35 Cine ESC",
-      "brand": "Diatone",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/diatone-mamba-f35-cine-esc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini line only.",
-      "officialUrl": "https://www.diatone.us/collections/esc",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No Diatone Mamba F35 Cine ESC on diatone.us; store lists F40 mini and F55 lines instead.",
-      "fetchScript": null
-    },
-    {
-      "rank": 180,
+      "rank": 162,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f55-lr-esc",
@@ -8521,137 +7302,7 @@
       "fetchScript": null
     },
     {
-      "rank": 181,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "geprc-gep35a-cine-esc",
-      "partName": "GEPRC GEP35A Cine ESC",
-      "brand": "GEPRC",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/geprc-gep35a-cine-esc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No GEPRC GEP35A Cine ESC on geprc.com; Taker ESC line only.",
-      "officialUrl": "https://geprc.com/product-category/esc/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No GEPRC GEP35A Cine ESC on geprc.com; ESC category lists Taker H/S series only.",
-      "fetchScript": null
-    },
-    {
-      "rank": 182,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "hglrc-tekko32-f35-mini",
-      "partName": "HGLRC Tekko32 F35 Mini 35A",
-      "brand": "HGLRC",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/hglrc-tekko32-f35-mini.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No HGLRC Tekko32 F35 Mini product page on hglrc.com.",
-      "officialUrl": "https://www.hglrc.com/collections/esc",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No HGLRC Tekko32 F35 Mini product page on hglrc.com; Tekko32 F55 Mini is the closest family line.",
-      "fetchScript": null
-    },
-    {
-      "rank": 183,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "iflight-succexd35-cine-esc",
-      "partName": "iFlight SucceX-D35 Cine ESC",
-      "brand": "iFlight",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/iflight-succexd35-cine-esc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.",
-      "officialUrl": "https://shop.iflight.com/esc-cat343",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 184,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "tmotor-f35a-mini-4in1",
-      "partName": "T-Motor F35A Mini 4-in-1",
-      "brand": "T-Motor",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/tmotor-f35a-mini-4in1.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.",
-      "officialUrl": "https://store.tmotor.com/category/uav-esc-1.html",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 185,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "tmotor-pacer-f35-cine-esc",
-      "partName": "T-Motor Pacer F35 Cine ESC",
-      "brand": "T-Motor",
-      "categoryKey": "esc",
-      "categoryLabel": "ESC",
-      "imagePath": "/parts/escs/tmotor-pacer-f35-cine-esc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.",
-      "officialUrl": "https://store.tmotor.com/category/uav-esc-1.html",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 186,
+      "rank": 163,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f405-20x20-mini",
@@ -8677,59 +7328,7 @@
       "fetchScript": null
     },
     {
-      "rank": 187,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "geprc-f722-cine-mini-fc",
-      "partName": "GEPRC F722 Cine Mini FC",
-      "brand": "GEPRC",
-      "categoryKey": "flightController",
-      "categoryLabel": "Flight controller",
-      "imagePath": "/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU.",
-      "officialUrl": "https://geprc.com/product/gep-f722-hd-flight-controller/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "GEPRC store lists GEP-F722 HD flight controllers; no GEPRC F722 Cine Mini FC product page on geprc.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 188,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "matek-f722-cine-mini-fc",
-      "partName": "Matek F722 Cine Mini FC",
-      "brand": "Matek",
-      "categoryKey": "flightController",
-      "categoryLabel": "Flight controller",
-      "imagePath": "/parts/flight-controllers/matek-f722-cine-mini-fc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU.",
-      "officialUrl": "https://www.mateksys.com/?portfolio=f722-mini",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Matek F722-mini portfolio is EOL and exposes spec-sheet composites only; no Matek F722 Cine Mini FC SKU on mateksys.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 189,
+      "rank": 164,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-brushless-1s-aio-esc",
@@ -8755,7 +7354,7 @@
       "fetchScript": null
     },
     {
-      "rank": 190,
+      "rank": 165,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-esc",
@@ -8781,7 +7380,7 @@
       "fetchScript": null
     },
     {
-      "rank": 191,
+      "rank": 166,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-h743-lr-fc",
@@ -8807,7 +7406,7 @@
       "fetchScript": null
     },
     {
-      "rank": 192,
+      "rank": 167,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep-aio-1s-fc",
@@ -8833,7 +7432,7 @@
       "fetchScript": null
     },
     {
-      "rank": 193,
+      "rank": 168,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-fc",
@@ -8859,7 +7458,7 @@
       "fetchScript": null
     },
     {
-      "rank": 194,
+      "rank": 169,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-mini-esc",
@@ -8885,7 +7484,7 @@
       "fetchScript": null
     },
     {
-      "rank": 195,
+      "rank": 170,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-f411-1s-aio-fc",
@@ -8911,7 +7510,7 @@
       "fetchScript": null
     },
     {
-      "rank": 196,
+      "rank": 171,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f745-lr-fc",
@@ -8937,59 +7536,7 @@
       "fetchScript": null
     },
     {
-      "rank": 197,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "iflight-beast-h743-cine-fc",
-      "partName": "iFlight Beast H743 Cine FC",
-      "brand": "iFlight",
-      "categoryKey": "flightController",
-      "categoryLabel": "Flight controller",
-      "imagePath": "/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "unsafe_likely_mismatch",
-      "classificationLabel": "Unsafe — likely mismatch",
-      "classificationRank": 5,
-      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-      "officialUrl": "https://shop.iflight.com/flight-controller-cat342",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No iFlight Beast H743 Cine FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
-      "fetchScript": null
-    },
-    {
-      "rank": 198,
-      "queueTier": 7,
-      "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
-      "partId": "iflight-beast-h743-lr-fc",
-      "partName": "iFlight Beast H743 LR FC",
-      "brand": "iFlight",
-      "categoryKey": "flightController",
-      "categoryLabel": "Flight controller",
-      "imagePath": "/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "7-inch-long-range"
-      ],
-      "auditPriority": 3,
-      "classification": "unsafe_likely_mismatch",
-      "classificationLabel": "Unsafe — likely mismatch",
-      "classificationRank": 5,
-      "reason": "Prior manual review flagged wrong product, variant, or composite image.",
-      "officialUrl": "https://shop.iflight.com/flight-controller-cat342",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No iFlight Beast H743 LR FC product page on shop.iflight.com; BLITZ Wing H743 is a different wing FC line.",
-      "fetchScript": null
-    },
-    {
-      "rank": 199,
+      "rank": 172,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "matek-h743-wing-lr-fc",

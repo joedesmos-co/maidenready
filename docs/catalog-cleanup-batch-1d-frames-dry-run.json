@@ -1,0 +1,632 @@
+{
+  "generatedAt": "2026-06-30T04:53:22.782Z",
+  "batch": "1D",
+  "mode": "dry_run",
+  "priorBatches": [
+    "1A",
+    "1B-core",
+    "1C",
+    "R1",
+    "R2"
+  ],
+  "selectionCriteria": {
+    "included": [
+      "category === frame",
+      "recommendedAction === remove_from_catalog",
+      "cleanupStatus !== applied",
+      "not used in any preset (live check)",
+      "build class in 7-inch-long-range | cinewhoop | 3.5-inch-freestyle",
+      "strong evidence: full_drone_as_frame, discontinued_deprecated, wrong_sku, manufacturer closed, or missing frame-kit listing",
+      "must exist in current catalog (270 parts post-1C)"
+    ],
+    "excluded": [
+      "preset_usage",
+      "weak_evidence / unverifiable / manual review / replace_with_current_sku",
+      "tiny-whoop and 5-inch frames (out of 1D scope)",
+      "already applied (1C)"
+    ]
+  },
+  "summary": {
+    "totalCandidates": 12,
+    "bySubBatch": {
+      "1D-LR": 3,
+      "1D-Cine": 4,
+      "1D-3.5": 5
+    },
+    "presetImpact": 0,
+    "catalogBefore": {
+      "total": 270,
+      "withImage": 95,
+      "ratio": "95/270"
+    },
+    "catalogAfterCombined": {
+      "total": 258,
+      "withImage": 95,
+      "ratio": "95/258"
+    },
+    "imageImpact": {
+      "removalsWithLocalImage": 0,
+      "removalsPlaceholderOnly": 12
+    },
+    "selectorDepthBefore": {
+      "7-inch-long-range": {
+        "frame": 6
+      },
+      "cinewhoop": {
+        "frame": 8
+      },
+      "3.5-inch-freestyle": {
+        "frame": 7
+      }
+    },
+    "selectorDepthAfterCombined": {
+      "7-inch-long-range": {
+        "frame": 3,
+        "thin": true,
+        "meetsDepthTarget": false
+      },
+      "cinewhoop": {
+        "frame": 4,
+        "thin": false,
+        "meetsDepthTarget": true
+      },
+      "3.5-inch-freestyle": {
+        "frame": 2,
+        "thin": true,
+        "meetsDepthTarget": false
+      }
+    },
+    "recommendation": {
+      "applyFirst": "1D-LR",
+      "applyFirstRationale": "Three high-confidence invalid 7\" LR SKUs (complete aircraft / phantom frame / wrong size). Frames 6→3 — at thin threshold but preset-safe; R2 added rekon-hglrc-rekon7-pro-v2-frame.",
+      "applySecond": "1D-Cine",
+      "applySecondRationale": "Four legacy 404 / missing frame-kit entries. After R1+R2 additions, cinewhoop frames 8→4 — meets ≥4 depth target.",
+      "defer": "1D-3.5",
+      "deferRationale": "Five removals would leave 3.5\" frames at 7→2, below ≥4 target despite R1 iflight-aos-3-5-v5-1-frame and betafpv-pavo35-frame-kit.",
+      "safeNow": [
+        "1D-LR"
+      ],
+      "safeWithR1R2Depth": [
+        "1D-Cine"
+      ],
+      "waitForMoreReplacements": [
+        "1D-3.5"
+      ]
+    }
+  },
+  "subBatches": {
+    "1D-LR": {
+      "buildClass": "7-inch-long-range",
+      "candidateCount": 3,
+      "partIds": [
+        "flywoo-explorer7-lr-frame",
+        "geprc-crocodile7-lr-frame",
+        "hglrc-sector7-lr-frame"
+      ],
+      "catalogAfter": {
+        "total": 267,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelector": {
+        "before": 6,
+        "after": 3,
+        "delta": -3,
+        "thinAfter": true,
+        "meetsDepthTarget": false
+      }
+    },
+    "1D-Cine": {
+      "buildClass": "cinewhoop",
+      "candidateCount": 4,
+      "partIds": [
+        "flywoo-explorer35-cine-frame",
+        "geprc-cinebee35-hd-frame",
+        "iflight-chimera35-cine-frame",
+        "iflight-cidatel35-cine-frame"
+      ],
+      "catalogAfter": {
+        "total": 266,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelector": {
+        "before": 8,
+        "after": 4,
+        "delta": -4,
+        "thinAfter": false,
+        "meetsDepthTarget": true
+      }
+    },
+    "1D-3.5": {
+      "buildClass": "3.5-inch-freestyle",
+      "candidateCount": 5,
+      "partIds": [
+        "betafpv-pavo3516-frame",
+        "diatone-taycan35-frame",
+        "flywoo-explorer35-frame",
+        "geprc-rocket-3-5-frame",
+        "iflight-chimera3-frame"
+      ],
+      "catalogAfter": {
+        "total": 265,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelector": {
+        "before": 7,
+        "after": 2,
+        "delta": -5,
+        "thinAfter": true,
+        "meetsDepthTarget": false
+      }
+    }
+  },
+  "combined": {
+    "candidateCount": 12,
+    "partIds": [
+      "betafpv-pavo3516-frame",
+      "diatone-taycan35-frame",
+      "flywoo-explorer35-cine-frame",
+      "flywoo-explorer35-frame",
+      "flywoo-explorer7-lr-frame",
+      "geprc-cinebee35-hd-frame",
+      "geprc-crocodile7-lr-frame",
+      "geprc-rocket-3-5-frame",
+      "hglrc-sector7-lr-frame",
+      "iflight-chimera3-frame",
+      "iflight-chimera35-cine-frame",
+      "iflight-cidatel35-cine-frame"
+    ],
+    "frameSelectors": {
+      "7-inch-long-range": {
+        "before": 6,
+        "after": 3,
+        "delta": -3,
+        "thinAfter": true,
+        "meetsDepthTarget": false
+      },
+      "cinewhoop": {
+        "before": 8,
+        "after": 4,
+        "delta": -4,
+        "thinAfter": false,
+        "meetsDepthTarget": true
+      },
+      "3.5-inch-freestyle": {
+        "before": 7,
+        "after": 2,
+        "delta": -5,
+        "thinAfter": true,
+        "meetsDepthTarget": false
+      }
+    },
+    "catalogAfter": {
+      "total": 258,
+      "img": 95,
+      "removedImg": 0
+    }
+  },
+  "cumulativeIfAppliedInOrder": {
+    "through_1D-LR": {
+      "cumulativeRemovals": 3,
+      "catalog": {
+        "total": 267,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelectors": {
+        "7-inch-long-range": {
+          "before": 6,
+          "after": 3,
+          "thinAfter": true,
+          "meetsDepthTarget": false
+        },
+        "cinewhoop": {
+          "before": 8,
+          "after": 8,
+          "thinAfter": false,
+          "meetsDepthTarget": true
+        },
+        "3.5-inch-freestyle": {
+          "before": 7,
+          "after": 7,
+          "thinAfter": false,
+          "meetsDepthTarget": true
+        }
+      }
+    },
+    "through_1D-Cine": {
+      "cumulativeRemovals": 7,
+      "catalog": {
+        "total": 263,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelectors": {
+        "7-inch-long-range": {
+          "before": 6,
+          "after": 3,
+          "thinAfter": true,
+          "meetsDepthTarget": false
+        },
+        "cinewhoop": {
+          "before": 8,
+          "after": 4,
+          "thinAfter": false,
+          "meetsDepthTarget": true
+        },
+        "3.5-inch-freestyle": {
+          "before": 7,
+          "after": 7,
+          "thinAfter": false,
+          "meetsDepthTarget": true
+        }
+      }
+    },
+    "through_1D-3.5": {
+      "cumulativeRemovals": 12,
+      "catalog": {
+        "total": 258,
+        "img": 95,
+        "removedImg": 0
+      },
+      "frameSelectors": {
+        "7-inch-long-range": {
+          "before": 6,
+          "after": 3,
+          "thinAfter": true,
+          "meetsDepthTarget": false
+        },
+        "cinewhoop": {
+          "before": 8,
+          "after": 4,
+          "thinAfter": false,
+          "meetsDepthTarget": true
+        },
+        "3.5-inch-freestyle": {
+          "before": 7,
+          "after": 2,
+          "thinAfter": true,
+          "meetsDepthTarget": false
+        }
+      }
+    }
+  },
+  "candidates": [
+    {
+      "partId": "betafpv-pavo3516-frame",
+      "name": "BETAFPV Pavo3516 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "primaryBuildClass": "3.5-inch-freestyle",
+      "subBatch": "1D-3.5",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Pavo3516 frame on betafpv.com.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/betafpv-pavo3516.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "diatone-taycan35-frame",
+      "name": "Diatone Taycan 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "primaryBuildClass": "3.5-inch-freestyle",
+      "subBatch": "1D-3.5",
+      "issueType": "discontinued_deprecated",
+      "evidence": "Diatone has Taycan accessories only, not 3.5 frame kit.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/diatone-taycan35.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "flywoo-explorer35-frame",
+      "name": "Flywoo Explorer 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "primaryBuildClass": "3.5-inch-freestyle",
+      "subBatch": "1D-3.5",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 frame kit on flywoo.net.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/flywoo-explorer35.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "geprc-rocket-3-5-frame",
+      "name": "GEPRC Rocket 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "primaryBuildClass": "3.5-inch-freestyle",
+      "subBatch": "1D-3.5",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC Rocket 3.5 frame kit on geprc.com.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/geprc-rocket-3-5.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "iflight-chimera3-frame",
+      "name": "iFlight Chimera3 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "primaryBuildClass": "3.5-inch-freestyle",
+      "subBatch": "1D-3.5",
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera3 frame-kit URL 404; Chimera7 is different line.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/iflight-chimera3.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "flywoo-explorer35-cine-frame",
+      "name": "Flywoo Explorer 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "primaryBuildClass": "cinewhoop",
+      "subBatch": "1D-Cine",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 Cine frame kit on flywoo.net.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/flywoo-explorer35-cine.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "geprc-cinebee35-hd-frame",
+      "name": "GEPRC CineBee35 HD Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "primaryBuildClass": "cinewhoop",
+      "subBatch": "1D-Cine",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC CineBee35 HD isolated frame-kit page.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/geprc-cinebee35-hd.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "iflight-chimera35-cine-frame",
+      "name": "iFlight Chimera35 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "primaryBuildClass": "cinewhoop",
+      "subBatch": "1D-Cine",
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera35 Cine frame-kit URL 404.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/iflight-chimera35-cine.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "iflight-cidatel35-cine-frame",
+      "name": "iFlight Cidatel 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "primaryBuildClass": "cinewhoop",
+      "subBatch": "1D-Cine",
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Cidatel 3.5 Cine frame-kit URL 404.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/iflight-cidatel35-cine.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "flywoo-explorer7-lr-frame",
+      "name": "Flywoo Explorer 7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "primaryBuildClass": "7-inch-long-range",
+      "subBatch": "1D-LR",
+      "issueType": "full_drone_as_frame",
+      "evidence": "Explorer LR4 listings are complete aircraft, not frame kits.",
+      "riskLevel": "high",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/flywoo-explorer7-lr.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "geprc-crocodile7-lr-frame",
+      "name": "GEPRC Crocodile7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "primaryBuildClass": "7-inch-long-range",
+      "subBatch": "1D-LR",
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Crocodile7 LR frame; Crocodile Baby 4 drones only.",
+      "riskLevel": "medium",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/geprc-crocodile7-lr.jpg",
+        "hasLocalImage": false
+      }
+    },
+    {
+      "partId": "hglrc-sector7-lr-frame",
+      "name": "HGLRC Sector7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "primaryBuildClass": "7-inch-long-range",
+      "subBatch": "1D-LR",
+      "issueType": "wrong_sku",
+      "evidence": "No Sector7 LR; HGLRC Sector D5/X5 are 5-inch only.",
+      "riskLevel": "high",
+      "was1BFramesDeferred": false,
+      "imagePath": {
+        "path": "/parts/frames/hglrc-sector7-lr.jpg",
+        "hasLocalImage": false
+      }
+    }
+  ],
+  "excludedFrom1DScope": [
+    {
+      "partId": "geprc-rocket-lite-75-frame",
+      "excludeReason": "out_of_scope_build_class",
+      "buildClasses": [
+        "tiny-whoop"
+      ]
+    },
+    {
+      "partId": "hglrc-zeus5-frame",
+      "excludeReason": "out_of_scope_build_class",
+      "buildClasses": [
+        "5-inch-freestyle"
+      ]
+    },
+    {
+      "partId": "impulserc-apexdc",
+      "excludeReason": "out_of_scope_build_class",
+      "buildClasses": [
+        "5-inch-freestyle"
+      ]
+    },
+    {
+      "partId": "impulserc-reverb5-frame",
+      "excludeReason": "out_of_scope_build_class",
+      "buildClasses": [
+        "5-inch-freestyle"
+      ]
+    }
+  ],
+  "remainingFramesAfterSubBatch": {
+    "1D-LR": [
+      {
+        "id": "rekon-hglrc-rekon7-pro-v2-frame",
+        "name": "HGLRC Rekon7 PRO V2 7-inch LR Frame"
+      },
+      {
+        "id": "iflight-chimera7-lr-frame",
+        "name": "iFlight Chimera7 LR Frame"
+      },
+      {
+        "id": "tbs-source-one7-lr-frame",
+        "name": "TBS Source One 7 LR Frame"
+      }
+    ],
+    "1D-Cine": [
+      {
+        "id": "geprc-gep-cl35-v3-frame",
+        "name": "GEPRC GEP-CL35 V3 Frame"
+      },
+      {
+        "id": "betafpv-pavo25-frame",
+        "name": "BETAFPV Pavo25 Frame"
+      },
+      {
+        "id": "betafpv-pavo35-frame-kit",
+        "name": "BETAFPV Pavo35 Brushless Whoop Frame"
+      },
+      {
+        "id": "betafpv-pavo30-cine-frame",
+        "name": "BETAFPV Pavo30 Cine Frame"
+      }
+    ],
+    "1D-3.5": [
+      {
+        "id": "aos-3-5-v5",
+        "name": "AOS 3.5 V5"
+      },
+      {
+        "id": "iflight-aos-3-5-v5-1-frame",
+        "name": "iFlight AOS 3.5 V5.1 Frame Kit"
+      }
+    ]
+  },
+  "remainingFramesAfterCombined": {
+    "7-inch-long-range": [
+      {
+        "id": "rekon-hglrc-rekon7-pro-v2-frame",
+        "name": "HGLRC Rekon7 PRO V2 7-inch LR Frame"
+      },
+      {
+        "id": "iflight-chimera7-lr-frame",
+        "name": "iFlight Chimera7 LR Frame"
+      },
+      {
+        "id": "tbs-source-one7-lr-frame",
+        "name": "TBS Source One 7 LR Frame"
+      }
+    ],
+    "cinewhoop": [
+      {
+        "id": "geprc-gep-cl35-v3-frame",
+        "name": "GEPRC GEP-CL35 V3 Frame"
+      },
+      {
+        "id": "betafpv-pavo25-frame",
+        "name": "BETAFPV Pavo25 Frame"
+      },
+      {
+        "id": "betafpv-pavo35-frame-kit",
+        "name": "BETAFPV Pavo35 Brushless Whoop Frame"
+      },
+      {
+        "id": "betafpv-pavo30-cine-frame",
+        "name": "BETAFPV Pavo30 Cine Frame"
+      }
+    ],
+    "3.5-inch-freestyle": [
+      {
+        "id": "aos-3-5-v5",
+        "name": "AOS 3.5 V5"
+      },
+      {
+        "id": "iflight-aos-3-5-v5-1-frame",
+        "name": "iFlight AOS 3.5 V5.1 Frame Kit"
+      }
+    ]
+  }
+}

@@ -38,9 +38,68 @@
           "happymodel-se0802-22000kv"
         ],
         "resolvedCount": 2
+      },
+      "1B-core": {
+        "appliedAt": "2026-06-30T03:59:05.273Z",
+        "partIds": [
+          "axisflying-2808-1150kv-lr",
+          "axisflying-ae2207-1960",
+          "axisflying-joker-2207-1920kv",
+          "brotherhobby-1507-3700kv",
+          "brotherhobby-2004-2600kv",
+          "diatone-mamba-f35-cine-esc",
+          "geprc-0901-11000kv",
+          "geprc-2005-2200kv",
+          "geprc-f722-cine-mini-fc",
+          "geprc-gep35a-cine-esc",
+          "happymodel-cine-2004-2400kv",
+          "hdzero-cine-nano-vtx",
+          "hglrc-tekko32-f35-mini",
+          "iflight-4s-1800-cine",
+          "iflight-beast-h743-cine-fc",
+          "iflight-beast-h743-lr-fc",
+          "iflight-succexd35-cine-esc",
+          "iflight-xing2-1507-4600kv",
+          "iflight-xing2-2203-2350kv",
+          "matek-f722-cine-mini-fc",
+          "newbee-0802-17500kv",
+          "rcinpower-2203-2300kv",
+          "rcinpower-2807-1350kv-lr",
+          "rush-mini-tank-cine-vtx",
+          "tmotor-2807-1300kv-lr",
+          "tmotor-f35a-mini-4in1",
+          "tmotor-pacer-f35-cine-esc"
+        ],
+        "removedCount": 27,
+        "skippedFrameIdsInCoreSplit": [
+          "hglrc-zeus5-frame",
+          "impulserc-apexdc",
+          "impulserc-reverb5-frame"
+        ],
+        "note": "3 frame IDs tagged 1B-core in dry-run were skipped per no-frame-removal rule."
+      },
+      "1C": {
+        "appliedAt": "2026-06-30T04:49:29.242Z",
+        "partIds": [
+          "geprc-cinelog35-v2",
+          "iflight-xing-2005-2550",
+          "rekon7-pro-lr"
+        ],
+        "removedCount": 3,
+        "note": "Removed after Batch R2 preset migrations."
+      },
+      "1D-LR": {
+        "appliedAt": "2026-06-30T04:57:33.261Z",
+        "partIds": [
+          "flywoo-explorer7-lr-frame",
+          "geprc-crocodile7-lr-frame",
+          "hglrc-sector7-lr-frame"
+        ],
+        "removedCount": 3,
+        "note": "Removed 3 invalid 7-inch long range frame entries per Batch 1D frames dry run."
       }
     },
-    "openCandidates": 108
+    "openCandidates": 75
   },
   "candidates": [
     {
@@ -91,7 +150,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "AxisFlying 2808 1150KV LR",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "axisflying-ae2207-1960",
@@ -107,7 +174,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "AxisFlying AE 2207 1960KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "axisflying-joker-2207-1920kv",
@@ -123,7 +198,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "AxisFlying Joker 2207 1920KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "betafpv-1404-4600kv",
@@ -219,7 +302,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "BrotherHobby 1507 3700KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "brotherhobby-2004-2600kv",
@@ -235,7 +326,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "high",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "BrotherHobby 2004 2600KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "brotherhobby-2806-1400kv-lr",
@@ -299,7 +398,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "Diatone Mamba F35 Cine ESC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "diatone-mamba-f35-mini-esc",
@@ -491,7 +598,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "high",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-LR",
+      "appliedAt": "2026-06-30T04:57:33.261Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-LR deferred frame cleanup; invalid 7\" LR SKUs."
+      }
     },
     {
       "partId": "fpvcycle-2207-1780kv",
@@ -539,7 +653,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "GEPRC 0901 11000KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "geprc-2005-2200kv",
@@ -555,7 +677,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "GEPRC 2005 2200KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "geprc-cinebee35-hd-frame",
@@ -580,7 +710,7 @@
       "affectedBuildClasses": [
         "cinewhoop"
       ],
-      "usedInPreset": true,
+      "usedInPreset": false,
       "presetUsage": [
         {
           "presetId": "cinewhoop-cruiser",
@@ -593,7 +723,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "high",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1C",
+      "appliedAt": "2026-06-30T04:49:29.242Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Post-R2 preset migration; replaced by R2 catalog entries."
+      }
     },
     {
       "partId": "geprc-crocodile7-lr-frame",
@@ -609,7 +746,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-LR",
+      "appliedAt": "2026-06-30T04:57:33.261Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-LR deferred frame cleanup; invalid 7\" LR SKUs."
+      }
     },
     {
       "partId": "geprc-f405-20x20-mini",
@@ -641,7 +785,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "GEPRC F722 Cine Mini FC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "geprc-f745-lr-fc",
@@ -689,7 +841,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "GEPRC GEP35A Cine ESC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "geprc-mark4-frame",
@@ -833,7 +993,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "Happymodel Cine 2004 2400KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "happymodel-happywhoop-aio-esc",
@@ -905,7 +1073,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "HDZero Cine Nano VTX",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "hglrc-sector7-lr-frame",
@@ -921,7 +1097,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "high",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-LR",
+      "appliedAt": "2026-06-30T04:57:33.261Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-LR deferred frame cleanup; invalid 7\" LR SKUs."
+      }
     },
     {
       "partId": "hglrc-tekko32-f35-mini",
@@ -937,7 +1120,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "HGLRC Tekko32 F35 Mini 35A",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "hglrc-zeus5-frame",
@@ -1017,7 +1208,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight 4S 1800mAh 120C Cine",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-beast-h743-cine-fc",
@@ -1033,7 +1232,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight Beast H743 Cine FC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-beast-h743-lr-fc",
@@ -1049,7 +1256,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight Beast H743 LR FC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-chimera3-frame",
@@ -1145,7 +1360,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight SucceX-D35 Cine ESC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-xing-2005-2550",
@@ -1154,7 +1377,7 @@
       "affectedBuildClasses": [
         "cinewhoop"
       ],
-      "usedInPreset": true,
+      "usedInPreset": false,
       "presetUsage": [
         {
           "presetId": "cinewhoop-cruiser",
@@ -1167,7 +1390,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1C",
+      "appliedAt": "2026-06-30T04:49:29.242Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Post-R2 preset migration; replaced by R2 catalog entries."
+      }
     },
     {
       "partId": "iflight-xing-e-pro-2806-1300kv",
@@ -1199,7 +1429,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight XING2 1507 4600KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-xing2-2203-2350kv",
@@ -1215,7 +1453,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "iFlight XING2 2203 2350KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "iflight-xing2-2807-1280kv-lr",
@@ -1367,7 +1613,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "Matek F722 Cine Mini FC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "matek-f722-mini",
@@ -1465,7 +1719,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "low",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "NewBeeDrone 0802 17500KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "newbee-drone-75-pro-frame",
@@ -1513,7 +1775,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "RCinPower 2203 2300KV",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "rcinpower-2807-1350kv-lr",
@@ -1529,7 +1799,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "RCinPower 2807 1350KV LR",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "rekon7-pro-lr",
@@ -1538,7 +1816,7 @@
       "affectedBuildClasses": [
         "7-inch-long-range"
       ],
-      "usedInPreset": true,
+      "usedInPreset": false,
       "presetUsage": [
         {
           "presetId": "7-long-range-explorer",
@@ -1551,7 +1829,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "high",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1C",
+      "appliedAt": "2026-06-30T04:49:29.242Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Post-R2 preset migration; replaced by R2 catalog entries."
+      }
     },
     {
       "partId": "rush-blade-f7-60a-4in1",
@@ -1583,7 +1868,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "RushFPV Mini Tank Cine VTX",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "rush-nano-vtx-park",
@@ -1833,7 +2126,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "T-Motor 2807 1300KV LR",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "tmotor-f35a-mini-4in1",
@@ -1849,7 +2150,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "T-Motor F35A Mini 4-in-1",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "tmotor-pacer-f35-cine-esc",
@@ -1865,7 +2174,15 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "previousName": "T-Motor Pacer F35 Cine ESC",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1B-core",
+      "appliedAt": "2026-06-30T03:59:05.273Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1B-core dry-run removal; frame entries excluded from this pass."
+      }
     },
     {
       "partId": "walksnail-avatar-micro",

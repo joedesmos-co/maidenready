@@ -1,0 +1,647 @@
+{
+  "generatedAt": "2026-06-30T04:10:43.103Z",
+  "catalogState": {
+    "totalParts": 273,
+    "imageCoverage": "95/267",
+    "openCleanupCandidates": 81,
+    "thinCategories": {
+      "3.5-inch-freestyle": {
+        "esc": 4,
+        "frame": 7
+      },
+      "cinewhoop": {
+        "esc": 4,
+        "frame": 8
+      }
+    }
+  },
+  "summary": {
+    "totalProposedReplacements": 12,
+    "byPriority": {
+      "P1": 6,
+      "P2": 5,
+      "P3": 1
+    },
+    "presetMigrationsPlanned": 3,
+    "manualReviewCandidates": 16,
+    "batch1BFramesRecommendation": "remain_deferred_until_P1_frame_and_esc_additions_applied",
+    "appliedBatches": {
+      "R1": {
+        "appliedAt": "2026-06-30T04:26:39.079Z",
+        "partIds": [
+          "iflight-blitz-mini-e55s-4in1",
+          "iflight-aos-3-5-v5-1-frame",
+          "betafpv-pavo35-frame-kit"
+        ],
+        "addedCount": 3
+      },
+      "R2": {
+        "appliedAt": "2026-06-30T04:36:34.747Z",
+        "partsAdded": [
+          "geprc-gep-cl35-v3-frame",
+          "geprc-speedx2-2105-5-2650kv",
+          "rekon-hglrc-rekon7-pro-v2-frame"
+        ],
+        "presetUpdates": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "slot": "frame",
+            "to": "geprc-gep-cl35-v3-frame"
+          },
+          {
+            "presetId": "cinewhoop-cruiser",
+            "slot": "motors",
+            "to": "geprc-speedx2-2105-5-2650kv"
+          },
+          {
+            "presetId": "7-long-range-explorer",
+            "slot": "frame",
+            "to": "rekon-hglrc-rekon7-pro-v2-frame"
+          }
+        ]
+      }
+    }
+  },
+  "categoryStrengtheningOrder": [
+    "Add P1 ESC entries (BLITZ Mini E55S) to reach ≥5 options in 3.5\" and cinewhoop ESC pools",
+    "Add P1 frame kits (AOS 3.5 V5.1, Pavo35) before any 3.5\" frame removals",
+    "Execute preset migrations (CL35 V3 frame, SPEEDX2 2105.5 motor, Rekon7 PRO V2 frame)",
+    "Apply Batch 1B-frames-deferred in sub-batches after selector depth ≥4 per class/category"
+  ],
+  "replacements": [
+    {
+      "proposedPartId": "iflight-blitz-mini-e55s-4in1",
+      "replacementPartName": "iFlight BLITZ Mini E55S 4-in-1 ESC",
+      "category": "esc",
+      "buildClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Adds a verified 20x20 55A option beyond the post-1B-core pool of 3 ESCs (Aikon F7 Mini, SpeedyBee BLS 35A, Diatone Mamba F35 / GEPRC GEP-F411 AIO half).",
+      "officialManufacturerUrl": "https://shop.iflight.com/BLITZ-Mini-E55S-4-IN-1-ESC-Pro2062",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "iFlight product gallery on official shop page; not yet verified locally.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 45.99,
+        "weightG": 11.3,
+        "continuousAmp": 55,
+        "burstAmp": 65,
+        "supportedCells": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "mountPattern": "20x20",
+        "firmware": "BLHeli_S / Bluejay"
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R1",
+      "appliedAt": "2026-06-30T04:26:39.079Z",
+      "catalogPartId": "iflight-blitz-mini-e55s-4in1"
+    },
+    {
+      "proposedPartId": "iflight-blitz-mini-e55-4in1",
+      "replacementPartName": "iFlight BLITZ Mini E55 4-in-1 ESC",
+      "category": "esc",
+      "buildClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "BLHeli32 55A 20x20 alternative for pilots wanting telemetry-capable mini 4-in-1 beyond current 35A-heavy pool.",
+      "officialManufacturerUrl": "https://shop.iflight.com/BLITZ-Mini-E55-4-IN-1-2-6S-ESC-Pro1663",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official iFlight BLITZ Mini E55 page with product photos.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 83.99,
+        "weightG": 12,
+        "continuousAmp": 55,
+        "burstAmp": 65,
+        "supportedCells": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "mountPattern": "20x20",
+        "firmware": "BLHeli32"
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P2",
+      "action": "add_new_catalog_entry"
+    },
+    {
+      "proposedPartId": "geprc-gep-f722-45a-aio",
+      "replacementPartName": "GEPRC GEP-F722-45A AIO V2",
+      "category": "esc",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Official 45A 25.5 AIO used on current CineLog35 V3; strengthens cinewhoop ESC/FC pool and future stack-merge modeling.",
+      "officialManufacturerUrl": "https://geprc.com/product/geprc-gep-f722-45a-aio/",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "GEPRC product page includes board packshot; sold as combined FC+ESC AIO.",
+      "estimatedSpecs": {
+        "brand": "GEPRC",
+        "priceUsd": 54.99,
+        "weightG": 8.8,
+        "continuousAmp": 45,
+        "burstAmp": 55,
+        "supportedCells": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "mountPattern": "25.5x25.5",
+        "firmware": "BLHeli_S",
+        "isAio": true
+      },
+      "riskLevel": "medium",
+      "affectsPresets": false,
+      "recommendedPriority": "P2",
+      "action": "add_new_catalog_entry_as_stack_or_aio_pair"
+    },
+    {
+      "proposedPartId": "betafpv-f4-35a-aio-esc-half",
+      "replacementPartName": "BETAFPV F4 35A 2-4S AIO ESC (stack half)",
+      "category": "esc",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Official BETAFPV 35A AIO board referenced by Pavo30/Pavo35 docs; diversifies cinewhoop ESC beyond SpeedyBee/GEPRC.",
+      "officialManufacturerUrl": "https://betafpv.com/products/f722-aio-35a-brushless-flight-controller",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Combined AIO listing; ESC-only half would use stack imagery like existing GEPRC AIO pattern.",
+      "estimatedSpecs": {
+        "brand": "BETAFPV",
+        "priceUsd": 49.99,
+        "weightG": 5,
+        "continuousAmp": 35,
+        "burstAmp": 40,
+        "supportedCells": [
+          2,
+          3,
+          4
+        ],
+        "mountPattern": "25.5x25.5",
+        "firmware": "BLHeli_S",
+        "isAio": true
+      },
+      "riskLevel": "medium",
+      "affectsPresets": false,
+      "recommendedPriority": "P3",
+      "action": "add_new_catalog_entry_as_aio_half"
+    },
+    {
+      "proposedPartId": "iflight-aos-3-5-v5-1-frame",
+      "replacementPartName": "iFlight AOS 3.5 V5.1 Frame Kit",
+      "category": "frame",
+      "buildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "replacesOrStrengthens": "Successor to in-catalog aos-3-5-v5; adds verified frame option before removing 5 deprecated 3.5\" frames (would otherwise leave only aos-3-5-v5).",
+      "officialManufacturerUrl": "https://shop.iflight.com/AOS-3.5-V5-FPV-Frame-Kit-Pro2126",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official iFlight frame kit gallery; O4-compatible V5.1 revision.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 69.99,
+        "weightG": 62,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "9x9",
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ]
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry",
+      "relatedCleanup": "Consider metadata upgrade for existing aos-3-5-v5 or supersede after V5.1 add.",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R1",
+      "appliedAt": "2026-06-30T04:26:39.079Z",
+      "catalogPartId": "iflight-aos-3-5-v5-1-frame"
+    },
+    {
+      "proposedPartId": "betafpv-pavo35-frame-kit",
+      "replacementPartName": "BETAFPV Pavo35 Brushless Whoop Frame",
+      "category": "frame",
+      "buildClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Official open 3.5\" frame kit; replacement candidate for deprecated betafpv-pavo3516-frame before Batch 1B-frames.",
+      "officialManufacturerUrl": "https://betafpv.com/products/pavo35-brushless-whoop-frame",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "BETAFPV Shopify product photos for frame kit.",
+      "estimatedSpecs": {
+        "brand": "BETAFPV",
+        "priceUsd": 39.99,
+        "weightG": 95,
+        "maxPropInches": 3.5,
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "ducted": true
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R1",
+      "appliedAt": "2026-06-30T04:26:39.079Z",
+      "catalogPartId": "betafpv-pavo35-frame-kit"
+    },
+    {
+      "proposedPartId": "iflight-protek35-v1-4-frame",
+      "replacementPartName": "iFlight ProTek35 V1.4 CineWhoop Frame Kit",
+      "category": "frame",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Modern ducted 3.5\" cinewhoop frame before removing legacy Chimera35/CineBee HD frame entries.",
+      "officialManufacturerUrl": "https://shop.iflight.com/ProTek35-V1.4-CineWhoop-Frame-Kit-Pro2006",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official iFlight ProTek35 gallery.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 89.99,
+        "weightG": 120,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "ducted": true
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P2",
+      "action": "add_new_catalog_entry"
+    },
+    {
+      "proposedPartId": "iflight-aos-cine35-v5-frame",
+      "replacementPartName": "iFlight AOS Cine35 V5 Frame Kit",
+      "category": "frame",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Ducted cinematic 3.5\" frame option from AOS line; strengthens cinewhoop frame pool before deferred removals.",
+      "officialManufacturerUrl": "https://shop.iflight.com/AOS-Cine35-V5-Frame-Kit-Pro2297",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official iFlight Cine35 V5 product page.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 79.99,
+        "weightG": 110,
+        "maxPropInches": 3.5,
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "ducted": true
+      },
+      "riskLevel": "low",
+      "affectsPresets": false,
+      "recommendedPriority": "P2",
+      "action": "add_new_catalog_entry"
+    },
+    {
+      "proposedPartId": "geprc-gep-cl35-v3-frame",
+      "replacementPartName": "GEPRC GEP-CL35 V3 Frame",
+      "category": "frame",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Migrates preset away from geprc-cinelog35-v2 (complete BNF aircraft listing) to official frame-kit SKU.",
+      "officialManufacturerUrl": "https://geprc.com/product/gep-cl35-v3-frame/",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "GEPRC isolated frame kit page with parts selector and specs.",
+      "estimatedSpecs": {
+        "brand": "GEPRC",
+        "priceUsd": 69.99,
+        "weightG": 127,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "ducted": true
+      },
+      "riskLevel": "medium",
+      "affectsPresets": true,
+      "presetMigration": {
+        "fromPartId": "geprc-cinelog35-v2",
+        "presetId": "cinewhoop-cruiser",
+        "slot": "frame"
+      },
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry_then_preset_migration",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R2",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "catalogPartId": "geprc-gep-cl35-v3-frame",
+      "presetMigrationApplied": true
+    },
+    {
+      "proposedPartId": "geprc-speedx2-2105-5-2650kv",
+      "replacementPartName": "GEPRC SPEEDX2 2105.5 2650KV",
+      "category": "motors",
+      "buildClasses": [
+        "cinewhoop"
+      ],
+      "replacesOrStrengthens": "Official motor on current CineLog35 V2/V3 platforms; migrates preset off iflight-xing-2005-2550 (legacy XING 2005, weak packshot).",
+      "officialManufacturerUrl": "https://geprc.com/product/geprc-speedx2-2105-5-2450kv-2650kv-3450kv-motor/",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "GEPRC SPEEDX2 motor product gallery with KV variants.",
+      "estimatedSpecs": {
+        "brand": "GEPRC",
+        "priceUsd": 21.99,
+        "weightG": 21,
+        "kv": 2650,
+        "stator": "2105.5",
+        "recommendedCells": [
+          4,
+          6
+        ],
+        "mountPattern": "12x12"
+      },
+      "riskLevel": "medium",
+      "affectsPresets": true,
+      "presetMigration": {
+        "fromPartId": "iflight-xing-2005-2550",
+        "presetId": "cinewhoop-cruiser",
+        "slot": "motors"
+      },
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry_then_preset_migration",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R2",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "catalogPartId": "geprc-speedx2-2105-5-2650kv",
+      "presetMigrationApplied": true
+    },
+    {
+      "proposedPartId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "replacementPartName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
+      "category": "frame",
+      "buildClasses": [
+        "7-inch-long-range"
+      ],
+      "replacesOrStrengthens": "Migrates 7\" LR Explorer preset off rekon7-pro-lr (complete aircraft) to official frame-kit listing on Rekon FPV store.",
+      "officialManufacturerUrl": "https://rekonfpv.com/collections/7-inch-frame-kit",
+      "cleanOfficialImageExists": "unknown",
+      "imageNotes": "Rekon FPV official store lists Rekon7 PRO V2 frame kit; verify isolated packshot before fetch.",
+      "estimatedSpecs": {
+        "brand": "RekonFPV",
+        "priceUsd": 84.99,
+        "weightG": 383,
+        "maxPropInches": 7.5,
+        "motorMounts": [
+          "19x19"
+        ],
+        "stackMounts": [
+          "30.5x30.5",
+          "20x20"
+        ]
+      },
+      "riskLevel": "high",
+      "affectsPresets": true,
+      "presetMigration": {
+        "fromPartId": "rekon7-pro-lr",
+        "presetId": "7-long-range-explorer",
+        "slot": "frame"
+      },
+      "recommendedPriority": "P1",
+      "action": "add_new_catalog_entry_then_preset_migration",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R2",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "catalogPartId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "presetMigrationApplied": true
+    },
+    {
+      "proposedPartId": "iflight-chimera7-pro-v2-o4-frame",
+      "replacementPartName": "iFlight Chimera7 Pro V2 O4 Frame Kit",
+      "category": "frame",
+      "buildClasses": [
+        "7-inch-long-range"
+      ],
+      "replacesOrStrengthens": "Alternative 7\" LR frame-kit option if Rekon7 PRO V2 image/spec verification fails; official iFlight long-range frame.",
+      "officialManufacturerUrl": "https://shop.iflight.com/Chimera7-O4-Frame-Kit-Pro2286",
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official Chimera7 Pro V2 O4 frame kit page.",
+      "estimatedSpecs": {
+        "brand": "iFlight",
+        "priceUsd": 95.99,
+        "weightG": 357,
+        "maxPropInches": 7.5,
+        "motorMounts": [
+          "16x16",
+          "19x19"
+        ],
+        "stackMounts": [
+          "30.5x30.5"
+        ]
+      },
+      "riskLevel": "medium",
+      "affectsPresets": false,
+      "recommendedPriority": "P2",
+      "action": "add_new_catalog_entry",
+      "relatedCleanup": "Fallback LR frame option; preset may stay on Rekon7 PRO V2 if verified."
+    }
+  ],
+  "presetMigrations": [
+    {
+      "presetId": "cinewhoop-cruiser",
+      "slot": "frame",
+      "fromPartId": "geprc-cinelog35-v2",
+      "toProposedPartId": "geprc-gep-cl35-v3-frame",
+      "toProposedName": "GEPRC GEP-CL35 V3 Frame",
+      "officialManufacturerUrl": "https://geprc.com/product/gep-cl35-v3-frame/",
+      "recommendedPriority": "P1",
+      "riskLevel": "medium",
+      "deferUntil": "replacement catalog entry added and validate:stats re-run",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "appliedBatch": "R2",
+      "status": "applied"
+    },
+    {
+      "presetId": "cinewhoop-cruiser",
+      "slot": "motors",
+      "fromPartId": "iflight-xing-2005-2550",
+      "toProposedPartId": "geprc-speedx2-2105-5-2650kv",
+      "toProposedName": "GEPRC SPEEDX2 2105.5 2650KV",
+      "officialManufacturerUrl": "https://geprc.com/product/geprc-speedx2-2105-5-2450kv-2650kv-3450kv-motor/",
+      "recommendedPriority": "P1",
+      "riskLevel": "medium",
+      "deferUntil": "replacement catalog entry added and validate:stats re-run",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "appliedBatch": "R2",
+      "status": "applied"
+    },
+    {
+      "presetId": "7-long-range-explorer",
+      "slot": "frame",
+      "fromPartId": "rekon7-pro-lr",
+      "toProposedPartId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "toProposedName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
+      "officialManufacturerUrl": "https://rekonfpv.com/collections/7-inch-frame-kit",
+      "recommendedPriority": "P1",
+      "riskLevel": "high",
+      "deferUntil": "replacement catalog entry added and validate:stats re-run",
+      "appliedAt": "2026-06-30T04:36:34.747Z",
+      "appliedBatch": "R2",
+      "status": "applied"
+    }
+  ],
+  "manualFpvReviewQueue": [
+    {
+      "partId": "aikon-65a-lr-esc",
+      "category": "esc",
+      "resolution": "keep_with_svg",
+      "note": "Aikon store unreachable; keep until manual URL found or replace with verified 7\" LR ESC.",
+      "priority": "P3"
+    },
+    {
+      "partId": "ethix-lithium5-frame",
+      "category": "frame",
+      "resolution": "keep_pending_store",
+      "note": "Ethix store intermittent; retry official fetch before removal.",
+      "priority": "P3"
+    },
+    {
+      "partId": "geprc-mark4-frame",
+      "category": "frame",
+      "resolution": "manual_verify_sku",
+      "note": "Human confirm Mark4 frame kit vs partial-build gallery before rename/removal.",
+      "priority": "P1"
+    },
+    {
+      "partId": "gn-1s-550-bt2",
+      "category": "battery",
+      "resolution": "replace_with_verified_gnb",
+      "note": "Map to official Gaoneng/GNB 1S 550mAh BT2.0 when store accessible.",
+      "priority": "P2"
+    },
+    {
+      "partId": "gnb-4s-1100-park",
+      "category": "battery",
+      "resolution": "replace_or_remove",
+      "note": "GNB store blocked; Genstattu 404 — find current GNB 4S 1100 official SKU or remove.",
+      "priority": "P2"
+    },
+    {
+      "partId": "gnb-4s-1300-cine",
+      "category": "battery",
+      "resolution": "replace_or_remove",
+      "note": "Same GNB blocked-store issue; cinewhoop battery pool needs verified GNB/Tattu alternative.",
+      "priority": "P2"
+    },
+    {
+      "partId": "gnb-4s-750-mini",
+      "category": "battery",
+      "resolution": "replace_or_remove",
+      "note": "GNB 4S 750 official page 404.",
+      "priority": "P3"
+    },
+    {
+      "partId": "gnb-6s-2500-lr-lipo",
+      "category": "battery",
+      "resolution": "replace_or_remove",
+      "note": "No verified GNB 6S 2500 LR URL.",
+      "priority": "P2"
+    },
+    {
+      "partId": "hqprop-t3x2-5x3-515",
+      "category": "props",
+      "resolution": "replace_with_current_hqprop",
+      "note": "HQProp T515 404; map to current 5\" prop SKU on hqprop.com.",
+      "priority": "P3"
+    },
+    {
+      "partId": "hypetrain-acer-2306-1950kv",
+      "category": "motors",
+      "resolution": "remove_no_oem",
+      "note": "No Hypetrain manufacturer store; remove unless OEM source found.",
+      "priority": "P2"
+    },
+    {
+      "partId": "hypetrain-blaster-2450",
+      "category": "motors",
+      "resolution": "remove_no_oem",
+      "note": "Retailer-only brand; remove from catalog.",
+      "priority": "P2"
+    },
+    {
+      "partId": "imm-rc-fusion-v2-elrs",
+      "category": "receiver",
+      "resolution": "keep_pending_unblock",
+      "note": "ImmersionRC site blocked; keep SVG until manual packshot verification.",
+      "priority": "P3"
+    },
+    {
+      "partId": "jhemcu-ep28-elrs",
+      "category": "receiver",
+      "resolution": "fix_url_or_remove",
+      "note": "Stabilize JHEMCU EP28 product URL or remove.",
+      "priority": "P3"
+    },
+    {
+      "partId": "meps-konvex-55a-lr-esc",
+      "category": "esc",
+      "resolution": "replace_or_remove",
+      "note": "MEPS API shows no Konvex 55A LR; verify MEPS Konvex F55 listing or remove.",
+      "priority": "P2"
+    },
+    {
+      "partId": "tbs-source-one7-lr-frame",
+      "category": "frame",
+      "resolution": "remove_or_replace",
+      "note": "No Source One 7 repo; replace with TBS-validated 7\" frame or remove.",
+      "priority": "P2"
+    },
+    {
+      "partId": "walksnail-avatar-micro",
+      "category": "camera",
+      "resolution": "manual_verify_sku",
+      "note": "Avatar V2 page lacks Micro SKU packshot; confirm Walksnail Micro camera official page.",
+      "priority": "P2"
+    }
+  ],
+  "batch1BFramesDeferred": {
+    "recommendation": "remain_deferred",
+    "rationale": "3.5\" freestyle frames would drop to 1 without adds; cinewhoop and 7\" LR frames also thin. Add P1/P2 frame replacements first.",
+    "deferredCount": 16,
+    "prerequisiteAdds": [
+      "iflight-aos-3-5-v5-1-frame",
+      "betafpv-pavo35-frame-kit",
+      "iflight-protek35-v1-4-frame",
+      "geprc-gep-cl35-v3-frame"
+    ]
+  }
+}

@@ -2,15 +2,15 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-30T00:20:27.469Z
+Generated: 2026-06-30T04:57:39.403Z
 
 ## Baseline coverage
 
 | Metric | Count |
 | --- | ---: |
-| Total catalog parts | 294 |
+| Total catalog parts | 267 |
 | Found under public/ | 95 |
-| Missing | 199 |
+| Missing | 172 |
 | Preset parts found | 38/48 |
 
 ## Classification summary
@@ -18,25 +18,25 @@ Generated: 2026-06-30T00:20:27.469Z
 | Classification | Count |
 | --- | ---: |
 | Fetchable now | 0 |
-| Needs better official URL | 46 |
+| Needs better official URL | 52 |
 | Official source blocked | 25 |
-| No clean packshot found | 63 |
-| Should remain SVG placeholder | 29 |
-| Unsafe — likely mismatch | 36 |
+| No clean packshot found | 37 |
+| Should remain SVG placeholder | 25 |
+| Unsafe — likely mismatch | 33 |
 
-**Should remain SVG placeholder (incl. unsafe / no packshot):** 128
+**Should remain SVG placeholder (incl. unsafe / no packshot):** 95
 
 ## Queue tiers
 
 | Tier | Scope | Missing |
 | ---: | --- | ---: |
 | 1 | Preset parts (remaining) | 10 |
-| 2 | 5-inch freestyle catalog | 79 |
-| 3 | Multi build-class catalog | 0 |
-| 4 | Easy-match: props, batteries, cameras, motors | 66 |
-| 5 | Receivers / VTX | 6 |
-| 6 | Frames | 15 |
-| 7 | Electronics: FC / ESC / stack / AIO | 23 |
+| 2 | 5-inch freestyle catalog | 77 |
+| 3 | Multi build-class catalog | 1 |
+| 4 | Easy-match: props, batteries, cameras, motors | 53 |
+| 5 | Receivers / VTX | 4 |
+| 6 | Frames | 14 |
+| 7 | Electronics: FC / ESC / stack / AIO | 13 |
 
 ## Fetchable now
 
@@ -46,53 +46,105 @@ _None at generation time._
 
 _High-value missing parts that need a better official direct packshot URL._
 
-1. **Aikon AK32 50A 4-in-1** (`aikon-ak32-50a-4in1`) — tier 2, esc
+1. **GEPRC GEP-CL35 V3 Frame** (`geprc-gep-cl35-v3-frame`) — tier 1, frame
+   - Official: —
+   - No official manufacturer product page recorded in image source files.
+
+2. **HGLRC Rekon7 PRO V2 7-inch LR Frame** (`rekon-hglrc-rekon7-pro-v2-frame`) — tier 1, frame
+   - Official: —
+   - No official manufacturer product page recorded in image source files.
+
+3. **GEPRC SPEEDX2 2105.5 2650KV** (`geprc-speedx2-2105-5-2650kv`) — tier 1, motors
+   - Official: —
+   - No official manufacturer product page recorded in image source files.
+
+4. **Aikon AK32 50A 4-in-1** (`aikon-ak32-50a-4in1`) — tier 2, esc
    - Official: https://shop.aikon.com/products/ak32-50a-4-in-1-esc-v3
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-2. **HGLRC Tekko32 F55 Mini 55A 4-in-1** (`hglrc-tekko32-f55-mini-esc`) — tier 2, esc
+5. **HGLRC Tekko32 F55 Mini 55A 4-in-1** (`hglrc-tekko32-f55-mini-esc`) — tier 2, esc
    - Official: https://www.hglrc.com/products/hglrc-tekko32-f55-mini-55a-4in1-esc
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-3. **Hobbywing XRotor 60A 4-in-1** (`hobbywing-xrotor-60a`) — tier 2, esc
+6. **Hobbywing XRotor 60A 4-in-1** (`hobbywing-xrotor-60a`) — tier 2, esc
    - Official: https://www.hobbywing.com/en/products/xrotor-g2-60a-4in1-esc
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-4. **Hobbywing XRotor G2 50A 4-in-1** (`hobbywing-xrotor-g2-50a`) — tier 2, esc
+7. **Hobbywing XRotor G2 50A 4-in-1** (`hobbywing-xrotor-g2-50a`) — tier 2, esc
    - Official: https://www.hobbywing.com/en/products/xrotor-g2-50a-4in1-esc
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-5. **T-Motor F55A Pro II 4-in-1** (`tmotor-f55a-pro-ii`) — tier 2, esc
+8. **T-Motor F55A Pro II 4-in-1** (`tmotor-f55a-pro-ii`) — tier 2, esc
    - Official: https://store.tmotor.com/product/f55a-pro-ii-4in1-esc.html
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-6. **T-Motor Velox 45A 4-in-1** (`tmotor-velox45a-4in1`) — tier 2, esc
+9. **T-Motor Velox 45A 4-in-1** (`tmotor-velox45a-4in1`) — tier 2, esc
    - Official: https://store.tmotor.com/product/velox-45a-4in1-esc.html
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-7. **AtomRC F405 FC** (`atomrc-f405-fc`) — tier 2, flightController
+10. **AtomRC F405 FC** (`atomrc-f405-fc`) — tier 2, flightController
    - Official: https://www.atomrc.com/atomrc-f405-fc-p00136p1.html
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-8. **AxisFlying H743 Mini** (`axisflying-h743-mini`) — tier 2, flightController
+11. **AxisFlying H743 Mini** (`axisflying-h743-mini`) — tier 2, flightController
    - Official: https://www.axisflying.com/products/axisflying-h743-mini-fc
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-9. **Diatone Mamba F722 MK4** (`diatone-mamba-f722`) — tier 2, flightController
+12. **Diatone Mamba F722 MK4** (`diatone-mamba-f722`) — tier 2, flightController
    - Official: https://www.diatone.us/products/mamba-mk4-f722-app-flight-controller
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-10. **HGLRC F722 Silver FC** (`hglrc-f722-silver-fc`) — tier 2, flightController
+13. **HGLRC F722 Silver FC** (`hglrc-f722-silver-fc`) — tier 2, flightController
    - Official: https://www.hglrc.com/products/hglrc-f722-silver-flight-controller
    - Official product page exists but no verified direct packshot URL is on file yet.
 
-11. **iFlight Beast F722 FC** (`iflight-beast-f722-fc`) — tier 2, flightController
+14. **iFlight Beast F722 FC** (`iflight-beast-f722-fc`) — tier 2, flightController
    - Official: https://shop.iflight.com/Beast-F722-Flight-Controller-Pro1430
    - Official product page exists but no verified direct packshot URL is on file yet.
 
+15. **iFlight BLITZ Mini E55S 4-in-1 ESC** (`iflight-blitz-mini-e55s-4in1`) — tier 3, esc
+   - Official: —
+   - No official manufacturer product page recorded in image source files.
+
 ## Full ranked queue
 
-### 1. GNB 4S 1500mAh 120C (`gnb-4s-1500`)
+### 1. GEPRC GEP-CL35 V3 Frame (`geprc-gep-cl35-v3-frame`)
+
+- **Tier:** 1 — Preset parts (remaining)
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** Frame (`frame`)
+- **Preset part:** yes
+- **Image path:** `public/parts/frames/geprc-gep-cl35-v3-frame.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 2. HGLRC Rekon7 PRO V2 7-inch LR Frame (`rekon-hglrc-rekon7-pro-v2-frame`)
+
+- **Tier:** 1 — Preset parts (remaining)
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** Frame (`frame`)
+- **Preset part:** yes
+- **Image path:** `public/parts/frames/rekon-hglrc-rekon7-pro-v2-frame.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 3. GEPRC SPEEDX2 2105.5 2650KV (`geprc-speedx2-2105-5-2650kv`)
+
+- **Tier:** 1 — Preset parts (remaining)
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** Motors (`motors`)
+- **Preset part:** yes
+- **Image path:** `public/parts/motors/geprc-speedx2-2105-5-2650kv.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 4. GNB 4S 1500mAh 120C (`gnb-4s-1500`)
 
 - **Tier:** 1 — Preset parts (remaining)
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -104,19 +156,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No exact 1500mAh official GNB/Gaoneng product page.
 
-### 2. iFlight XING 2005 2550KV (`iflight-xing-2005-2550`)
-
-- **Tier:** 1 — Preset parts (remaining)
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** yes
-- **Image path:** `public/parts/motors/iflight-xing-2005-2550.jpg`
-- **Official URL:** https://shop.iflight.com/xing-2005-4-6s-fpv-motor-unibell-pro1381
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Official page lacks isolated 2005 motor packshot.
-
-### 3. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+### 5. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
 
 - **Tier:** 1 — Preset parts (remaining)
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -128,7 +168,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 4. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+### 6. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
 
 - **Tier:** 1 — Preset parts (remaining)
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -140,7 +180,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 5. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+### 7. SpeedyBee F405 Mini (`speedybee-f405-mini`)
 
 - **Tier:** 1 — Preset parts (remaining)
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -152,7 +192,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 6. SpeedyBee F405 V4 (`speedybee-f405-v4`)
+### 8. SpeedyBee F405 V4 (`speedybee-f405-v4`)
 
 - **Tier:** 1 — Preset parts (remaining)
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -163,30 +203,6 @@ _High-value missing parts that need a better official direct packshot URL._
 - **Preferred image URL:** —
 - **URL confidence:** high
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
-
-### 7. GEPRC Cinelog35 V2 (`geprc-cinelog35-v2`)
-
-- **Tier:** 1 — Preset parts (remaining)
-- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
-- **Category:** Frame (`frame`)
-- **Preset part:** yes
-- **Image path:** `public/parts/frames/geprc-cinelog35-v2.jpg`
-- **Official URL:** https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/
-- **Preferred image URL:** —
-- **URL confidence:** high
-- **Reason:** Official listing is a complete aircraft, not an isolated frame-kit packshot.
-
-### 8. Rekon7 Pro Long Range (`rekon7-pro-lr`)
-
-- **Tier:** 1 — Preset parts (remaining)
-- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
-- **Category:** Frame (`frame`)
-- **Preset part:** yes
-- **Image path:** `public/parts/frames/rekon7-pro-lr.jpg`
-- **Official URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
-- **Preferred image URL:** —
-- **URL confidence:** high
-- **Reason:** Official listing is a complete aircraft, not an isolated frame-kit packshot.
 
 ### 9. TBS Source One V5 5-inch (`tbs-source-one-v5`)
 
@@ -896,31 +912,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Official listing is a complete aircraft, not an isolated frame-kit packshot.
 
-### 68. AxisFlying AE 2207 1960KV (`axisflying-ae2207-1960`)
-
-- **Tier:** 2 — 5-inch freestyle catalog
-- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/axisflying-ae2207.jpg`
-- **Official URL:** https://www.axisflying.com/products/axisflying-ae-series-2207-motor
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Official AxisFlying AE 2207 motor family page; 1960KV is a listed variant.
-
-### 69. AxisFlying Joker 2207 1920KV (`axisflying-joker-2207-1920kv`)
-
-- **Tier:** 2 — 5-inch freestyle catalog
-- **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/axisflying-joker-2207-1920kv.jpg`
-- **Official URL:** https://www.axisflying.com/products/axisflying-joker-2207-motor
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Official AxisFlying Joker 2207 motor family page; 1920KV is a listed variant.
-
-### 70. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+### 68. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -932,7 +924,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Official Samguk Series V 2207 motor family page on manufacturer store.
 
-### 71. CNHL Black Series 6S 1500mAh 100C (`cnhl-6s-1500-freestyle`)
+### 69. CNHL Black Series 6S 1500mAh 100C (`cnhl-6s-1500-freestyle`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -944,7 +936,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 72. Foxeer Falkor 2 (`foxeer-falkor-2`)
+### 70. Foxeer Falkor 2 (`foxeer-falkor-2`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -956,7 +948,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 73. Foxeer Predator V5 (`foxeer-predator-v5`)
+### 71. Foxeer Predator V5 (`foxeer-predator-v5`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -968,7 +960,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 74. Foxeer Toothless 2 (`foxeer-toothless-2`)
+### 72. Foxeer Toothless 2 (`foxeer-toothless-2`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -980,7 +972,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 75. Foxeer Reaper F4 65A 4-in-1 (`foxeer-reaper-f4-65a`)
+### 73. Foxeer Reaper F4 65A 4-in-1 (`foxeer-reaper-f4-65a`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -992,7 +984,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 76. Foxeer F722 V4 (`foxeer-f722-v4`)
+### 74. Foxeer F722 V4 (`foxeer-f722-v4`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1004,7 +996,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 77. Foxeer H743 F722 FC (`foxeer-h743-f722-fc`)
+### 75. Foxeer H743 F722 FC (`foxeer-h743-f722-fc`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1016,7 +1008,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 78. Armattan Badger 5 Frame (`armattan-badger5-frame`)
+### 76. Armattan Badger 5 Frame (`armattan-badger5-frame`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1028,7 +1020,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 79. GEPRC Mark4 Frame (`geprc-mark4-frame`)
+### 77. GEPRC Mark4 Frame (`geprc-mark4-frame`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1040,7 +1032,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 80. Lumenier QAV-S 2 JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
+### 78. Lumenier QAV-S 2 JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1052,7 +1044,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 81. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
+### 79. FPVCycle 2207 1780KV (`fpvcycle-2207-1780kv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1064,7 +1056,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 82. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
+### 80. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1076,7 +1068,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 83. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
+### 81. Hypetrain Acer 2306 1950KV (`hypetrain-acer-2306-1950kv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1088,7 +1080,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 84. Hypetrain Blaster 2207 2450KV (`hypetrain-blaster-2450`)
+### 82. Hypetrain Blaster 2207 2450KV (`hypetrain-blaster-2450`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1100,7 +1092,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 85. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+### 83. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1112,7 +1104,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 86. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+### 84. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1124,7 +1116,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 87. HQProp Ethix P3 5x3x3 (`ethix-p3-peanut-butter`)
+### 85. HQProp Ethix P3 5x3x3 (`ethix-p3-peanut-butter`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1136,7 +1128,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 88. HQProp Ethix S3 5x5x3 (`ethix-s3-5050`)
+### 86. HQProp Ethix S3 5x5x3 (`ethix-s3-5050`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1148,7 +1140,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 89. Gemfan Hurricane MCK 51433 (`gemfan-hurricane-mck-51433`)
+### 87. Gemfan Hurricane MCK 51433 (`gemfan-hurricane-mck-51433`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1160,7 +1152,19 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 90. Lumenier 6S 2200mAh LR LiPo (`lumenier-6s-2200-lr-lipo`)
+### 88. iFlight BLITZ Mini E55S 4-in-1 ESC (`iflight-blitz-mini-e55s-4in1`)
+
+- **Tier:** 3 — Multi build-class catalog
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** ESC (`esc`)
+- **Preset part:** no
+- **Image path:** `public/parts/escs/iflight-blitz-mini-e55s-4in1.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 89. Lumenier 6S 2200mAh LR LiPo (`lumenier-6s-2200-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1172,7 +1176,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 91. Molicel 6S 4000mAh Li-ion (`molicel-6s-4000-liion`)
+### 90. Molicel 6S 4000mAh Li-ion (`molicel-6s-4000-liion`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1184,7 +1188,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 92. Ovonic 6S 3000mAh LR LiPo (`ovonic-6s-3000-lr-lipo`)
+### 91. Ovonic 6S 3000mAh LR LiPo (`ovonic-6s-3000-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1196,7 +1200,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 93. Sanyo 6S 3500mAh Li-ion (`sanyo-6s-3500-liion`)
+### 92. Sanyo 6S 3500mAh Li-ion (`sanyo-6s-3500-liion`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1208,7 +1212,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 94. Tattu 1S 300mAh HV 75C (`tattu-1s-300-hv`)
+### 93. Tattu 1S 300mAh HV 75C (`tattu-1s-300-hv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1220,7 +1224,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 95. Tattu 4S 1300mAh 95C Cine (`tattu-4s-1300-cine`)
+### 94. Tattu 4S 1300mAh 95C Cine (`tattu-4s-1300-cine`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1232,7 +1236,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 96. Tattu 6S 2800mAh LR LiPo (`tattu-6s-2800-lr-lipo`)
+### 95. Tattu 6S 2800mAh LR LiPo (`tattu-6s-2800-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1244,7 +1248,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 97. Tattu R-Line 4S 650mAh 95C (`tattu-rline-4s-650`)
+### 96. Tattu R-Line 4S 650mAh 95C (`tattu-rline-4s-650`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1256,7 +1260,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 98. Caddx ProView Cine Digital (`caddx-proview-cine-digital`)
+### 97. Caddx ProView Cine Digital (`caddx-proview-cine-digital`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1268,7 +1272,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 99. Caddx Ratel Lucky Whoop (`caddx-ratel-lucky-whoop`)
+### 98. Caddx Ratel Lucky Whoop (`caddx-ratel-lucky-whoop`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1280,7 +1284,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 100. Foxeer Pico R Whoop (`foxeer-pico-r-whoop`)
+### 99. Foxeer Pico R Whoop (`foxeer-pico-r-whoop`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1292,7 +1296,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 101. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
+### 100. T-Motor F1404 3800KV (`tmotor-f1404-3800kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1304,7 +1308,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 102. T-Motor MN2004 2550KV (`tmotor-mn2004-2550kv`)
+### 101. T-Motor MN2004 2550KV (`tmotor-mn2004-2550kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1316,7 +1320,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 103. APC 7x4x2 LR (`apc-7x4-2-lr`)
+### 102. APC 7x4x2 LR (`apc-7x4-2-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1328,7 +1332,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 104. EMAX Avan 3.5x4.0 Cinewhoop D5 (`avan-3540-cine-d5`)
+### 103. EMAX Avan 3.5x4.0 Cinewhoop D5 (`avan-3540-cine-d5`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1340,7 +1344,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 105. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
+### 104. EMAX Avan Rush 3.5x2.8 (`avan-rush-3528`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1352,7 +1356,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 106. BETAFPV 40mm 4-Blade 1.5x3.5 (`betafpv-40mm-4blade-1535`)
+### 105. BETAFPV 40mm 4-Blade 1.5x3.5 (`betafpv-40mm-4blade-1535`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1364,7 +1368,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 107. DAL 3.5x4.35 Cinewhoop D5 (`dal-35435-cine-d5`)
+### 106. DAL 3.5x4.35 Cinewhoop D5 (`dal-35435-cine-d5`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1376,7 +1380,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 108. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
+### 107. DAL Prop 3.5x3.0 Cyclone (`dal-prop-3530-cyclone`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1388,7 +1392,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 109. EMAX Avan 40mm Whoop (`emax-avan-40mm-whoop`)
+### 108. EMAX Avan 40mm Whoop (`emax-avan-40mm-whoop`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1400,7 +1404,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 110. Gemfan 31mm 4-Blade Whoop (`gemfan-31mm-4blade-whoop`)
+### 109. Gemfan 31mm 4-Blade Whoop (`gemfan-31mm-4blade-whoop`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1412,7 +1416,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 111. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
+### 110. Gemfan Hurricane 3.5x2.2 (`gemfan-3522-hurricane`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1424,7 +1428,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 112. Gemfan 3.5x2.8 Cinewhoop D5 (`gemfan-3528-cine-d5`)
+### 111. Gemfan 3.5x2.8 Cinewhoop D5 (`gemfan-3528-cine-d5`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1436,7 +1440,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 113. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
+### 112. Gemfan 3.5x2.8 Freestyle (`gemfan-3528-freestyle`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1448,7 +1452,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 114. Gemfan 7x3.5x2 LR (`gemfan-7035-2-lr`)
+### 113. Gemfan 7x3.5x2 LR (`gemfan-7035-2-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1460,7 +1464,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 115. Gemfan 7x3.6x3 LR (`gemfan-7036-3-lr`)
+### 114. Gemfan 7x3.6x3 LR (`gemfan-7036-3-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1472,7 +1476,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 116. Gemfan FloppyPop3 3.5x1.8 (`gemfan-floppypop3-3518`)
+### 115. Gemfan FloppyPop3 3.5x1.8 (`gemfan-floppypop3-3518`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1484,7 +1488,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 117. GEPRC 7x3.8x2 LR (`geprc-7038-2-lr`)
+### 116. GEPRC 7x3.8x2 LR (`geprc-7038-2-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1496,7 +1500,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 118. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
+### 117. HQProp 3.5x2.5x3 PC (`hqprop-3525-pc`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1508,7 +1512,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 119. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
+### 118. HQProp 3.5x3.5x3 PC (`hqprop-3535-pc`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1520,7 +1524,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 120. HQProp 3.5x3.6 Cinewhoop D5 (`hqprop-3536-cine-d5`)
+### 119. HQProp 3.5x3.6 Cinewhoop D5 (`hqprop-3536-cine-d5`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1532,7 +1536,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 121. HQProp 7x3.0x3 LR (`hqprop-7030-3-lr`)
+### 120. HQProp 7x3.0x3 LR (`hqprop-7030-3-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1544,7 +1548,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 122. HQProp 7x3.5x2 LR (`hqprop-7035-2-lr`)
+### 121. HQProp 7x3.5x2 LR (`hqprop-7035-2-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1556,7 +1560,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 123. HQProp Durable 3.5x3.0 Cine (`hqprop-durable-3530-cine`)
+### 122. HQProp Durable 3.5x3.0 Cine (`hqprop-durable-3530-cine`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1568,7 +1572,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 124. HQProp T65x30 Whoop (`hqprop-t65x30-whoop`)
+### 123. HQProp T65x30 Whoop (`hqprop-t65x30-whoop`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Needs better official URL (`needs_better_official_url`)
@@ -1580,7 +1584,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** —
 - **Reason:** No official manufacturer product page recorded in image source files.
 
-### 125. GNB 1S 550mAh HV BT2.0 (`gn-1s-550-bt2`)
+### 124. GNB 1S 550mAh HV BT2.0 (`gn-1s-550-bt2`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1592,7 +1596,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GNB/Gaoneng official store blocks automated fetch; no verified 1S 550mAh BT2.0 URL.
 
-### 126. GNB 4S 1100mAh 120C Park (`gnb-4s-1100-park`)
+### 125. GNB 4S 1100mAh 120C Park (`gnb-4s-1100-park`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1604,7 +1608,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GNB/Gaoneng store blocks fetch; Genstattu 4S 1100mAh page 404.
 
-### 127. GNB 4S 1300mAh 120C Cine (`gnb-4s-1300-cine`)
+### 126. GNB 4S 1300mAh 120C Cine (`gnb-4s-1300-cine`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1616,7 +1620,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GNB/Gaoneng store blocks fetch; Genstattu 4S 1300mAh page 404.
 
-### 128. GNB 4S 750mAh 120C Mini (`gnb-4s-750-mini`)
+### 127. GNB 4S 750mAh 120C Mini (`gnb-4s-750-mini`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1628,7 +1632,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GNB/Gaoneng store blocks fetch; Genstattu 4S 750mAh page 404.
 
-### 129. GNB 6S 2500mAh LR LiPo (`gnb-6s-2500-lr-lipo`)
+### 128. GNB 6S 2500mAh LR LiPo (`gnb-6s-2500-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1640,7 +1644,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GNB/Gaoneng store blocks fetch; Genstattu 6S 2500mAh page 404.
 
-### 130. BETAFPV 2S 300mAh PH2.0 (`betafpv-2s-300-ph2`)
+### 129. BETAFPV 2S 300mAh PH2.0 (`betafpv-2s-300-ph2`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1652,7 +1656,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Official BETAFPV 300mAh 2S is 45C XT30; catalog line is 75C PH2.0.
 
-### 131. CNHL Ministar 4S 900mAh 100C (`cnhl-ministar-4s-900`)
+### 130. CNHL Ministar 4S 900mAh 100C (`cnhl-ministar-4s-900`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1664,43 +1668,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No CNHL Ministar 4S 900mAh listing; official 900mAh is 2S only; closest 4S is 850mAh.
 
-### 132. iFlight 4S 1800mAh 120C Cine (`iflight-4s-1800-cine`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Battery (`battery`)
-- **Preset part:** no
-- **Image path:** `public/parts/batteries/iflight-4s-1800-cine.jpg`
-- **Official URL:** https://shop.iflight.com/batteries-cat342
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No iFlight 4S 1800mAh 120C battery on official store.
-
-### 133. AxisFlying 2808 1150KV LR (`axisflying-2808-1150kv-lr`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/axisflying-2808-1150kv-lr.jpg`
-- **Official URL:** https://www.axisflying.com/collections/motors
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No AxisFlying 2808 1150KV LR product page on axisflying.com.
-
-### 134. BrotherHobby 1507 3700KV (`brotherhobby-1507-3700kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/brotherhobby-1507-3700kv.jpg`
-- **Official URL:** https://brotherhobby.com/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No BrotherHobby 1507 3700KV product listing on brotherhobby.com.
-
-### 135. EMAX ECO 2004 2550KV (`emax-eco-2004-2550kv`)
+### 131. EMAX ECO 2004 2550KV (`emax-eco-2004-2550kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1712,7 +1680,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Official EMAX ECO II 2004 page lists 1700/2200/2400KV only; no 2550KV SKU.
 
-### 136. EMAX ECO II 2806 1280KV (`emax-eco-ii-2806-1280kv`)
+### 132. EMAX ECO II 2806 1280KV (`emax-eco-ii-2806-1280kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1724,43 +1692,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Closest EMAX LR motor is ECO II 2807 1280KV; no verified 2806 packshot URL.
 
-### 137. GEPRC 0901 11000KV (`geprc-0901-11000kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/geprc-0901-11000kv.jpg`
-- **Official URL:** https://geprc.com/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No GEPRC 0901 11000KV motor product page on geprc.com.
-
-### 138. GEPRC 2005 2200KV (`geprc-2005-2200kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/geprc-2005-2200kv.jpg`
-- **Official URL:** https://geprc.com/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No GEPRC 2005 2200KV motor product page on geprc.com.
-
-### 139. Happymodel Cine 2004 2400KV (`happymodel-cine-2004-2400kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/happymodel-cine-2004-2400kv.jpg`
-- **Official URL:** https://www.happymodel.cn/index.php/category/product/motor/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No Happymodel Cine 2004 2400KV standalone motor product page.
-
-### 140. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
+### 133. iFlight XING2 1404 4600KV (`iflight-xing2-1404-4600kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1772,31 +1704,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** XING2 1404 page lists 4600KV but gallery packshots are 3800KV-labelled only.
 
-### 141. iFlight XING2 1507 4600KV (`iflight-xing2-1507-4600kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/iflight-xing2-1507-4600kv.jpg`
-- **Official URL:** https://shop.iflight.com/motor-cat341
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Legacy XING2 1507 product URL 404 on shop.iflight.com.
-
-### 142. iFlight XING2 2203 2350KV (`iflight-xing2-2203-2350kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/iflight-xing2-2203-2350kv.jpg`
-- **Official URL:** https://shop.iflight.com/motor-cat341
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Legacy XING2 2203 product URL 404 on shop.iflight.com.
-
-### 143. iFlight XING2 2807 1280KV LR (`iflight-xing2-2807-1280kv-lr`)
+### 134. iFlight XING2 2807 1280KV LR (`iflight-xing2-2807-1280kv-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1808,19 +1716,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy XING2 2807 LR product URL 404; no 1280KV packshot on iFlight store.
 
-### 144. NewBeeDrone 0802 17500KV (`newbee-0802-17500kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/newbee-0802-17500kv.jpg`
-- **Official URL:** https://www.newbeedrone.com/collections/motors
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No NewBeeDrone 0802 17500KV product page on newbeedrone.com.
-
-### 145. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
+### 135. RCinPower 1404 3800KV (`rcinpower-1404-3800kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1832,43 +1728,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** SmooX 1404 page is spec-sheet composite; GTS V3 1404 page uses 1203 imagery.
 
-### 146. RCinPower 2203 2300KV (`rcinpower-2203-2300kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/rcinpower-2203-2300kv.jpg`
-- **Official URL:** https://www.rcinpower.com/G-SERIES/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No RCinPower G-SERIES 2203 2300KV product page on rcinpower.com.
-
-### 147. RCinPower 2807 1350KV LR (`rcinpower-2807-1350kv-lr`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/rcinpower-2807-1350kv-lr.jpg`
-- **Official URL:** https://www.rcinpower.com/G-SERIES/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No RCinPower 2807 1350KV LR product page on rcinpower.com.
-
-### 148. T-Motor 2807 1300KV LR (`tmotor-2807-1300kv-lr`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/tmotor-2807-1300kv-lr.jpg`
-- **Official URL:** https://store.tmotor.com/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No T-Motor FPV 2807 1300KV LR motor product page on store.tmotor.com.
-
-### 149. CNHL 6S 1800mAh LR LiPo (`cnhl-6s-1800-lr-lipo`)
+### 136. CNHL 6S 1800mAh LR LiPo (`cnhl-6s-1800-lr-lipo`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1880,7 +1740,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 150. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
+### 137. BETAFPV 1404 4600KV (`betafpv-1404-4600kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1892,19 +1752,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 151. BrotherHobby 2004 2600KV (`brotherhobby-2004-2600kv`)
-
-- **Tier:** 4 — Easy-match: props, batteries, cameras, motors
-- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
-- **Category:** Motors (`motors`)
-- **Preset part:** no
-- **Image path:** `public/parts/motors/brotherhobby-2004-2600kv.jpg`
-- **Official URL:** https://brotherhobby.com/2004-motor-p00129p1.html
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
-
-### 152. BrotherHobby 2806 1400KV LR (`brotherhobby-2806-1400kv-lr`)
+### 138. BrotherHobby 2806 1400KV LR (`brotherhobby-2806-1400kv-lr`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1916,7 +1764,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 153. EMAX E1106 7200KV (`emax-e1106-7200kv`)
+### 139. EMAX E1106 7200KV (`emax-e1106-7200kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1928,7 +1776,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 154. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
+### 140. EMAX ECO 1404 4000KV (`emax-eco-1404-4000kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1940,7 +1788,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 155. iFlight XING-E Pro 2806 1300KV (`iflight-xing-e-pro-2806-1300kv`)
+### 141. iFlight XING-E Pro 2806 1300KV (`iflight-xing-e-pro-2806-1300kv`)
 
 - **Tier:** 4 — Easy-match: props, batteries, cameras, motors
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -1952,7 +1800,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 156. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
+### 142. AKK A3 Nano VTX Park (`akk-a3-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1964,7 +1812,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
-### 157. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
+### 143. AKK A5 Nano VTX (`akk-a5-nano-vtx`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -1976,31 +1824,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** AKK official store (akktek.com) blocks automated fetch.
 
-### 158. HDZero Cine Nano VTX (`hdzero-cine-nano-vtx`)
-
-- **Tier:** 5 — Receivers / VTX
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** VTX (`vtx`)
-- **Preset part:** no
-- **Image path:** `public/parts/vtx/hdzero-cine-nano-vtx.jpg`
-- **Official URL:** https://www.hd-zero.com/shop
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No HDZero Cine Nano VTX product page on hd-zero.com shop.
-
-### 159. RushFPV Mini Tank Cine VTX (`rush-mini-tank-cine-vtx`)
-
-- **Tier:** 5 — Receivers / VTX
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** VTX (`vtx`)
-- **Preset part:** no
-- **Image path:** `public/parts/vtx/rush-mini-tank-cine-vtx.jpg`
-- **Official URL:** https://rushfpv.net/collections/vtx
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No RushFPV Mini Tank Cine VTX product page on rushfpv.net.
-
-### 160. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
+### 144. Radiomaster ER5 915 LR (`radiomaster-er5-915-lr`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2012,7 +1836,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 161. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
+### 145. RushFPV Nano VTX Park (`rush-nano-vtx-park`)
 
 - **Tier:** 5 — Receivers / VTX
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2024,7 +1848,31 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 162. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
+### 146. BETAFPV Pavo35 Brushless Whoop Frame (`betafpv-pavo35-frame-kit`)
+
+- **Tier:** 6 — Frames
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/betafpv-pavo35-frame-kit.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 147. iFlight AOS 3.5 V5.1 Frame Kit (`iflight-aos-3-5-v5-1-frame`)
+
+- **Tier:** 6 — Frames
+- **Classification:** Needs better official URL (`needs_better_official_url`)
+- **Category:** Frame (`frame`)
+- **Preset part:** no
+- **Image path:** `public/parts/frames/iflight-aos-3-5-v5-1.jpg`
+- **Official URL:** —
+- **Preferred image URL:** —
+- **URL confidence:** —
+- **Reason:** No official manufacturer product page recorded in image source files.
+
+### 148. BETAFPV Pavo3516 Frame (`betafpv-pavo3516-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2036,7 +1884,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No BETAFPV Pavo3516 frame or kit listing on betafpv.com.
 
-### 163. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
+### 149. Diatone Taycan 3.5 Frame (`diatone-taycan35-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2048,7 +1896,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Diatone store has Taycan accessories only; no 3.5-inch frame kit page.
 
-### 164. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
+### 150. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2060,7 +1908,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.
 
-### 165. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+### 151. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2072,19 +1920,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 3.5 frame kit on flywoo.net.
 
-### 166. Flywoo Explorer 7 LR Frame (`flywoo-explorer7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/flywoo-explorer7-lr.jpg`
-- **Official URL:** https://flywoo.net/collections/frames
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No Flywoo Explorer 7 LR frame kit on flywoo.net.
-
-### 167. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
+### 152. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2096,19 +1932,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.
 
-### 168. GEPRC Crocodile7 LR Frame (`geprc-crocodile7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-crocodile7-lr.jpg`
-- **Official URL:** https://geprc.com/product-category/frame-kit/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No GEPRC Crocodile7 LR frame product on geprc.com.
-
-### 169. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+### 153. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2120,7 +1944,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket 3.5 frame kit product page on geprc.com.
 
-### 170. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
+### 154. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2132,19 +1956,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket Lite 75 frame kit product page on geprc.com.
 
-### 171. HGLRC Sector7 LR Frame (`hglrc-sector7-lr-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/hglrc-sector7-lr.jpg`
-- **Official URL:** https://www.hglrc.com/collections/frames
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No HGLRC Sector7 LR frame on hglrc.com; Sector D5/X5 are 5-inch only.
-
-### 172. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+### 155. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2156,7 +1968,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product.
 
-### 173. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
+### 156. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2168,7 +1980,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.
 
-### 174. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
+### 157. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2180,7 +1992,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.
 
-### 175. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
+### 158. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2192,7 +2004,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No TBS Source One 7 open-source repository or product page with isolated frame packshot.
 
-### 176. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
+### 159. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2204,7 +2016,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 177. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
+### 160. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -2216,7 +2028,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Aikon official store (shop.aikon.com) unreachable from automated fetch.
 
-### 178. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
+### 161. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -2228,19 +2040,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** MEPS official store API returns no products; no verified Konvex 55A LR URL.
 
-### 179. Diatone Mamba F35 Cine ESC (`diatone-mamba-f35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/diatone-mamba-f35-cine-esc.jpg`
-- **Official URL:** https://www.diatone.us/collections/esc
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No Diatone Mamba F35 Cine ESC on diatone.us; F40 mini line only.
-
-### 180. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
+### 162. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2252,67 +2052,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Diatone F55_BLS page packshot filename references F50; LR suffix not a separate SKU.
 
-### 181. GEPRC GEP35A Cine ESC (`geprc-gep35a-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/geprc-gep35a-cine-esc.jpg`
-- **Official URL:** https://geprc.com/product-category/esc/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No GEPRC GEP35A Cine ESC on geprc.com; Taker ESC line only.
-
-### 182. HGLRC Tekko32 F35 Mini 35A (`hglrc-tekko32-f35-mini`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/hglrc-tekko32-f35-mini.jpg`
-- **Official URL:** https://www.hglrc.com/collections/esc
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No HGLRC Tekko32 F35 Mini product page on hglrc.com.
-
-### 183. iFlight SucceX-D35 Cine ESC (`iflight-succexd35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/iflight-succexd35-cine-esc.jpg`
-- **Official URL:** https://shop.iflight.com/esc-cat343
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Legacy iFlight SucceX-D35 Cine ESC product URL 404 on shop.iflight.com.
-
-### 184. T-Motor F35A Mini 4-in-1 (`tmotor-f35a-mini-4in1`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/tmotor-f35a-mini-4in1.jpg`
-- **Official URL:** https://store.tmotor.com/category/uav-esc-1.html
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No T-Motor F35A Mini 4-in-1 ESC product page on store.tmotor.com.
-
-### 185. T-Motor Pacer F35 Cine ESC (`tmotor-pacer-f35-cine-esc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** ESC (`esc`)
-- **Preset part:** no
-- **Image path:** `public/parts/escs/tmotor-pacer-f35-cine-esc.jpg`
-- **Official URL:** https://store.tmotor.com/category/uav-esc-1.html
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No T-Motor Pacer F35 Cine ESC product page on store.tmotor.com.
-
-### 186. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+### 163. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2324,31 +2064,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GEPRC store lists GEP-F405-HD variants only; no F405 20x20 Mini SKU.
 
-### 187. GEPRC F722 Cine Mini FC (`geprc-f722-cine-mini-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg`
-- **Official URL:** https://geprc.com/product/gep-f722-hd-flight-controller/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** GEPRC store lists GEP-F722 HD variants; no F722 Cine Mini FC SKU.
-
-### 188. Matek F722 Cine Mini FC (`matek-f722-cine-mini-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/matek-f722-cine-mini-fc.jpg`
-- **Official URL:** https://www.mateksys.com/?portfolio=f722-mini
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Matek F722-mini portfolio is EOL spec-sheet composite; no Cine Mini SKU.
-
-### 189. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
+### 164. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2360,7 +2076,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 190. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
+### 165. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2372,7 +2088,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 191. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
+### 166. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2384,7 +2100,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 192. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
+### 167. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2396,7 +2112,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 193. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
+### 168. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2408,7 +2124,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 194. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
+### 169. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2420,7 +2136,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 195. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
+### 170. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2432,7 +2148,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 196. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
+### 171. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2444,31 +2160,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 197. iFlight Beast H743 Cine FC (`iflight-beast-h743-cine-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg`
-- **Official URL:** https://shop.iflight.com/flight-controller-cat342
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
-
-### 198. iFlight Beast H743 LR FC (`iflight-beast-h743-lr-fc`)
-
-- **Tier:** 7 — Electronics: FC / ESC / stack / AIO
-- **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
-- **Category:** Flight controller (`flightController`)
-- **Preset part:** no
-- **Image path:** `public/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg`
-- **Official URL:** https://shop.iflight.com/flight-controller-cat342
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Prior manual review flagged wrong product, variant, or composite image.
-
-### 199. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
+### 172. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)

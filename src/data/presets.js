@@ -78,8 +78,8 @@ export const presetBuilds = [
     buildClass: "cinewhoop",
     description: "Ducted 4S cinewhoop with O3 HD link, efficient motors, and cruise-oriented pack.",
     selections: {
-      frame: "geprc-cinelog35-v2",
-      motors: "iflight-xing-2005-2550",
+      frame: "geprc-gep-cl35-v3-frame",
+      motors: "geprc-speedx2-2105-5-2650kv",
       esc: "speedybee-bls-35a-4in1",
       flightController: "speedybee-f405-mini",
       props: "hqprop-duct-t90-3",
@@ -96,7 +96,7 @@ export const presetBuilds = [
     buildClass: "7-inch-long-range",
     description: "6S 7\" long-range rig with Tattu LR pack, low-pitch props, and Crossfire link.",
     selections: {
-      frame: "rekon7-pro-lr",
+      frame: "rekon-hglrc-rekon7-pro-v2-frame",
       motors: "brotherhobby-avenger-2806-5-1300",
       esc: "skystars-km55a-4in1",
       flightController: "matek-h743-mini-lr",

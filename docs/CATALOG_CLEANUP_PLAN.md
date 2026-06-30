@@ -4,7 +4,44 @@ Planning document derived from `docs/CATALOG_IMAGE_REVIEW_NOTES.md` and the exha
 
 **Generated:** 2026-06-30  
 **Machine-readable candidates:** `docs/catalog-cleanup-candidates.json`  
-**Current image coverage:** 95 / 294 catalog · 38 / 48 presets · fetchable queue 0
+**Current image coverage:** 95 / 267 catalog · 38 / 48 presets · fetchable queue TBD
+
+### Batch 1D-LR applied (2026-06-27)
+
+Removed **3** invalid 7" long range frame entries from `src/data/parts.js`. First sub-batch of Batch 1D deferred frame cleanup. No preset, calculation, or image changes.
+
+| Part ID | Issue |
+| --- | --- |
+| `flywoo-explorer7-lr-frame` | Complete aircraft listing, not frame kit |
+| `geprc-crocodile7-lr-frame` | No Crocodile7 LR frame on geprc.com |
+| `hglrc-sector7-lr-frame` | Nonexistent Sector7 LR SKU (5" Sector line only) |
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 270 → **267** |
+| 7" LR frames before → after | 6 → **3** |
+| Image coverage | 95 / 270 → **95 / 267** |
+| Preset impact | 0 |
+
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-Cine** and **1D-3.5** remain deferred.
+
+### Batch 1C applied (2026-06-27)
+
+Removed **3** post-R2 preset-linked catalog entries after Batch R2 migrations. No preset, calculation, or image changes.
+
+| Part ID | Category | Replaced by (R2) |
+| --- | --- | --- |
+| `geprc-cinelog35-v2` | frame | `geprc-gep-cl35-v3-frame` |
+| `iflight-xing-2005-2550` | motors | `geprc-speedx2-2105-5-2650kv` |
+| `rekon7-pro-lr` | frame | `rekon-hglrc-rekon7-pro-v2-frame` |
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 273 → **270** |
+| Image coverage | 95 / 273 → **95 / 270** |
+| Preset impact | 0 (presets already migrated) |
+
+**Held (preset-linked):** cleared — all three former preset-linked cleanup targets removed.
 
 ### Batch 1A applied (2026-06-27)
 
@@ -16,6 +53,24 @@ Rename-only catalog display fixes in `src/data/parts.js` — part IDs, `imagePat
 | `happymodel-se0802-22000kv` | Happymodel SE0802 22000KV | Happymodel EX0802 22000KV |
 
 `flywoo-explorer5-frame` remains deferred pending manual SKU confirmation.
+
+### Batch 1B-core applied (2026-06-27)
+
+Removed **27** discontinued/deprecated non-frame catalog entries from `src/data/parts.js`. No preset, calculation, or image changes.
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 294 → 267 |
+| Image coverage | 95 / 294 → 95 / 267 |
+| Preset impact | 0 |
+
+**Removed by category:** motors 14 · esc 6 · flightController 4 · vtx 2 · battery 1
+
+**Skipped (frame exclusion):** 3 IDs tagged `1B-core` in dry-run but held — `hglrc-zeus5-frame`, `impulserc-apexdc`, `impulserc-reverb5-frame` — deferred to **1B-frames-deferred**.
+
+**Held (preset-linked):** ~~`geprc-cinelog35-v2`, `iflight-xing-2005-2550`, `rekon7-pro-lr`~~ — removed in **Batch 1C** after R2 migrations.
+
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1B_DRY_RUN.md`
 
 ---
 
