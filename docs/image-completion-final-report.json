@@ -92,7 +92,15 @@
   "notes": [
     "Batch 1D-3.5 applied before this pass (261 catalog parts, 5 deprecated 3.5\" frames removed).",
     "Supplemental image sources wired for 44 post-R3 catalog parts.",
-    "All retained images use imageNeedsReview and No verified license on file.",
-    "16 wrong/composite downloads removed; 7 clean official packshots kept."
-  ]
+    "All retained product JPGs use imageNeedsReview and No verified license on file.",
+    "16 wrong/composite downloads removed; 7 clean official packshots kept.",
+    "159 generated SVG illustrations added for honest visual coverage without fake product photos."
+  ],
+  "visualCoverage": {
+    "realProductImages": 102,
+    "generatedIllustrations": 159,
+    "fallbackOnly": 0,
+    "totalWithVisual": 261,
+    "catalogTotal": 261
+  }
 }

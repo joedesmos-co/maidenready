@@ -4,14 +4,19 @@ Developer-facing TODO for every part in `src/data/parts.js`.
 
 > No images are downloaded by this report. Add local JPGs under `public/` manually or via the preset image workflow.
 
-Generated: 2026-06-30T12:29:54.264Z
+Generated: 2026-06-30T12:47:24.011Z
 
 ## Summary
 
 - Total catalog parts: **261**
-- Found under `public/`: **102**
-- Missing local JPGs: **159**
-- Preset parts: **40/48** found
+- Real product JPGs under `public/`: **102**
+- Missing product JPGs: **159**
+- Generated illustrations: **159**
+- Fallback placeholder only: **0**
+- **Visual coverage: 261/261**
+- Preset product photos: **40/48** found
+
+> Generated illustrations live under `public/parts/illustrations/`. They are category icons with brand/name labels — not manufacturer product photos.
 
 ### Missing by priority
 

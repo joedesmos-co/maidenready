@@ -27,6 +27,7 @@
     "images:fetch-completion-queue": "node scripts/fetchCompletionQueue.js",
     "images:completion-pipeline": "node scripts/runImageCompletionPipeline.js",
     "images:folders": "node scripts/createImageFolders.js",
+    "images:generate-illustrations": "node scripts/generatePartIllustrations.js",
     "validate:stats": "node scripts/validatePresetStats.js"
   },
   "dependencies": {

@@ -730,6 +730,8 @@ function ExplainBuildPanel({ explanation }) {
 }
 
 function PartInfoDrawer({ info, onClose }) {
+  const [imageDisplayMode, setImageDisplayMode] = useState("photo");
+
   if (!info) {
     return null;
   }
@@ -768,8 +770,11 @@ function PartInfoDrawer({ info, onClose }) {
             part={part}
             partType={categoryLabel}
             variant="drawer"
+            onDisplayModeChange={setImageDisplayMode}
           />
-          {hasPartImageMetadata(part) && <PartImageAttribution part={part} />}
+          {imageDisplayMode === "photo" && hasPartImageMetadata(part) && (
+            <PartImageAttribution part={part} />
+          )}
         </div>
 
         <div className="part-info-title">

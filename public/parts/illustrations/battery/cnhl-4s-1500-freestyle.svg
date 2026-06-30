@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="CNHL 4S 1500mAh 100C illustration">
+  <title>CNHL 4S 1500mAh 100C — illustration</title>
+  <desc>Generated category illustration, not a manufacturer product photo.</desc>
+  <rect width="240" height="200" fill="#0d1219" rx="8"/>
+  <rect x="8" y="8" width="224" height="124" fill="#141c28" rx="6" stroke="#5a6d82" stroke-width="1" opacity="0.55"/>
+  
+        <g transform="translate(120 72)">
+          <rect x="-40" y="-22" width="72" height="44" rx="3" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <rect x="32" y="-10" width="12" height="20" rx="1" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" stroke="#00e5ff" />
+          <line x1="-24" y1="-22" x2="-24" y2="22" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="-4" y1="-22" x2="-4" y2="22" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="16" y1="-22" x2="16" y2="22" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="-34" y1="-6" x2="26" y2="-6" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="-34" y1="8" x2="26" y2="8" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <text x="0" y="40" text-anchor="middle" fill="#00e5ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">4S</text>
+        </g>
+  <text x="120" y="152" text-anchor="middle" fill="#7a8a9c" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" letter-spacing="0.06em">CNHL</text>
+  <text x="120" y="168" text-anchor="middle" fill="#c5d0dc" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="500"><tspan x="120" dy="0">CNHL 4S 1500mAh 100C</tspan></text>
+  <text x="120" y="190" text-anchor="middle" fill="#4d8f9c" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="9" letter-spacing="0.12em">ILLUSTRATION</text>
+</svg>

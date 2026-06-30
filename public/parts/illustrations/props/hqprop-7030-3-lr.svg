@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="HQProp 7x3.0x3 LR illustration">
+  <title>HQProp 7x3.0x3 LR — illustration</title>
+  <desc>Generated category illustration, not a manufacturer product photo.</desc>
+  <rect width="240" height="200" fill="#0d1219" rx="8"/>
+  <rect x="8" y="8" width="224" height="124" fill="#141c28" rx="6" stroke="#5a6d82" stroke-width="1" opacity="0.55"/>
+  
+        <g transform="translate(120 72)">
+          <circle cx="0" cy="0" r="6" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" stroke="#00e5ff" />
+          <line x1="0" y1="0" x2="0" y2="-36" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="0" y1="0" x2="31" y2="18" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="0" y1="0" x2="-31" y2="18" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="0" y1="-36" x2="-6" y2="-28" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="0" y1="-36" x2="6" y2="-28" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="31" y1="18" x2="23" y2="14" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="31" y1="18" x2="27" y2="26" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="-31" y1="18" x2="-23" y2="14" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+          <line x1="-31" y1="18" x2="-27" y2="26" fill="none" stroke="#5a6d82" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" />
+        </g>
+  <text x="120" y="152" text-anchor="middle" fill="#7a8a9c" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="10" letter-spacing="0.06em">HQPROP</text>
+  <text x="120" y="168" text-anchor="middle" fill="#c5d0dc" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="11" font-weight="500"><tspan x="120" dy="0">HQProp 7x3.0x3 LR</tspan></text>
+  <text x="120" y="190" text-anchor="middle" fill="#4d8f9c" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="9" letter-spacing="0.12em">ILLUSTRATION</text>
+</svg>

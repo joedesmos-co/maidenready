@@ -9,6 +9,7 @@ import {
 } from "../src/data/parts.js";
 import { presetBuilds } from "../src/data/presets.js";
 import { isPresetPartId } from "../src/data/presetPartImages.js";
+import { getPartIllustrationRelativePath } from "../src/utils/partIllustrationPath.js";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(scriptDir, "..");
@@ -97,6 +98,14 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
       const relativePath = imagePath?.replace(/^\//, "") ?? null;
       const absolutePath = relativePath ? join(publicRoot, relativePath) : null;
       const exists = relativePath ? existsSync(absolutePath) : false;
+      const illustrationRelativePath = getPartIllustrationRelativePath(part.id, step.key);
+      const illustrationAbsolutePath = illustrationRelativePath
+        ? join(publicRoot, illustrationRelativePath)
+        : null;
+      const illustrationExists = illustrationRelativePath
+        ? existsSync(illustrationAbsolutePath)
+        : false;
+      const hasVisual = exists || illustrationExists;
       const presetUsage = presetUsageByPartId.get(part.id) ?? [];
       const usedInPreset = isPresetPartId(part.id);
       const priority = getImagePriority(part, usedInPreset);
@@ -111,6 +120,16 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
         relativePath,
         absolutePath,
         exists,
+        illustrationPath: illustrationRelativePath
+          ? `/${illustrationRelativePath}`
+          : null,
+        illustrationExists,
+        hasVisual,
+        visualType: exists
+          ? "product-photo"
+          : illustrationExists
+            ? "generated-illustration"
+            : "fallback-placeholder",
         usedInPreset,
         presetUsage,
         compatibleClasses: part.compatibleClasses ?? [],
@@ -124,6 +143,13 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
 
   const foundItems = checked.filter((entry) => entry.exists);
   const missingItems = checked.filter((entry) => !entry.exists);
+  const illustrationItems = checked.filter(
+    (entry) => !entry.exists && entry.illustrationExists,
+  );
+  const fallbackOnlyItems = checked.filter(
+    (entry) => !entry.exists && !entry.illustrationExists,
+  );
+  const visualItems = checked.filter((entry) => entry.hasVisual);
 
   const missingByCategory = missingItems.reduce((grouped, entry) => {
     if (!grouped[entry.categoryKey]) {
@@ -170,10 +196,20 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
     presetPartTotal: checked.filter((entry) => entry.usedInPreset).length,
     presetPartFound: foundItems.filter((entry) => entry.usedInPreset).length,
     presetPartMissing: presetMissing.length,
+    visualCoverage: {
+      total: checked.length,
+      realProductImages: foundItems.length,
+      generatedIllustrations: illustrationItems.length,
+      fallbackOnly: fallbackOnlyItems.length,
+      withVisual: visualItems.length,
+    },
     missingByPriority,
     checked,
     foundItems,
     missingItems,
+    illustrationItems,
+    fallbackOnlyItems,
+    visualItems,
     missingByCategory,
     missingByBuildClass,
   };
@@ -185,7 +221,13 @@ export function formatAllPartImageAuditReport(report) {
     "-----------------------------------",
     `Total catalog parts: ${report.total}`,
     `Found under public/: ${report.found}`,
-    `Missing: ${report.missing}`,
+    `Missing product JPGs: ${report.missing}`,
+    "",
+    "Visual coverage:",
+    `  Real product images: ${report.visualCoverage.realProductImages}`,
+    `  Generated illustrations: ${report.visualCoverage.generatedIllustrations}`,
+    `  Fallback placeholder only: ${report.visualCoverage.fallbackOnly}`,
+    `  Total with visual: ${report.visualCoverage.withVisual}/${report.visualCoverage.total}`,
     "",
     "Preset coverage:",
     `  Preset parts total: ${report.presetPartTotal}`,
@@ -280,9 +322,14 @@ export function formatAllPartImageCoverageMarkdown(report) {
     "## Summary",
     "",
     `- Total catalog parts: **${report.total}**`,
-    `- Found under \`public/\`: **${report.found}**`,
-    `- Missing local JPGs: **${report.missing}**`,
-    `- Preset parts: **${report.presetPartFound}/${report.presetPartTotal}** found`,
+    `- Real product JPGs under \`public/\`: **${report.found}**`,
+    `- Missing product JPGs: **${report.missing}**`,
+    `- Generated illustrations: **${report.visualCoverage.generatedIllustrations}**`,
+    `- Fallback placeholder only: **${report.visualCoverage.fallbackOnly}**`,
+    `- **Visual coverage: ${report.visualCoverage.withVisual}/${report.total}**`,
+    `- Preset product photos: **${report.presetPartFound}/${report.presetPartTotal}** found`,
+    "",
+    "> Generated illustrations live under \`public/parts/illustrations/\`. They are category icons with brand/name labels — not manufacturer product photos.",
     "",
     "### Missing by priority",
     "",
@@ -353,6 +400,7 @@ export function writeAllPartImageCoverageArtifacts(report) {
       presetPartTotal: report.presetPartTotal,
       presetPartFound: report.presetPartFound,
       presetPartMissing: report.presetPartMissing,
+      visualCoverage: report.visualCoverage,
       missingByPriority: {
         1: report.missingByPriority[1].length,
         2: report.missingByPriority[2].length,
@@ -392,6 +440,10 @@ export function writeAllPartImageCoverageArtifacts(report) {
       categoryKey: entry.categoryKey,
       imagePath: entry.imagePath,
       exists: entry.exists,
+      illustrationPath: entry.illustrationPath,
+      illustrationExists: entry.illustrationExists,
+      hasVisual: entry.hasVisual,
+      visualType: entry.visualType,
       usedInPreset: entry.usedInPreset,
       presetUsage: entry.presetUsage,
       compatibleClasses: entry.compatibleClasses,
@@ -415,7 +467,7 @@ function main() {
   console.log(`Wrote ${markdownPath}`);
   console.log(`Wrote ${jsonPath}`);
 
-  if (report.missing > 0) {
+  if (report.visualCoverage.fallbackOnly > 0) {
     process.exitCode = 1;
   }
 }

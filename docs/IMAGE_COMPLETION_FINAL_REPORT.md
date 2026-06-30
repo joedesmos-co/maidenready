@@ -65,6 +65,17 @@ Wrong product type, stack/composite, marketing assets, or mismatch-risk download
 
 ## Beta readiness
 
-**Safe to ship public beta.** Catalog cleanup batches through 1D-3.5 are complete. Image quality rules enforced — no retailer, watermark, stack-combo, or wrong-SKU images retained. SVG placeholders are intentional for blocked or unverifiable official sources.
+**Safe to ship public beta.** Catalog cleanup batches through 1D-3.5 are complete. Image quality rules enforced — no retailer, watermark, stack-combo, or wrong-SKU product photos retained.
 
-Machine-readable: `docs/image-completion-final-report.json` · Research: `docs/image-research-results.json`
+## Visual coverage (generated illustrations pass)
+
+| Visual type | Count |
+| --- | ---: |
+| Real product JPGs | **102** |
+| Generated illustrations | **159** |
+| Fallback placeholder only | **0** |
+| **Total visual coverage** | **261 / 261** |
+
+Generated illustrations live under `public/parts/illustrations/`. They are labeled **Illustration** in the UI and are not manufacturer product photos. Real JPG candidates still use `imageNeedsReview` / `No verified license on file` where applicable.
+
+Machine-readable: `docs/image-completion-final-report.json` · Illustrations: `docs/part-illustrations-manifest.json`

@@ -1266,6 +1266,31 @@ h2 {
   text-transform: uppercase;
 }
 
+.part-image-illustration {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.part-image-illustration-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 2;
+  padding: 2px 5px;
+  border: 1px solid color-mix(in srgb, var(--dim) 55%, var(--line));
+  background: rgba(8, 8, 9, 0.9);
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .part-image-placeholder {
   display: flex;
   flex: 1;
