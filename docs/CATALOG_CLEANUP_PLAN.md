@@ -4,7 +4,27 @@ Planning document derived from `docs/CATALOG_IMAGE_REVIEW_NOTES.md` and the exha
 
 **Generated:** 2026-06-30  
 **Machine-readable candidates:** `docs/catalog-cleanup-candidates.json`  
-**Current image coverage:** 95 / 267 catalog · 38 / 48 presets · fetchable queue TBD
+**Current image coverage:** 95 / 263 catalog · 38 / 48 presets · fetchable queue TBD
+
+### Batch 1D-Cine applied (2026-06-27)
+
+Removed **4** legacy cinewhoop frame entries from `src/data/parts.js`. Second sub-batch of Batch 1D deferred frame cleanup. No preset, calculation, or image changes.
+
+| Part ID | Issue |
+| --- | --- |
+| `flywoo-explorer35-cine-frame` | No Explorer 3.5 Cine frame kit on flywoo.net |
+| `geprc-cinebee35-hd-frame` | No isolated CineBee35 HD frame-kit page |
+| `iflight-chimera35-cine-frame` | Legacy Chimera35 Cine frame-kit URL 404 |
+| `iflight-cidatel35-cine-frame` | Legacy Cidatel 3.5 Cine frame-kit URL 404 |
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 267 → **263** |
+| Cinewhoop frames before → after | 8 → **4** |
+| Image coverage | 95 / 267 → **95 / 263** |
+| Preset impact | 0 |
+
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** remains deferred.
 
 ### Batch 1D-LR applied (2026-06-27)
 
@@ -23,7 +43,7 @@ Removed **3** invalid 7" long range frame entries from `src/data/parts.js`. Firs
 | Image coverage | 95 / 270 → **95 / 267** |
 | Preset impact | 0 |
 
-Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-Cine** and **1D-3.5** remain deferred.
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** remains deferred.
 
 ### Batch 1C applied (2026-06-27)
 

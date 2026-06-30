@@ -2,15 +2,15 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-30T04:57:39.403Z
+Generated: 2026-06-30T05:00:56.364Z
 
 ## Baseline coverage
 
 | Metric | Count |
 | --- | ---: |
-| Total catalog parts | 267 |
+| Total catalog parts | 263 |
 | Found under public/ | 95 |
-| Missing | 172 |
+| Missing | 168 |
 | Preset parts found | 38/48 |
 
 ## Classification summary
@@ -20,11 +20,11 @@ Generated: 2026-06-30T04:57:39.403Z
 | Fetchable now | 0 |
 | Needs better official URL | 52 |
 | Official source blocked | 25 |
-| No clean packshot found | 37 |
+| No clean packshot found | 33 |
 | Should remain SVG placeholder | 25 |
 | Unsafe — likely mismatch | 33 |
 
-**Should remain SVG placeholder (incl. unsafe / no packshot):** 95
+**Should remain SVG placeholder (incl. unsafe / no packshot):** 91
 
 ## Queue tiers
 
@@ -35,7 +35,7 @@ Generated: 2026-06-30T04:57:39.403Z
 | 3 | Multi build-class catalog | 1 |
 | 4 | Easy-match: props, batteries, cameras, motors | 53 |
 | 5 | Receivers / VTX | 4 |
-| 6 | Frames | 14 |
+| 6 | Frames | 10 |
 | 7 | Electronics: FC / ESC / stack / AIO | 13 |
 
 ## Fetchable now
@@ -1896,19 +1896,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Diatone store has Taycan accessories only; no 3.5-inch frame kit page.
 
-### 150. Flywoo Explorer 3.5 Cine Frame (`flywoo-explorer35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/flywoo-explorer35-cine.jpg`
-- **Official URL:** https://flywoo.net/collections/frames
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.
-
-### 151. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
+### 150. Flywoo Explorer 3.5 Frame (`flywoo-explorer35-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1920,19 +1908,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No Flywoo Explorer 3.5 frame kit on flywoo.net.
 
-### 152. GEPRC CineBee35 HD Frame (`geprc-cinebee35-hd-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/geprc-cinebee35-hd.jpg`
-- **Official URL:** https://geprc.com/product-category/frame-kit/
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.
-
-### 153. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
+### 151. GEPRC Rocket 3.5 Frame (`geprc-rocket-3-5-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1944,7 +1920,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket 3.5 frame kit product page on geprc.com.
 
-### 154. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
+### 152. GEPRC Rocket Lite 75 Frame (`geprc-rocket-lite-75-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1956,7 +1932,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No GEPRC Rocket Lite 75 frame kit product page on geprc.com.
 
-### 155. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
+### 153. iFlight Chimera3 Frame (`iflight-chimera3-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -1968,31 +1944,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Legacy iFlight Chimera3 frame-kit URL 404; Chimera7 kits are different product.
 
-### 156. iFlight Chimera35 Cine Frame (`iflight-chimera35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/iflight-chimera35-cine.jpg`
-- **Official URL:** https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.
-
-### 157. iFlight Cidatel 3.5 Cine Frame (`iflight-cidatel35-cine-frame`)
-
-- **Tier:** 6 — Frames
-- **Classification:** No clean packshot found (`no_clean_packshot_found`)
-- **Category:** Frame (`frame`)
-- **Preset part:** no
-- **Image path:** `public/parts/frames/iflight-cidatel35-cine.jpg`
-- **Official URL:** https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346
-- **Preferred image URL:** —
-- **URL confidence:** low
-- **Reason:** Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.
-
-### 158. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
+### 154. TBS Source One 7 LR Frame (`tbs-source-one7-lr-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2004,7 +1956,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** No TBS Source One 7 open-source repository or product page with isolated frame packshot.
 
-### 159. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
+### 155. NewBeeDrone 75 Pro Frame (`newbee-drone-75-pro-frame`)
 
 - **Tier:** 6 — Frames
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2016,7 +1968,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 160. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
+### 156. Aikon 65A LR ESC (`aikon-65a-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -2028,7 +1980,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Aikon official store (shop.aikon.com) unreachable from automated fetch.
 
-### 161. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
+### 157. MEPS Konvex 55A LR ESC (`meps-konvex-55a-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Official source blocked (`official_source_blocked`)
@@ -2040,7 +1992,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** MEPS official store API returns no products; no verified Konvex 55A LR URL.
 
-### 162. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
+### 158. Diatone Mamba F55 LR ESC (`diatone-mamba-f55-lr-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2052,7 +2004,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Diatone F55_BLS page packshot filename references F50; LR suffix not a separate SKU.
 
-### 163. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
+### 159. GEPRC F405 20x20 Mini (`geprc-f405-20x20-mini`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** No clean packshot found (`no_clean_packshot_found`)
@@ -2064,7 +2016,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** GEPRC store lists GEP-F405-HD variants only; no F405 20x20 Mini SKU.
 
-### 164. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
+### 160. BETAFPV Brushless 1S AIO ESC (`betafpv-brushless-1s-aio-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2076,7 +2028,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 165. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
+### 161. Happymodel HappyWhoop AIO ESC (`happymodel-happywhoop-aio-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2088,7 +2040,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 166. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
+### 162. Diatone Mamba H743 LR FC (`diatone-mamba-h743-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2100,7 +2052,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 167. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
+### 163. GEPRC GEP AIO 1S FC (`geprc-gep-aio-1s-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2112,7 +2064,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 168. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
+### 164. Happymodel HappyWhoop AIO FC (`happymodel-happywhoop-aio-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Should remain SVG placeholder (`should_remain_svg_placeholder`)
@@ -2124,7 +2076,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Manufacturer page is a combined FC+ESC stack; catalog line is FC-only or ESC-only.
 
-### 169. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
+### 165. Diatone Mamba F35 Mini 35A (`diatone-mamba-f35-mini-esc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2136,7 +2088,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 170. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
+### 166. BETAFPV F411 1S AIO FC (`betafpv-f411-1s-aio-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2148,7 +2100,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 171. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
+### 167. GEPRC F745 LR FC (`geprc-f745-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)
@@ -2160,7 +2112,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** low
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 172. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
+### 168. Matek H743 Wing LR FC (`matek-h743-wing-lr-fc`)
 
 - **Tier:** 7 — Electronics: FC / ESC / stack / AIO
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)

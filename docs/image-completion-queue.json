@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-30T04:57:39.403Z",
+  "generatedAt": "2026-06-30T05:00:56.364Z",
   "baseline": {
-    "total": 267,
+    "total": 263,
     "found": 95,
-    "missing": 172,
+    "missing": 168,
     "presetPartFound": 38,
     "presetPartTotal": 48,
     "presetPartMissing": 10
   },
   "summary": {
-    "queueTotal": 172,
+    "queueTotal": 168,
     "classificationCounts": {
       "needs_better_official_url": 52,
       "official_source_blocked": 25,
       "should_remain_svg_placeholder": 25,
       "unsafe_likely_mismatch": 33,
-      "no_clean_packshot_found": 37
+      "no_clean_packshot_found": 33
     },
     "tierCounts": {
       "1": 10,
@@ -23,7 +23,7 @@
       "3": 1,
       "4": 53,
       "5": 4,
-      "6": 14,
+      "6": 10,
       "7": 13
     },
     "fetchableNow": [],
@@ -2025,32 +2025,6 @@
         "rank": 150,
         "queueTier": 6,
         "queueTierLabel": "Frames",
-        "partId": "flywoo-explorer35-cine-frame",
-        "partName": "Flywoo Explorer 3.5 Cine Frame",
-        "brand": "Flywoo",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/flywoo-explorer35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.",
-        "officialUrl": "https://flywoo.net/collections/frames",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No Flywoo Explorer 3.5 Cine frame-kit product page on flywoo.net.",
-        "fetchScript": null
-      },
-      {
-        "rank": 151,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
         "partId": "flywoo-explorer35-frame",
         "partName": "Flywoo Explorer 3.5 Frame",
         "brand": "Flywoo",
@@ -2074,33 +2048,7 @@
         "fetchScript": null
       },
       {
-        "rank": 152,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "geprc-cinebee35-hd-frame",
-        "partName": "GEPRC CineBee35 HD Frame",
-        "brand": "GEPRC",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/geprc-cinebee35-hd.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.",
-        "officialUrl": "https://geprc.com/product-category/frame-kit/",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "No GEPRC CineBee35 HD isolated frame-kit product page on geprc.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 153,
+        "rank": 151,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-3-5-frame",
@@ -2126,7 +2074,7 @@
         "fetchScript": null
       },
       {
-        "rank": 154,
+        "rank": 152,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "geprc-rocket-lite-75-frame",
@@ -2152,7 +2100,7 @@
         "fetchScript": null
       },
       {
-        "rank": 155,
+        "rank": 153,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "iflight-chimera3-frame",
@@ -2178,59 +2126,7 @@
         "fetchScript": null
       },
       {
-        "rank": 156,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "iflight-chimera35-cine-frame",
-        "partName": "iFlight Chimera35 Cine Frame",
-        "brand": "iFlight",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/iflight-chimera35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.",
-        "officialUrl": "https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 157,
-        "queueTier": 6,
-        "queueTierLabel": "Frames",
-        "partId": "iflight-cidatel35-cine-frame",
-        "partName": "iFlight Cidatel 3.5 Cine Frame",
-        "brand": "iFlight",
-        "categoryKey": "frame",
-        "categoryLabel": "Frame",
-        "imagePath": "/parts/frames/iflight-cidatel35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "auditPriority": 3,
-        "classification": "no_clean_packshot_found",
-        "classificationLabel": "No clean packshot found",
-        "classificationRank": 3,
-        "reason": "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.",
-        "officialUrl": "https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346",
-        "preferredImageUrl": null,
-        "urlConfidence": "low",
-        "sourceNotes": "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.",
-        "fetchScript": null
-      },
-      {
-        "rank": 158,
+        "rank": 154,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "tbs-source-one7-lr-frame",
@@ -2256,7 +2152,7 @@
         "fetchScript": null
       },
       {
-        "rank": 159,
+        "rank": 155,
         "queueTier": 6,
         "queueTierLabel": "Frames",
         "partId": "newbee-drone-75-pro-frame",
@@ -2282,7 +2178,7 @@
         "fetchScript": null
       },
       {
-        "rank": 162,
+        "rank": 158,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f55-lr-esc",
@@ -2308,7 +2204,7 @@
         "fetchScript": null
       },
       {
-        "rank": 163,
+        "rank": 159,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f405-20x20-mini",
@@ -2334,7 +2230,7 @@
         "fetchScript": null
       },
       {
-        "rank": 164,
+        "rank": 160,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-brushless-1s-aio-esc",
@@ -2360,7 +2256,7 @@
         "fetchScript": null
       },
       {
-        "rank": 165,
+        "rank": 161,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-esc",
@@ -2386,7 +2282,7 @@
         "fetchScript": null
       },
       {
-        "rank": 166,
+        "rank": 162,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-h743-lr-fc",
@@ -2412,7 +2308,7 @@
         "fetchScript": null
       },
       {
-        "rank": 167,
+        "rank": 163,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-gep-aio-1s-fc",
@@ -2438,7 +2334,7 @@
         "fetchScript": null
       },
       {
-        "rank": 168,
+        "rank": 164,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "happymodel-happywhoop-aio-fc",
@@ -2464,7 +2360,7 @@
         "fetchScript": null
       },
       {
-        "rank": 169,
+        "rank": 165,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "diatone-mamba-f35-mini-esc",
@@ -2490,7 +2386,7 @@
         "fetchScript": null
       },
       {
-        "rank": 170,
+        "rank": 166,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "betafpv-f411-1s-aio-fc",
@@ -2516,7 +2412,7 @@
         "fetchScript": null
       },
       {
-        "rank": 171,
+        "rank": 167,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "geprc-f745-lr-fc",
@@ -2542,7 +2438,7 @@
         "fetchScript": null
       },
       {
-        "rank": 172,
+        "rank": 168,
         "queueTier": 7,
         "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
         "partId": "matek-h743-wing-lr-fc",
@@ -6967,32 +6863,6 @@
       "rank": 150,
       "queueTier": 6,
       "queueTierLabel": "Frames",
-      "partId": "flywoo-explorer35-cine-frame",
-      "partName": "Flywoo Explorer 3.5 Cine Frame",
-      "brand": "Flywoo",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/flywoo-explorer35-cine.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No Flywoo Explorer 3.5 Cine frame kit on flywoo.net.",
-      "officialUrl": "https://flywoo.net/collections/frames",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No Flywoo Explorer 3.5 Cine frame-kit product page on flywoo.net.",
-      "fetchScript": null
-    },
-    {
-      "rank": 151,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
       "partId": "flywoo-explorer35-frame",
       "partName": "Flywoo Explorer 3.5 Frame",
       "brand": "Flywoo",
@@ -7016,33 +6886,7 @@
       "fetchScript": null
     },
     {
-      "rank": 152,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "geprc-cinebee35-hd-frame",
-      "partName": "GEPRC CineBee35 HD Frame",
-      "brand": "GEPRC",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/geprc-cinebee35-hd.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "No GEPRC CineBee35 HD isolated frame-kit page on geprc.com.",
-      "officialUrl": "https://geprc.com/product-category/frame-kit/",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "No GEPRC CineBee35 HD isolated frame-kit product page on geprc.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 153,
+      "rank": 151,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-3-5-frame",
@@ -7068,7 +6912,7 @@
       "fetchScript": null
     },
     {
-      "rank": 154,
+      "rank": 152,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "geprc-rocket-lite-75-frame",
@@ -7094,7 +6938,7 @@
       "fetchScript": null
     },
     {
-      "rank": 155,
+      "rank": 153,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "iflight-chimera3-frame",
@@ -7120,59 +6964,7 @@
       "fetchScript": null
     },
     {
-      "rank": 156,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "iflight-chimera35-cine-frame",
-      "partName": "iFlight Chimera35 Cine Frame",
-      "brand": "iFlight",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/iflight-chimera35-cine.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.",
-      "officialUrl": "https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy iFlight Chimera35 Cine frame-kit URL 404 on shop.iflight.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 157,
-      "queueTier": 6,
-      "queueTierLabel": "Frames",
-      "partId": "iflight-cidatel35-cine-frame",
-      "partName": "iFlight Cidatel 3.5 Cine Frame",
-      "brand": "iFlight",
-      "categoryKey": "frame",
-      "categoryLabel": "Frame",
-      "imagePath": "/parts/frames/iflight-cidatel35-cine.jpg",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "auditPriority": 3,
-      "classification": "no_clean_packshot_found",
-      "classificationLabel": "No clean packshot found",
-      "classificationRank": 3,
-      "reason": "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.",
-      "officialUrl": "https://shop.iflight.com/quad-parts-cat20/drone-frame-cat346",
-      "preferredImageUrl": null,
-      "urlConfidence": "low",
-      "sourceNotes": "Legacy iFlight Cidatel 3.5 Cine frame-kit URL 404 on shop.iflight.com.",
-      "fetchScript": null
-    },
-    {
-      "rank": 158,
+      "rank": 154,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "tbs-source-one7-lr-frame",
@@ -7198,7 +6990,7 @@
       "fetchScript": null
     },
     {
-      "rank": 159,
+      "rank": 155,
       "queueTier": 6,
       "queueTierLabel": "Frames",
       "partId": "newbee-drone-75-pro-frame",
@@ -7224,7 +7016,7 @@
       "fetchScript": null
     },
     {
-      "rank": 160,
+      "rank": 156,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "aikon-65a-lr-esc",
@@ -7250,7 +7042,7 @@
       "fetchScript": null
     },
     {
-      "rank": 161,
+      "rank": 157,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "meps-konvex-55a-lr-esc",
@@ -7276,7 +7068,7 @@
       "fetchScript": null
     },
     {
-      "rank": 162,
+      "rank": 158,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f55-lr-esc",
@@ -7302,7 +7094,7 @@
       "fetchScript": null
     },
     {
-      "rank": 163,
+      "rank": 159,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f405-20x20-mini",
@@ -7328,7 +7120,7 @@
       "fetchScript": null
     },
     {
-      "rank": 164,
+      "rank": 160,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-brushless-1s-aio-esc",
@@ -7354,7 +7146,7 @@
       "fetchScript": null
     },
     {
-      "rank": 165,
+      "rank": 161,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-esc",
@@ -7380,7 +7172,7 @@
       "fetchScript": null
     },
     {
-      "rank": 166,
+      "rank": 162,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-h743-lr-fc",
@@ -7406,7 +7198,7 @@
       "fetchScript": null
     },
     {
-      "rank": 167,
+      "rank": 163,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-gep-aio-1s-fc",
@@ -7432,7 +7224,7 @@
       "fetchScript": null
     },
     {
-      "rank": 168,
+      "rank": 164,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "happymodel-happywhoop-aio-fc",
@@ -7458,7 +7250,7 @@
       "fetchScript": null
     },
     {
-      "rank": 169,
+      "rank": 165,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "diatone-mamba-f35-mini-esc",
@@ -7484,7 +7276,7 @@
       "fetchScript": null
     },
     {
-      "rank": 170,
+      "rank": 166,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "betafpv-f411-1s-aio-fc",
@@ -7510,7 +7302,7 @@
       "fetchScript": null
     },
     {
-      "rank": 171,
+      "rank": 167,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "geprc-f745-lr-fc",
@@ -7536,7 +7328,7 @@
       "fetchScript": null
     },
     {
-      "rank": 172,
+      "rank": 168,
       "queueTier": 7,
       "queueTierLabel": "Electronics: FC / ESC / stack / AIO",
       "partId": "matek-h743-wing-lr-fc",

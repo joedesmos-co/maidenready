@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-30T04:57:39.510Z",
+  "generatedAt": "2026-06-30T05:00:56.471Z",
   "summary": {
-    "total": 267,
+    "total": 263,
     "found": 95,
-    "missing": 172,
+    "missing": 168,
     "presetPartTotal": 48,
     "presetPartFound": 38,
     "presetPartMissing": 10,
     "missingByPriority": {
       "1": 10,
       "2": 77,
-      "3": 85
+      "3": 81
     }
   },
   "missingByPriority": {
@@ -1598,18 +1598,6 @@
         "priority": 3
       },
       {
-        "partId": "flywoo-explorer35-cine-frame",
-        "partName": "Flywoo Explorer 3.5 Cine Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/flywoo-explorer35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "flywoo-explorer35-frame",
         "partName": "Flywoo Explorer 3.5 Frame",
         "categoryKey": "frame",
@@ -1618,18 +1606,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "geprc-cinebee35-hd-frame",
-        "partName": "GEPRC CineBee35 HD Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-cinebee35-hd.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
         ],
         "priority": 3
       },
@@ -1678,30 +1654,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-chimera35-cine-frame",
-        "partName": "iFlight Chimera35 Cine Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-chimera35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-cidatel35-cine-frame",
-        "partName": "iFlight Cidatel 3.5 Cine Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-cidatel35-cine.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
         ],
         "priority": 3
       },
@@ -2284,15 +2236,11 @@
       "betafpv-pavo35-frame-kit",
       "betafpv-pavo3516-frame",
       "diatone-taycan35-frame",
-      "flywoo-explorer35-cine-frame",
       "flywoo-explorer35-frame",
-      "geprc-cinebee35-hd-frame",
       "geprc-rocket-3-5-frame",
       "geprc-rocket-lite-75-frame",
       "iflight-aos-3-5-v5-1-frame",
       "iflight-chimera3-frame",
-      "iflight-chimera35-cine-frame",
-      "iflight-cidatel35-cine-frame",
       "newbee-drone-75-pro-frame",
       "tbs-source-one7-lr-frame"
     ],
@@ -2480,10 +2428,6 @@
       "caddx-proview-cine-digital",
       "iflight-blitz-mini-e55s-4in1",
       "betafpv-pavo35-frame-kit",
-      "flywoo-explorer35-cine-frame",
-      "geprc-cinebee35-hd-frame",
-      "iflight-chimera35-cine-frame",
-      "iflight-cidatel35-cine-frame",
       "emax-eco-2004-2550kv",
       "tmotor-mn2004-2550kv",
       "avan-3540-cine-d5",
@@ -5713,19 +5657,6 @@
       "priority": 3
     },
     {
-      "partId": "flywoo-explorer35-cine-frame",
-      "partName": "Flywoo Explorer 3.5 Cine Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/flywoo-explorer35-cine.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "priority": 3
-    },
-    {
       "partId": "flywoo-explorer35-frame",
       "partName": "Flywoo Explorer 3.5 Frame",
       "categoryKey": "frame",
@@ -5735,19 +5666,6 @@
       "presetUsage": [],
       "compatibleClasses": [
         "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "geprc-cinebee35-hd-frame",
-      "partName": "GEPRC CineBee35 HD Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/geprc-cinebee35-hd.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
       ],
       "priority": 3
     },
@@ -5830,19 +5748,6 @@
       "priority": 3
     },
     {
-      "partId": "iflight-chimera35-cine-frame",
-      "partName": "iFlight Chimera35 Cine Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/iflight-chimera35-cine.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "priority": 3
-    },
-    {
       "partId": "iflight-chimera7-lr-frame",
       "partName": "iFlight Chimera7 LR Frame",
       "categoryKey": "frame",
@@ -5852,19 +5757,6 @@
       "presetUsage": [],
       "compatibleClasses": [
         "7-inch-long-range"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "iflight-cidatel35-cine-frame",
-      "partName": "iFlight Cidatel 3.5 Cine Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/iflight-cidatel35-cine.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
       ],
       "priority": 3
     },

@@ -97,9 +97,20 @@
         ],
         "removedCount": 3,
         "note": "Removed 3 invalid 7-inch long range frame entries per Batch 1D frames dry run."
+      },
+      "1D-Cine": {
+        "appliedAt": "2026-06-30T05:00:48.037Z",
+        "partIds": [
+          "flywoo-explorer35-cine-frame",
+          "geprc-cinebee35-hd-frame",
+          "iflight-chimera35-cine-frame",
+          "iflight-cidatel35-cine-frame"
+        ],
+        "removedCount": 4,
+        "note": "Removed 4 legacy cinewhoop frame entries per Batch 1D frames dry run."
       }
     },
-    "openCandidates": 75
+    "openCandidates": 71
   },
   "candidates": [
     {
@@ -550,7 +561,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-Cine",
+      "appliedAt": "2026-06-30T05:00:48.037Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-Cine deferred frame cleanup; legacy/missing cinewhoop frame kits."
+      }
     },
     {
       "partId": "flywoo-explorer35-frame",
@@ -701,7 +719,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-Cine",
+      "appliedAt": "2026-06-30T05:00:48.037Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-Cine deferred frame cleanup; legacy/missing cinewhoop frame kits."
+      }
     },
     {
       "partId": "geprc-cinelog35-v2",
@@ -1296,7 +1321,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-Cine",
+      "appliedAt": "2026-06-30T05:00:48.037Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-Cine deferred frame cleanup; legacy/missing cinewhoop frame kits."
+      }
     },
     {
       "partId": "iflight-cidatel35-cine-frame",
@@ -1312,7 +1344,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-Cine",
+      "appliedAt": "2026-06-30T05:00:48.037Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-Cine deferred frame cleanup; legacy/missing cinewhoop frame kits."
+      }
     },
     {
       "partId": "iflight-nazgul-eco5-frame",
