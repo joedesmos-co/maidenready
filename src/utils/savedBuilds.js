@@ -30,6 +30,7 @@ export const loadSavedBuilds = () => {
         typeof build.id === "string" &&
         typeof build.name === "string" &&
         typeof build.createdAt === "string" &&
+        Number.isFinite(Date.parse(build.createdAt)) &&
         isObject(build.selectedIds) &&
         (build.buildClass === undefined || typeof build.buildClass === "string") &&
         typeof build.totalPrice === "number" &&
@@ -78,7 +79,7 @@ export const createSavedBuildSnapshot = ({
   overallGrade,
   createdAt = new Date().toISOString(),
 }) => ({
-  id: globalThis.crypto?.randomUUID?.() ?? `saved-${Date.now()}`,
+  id: globalThis.crypto?.randomUUID?.() ?? `saved-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
   name: name.trim() || createAutoBuildName(new Date(createdAt)),
   createdAt,
   buildClass,

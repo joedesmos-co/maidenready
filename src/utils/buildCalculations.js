@@ -131,7 +131,7 @@ export const getEstimateProfile = (buildClass = defaultBuildClass) =>
 export const getSelectedParts = (selectedIds, parts) =>
   buildSteps.reduce((selectedParts, step) => {
     selectedParts[step.key] =
-      parts[step.key].find((part) => part.id === selectedIds[step.key]) ?? null;
+      parts[step.key]?.find((part) => part.id === selectedIds[step.key]) ?? null;
     return selectedParts;
   }, {});
 

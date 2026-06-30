@@ -887,6 +887,15 @@ h2 {
   content: "+";
 }
 
+.comparison-note {
+  margin: 6px 0 0;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .part-info-layer {
   position: fixed;
   inset: 0;

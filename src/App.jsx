@@ -93,7 +93,9 @@ const getInitialActiveTab = () => {
     return "home";
   }
 
-  return hasSharedBuildInSearch(window.location.search) ? "custom" : "home";
+  return hasSharedBuildInSearch(window.location.search, getInitialBuildClass())
+    ? "custom"
+    : "home";
 };
 
 const statCards = [
@@ -302,27 +304,33 @@ function App() {
     setSelectedIds((current) => ({ ...current, [key]: partId }));
   };
 
+  const handleTabChange = (tabId) => {
+    setActiveTab(tabId);
+    setActivePartKey(null);
+    setLegalPageId(null);
+  };
+
   const handleBuildClassChange = (nextBuildClass) => {
     const nextClassLabel =
       buildClassById[nextBuildClass]?.label ?? nextBuildClass;
+    const resolved = resolveSelectionsForBuildClass(
+      selectedIds,
+      nextBuildClass,
+      parts,
+    );
+    const changedCount = resolved.changedKeys.length;
 
     setBuildClass(nextBuildClass);
-    setSelectedIds((current) => {
-      const resolved = resolveSelectionsForBuildClass(current, nextBuildClass, parts);
-      const changedCount = resolved.changedKeys.length;
+    setSelectedIds(resolved.selections);
+    setBuildClassStatus(
+      changedCount > 0
+        ? `Swapped ${changedCount} incompatible part${changedCount === 1 ? "" : "s"} for ${nextClassLabel}.`
+        : "",
+    );
 
-      setBuildClassStatus(
-        changedCount > 0
-          ? `Swapped ${changedCount} incompatible part${changedCount === 1 ? "" : "s"} for ${nextClassLabel}.`
-          : "",
-      );
-
-      if (changedCount > 0) {
-        window.setTimeout(() => setBuildClassStatus(""), 2200);
-      }
-
-      return resolved.selections;
-    });
+    if (changedCount > 0) {
+      window.setTimeout(() => setBuildClassStatus(""), 2200);
+    }
   };
 
   const handlePresetLoad = (preset) => {
@@ -341,7 +349,7 @@ function App() {
         ? `${preset.name} loaded — open Custom Build to review.`
         : `${preset.name} loaded with compatibility adjustments.`,
     );
-    setActiveTab("custom");
+    handleTabChange("custom");
     window.setTimeout(() => setPresetStatus(""), 3200);
   };
 
@@ -399,7 +407,7 @@ function App() {
         ? "Saved build loaded — switched to Custom Build."
         : `${resolved.missing.length} part${resolved.missing.length === 1 ? "" : "s"} missing from catalog — defaults applied.`,
     );
-    setActiveTab("custom");
+    handleTabChange("custom");
     window.setTimeout(() => setSavedBuildStatus(""), 2200);
   };
 
@@ -421,7 +429,7 @@ function App() {
           aria-label="MaidenReady home"
           className="topbar-brand"
           type="button"
-          onClick={() => setActiveTab("home")}
+          onClick={() => handleTabChange("home")}
         >
           <p className="eyebrow">MaidenReady.com</p>
           <span className="topbar-title">FPV build calculator</span>
@@ -434,12 +442,12 @@ function App() {
         </div>
       </header>
 
-      <TabNav activeTab={activeTab} tabs={appTabs} onTabChange={setActiveTab} />
+      <TabNav activeTab={activeTab} tabs={appTabs} onTabChange={handleTabChange} />
 
       {activeTab === "home" && (
         <section className="tab-panel module-panel" aria-label="Home">
           <CornerMarks />
-          <HomePanel onNavigateTab={setActiveTab} />
+          <HomePanel onNavigateTab={handleTabChange} />
         </section>
       )}
 
@@ -958,6 +966,18 @@ function CompareBuilds({ savedBuilds, partsCatalog }) {
                 ))}
               </div>
               <p className="comparison-summary">{comparison.summary}</p>
+              {(comparison.leftStats.missingPartCount > 0 ||
+                comparison.rightStats.missingPartCount > 0) && (
+                <p className="comparison-note">
+                  {comparison.leftStats.missingPartCount > 0 &&
+                    `Build A is missing ${comparison.leftStats.missingPartCount} catalog part${comparison.leftStats.missingPartCount === 1 ? "" : "s"} — defaults were used in these estimates.`}
+                  {comparison.leftStats.missingPartCount > 0 &&
+                    comparison.rightStats.missingPartCount > 0 &&
+                    " "}
+                  {comparison.rightStats.missingPartCount > 0 &&
+                    `Build B is missing ${comparison.rightStats.missingPartCount} catalog part${comparison.rightStats.missingPartCount === 1 ? "" : "s"} — defaults were used in these estimates.`}
+                </p>
+              )}
             </>
           )}
         </>
@@ -1074,11 +1094,13 @@ function SavedBuilds({
 }
 
 function SavedBuildRow({ savedBuild, onDeleteSavedBuild, onLoadSavedBuild }) {
-  const createdDate = new Date(savedBuild.createdAt).toLocaleDateString("en-US", {
-    month: "2-digit",
-    day: "2-digit",
-    year: "2-digit",
-  });
+  const createdDate = Number.isFinite(Date.parse(savedBuild.createdAt))
+    ? new Date(savedBuild.createdAt).toLocaleDateString("en-US", {
+        month: "2-digit",
+        day: "2-digit",
+        year: "2-digit",
+      })
+    : "—";
 
   return (
     <article className="saved-row">
@@ -1176,9 +1198,10 @@ function PartPicker({
   onChange,
   onOpenDetails,
 }) {
-  const activePart = selectedPart ?? options[0] ?? null;
+  const compatiblePart =
+    options.find((part) => part.id === selectedPart?.id) ?? options[0] ?? null;
 
-  if (!activePart) {
+  if (!compatiblePart) {
     return (
       <article className="part-row part-row-empty">
         <div className="part-control">
@@ -1194,26 +1217,26 @@ function PartPicker({
     );
   }
 
-  const price = getPartPriceLabel(step.key, activePart);
-  const weight = getPartWeightLabel(step.key, activePart);
+  const price = getPartPriceLabel(step.key, compatiblePart);
+  const weight = getPartWeightLabel(step.key, compatiblePart);
   const specs = [
-    activePart.brand,
+    compatiblePart.brand,
     price,
     weight,
-    ...getKeySpecs(step.key, activePart),
+    ...getKeySpecs(step.key, compatiblePart),
   ].filter(Boolean);
 
   return (
     <article className="part-row">
       <div className="part-preview-stack">
         <PartImage
-          key={`${step.key}-${activePart.id}`}
+          key={`${step.key}-${compatiblePart.id}`}
           categoryKey={step.key}
-          part={activePart}
+          part={compatiblePart}
           partType={step.label}
         />
         <button
-          aria-label={`Show details for ${activePart.name}`}
+          aria-label={`Show details for ${compatiblePart.name}`}
           className="part-details-button"
           type="button"
           onClick={() => onOpenDetails(step.key)}
@@ -1230,7 +1253,7 @@ function PartPicker({
         </div>
         <select
           id={`${step.key}-select`}
-          value={activePart.id}
+          value={compatiblePart.id}
           onChange={(event) => onChange(step.key, event.target.value)}
         >
           {options.map((part) => (
@@ -1239,7 +1262,7 @@ function PartPicker({
             </option>
           ))}
         </select>
-        <p className="part-description">{activePart.description}</p>
+        <p className="part-description">{compatiblePart.description}</p>
         <div className="part-meta" aria-label={`${step.label} details`}>
           {specs.map((spec) => (
             <span key={spec} title={spec}>

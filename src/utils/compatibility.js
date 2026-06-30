@@ -1,4 +1,4 @@
-import { formatFlightTimeRange } from "./buildCalculations.js";
+import { formatFlightTimeRange, getEstimateProfile } from "./buildCalculations.js";
 
 const hasIntersection = (left = [], right = []) =>
   left.some((value) => right.includes(value));
@@ -26,7 +26,11 @@ export const getCompatibilityWarnings = ({
     });
   }
 
-  if (motors && battery && !motors.recommendedCells.includes(battery.cells)) {
+  if (
+    motors?.recommendedCells?.length &&
+    battery &&
+    !motors.recommendedCells.includes(battery.cells)
+  ) {
     warnings.push({
       id: "motor-cell-count",
       severity: "high",
@@ -52,7 +56,7 @@ export const getCompatibilityWarnings = ({
     }
   }
 
-  if (esc && battery && !esc.supportedCells.includes(battery.cells)) {
+  if (esc?.supportedCells?.length && battery && !esc.supportedCells.includes(battery.cells)) {
     warnings.push({
       id: "esc-voltage",
       severity: "high",
@@ -80,7 +84,7 @@ export const getCompatibilityWarnings = ({
   }
 
   if (
-    frame &&
+    frame?.motorMounts?.length &&
     motors &&
     !hasIntersection(frame.motorMounts, asArray(motors.mountPattern))
   ) {
@@ -94,9 +98,9 @@ export const getCompatibilityWarnings = ({
     });
   }
 
-  if (frame && flightController) {
+  if (frame?.stackMounts?.length && flightController) {
     const fcMounts = asArray(flightController.mountPattern);
-    if (!hasIntersection(frame.stackMounts, fcMounts)) {
+    if (fcMounts.length && !hasIntersection(frame.stackMounts, fcMounts)) {
       warnings.push({
         id: "fc-frame-stack",
         severity: "medium",
@@ -108,9 +112,9 @@ export const getCompatibilityWarnings = ({
     }
   }
 
-  if (frame && esc) {
+  if (frame?.stackMounts?.length && esc) {
     const escMounts = asArray(esc.mountPattern);
-    if (!hasIntersection(frame.stackMounts, escMounts)) {
+    if (escMounts.length && !hasIntersection(frame.stackMounts, escMounts)) {
       warnings.push({
         id: "esc-frame-stack",
         severity: "medium",
@@ -232,13 +236,18 @@ const getBuildClassWarnings = (
       });
     }
 
-    if (stats.thrustToWeight && stats.thrustToWeight < 4) {
-      warnings.push({
-        id: "cinewhoop-low-thrust",
-        severity: "medium",
-        title: "Thrust margin looks low for a cinewhoop",
-        message: `Estimated thrust-to-weight is ${stats.thrustToWeight}:1. Ducted builds need lift margin for slow lines — consider lighter AUW or higher-thrust props.`,
-      });
+    if (stats.thrustToWeight) {
+      const ductFactor = getEstimateProfile(buildClass).ductThrustFactor || 1;
+      const rawThrustToWeight = stats.thrustToWeight / ductFactor;
+
+      if (rawThrustToWeight < 4) {
+        warnings.push({
+          id: "cinewhoop-low-thrust",
+          severity: "medium",
+          title: "Thrust margin looks low for a cinewhoop",
+          message: `Estimated thrust-to-weight is ${stats.thrustToWeight}:1 after duct losses. Ducted builds need lift margin for slow lines — consider lighter AUW or higher-thrust props.`,
+        });
+      }
     }
 
     if (battery?.weightG > 260) {

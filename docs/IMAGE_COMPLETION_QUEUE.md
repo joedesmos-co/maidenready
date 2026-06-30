@@ -2,7 +2,7 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-30T12:29:54.267Z
+Generated: 2026-06-30T15:09:24.651Z
 
 ## Baseline coverage
 

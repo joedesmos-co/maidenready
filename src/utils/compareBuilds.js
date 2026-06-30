@@ -12,7 +12,13 @@ import {
   safeNumber,
 } from "./buildCalculations.js";
 import { getCompatibilityWarnings } from "./compatibility.js";
-import { inferBuildClassFromSelections } from "./buildClasses.js";
+import {
+  getDefaultSelectionsForBuildClass,
+  inferBuildClassFromSelections,
+  resolveSelectionsForBuildClass,
+} from "./buildClasses.js";
+import { calculateBuildGrades } from "./grades.js";
+import { resolveSavedBuildSelections } from "./savedBuilds.js";
 
 const gradeRank = {
   "A+": 12,
@@ -78,19 +84,39 @@ export const getSavedBuildComparisonStats = (savedBuild, partsCatalog) => {
   const buildClass =
     savedBuild.buildClass ??
     inferBuildClassFromSelections(savedBuild.selectedIds, partsCatalog);
-  const selectedParts = getSelectedParts(savedBuild.selectedIds, partsCatalog);
+  const fallbackSelections = getDefaultSelectionsForBuildClass(
+    buildClass,
+    partsCatalog,
+  );
+  const resolved = resolveSavedBuildSelections(
+    savedBuild,
+    partsCatalog,
+    fallbackSelections,
+    buildClass,
+  );
+  const classResolved = resolveSelectionsForBuildClass(
+    resolved.selections,
+    buildClass,
+    partsCatalog,
+  );
+  const selectedParts = getSelectedParts(
+    classResolved.selections,
+    partsCatalog,
+  );
   const stats = calculateBuildStats(selectedParts, buildClass);
   const warnings = getCompatibilityWarnings(
     selectedParts,
     buildClass,
     stats,
   );
+  const grades = calculateBuildGrades(stats, warnings);
 
   return {
     ...stats,
     buildClass,
-    overallGrade: savedBuild.overallGrade || "N/A",
+    overallGrade: grades.overall.grade,
     warningCount: warnings.length,
+    missingPartCount: resolved.missing.length,
   };
 };
 

@@ -1,3 +1,6 @@
+import { buildSteps, buildClassIds, parts } from "../data/parts.js";
+import { getDefaultSelectionsForBuildClass } from "./buildClasses.js";
+
 export const buildQueryMap = {
   frame: "frame",
   motors: "motor",
@@ -88,10 +91,38 @@ export const buildShareUrl = (
   return url.toString();
 };
 
-/** True when the URL encodes at least one part selection (shared build link). */
-export const hasSharedBuildInSearch = (search) => {
+/** True when the URL restores at least one part selection from catalog defaults. */
+export const hasSharedBuildInSearch = (
+  search,
+  buildClass = "5-inch-freestyle",
+) => {
   const params = new URLSearchParams(search);
-  return Object.values(buildQueryMap).some((queryKey) => params.has(queryKey));
+  const hasPartParams = Object.values(buildQueryMap).some((queryKey) =>
+    params.has(queryKey),
+  );
+
+  if (!hasPartParams) {
+    return false;
+  }
+
+  const resolvedBuildClass = resolveBuildClassFromSearch(
+    search,
+    buildClassIds,
+    buildClass,
+  );
+  const defaultSelections = getDefaultSelectionsForBuildClass(
+    resolvedBuildClass,
+    parts,
+  );
+  const resolvedSelections = resolveSelectionsFromSearch(
+    search,
+    parts,
+    defaultSelections,
+  );
+
+  return buildSteps.some(
+    (step) => resolvedSelections[step.key] !== defaultSelections[step.key],
+  );
 };
 
 export const copyTextToClipboard = async (text) => {
