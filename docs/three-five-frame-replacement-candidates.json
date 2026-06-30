@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-06-27T00:00:00.000Z",
+  "batch": "R3-3.5-frames",
+  "mode": "planning_only",
+  "catalogState": {
+    "totalParts": 263,
+    "buildClass": "3.5-inch-freestyle",
+    "frameCountBefore": 7,
+    "frameIdsBefore": [
+      "aos-3-5-v5",
+      "iflight-aos-3-5-v5-1-frame",
+      "geprc-rocket-3-5-frame",
+      "betafpv-pavo3516-frame",
+      "iflight-chimera3-frame",
+      "diatone-taycan35-frame",
+      "flywoo-explorer35-frame"
+    ],
+    "presetsValid": true,
+    "presetIssues": 0
+  },
+  "depthTarget": {
+    "minimumBefore1D35": 4,
+    "thinThreshold": 3,
+    "note": "After 1D-3.5 removals (5 frames) without adds, depth drops 7 → 2 (aos-3-5-v5 + iflight-aos-3-5-v5-1-frame only). betafpv-pavo35-frame-kit is in catalog but tagged cinewhoop-only and does not backfill 3.5\" freestyle."
+  },
+  "deferredCleanup": {
+    "batch": "1D-3.5",
+    "removalCount": 5,
+    "partIds": [
+      "betafpv-pavo3516-frame",
+      "diatone-taycan35-frame",
+      "flywoo-explorer35-frame",
+      "geprc-rocket-3-5-frame",
+      "iflight-chimera3-frame"
+    ],
+    "frameDepthAfterRemovalsOnly": 2,
+    "frameDepthAfterRemovalsPlusAllCandidates": 5,
+    "recommendation": "defer_1D-3.5_until_at_least_two_candidates_added"
+  },
+  "selectionCriteria": {
+    "sources": "official manufacturer product pages only",
+    "productType": "frame kit or frame-only SKU — not complete BNF/RTF drones",
+    "buildFocus": "3.5-inch freestyle / park (open or light-guard cinematic acceptable)",
+    "excluded": [
+      "retailer-only listings as source of truth",
+      "complete aircraft pages",
+      "5-inch+ frames mislabeled as 3.5\""
+    ]
+  },
+  "candidates": [
+    {
+      "priority": "P1",
+      "proposedPartId": "geprc-gep-st35-frame",
+      "displayName": "GEPRC GEP-ST35 Frame",
+      "brand": "GEPRC",
+      "category": "frame",
+      "buildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "officialManufacturerUrl": "https://geprc.com/product/gep-st35-frame/",
+      "productType": "frame_kit",
+      "estimatedSpecs": {
+        "priceUsd": 48.99,
+        "weightG": 48,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "9x9",
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "26.5x26.5"
+        ],
+        "vtxMounts": [
+          "20x20"
+        ],
+        "cameraMounting": "GP8 / Insta360 GO2 naked mount (3D print); standard FPV cam plates",
+        "ducted": false,
+        "wheelbaseMm": 155
+      },
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "GEPRC product gallery shows isolated frame kit components; verify packshot before fetch.",
+      "stockStatus": "manufacturer_out_of_stock",
+      "riskLevel": "medium",
+      "riskNotes": "Official page lists Out of stock (2026-06-27). SKU remains valid on geprc.com; add to catalog when restocked or accept placeholder until stock returns.",
+      "replacesOrStrengthens": [
+        "geprc-rocket-3-5-frame"
+      ],
+      "enables1D35Removal": true,
+      "action": "add_new_catalog_entry_when_approved"
+    },
+    {
+      "priority": "P1",
+      "proposedPartId": "betafpv-x-knight-35-frame-kit",
+      "displayName": "BETAFPV X-Knight 35 Frame Kit",
+      "brand": "BETAFPV",
+      "category": "frame",
+      "buildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "officialManufacturerUrl": "https://betafpv.com/products/x-knight-35-frame-kit",
+      "productType": "frame_kit",
+      "estimatedSpecs": {
+        "priceUsd": 25.99,
+        "weightG": 43,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "9x9",
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "26.5x26.5"
+        ],
+        "vtxMounts": [
+          "20x20"
+        ],
+        "cameraMounting": "Forward-projecting HD camera mount (props out of view); TPU head pieces included",
+        "ducted": false,
+        "wheelbaseMm": 155
+      },
+      "cleanOfficialImageExists": "yes",
+      "imageNotes": "BETAFPV Shopify product photos show frame kit exploded view and assembled chassis.",
+      "stockStatus": "manufacturer_sold_out",
+      "riskLevel": "medium",
+      "riskNotes": "Official betafpv.com lists Sold Out (2026-06-27). Frame-only page is not a complete quad listing.",
+      "replacesOrStrengthens": [
+        "betafpv-pavo3516-frame",
+        "iflight-chimera3-frame"
+      ],
+      "enables1D35Removal": true,
+      "action": "add_new_catalog_entry_when_approved"
+    },
+    {
+      "priority": "P1",
+      "proposedPartId": "iflight-aos-cine35-v5-frame",
+      "displayName": "iFlight AOS Cine35 V5 Frame Kit",
+      "brand": "iFlight",
+      "category": "frame",
+      "buildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "officialManufacturerUrl": "https://shop.iflight.com/AOS-Cine35-V5-Frame-Kit-Pro2297",
+      "productType": "frame_kit",
+      "estimatedSpecs": {
+        "priceUsd": 88.0,
+        "weightG": 145,
+        "maxPropInches": 3.5,
+        "motorMounts": [
+          "9x9",
+          "12x12"
+        ],
+        "stackMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "vtxMounts": [
+          "20x20",
+          "25.5x25.5"
+        ],
+        "cameraMounting": "7075 aluminum cage 19–20mm; O3/O4 soft mount; 14mm via 3D print; forward and rear GoPro patterns",
+        "ducted": false,
+        "propGuards": "integrated carbon fiber guards",
+        "wheelbaseMm": 153
+      },
+      "cleanOfficialImageExists": "likely_yes",
+      "imageNotes": "Official iFlight gallery and assembly guide PDF linked on product page.",
+      "stockStatus": "in_stock",
+      "riskLevel": "low",
+      "riskNotes": "Heavier cinematic 3.5\" kit with integrated prop guards — park/cine hybrid, not ultralight open prop freestyle. Complements AOS 3.5 V5.1 rather than duplicating it.",
+      "replacesOrStrengthens": [
+        "diatone-taycan35-frame",
+        "flywoo-explorer35-frame",
+        "iflight-chimera3-frame"
+      ],
+      "enables1D35Removal": true,
+      "action": "add_new_catalog_entry_when_approved"
+    }
+  ],
+  "optionalCatalogTweakNoNewSku": {
+    "partId": "betafpv-pavo35-frame-kit",
+    "note": "Already in catalog (R1) with official frame-kit URL but tagged cinewhoop-only. Adding 3.5-inch-freestyle to compatibleClasses would raise post-1D-3.5 depth by +1 without a new part. Not included in candidate count above."
+  },
+  "selectorDepthProjection": {
+    "current": 7,
+    "after1D35Only": 2,
+    "afterR3AllThreeAdded": 10,
+    "afterR3Plus1D35": 5,
+    "afterR3TwoAddedPlus1D35": 4,
+    "afterR3TwoAddedPlus1D35PlusPavo35Retag": 5
+  },
+  "summary": {
+    "recommendedAdds": 3,
+    "minimumAddsBefore1D35": 2,
+    "defer1D35": true,
+    "deferRationale": "Apply Batch R3 (add 2–3 verified frame kits) first. With all three candidates added, 1D-3.5 leaves 5 frames (≥4 target). With only two adds, depth is exactly 4 — acceptable minimum.",
+    "applyOrder": [
+      "iflight-aos-cine35-v5-frame (in stock; lowest catalog risk)",
+      "betafpv-x-knight-35-frame-kit",
+      "geprc-gep-st35-frame"
+    ]
+  }
+}
