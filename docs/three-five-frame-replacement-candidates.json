@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-06-27T00:00:00.000Z",
   "batch": "R3-3.5-frames",
-  "mode": "planning_only",
+  "mode": "applied",
   "catalogState": {
     "totalParts": 263,
     "buildClass": "3.5-inch-freestyle",
@@ -87,7 +87,11 @@
         "geprc-rocket-3-5-frame"
       ],
       "enables1D35Removal": true,
-      "action": "add_new_catalog_entry_when_approved"
+      "action": "add_new_catalog_entry_when_approved",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R3",
+      "appliedAt": "2026-06-30T12:18:03.279Z",
+      "catalogPartId": "geprc-gep-st35-frame"
     },
     {
       "priority": "P1",
@@ -129,7 +133,11 @@
         "iflight-chimera3-frame"
       ],
       "enables1D35Removal": true,
-      "action": "add_new_catalog_entry_when_approved"
+      "action": "add_new_catalog_entry_when_approved",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R3",
+      "appliedAt": "2026-06-30T12:18:03.279Z",
+      "catalogPartId": "betafpv-x-knight-35-frame-kit"
     },
     {
       "priority": "P1",
@@ -143,7 +151,7 @@
       "officialManufacturerUrl": "https://shop.iflight.com/AOS-Cine35-V5-Frame-Kit-Pro2297",
       "productType": "frame_kit",
       "estimatedSpecs": {
-        "priceUsd": 88.0,
+        "priceUsd": 88,
         "weightG": 145,
         "maxPropInches": 3.5,
         "motorMounts": [
@@ -174,7 +182,11 @@
         "iflight-chimera3-frame"
       ],
       "enables1D35Removal": true,
-      "action": "add_new_catalog_entry_when_approved"
+      "action": "add_new_catalog_entry_when_approved",
+      "cleanupStatus": "applied",
+      "appliedBatch": "R3",
+      "appliedAt": "2026-06-30T12:18:03.279Z",
+      "catalogPartId": "iflight-aos-cine35-v5-frame"
     }
   ],
   "optionalCatalogTweakNoNewSku": {
@@ -192,12 +204,21 @@
   "summary": {
     "recommendedAdds": 3,
     "minimumAddsBefore1D35": 2,
-    "defer1D35": true,
+    "defer1D35": false,
     "deferRationale": "Apply Batch R3 (add 2–3 verified frame kits) first. With all three candidates added, 1D-3.5 leaves 5 frames (≥4 target). With only two adds, depth is exactly 4 — acceptable minimum.",
     "applyOrder": [
       "iflight-aos-cine35-v5-frame (in stock; lowest catalog risk)",
       "betafpv-x-knight-35-frame-kit",
       "geprc-gep-st35-frame"
-    ]
+    ],
+    "readyFor1D35": true,
+    "post1D35ProjectedFrames": 5
+  },
+  "batchApplied": "R3",
+  "appliedAt": "2026-06-30T12:18:03.279Z",
+  "catalogStateAfter": {
+    "totalParts": 266,
+    "frameCount3_5": 10,
+    "imageCoverage": "95/266"
   }
 }

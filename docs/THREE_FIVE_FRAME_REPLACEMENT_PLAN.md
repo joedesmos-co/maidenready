@@ -1,10 +1,29 @@
 # 3.5" frame replacement plan (Batch R3)
 
-Planning document for strengthening the **3.5" Freestyle** frame pool before applying deferred **Batch 1D-3.5** cleanup. **No catalog edits, preset changes, or image fetches in this pass.**
+Planning document for strengthening the **3.5" Freestyle** frame pool before applying deferred **Batch 1D-3.5** cleanup.
 
 **Generated:** 2026-06-27  
 **Machine-readable candidates:** `docs/three-five-frame-replacement-candidates.json`  
-**Catalog state:** 263 parts · 7 × 3.5" frames · presets **6/6 OK**
+**Current catalog:** 266 parts · 10 × 3.5" frames · presets **6/6 OK**
+
+### Batch R3 applied (2026-06-27)
+
+Added **3** verified 3.5" frame kits to `src/data/parts.js` (`expansionParts`). No removals, preset edits, calculation changes, or image fetches.
+
+| Part ID | Brand | Build class |
+| --- | --- | --- |
+| `geprc-gep-st35-frame` | GEPRC | 3.5" Freestyle |
+| `betafpv-x-knight-35-frame-kit` | BETAFPV | 3.5" Freestyle |
+| `iflight-aos-cine35-v5-frame` | iFlight | 3.5" Freestyle |
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 263 → **266** |
+| 3.5" frames before → after | 7 → **10** |
+| Image coverage | 95 / 263 → **95 / 266** |
+| Preset impact | 0 |
+
+**1D-3.5 status:** Safe to apply — projected depth after 5 removals is **5** (≥4 target).
 
 ---
 
