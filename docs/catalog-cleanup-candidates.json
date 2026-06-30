@@ -1,0 +1,1862 @@
+{
+  "summary": {
+    "generatedAt": "2026-06-30T00:12:59.732Z",
+    "catalogCoverage": {
+      "found": 95,
+      "total": 294,
+      "presetFound": 38,
+      "presetTotal": 48
+    },
+    "totalCandidates": 110,
+    "byIssueType": {
+      "unverifiable_official_source": 14,
+      "stack_aio_split": 16,
+      "discontinued_deprecated": 47,
+      "wrong_sku": 25,
+      "full_drone_as_frame": 6,
+      "renamed": 2
+    },
+    "byRecommendedAction": {
+      "needs_manual_fpv_review": 16,
+      "keep_as_is": 9,
+      "remove_from_catalog": 46,
+      "replace_with_current_sku": 24,
+      "merge_aio_stack_entries": 13,
+      "rename_only": 2
+    },
+    "byRiskLevel": {
+      "medium": 68,
+      "low": 13,
+      "high": 29
+    },
+    "presetAffectedCount": 8
+  },
+  "candidates": [
+    {
+      "partId": "aikon-65a-lr-esc",
+      "currentName": "Aikon 65A LR ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Aikon store unreachable; no verified 65A LR ESC URL.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "aikon-f7-mini-35a",
+      "currentName": "Aikon F7 Mini 35A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle",
+        "5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Official Aikon F7 Mini page is FC+ESC stack; catalog ESC-only line.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "axisflying-2808-1150kv-lr",
+      "currentName": "AxisFlying 2808 1150KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No AxisFlying 2808 product page.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "axisflying-ae2207-1960",
+      "currentName": "AxisFlying AE 2207 1960KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "AxisFlying AE 2207 product page 404.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "axisflying-joker-2207-1920kv",
+      "currentName": "AxisFlying Joker 2207 1920KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "AxisFlying Joker 2207 product page 404.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "betafpv-1404-4600kv",
+      "currentName": "BETAFPV 1404 4600KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official BETAFPV 1404 is 4500KV; packshot bell reads 4500KV.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": "betafpv-1404-4500kv",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "betafpv-2s-300-ph2",
+      "currentName": "BETAFPV 2S 300mAh PH2.0",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official BETAFPV 300mAh 2S is 45C XT30, not 75C PH2.0.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "betafpv-brushless-1s-aio-esc",
+      "currentName": "BETAFPV Brushless 1S AIO ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Official BETAFPV F4 1S 5A AIO is combined board; ESC-half not sold separately.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "betafpv-f411-1s-aio-fc",
+      "currentName": "BETAFPV F411 1S AIO FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Official listing is F4 1S 5A combined AIO; catalog F411 FC-only does not match.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "betafpv-pavo3516-frame",
+      "currentName": "BETAFPV Pavo3516 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Pavo3516 frame on betafpv.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "brotherhobby-1507-3700kv",
+      "currentName": "BrotherHobby 1507 3700KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No BrotherHobby 1507 listing on manufacturer store.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "brotherhobby-2004-2600kv",
+      "currentName": "BrotherHobby 2004 2600KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Legacy BrotherHobby 2004 URL serves Avenger 0804 content.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "brotherhobby-2806-1400kv-lr",
+      "currentName": "BrotherHobby 2806 1400KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official Avenger 2806.5 is 1300KV, not 2806 1400KV LR.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "cnhl-6s-1800-lr-lipo",
+      "currentName": "CNHL 6S 1800mAh LR LiPo",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official CNHL Ministar 6S 1800 is 120C freestyle, not LR low-C SKU.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "cnhl-ministar-4s-900",
+      "currentName": "CNHL Ministar 4S 900mAh 100C",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No CNHL Ministar 4S 900mAh; official 900mAh is 2S only.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "diatone-mamba-f35-cine-esc",
+      "currentName": "Diatone Mamba F35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Mamba F35 Cine ESC on diatone.us.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "diatone-mamba-f35-mini-esc",
+      "currentName": "Diatone Mamba F35 Mini 35A",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No F35 Mini; closest is F40_128K Mini (40A not 35A).",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "diatone-mamba-f722-s-fc",
+      "currentName": "Diatone Mamba F722 S FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "MK4 F722 stack page; no isolated F722 S FC packshot.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "diatone-mamba-h743-lr-fc",
+      "currentName": "Diatone Mamba H743 LR FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "MK4 H743 V2 page is combined FC+ESC stack.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "diatone-taycan35-frame",
+      "currentName": "Diatone Taycan 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Diatone has Taycan accessories only, not 3.5 frame kit.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "emax-eco-1404-4000kv",
+      "currentName": "EMAX ECO 1404 4000KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official EMAX ECO Micro 1404 is 3700KV only.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "emax-eco-2004-2550kv",
+      "currentName": "EMAX ECO 2004 2550KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official EMAX ECO II 2004 lists 1700/2200/2400KV; no 2550KV.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "emax-eco-ii-2806-1280kv",
+      "currentName": "EMAX ECO II 2806 1280KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Official EMAX LR motor is ECO II 2807 1280KV, not 2806.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "ethix-lithium5-frame",
+      "currentName": "Ethix Lithium5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Ethix store intermittently unreachable.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "flywoo-explorer35-cine-frame",
+      "currentName": "Flywoo Explorer 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 Cine frame kit on flywoo.net.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "flywoo-explorer35-frame",
+      "currentName": "Flywoo Explorer 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 frame kit on flywoo.net.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "flywoo-explorer5-frame",
+      "currentName": "Flywoo Explorer 5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Explorer LR4/O3 listing; Explorer 5 naming may not match Flywoo SKU.",
+      "recommendedAction": "rename_only",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "flywoo-explorer7-lr-frame",
+      "currentName": "Flywoo Explorer 7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "full_drone_as_frame",
+      "evidence": "Explorer LR4 listings are complete aircraft, not frame kits.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "fpvcycle-2207-1780kv",
+      "currentName": "FPVCycle 2207 1780KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "FPVCycle sells 25mm 1870/2150Kv parts; no 2207 1780KV official SKU.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "fpvcycle-2207-1960",
+      "currentName": "FPVCycle Motor 2207 1960KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "FPVCycle sells 25mm 1870/2150Kv parts; no 2207 1960KV official SKU.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-0901-11000kv",
+      "currentName": "GEPRC 0901 11000KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC 0901 motor SKU on geprc.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-2005-2200kv",
+      "currentName": "GEPRC 2005 2200KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC 2005 2200KV motor on geprc.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-cinebee35-hd-frame",
+      "currentName": "GEPRC CineBee35 HD Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC CineBee35 HD isolated frame-kit page.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-cinelog35-v2",
+      "currentName": "GEPRC Cinelog35 V2",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "slot": "frame"
+        }
+      ],
+      "issueType": "full_drone_as_frame",
+      "evidence": "Official listing is complete BNF cinewhoop aircraft.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-crocodile7-lr-frame",
+      "currentName": "GEPRC Crocodile7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Crocodile7 LR frame; Crocodile Baby 4 drones only.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-f405-20x20-mini",
+      "currentName": "GEPRC F405 20x20 Mini",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "GEPRC lists GEP-F405-HD V3 digital FC, not F405 20x20 Mini analog.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-f722-cine-mini-fc",
+      "currentName": "GEPRC F722 Cine Mini FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No F722 Cine Mini; GEP-F722 HD line only.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-f745-lr-fc",
+      "currentName": "GEPRC F745 LR FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No F745 LR; closest is TAKER H743 MINI (H743 not F745).",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-gep-aio-1s-fc",
+      "currentName": "GEPRC GEP AIO 1S FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "GEP-TAKER F411-12A-E is combined 1~2S AIO.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-gep35a-cine-esc",
+      "currentName": "GEPRC GEP35A Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "GEPRC ESC line is Taker only; no GEP35A Cine SKU.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-mark4-frame",
+      "currentName": "GEPRC Mark4 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "GEPRC Mark4 page mismatch flagged in image research.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-rocket-3-5-frame",
+      "currentName": "GEPRC Rocket 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC Rocket 3.5 frame kit on geprc.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "geprc-rocket-lite-75-frame",
+      "currentName": "GEPRC Rocket Lite 75 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC Rocket Lite 75 frame kit on geprc.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "gn-1s-550-bt2",
+      "currentName": "GNB 1S 550mAh HV BT2.0",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "GNB/Gaoneng store blocks fetch; Genstattu 1S 550mAh page not verified.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "gnb-4s-1100-park",
+      "currentName": "GNB 4S 1100mAh 120C Park",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "GNB store blocks fetch; Genstattu 4S 1100mAh page 404.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "gnb-4s-1300-cine",
+      "currentName": "GNB 4S 1300mAh 120C Cine",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "GNB store blocks fetch; Genstattu 4S 1300mAh page 404.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "gnb-4s-750-mini",
+      "currentName": "GNB 4S 750mAh 120C Mini",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "GNB store blocks fetch; Genstattu 4S 750mAh page 404.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "gnb-6s-2500-lr-lipo",
+      "currentName": "GNB 6S 2500mAh LR LiPo",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "GNB store blocks fetch; no verified 6S 2500mAh LR URL.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "happymodel-cine-2004-2400kv",
+      "currentName": "Happymodel Cine 2004 2400KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No standalone Cine 2004 motor; Cine8 kit listings only.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "happymodel-happywhoop-aio-esc",
+      "currentName": "Happymodel HappyWhoop AIO ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Happymodel sells combined Mobula7 AIO only.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "happymodel-happywhoop-aio-fc",
+      "currentName": "Happymodel HappyWhoop AIO FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Happymodel sells combined Mobula7 AIO only.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "happymodel-se0802-22000kv",
+      "currentName": "Happymodel SE0802 22000KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "renamed",
+      "evidence": "SE0802 superseded by EX0802/RS0802 on Happymodel site.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "low",
+      "replacementSku": "happymodel-ex0802-19000kv or RS0802 line",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hdzero-cine-nano-vtx",
+      "currentName": "HDZero Cine Nano VTX",
+      "category": "vtx",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No HDZero Cine Nano VTX on hd-zero.com shop.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hglrc-sector7-lr-frame",
+      "currentName": "HGLRC Sector7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No Sector7 LR; HGLRC Sector D5/X5 are 5-inch only.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hglrc-tekko32-f35-mini",
+      "currentName": "HGLRC Tekko32 F35 Mini 35A",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Tekko32 F35 Mini on hglrc.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hglrc-zeus5-frame",
+      "currentName": "HGLRC Zeus5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No Zeus5 frame SKU; substitute listing is different frame.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hqprop-t3x2-5x3-515",
+      "currentName": "HQProp T3x2.5x3 515",
+      "category": "props",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "HQProp T515 product page 404 on official store.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hypetrain-acer-2306-1950kv",
+      "currentName": "Hypetrain Acer 2306 1950KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Hypetrain has no manufacturer store; Rotor Riot retailer-only.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "hypetrain-blaster-2450",
+      "currentName": "Hypetrain Blaster 2207 2450KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Hypetrain has no manufacturer store; Rotor Riot retailer-only.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-4s-1800-cine",
+      "currentName": "iFlight 4S 1800mAh 120C Cine",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No iFlight 4S 1800mAh battery on official store.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-beast-h743-cine-fc",
+      "currentName": "iFlight Beast H743 Cine FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Beast H743 Cine FC; BLITZ Wing H743 is different product.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-beast-h743-lr-fc",
+      "currentName": "iFlight Beast H743 LR FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Beast H743 LR FC on shop.iflight.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-chimera3-frame",
+      "currentName": "iFlight Chimera3 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera3 frame-kit URL 404; Chimera7 is different line.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-chimera35-cine-frame",
+      "currentName": "iFlight Chimera35 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera35 Cine frame-kit URL 404.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-cidatel35-cine-frame",
+      "currentName": "iFlight Cidatel 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Cidatel 3.5 Cine frame-kit URL 404.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-nazgul-eco5-frame",
+      "currentName": "iFlight Nazgul Eco5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "full_drone_as_frame",
+      "evidence": "Official listing is complete Nazgul XL5 ECO aircraft, not frame kit.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": "Remove frame entry or map to actual XL5 ECO RTF",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-succex-e-f4-50a",
+      "currentName": "iFlight SucceX-E F4 50A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "iFlight page shows combined FC+ESC stack imagery.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-succexd35-cine-esc",
+      "currentName": "iFlight SucceX-D35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy SucceX-D35 URL 404 on shop.iflight.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xing-2005-2550",
+      "currentName": "iFlight XING 2005 2550KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "slot": "motors"
+        }
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No isolated 2005 motor packshot on iFlight store.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xing-e-pro-2806-1300kv",
+      "currentName": "iFlight XING-E Pro 2806 1300KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Closest is XING 2806.5 Cinelifter; OSS 1300KV asset shows 1500KV bell.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xing2-1507-4600kv",
+      "currentName": "iFlight XING2 1507 4600KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy XING2 1507 URL 404 on shop.iflight.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xing2-2203-2350kv",
+      "currentName": "iFlight XING2 2203 2350KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy XING2 2203 URL 404 on shop.iflight.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xing2-2807-1280kv-lr",
+      "currentName": "iFlight XING2 2807 1280KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy XING2 2807 LR URL 404; closest is NIDICI 2807 1300KV.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "iflight-xl5-v6",
+      "currentName": "iFlight XL5 V6 5-inch",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "XL5 V6 discontinued; iFlight lists XL5 V5 / Nazgul5 V3 parts only.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": "iflight-xl5-v5 or remove",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "imm-rc-fusion-v2-elrs",
+      "currentName": "ImmersionRC Fusion V2 ELRS",
+      "category": "receiver",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "ImmersionRC site blocked; no verified Fusion V2 ELRS packshot page.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "impulserc-apexdc",
+      "currentName": "ImpulseRC ApexDC 5-inch",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "ImpulseRC closed; no product photo source.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "impulserc-reverb5-frame",
+      "currentName": "ImpulseRC Reverb 5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "ImpulseRC closed; no product photo source.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "jhemcu-ep28-elrs",
+      "currentName": "JHEMCU EP28 2.4GHz ELRS",
+      "category": "receiver",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "No stable EP28 product URL on JHEMCU store.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "johnnyfpv-motor-v2-2207-1960kv",
+      "currentName": "JohnnyFPV V2 2207 1960KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "JohnnyFPV V2 2207 discontinued; Lumenier lists V3 2307/2807.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "lumenier-qav-s-johnnyfpv",
+      "currentName": "Lumenier QAV-S JohnnyFPV SE",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "renamed",
+      "evidence": "Official page is QAV-S 2 JohnnyFPV SE; catalog omits V2/SE.",
+      "recommendedAction": "rename_only",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "matek-f722-cine-mini-fc",
+      "currentName": "Matek F722 Cine Mini FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Matek F722-mini EOL; no Cine Mini FC SKU.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "matek-f722-mini",
+      "currentName": "Matek F722 Mini",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle",
+        "5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Matek portfolio exposes spec-sheet composite only.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "matek-f722-std-fc",
+      "currentName": "Matek F722-STD FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Matek portfolio exposes spec-sheet composite only.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "matek-h743-slate-freestyle",
+      "currentName": "Matek H743 Slate Freestyle",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No Matek Slate Freestyle SKU; closest is H743-SLIM-V4 (CATALOG_IMAGE_REVIEW_NOTES).",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": "matek-h743-slim-v4 or rename to H743-SLIM-V4",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "matek-h743-wing-lr-fc",
+      "currentName": "Matek H743 Wing LR FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "H743-WLITE uses ICM42688; catalog specifies BMI270.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "meps-konvex-55a-lr-esc",
+      "currentName": "MEPS Konvex 55A LR ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "MEPS store API returns no Konvex 55A LR listing.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "newbee-0802-17500kv",
+      "currentName": "NewBeeDrone 0802 17500KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No NewBeeDrone 0802 17500KV product page.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "newbee-drone-75-pro-frame",
+      "currentName": "NewBeeDrone 75 Pro Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "No Drone 75 Pro SKU; closest is Cockroach75 frame.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": "newbeedrone-75mm-cockroach75-frame",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "radiomaster-er5-915-lr",
+      "currentName": "Radiomaster ER5 915 LR",
+      "category": "receiver",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Radiomaster ER5 is 2.4GHz PWM only; no ER5 915 SKU.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "high",
+      "replacementSku": "radiomaster-bandit-br1-915 or remove",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rcinpower-2203-2300kv",
+      "currentName": "RCinPower 2203 2300KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RCinPower G-SERIES 2203 2300KV page.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rcinpower-2807-1350kv-lr",
+      "currentName": "RCinPower 2807 1350KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RCinPower 2807 1350KV LR page.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rekon7-pro-lr",
+      "currentName": "Rekon7 Pro Long Range",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "7-long-range-explorer",
+          "presetName": "7\" Long Range Explorer",
+          "slot": "frame"
+        }
+      ],
+      "issueType": "full_drone_as_frame",
+      "evidence": "Official listing is complete 7-inch LR aircraft.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rush-blade-f7-60a-4in1",
+      "currentName": "Rush Blade F7 60A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Rush Blade F7 page is FC+ESC stack.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rush-mini-tank-cine-vtx",
+      "currentName": "RushFPV Mini Tank Cine VTX",
+      "category": "vtx",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RushFPV Mini Tank Cine listing on rushfpv.net.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "rush-nano-vtx-park",
+      "currentName": "RushFPV Nano VTX Park",
+      "category": "vtx",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Tank Tiny VTX is 800mW max; catalog specifies 400mW.",
+      "recommendedAction": "replace_with_current_sku",
+      "riskLevel": "medium",
+      "replacementSku": "rush-tank-tiny-vtx with updated specs",
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "skystars-km2207-1910kv",
+      "currentName": "Skystars KM2207 1910KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Skystars store unreachable from automated fetch.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "skystars-km2306-1950kv",
+      "currentName": "Skystars KM2306 1950KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "unverifiable_official_source",
+      "evidence": "Skystars store unreachable from automated fetch.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-bl32-50a",
+      "currentName": "SpeedyBee BL32 50A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "standard-5-freestyle",
+          "presetName": "Standard 5\" Freestyle",
+          "slot": "esc"
+        }
+      ],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only on F7 V3 + BL32 50A stack page.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-bl32-55a-4in1",
+      "currentName": "SpeedyBee BL32 55A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only on F405 V4 BLS 55A stack page.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-bls-35a-4in1",
+      "currentName": "SpeedyBee BLS 35A 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "3-5-park-freestyle",
+          "presetName": "3.5\" Park Freestyle",
+          "slot": "esc"
+        },
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "slot": "esc"
+        }
+      ],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only on F405 Mini BLS 35A stack page.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-f405-mini",
+      "currentName": "SpeedyBee F405 Mini",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "3-5-park-freestyle",
+          "presetName": "3.5\" Park Freestyle",
+          "slot": "flightController"
+        },
+        {
+          "presetId": "cinewhoop-cruiser",
+          "presetName": "Cinewhoop Cruiser",
+          "slot": "flightController"
+        }
+      ],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only as F405 Mini + BLS 35A stack.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-f405-v4",
+      "currentName": "SpeedyBee F405 V4",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "standard-5-freestyle",
+          "presetName": "Standard 5\" Freestyle",
+          "slot": "flightController"
+        }
+      ],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only as F405 V4 + BLS 55A stack.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "speedybee-f7-v3-fc",
+      "currentName": "SpeedyBee F7 V3 FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "stack_aio_split",
+      "evidence": "Sold only as F7 V3 + BL32 50A stack.",
+      "recommendedAction": "merge_aio_stack_entries",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tbs-source-one-v5",
+      "currentName": "TBS Source One V5 5-inch",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "standard-5-freestyle",
+          "presetName": "Standard 5\" Freestyle",
+          "slot": "frame"
+        }
+      ],
+      "issueType": "full_drone_as_frame",
+      "evidence": "GitHub Source One project; no isolated frame packshot (OG card only).",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tbs-source-one-v6-frame",
+      "currentName": "TBS Source One V6 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "full_drone_as_frame",
+      "evidence": "GitHub Source One repo; frame-only entry uses OSS hero imagery rules.",
+      "recommendedAction": "keep_as_is",
+      "riskLevel": "low",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tbs-source-one7-lr-frame",
+      "currentName": "TBS Source One 7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Source One 7 repo; source_one is 5-inch only.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "high",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tmotor-2807-1300kv-lr",
+      "currentName": "T-Motor 2807 1300KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor FPV 2807 1300KV LR on store.tmotor.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tmotor-f35a-mini-4in1",
+      "currentName": "T-Motor F35A Mini 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor F35A Mini ESC on store.tmotor.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "tmotor-pacer-f35-cine-esc",
+      "currentName": "T-Motor Pacer F35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor Pacer F35 Cine ESC on store.tmotor.com.",
+      "recommendedAction": "remove_from_catalog",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    },
+    {
+      "partId": "walksnail-avatar-micro",
+      "currentName": "Walksnail Avatar Micro",
+      "category": "camera",
+      "affectedBuildClasses": [
+        "5-inch-freestyle",
+        "cinewhoop",
+        "7-inch-long-range"
+      ],
+      "usedInPreset": false,
+      "presetUsage": [],
+      "issueType": "wrong_sku",
+      "evidence": "Avatar V2 page does not expose Micro SKU packshot.",
+      "recommendedAction": "needs_manual_fpv_review",
+      "riskLevel": "medium",
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+    }
+  ]
+}
