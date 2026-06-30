@@ -2,7 +2,7 @@
 
 Ranked workflow for missing catalog JPGs. Generated from `scripts/generateImageCompletionQueue.js`.
 
-Generated: 2026-06-29T22:38:04.544Z
+Generated: 2026-06-30T00:20:27.469Z
 
 ## Baseline coverage
 
@@ -1040,7 +1040,7 @@ _High-value missing parts that need a better official direct packshot URL._
 - **URL confidence:** high
 - **Reason:** Prior manual review flagged wrong product, variant, or composite image.
 
-### 80. Lumenier QAV-S JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
+### 80. Lumenier QAV-S 2 JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
 
 - **Tier:** 2 — 5-inch freestyle catalog
 - **Classification:** Unsafe — likely mismatch (`unsafe_likely_mismatch`)

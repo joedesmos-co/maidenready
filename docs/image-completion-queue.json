@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:38:04.544Z",
+  "generatedAt": "2026-06-30T00:20:27.469Z",
   "baseline": {
     "total": 294,
     "found": 95,
@@ -1474,7 +1474,7 @@
         "queueTier": 2,
         "queueTierLabel": "5-inch freestyle catalog",
         "partId": "lumenier-qav-s-johnnyfpv",
-        "partName": "Lumenier QAV-S JohnnyFPV SE",
+        "partName": "Lumenier QAV-S 2 JohnnyFPV SE",
         "brand": "Lumenier",
         "categoryKey": "frame",
         "categoryLabel": "Frame",
@@ -5899,7 +5899,7 @@
       "queueTier": 2,
       "queueTierLabel": "5-inch freestyle catalog",
       "partId": "lumenier-qav-s-johnnyfpv",
-      "partName": "Lumenier QAV-S JohnnyFPV SE",
+      "partName": "Lumenier QAV-S 2 JohnnyFPV SE",
       "brand": "Lumenier",
       "categoryKey": "frame",
       "categoryLabel": "Frame",

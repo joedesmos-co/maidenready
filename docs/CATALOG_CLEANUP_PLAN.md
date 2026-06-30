@@ -6,6 +6,17 @@ Planning document derived from `docs/CATALOG_IMAGE_REVIEW_NOTES.md` and the exha
 **Machine-readable candidates:** `docs/catalog-cleanup-candidates.json`  
 **Current image coverage:** 95 / 294 catalog · 38 / 48 presets · fetchable queue 0
 
+### Batch 1A applied (2026-06-27)
+
+Rename-only catalog display fixes in `src/data/parts.js` — part IDs, `imagePath`, weights, and prices unchanged. No preset or calculation edits.
+
+| Part ID | Previous name | New name |
+| --- | --- | --- |
+| `lumenier-qav-s-johnnyfpv` | Lumenier QAV-S JohnnyFPV SE | Lumenier QAV-S 2 JohnnyFPV SE |
+| `happymodel-se0802-22000kv` | Happymodel SE0802 22000KV | Happymodel EX0802 22000KV |
+
+`flywoo-explorer5-frame` remains deferred pending manual SKU confirmation.
+
 ---
 
 ## Scope and constraints

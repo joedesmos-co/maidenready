@@ -20,7 +20,7 @@
       "needs_manual_fpv_review": 16,
       "keep_as_is": 9,
       "remove_from_catalog": 46,
-      "replace_with_current_sku": 24,
+      "replace_with_current_sku": 23,
       "merge_aio_stack_entries": 13,
       "rename_only": 2
     },
@@ -29,7 +29,18 @@
       "low": 13,
       "high": 29
     },
-    "presetAffectedCount": 8
+    "presetAffectedCount": 8,
+    "appliedBatches": {
+      "1A": {
+        "appliedAt": "2026-06-27T00:00:00.000Z",
+        "partIds": [
+          "lumenier-qav-s-johnnyfpv",
+          "happymodel-se0802-22000kv"
+        ],
+        "resolvedCount": 2
+      }
+    },
+    "openCandidates": 108
   },
   "candidates": [
     {
@@ -858,7 +869,8 @@
     },
     {
       "partId": "happymodel-se0802-22000kv",
-      "currentName": "Happymodel SE0802 22000KV",
+      "currentName": "Happymodel EX0802 22000KV",
+      "previousName": "Happymodel SE0802 22000KV",
       "category": "motors",
       "affectedBuildClasses": [
         "tiny-whoop"
@@ -867,10 +879,17 @@
       "presetUsage": [],
       "issueType": "renamed",
       "evidence": "SE0802 superseded by EX0802/RS0802 on Happymodel site.",
-      "recommendedAction": "replace_with_current_sku",
+      "recommendedAction": "rename_only",
       "riskLevel": "low",
-      "replacementSku": "happymodel-ex0802-19000kv or RS0802 line",
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "replacementSku": null,
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1A",
+      "appliedAt": "2026-06-27T00:00:00.000Z",
+      "appliedChanges": {
+        "name": "Happymodel EX0802 22000KV",
+        "description": "Aligned to official Happymodel EX0802 family listing (legacy SE0802 ID retained)."
+      }
     },
     {
       "partId": "hdzero-cine-nano-vtx",
@@ -1312,7 +1331,8 @@
     },
     {
       "partId": "lumenier-qav-s-johnnyfpv",
-      "currentName": "Lumenier QAV-S JohnnyFPV SE",
+      "currentName": "Lumenier QAV-S 2 JohnnyFPV SE",
+      "previousName": "Lumenier QAV-S JohnnyFPV SE",
       "category": "frame",
       "affectedBuildClasses": [
         "5-inch-freestyle"
@@ -1324,7 +1344,14 @@
       "recommendedAction": "rename_only",
       "riskLevel": "low",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1A",
+      "appliedAt": "2026-06-27T00:00:00.000Z",
+      "appliedChanges": {
+        "name": "Lumenier QAV-S 2 JohnnyFPV SE",
+        "description": "Matched official Lumenier QAV-S 2 JohnnyFPV SE 5-inch frame kit naming."
+      }
     },
     {
       "partId": "matek-f722-cine-mini-fc",
