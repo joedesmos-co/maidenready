@@ -1,0 +1,1741 @@
+{
+  "generatedAt": "2026-06-30T00:38:41.701Z",
+  "batch": "1B",
+  "mode": "dry_run",
+  "selectionCriteria": {
+    "included": [
+      "recommendedAction === remove_from_catalog",
+      "cleanupStatus !== applied",
+      "not used in any preset",
+      "strong evidence (discontinued, 404, closed vendor, nonexistent SKU, complete aircraft)",
+      "high risk only when evidence is extremely clear"
+    ],
+    "excluded": [
+      "preset_usage",
+      "needs_manual_fpv_review",
+      "replacement_candidate_needed",
+      "weak_evidence",
+      "high_risk_not_clear"
+    ]
+  },
+  "summary": {
+    "totalRemoveFromCatalogCandidates": 46,
+    "proposedRemovals": 43,
+    "proposedCoreRemovals": 30,
+    "proposedFramesDeferred": 13,
+    "excludedCount": 3,
+    "excludedByReason": {
+      "preset_usage": 3
+    },
+    "byCategory": {
+      "motors": 14,
+      "frame": 16,
+      "esc": 6,
+      "flightController": 4,
+      "vtx": 2,
+      "battery": 1
+    },
+    "byBuildClass": {
+      "7-inch-long-range": 7,
+      "5-inch-freestyle": 5,
+      "3.5-inch-freestyle": 9,
+      "cinewhoop": 19,
+      "tiny-whoop": 3
+    },
+    "byRecommendedSubBatch": {
+      "1B-core": 30,
+      "1B-frames-deferred": 13
+    },
+    "presetImpact": {
+      "partsExcludedDueToPresets": [
+        {
+          "partId": "geprc-cinelog35-v2",
+          "currentName": "GEPRC Cinelog35 V2",
+          "presetUsage": [
+            {
+              "presetId": "cinewhoop-cruiser",
+              "presetName": "Cinewhoop Cruiser",
+              "slot": "frame"
+            }
+          ]
+        },
+        {
+          "partId": "iflight-xing-2005-2550",
+          "currentName": "iFlight XING 2005 2550KV",
+          "presetUsage": [
+            {
+              "presetId": "cinewhoop-cruiser",
+              "presetName": "Cinewhoop Cruiser",
+              "slot": "motors"
+            }
+          ]
+        },
+        {
+          "partId": "rekon7-pro-lr",
+          "currentName": "Rekon7 Pro Long Range",
+          "presetUsage": [
+            {
+              "presetId": "7-long-range-explorer",
+              "presetName": "7\" Long Range Explorer",
+              "slot": "frame"
+            }
+          ]
+        }
+      ],
+      "proposedBatchPresetImpact": 0
+    },
+    "imageCoverage": {
+      "before": {
+        "withImage": 95,
+        "total": 294,
+        "ratio": "95/294"
+      },
+      "fullBatch": {
+        "removalsWithLocalImage": 0,
+        "removalsPlaceholderOnly": 43,
+        "afterEstimated": {
+          "withImage": 95,
+          "total": 251,
+          "ratio": "95/251"
+        }
+      },
+      "coreOnly": {
+        "removals": 30,
+        "removalsWithLocalImage": 0,
+        "afterEstimated": {
+          "withImage": 95,
+          "total": 264,
+          "ratio": "95/264"
+        }
+      }
+    },
+    "selectorCoverageBefore": {
+      "tiny-whoop": {
+        "frame": 5,
+        "motors": 7,
+        "esc": 3,
+        "flightController": 4,
+        "props": 6,
+        "battery": 5,
+        "receiver": 3,
+        "camera": 4,
+        "vtx": 4
+      },
+      "3.5-inch-freestyle": {
+        "frame": 6,
+        "motors": 8,
+        "esc": 5,
+        "flightController": 5,
+        "props": 7,
+        "battery": 6,
+        "receiver": 3,
+        "camera": 5,
+        "vtx": 4
+      },
+      "5-inch-freestyle": {
+        "frame": 18,
+        "motors": 24,
+        "esc": 16,
+        "flightController": 16,
+        "props": 18,
+        "battery": 16,
+        "receiver": 10,
+        "camera": 11,
+        "vtx": 10
+      },
+      "cinewhoop": {
+        "frame": 7,
+        "motors": 9,
+        "esc": 7,
+        "flightController": 7,
+        "props": 8,
+        "battery": 7,
+        "receiver": 4,
+        "camera": 7,
+        "vtx": 6
+      },
+      "7-inch-long-range": {
+        "frame": 6,
+        "motors": 8,
+        "esc": 6,
+        "flightController": 6,
+        "props": 7,
+        "battery": 8,
+        "receiver": 5,
+        "camera": 4,
+        "vtx": 4
+      }
+    },
+    "selectorCoverageAfter": {
+      "tiny-whoop": {
+        "frame": 4,
+        "motors": 5,
+        "esc": 3,
+        "flightController": 4,
+        "props": 6,
+        "battery": 5,
+        "receiver": 3,
+        "camera": 4,
+        "vtx": 4
+      },
+      "3.5-inch-freestyle": {
+        "frame": 1,
+        "motors": 6,
+        "esc": 3,
+        "flightController": 5,
+        "props": 7,
+        "battery": 6,
+        "receiver": 3,
+        "camera": 5,
+        "vtx": 4
+      },
+      "5-inch-freestyle": {
+        "frame": 15,
+        "motors": 22,
+        "esc": 16,
+        "flightController": 16,
+        "props": 18,
+        "battery": 16,
+        "receiver": 10,
+        "camera": 11,
+        "vtx": 10
+      },
+      "cinewhoop": {
+        "frame": 3,
+        "motors": 4,
+        "esc": 3,
+        "flightController": 4,
+        "props": 8,
+        "battery": 6,
+        "receiver": 4,
+        "camera": 7,
+        "vtx": 4
+      },
+      "7-inch-long-range": {
+        "frame": 3,
+        "motors": 5,
+        "esc": 6,
+        "flightController": 5,
+        "props": 7,
+        "battery": 8,
+        "receiver": 5,
+        "camera": 4,
+        "vtx": 4
+      }
+    },
+    "thinSelectorsAfterFullBatch": [
+      {
+        "buildClass": "3.5-inch-freestyle",
+        "category": "frame",
+        "before": 6,
+        "after": 1
+      },
+      {
+        "buildClass": "3.5-inch-freestyle",
+        "category": "esc",
+        "before": 5,
+        "after": 3
+      },
+      {
+        "buildClass": "cinewhoop",
+        "category": "frame",
+        "before": 7,
+        "after": 3
+      },
+      {
+        "buildClass": "cinewhoop",
+        "category": "esc",
+        "before": 7,
+        "after": 3
+      },
+      {
+        "buildClass": "7-inch-long-range",
+        "category": "frame",
+        "before": 6,
+        "after": 3
+      }
+    ],
+    "top10ManualReviewBeforeApply": [
+      {
+        "partId": "geprc-cinelog35-v2",
+        "currentName": "GEPRC Cinelog35 V2",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "full_drone_as_frame",
+        "evidence": "Official listing is complete BNF cinewhoop aircraft.",
+        "inProposedBatch1B": false,
+        "excludeReasons": [
+          "preset_usage"
+        ],
+        "reviewNote": "Excluded: preset_usage"
+      },
+      {
+        "partId": "iflight-xing-2005-2550",
+        "currentName": "iFlight XING 2005 2550KV",
+        "category": "motors",
+        "riskLevel": "medium",
+        "issueType": "discontinued_deprecated",
+        "evidence": "No isolated 2005 motor packshot on iFlight store.",
+        "inProposedBatch1B": false,
+        "excludeReasons": [
+          "preset_usage"
+        ],
+        "reviewNote": "Excluded: preset_usage"
+      },
+      {
+        "partId": "rekon7-pro-lr",
+        "currentName": "Rekon7 Pro Long Range",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "full_drone_as_frame",
+        "evidence": "Official listing is complete 7-inch LR aircraft.",
+        "inProposedBatch1B": false,
+        "excludeReasons": [
+          "preset_usage"
+        ],
+        "reviewNote": "Excluded: preset_usage"
+      },
+      {
+        "partId": "brotherhobby-2004-2600kv",
+        "currentName": "BrotherHobby 2004 2600KV",
+        "category": "motors",
+        "riskLevel": "high",
+        "issueType": "wrong_sku",
+        "evidence": "Legacy BrotherHobby 2004 URL serves Avenger 0804 content.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "flywoo-explorer7-lr-frame",
+        "currentName": "Flywoo Explorer 7 LR Frame",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "full_drone_as_frame",
+        "evidence": "Explorer LR4 listings are complete aircraft, not frame kits.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "hglrc-sector7-lr-frame",
+        "currentName": "HGLRC Sector7 LR Frame",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "wrong_sku",
+        "evidence": "No Sector7 LR; HGLRC Sector D5/X5 are 5-inch only.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "hglrc-zeus5-frame",
+        "currentName": "HGLRC Zeus5 Frame",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "wrong_sku",
+        "evidence": "No Zeus5 frame SKU; substitute listing is different frame.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "impulserc-apexdc",
+        "currentName": "ImpulseRC ApexDC 5-inch",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "discontinued_deprecated",
+        "evidence": "ImpulseRC closed; no product photo source.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "impulserc-reverb5-frame",
+        "currentName": "ImpulseRC Reverb 5 Frame",
+        "category": "frame",
+        "riskLevel": "high",
+        "issueType": "discontinued_deprecated",
+        "evidence": "ImpulseRC closed; no product photo source.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "High risk in proposed batch"
+      },
+      {
+        "partId": "betafpv-pavo3516-frame",
+        "currentName": "BETAFPV Pavo3516 Frame",
+        "category": "frame",
+        "riskLevel": "medium",
+        "issueType": "discontinued_deprecated",
+        "evidence": "No Pavo3516 frame on betafpv.com.",
+        "inProposedBatch1B": true,
+        "excludeReasons": [],
+        "reviewNote": "Frame removal — check selector depth"
+      }
+    ],
+    "recommendation": "Do not apply Batch 1B as-is. Split into 1B-core (~28 non-frame parts) first, then a smaller 1B-frames pass after validating 3.5\" and cinewhoop frame depth."
+  },
+  "proposedRemovals": [
+    {
+      "partId": "axisflying-2808-1150kv-lr",
+      "name": "AxisFlying 2808 1150KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No AxisFlying 2808 product page.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/axisflying-2808-1150kv-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "motors",
+          "before": 8,
+          "afterIfOnlyThisRemoved": 7,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "axisflying-ae2207-1960",
+      "name": "AxisFlying AE 2207 1960KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "AxisFlying AE 2207 product page 404.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/axisflying-ae2207.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "5-inch-freestyle",
+          "category": "motors",
+          "before": 24,
+          "afterIfOnlyThisRemoved": 23,
+          "afterFullBatchApplied": 22,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "axisflying-joker-2207-1920kv",
+      "name": "AxisFlying Joker 2207 1920KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "AxisFlying Joker 2207 product page 404.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/axisflying-joker-2207-1920kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "5-inch-freestyle",
+          "category": "motors",
+          "before": 24,
+          "afterIfOnlyThisRemoved": 23,
+          "afterFullBatchApplied": 22,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "betafpv-pavo3516-frame",
+      "name": "BETAFPV Pavo3516 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Pavo3516 frame on betafpv.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/betafpv-pavo3516.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 1,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/frame: 6 → 1 after full batch"
+      ]
+    },
+    {
+      "partId": "brotherhobby-1507-3700kv",
+      "name": "BrotherHobby 1507 3700KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No BrotherHobby 1507 listing on manufacturer store.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/brotherhobby-1507-3700kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "motors",
+          "before": 8,
+          "afterIfOnlyThisRemoved": 7,
+          "afterFullBatchApplied": 6,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "brotherhobby-2004-2600kv",
+      "name": "BrotherHobby 2004 2600KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "wrong_sku",
+      "evidence": "Legacy BrotherHobby 2004 URL serves Avenger 0804 content.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "No verifiable official SKU matches this catalog entry. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/brotherhobby-2004-2600kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "motors",
+          "before": 9,
+          "afterIfOnlyThisRemoved": 8,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "diatone-mamba-f35-cine-esc",
+      "name": "Diatone Mamba F35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Mamba F35 Cine ESC on diatone.us.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/diatone-mamba-f35-cine-esc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "esc",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/esc: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "diatone-taycan35-frame",
+      "name": "Diatone Taycan 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Diatone has Taycan accessories only, not 3.5 frame kit.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/diatone-taycan35.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 1,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/frame: 6 → 1 after full batch"
+      ]
+    },
+    {
+      "partId": "flywoo-explorer35-cine-frame",
+      "name": "Flywoo Explorer 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 Cine frame kit on flywoo.net.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/flywoo-explorer35-cine.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "frame",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/frame: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "flywoo-explorer35-frame",
+      "name": "Flywoo Explorer 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Explorer 3.5 frame kit on flywoo.net.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/flywoo-explorer35.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 1,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/frame: 6 → 1 after full batch"
+      ]
+    },
+    {
+      "partId": "flywoo-explorer7-lr-frame",
+      "name": "Flywoo Explorer 7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "full_drone_as_frame",
+      "evidence": "Explorer LR4 listings are complete aircraft, not frame kits.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Represents a complete BNF/PNP aircraft rather than a frame kit or component SKU. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/flywoo-explorer7-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "7-inch-long-range/frame: 6 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "geprc-0901-11000kv",
+      "name": "GEPRC 0901 11000KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC 0901 motor SKU on geprc.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/geprc-0901-11000kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "tiny-whoop",
+          "category": "motors",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "geprc-2005-2200kv",
+      "name": "GEPRC 2005 2200KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC 2005 2200KV motor on geprc.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/geprc-2005-2200kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "motors",
+          "before": 9,
+          "afterIfOnlyThisRemoved": 8,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "geprc-cinebee35-hd-frame",
+      "name": "GEPRC CineBee35 HD Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC CineBee35 HD isolated frame-kit page.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/geprc-cinebee35-hd.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "frame",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/frame: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "geprc-crocodile7-lr-frame",
+      "name": "GEPRC Crocodile7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Crocodile7 LR frame; Crocodile Baby 4 drones only.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/geprc-crocodile7-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "7-inch-long-range/frame: 6 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "geprc-f722-cine-mini-fc",
+      "name": "GEPRC F722 Cine Mini FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No F722 Cine Mini; GEP-F722 HD line only.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/flight-controllers/geprc-f722-cine-mini-fc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "flightController",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "geprc-gep35a-cine-esc",
+      "name": "GEPRC GEP35A Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "GEPRC ESC line is Taker only; no GEP35A Cine SKU.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/geprc-gep35a-cine-esc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "esc",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/esc: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "geprc-rocket-3-5-frame",
+      "name": "GEPRC Rocket 3.5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC Rocket 3.5 frame kit on geprc.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/geprc-rocket-3-5.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 1,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/frame: 6 → 1 after full batch"
+      ]
+    },
+    {
+      "partId": "geprc-rocket-lite-75-frame",
+      "name": "GEPRC Rocket Lite 75 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No GEPRC Rocket Lite 75 frame kit on geprc.com.",
+      "riskLevel": "low",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated low with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/geprc-rocket-lite-75.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "tiny-whoop",
+          "category": "frame",
+          "before": 5,
+          "afterIfOnlyThisRemoved": 4,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "happymodel-cine-2004-2400kv",
+      "name": "Happymodel Cine 2004 2400KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No standalone Cine 2004 motor; Cine8 kit listings only.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/happymodel-cine-2004-2400kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "motors",
+          "before": 9,
+          "afterIfOnlyThisRemoved": 8,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "hdzero-cine-nano-vtx",
+      "name": "HDZero Cine Nano VTX",
+      "category": "vtx",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No HDZero Cine Nano VTX on hd-zero.com shop.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/vtx/hdzero-cine-nano-vtx.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "vtx",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "hglrc-sector7-lr-frame",
+      "name": "HGLRC Sector7 LR Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "wrong_sku",
+      "evidence": "No Sector7 LR; HGLRC Sector D5/X5 are 5-inch only.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "No verifiable official SKU matches this catalog entry. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/hglrc-sector7-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "7-inch-long-range/frame: 6 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "hglrc-tekko32-f35-mini",
+      "name": "HGLRC Tekko32 F35 Mini 35A",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Tekko32 F35 Mini on hglrc.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/hglrc-tekko32-f35-mini.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "esc",
+          "before": 5,
+          "afterIfOnlyThisRemoved": 4,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/esc: 5 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "hglrc-zeus5-frame",
+      "name": "HGLRC Zeus5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "issueType": "wrong_sku",
+      "evidence": "No Zeus5 frame SKU; substitute listing is different frame.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "No verifiable official SKU matches this catalog entry. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/hglrc-zeus5-frame.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "5-inch-freestyle",
+          "category": "frame",
+          "before": 18,
+          "afterIfOnlyThisRemoved": 17,
+          "afterFullBatchApplied": 15,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "iflight-4s-1800-cine",
+      "name": "iFlight 4S 1800mAh 120C Cine",
+      "category": "battery",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No iFlight 4S 1800mAh battery on official store.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/batteries/iflight-4s-1800-cine.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "battery",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 6,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "iflight-beast-h743-cine-fc",
+      "name": "iFlight Beast H743 Cine FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Beast H743 Cine FC; BLITZ Wing H743 is different product.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/flight-controllers/iflight-beast-h743-cine-fc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "flightController",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "iflight-beast-h743-lr-fc",
+      "name": "iFlight Beast H743 LR FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No Beast H743 LR FC on shop.iflight.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/flight-controllers/iflight-beast-h743-lr-fc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "flightController",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "iflight-chimera3-frame",
+      "name": "iFlight Chimera3 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera3 frame-kit URL 404; Chimera7 is different line.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/iflight-chimera3.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "frame",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 1,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/frame: 6 → 1 after full batch"
+      ]
+    },
+    {
+      "partId": "iflight-chimera35-cine-frame",
+      "name": "iFlight Chimera35 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Chimera35 Cine frame-kit URL 404.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/iflight-chimera35-cine.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "frame",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/frame: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "iflight-cidatel35-cine-frame",
+      "name": "iFlight Cidatel 3.5 Cine Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy Cidatel 3.5 Cine frame-kit URL 404.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-frames-deferred",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/iflight-cidatel35-cine.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "frame",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/frame: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "iflight-succexd35-cine-esc",
+      "name": "iFlight SucceX-D35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy SucceX-D35 URL 404 on shop.iflight.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/iflight-succexd35-cine-esc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "esc",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/esc: 7 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "iflight-xing2-1507-4600kv",
+      "name": "iFlight XING2 1507 4600KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy XING2 1507 URL 404 on shop.iflight.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/iflight-xing2-1507-4600kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "motors",
+          "before": 8,
+          "afterIfOnlyThisRemoved": 7,
+          "afterFullBatchApplied": 6,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "iflight-xing2-2203-2350kv",
+      "name": "iFlight XING2 2203 2350KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Legacy XING2 2203 URL 404 on shop.iflight.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/iflight-xing2-2203-2350kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "motors",
+          "before": 9,
+          "afterIfOnlyThisRemoved": 8,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "impulserc-apexdc",
+      "name": "ImpulseRC ApexDC 5-inch",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "ImpulseRC closed; no product photo source.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/impulserc-apexdc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "5-inch-freestyle",
+          "category": "frame",
+          "before": 18,
+          "afterIfOnlyThisRemoved": 17,
+          "afterFullBatchApplied": 15,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "impulserc-reverb5-frame",
+      "name": "ImpulseRC Reverb 5 Frame",
+      "category": "frame",
+      "affectedBuildClasses": [
+        "5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "ImpulseRC closed; no product photo source.",
+      "riskLevel": "high",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. High risk tier, but evidence is unambiguous (closed vendor, complete aircraft, or nonexistent SKU).",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/frames/impulserc-reverb5-frame.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "5-inch-freestyle",
+          "category": "frame",
+          "before": 18,
+          "afterIfOnlyThisRemoved": 17,
+          "afterFullBatchApplied": 15,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "matek-f722-cine-mini-fc",
+      "name": "Matek F722 Cine Mini FC",
+      "category": "flightController",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "Matek F722-mini EOL; no Cine Mini FC SKU.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/flight-controllers/matek-f722-cine-mini-fc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "flightController",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "newbee-0802-17500kv",
+      "name": "NewBeeDrone 0802 17500KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "tiny-whoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No NewBeeDrone 0802 17500KV product page.",
+      "riskLevel": "low",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated low with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/newbee-0802-17500kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "tiny-whoop",
+          "category": "motors",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "rcinpower-2203-2300kv",
+      "name": "RCinPower 2203 2300KV",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RCinPower G-SERIES 2203 2300KV page.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/rcinpower-2203-2300kv.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "motors",
+          "before": 9,
+          "afterIfOnlyThisRemoved": 8,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "rcinpower-2807-1350kv-lr",
+      "name": "RCinPower 2807 1350KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RCinPower 2807 1350KV LR page.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/rcinpower-2807-1350kv-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "motors",
+          "before": 8,
+          "afterIfOnlyThisRemoved": 7,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "rush-mini-tank-cine-vtx",
+      "name": "RushFPV Mini Tank Cine VTX",
+      "category": "vtx",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No RushFPV Mini Tank Cine listing on rushfpv.net.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/vtx/rush-mini-tank-cine-vtx.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "vtx",
+          "before": 6,
+          "afterIfOnlyThisRemoved": 5,
+          "afterFullBatchApplied": 4,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "tmotor-2807-1300kv-lr",
+      "name": "T-Motor 2807 1300KV LR",
+      "category": "motors",
+      "affectedBuildClasses": [
+        "7-inch-long-range"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor FPV 2807 1300KV LR on store.tmotor.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/motors/tmotor-2807-1300kv-lr.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "7-inch-long-range",
+          "category": "motors",
+          "before": 8,
+          "afterIfOnlyThisRemoved": 7,
+          "afterFullBatchApplied": 5,
+          "thinAfterFullBatch": false
+        }
+      ],
+      "selectorWouldBecomeThin": false,
+      "thinSelectorNotes": []
+    },
+    {
+      "partId": "tmotor-f35a-mini-4in1",
+      "name": "T-Motor F35A Mini 4-in-1",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor F35A Mini ESC on store.tmotor.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/tmotor-f35a-mini-4in1.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "3.5-inch-freestyle",
+          "category": "esc",
+          "before": 5,
+          "afterIfOnlyThisRemoved": 4,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "3.5-inch-freestyle/esc: 5 → 3 after full batch"
+      ]
+    },
+    {
+      "partId": "tmotor-pacer-f35-cine-esc",
+      "name": "T-Motor Pacer F35 Cine ESC",
+      "category": "esc",
+      "affectedBuildClasses": [
+        "cinewhoop"
+      ],
+      "issueType": "discontinued_deprecated",
+      "evidence": "No T-Motor Pacer F35 Cine ESC on store.tmotor.com.",
+      "riskLevel": "medium",
+      "recommendedSubBatch": "1B-core",
+      "whySafeToRemove": "Discontinued or delisted; official manufacturer page missing or product retired. Not used in any preset build. Risk rated medium with corroborated image-research evidence.",
+      "imageCoverageEffect": {
+        "hasImage": false,
+        "imagePath": "/parts/escs/tmotor-pacer-f35-cine-esc.jpg",
+        "summary": "No image coverage change (SVG placeholder)."
+      },
+      "selectorImpact": [
+        {
+          "buildClass": "cinewhoop",
+          "category": "esc",
+          "before": 7,
+          "afterIfOnlyThisRemoved": 6,
+          "afterFullBatchApplied": 3,
+          "thinAfterFullBatch": true
+        }
+      ],
+      "selectorWouldBecomeThin": true,
+      "thinSelectorNotes": [
+        "cinewhoop/esc: 7 → 3 after full batch"
+      ]
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "partId": "geprc-cinelog35-v2",
+      "currentName": "GEPRC Cinelog35 V2",
+      "category": "frame",
+      "issueType": "full_drone_as_frame",
+      "riskLevel": "high",
+      "evidence": "Official listing is complete BNF cinewhoop aircraft.",
+      "excludeReasons": [
+        "preset_usage"
+      ]
+    },
+    {
+      "partId": "iflight-xing-2005-2550",
+      "currentName": "iFlight XING 2005 2550KV",
+      "category": "motors",
+      "issueType": "discontinued_deprecated",
+      "riskLevel": "medium",
+      "evidence": "No isolated 2005 motor packshot on iFlight store.",
+      "excludeReasons": [
+        "preset_usage"
+      ]
+    },
+    {
+      "partId": "rekon7-pro-lr",
+      "currentName": "Rekon7 Pro Long Range",
+      "category": "frame",
+      "issueType": "full_drone_as_frame",
+      "riskLevel": "high",
+      "evidence": "Official listing is complete 7-inch LR aircraft.",
+      "excludeReasons": [
+        "preset_usage"
+      ]
+    }
+  ]
+}
