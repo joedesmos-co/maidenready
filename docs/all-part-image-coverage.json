@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-30T12:18:04.416Z",
+  "generatedAt": "2026-06-30T12:29:54.264Z",
   "summary": {
-    "total": 266,
-    "found": 95,
-    "missing": 171,
+    "total": 261,
+    "found": 102,
+    "missing": 159,
     "presetPartTotal": 48,
-    "presetPartFound": 38,
-    "presetPartMissing": 10,
+    "presetPartFound": 40,
+    "presetPartMissing": 8,
     "missingByPriority": {
-      "1": 10,
+      "1": 8,
       "2": 77,
-      "3": 84
+      "3": 74
     }
   },
   "missingByPriority": {
@@ -126,25 +126,6 @@
         "priority": 1
       },
       {
-        "partId": "geprc-gep-cl35-v3-frame",
-        "partName": "GEPRC GEP-CL35 V3 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "frame"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 1
-      },
-      {
         "partId": "rekon-hglrc-rekon7-pro-v2-frame",
         "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
         "categoryKey": "frame",
@@ -179,25 +160,6 @@
         ],
         "compatibleClasses": [
           "5-inch-freestyle"
-        ],
-        "priority": 1
-      },
-      {
-        "partId": "geprc-speedx2-2105-5-2650kv",
-        "partName": "GEPRC SPEEDX2 2105.5 2650KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
-        "usedInPreset": true,
-        "presetUsage": [
-          {
-            "presetId": "cinewhoop-cruiser",
-            "presetName": "Cinewhoop Cruiser",
-            "buildClass": "cinewhoop",
-            "categoryKey": "motors"
-          }
-        ],
-        "compatibleClasses": [
-          "cinewhoop"
         ],
         "priority": 1
       },
@@ -1562,90 +1524,6 @@
         "priority": 3
       },
       {
-        "partId": "betafpv-pavo35-frame-kit",
-        "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/betafpv-pavo35-frame-kit.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "betafpv-pavo3516-frame",
-        "partName": "BETAFPV Pavo3516 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/betafpv-pavo3516.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "betafpv-x-knight-35-frame-kit",
-        "partName": "BETAFPV X-Knight 35 Frame Kit",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/betafpv-x-knight-35-frame-kit.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "diatone-taycan35-frame",
-        "partName": "Diatone Taycan 3.5 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/diatone-taycan35.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "flywoo-explorer35-frame",
-        "partName": "Flywoo Explorer 3.5 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/flywoo-explorer35.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "geprc-gep-st35-frame",
-        "partName": "GEPRC GEP-ST35 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-gep-st35.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "geprc-rocket-3-5-frame",
-        "partName": "GEPRC Rocket 3.5 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/geprc-rocket-3-5.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "geprc-rocket-lite-75-frame",
         "partName": "GEPRC Rocket Lite 75 Frame",
         "categoryKey": "frame",
@@ -1654,42 +1532,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "tiny-whoop"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-aos-3-5-v5-1-frame",
-        "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-aos-3-5-v5-1.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-aos-cine35-v5-frame",
-        "partName": "iFlight AOS Cine35 V5 Frame Kit",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-aos-cine35-v5.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-chimera3-frame",
-        "partName": "iFlight Chimera3 Frame",
-        "categoryKey": "frame",
-        "imagePath": "/parts/frames/iflight-chimera3.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
         ],
         "priority": 3
       },
@@ -2254,7 +2096,6 @@
       "matek-h743-wing-lr-fc"
     ],
     "frame": [
-      "geprc-gep-cl35-v3-frame",
       "rekon-hglrc-rekon7-pro-v2-frame",
       "tbs-source-one-v5",
       "aos-5-v5",
@@ -2269,22 +2110,28 @@
       "impulserc-reverb5-frame",
       "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
-      "betafpv-pavo35-frame-kit",
-      "betafpv-pavo3516-frame",
-      "betafpv-x-knight-35-frame-kit",
-      "diatone-taycan35-frame",
-      "flywoo-explorer35-frame",
-      "geprc-gep-st35-frame",
-      "geprc-rocket-3-5-frame",
       "geprc-rocket-lite-75-frame",
-      "iflight-aos-3-5-v5-1-frame",
-      "iflight-aos-cine35-v5-frame",
-      "iflight-chimera3-frame",
       "newbee-drone-75-pro-frame",
       "tbs-source-one7-lr-frame"
     ],
+    "vtx": [
+      "foxeer-reaper-nano-v2-vtx",
+      "akk-x2-ultimate-vtx",
+      "rush-tank-ii-vtx",
+      "akk-a3-nano-vtx-park",
+      "akk-a5-nano-vtx",
+      "rush-nano-vtx-park"
+    ],
+    "camera": [
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
+      "foxeer-toothless-2",
+      "walksnail-avatar-micro",
+      "caddx-proview-cine-digital",
+      "caddx-ratel-lucky-whoop",
+      "foxeer-pico-r-whoop"
+    ],
     "motors": [
-      "geprc-speedx2-2105-5-2650kv",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
@@ -2310,23 +2157,6 @@
       "rcinpower-1404-3800kv",
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
-    ],
-    "vtx": [
-      "foxeer-reaper-nano-v2-vtx",
-      "akk-x2-ultimate-vtx",
-      "rush-tank-ii-vtx",
-      "akk-a3-nano-vtx-park",
-      "akk-a5-nano-vtx",
-      "rush-nano-vtx-park"
-    ],
-    "camera": [
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "walksnail-avatar-micro",
-      "caddx-proview-cine-digital",
-      "caddx-ratel-lucky-whoop",
-      "foxeer-pico-r-whoop"
     ],
     "props": [
       "azure-5148",
@@ -2454,8 +2284,6 @@
       "gnb-4s-1500",
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
-      "geprc-gep-cl35-v3-frame",
-      "geprc-speedx2-2105-5-2650kv",
       "tattu-4s-1550",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
@@ -2466,7 +2294,6 @@
       "tattu-4s-1300-cine",
       "caddx-proview-cine-digital",
       "iflight-blitz-mini-e55s-4in1",
-      "betafpv-pavo35-frame-kit",
       "emax-eco-2004-2550kv",
       "tmotor-mn2004-2550kv",
       "avan-3540-cine-d5",
@@ -2492,15 +2319,6 @@
       "diatone-mamba-f35-mini-esc",
       "iflight-blitz-mini-e55s-4in1",
       "geprc-f405-20x20-mini",
-      "betafpv-pavo3516-frame",
-      "betafpv-x-knight-35-frame-kit",
-      "diatone-taycan35-frame",
-      "flywoo-explorer35-frame",
-      "geprc-gep-st35-frame",
-      "geprc-rocket-3-5-frame",
-      "iflight-aos-3-5-v5-1-frame",
-      "iflight-aos-cine35-v5-frame",
-      "iflight-chimera3-frame",
       "betafpv-1404-4600kv",
       "emax-eco-1404-4000kv",
       "iflight-xing2-1404-4600kv",
@@ -3069,7 +2887,7 @@
       "partName": "GEPRC GEP-CL35 V3 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3189,7 +3007,7 @@
       "partName": "GEPRC SPEEDX2 2105.5 2650KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -5664,7 +5482,7 @@
       "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-pavo35-frame-kit.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5673,50 +5491,11 @@
       "priority": 3
     },
     {
-      "partId": "betafpv-pavo3516-frame",
-      "partName": "BETAFPV Pavo3516 Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/betafpv-pavo3516.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
       "partId": "betafpv-x-knight-35-frame-kit",
       "partName": "BETAFPV X-Knight 35 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-x-knight-35-frame-kit.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "diatone-taycan35-frame",
-      "partName": "Diatone Taycan 3.5 Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/diatone-taycan35.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "flywoo-explorer35-frame",
-      "partName": "Flywoo Explorer 3.5 Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/flywoo-explorer35.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5729,20 +5508,7 @@
       "partName": "GEPRC GEP-ST35 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-gep-st35.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "geprc-rocket-3-5-frame",
-      "partName": "GEPRC Rocket 3.5 Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/geprc-rocket-3-5.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5794,7 +5560,7 @@
       "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-aos-3-5-v5-1.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5807,20 +5573,7 @@
       "partName": "iFlight AOS Cine35 V5 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-aos-cine35-v5.jpg",
-      "exists": false,
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "iflight-chimera3-frame",
-      "partName": "iFlight Chimera3 Frame",
-      "categoryKey": "frame",
-      "imagePath": "/parts/frames/iflight-chimera3.jpg",
-      "exists": false,
+      "exists": true,
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [

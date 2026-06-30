@@ -4,7 +4,29 @@ Structured research log for image-completion queue parts where official packshot
 
 **Rules applied:** official manufacturer pages only; no retailer images; no fetch/download during research passes.
 
-**Last updated:** 2026-06-29 — queue ranks **51–199** (`docs/IMAGE_COMPLETION_QUEUE.md`). Queue has **199** missing entries total; ranks 200+ do not exist at current coverage.
+**Last updated:** 2026-06-30 — public-beta consolidated image completion pass.
+
+## Public-beta completion pass (2026-06-30)
+
+| Metric | Value |
+| --- | ---: |
+| Catalog parts | 261 |
+| Local images | **102 / 261** (39%) |
+| Preset images | **40 / 48** |
+| Researched (needs URL queue) | 47 |
+| Images added (kept) | 7 |
+| Images removed (safety review) | 16 |
+| Fetchable remaining | 0 |
+
+**Kept packshots:** `geprc-gep-cl35-v3-frame`, `geprc-speedx2-2105-5-2650kv`, `betafpv-pavo35-frame-kit`, `betafpv-x-knight-35-frame-kit`, `geprc-gep-st35-frame`, `iflight-aos-3-5-v5-1-frame`, `iflight-aos-cine35-v5-frame`.
+
+**New mismatch holds:** `diatone-mamba-f722` (FC+O3 composite), `iflight-blitz-mini-e55s-4in1` (Mach-R5 drone scrape), `lumenier-6s-2200-lr-lipo` (wrong iFlight frame asset on battery page).
+
+Full report: `docs/IMAGE_COMPLETION_FINAL_REPORT.md` · Machine research: `docs/image-research-results.json`
+
+---
+
+**Prior queue note:** ranks **51–199** (`docs/IMAGE_COMPLETION_QUEUE.md`). Queue has **159** missing entries after this pass.
 
 ## Summary (ranks 51–75)
 

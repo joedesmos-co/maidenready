@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-06-30T12:35:00.000Z",
+  "pass": "public-beta-image-completion",
+  "catalog": {
+    "before": 261,
+    "after": 261,
+    "partsRemovedThisPass": 0,
+    "delta": 0
+  },
+  "imageCoverage": {
+    "before": { "found": 95, "total": 261 },
+    "after": { "found": 102, "total": 261 },
+    "imagesAdded": 7,
+    "imagesRemovedDuringReview": 16,
+    "netChange": 7
+  },
+  "imagesAddedPartIds": [
+    "geprc-gep-cl35-v3-frame",
+    "geprc-speedx2-2105-5-2650kv",
+    "betafpv-pavo35-frame-kit",
+    "betafpv-x-knight-35-frame-kit",
+    "geprc-gep-st35-frame",
+    "iflight-aos-3-5-v5-1-frame",
+    "iflight-aos-cine35-v5-frame"
+  ],
+  "imagesRemovedPartIds": [
+    "foxeer-reaper-nano-v2-vtx",
+    "armattan-badger5-frame",
+    "geprc-mark4-frame",
+    "lumenier-qav-s-johnnyfpv",
+    "foxeer-reaper-f4-65a",
+    "diatone-mamba-f722",
+    "foxeer-f722-v4",
+    "foxeer-h743-f722-fc",
+    "ethix-p3-peanut-butter",
+    "cnhl-6s-1500-freestyle",
+    "foxeer-falkor-2",
+    "foxeer-predator-v5",
+    "foxeer-toothless-2",
+    "lumenier-6s-2200-lr-lipo",
+    "iflight-blitz-mini-e55s-4in1",
+    "aos-5-v5"
+  ],
+  "presetCoverage": {
+    "before": { "found": 38, "total": 48 },
+    "after": { "found": 40, "total": 48 }
+  },
+  "research": {
+    "researched": 47,
+    "exact_official_packshot_found": 6,
+    "acceptable_official_family_packshot_found": 3,
+    "official_page_found_but_no_usable_packshot": 2,
+    "official_source_blocked": 36,
+    "sourceFilesPatched": 9
+  },
+  "queueAfter": {
+    "needs_better_official_url": 39,
+    "official_source_blocked": 25,
+    "should_remain_svg_placeholder": 33,
+    "unsafe_likely_mismatch": 36,
+    "no_clean_packshot_found": 28,
+    "fetchable_now": 0
+  },
+  "permanentlyPlaceholder": 97,
+  "fetchableRemaining": 0,
+  "blockedSources": 25,
+  "mismatchRisk": 36,
+  "thinSelectors": {
+    "tiny-whoop": { "frame": 5, "esc": 3, "motors": 5 },
+    "3.5-inch-freestyle": { "frame": 5, "esc": 4, "motors": 6 },
+    "5-inch-freestyle": { "frame": 18, "esc": 16, "motors": 22 },
+    "cinewhoop": { "frame": 4, "esc": 4, "motors": 4 },
+    "7-inch-long-range": { "frame": 3, "esc": 6, "motors": 5 }
+  },
+  "safeForBeta": true,
+  "noBadImagesKept": true,
+  "remainingMissing": 159,
+  "whyRemainingNotAdded": [
+    "Official pages return 403/404 or block automated fetch (Gemfan, Genstattu, T-Motor, Aikon, AKK, GNB, etc.).",
+    "Stack-only manufacturer pages for individual FC/ESC catalog lines (SpeedyBee, many AIO splits).",
+    "Prior mismatch review flags (Foxeer cameras/FC, wrong-frame composites, watermark motors).",
+    "No isolated frame-kit packshots on full-aircraft or GitHub-only listings.",
+    "Discontinued SKUs with no verified replacement imagery on official stores."
+  ],
+  "catalogReviewLater": [
+    "rekon-hglrc-rekon7-pro-v2-frame",
+    "gnb-4s-1500",
+    "speedybee stack split lines",
+    "ImpulseRC closed-brand frames",
+    "Ethix Lithium5 when store is reachable"
+  ],
+  "notes": [
+    "Batch 1D-3.5 applied before this pass (261 catalog parts, 5 deprecated 3.5\" frames removed).",
+    "Supplemental image sources wired for 44 post-R3 catalog parts.",
+    "All retained images use imageNeedsReview and No verified license on file.",
+    "16 wrong/composite downloads removed; 7 clean official packshots kept."
+  ]
+}

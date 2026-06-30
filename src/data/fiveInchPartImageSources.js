@@ -8,9 +8,14 @@
  * - imageStatus is always "needs review" until a verified licensed asset is on file.
  * - officialUrl values are brand-domain pages only (no third-party retailers).
  *
- * Last researched: 2026-06-29 (high-value 5-inch catalog image pass)
+ * Last researched: 2026-06-27 (public-beta image completion pass)
  */
-export const fiveInchPartImageSources = [
+import {
+  PRESET_SUPPLEMENTAL_PART_IDS,
+  supplementalPartImageSources,
+} from "./supplementalPartImageSources.js";
+
+const baseFiveInchPartImageSources = [
   {
     partId: "aos-5-v5",
     partName: "AOS 5 V5",
@@ -1055,10 +1060,10 @@ export const fiveInchPartImageSources = [
     category: "Flight Controller",
     brand: "Diatone",
     officialUrl: "https://www.diatone.us/products/mamba-mk4-f722-app-flight-controller",
-    urlConfidence: "high",
+    urlConfidence: "low",
     imageStatus: "needs review",
     expectedImagePath: "/parts/flight-controllers/diatone-mamba-f722.jpg",
-    notes: "Official Diatone Mamba MK4 F722 flight controller page.",
+    notes: "Official Diatone Mamba MK4 F722 page; gallery is FC+O3 marketing composite, not isolated FC packshot.",
   },
   {
     partId: "diatone-mamba-f722-s-fc",
@@ -2621,4 +2626,11 @@ export const fiveInchPartImageSources = [
     notes:
       "Closest Matek SKU is EOL H743-WLITE wing FC (ICM42688); catalog H743 Wing LR line specifies BMI270 — gyro mismatch.",
   },
+];
+
+export const fiveInchPartImageSources = [
+  ...baseFiveInchPartImageSources,
+  ...supplementalPartImageSources.filter(
+    (entry) => !PRESET_SUPPLEMENTAL_PART_IDS.has(entry.partId),
+  ),
 ];

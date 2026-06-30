@@ -4,7 +4,40 @@ Planning document derived from `docs/CATALOG_IMAGE_REVIEW_NOTES.md` and the exha
 
 **Generated:** 2026-06-30  
 **Machine-readable candidates:** `docs/catalog-cleanup-candidates.json`  
-**Current image coverage:** 95 / 263 catalog · 38 / 48 presets · fetchable queue TBD
+**Current image coverage:** 102 / 261 catalog · 40 / 48 presets · fetchable queue **0** (public-beta image pass complete)
+
+### Public-beta image completion pass (2026-06-30)
+
+Consolidated research, fetch, and safety review. No additional catalog removals. See `docs/IMAGE_COMPLETION_FINAL_REPORT.md`.
+
+| Metric | Before → After |
+| --- | ---: |
+| Catalog parts | 261 → **261** |
+| Local images | 95 → **102** |
+| Preset images | 38/48 → **40/48** |
+| Images added (kept) | **7** |
+| Images removed (review) | **16** |
+
+### Batch 1D-3.5 applied (2026-06-27)
+
+Removed **5** deprecated 3.5" freestyle frame entries from `src/data/parts.js`. Final sub-batch of Batch 1D deferred frame cleanup, applied after **Batch R3** frame replacements. No preset, calculation, or image changes.
+
+| Part ID | Issue |
+| --- | --- |
+| `betafpv-pavo3516-frame` | No Pavo3516 frame on betafpv.com |
+| `diatone-taycan35-frame` | No Taycan 3.5 frame kit on Diatone store |
+| `flywoo-explorer35-frame` | No Explorer 3.5 frame kit on flywoo.net |
+| `geprc-rocket-3-5-frame` | No GEPRC Rocket 3.5 frame kit on geprc.com |
+| `iflight-chimera3-frame` | Legacy Chimera3 frame-kit URL 404 |
+
+| Metric | Value |
+| --- | ---: |
+| Catalog before → after | 266 → **261** |
+| 3.5" frames before → after | 10 → **5** |
+| Image coverage | 95 / 266 → **95 / 261** |
+| Preset impact | 0 |
+
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **Batch 1D complete** (1D-LR + 1D-Cine + 1D-3.5).
 
 ### Batch 1D-Cine applied (2026-06-27)
 
@@ -24,7 +57,7 @@ Removed **4** legacy cinewhoop frame entries from `src/data/parts.js`. Second su
 | Image coverage | 95 / 267 → **95 / 263** |
 | Preset impact | 0 |
 
-Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** remains deferred.
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** applied (Batch 1D complete).
 
 ### Batch 1D-LR applied (2026-06-27)
 
@@ -43,7 +76,7 @@ Removed **3** invalid 7" long range frame entries from `src/data/parts.js`. Firs
 | Image coverage | 95 / 270 → **95 / 267** |
 | Preset impact | 0 |
 
-Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** remains deferred.
+Dry-run reference: `docs/CATALOG_CLEANUP_BATCH_1D_FRAMES_DRY_RUN.md` · **1D-3.5** applied (Batch 1D complete).
 
 ### Batch 1C applied (2026-06-27)
 

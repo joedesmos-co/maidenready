@@ -1,0 +1,350 @@
+{
+  "generatedAt": "2026-06-30T12:27:29.854Z",
+  "researched": 47,
+  "sourceFilesPatched": 9,
+  "summary": {
+    "exact_official_packshot_found": 6,
+    "official_source_blocked": 36,
+    "official_page_found_but_no_usable_packshot": 2,
+    "acceptable_official_family_packshot_found": 3
+  },
+  "results": [
+    {
+      "partId": "geprc-gep-cl35-v3-frame",
+      "partName": "GEPRC GEP-CL35 V3 Frame",
+      "categoryKey": "frame",
+      "officialUrl": "https://geprc.com/product/gep-cl35-v3-frame/",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://geprc.com/wp-content/uploads/2025/12/1_DeMain_0000.jpg",
+      "candidateScore": 21,
+      "usedInPreset": true
+    },
+    {
+      "partId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://rekonfpv.com/products/rekon7-pro-v2-7-inch-long-range-drone-kit",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "geprc-speedx2-2105-5-2650kv",
+      "partName": "GEPRC SPEEDX2 2105.5 2650KV",
+      "categoryKey": "motors",
+      "officialUrl": "https://geprc.com/product/geprc-speedx2-2105-5-2450kv-2650kv-3450kv-motor/",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://geprc.com/wp-content/uploads/2022/02/6-5.jpg",
+      "candidateScore": 21,
+      "usedInPreset": true
+    },
+    {
+      "partId": "aikon-ak32-50a-4in1",
+      "classification": "official_source_blocked",
+      "reason": "fetch failed",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hglrc-tekko32-f55-mini-esc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hglrc.com/products/hglrc-tekko32-f55-mini-55a-4in1-esc",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hobbywing-xrotor-60a",
+      "partName": "Hobbywing XRotor 60A 4-in-1",
+      "categoryKey": "esc",
+      "officialUrl": "https://www.hobbywing.com/en/products/xrotor-g2-60a-4in1-esc",
+      "classification": "official_page_found_but_no_usable_packshot",
+      "reason": "No image candidates on page.",
+      "preferredImageUrl": null,
+      "candidateScore": null,
+      "usedInPreset": false
+    },
+    {
+      "partId": "hobbywing-xrotor-g2-50a",
+      "partName": "Hobbywing XRotor G2 50A 4-in-1",
+      "categoryKey": "esc",
+      "officialUrl": "https://www.hobbywing.com/en/products/xrotor-g2-50a-4in1-esc",
+      "classification": "official_page_found_but_no_usable_packshot",
+      "reason": "No image candidates on page.",
+      "preferredImageUrl": null,
+      "candidateScore": null,
+      "usedInPreset": false
+    },
+    {
+      "partId": "tmotor-f55a-pro-ii",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://store.tmotor.com/product/f55a-pro-ii-4in1-esc.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "tmotor-velox45a-4in1",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://store.tmotor.com/product/velox-45a-4in1-esc.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "atomrc-f405-fc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.atomrc.com/atomrc-f405-fc-p00136p1.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "axisflying-h743-mini",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.axisflying.com/products/axisflying-h743-mini-fc",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "diatone-mamba-f722",
+      "partName": "Diatone Mamba F722 MK4",
+      "categoryKey": "flightController",
+      "officialUrl": "https://www.diatone.us/products/mamba-mk4-f722-app-flight-controller",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://www.diatone.us/cdn/shop/products/06_64cc3210-1d4c-4428-adf4-3c557e6c6552_1024x.jpg?v=1677553894",
+      "candidateScore": 28,
+      "usedInPreset": false
+    },
+    {
+      "partId": "hglrc-f722-silver-fc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hglrc.com/products/hglrc-f722-silver-flight-controller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "iflight-beast-f722-fc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://shop.iflight.com/Beast-F722-Flight-Controller-Pro1430",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "iflight-blitz-mini-e55s-4in1",
+      "partName": "iFlight BLITZ Mini E55S 4-in-1 ESC",
+      "categoryKey": "esc",
+      "officialUrl": "https://shop.iflight.com/BLITZ-Mini-E55S-4-IN-1-ESC-Pro2062",
+      "classification": "acceptable_official_family_packshot_found",
+      "reason": "Acceptable official product gallery image.",
+      "preferredImageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg",
+      "candidateScore": 12,
+      "usedInPreset": false
+    },
+    {
+      "partId": "tattu-1s-300-hv",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.genstattu.com/product/tattu-1s-300mah-75c-hv-lipo-battery.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "tattu-rline-4s-650",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.genstattu.com/product/tattu-r-line-4s-650mah-95c-lipo-battery.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "caddx-proview-cine-digital",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.caddxfpv.com/proview-cine-digital-system/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "caddx-ratel-lucky-whoop",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.caddxfpv.com/ratel-lucky-whoop/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "foxeer-pico-r-whoop",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.foxeer.com/pico-r-whoop-camera/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "tmotor-f1404-3800kv",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://store.tmotor.com/product/f1404-motor-kv3800-kv4600.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "tmotor-mn2004-2550kv",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://store.tmotor.com/product/mn2004-motor-kv2550.html",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "apc-7x4-2-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.apcprop.com/product/7x4-e/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "avan-3540-cine-d5",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://emaxmodel.com/products/emax-avan-3-5x4-0-prop-4pcs",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "avan-rush-3528",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://emaxmodel.com/products/emax-avan-rush-3-5x2-8-prop-4pcs",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "betafpv-40mm-4blade-1535",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://betafpv.com/products/40mm-4-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "emax-avan-40mm-whoop",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://emaxmodel.com/products/emax-avan-40mm-prop-4pcs",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-31mm-4blade-whoop",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-31mm-4-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-3522-hurricane",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-hurricane-3522-3-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-3528-cine-d5",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-3528-3-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-3528-freestyle",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-3528-3-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-7035-2-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-7035-2-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-7036-3-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-7036-3-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "gemfan-floppypop3-3518",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 403 for page https://www.gemfanhobby.com/products/gemfan-floppypop3-3518-3-blade-propeller",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "geprc-7038-2-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://geprc.com/product/geprc-7-inch-propeller/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-3525-pc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-3-5x2-5x3/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-3535-pc",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-3-5x3-5x3/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-3536-cine-d5",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-3-5x3-6x3/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-7030-3-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-7x3x3/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-7035-2-lr",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-7x3-5x2/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-durable-3530-cine",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/hq-3-5x3x3/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "hqprop-t65x30-whoop",
+      "classification": "official_source_blocked",
+      "reason": "HTTP 404 for page https://www.hqprop.com/product/t65x30/",
+      "preferredImageUrl": null
+    },
+    {
+      "partId": "betafpv-pavo35-frame-kit",
+      "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
+      "categoryKey": "frame",
+      "officialUrl": "https://betafpv.com/products/pavo35-brushless-whoop-frame",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://betafpv.com/products/pavo35-brushless-whoop-frame&amp;media=//betafpv.com/cdn/shop/files/d2e1b9aec379546f426ce88c187b9234_7825ca02-2d37-40da-a299-8051a920ac4c_1024x1024.jpg?v=1700808427&amp;description=Pavo35%20Brushless%20Whoop%20Frame",
+      "candidateScore": 27,
+      "usedInPreset": false
+    },
+    {
+      "partId": "betafpv-x-knight-35-frame-kit",
+      "partName": "BETAFPV X-Knight 35 Frame Kit",
+      "categoryKey": "frame",
+      "officialUrl": "https://betafpv.com/products/x-knight-35-frame-kit",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://betafpv.com/cdn/shop/products/74b96dbb2d19db9758ba306fc55ad040_0d26a6be-fd09-4c63-b209-507873b292a6_1024x1024.jpg?v=1628040715",
+      "candidateScore": 28,
+      "usedInPreset": false
+    },
+    {
+      "partId": "geprc-gep-st35-frame",
+      "partName": "GEPRC GEP-ST35 Frame",
+      "categoryKey": "frame",
+      "officialUrl": "https://geprc.com/product/gep-st35-frame/",
+      "classification": "exact_official_packshot_found",
+      "reason": "High-scoring manufacturer CDN product image.",
+      "preferredImageUrl": "https://geprc.com/wp-content/uploads/2021/06/1-1.jpg",
+      "candidateScore": 21,
+      "usedInPreset": false
+    },
+    {
+      "partId": "iflight-aos-3-5-v5-1-frame",
+      "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
+      "categoryKey": "frame",
+      "officialUrl": "https://shop.iflight.com/AOS-3.5-V5-FPV-Frame-Kit-Pro2126",
+      "classification": "acceptable_official_family_packshot_found",
+      "reason": "Acceptable official product gallery image.",
+      "preferredImageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260316/142511/admin15/21385.png?imageView2/1/w/300/h/300/",
+      "candidateScore": 11,
+      "usedInPreset": false
+    },
+    {
+      "partId": "iflight-aos-cine35-v5-frame",
+      "partName": "iFlight AOS Cine35 V5 Frame Kit",
+      "categoryKey": "frame",
+      "officialUrl": "https://shop.iflight.com/AOS-Cine35-V5-Frame-Kit-Pro2297",
+      "classification": "acceptable_official_family_packshot_found",
+      "reason": "Acceptable official product gallery image.",
+      "preferredImageUrl": "https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/AOS/AOS-CIne35-V5-F1.png",
+      "candidateScore": 11,
+      "usedInPreset": false
+    }
+  ]
+}

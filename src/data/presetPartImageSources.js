@@ -7,9 +7,14 @@
  * - imageStatus is always "needs review" until a verified licensed asset is on file.
  * - officialUrl values are brand-domain pages only (no third-party retailers).
  *
- * Last researched: 2026-06-29 (targeted official-source image pass)
+ * Last researched: 2026-06-27 (public-beta image completion pass)
  */
-export const presetPartImageSources = [
+import {
+  PRESET_SUPPLEMENTAL_PART_IDS,
+  supplementalPartImageSources,
+} from "./supplementalPartImageSources.js";
+
+const basePresetPartImageSources = [
   {
     partId: "aos-3-5-v5",
     partName: "AOS 3.5 V5",
@@ -678,6 +683,13 @@ export const presetPartImageSources = [
     expectedImagePath: "/parts/vtx/tbs-unify-pro32-hv.jpg",
     notes: "Official Team BlackSheep Unify Pro32 HV VTX store page.",
   },
+];
+
+export const presetPartImageSources = [
+  ...basePresetPartImageSources,
+  ...supplementalPartImageSources.filter((entry) =>
+    PRESET_SUPPLEMENTAL_PART_IDS.has(entry.partId),
+  ),
 ];
 
 export const getPresetPartImageSource = (partId) =>

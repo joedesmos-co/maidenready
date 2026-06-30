@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:42:54.518Z",
+  "updatedAt": "2026-06-30T12:27:33.698Z",
   "candidates": [
     {
       "partId": "aos-3-5-v5",
@@ -1026,6 +1026,22 @@
       "notes": "Official full-drone listing; frame-only SKU not clearly separated. Source page appears to show a complete aircraft, not an isolated frame SKU. Frame listing shows complete aircraft; no isolated frame packshot expected."
     },
     {
+      "partId": "geprc-gep-cl35-v3-frame",
+      "partName": "GEPRC GEP-CL35 V3 Frame",
+      "category": "Frame",
+      "sourcePageUrl": "https://geprc.com/product/gep-cl35-v3-frame/",
+      "imageUrl": "https://geprc.com/wp-content/uploads/2025/12/1_DeMain_0000.jpg",
+      "localPath": "public/parts/frames/geprc-gep-cl35-v3-frame.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "medium",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official GEPRC GEP-CL35 V3 isolated frame-kit page; Cinewhoop Cruiser preset frame."
+    },
+    {
       "partId": "geprc-gep-f411-35a-aio-esc",
       "partName": "GEPRC GEP-F411-35A AIO ESC",
       "category": "ESC",
@@ -1088,6 +1104,22 @@
       "recommendation": "remove",
       "status": "skipped",
       "notes": "Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Manufacturer page is AIO combo; no isolated FC packshot."
+    },
+    {
+      "partId": "geprc-speedx2-2105-5-2650kv",
+      "partName": "GEPRC SPEEDX2 2105.5 2650KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://geprc.com/product/geprc-speedx2-2105-5-2450kv-2650kv-3450kv-motor/",
+      "imageUrl": "https://geprc.com/wp-content/uploads/2022/02/6-5.jpg",
+      "localPath": "public/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "medium",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official GEPRC SPEEDX2 2105.5 motor page; Cinewhoop Cruiser preset motors."
     },
     {
       "partId": "gnb-4s-1500",
@@ -1538,6 +1570,22 @@
       "notes": "Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)"
     },
     {
+      "partId": "rekon-hglrc-rekon7-pro-v2-frame",
+      "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
+      "category": "Frame",
+      "sourcePageUrl": "https://rekonfpv.com/products/rekon7-pro-v2-7-inch-long-range-drone-kit",
+      "imageUrl": null,
+      "localPath": "public/parts/frames/rekon-hglrc-rekon7-pro-v2-frame.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "medium",
+      "appearance": "lifestyle photo",
+      "watermarkOrBranding": "Marketing-style asset; check for composite branding or scene elements.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "failed",
+      "notes": "Official Rekon7 PRO V2 product page; verify isolated frame-kit gallery vs complete aircraft. Source page appears to show a complete aircraft, not an isolated frame SKU. HTTP 404 for page https://rekonfpv.com/products/rekon7-pro-v2-7-inch-long-range-drone-kit"
+    },
+    {
       "partId": "rekon7-pro-lr",
       "partName": "Rekon7 Pro Long Range",
       "category": "Frame",
@@ -1939,8 +1987,10 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:42:54.518Z",
-    "removedPartIds": [],
-    "retainedDownloadedCount": 38
+    "date": "2026-06-30T12:27:33.696Z",
+    "removedPartIds": [
+      "foxeer-reaper-nano-v2-vtx"
+    ],
+    "retainedDownloadedCount": 40
   }
 }

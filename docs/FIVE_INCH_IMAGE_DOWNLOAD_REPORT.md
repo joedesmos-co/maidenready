@@ -5,15 +5,15 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-29T19:42:54.724Z
+Last updated: 2026-06-30T12:27:57.276Z
 
-Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); **49** retained for review.
+Last local cleanup: 2026-06-30T12:27:57.274Z — removed 12 unsure local JPG(s); **50** retained for review.
 
 ## Summary
 
-- Downloaded local JPG candidates: **51**
-- Rejected / not saved candidates: **142**
-- Recommendation counts: **49 keep for review**, **0 unsure**, **144 remove**
+- Downloaded local JPG candidates: **52**
+- Rejected / not saved candidates: **143**
+- Recommendation counts: **50 keep for review**, **0 unsure**, **145 remove**
 
 ## Rules applied
 
@@ -144,7 +144,22 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official CNHL Ministar 6S 1500mAh 120C battery page. Converted official WEBP source to local JPG (dev script only).
 
-### 9. Diatone Mamba F55 128K 4-in-1 (`diatone-mamba-f55-128k`)
+### 9. Diatone Mamba F405 Mini (`diatone-mamba-f405-mini`)
+
+- **Category:** Flight Controller
+- **Manufacturer/source page URL:** https://www.diatone.us/products/mamba-mk4-f405mini-flight-control-20mm-m2
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/flight-controllers/diatone-mamba-f405-mini.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** high
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official Diatone MAMBA MK4 F405MINI isolated flight controller page on diatone.us. Local JPG present; re-evaluating recommendation before retention.
+
+### 10. Diatone Mamba F55 128K 4-in-1 (`diatone-mamba-f55-128k`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.diatone.us/products/mb-f55_128k-bl32-esc
@@ -159,7 +174,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Diatone Mamba F55_128K AM32 4-in-1 ESC page. Converted official WEBP source to local JPG (dev script only).
 
-### 10. Diatone Mamba F55 Pro 55A 4-in-1 (`diatone-mamba-f55-pro-esc`)
+### 11. Diatone Mamba F55 Pro 55A 4-in-1 (`diatone-mamba-f55-pro-esc`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.diatone.us/products/mamba-f55_bls-dshot600-4in1-esc-40a-6s-2
@@ -174,7 +189,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Diatone Mamba F55_BLS 55A 4-in-1 ESC page. Converted official WEBP source to local JPG (dev script only).
 
-### 11. Diatone Roma F5 Frame (`diatone-roma-f5-frame`)
+### 12. Diatone Roma F5 Frame (`diatone-roma-f5-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.diatone.us/products/diatone-roma-f5-v2-frame-kit
@@ -189,7 +204,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Diatone Roma F5 V2 frame kit; current Roma F5 generation. Converted official WEBP source to local JPG (dev script only).
 
-### 12. EMAX ECO II 2207 1900KV (`emax-eco-ii-2207-1900kv`)
+### 13. EMAX ECO II 2207 1900KV (`emax-eco-ii-2207-1900kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2207-brushless-motor-1700kv-1900kv-2400kv
@@ -204,7 +219,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official EMAX ECO II 2207 motor page; 1900KV is a listed variant. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source URL metadata; removed per cleanup policy.
 
-### 13. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
+### 14. EMAX ECO II 2306 1900KV (`emax-eco-ii-2306-1900`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://emax-usa.com/products/eco-ii-2306-brushless-motor-1700kv-1900kv-2400kv
@@ -219,7 +234,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official EMAX ECO II 2306 motor page; 1900KV is a listed variant. Converted official WEBP source to local JPG (dev script only).
 
-### 14. FrSky R-XSR (`frsky-r-xsr`)
+### 15. FrSky R-XSR (`frsky-r-xsr`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.frsky-rc.com/product/r-xsr/
@@ -234,7 +249,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official FrSky R-XSR receiver page. Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo.
 
-### 15. FrSky XSR SBUS (`frsky-xsr-sbus`)
+### 16. FrSky XSR SBUS (`frsky-xsr-sbus`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.frsky-rc.com/product/xsr/
@@ -249,7 +264,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official FrSky XSR SBUS receiver page. Rejected after manual review: low-confidence source; graphic icon placeholder, not a product photo.
 
-### 16. Gemfan Hurricane 51433 (`gemfan-51433`)
+### 17. Gemfan Hurricane 51433 (`gemfan-51433`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/51433-hurricane-pc-3-blade.html
@@ -264,7 +279,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 51433 prop page.
 
-### 17. Gemfan Hurricane 5152 (`gemfan-5152`)
+### 18. Gemfan Hurricane 5152 (`gemfan-5152`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/5152s-flash-pc-3-blade.html
@@ -279,7 +294,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** No Hurricane 5152 listing; Gemfan 5152S Flash 3-blade is closest official 5152-class prop. Rejected after manual review: low-confidence source; removed per cleanup policy. Rejected after manual review: low-confidence source; removed per cleanup policy. Rejected after manual review: low-confidence source; removed per cleanup policy.
 
-### 18. Gemfan Hurricane 5236 (`gemfan-5236`)
+### 19. Gemfan Hurricane 5236 (`gemfan-5236`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/5236-hurricane-pc-3-blade.html
@@ -294,7 +309,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 5236 prop page.
 
-### 19. Gemfan Hurricane 51499 (`gemfan-hurricane-51499`)
+### 20. Gemfan Hurricane 51499 (`gemfan-hurricane-51499`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.gemfanhobby.com/51499-hurricane-pc-3-blade.html
@@ -309,7 +324,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 51499 prop page.
 
-### 20. GEPRC Mark5 Deadcat (`geprc-mark5`)
+### 21. GEPRC Mark5 Deadcat (`geprc-mark5`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://geprc.com/product/geprc-gep-mk5-frame/
@@ -324,7 +339,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official GEPRC GEP-MK5 frame page; deadcat is a geometry variant on same platform.
 
-### 21. Happymodel EP2 Cine ELRS (`happymodel-cine-ep2-elrs`)
+### 22. Happymodel EP2 Cine ELRS (`happymodel-cine-ep2-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
@@ -339,7 +354,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP2 Cine shares manufacturer product photo. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 22. Happymodel EP1 Dual ELRS (`happymodel-ep1-dual-elrs`)
+### 23. Happymodel EP1 Dual ELRS (`happymodel-ep1-dual-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
@@ -354,7 +369,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EP1/EP2/EP1 Dual ELRS family page; EP1 Dual shares manufacturer product photo. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 23. Happymodel EP2 2.4GHz ELRS (`happymodel-ep2-5inch-elrs`)
+### 24. Happymodel EP2 2.4GHz ELRS (`happymodel-ep2-5inch-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
@@ -369,7 +384,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EP2 2.4GHz ELRS receiver page. Rejected after manual review: composite lineup of multiple receivers, not an isolated EP2 5-inch SKU.
 
-### 24. Happymodel EX0802 19000KV (`happymodel-ex0802-19000kv`)
+### 25. Happymodel EX0802 19000KV (`happymodel-ex0802-19000kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/
@@ -384,7 +399,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EX0802 family page lists 19000KV; isolated packshot has no conflicting KV marking. Local JPG present; re-evaluating recommendation before retention.
 
-### 25. Happymodel SE0802 22000KV (`happymodel-se0802-22000kv`)
+### 26. Happymodel SE0802 22000KV (`happymodel-se0802-22000kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2020/05/29/happymodel-ex0802-new-series-brushless-motor-for-mobula6-mobula6-hd/
@@ -399,7 +414,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EX0802 family page lists 22000KV; SE0802 naming superseded but KV variant verified on manufacturer page. Local JPG present; re-evaluating recommendation before retention.
 
-### 26. HDZero Freestyle VTX (`hdzero-freestyle-vtx`)
+### 27. HDZero Freestyle VTX (`hdzero-freestyle-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/freestyle-v2-vtx
@@ -414,7 +429,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official HDZero Freestyle V2 VTX page; catalog Freestyle VTX maps to current V2 listing. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 27. HDZero Nano 90 (`hdzero-nano-90`)
+### 28. HDZero Nano 90 (`hdzero-nano-90`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/hdzero-nano-90-v2
@@ -429,7 +444,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HDZero Nano 90 V2 camera page; supersedes original Nano 90. Converted official PNG source to local JPG (dev script only). Rejected after manual review: manufacturer logo graphic only, not the HDZero Nano 90 camera product.
 
-### 28. HDZero Race VTX (`hdzero-race-vtx`)
+### 29. HDZero Race VTX (`hdzero-race-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.hd-zero.com/product-page/hdzero-race-v3-vtx
@@ -444,7 +459,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official HDZero Race V3 VTX page; catalog Race VTX maps to current V3 listing. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 29. Holybro Kakute H7 V2 (`holybro-kakute-h7-v2`)
+### 30. Holybro Kakute H7 V2 (`holybro-kakute-h7-v2`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://holybro.com/products/kakute-h7-v2
@@ -459,7 +474,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Holybro Kakute H7 V2 flight controller page. Converted official WEBP source to local JPG (dev script only).
 
-### 30. HQProp 5135 V2 (`hqprop-5135-v2`)
+### 31. HQProp 5135 V2 (`hqprop-5135-v2`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5135-v2-2cw2ccw-poly-carbonate-p0123.html
@@ -474,7 +489,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 5135 V2 prop page. Local JPG present; re-evaluating recommendation before retention.
 
-### 31. HQProp 5x4.5x3 V1S (`hqprop-5x4-5x3-v1s`)
+### 32. HQProp 5x4.5x3 V1S (`hqprop-5x4-5x3-v1s`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.hqprop.com/hq-durable-prop-5x4-5x3v1s-2cw2ccw-poly-carbonate-p0132.html
@@ -489,7 +504,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 5x4.5x3 V1S durable prop page. Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU. Rejected after manual review: prop labeled 7x3.5x3, not the 5x4.5x3 V1S catalog SKU.
 
-### 32. HQProp Durable 5040 V2 (`hqprop-durable-5040-v2`)
+### 33. HQProp Durable 5040 V2 (`hqprop-durable-5040-v2`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5040-v2-2cw2ccw-poly-carbonate-p0144.html
@@ -504,7 +519,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp Durable 5040 V2 prop page. Local JPG present; re-evaluating recommendation before retention.
 
-### 33. HQProp Ethix S5 5x4x3 (`hqprop-ethix-s5`)
+### 34. HQProp Ethix S5 5x4x3 (`hqprop-ethix-s5`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-ethix-s5-5x4x3-2cw2ccw-poly-carbonate-p0201.html
@@ -519,7 +534,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp Ethix S5 5x4x3 prop page. Local JPG present; re-evaluating recommendation before retention.
 
-### 34. HQProp V2S 5x4.3x3 (`hqprop-v2s-5043`)
+### 35. HQProp V2S 5x4.3x3 (`hqprop-v2s-5043`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hq-durable-prop-5x43x3v2s-2cw2ccw-poly-carbonate-p0098.html
@@ -534,7 +549,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp V2S 5x4.3x3 prop page. Local JPG present; re-evaluating recommendation before retention.
 
-### 35. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
+### 36. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197
@@ -549,7 +564,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Local JPG present; re-evaluating recommendation before retention.
 
-### 36. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
+### 37. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464
@@ -564,7 +579,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Local JPG present; re-evaluating recommendation before retention.
 
-### 37. Matek F405-SE FC (`matek-f405-se-fc`)
+### 38. Matek F405-SE FC (`matek-f405-se-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f405-se
@@ -579,7 +594,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Matek F405-SE flight controller portfolio page. Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot. Local JPG missing on disk during report sync.
 
-### 38. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
+### 39. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://ovonicshop.com/products/ovonic-1300mah-6s-22-2v-100c-lipo-battery-with-xt60-for-fpv
@@ -594,7 +609,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Ovonic 6S 1300mAh 100C battery page. Converted official WEBP source to local JPG (dev script only).
 
-### 39. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
+### 40. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/29.html
@@ -609,7 +624,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RCinPower GTS V2 2207 Plus motor page; 1950KV is a listed variant. Local JPG present; re-evaluating recommendation before retention.
 
-### 40. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
+### 41. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/61.html
@@ -624,7 +639,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RCinPower GTS V3 2207 family page (AOS Supernova 2207 listing); 1860KV variant not separately listed. Local JPG present; re-evaluating recommendation before retention.
 
-### 41. Rotor Riot CL2 5-inch (`rotor-riot-cl2`)
+### 42. Rotor Riot CL2 5-inch (`rotor-riot-cl2`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rotorriot.com/products/cl2-5-frame
@@ -639,7 +654,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Rotor Riot CL2 5-inch frame page. Converted official WEBP source to local JPG (dev script only).
 
-### 42. RunCam Nano 2 (`runcam-nano-2`)
+### 43. RunCam Nano 2 (`runcam-nano-2`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-2/
@@ -654,7 +669,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam Nano 2 camera page on RunCam store.
 
-### 43. RunCam Racer 2 (`runcam-racer-2`)
+### 44. RunCam Racer 2 (`runcam-racer-2`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-racer-2/
@@ -669,7 +684,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam Racer 2 camera page on RunCam store.
 
-### 44. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
+### 45. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/ta-rl3-120c-1050-6s1p.html
@@ -684,7 +699,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 6S 1050mAh 120C battery page. Local JPG present; re-evaluating recommendation before retention.
 
-### 45. Tattu R-Line 6S 1400mAh 130C (`tattu-rline-6s-1400`)
+### 46. Tattu R-Line 6S 1400mAh 130C (`tattu-rline-6s-1400`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/ta-rl3-120c-1400-6s1p.html
@@ -699,7 +714,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 6S 1400mAh 120C battery page (R-Line V3).
 
-### 46. TBS Crossfire Micro LR (`tbs-crossfire-micro-lr`)
+### 47. TBS Crossfire Micro LR (`tbs-crossfire-micro-lr`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_mrx
@@ -714,7 +729,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official TBS Crossfire Micro RX V2 page; 915MHz Micro LR maps to Crossfire Micro RX V2 listing. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 47. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
+### 48. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_mrx
@@ -729,7 +744,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official TBS Crossfire Micro RX V2 receiver page. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 48. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
+### 49. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_nano
@@ -744,7 +759,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official TBS Unify Pro32 Nano VTX page. Local JPG exists; exact source image URL not recorded in manifest yet.
 
-### 49. Walksnail Avatar GT VTX (`walksnail-avatar-gt-vtx`)
+### 50. Walksnail Avatar GT VTX (`walksnail-avatar-gt-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-gt-vtx
@@ -759,7 +774,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Walksnail Avatar GT VTX page on Caddx store.
 
-### 50. Walksnail Avatar HD V2 VTX (`walksnail-avatar-hd-v2`)
+### 51. Walksnail Avatar HD V2 VTX (`walksnail-avatar-hd-v2`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-hd-vtx-v2-only
@@ -774,7 +789,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Walksnail Avatar HD V2 VTX module page on Caddx store. Converted official WEBP source to local JPG (dev script only).
 
-### 51. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
+### 52. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing-e-pro-2207-2-6s-fpv-nextgen-motor-pro874
@@ -1109,7 +1124,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 ### 22. CNHL 4S 1500mAh 100C (`cnhl-4s-1500-freestyle`)
 
 - **Category:** Battery
-- **Manufacturer/source page URL:** https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1500mah-14-8v-4s-130c-lipo-battery-with-xt60-plug
+- **Manufacturer/source page URL:** https://chinahobbyline.com/products/cnhl-black-series-1500mah-14-8v-4s-100c-lipo-battery-with-xt60-plug
 - **Exact image URL downloaded:** —
 - **Local file path:** public/parts/batteries/cnhl-4s-1500-freestyle.jpg
 - **Status:** skipped
@@ -1119,7 +1134,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official CNHL 4S 1500mAh Black Series page; manufacturer lists 130C variant (100C not currently listed). Skipped low-confidence source URL (use --include-low-confidence).
+- **Notes:** Official CNHL store redirects single 1500mAh 100C URL to a 2-pack 130C listing; gallery image shows X2 bundle graphic and 130C label — no verified single-pack 100C packshot. Skipped low-confidence source URL (use --include-low-confidence).
 
 ### 23. CNHL Black Series 6S 1500mAh 100C (`cnhl-6s-1500-freestyle`)
 
@@ -1449,7 +1464,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. Skipped low-confidence source URL (use --include-low-confidence).
+- **Notes:** Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1780KV line does not match current manufacturer product. Skipped low-confidence source URL (use --include-low-confidence).
 
 ### 45. FPVCycle Motor 2207 1960KV (`fpvcycle-2207-1960`)
 
@@ -1479,7 +1494,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. Skipped low-confidence source URL (use --include-low-confidence).
+- **Notes:** Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1960KV line does not match current manufacturer product. Skipped low-confidence source URL (use --include-low-confidence).
 
 ### 47. Gemfan Hurricane 5152 (`gemfan-5152`)
 
@@ -1794,7 +1809,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
 - **imageNeedsReview:** true
 - **Recommendation:** remove
-- **Notes:** Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Skipped low-confidence source URL (use --include-low-confidence).
+- **Notes:** Hypetrain Acer 2306 1950KV has no manufacturer-owned product page; Rotor Riot retailer listing 404. Hypetrain is retailer-exclusive — not a valid official manufacturer source. Skipped low-confidence source URL (use --include-low-confidence).
 
 ### 68. Hypetrain Blaster 2207 2450KV (`hypetrain-blaster-2450`)
 
@@ -1811,7 +1826,22 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor.
 
-### 69. iFlight Beast F722 FC (`iflight-beast-f722-fc`)
+### 69. Hypetrain Blaster 2207 2450KV (`hypetrain-blaster-2450`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://rotorriot.com/products/hypetrain-blaster-2207-2450kv-motor
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/motors/hypetrain-blaster-2207.jpg
+- **Status:** skipped
+- **Source type:** manufacturer page
+- **Confidence:** low
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Hypetrain has no manufacturer store; Rotor Riot retailer page gallery image is a Gemfan propeller, not the Blaster motor SKU. Skipped low-confidence source URL (use --include-low-confidence).
+
+### 70. iFlight Beast F722 FC (`iflight-beast-f722-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://shop.iflight.com/Beast-F722-Flight-Controller-Pro1430
@@ -1826,7 +1856,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight Beast F722 flight controller page. HTTP 404 for page https://shop.iflight.com/Beast-F722-Flight-Controller-Pro1430
 
-### 70. iFlight Nazgul Eco5 Frame (`iflight-nazgul-eco5-frame`)
+### 71. iFlight Nazgul Eco5 Frame (`iflight-nazgul-eco5-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-6S-Pro2193
@@ -1841,7 +1871,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Full BNF drone listing; frame-only SKU not clearly separated on manufacturer store. Manufacturer listing is complete BNF aircraft; no isolated frame packshot.
 
-### 71. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
+### 72. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197
@@ -1856,7 +1886,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
 
-### 72. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
+### 73. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197
@@ -1871,7 +1901,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
 
-### 73. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
+### 74. iFlight Nazgul5 V3 Frame (`iflight-nazgul5-v3-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/Nazgul-XL5-ECO-Frame-Kit-Pro2197
@@ -1886,7 +1916,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight Nazgul5 V3 / XL5 ECO frame kit page (same frame kit). Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260609/084249/admin15/34846.png?imageView2/1/w/200/h/200/
 
-### 74. iFlight SucceX-E F4 50A 4-in-1 (`iflight-succex-e-f4-50a`)
+### 75. iFlight SucceX-E F4 50A 4-in-1 (`iflight-succex-e-f4-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://shop.iflight.com/SucceX-E-F4-50A-4-in-1-ESC-Pro1420
@@ -1901,7 +1931,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight SucceX-E F4 50A 4-in-1 ESC page. HTTP 404 for page https://shop.iflight.com/SucceX-E-F4-50A-4-in-1-ESC-Pro1420
 
-### 75. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
+### 76. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
@@ -1916,7 +1946,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
 
-### 76. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
+### 77. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
@@ -1931,7 +1961,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
 
-### 77. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
+### 78. iFlight XING2 2207 2750KV (`iflight-xing2-2207-2750kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/XING2-2207-4S-6S-FPV-Motor-Unibell-Black-for-Nazgul-Evoque-F5-pro1610
@@ -1946,7 +1976,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official iFlight XING2 2207 motor page; 2750KV variant shares product family listing. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260529/103309/admin15/20143.png?imageView2/1/w/300/h/300/
 
-### 78. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
+### 79. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/replacement-parts-for-xl5-v5-frame-pro1303
@@ -1961,7 +1991,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** XL5 V6 frame discontinued; manufacturer replacement-parts page covers XL5/Nazgul5 V3 frame family. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Drone-Frame/Nazgul-Evoque-F5/F5-V3/Nazgul-F5V3-M1.jpg
 
-### 79. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
+### 80. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/replacement-parts-for-xl5-v5-frame-pro1303
@@ -1976,7 +2006,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** XL5 V6 frame discontinued; manufacturer replacement-parts page covers XL5/Nazgul5 V3 frame family. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/store/product/Race-Drone/Mach-R5-Ultra/Mach-R5-Ultra-HDZero-2.jpg
 
-### 80. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
+### 81. iFlight XL5 V6 5-inch (`iflight-xl5-v6`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://shop.iflight.com/replacement-parts-for-xl5-v5-frame-pro1303
@@ -1991,7 +2021,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** XL5 V6 frame discontinued; manufacturer replacement-parts page covers XL5/Nazgul5 V3 frame family. Candidate URL identified but no local JPG saved yet. HTTP 403 for image https://iflight.oss-cn-hongkong.aliyuncs.com/oss/20260609/084249/admin15/34846.png?imageView2/1/w/200/h/200/
 
-### 81. ImmersionRC Fusion V2 ELRS (`imm-rc-fusion-v2-elrs`)
+### 82. ImmersionRC Fusion V2 ELRS (`imm-rc-fusion-v2-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.immersionrc.com/fusion/
@@ -2006,7 +2036,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official ImmersionRC Fusion product family page; V2 ELRS variant not separately listed. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 82. ImmersionRC Fusion V2 ELRS (`imm-rc-fusion-v2-elrs`)
+### 83. ImmersionRC Fusion V2 ELRS (`imm-rc-fusion-v2-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.immersionrc.com/fusion/
@@ -2021,7 +2051,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official ImmersionRC Fusion product family page; V2 ELRS variant not separately listed. HTTP 503 for page https://www.immersionrc.com/fusion/
 
-### 83. ImpulseRC ApexDC 5-inch (`impulserc-apexdc`)
+### 84. ImpulseRC ApexDC 5-inch (`impulserc-apexdc`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://apex-docs.impulserc.com/
@@ -2036,7 +2066,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** ImpulseRC closed; official Apex build guide is the best remaining manufacturer reference for ApexDC frames. ImpulseRC closed; remaining page is a build guide, not a product photo source.
 
-### 84. ImpulseRC Reverb 5 Frame (`impulserc-reverb5-frame`)
+### 85. ImpulseRC Reverb 5 Frame (`impulserc-reverb5-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://impulserc.com/
@@ -2051,7 +2081,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** ImpulseRC closed; manufacturer homepage is the remaining official reference for Reverb frames. ImpulseRC closed; no reliable product photo source expected.
 
-### 85. JHEMCU EP28 2.4GHz ELRS (`jhemcu-ep28-elrs`)
+### 86. JHEMCU EP28 2.4GHz ELRS (`jhemcu-ep28-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.jhemcu.com/
@@ -2066,7 +2096,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official JHEMCU store homepage; EP28 ELRS has no stable direct product URL. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 86. JHEMCU EP28 2.4GHz ELRS (`jhemcu-ep28-elrs`)
+### 87. JHEMCU EP28 2.4GHz ELRS (`jhemcu-ep28-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.jhemcu.com/
@@ -2081,7 +2111,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official JHEMCU store homepage; EP28 ELRS has no stable direct product URL. No manufacturer-owned image candidates found on page.
 
-### 87. JHEMCU G743 Pro FC (`jhemcu-g743-pro-fc`)
+### 88. JHEMCU G743 Pro FC (`jhemcu-g743-pro-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.jhemcu.com/
@@ -2096,7 +2126,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official JHEMCU store homepage; G743 Pro FC has no stable direct product URL. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 88. JHEMCU G743 Pro FC (`jhemcu-g743-pro-fc`)
+### 89. JHEMCU G743 Pro FC (`jhemcu-g743-pro-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.jhemcu.com/
@@ -2111,7 +2141,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official JHEMCU store homepage; G743 Pro FC has no stable direct product URL. No manufacturer-owned image candidates found on page.
 
-### 89. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+### 90. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
@@ -2126,7 +2156,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source; image shows Lumenier 2307 1750KV V3 motor, wrong SKU.
 
-### 90. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
+### 91. JohnnyFPV V2 2207 1960KV (`johnnyfpv-motor-v2-2207-1960kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-2307-johnnyfpv-v3-pro-cinematic-motor
@@ -2141,7 +2171,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** JohnnyFPV V2 2207 discontinued; closest official Lumenier JohnnyFPV motor listing is V3 2307. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 91. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+### 92. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
@@ -2156,7 +2186,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source; image shows Lumenier ZIP V2 3115 900KV motor, wrong SKU.
 
-### 92. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
+### 93. Lumenier AX 2207 1800KV (`lumenier-2207-1800kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.lumenier.com/collections/motors
@@ -2171,7 +2201,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Lumenier AX 2207 1800KV no longer has a dedicated product page; official motors collection is best manufacturer reference. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 93. Lumenier N2O 6S 1100mAh 120C (`lumenier-6s-1100`)
+### 94. Lumenier N2O 6S 1100mAh 120C (`lumenier-6s-1100`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-n2o-6s-1100mah-120c-lipo-battery
@@ -2186,7 +2216,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Lumenier N2O 6S 1100mAh 120C battery page. HTTP 404 for page https://www.lumenier.com/products/lumenier-n2o-6s-1100mah-120c-lipo-battery
 
-### 94. Lumenier N2O 6S 1250mAh 120C (`lumenier-6s-1250-freestyle`)
+### 95. Lumenier N2O 6S 1250mAh 120C (`lumenier-6s-1250-freestyle`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-n2o-6s-1250mah-120c-lipo-battery
@@ -2201,7 +2231,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Lumenier N2O 6S 1250mAh 120C battery page. HTTP 404 for page https://www.lumenier.com/products/lumenier-n2o-6s-1250mah-120c-lipo-battery
 
-### 95. Lumenier QAV-S JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
+### 96. Lumenier QAV-S JohnnyFPV SE (`lumenier-qav-s-johnnyfpv`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://www.lumenier.com/products/lumenier-qav-s-2-johnnyfpv-se-5-frame-kit
@@ -2216,7 +2246,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Lumenier QAV-S 2 JohnnyFPV SE 5-inch frame kit page. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line. Rejected after manual review: image labels QAV-S 2 JohnnyFPV Edition, not the QAV-S JohnnyFPV SE catalog line.
 
-### 96. Matek F405-SE FC (`matek-f405-se-fc`)
+### 97. Matek F405-SE FC (`matek-f405-se-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f405-se
@@ -2231,7 +2261,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Matek F405-SE flight controller portfolio page. Official Matek portfolio page only exposes spec-sheet composite (board + text), not an isolated packshot.
 
-### 97. Matek F722 Mini (`matek-f722-mini`)
+### 98. Matek F722 Mini (`matek-f722-mini`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-mini
@@ -2246,7 +2276,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Matek F722 Mini flight controller portfolio page. Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot. Local JPG missing on disk during report sync.
 
-### 98. Matek F722 Mini (`matek-f722-mini`)
+### 99. Matek F722 Mini (`matek-f722-mini`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-mini
@@ -2261,7 +2291,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Matek F722 Mini flight controller portfolio page. Official Matek portfolio page only exposes spec-sheet composite (board + text), not an isolated packshot.
 
-### 99. Matek F722-STD FC (`matek-f722-std-fc`)
+### 100. Matek F722-STD FC (`matek-f722-std-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-std
@@ -2276,7 +2306,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Matek F722-STD flight controller portfolio page. Rejected after manual review: manufacturer spec-sheet composite, not an isolated FC packshot. Local JPG missing on disk during report sync.
 
-### 100. Matek F722-STD FC (`matek-f722-std-fc`)
+### 101. Matek F722-STD FC (`matek-f722-std-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=f722-std
@@ -2291,7 +2321,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Matek F722-STD flight controller portfolio page. Official Matek portfolio page only exposes spec-sheet composite (board + text), not an isolated packshot.
 
-### 101. Matek H743 Slate Freestyle (`matek-h743-slate-freestyle`)
+### 102. Matek H743 Slate Freestyle (`matek-h743-slate-freestyle`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-slim-v4
@@ -2306,7 +2336,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** No H743 Slate SKU on Matek; H743-SLIM-V4 is closest official H743 freestyle board. Rejected after manual review: H743-SLIM-V4 spec-sheet composite; wrong variant for Slate Freestyle SKU.
 
-### 102. Matek H743 Slate Freestyle (`matek-h743-slate-freestyle`)
+### 103. Matek H743 Slate Freestyle (`matek-h743-slate-freestyle`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-slim-v4
@@ -2321,7 +2351,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** No H743 Slate SKU on Matek; H743-SLIM-V4 is closest official H743 freestyle board. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 103. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
+### 104. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2336,7 +2366,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex F55 not on standalone product page; official MEPS manufacturer store homepage. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source; homepage NEW UPDATE banner, not ESC product photo.
 
-### 104. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
+### 105. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2351,7 +2381,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex F55 not on standalone product page; official MEPS manufacturer store homepage. Candidate URL identified but no local JPG saved yet. Unsupported unknown format for https://img-meps.mepsking.top/material/1/new-pc.jpg?x-oss-process=image/format,avif
 
-### 105. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
+### 106. MEPS Konvex F55 55A 4-in-1 (`meps-konvex-f55-55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2366,7 +2396,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex F55 not on standalone product page; official MEPS manufacturer store homepage. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 106. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
+### 107. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2381,7 +2411,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex G2 not on standalone product page; official MEPS manufacturer store homepage. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source; homepage NEW UPDATE banner, not ESC product photo.
 
-### 107. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
+### 108. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2396,7 +2426,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex G2 not on standalone product page; official MEPS manufacturer store homepage. Candidate URL identified but no local JPG saved yet. Unsupported unknown format for https://img-meps.mepsking.top/material/1/new-pc.jpg?x-oss-process=image/format,avif
 
-### 108. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
+### 109. MEPS Konvex G2 50A 4-in-1 (`meps-konvex-g2-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.mepsking.com/
@@ -2411,7 +2441,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** MEPS Konvex G2 not on standalone product page; official MEPS manufacturer store homepage. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 109. Ovonic 4S 1400mAh 100C (`ovonic-4s-1400-freestyle`)
+### 110. Ovonic 4S 1400mAh 100C (`ovonic-4s-1400-freestyle`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://ovonicshop.com/products/ovonic-4s-1400mah-100c-lipo-battery-pack-with-xt60-plug
@@ -2426,7 +2456,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Ovonic 4S 1400mAh 100C battery page. HTTP 404 for page https://ovonicshop.com/products/ovonic-4s-1400mah-100c-lipo-battery-pack-with-xt60-plug
 
-### 110. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
+### 111. Ovonic 6S 1300mAh 100C (`ovonic-6s-1300`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://ovonicshop.com/products/ovonic-6s-1300mah-100c-lipo-battery-pack-with-xt60-plug
@@ -2441,7 +2471,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Ovonic 6S 1300mAh 100C battery page. HTTP 404 for page https://ovonicshop.com/products/ovonic-6s-1300mah-100c-lipo-battery-pack-with-xt60-plug
 
-### 111. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
+### 112. RCinPower GTS V2 2207 1950KV (`rcinpower-gts-v2-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/29.html
@@ -2456,7 +2486,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RCinPower GTS V2 2207 Plus motor page; 1950KV is a listed variant. No manufacturer-owned image candidates found on page.
 
-### 112. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
+### 113. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/61.html
@@ -2471,7 +2501,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RCinPower GTS V3 2207 family page (AOS Supernova 2207 listing); 1860KV variant not separately listed. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 113. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
+### 114. RCinPower GTS V3 2207 1860KV (`rcinpower-gts-v3-2207-1860`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.rcinpower.com/G-SERIES/61.html
@@ -2486,7 +2516,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RCinPower GTS V3 2207 family page (AOS Supernova 2207 listing); 1860KV variant not separately listed. No manufacturer-owned image candidates found on page.
 
-### 114. Rush Blade F7 60A 4-in-1 (`rush-blade-f7-60a-4in1`)
+### 115. Rush Blade F7 60A 4-in-1 (`rush-blade-f7-60a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.rushfpv.com/rush-blade-f7-60a-4in1-esc-g-585
@@ -2501,7 +2531,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Blade F7 60A 4-in-1 ESC page. fetch failed
 
-### 115. Rush Tank II 5.8GHz VTX (`rush-tank-ii-vtx`)
+### 116. Rush Tank II 5.8GHz VTX (`rush-tank-ii-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.rushfpv.com/rush-tank-ii-5-8ghz-vtx-g-591
@@ -2516,7 +2546,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Tank II 5.8GHz VTX page. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 116. Rush Tank II 5.8GHz VTX (`rush-tank-ii-vtx`)
+### 117. Rush Tank II 5.8GHz VTX (`rush-tank-ii-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.rushfpv.com/rush-tank-ii-5-8ghz-vtx-g-591
@@ -2531,7 +2561,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Tank II 5.8GHz VTX page. fetch failed
 
-### 117. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+### 118. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
@@ -2546,7 +2576,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 118. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
+### 119. Samguk Series V 2207 1960KV (`samguk-v-2207-1960kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://www.samgukmotors.com/samguk-series-v-2207-motor-p00130p1.html
@@ -2561,7 +2591,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Samguk Series V 2207 motor family page on manufacturer store. fetch failed
 
-### 119. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
+### 120. Skystars KM2207 1910KV (`skystars-km2207-1910kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2207-1910kv-motor
@@ -2576,7 +2606,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM2207 1910KV motor page. fetch failed
 
-### 120. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
+### 121. Skystars KM2306 1950KV (`skystars-km2306-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://skystars-rc.com/products/skystars-km2306-1950kv-motor
@@ -2591,7 +2621,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM2306 1950KV motor page. fetch failed
 
-### 121. SpeedyBee BL32 55A 4-in-1 (`speedybee-bl32-55a-4in1`)
+### 122. SpeedyBee BL32 55A 4-in-1 (`speedybee-bl32-55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
@@ -2606,7 +2636,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** No standalone BL32 55A listing; official BLS 55A 4-in-1 ESC sold on F405 V4 BLS 55A stack page. Manufacturer page is FC+ESC stack; catalog line is ESC-only.
 
-### 122. SpeedyBee F7 V3 FC (`speedybee-f7-v3-fc`)
+### 123. SpeedyBee F7 V3 FC (`speedybee-f7-v3-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
@@ -2621,7 +2651,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official SpeedyBee F7 V3 stack page; FC sold as part of F7 V3 BL32 50A stack. Manufacturer page is FC+ESC stack; catalog line is FC-only.
 
-### 123. Tattu 4S 1300mAh 95C (`tattu-4s-1300-freestyle`)
+### 124. Tattu 4S 1300mAh 95C (`tattu-4s-1300-freestyle`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/tattu-4s-1300mah-14-8v-95c-lipo-battery-pack-with-xt60-plug.html
@@ -2636,7 +2666,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Tattu 4S 1300mAh 95C battery page. HTTP 404 for page https://www.genstattu.com/tattu-4s-1300mah-14-8v-95c-lipo-battery-pack-with-xt60-plug.html
 
-### 124. Tattu 4S 1550mAh 95C (`tattu-4s-1550`)
+### 125. Tattu 4S 1550mAh 95C (`tattu-4s-1550`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/tattu-4s-1550mah-14-8v-95c-lipo-battery-pack-with-xt60-plug.html
@@ -2651,7 +2681,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Tattu 4S 1550mAh 95C battery page. HTTP 404 for page https://www.genstattu.com/tattu-4s-1550mah-14-8v-95c-lipo-battery-pack-with-xt60-plug.html
 
-### 125. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
+### 126. Tattu R-Line 6S 1050mAh 120C (`tattu-rline-6s-1050`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/tattu-r-line-1050mah-22-2v-6s-120c-lipo-battery-pack-with-xt60-plug.html
@@ -2666,7 +2696,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Tattu R-Line 6S 1050mAh 120C battery page. HTTP 404 for page https://www.genstattu.com/tattu-r-line-1050mah-22-2v-6s-120c-lipo-battery-pack-with-xt60-plug.html
 
-### 126. Tattu R-Line 6S 1550mAh 130C (`tattu-rline-6s-1550`)
+### 127. Tattu R-Line 6S 1550mAh 130C (`tattu-rline-6s-1550`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://www.genstattu.com/tattu-r-line-1550mah-22-2v-6s-130c-lipo-battery-pack-with-xt60-plug.html
@@ -2681,7 +2711,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Tattu R-Line 6S 1550mAh 130C battery page. HTTP 404 for page https://www.genstattu.com/tattu-r-line-1550mah-22-2v-6s-130c-lipo-battery-pack-with-xt60-plug.html
 
-### 127. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
+### 128. TBS Crossfire Micro V2 (`tbs-crossfire-micro-v2`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_micro_tx_v2
@@ -2696,7 +2726,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official TBS Crossfire Micro V2 receiver page. No manufacturer-owned image candidates found on page.
 
-### 128. TBS Source One V6 Frame (`tbs-source-one-v6-frame`)
+### 129. TBS Source One V6 Frame (`tbs-source-one-v6-frame`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
@@ -2711,7 +2741,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official TBS Source One open-source frame repository; V6 is the current revision. Open-source GitHub project page; no isolated frame product photo expected.
 
-### 129. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
+### 130. TBS Unify Pro32 Nano VTX (`tbs-unify-pro32-nano-vtx`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unify_pro32_nano
@@ -2726,7 +2756,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official TBS Unify Pro32 Nano VTX page. No manufacturer-owned image candidates found on page.
 
-### 130. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+### 131. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
@@ -2741,7 +2771,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. HTTP 403 for page https://store.tmotor.com/product/f40pro-5-fpv-motor.html
 
-### 131. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
+### 132. T-Motor F40 Pro V 2207 1950KV (`tmotor-f40-pro-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f40pro-5-fpv-motor.html
@@ -2756,7 +2786,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F40 PROV motor family page; catalog F40 Pro V maps to F40 PROV listing. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 132. T-Motor F55A Pro II 4-in-1 (`tmotor-f55a-pro-ii`)
+### 133. T-Motor F55A Pro II 4-in-1 (`tmotor-f55a-pro-ii`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f55a-pro-ii-4in1-esc.html
@@ -2771,7 +2801,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F55A Pro II 4-in-1 ESC page. HTTP 404 for page https://store.tmotor.com/product/f55a-pro-ii-4in1-esc.html
 
-### 133. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+### 134. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
@@ -2786,7 +2816,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. HTTP 403 for page https://store.tmotor.com/product/f60prov-fpv-motor.html
 
-### 134. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
+### 135. T-Motor F60 Pro V 2207 1950KV (`tmotor-f60-pro-v-1950`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/f60prov-fpv-motor.html
@@ -2801,7 +2831,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor F60PROV motor family page; 1950KV is a listed variant. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 135. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+### 136. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
@@ -2816,7 +2846,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. HTTP 403 for page https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
 
-### 136. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
+### 137. T-Motor Velox V3 2207 1750KV (`tmotor-velox-v3-1750`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
@@ -2831,7 +2861,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor V2207 V3 motor family page; 1750KV is a listed variant. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 137. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+### 138. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
@@ -2846,7 +2876,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. HTTP 403 for page https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
 
-### 138. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
+### 139. T-Motor Velox V3 2207 1950KV (`tmotor-velox-v3-2207-1950kv`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/v2207-v3-kv1750-fpv-motor.html
@@ -2861,7 +2891,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor V2207 V3 motor family page; 1950KV is a listed variant. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 139. T-Motor Velox 45A 4-in-1 (`tmotor-velox45a-4in1`)
+### 140. T-Motor Velox 45A 4-in-1 (`tmotor-velox45a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://store.tmotor.com/product/velox-45a-4in1-esc.html
@@ -2876,7 +2906,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official T-Motor Velox 45A 4-in-1 ESC page. HTTP 404 for page https://store.tmotor.com/product/velox-45a-4in1-esc.html
 
-### 140. Walksnail Avatar Micro (`walksnail-avatar-micro`)
+### 141. Walksnail Avatar Micro (`walksnail-avatar-micro`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-camera-v2
@@ -2891,7 +2921,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Walksnail Avatar Micro superseded by Avatar HD Camera V2 on Caddx manufacturer store. Converted official WEBP source to local JPG (dev script only). Rejected after manual review: low-confidence source; generic camera render from V2 page, not Micro SKU.
 
-### 141. Walksnail Avatar Micro (`walksnail-avatar-micro`)
+### 142. Walksnail Avatar Micro (`walksnail-avatar-micro`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://www.caddxfpv.com/products/walksnail-avatar-camera-v2
@@ -2906,7 +2936,7 @@ Last local cleanup: 2026-06-29T19:42:54.723Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Walksnail Avatar Micro superseded by Avatar HD Camera V2 on Caddx manufacturer store. Skipped low-confidence source URL (use --include-low-confidence).
 
-### 142. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
+### 143. iFlight XING-E Pro 2207 1800KV (`xing-e-pro-2207-1800`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/XING-E-Pro-2207-1800KV-4S-6S-FPV-Motor-Pro1650

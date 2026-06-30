@@ -87,6 +87,9 @@ export const UNSAFE_LIKELY_MISMATCH_PART_IDS = new Set([
   "iflight-beast-h743-lr-fc",
   "newbee-drone-75-pro-frame",
   "matek-h743-wing-lr-fc",
+  "diatone-mamba-f722",
+  "iflight-blitz-mini-e55s-4in1",
+  "lumenier-6s-2200-lr-lipo",
 ]);
 
 /** Official source exists but automated fetch or TLS blocks reliable packshot retrieval. */

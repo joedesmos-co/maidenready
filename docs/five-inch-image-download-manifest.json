@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:42:54.724Z",
+  "updatedAt": "2026-06-30T12:27:57.276Z",
   "candidates": [
     {
       "partId": "aikon-ak32-50a-4in1",
@@ -453,7 +453,7 @@
       "partId": "cnhl-4s-1500-freestyle",
       "partName": "CNHL 4S 1500mAh 100C",
       "category": "Battery",
-      "sourcePageUrl": "https://chinahobbyline.com/products/2-packs-cnhl-black-series-v2-0-1500mah-14-8v-4s-130c-lipo-battery-with-xt60-plug",
+      "sourcePageUrl": "https://chinahobbyline.com/products/cnhl-black-series-1500mah-14-8v-4s-100c-lipo-battery-with-xt60-plug",
       "imageUrl": null,
       "localPath": "public/parts/batteries/cnhl-4s-1500-freestyle.jpg",
       "sourceType": "manufacturer page",
@@ -463,7 +463,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Official CNHL 4S 1500mAh Black Series page; manufacturer lists 130C variant (100C not currently listed). Skipped low-confidence source URL (use --include-low-confidence)."
+      "notes": "Official CNHL store redirects single 1500mAh 100C URL to a 2-pack 130C listing; gallery image shows X2 bundle graphic and 130C label — no verified single-pack 100C packshot. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "cnhl-6s-1500-freestyle",
@@ -560,6 +560,22 @@
       "recommendation": "remove",
       "status": "failed",
       "notes": "Official DAL Fold F5 5040 propeller page. fetch failed"
+    },
+    {
+      "partId": "diatone-mamba-f405-mini",
+      "partName": "Diatone Mamba F405 Mini",
+      "category": "Flight Controller",
+      "sourcePageUrl": "https://www.diatone.us/products/mamba-mk4-f405mini-flight-control-20mm-m2",
+      "imageUrl": null,
+      "localPath": "public/parts/flight-controllers/diatone-mamba-f405-mini.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "high",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "keep for review",
+      "status": "downloaded",
+      "notes": "Official Diatone MAMBA MK4 F405MINI isolated flight controller page on diatone.us. Local JPG present; re-evaluating recommendation before retention."
     },
     {
       "partId": "diatone-mamba-f55-128k",
@@ -911,7 +927,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Official FPVCycle 25mm 5-inch motor page; 2207 KV variants share product family listing. Skipped low-confidence source URL (use --include-low-confidence)."
+      "notes": "Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1780KV line does not match current manufacturer product. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "fpvcycle-2207-1960",
@@ -943,7 +959,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Official FPVCycle 25mm 5-inch motor page; 1960KV achieved via 2150KV variant or output limit per manufacturer guidance. Skipped low-confidence source URL (use --include-low-confidence)."
+      "notes": "Official FPVCycle 25mm motor page; current SKU is 1870/2150Kv bell/stator parts only. Catalog 2207 1960KV line does not match current manufacturer product. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "frsky-r-xsr",
@@ -1615,7 +1631,7 @@
       "imageNeedsReview": true,
       "recommendation": "remove",
       "status": "skipped",
-      "notes": "Hypetrain Acer 2306 1950KV no longer listed; closest official Rotor Riot Hypetrain motor page. Skipped low-confidence source URL (use --include-low-confidence)."
+      "notes": "Hypetrain Acer 2306 1950KV has no manufacturer-owned product page; Rotor Riot retailer listing 404. Hypetrain is retailer-exclusive — not a valid official manufacturer source. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "hypetrain-blaster-2450",
@@ -1632,6 +1648,22 @@
       "recommendation": "remove",
       "status": "removed_local",
       "notes": "Official Rotor Riot Hypetrain Blaster 2207 2450KV motor set page. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor. Rejected after manual review: image is a Gemfan propeller, not the Hypetrain Blaster motor."
+    },
+    {
+      "partId": "hypetrain-blaster-2450",
+      "partName": "Hypetrain Blaster 2207 2450KV",
+      "category": "Motors",
+      "sourcePageUrl": "https://rotorriot.com/products/hypetrain-blaster-2207-2450kv-motor",
+      "imageUrl": null,
+      "localPath": "public/parts/motors/hypetrain-blaster-2207.jpg",
+      "sourceType": "manufacturer page",
+      "confidence": "low",
+      "appearance": "product photo",
+      "watermarkOrBranding": "None noted from URL/page metadata review only — inspect file manually.",
+      "imageNeedsReview": true,
+      "recommendation": "remove",
+      "status": "skipped",
+      "notes": "Hypetrain has no manufacturer store; Rotor Riot retailer page gallery image is a Gemfan propeller, not the Blaster motor SKU. Skipped low-confidence source URL (use --include-low-confidence)."
     },
     {
       "partId": "iflight-beast-f722-fc",
@@ -3091,8 +3123,21 @@
     }
   ],
   "lastCleanup": {
-    "date": "2026-06-29T19:42:54.723Z",
-    "removedPartIds": [],
-    "retainedDownloadedCount": 49
+    "date": "2026-06-30T12:27:57.274Z",
+    "removedPartIds": [
+      "armattan-badger5-frame",
+      "geprc-mark4-frame",
+      "lumenier-qav-s-johnnyfpv",
+      "foxeer-reaper-f4-65a",
+      "diatone-mamba-f722",
+      "foxeer-f722-v4",
+      "foxeer-h743-f722-fc",
+      "ethix-p3-peanut-butter",
+      "cnhl-6s-1500-freestyle",
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
+      "foxeer-toothless-2"
+    ],
+    "retainedDownloadedCount": 50
   }
 }

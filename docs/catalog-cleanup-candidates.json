@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generatedAt": "2026-06-30T00:12:59.732Z",
+    "generatedAt": "2026-06-30T12:30:31.825Z",
     "catalogCoverage": {
-      "found": 95,
-      "total": 294,
-      "presetFound": 38,
+      "found": 102,
+      "total": 261,
+      "presetFound": 40,
       "presetTotal": 48
     },
     "totalCandidates": 110,
@@ -108,9 +108,22 @@
         ],
         "removedCount": 4,
         "note": "Removed 4 legacy cinewhoop frame entries per Batch 1D frames dry run."
+      },
+      "1D-3.5": {
+        "appliedAt": "2026-06-30T12:19:31.811Z",
+        "partIds": [
+          "betafpv-pavo3516-frame",
+          "diatone-taycan35-frame",
+          "flywoo-explorer35-frame",
+          "geprc-rocket-3-5-frame",
+          "iflight-chimera3-frame"
+        ],
+        "removedCount": 5,
+        "note": "Removed 5 deprecated 3.5-inch freestyle frames after Batch R3 frame additions."
       }
     },
-    "openCandidates": 71
+    "openCandidates": 66,
+    "imageCompletionPass": "2026-06-30"
   },
   "candidates": [
     {
@@ -297,7 +310,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-3.5",
+      "appliedAt": "2026-06-30T12:19:31.811Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-3.5 deferred frame cleanup after R3 replacements."
+      }
     },
     {
       "partId": "brotherhobby-1507-3700kv",
@@ -481,7 +501,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-3.5",
+      "appliedAt": "2026-06-30T12:19:31.811Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-3.5 deferred frame cleanup after R3 replacements."
+      }
     },
     {
       "partId": "emax-eco-1404-4000kv",
@@ -584,7 +611,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-3.5",
+      "appliedAt": "2026-06-30T12:19:31.811Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-3.5 deferred frame cleanup after R3 replacements."
+      }
     },
     {
       "partId": "flywoo-explorer5-frame",
@@ -906,7 +940,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-3.5",
+      "appliedAt": "2026-06-30T12:19:31.811Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-3.5 deferred frame cleanup after R3 replacements."
+      }
     },
     {
       "partId": "geprc-rocket-lite-75-frame",
@@ -1305,7 +1346,14 @@
       "recommendedAction": "remove_from_catalog",
       "riskLevel": "medium",
       "replacementSku": null,
-      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md"
+      "imageResearchSource": "docs/CATALOG_IMAGE_REVIEW_NOTES.md",
+      "cleanupStatus": "applied",
+      "appliedBatch": "1D-3.5",
+      "appliedAt": "2026-06-30T12:19:31.811Z",
+      "appliedChanges": {
+        "action": "removed_from_catalog",
+        "note": "Batch 1D-3.5 deferred frame cleanup after R3 replacements."
+      }
     },
     {
       "partId": "iflight-chimera35-cine-frame",

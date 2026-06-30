@@ -5,15 +5,15 @@ Developer-only review log for manufacturer-source image **candidates**.
 > **Not approved for public use.** Nothing in this report grants image rights.
 > Keep `imageNeedsReview: true` and `imageLicense: "No verified license on file"` until permission is verified separately.
 
-Last updated: 2026-06-29T19:42:54.518Z
+Last updated: 2026-06-30T12:27:33.698Z
 
-Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); **38** retained for review.
+Last local cleanup: 2026-06-30T12:27:33.696Z — removed 1 unsure local JPG(s); **40** retained for review.
 
 ## Summary
 
-- Downloaded local JPG candidates: **38**
-- Rejected / not saved candidates: **83**
-- Recommendation counts: **38 keep for review**, **0 unsure**, **83 remove**
+- Downloaded local JPG candidates: **40**
+- Rejected / not saved candidates: **84**
+- Recommendation counts: **40 keep for review**, **0 unsure**, **84 remove**
 
 ## Rules applied
 
@@ -309,7 +309,22 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Gemfan Hurricane 3520 3-blade prop page.
 
-### 20. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
+### 20. GEPRC GEP-CL35 V3 Frame (`geprc-gep-cl35-v3-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://geprc.com/product/gep-cl35-v3-frame/
+- **Exact image URL downloaded:** https://geprc.com/wp-content/uploads/2025/12/1_DeMain_0000.jpg
+- **Local file path:** public/parts/frames/geprc-gep-cl35-v3-frame.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** medium
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official GEPRC GEP-CL35 V3 isolated frame-kit page; Cinewhoop Cruiser preset frame.
+
+### 21. GEPRC GEP-F411-35A AIO ESC (`geprc-gep-f411-35a-aio-esc`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
@@ -324,7 +339,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 21. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
+### 22. GEPRC GEP-F411-35A AIO FC (`geprc-gep-f411-35a-aio-fc`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://geprc.com/product/gep-f411-35a-aio-f411-fc-35a-2-6s-8bits-bls-esc-25-5mm/
@@ -339,7 +354,22 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official GEP-F411-35A combined AIO; ESC/FC catalog entries represent the same board. Same source image as the combined GEP-F411-35A AIO board. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 22. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
+### 23. GEPRC SPEEDX2 2105.5 2650KV (`geprc-speedx2-2105-5-2650kv`)
+
+- **Category:** Motors
+- **Manufacturer/source page URL:** https://geprc.com/product/geprc-speedx2-2105-5-2450kv-2650kv-3450kv-motor/
+- **Exact image URL downloaded:** https://geprc.com/wp-content/uploads/2022/02/6-5.jpg
+- **Local file path:** public/parts/motors/geprc-speedx2-2105-5-2650kv.jpg
+- **Status:** downloaded
+- **Source type:** manufacturer page
+- **Confidence:** medium
+- **Appears to be:** product photo
+- **Watermark / store branding:** None noted from URL/page metadata review only — inspect file manually.
+- **imageNeedsReview:** true
+- **Recommendation:** keep for review
+- **Notes:** Official GEPRC SPEEDX2 2105.5 motor page; Cinewhoop Cruiser preset motors.
+
+### 24. Happymodel EP2 ELRS (`happymodel-ep2-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.happymodel.cn/index.php/2022/11/07/2-4g-elrs-ep1-ep2-ep1dual-tcxo-receiver/
@@ -354,7 +384,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Happymodel EP2 ELRS receiver product page; manufacturer product photo shows EP2 PCB with ceramic antenna.
 
-### 23. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
+### 25. HQProp 7x3.5x3 (`hqprop-7x3-5x3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://www.hqprop.com/hq-durable-prop-7x35x3v1s-2cw2ccw-poly-carbonate-p0132.html
@@ -369,7 +399,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official HQProp 7x3.5x3 prop page.
 
-### 24. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
+### 26. HQProp Duct T90 3-Blade (`hqprop-duct-t90-3`)
 
 - **Category:** Props
 - **Manufacturer/source page URL:** https://hqprop.com/hqprop-duct-t90mmx3-for-cinewhoop-grey-2cw2ccw-poly-carbonate-p0351.html
@@ -384,7 +414,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Renamed from Duct-T90 3.5x2.8x5 to match official HQProp Duct T90 3-blade page.
 
-### 25. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
+### 27. iFlight XING2 1404 3800KV (`iflight-xing2-1404-3800`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-1404-toothpick-ultralight-build-unibell-pro1482
@@ -399,7 +429,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight XING2 1404 motor page with 3800KV option. Local JPG present; re-evaluating recommendation before retention.
 
-### 26. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
+### 28. iFlight XING2 2207 1855KV (`iflight-xing2-2207-1855`)
 
 - **Category:** Motors
 - **Manufacturer/source page URL:** https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464
@@ -414,7 +444,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official iFlight XING2 2207 motor page; 1855KV is a selectable variant. Local JPG present; re-evaluating recommendation before retention.
 
-### 27. Matek H743 Mini LR (`matek-h743-mini-lr`)
+### 29. Matek H743 Mini LR (`matek-h743-mini-lr`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.mateksys.com/?portfolio=h743-mini
@@ -429,7 +459,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Matek H743-MINI portfolio page.
 
-### 28. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
+### 30. RadioMaster ER6 2.4GHz ELRS (`radiomaster-er6-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/er6-2-4ghz-elrs-pwm-receiver
@@ -444,7 +474,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster ER6 ELRS receiver product page.
 
-### 29. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
+### 31. RadioMaster RP1 ELRS Nano (`radiomaster-rp1-elrs`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver
@@ -459,7 +489,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page.
 
-### 30. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
+### 32. RunCam Nano 4 Whoop (`runcam-nano-4-whoop`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-nano-4-ntsc-only/
@@ -474,7 +504,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Nano 4 whoop camera page.
 
-### 31. RunCam Phoenix 2 (`runcam-phoenix-2`)
+### 33. RunCam Phoenix 2 (`runcam-phoenix-2`)
 
 - **Category:** Camera
 - **Manufacturer/source page URL:** https://shop.runcam.com/runcam-phoenix-2/
@@ -489,7 +519,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RunCam store Phoenix 2 camera page.
 
-### 32. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 34. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
@@ -504,7 +534,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official RushFPV Tank Solo VTX product page. Converted official WEBP source to local JPG (dev script only).
 
-### 33. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+### 35. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
@@ -519,7 +549,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Skystars AM32 KM55A 4-in-1 ESC product page; wp-content gallery image is an isolated 1000×1000 ESC packshot labeled KM55A / 3-6S AM_32 on the red heatsink. Local JPG present; re-evaluating recommendation before retention.
 
-### 34. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
+### 36. Tattu 1S 450mAh HV 75C (`tattu-1s-450-hv`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-450mah-3.8v-high-voltage-75c-1s1p-lipo-battery-pack-with-bt-2.0-plug-5pcs/
@@ -534,7 +564,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu/Grepow 1S 450mAh HV BT2.0 page.
 
-### 35. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
+### 37. Tattu R-Line 4S 850mAh 95C (`tattu-rline-4s-850`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug.html
@@ -549,7 +579,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Tattu R-Line 4S 850mAh page.
 
-### 36. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
+### 38. Tattu R-Line 6S 2200mAh 95C (`tattu-rline-6s-2200`)
 
 - **Category:** Battery
 - **Manufacturer/source page URL:** https://genstattu.com/tattu-2200mah-6s-95c-22-2v-r-line-lipo-battery-with-xt60-plug-for-7-quad/
@@ -564,7 +594,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Replaced Molicel custom Li-ion pack; official Tattu R-Line 6S 2200mAh for 7-inch page.
 
-### 37. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
+### 39. TBS Crossfire Nano RX (`tbs-crossfire-nano`)
 
 - **Category:** Receiver
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:crossfire_nano_rx
@@ -579,7 +609,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** keep for review
 - **Notes:** Official Team BlackSheep Crossfire Nano RX store page.
 
-### 38. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
+### 40. TBS Unify Pro32 HV (`tbs-unify-pro32-hv`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://www.team-blacksheep.com/products/prod:unifypro32_hv
@@ -1601,7 +1631,22 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RadioMaster RP1 V2 ELRS nano receiver page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://radiomasterrc.com/1920x800_RM_ff82089d-1110-434c-9add-5d76a96fcd86_400x.jpg?v=1776842586)
 
-### 68. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+### 68. HGLRC Rekon7 PRO V2 7-inch LR Frame (`rekon-hglrc-rekon7-pro-v2-frame`)
+
+- **Category:** Frame
+- **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-v2-7-inch-long-range-drone-kit
+- **Exact image URL downloaded:** —
+- **Local file path:** public/parts/frames/rekon-hglrc-rekon7-pro-v2-frame.jpg
+- **Status:** failed
+- **Source type:** manufacturer page
+- **Confidence:** medium
+- **Appears to be:** lifestyle photo
+- **Watermark / store branding:** Marketing-style asset; check for composite branding or scene elements.
+- **imageNeedsReview:** true
+- **Recommendation:** remove
+- **Notes:** Official Rekon7 PRO V2 product page; verify isolated frame-kit gallery vs complete aircraft. Source page appears to show a complete aircraft, not an isolated frame SKU. HTTP 404 for page https://rekonfpv.com/products/rekon7-pro-v2-7-inch-long-range-drone-kit
+
+### 69. Rekon7 Pro Long Range (`rekon7-pro-lr`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
@@ -1616,7 +1661,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official complete drone page for Rekon7 Pro long range. Source page appears to show a complete aircraft, not an isolated frame SKU. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 69. Rekon7 Pro Long Range (`rekon7-pro-lr`)
+### 70. Rekon7 Pro Long Range (`rekon7-pro-lr`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://rekonfpv.com/products/rekon7-pro-long-range-fpv-racing-drone-6s-digital-version
@@ -1631,7 +1676,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official complete drone page for Rekon7 Pro long range. Source page appears to show a complete aircraft, not an isolated frame SKU. Frame listing shows complete aircraft; no isolated frame packshot expected.
 
-### 70. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 71. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
@@ -1646,7 +1691,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format for https://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
 
-### 71. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 72. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
@@ -1661,7 +1706,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. Unsupported webp format for http://rushfpv.net/cdn/shop/products/a36faadb-9803-46e6-9adf-d92498dfd929_1200x1200.png?v=1659590920
 
-### 72. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
+### 73. Rush Tank Solo 5.8GHz (`rush-tank-solo`)
 
 - **Category:** VTX
 - **Manufacturer/source page URL:** https://rushfpv.net/products/tank-solo-vtx
@@ -1676,7 +1721,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official RushFPV Tank Solo VTX product page. Candidate URL identified but no local JPG saved yet. HTTP 404 for image https://rushfpv.net/6aeccf1e-313e-4762-a4b4-9ef9405d6453_%7Bwidth%7Dx.jpg?v=1659579811
 
-### 73. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
+### 74. Skystars KM55A 4-in-1 (`skystars-km55a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://skystars-rc.com/product/skystars-am32-km55a-32bit-3-6s-20x20-4in1-esc/
@@ -1691,7 +1736,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official Skystars KM55A 4-in-1 ESC product page; store TLS blocks automated page scrape — image fetch pending direct CDN URL research. fetch failed
 
-### 74. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+### 75. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
@@ -1706,7 +1751,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official SpeedyBee F7 V3 + BL32 50A ESC stack page. Candidate URL identified but no local JPG saved yet. Unsupported webp format — not saved without conversion dependencies.
 
-### 75. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
+### 76. SpeedyBee BL32 50A 4-in-1 (`speedybee-bl32-50a`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f7-v3-bl32-50a-30x30-stack/
@@ -1721,7 +1766,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official SpeedyBee F7 V3 + BL32 50A ESC stack page. Manufacturer page is FC+ESC stack; no isolated ESC packshot.
 
-### 76. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+### 77. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -1736,7 +1781,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Renamed from Mini BL32 35A; official SpeedyBee F405 Mini + BLS 35A stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 77. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
+### 78. SpeedyBee BLS 35A 4-in-1 (`speedybee-bls-35a-4in1`)
 
 - **Category:** ESC
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -1751,7 +1796,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Renamed from Mini BL32 35A; official SpeedyBee F405 Mini + BLS 35A stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Manufacturer page is FC+ESC stack; no isolated ESC packshot.
 
-### 78. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+### 79. SpeedyBee F405 Mini (`speedybee-f405-mini`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -1766,7 +1811,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official F405 Mini + BLS 35A 20x20 stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Removed during local cleanup: unsure product match, bundle/stack photo, or non-isolated manufacturer image.
 
-### 79. SpeedyBee F405 Mini (`speedybee-f405-mini`)
+### 80. SpeedyBee F405 Mini (`speedybee-f405-mini`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/
@@ -1781,7 +1826,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official F405 Mini + BLS 35A 20x20 stack page. Stack marketing photo may show FC+ESC together rather than the single catalog line item. Manufacturer page is FC+ESC stack; no isolated FC packshot.
 
-### 80. SpeedyBee F405 V4 (`speedybee-f405-v4`)
+### 81. SpeedyBee F405 V4 (`speedybee-f405-v4`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
@@ -1796,7 +1841,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official F405 V4 stack page. Local JPG missing on disk during report sync.
 
-### 81. SpeedyBee F405 V4 (`speedybee-f405-v4`)
+### 82. SpeedyBee F405 V4 (`speedybee-f405-v4`)
 
 - **Category:** Flight Controller
 - **Manufacturer/source page URL:** https://www.speedybee.com/speedybee-f405-v4-bls-55a-30x30-fc-esc-stack/
@@ -1811,7 +1856,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official F405 V4 stack page. Manufacturer page is FC+ESC stack; no isolated FC packshot.
 
-### 82. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+### 83. TBS Source One V5 5-inch (`tbs-source-one-v5`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
@@ -1826,7 +1871,7 @@ Last local cleanup: 2026-06-29T19:42:54.518Z — removed 0 unsure local JPG(s); 
 - **Recommendation:** remove
 - **Notes:** Official open-source Source One project repo (V5 files). Candidate URL identified but no local JPG saved yet. Unsupported png format — not saved without conversion dependencies.
 
-### 83. TBS Source One V5 5-inch (`tbs-source-one-v5`)
+### 84. TBS Source One V5 5-inch (`tbs-source-one-v5`)
 
 - **Category:** Frame
 - **Manufacturer/source page URL:** https://github.com/tbs-trappy/source_one
