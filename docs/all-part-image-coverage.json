@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-06-30T15:09:24.448Z",
+  "generatedAt": "2026-10-31T15:04:47.845Z",
   "summary": {
-    "total": 261,
-    "found": 102,
-    "missing": 159,
+    "total": 327,
+    "found": 101,
+    "missing": 226,
     "presetPartTotal": 48,
-    "presetPartFound": 40,
-    "presetPartMissing": 8,
+    "presetPartFound": 39,
+    "presetPartMissing": 9,
     "visualCoverage": {
-      "total": 261,
-      "realProductImages": 102,
-      "generatedIllustrations": 159,
+      "total": 327,
+      "realProductImages": 101,
+      "generatedIllustrations": 226,
       "fallbackOnly": 0,
-      "withVisual": 261
+      "withVisual": 327
     },
     "missingByPriority": {
-      "1": 8,
-      "2": 77,
-      "3": 74
+      "1": 9,
+      "2": 88,
+      "3": 129
     }
   },
   "missingByPriority": {
@@ -133,6 +133,24 @@
         "priority": 1
       },
       {
+        "partId": "aos-3-5-v5",
+        "partName": "AOS 3.5 V5",
+        "categoryKey": "frame",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
         "partId": "rekon-hglrc-rekon7-pro-v2-frame",
         "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
         "categoryKey": "frame",
@@ -192,6 +210,17 @@
       }
     ],
     "2": [
+      {
+        "partId": "betafpv-lava-6s-1100",
+        "partName": "BETAFPV LAVA 6S 1100mAh 100C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
       {
         "partId": "cnhl-4s-1500-freestyle",
         "partName": "CNHL 4S 1500mAh 100C",
@@ -832,6 +861,52 @@
         "priority": 2
       },
       {
+        "partId": "betafpv-2004-1700kv",
+        "partName": "BETAFPV 2004 1700KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-2204-2400kv",
+        "partName": "BETAFPV 2204 2400KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-snow-2306-1860kv",
+        "partName": "BETAFPV Snow 2306 1860KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-snow-2306-2500kv",
+        "partName": "BETAFPV Snow 2306 2500KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "fpvcycle-2207-1780kv",
         "partName": "FPVCycle 2207 1780KV",
         "categoryKey": "motors",
@@ -1060,6 +1135,39 @@
         "priority": 2
       },
       {
+        "partId": "gemfan-5125-3",
+        "partName": "Gemfan 5125 3-Blade (5mm/1.5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "gemfan-51466-mck-v2",
+        "partName": "Gemfan 51466 MCK V2 3-Blade (5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "gemfan-hurricane-51433",
+        "partName": "Gemfan Hurricane 51433 3-Blade (5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "gemfan-hurricane-mck-51433",
         "partName": "Gemfan Hurricane MCK 51433",
         "categoryKey": "props",
@@ -1079,6 +1187,44 @@
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-elrs-micro-receiver",
+        "partName": "BETAFPV ELRS Micro Receiver",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range",
+          "cinewhoop"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-superd-elrs-receiver",
+        "partName": "BETAFPV SuperD ELRS Diversity Receiver",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range",
+          "cinewhoop"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "betafpv-superp-14ch-receiver",
+        "partName": "BETAFPV SuperP 14CH Diversity Receiver",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range",
           "5-inch-freestyle"
         ],
         "priority": 2
@@ -1142,6 +1288,145 @@
         "presetUsage": [],
         "compatibleClasses": [
           "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1s-300-75c",
+        "partName": "BETAFPV LAVA 1S 300mAh 75C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1s-450-75c",
+        "partName": "BETAFPV LAVA 1S 450mAh 75C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1s-550-75c",
+        "partName": "BETAFPV LAVA 1S 550mAh 75C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-4s-850",
+        "partName": "BETAFPV LAVA 4S 850mAh 100C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-1s-280",
+        "partName": "BETAFPV LAVA II 1S 280mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-1s-280.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-1s-320",
+        "partName": "BETAFPV LAVA II 1S 320mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-1s-320.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-1s-480",
+        "partName": "BETAFPV LAVA II 1S 480mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-1s-480.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-1s-580",
+        "partName": "BETAFPV LAVA II 1S 580mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-1s-580.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-1s-680",
+        "partName": "BETAFPV LAVA II 1S 680mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-1s-680.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-2s-580",
+        "partName": "BETAFPV LAVA II 2S 580mAh 95C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-3s-580",
+        "partName": "BETAFPV LAVA II 3S 580mAh 95C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-ii-4s-580",
+        "partName": "BETAFPV LAVA II 4S 580mAh 95C",
+        "categoryKey": "battery",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
         ],
         "priority": 3
       },
@@ -1326,6 +1611,30 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-c03-camera",
+        "partName": "BETAFPV C03 FPV Micro Camera",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/betafpv-c03-camera.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-c04-camera",
+        "partName": "BETAFPV C04 FPV Camera",
+        "categoryKey": "camera",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "caddx-proview-cine-digital",
         "partName": "Caddx ProView Cine Digital",
         "categoryKey": "camera",
@@ -1447,10 +1756,67 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-f4-1s-12a-aio-v3",
+        "partName": "BETAFPV F4 1S 12A AIO V3",
+        "categoryKey": "flightController",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-f405-4s-20a-toothpick-v5",
+        "partName": "BETAFPV F405 4S 20A Toothpick V5",
+        "categoryKey": "flightController",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "betafpv-f411-1s-aio-fc",
         "partName": "BETAFPV F411 1S AIO FC",
         "categoryKey": "flightController",
         "imagePath": "/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-f411-4s-20a-toothpick-v5",
+        "partName": "BETAFPV F411 4S 20A Toothpick V5",
+        "categoryKey": "flightController",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-matrix-1s-3in1-4in1",
+        "partName": "BETAFPV Matrix 1S 3IN1/4IN1 AIO",
+        "categoryKey": "flightController",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-matrix-1s-5in1-ii",
+        "partName": "BETAFPV Matrix 1S 5IN1 II AIO",
+        "categoryKey": "flightController",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1531,6 +1897,84 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-air65-ii-frame",
+        "partName": "BETAFPV Air65 II Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-air75-ii-frame",
+        "partName": "BETAFPV Air75 II Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-hx115-lr-frame",
+        "partName": "BETAFPV HX115 LR Frame Kit",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-meteor65-pro-ii-frame",
+        "partName": "BETAFPV Meteor65 Pro II Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-meteor75-pro-ii-frame",
+        "partName": "BETAFPV Meteor75 Pro II Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-pavo20-pro-ii-frame",
+        "partName": "BETAFPV Pavo20 Pro II Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-pavo35-frame",
+        "partName": "BETAFPV Pavo35 Whoop Frame",
+        "categoryKey": "frame",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "geprc-rocket-lite-75-frame",
         "partName": "GEPRC Rocket Lite 75 Frame",
         "categoryKey": "frame",
@@ -1567,6 +2011,133 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-0702-25000kv-2026",
+        "partName": "BETAFPV 0702 25000KV Freestyle (2026)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-0702-30000kv-2026",
+        "partName": "BETAFPV 0702 30000KV Racing (2026)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-0702-36000kv-2026",
+        "partName": "BETAFPV 0702 36000KV Champion (2026)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-0802-22000kv-2026",
+        "partName": "BETAFPV 0802 22000KV Freestyle (2026)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-0802-28000kv-2026",
+        "partName": "BETAFPV 0802 28000KV Champion (2026)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1102-21000kv-2026",
+        "partName": "BETAFPV 1102 21000KV (2026)",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/betafpv-1102-21000kv-2026.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1103-10500kv",
+        "partName": "BETAFPV 1103 10500KV (Aquila20)",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1105-5000kv",
+        "partName": "BETAFPV 1105 5000KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1105-6000kv",
+        "partName": "BETAFPV 1105 6000KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1106-3800kv",
+        "partName": "BETAFPV 1106 3800KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1106-4500kv",
+        "partName": "BETAFPV 1106 4500KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "betafpv-1404-4600kv",
         "partName": "BETAFPV 1404 4600KV",
         "categoryKey": "motors",
@@ -1574,6 +2145,100 @@
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1505-3400kv",
+        "partName": "BETAFPV 1505 3400KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1505-4600kv",
+        "partName": "BETAFPV 1505 4600KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-2004-3000kv",
+        "partName": "BETAFPV 2004 3000KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1102-14000kv",
+        "partName": "BETAFPV LAVA 1102 14000KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1104-5500kv",
+        "partName": "BETAFPV LAVA 1104 5500KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1104-7200kv",
+        "partName": "BETAFPV LAVA 1104 7200KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-1506-4200kv",
+        "partName": "BETAFPV LAVA 1506 4200KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-lava-2006-2400kv",
+        "partName": "BETAFPV LAVA 2006 2400KV",
+        "categoryKey": "motors",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
           "3.5-inch-freestyle"
         ],
         "priority": 3
@@ -1795,6 +2460,72 @@
         "priority": 3
       },
       {
+        "partId": "gemfan-1207-3",
+        "partName": "Gemfan 1207 3-Blade (1.0mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-1409-3",
+        "partName": "Gemfan 1409 3-Blade (1.0mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-1614-3",
+        "partName": "Gemfan 1614 3-Blade (1.0mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-1811-3",
+        "partName": "Gemfan 1811 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-2023-3",
+        "partName": "Gemfan 2023 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-2218-3",
+        "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "gemfan-31mm-4blade-whoop",
         "partName": "Gemfan 31mm 4-Blade Whoop",
         "categoryKey": "props",
@@ -1863,6 +2594,18 @@
         "presetUsage": [],
         "compatibleClasses": [
           "7-inch-long-range"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-d90s-3",
+        "partName": "Gemfan D90S 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
         ],
         "priority": 3
       },
@@ -1975,6 +2718,19 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-elrs-nano-receiver",
+        "partName": "BETAFPV ELRS Nano Receiver",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "radiomaster-er5-915-lr",
         "partName": "Radiomaster ER5 915 LR",
         "categoryKey": "receiver",
@@ -2011,6 +2767,30 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-a03-400mw-vtx",
+        "partName": "BETAFPV A03 400mW 5.8G VTX",
+        "categoryKey": "vtx",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-p1-air-unit",
+        "partName": "BETAFPV P1 Air Unit HD VTX",
+        "categoryKey": "vtx",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "rush-nano-vtx-park",
         "partName": "RushFPV Nano VTX Park",
         "categoryKey": "vtx",
@@ -2027,6 +2807,7 @@
   "missingByCategory": {
     "battery": [
       "gnb-4s-1500",
+      "betafpv-lava-6s-1100",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
       "gnb-6s-1300-hv",
@@ -2038,6 +2819,18 @@
       "tattu-4s-1550",
       "tattu-rline-6s-1550",
       "betafpv-2s-300-ph2",
+      "betafpv-lava-1s-300-75c",
+      "betafpv-lava-1s-450-75c",
+      "betafpv-lava-1s-550-75c",
+      "betafpv-lava-4s-850",
+      "betafpv-lava-ii-1s-280",
+      "betafpv-lava-ii-1s-320",
+      "betafpv-lava-ii-1s-480",
+      "betafpv-lava-ii-1s-580",
+      "betafpv-lava-ii-1s-680",
+      "betafpv-lava-ii-2s-580",
+      "betafpv-lava-ii-3s-580",
+      "betafpv-lava-ii-4s-580",
       "cnhl-6s-1800-lr-lipo",
       "cnhl-ministar-4s-900",
       "gn-1s-550-bt2",
@@ -2094,7 +2887,12 @@
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
       "speedybee-f7-v3-fc",
+      "betafpv-f4-1s-12a-aio-v3",
+      "betafpv-f405-4s-20a-toothpick-v5",
       "betafpv-f411-1s-aio-fc",
+      "betafpv-f411-4s-20a-toothpick-v5",
+      "betafpv-matrix-1s-3in1-4in1",
+      "betafpv-matrix-1s-5in1-ii",
       "diatone-mamba-h743-lr-fc",
       "geprc-f405-20x20-mini",
       "geprc-f745-lr-fc",
@@ -2103,6 +2901,7 @@
       "matek-h743-wing-lr-fc"
     ],
     "frame": [
+      "aos-3-5-v5",
       "rekon-hglrc-rekon7-pro-v2-frame",
       "tbs-source-one-v5",
       "aos-5-v5",
@@ -2117,6 +2916,13 @@
       "impulserc-reverb5-frame",
       "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
+      "betafpv-air65-ii-frame",
+      "betafpv-air75-ii-frame",
+      "betafpv-hx115-lr-frame",
+      "betafpv-meteor65-pro-ii-frame",
+      "betafpv-meteor75-pro-ii-frame",
+      "betafpv-pavo20-pro-ii-frame",
+      "betafpv-pavo35-frame",
       "geprc-rocket-lite-75-frame",
       "newbee-drone-75-pro-frame",
       "tbs-source-one7-lr-frame"
@@ -2127,6 +2933,8 @@
       "rush-tank-ii-vtx",
       "akk-a3-nano-vtx-park",
       "akk-a5-nano-vtx",
+      "betafpv-a03-400mw-vtx",
+      "betafpv-p1-air-unit",
       "rush-nano-vtx-park"
     ],
     "camera": [
@@ -2134,11 +2942,17 @@
       "foxeer-predator-v5",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
+      "betafpv-c03-camera",
+      "betafpv-c04-camera",
       "caddx-proview-cine-digital",
       "caddx-ratel-lucky-whoop",
       "foxeer-pico-r-whoop"
     ],
     "motors": [
+      "betafpv-2004-1700kv",
+      "betafpv-2204-2400kv",
+      "betafpv-snow-2306-1860kv",
+      "betafpv-snow-2306-2500kv",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
@@ -2152,7 +2966,26 @@
       "tmotor-f60-pro-v-1950",
       "tmotor-velox-v3-1750",
       "tmotor-velox-v3-2207-1950kv",
+      "betafpv-0702-25000kv-2026",
+      "betafpv-0702-30000kv-2026",
+      "betafpv-0702-36000kv-2026",
+      "betafpv-0802-22000kv-2026",
+      "betafpv-0802-28000kv-2026",
+      "betafpv-1102-21000kv-2026",
+      "betafpv-1103-10500kv",
+      "betafpv-1105-5000kv",
+      "betafpv-1105-6000kv",
+      "betafpv-1106-3800kv",
+      "betafpv-1106-4500kv",
       "betafpv-1404-4600kv",
+      "betafpv-1505-3400kv",
+      "betafpv-1505-4600kv",
+      "betafpv-2004-3000kv",
+      "betafpv-lava-1102-14000kv",
+      "betafpv-lava-1104-5500kv",
+      "betafpv-lava-1104-7200kv",
+      "betafpv-lava-1506-4200kv",
+      "betafpv-lava-2006-2400kv",
       "brotherhobby-2806-1400kv-lr",
       "emax-e1106-7200kv",
       "emax-eco-1404-4000kv",
@@ -2172,6 +3005,9 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
+      "gemfan-5125-3",
+      "gemfan-51466-mck-v2",
+      "gemfan-hurricane-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
       "apc-7x4-2-lr",
@@ -2181,12 +3017,19 @@
       "dal-35435-cine-d5",
       "dal-prop-3530-cyclone",
       "emax-avan-40mm-whoop",
+      "gemfan-1207-3",
+      "gemfan-1409-3",
+      "gemfan-1614-3",
+      "gemfan-1811-3",
+      "gemfan-2023-3",
+      "gemfan-2218-3",
       "gemfan-31mm-4blade-whoop",
       "gemfan-3522-hurricane",
       "gemfan-3528-cine-d5",
       "gemfan-3528-freestyle",
       "gemfan-7035-2-lr",
       "gemfan-7036-3-lr",
+      "gemfan-d90s-3",
       "gemfan-floppypop3-3518",
       "geprc-7038-2-lr",
       "hqprop-3525-pc",
@@ -2198,8 +3041,12 @@
       "hqprop-t65x30-whoop"
     ],
     "receiver": [
+      "betafpv-elrs-micro-receiver",
+      "betafpv-superd-elrs-receiver",
+      "betafpv-superp-14ch-receiver",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
+      "betafpv-elrs-nano-receiver",
       "radiomaster-er5-915-lr"
     ]
   },
@@ -2209,6 +3056,7 @@
       "speedybee-bl32-50a",
       "speedybee-f405-v4",
       "tbs-source-one-v5",
+      "betafpv-lava-6s-1100",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
       "gnb-6s-1300-hv",
@@ -2261,6 +3109,10 @@
       "impulserc-reverb5-frame",
       "lumenier-qav-s-johnnyfpv",
       "tbs-source-one-v6-frame",
+      "betafpv-2004-1700kv",
+      "betafpv-2204-2400kv",
+      "betafpv-snow-2306-1860kv",
+      "betafpv-snow-2306-2500kv",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
@@ -2280,8 +3132,14 @@
       "dalprop-fold-f5-5040",
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
+      "gemfan-5125-3",
+      "gemfan-51466-mck-v2",
+      "gemfan-hurricane-51433",
       "gemfan-hurricane-mck-51433",
       "hqprop-t3x2-5x3-515",
+      "betafpv-elrs-micro-receiver",
+      "betafpv-superd-elrs-receiver",
+      "betafpv-superp-14ch-receiver",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
       "akk-x2-ultimate-vtx",
@@ -2297,36 +3155,83 @@
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
+      "betafpv-elrs-micro-receiver",
+      "betafpv-superd-elrs-receiver",
+      "betafpv-lava-ii-2s-580",
+      "betafpv-lava-ii-3s-580",
+      "betafpv-lava-ii-4s-580",
       "gnb-4s-1300-cine",
       "tattu-4s-1300-cine",
+      "betafpv-c04-camera",
       "caddx-proview-cine-digital",
       "iflight-blitz-mini-e55s-4in1",
+      "betafpv-f405-4s-20a-toothpick-v5",
+      "betafpv-f411-4s-20a-toothpick-v5",
+      "betafpv-hx115-lr-frame",
+      "betafpv-pavo20-pro-ii-frame",
+      "betafpv-pavo35-frame",
+      "betafpv-1103-10500kv",
+      "betafpv-1105-5000kv",
+      "betafpv-1105-6000kv",
+      "betafpv-1106-3800kv",
+      "betafpv-1106-4500kv",
+      "betafpv-1505-3400kv",
+      "betafpv-1505-4600kv",
+      "betafpv-2004-3000kv",
+      "betafpv-lava-1102-14000kv",
+      "betafpv-lava-1104-5500kv",
+      "betafpv-lava-1104-7200kv",
+      "betafpv-lava-1506-4200kv",
+      "betafpv-lava-2006-2400kv",
       "emax-eco-2004-2550kv",
       "tmotor-mn2004-2550kv",
       "avan-3540-cine-d5",
       "dal-35435-cine-d5",
+      "gemfan-2023-3",
+      "gemfan-2218-3",
       "gemfan-3528-cine-d5",
+      "gemfan-d90s-3",
       "gemfan-floppypop3-3518",
       "hqprop-3536-cine-d5",
-      "hqprop-durable-3530-cine"
+      "hqprop-durable-3530-cine",
+      "betafpv-elrs-nano-receiver",
+      "betafpv-a03-400mw-vtx",
+      "betafpv-p1-air-unit"
     ],
     "3.5-inch-freestyle": [
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
+      "aos-3-5-v5",
       "foxeer-reaper-nano-v2-vtx",
       "lumenier-6s-1100",
       "foxeer-toothless-2",
       "aikon-f7-mini-35a",
       "axisflying-h743-mini",
       "matek-f722-mini",
+      "betafpv-2204-2400kv",
+      "betafpv-lava-4s-850",
+      "betafpv-lava-ii-3s-580",
+      "betafpv-lava-ii-4s-580",
       "cnhl-ministar-4s-900",
       "gnb-4s-1100-park",
       "gnb-4s-750-mini",
       "tattu-rline-4s-650",
       "diatone-mamba-f35-mini-esc",
       "iflight-blitz-mini-e55s-4in1",
+      "betafpv-f405-4s-20a-toothpick-v5",
+      "betafpv-f411-4s-20a-toothpick-v5",
       "geprc-f405-20x20-mini",
+      "betafpv-hx115-lr-frame",
+      "betafpv-1105-5000kv",
+      "betafpv-1105-6000kv",
+      "betafpv-1106-3800kv",
+      "betafpv-1106-4500kv",
       "betafpv-1404-4600kv",
+      "betafpv-1505-3400kv",
+      "betafpv-1505-4600kv",
+      "betafpv-2004-3000kv",
+      "betafpv-lava-1506-4200kv",
+      "betafpv-lava-2006-2400kv",
       "emax-eco-1404-4000kv",
       "iflight-xing2-1404-4600kv",
       "rcinpower-1404-3800kv",
@@ -2335,9 +3240,12 @@
       "dal-prop-3530-cyclone",
       "gemfan-3522-hurricane",
       "gemfan-3528-freestyle",
+      "gemfan-d90s-3",
       "hqprop-3525-pc",
       "hqprop-3535-pc",
+      "betafpv-elrs-nano-receiver",
       "akk-a3-nano-vtx-park",
+      "betafpv-a03-400mw-vtx",
       "rush-nano-vtx-park"
     ],
     "7-inch-long-range": [
@@ -2346,6 +3254,10 @@
       "walksnail-avatar-micro",
       "foxeer-reaper-f4-65a",
       "hobbywing-xrotor-60a",
+      "betafpv-snow-2306-1860kv",
+      "betafpv-elrs-micro-receiver",
+      "betafpv-superd-elrs-receiver",
+      "betafpv-superp-14ch-receiver",
       "cnhl-6s-1800-lr-lipo",
       "gnb-6s-2500-lr-lipo",
       "lumenier-6s-2200-lr-lipo",
@@ -2375,23 +3287,54 @@
     "tiny-whoop": [
       "foxeer-reaper-nano-v2-vtx",
       "betafpv-2s-300-ph2",
+      "betafpv-lava-1s-300-75c",
+      "betafpv-lava-1s-450-75c",
+      "betafpv-lava-1s-550-75c",
+      "betafpv-lava-ii-1s-280",
+      "betafpv-lava-ii-1s-320",
+      "betafpv-lava-ii-1s-480",
+      "betafpv-lava-ii-1s-580",
+      "betafpv-lava-ii-1s-680",
       "gn-1s-550-bt2",
       "tattu-1s-300-hv",
+      "betafpv-c03-camera",
+      "betafpv-c04-camera",
       "caddx-ratel-lucky-whoop",
       "foxeer-pico-r-whoop",
       "betafpv-brushless-1s-aio-esc",
       "happymodel-happywhoop-aio-esc",
+      "betafpv-f4-1s-12a-aio-v3",
       "betafpv-f411-1s-aio-fc",
+      "betafpv-matrix-1s-3in1-4in1",
+      "betafpv-matrix-1s-5in1-ii",
       "geprc-gep-aio-1s-fc",
       "happymodel-happywhoop-aio-fc",
+      "betafpv-air65-ii-frame",
+      "betafpv-air75-ii-frame",
+      "betafpv-meteor65-pro-ii-frame",
+      "betafpv-meteor75-pro-ii-frame",
       "geprc-rocket-lite-75-frame",
       "newbee-drone-75-pro-frame",
+      "betafpv-0702-25000kv-2026",
+      "betafpv-0702-30000kv-2026",
+      "betafpv-0702-36000kv-2026",
+      "betafpv-0802-22000kv-2026",
+      "betafpv-0802-28000kv-2026",
+      "betafpv-1102-21000kv-2026",
+      "betafpv-1103-10500kv",
+      "betafpv-lava-1102-14000kv",
       "emax-e1106-7200kv",
       "betafpv-40mm-4blade-1535",
       "emax-avan-40mm-whoop",
+      "gemfan-1207-3",
+      "gemfan-1409-3",
+      "gemfan-1614-3",
+      "gemfan-1811-3",
       "gemfan-31mm-4blade-whoop",
       "hqprop-t65x30-whoop",
-      "akk-a5-nano-vtx"
+      "betafpv-elrs-nano-receiver",
+      "akk-a5-nano-vtx",
+      "betafpv-p1-air-unit"
     ]
   },
   "checked": [
@@ -2913,12 +3856,11 @@
       "partId": "aos-3-5-v5",
       "partName": "AOS 3.5 V5",
       "categoryKey": "frame",
-      "imagePath": "/parts/frames/aos-3-5-v5.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/aos-3-5-v5.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3610,6 +4552,22 @@
         "7-inch-long-range"
       ],
       "priority": 1
+    },
+    {
+      "partId": "betafpv-lava-6s-1100",
+      "partName": "BETAFPV LAVA 6S 1100mAh 100C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-6s-1100.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
     },
     {
       "partId": "cnhl-4s-1500-freestyle",
@@ -4822,6 +5780,72 @@
       "priority": 2
     },
     {
+      "partId": "betafpv-2004-1700kv",
+      "partName": "BETAFPV 2004 1700KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-2004-1700kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-2204-2400kv",
+      "partName": "BETAFPV 2204 2400KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-2204-2400kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-snow-2306-1860kv",
+      "partName": "BETAFPV Snow 2306 1860KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-snow-2306-1860kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle",
+        "7-inch-long-range"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-snow-2306-2500kv",
+      "partName": "BETAFPV Snow 2306 2500KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-snow-2306-2500kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
       "partId": "brotherhobby-avenger-2507-1850",
       "partName": "BrotherHobby Avenger 2507 1850KV",
       "categoryKey": "motors",
@@ -5281,6 +6305,22 @@
       "priority": 2
     },
     {
+      "partId": "gemfan-5125-3",
+      "partName": "Gemfan 5125 3-Blade (5mm/1.5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-5125-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
       "partId": "gemfan-51433",
       "partName": "Gemfan Hurricane 51433",
       "categoryKey": "props",
@@ -5290,6 +6330,22 @@
       "illustrationExists": false,
       "hasVisual": true,
       "visualType": "product-photo",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "gemfan-51466-mck-v2",
+      "partName": "Gemfan 51466 MCK V2 3-Blade (5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-51466-mck-v2.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5324,6 +6380,22 @@
       "illustrationExists": false,
       "hasVisual": true,
       "visualType": "product-photo",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "gemfan-hurricane-51433",
+      "partName": "Gemfan Hurricane 51433 3-Blade (5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-hurricane-51433.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5463,6 +6535,59 @@
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
+        "5-inch-freestyle"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-elrs-micro-receiver",
+      "partName": "BETAFPV ELRS Micro Receiver",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-elrs-micro-receiver.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle",
+        "7-inch-long-range",
+        "cinewhoop"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-superd-elrs-receiver",
+      "partName": "BETAFPV SuperD ELRS Diversity Receiver",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-superd-elrs-receiver.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "5-inch-freestyle",
+        "7-inch-long-range",
+        "cinewhoop"
+      ],
+      "priority": 2
+    },
+    {
+      "partId": "betafpv-superp-14ch-receiver",
+      "partName": "BETAFPV SuperP 14CH Diversity Receiver",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-superp-14ch-receiver.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "7-inch-long-range",
         "5-inch-freestyle"
       ],
       "priority": 2
@@ -5726,6 +6851,205 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-lava-1s-300-75c",
+      "partName": "BETAFPV LAVA 1S 300mAh 75C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-1s-300-75c.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1s-450-75c",
+      "partName": "BETAFPV LAVA 1S 450mAh 75C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-1s-450-75c.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1s-550-75c",
+      "partName": "BETAFPV LAVA 1S 550mAh 75C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-1s-550-75c.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-4s-850",
+      "partName": "BETAFPV LAVA 4S 850mAh 100C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-4s-850.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-1s-280",
+      "partName": "BETAFPV LAVA II 1S 280mAh 95C",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-lava-ii-1s-280.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-1s-280.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-1s-320",
+      "partName": "BETAFPV LAVA II 1S 320mAh 95C",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-lava-ii-1s-320.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-1s-320.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-1s-480",
+      "partName": "BETAFPV LAVA II 1S 480mAh 95C",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-lava-ii-1s-480.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-1s-480.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-1s-580",
+      "partName": "BETAFPV LAVA II 1S 580mAh 95C",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-lava-ii-1s-580.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-1s-580.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-1s-680",
+      "partName": "BETAFPV LAVA II 1S 680mAh 95C",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-lava-ii-1s-680.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-1s-680.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-2s-580",
+      "partName": "BETAFPV LAVA II 2S 580mAh 95C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-2s-580.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-3s-580",
+      "partName": "BETAFPV LAVA II 3S 580mAh 95C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-3s-580.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-ii-4s-580",
+      "partName": "BETAFPV LAVA II 4S 580mAh 95C",
+      "categoryKey": "battery",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-4s-580.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "cnhl-6s-1800-lr-lipo",
       "partName": "CNHL 6S 1800mAh LR LiPo",
       "categoryKey": "battery",
@@ -5981,6 +7305,40 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-c03-camera",
+      "partName": "BETAFPV C03 FPV Micro Camera",
+      "categoryKey": "camera",
+      "imagePath": "/parts/cameras/betafpv-c03-camera.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/camera/betafpv-c03-camera.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-c04-camera",
+      "partName": "BETAFPV C04 FPV Camera",
+      "categoryKey": "camera",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/camera/betafpv-c04-camera.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "caddx-proview-cine-digital",
       "partName": "Caddx ProView Cine Digital",
       "categoryKey": "camera",
@@ -6152,12 +7510,94 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-f4-1s-12a-aio-v3",
+      "partName": "BETAFPV F4 1S 12A AIO V3",
+      "categoryKey": "flightController",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/flightController/betafpv-f4-1s-12a-aio-v3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-f405-4s-20a-toothpick-v5",
+      "partName": "BETAFPV F405 4S 20A Toothpick V5",
+      "categoryKey": "flightController",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/flightController/betafpv-f405-4s-20a-toothpick-v5.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "betafpv-f411-1s-aio-fc",
       "partName": "BETAFPV F411 1S AIO FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/betafpv-f411-1s-aio-fc.jpg",
       "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/betafpv-f411-1s-aio-fc.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-f411-4s-20a-toothpick-v5",
+      "partName": "BETAFPV F411 4S 20A Toothpick V5",
+      "categoryKey": "flightController",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/flightController/betafpv-f411-4s-20a-toothpick-v5.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-matrix-1s-3in1-4in1",
+      "partName": "BETAFPV Matrix 1S 3IN1/4IN1 AIO",
+      "categoryKey": "flightController",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/flightController/betafpv-matrix-1s-3in1-4in1.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-matrix-1s-5in1-ii",
+      "partName": "BETAFPV Matrix 1S 5IN1 II AIO",
+      "categoryKey": "flightController",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/flightController/betafpv-matrix-1s-5in1-ii.svg",
       "illustrationExists": true,
       "hasVisual": true,
       "visualType": "generated-illustration",
@@ -6288,6 +7728,103 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-air65-ii-frame",
+      "partName": "BETAFPV Air65 II Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-air65-ii-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-air75-ii-frame",
+      "partName": "BETAFPV Air75 II Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-air75-ii-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-hx115-lr-frame",
+      "partName": "BETAFPV HX115 LR Frame Kit",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-hx115-lr-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-meteor65-pro-ii-frame",
+      "partName": "BETAFPV Meteor65 Pro II Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-meteor65-pro-ii-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-meteor75-pro-ii-frame",
+      "partName": "BETAFPV Meteor75 Pro II Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-meteor75-pro-ii-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-pavo20-pro-ii-frame",
+      "partName": "BETAFPV Pavo20 Pro II Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-pavo20-pro-ii-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "betafpv-pavo30-cine-frame",
       "partName": "BETAFPV Pavo30 Cine Frame",
       "categoryKey": "frame",
@@ -6297,6 +7834,22 @@
       "illustrationExists": false,
       "hasVisual": true,
       "visualType": "product-photo",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-pavo35-frame",
+      "partName": "BETAFPV Pavo35 Whoop Frame",
+      "categoryKey": "frame",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/frame/betafpv-pavo35-frame.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6492,6 +8045,70 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-0702-25000kv-2026",
+      "partName": "BETAFPV 0702 25000KV Freestyle (2026)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-0702-25000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-0702-30000kv-2026",
+      "partName": "BETAFPV 0702 30000KV Racing (2026)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-0702-30000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-0702-36000kv-2026",
+      "partName": "BETAFPV 0702 36000KV Champion (2026)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-0702-36000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-0802-22000kv-2026",
+      "partName": "BETAFPV 0802 22000KV Freestyle (2026)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-0802-22000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "betafpv-0802-25000kv",
       "partName": "BETAFPV 0802 25000KV",
       "categoryKey": "motors",
@@ -6509,6 +8126,124 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-0802-28000kv-2026",
+      "partName": "BETAFPV 0802 28000KV Champion (2026)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-0802-28000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1102-21000kv-2026",
+      "partName": "BETAFPV 1102 21000KV (2026)",
+      "categoryKey": "motors",
+      "imagePath": "/parts/motors/betafpv-1102-21000kv-2026.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1102-21000kv-2026.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1103-10500kv",
+      "partName": "BETAFPV 1103 10500KV (Aquila20)",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1103-10500kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1105-5000kv",
+      "partName": "BETAFPV 1105 5000KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1105-5000kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1105-6000kv",
+      "partName": "BETAFPV 1105 6000KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1105-6000kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1106-3800kv",
+      "partName": "BETAFPV 1106 3800KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1106-3800kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1106-4500kv",
+      "partName": "BETAFPV 1106 4500KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1106-4500kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "betafpv-1404-4600kv",
       "partName": "BETAFPV 1404 4600KV",
       "categoryKey": "motors",
@@ -6521,6 +8256,140 @@
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1505-3400kv",
+      "partName": "BETAFPV 1505 3400KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1505-3400kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1505-4600kv",
+      "partName": "BETAFPV 1505 4600KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1505-4600kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-2004-3000kv",
+      "partName": "BETAFPV 2004 3000KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-2004-3000kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1102-14000kv",
+      "partName": "BETAFPV LAVA 1102 14000KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-lava-1102-14000kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1104-5500kv",
+      "partName": "BETAFPV LAVA 1104 5500KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-lava-1104-5500kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1104-7200kv",
+      "partName": "BETAFPV LAVA 1104 7200KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-lava-1104-7200kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-1506-4200kv",
+      "partName": "BETAFPV LAVA 1506 4200KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-lava-1506-4200kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-lava-2006-2400kv",
+      "partName": "BETAFPV LAVA 2006 2400KV",
+      "categoryKey": "motors",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-lava-2006-2400kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
         "3.5-inch-freestyle"
       ],
       "priority": 3
@@ -6866,6 +8735,102 @@
       "priority": 3
     },
     {
+      "partId": "gemfan-1207-3",
+      "partName": "Gemfan 1207 3-Blade (1.0mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-1207-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-1409-3",
+      "partName": "Gemfan 1409 3-Blade (1.0mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-1409-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-1614-3",
+      "partName": "Gemfan 1614 3-Blade (1.0mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-1614-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-1811-3",
+      "partName": "Gemfan 1811 3-Blade (1.5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-1811-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-2023-3",
+      "partName": "Gemfan 2023 3-Blade (1.5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-2023-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-2218-3",
+      "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-2218-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "gemfan-31mm-4blade-whoop",
       "partName": "Gemfan 31mm 4-Blade Whoop",
       "categoryKey": "props",
@@ -6964,6 +8929,23 @@
       "presetUsage": [],
       "compatibleClasses": [
         "7-inch-long-range"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-d90s-3",
+      "partName": "Gemfan D90S 3-Blade (1.5mm Shaft)",
+      "categoryKey": "props",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-d90s-3.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
       ],
       "priority": 3
     },
@@ -7121,6 +9103,24 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-elrs-nano-receiver",
+      "partName": "BETAFPV ELRS Nano Receiver",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-elrs-nano-receiver.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop",
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "happymodel-cine-ep2-elrs",
       "partName": "Happymodel EP2 Cine ELRS",
       "categoryKey": "receiver",
@@ -7219,6 +9219,40 @@
       "presetUsage": [],
       "compatibleClasses": [
         "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-a03-400mw-vtx",
+      "partName": "BETAFPV A03 400mW 5.8G VTX",
+      "categoryKey": "vtx",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/vtx/betafpv-a03-400mw-vtx.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop",
+        "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-p1-air-unit",
+      "partName": "BETAFPV P1 Air Unit HD VTX",
+      "categoryKey": "vtx",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/vtx/betafpv-p1-air-unit.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop",
+        "cinewhoop"
       ],
       "priority": 3
     },

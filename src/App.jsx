@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   buildClassById,
   buildClassIds,
@@ -47,12 +47,13 @@ import {
 } from "./utils/shareUrl";
 import { explainBuild } from "./utils/explainBuild";
 import {
-  filterPartsForBuildClass,
   getDefaultSelectionsForBuildClass,
   inferBuildClassFromSelections,
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
 import { LegalPanel } from "./components/LegalPanel.jsx";
+import { ConfiguratorStage } from "./components/ConfiguratorStage.jsx";
+import { DroneVisual } from "./components/DroneVisual.jsx";
 import { HomePanel } from "./components/HomePanel.jsx";
 import { PartImage } from "./components/PartImage.jsx";
 import { PartImageAttribution } from "./components/PartImageAttribution.jsx";
@@ -97,45 +98,6 @@ const getInitialActiveTab = () => {
     ? "custom"
     : "home";
 };
-
-const statCards = [
-  {
-    key: "totalPrice",
-    label: "Est. price",
-    confidence: "HIGH",
-    format: formatCurrency,
-  },
-  {
-    key: "totalWeightG",
-    label: "Est. mass",
-    confidence: "MEDIUM",
-    format: formatWeightG,
-  },
-  {
-    key: "totalThrustG",
-    label: "Est. thrust",
-    confidence: "MEDIUM",
-    format: formatThrustG,
-  },
-  {
-    key: "thrustToWeight",
-    label: "Est. T:W",
-    confidence: "MEDIUM",
-    format: formatThrustToWeight,
-  },
-  {
-    key: "flightTimeMinutes",
-    label: "Est. flight",
-    confidence: "LOW",
-    format: (_value, stats) => formatFlightTimeRange(stats),
-  },
-  {
-    key: "topSpeedMph",
-    label: "Est. top speed",
-    confidence: "LOW",
-    format: (_value, stats) => formatTopSpeedRange(stats),
-  },
-];
 
 const appTabs = [
   { id: "home", label: "Home" },
@@ -219,25 +181,19 @@ function App() {
   const [savedBuilds, setSavedBuilds] = useState(loadSavedBuilds);
   const [savedBuildName, setSavedBuildName] = useState("");
   const [savedBuildStatus, setSavedBuildStatus] = useState("");
-  const [activePartKey, setActivePartKey] = useState(null);
+  const [pickerStepKey, setPickerStepKey] = useState(null);
+  const [changeNotice, setChangeNotice] = useState("");
+  const [detailInfo, setDetailInfo] = useState(null);
+  const [mobileSummaryOpen, setMobileSummaryOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(getInitialActiveTab);
   const [presetStatus, setPresetStatus] = useState("");
+  const [presetClassFilter, setPresetClassFilter] = useState("all");
   const [legalPageId, setLegalPageId] = useState(null);
 
-  const filteredParts = useMemo(
-    () => filterPartsForBuildClass(parts, buildClass),
-    [buildClass],
-  );
   const selectedParts = useMemo(
     () => getSelectedParts(selectedIds, parts),
     [selectedIds],
   );
-  const activePartInfo = useMemo(() => {
-    const step = buildSteps.find((buildStep) => buildStep.key === activePartKey);
-    const part = activePartKey ? selectedParts[activePartKey] : null;
-
-    return step && part ? { part, step } : null;
-  }, [activePartKey, selectedParts]);
   const stats = useMemo(
     () => calculateBuildStats(selectedParts, buildClass),
     [buildClass, selectedParts],
@@ -286,27 +242,72 @@ function App() {
   }, [buildClass]);
 
   useEffect(() => {
-    if (!activePartInfo || typeof window === "undefined") {
+    if (typeof window === "undefined") {
       return undefined;
     }
 
     const handleKeyDown = (event) => {
-      if (event.key === "Escape") {
-        setActivePartKey(null);
+      if (event.key !== "Escape") {
+        return;
+      }
+
+      if (detailInfo) {
+        setDetailInfo(null);
+      } else if (pickerStepKey) {
+        setPickerStepKey(null);
+      } else if (mobileSummaryOpen) {
+        setMobileSummaryOpen(false);
+      } else if (legalPageId) {
+        setLegalPageId(null);
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activePartInfo]);
+  }, [detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
+
+  useEffect(() => {
+    if (typeof document === "undefined") {
+      return undefined;
+    }
+
+    const isOpen = Boolean(pickerStepKey || detailInfo || mobileSummaryOpen || legalPageId);
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
+
+  const changeNoticeTimer = useRef(null);
 
   const handleSelectionChange = (key, partId) => {
+    const step = buildSteps.find((buildStep) => buildStep.key === key);
+    const part = parts[key]?.find((candidate) => candidate.id === partId);
+
     setSelectedIds((current) => ({ ...current, [key]: partId }));
+
+    if (step && part) {
+      setChangeNotice(`${step.label} updated: ${part.name}`);
+      window.clearTimeout(changeNoticeTimer.current);
+      changeNoticeTimer.current = window.setTimeout(() => {
+        setChangeNotice("");
+      }, 3600);
+    }
   };
+
+  useEffect(
+    () => () => {
+      window.clearTimeout(changeNoticeTimer.current);
+    },
+    [],
+  );
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
-    setActivePartKey(null);
+    setPickerStepKey(null);
+    setDetailInfo(null);
+    setMobileSummaryOpen(false);
     setLegalPageId(null);
   };
 
@@ -418,12 +419,15 @@ function App() {
   };
 
   const visiblePresets = useMemo(
-    () => presetBuilds.filter((preset) => preset.buildClass === buildClass),
-    [buildClass],
+    () =>
+      presetClassFilter === "all"
+        ? presetBuilds
+        : presetBuilds.filter((preset) => preset.buildClass === presetClassFilter),
+    [presetClassFilter],
   );
 
   return (
-    <main className="app-shell">
+    <main className={`app-shell ${activeTab === "custom" ? "has-mobile-summary" : ""}`}>
       <header className="topbar">
         <button
           aria-label="MaidenReady home"
@@ -431,45 +435,68 @@ function App() {
           type="button"
           onClick={() => handleTabChange("home")}
         >
-          <p className="eyebrow">MaidenReady.com</p>
-          <span className="topbar-title">FPV build calculator</span>
-          <p className="topbar-tagline">
-            Plan parts, estimates, and compatibility — not a store.
-          </p>
+          <span className="brand-mark" aria-hidden="true">MR</span>
+          <span className="brand-copy">
+            <span className="brand-name">MaidenReady</span>
+            <span className="brand-tag">FPV Build Planner</span>
+          </span>
         </button>
-        <div className="topbar-actions">
-          <GradePill grade={grades.overall.grade} label="Overall" />
-        </div>
       </header>
 
       <TabNav activeTab={activeTab} tabs={appTabs} onTabChange={handleTabChange} />
 
       {activeTab === "home" && (
         <section className="tab-panel module-panel" aria-label="Home">
-          <CornerMarks />
-          <HomePanel onNavigateTab={handleTabChange} />
+          <HomePanel
+            onNavigateTab={handleTabChange}
+            onSelectBuildClass={(buildClassId) => {
+              handleBuildClassChange(buildClassId);
+              setPresetClassFilter(buildClassId);
+              handleTabChange("presets");
+            }}
+          />
         </section>
       )}
 
       {activeTab === "presets" && (
         <section className="tab-panel module-panel" aria-label="Preset builds">
-          <CornerMarks />
           <div className="section-heading">
-            <p className="eyebrow">Quick start</p>
-            <h2>Preset builds</h2>
+            <h2>Starter builds</h2>
           </div>
           <p className="section-intro">
-            Curated starter part lists for common goals. Pick a build class, load a preset, then fine-tune in Custom Build.
+            Starting points for common FPV goals. These are part lists to
+            customize and verify — not physically tested kits or proven
+            configurations.
           </p>
-          <BuildClassSelector
-            buildClass={buildClass}
-            buildClasses={buildClasses}
-            status={presetStatus}
-            onBuildClassChange={handleBuildClassChange}
-          />
+          <div
+            aria-label="Filter starter builds by class"
+            className="preset-filter"
+            role="group"
+          >
+            <button
+              aria-pressed={presetClassFilter === "all"}
+              className={presetClassFilter === "all" ? "active" : ""}
+              type="button"
+              onClick={() => setPresetClassFilter("all")}
+            >
+              All builds
+            </button>
+            {buildClasses.map((item) => (
+              <button
+                aria-pressed={presetClassFilter === item.id}
+                className={presetClassFilter === item.id ? "active" : ""}
+                key={item.id}
+                type="button"
+                onClick={() => setPresetClassFilter(item.id)}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <p aria-live="polite" className="preset-status">{presetStatus}</p>
           <PresetBuilds
-            compact
             presets={visiblePresets}
+            partsCatalog={parts}
             onLoadPreset={handlePresetLoad}
           />
         </section>
@@ -478,14 +505,18 @@ function App() {
       {activeTab === "custom" && (
         <section className="workspace workspace-custom" aria-label="Custom build">
           <section className="picker-column module-panel" aria-labelledby="picker-heading">
-            <CornerMarks />
-            <div className="section-heading">
-              <p className="eyebrow">Part picker</p>
-              <h2 id="picker-heading">Build list</h2>
+            <div className="workspace-header">
+              <div>
+                <h2 id="picker-heading">Build your quad</h2>
+                <p>Choose a category to browse parts. Estimates update as you go.</p>
+              </div>
+              <div className="build-progress" aria-label={`${Object.values(selectedParts).filter(Boolean).length} of ${buildSteps.length} parts selected`}>
+                <span>{Object.values(selectedParts).filter(Boolean).length}/{buildSteps.length} parts</span>
+                <span className="build-progress-bar" aria-hidden="true">
+                  <span style={{ width: `${(Object.values(selectedParts).filter(Boolean).length / buildSteps.length) * 100}%` }} />
+                </span>
+              </div>
             </div>
-            <p className="section-intro">
-              Work through all nine parts in order. Stats and compatibility checks update as you go. Save builds on the Saved Builds tab; compare two saves on Compare.
-            </p>
 
             <BuildClassSelector
               buildClass={buildClass}
@@ -494,93 +525,91 @@ function App() {
               onBuildClassChange={handleBuildClassChange}
             />
 
-            <div className="part-list">
+            <ConfiguratorStage
+              selectedParts={selectedParts}
+              activeCategory={pickerStepKey}
+              buildClass={buildClass}
+              changeNotice={changeNotice}
+              onSelectCategory={setPickerStepKey}
+            />
+
+            <ConfiguratorNav
+              selectedParts={selectedParts}
+              activeCategory={pickerStepKey}
+              warnings={warnings}
+              onSelectCategory={setPickerStepKey}
+            />
+
+            <div className="build-overview">
               {buildSteps.map((step, index) => (
-                <PartPicker
+                <BuildOverviewRow
                   key={step.key}
                   index={index + 1}
                   step={step}
                   selectedPart={selectedParts[step.key]}
-                  options={filteredParts[step.key]}
-                  onChange={handleSelectionChange}
-                  onOpenDetails={setActivePartKey}
+                  warnings={warnings}
+                  onOpenPicker={setPickerStepKey}
+                  onOpenDetails={setDetailInfo}
                 />
               ))}
             </div>
           </section>
 
           <div className="results-column">
-            <section className="results-section module-panel" aria-labelledby="stats-heading">
-              <CornerMarks />
-              <div className="section-heading">
-                <p className="eyebrow">Estimates</p>
-                <h2 id="stats-heading">Build stats</h2>
-              </div>
-              <div className="stats-grid">
-                {statCards.map((stat) => (
-                  <StatCard
-                    key={stat.key}
-                    label={stat.label}
-                    value={stat.format(stats[stat.key], stats)}
-                    confidence={stat.confidence}
-                  />
-                ))}
-              </div>
-              <EstimateAccuracy />
-            </section>
+            <BuildSummary
+              stats={stats}
+              warnings={warnings}
+              grades={grades}
+              buildExplanation={buildExplanation}
+              buildClass={buildClass}
+              selectedParts={selectedParts}
+              copyStatus={copyStatus}
+              onCopyBuildLink={handleCopyBuildLink}
+            />
+          </div>
 
-            <section className="results-section module-panel" aria-labelledby="grades-heading">
-              <CornerMarks />
-              <div className="section-heading">
-                <p className="eyebrow">Grades</p>
-                <h2 id="grades-heading">Build score</h2>
-              </div>
-              <div className="grade-grid">
-                {Object.values(grades).map((grade) => (
-                  <GradeCard key={grade.label} grade={grade} />
-                ))}
-              </div>
-            </section>
+          <MobileSummaryBar
+            stats={stats}
+            warnings={warnings}
+            selectedParts={selectedParts}
+            onOpenSummary={() => setMobileSummaryOpen(true)}
+          />
 
-            <section className="results-section module-panel" aria-labelledby="warnings-heading">
-              <CornerMarks />
-              <div className="section-heading">
-                <p className="eyebrow">Compatibility</p>
-                <h2 id="warnings-heading">Compatibility checks</h2>
-              </div>
-              <WarningList buildClass={buildClass} warnings={warnings} />
-            </section>
-
-            <section className="results-section module-panel" aria-labelledby="explain-heading">
-              <CornerMarks />
-              <div className="section-heading">
-                <p className="eyebrow">Explain my build</p>
-                <h2 id="explain-heading">Rule readout</h2>
-              </div>
-              <ExplainBuildPanel explanation={buildExplanation} />
-            </section>
-
-            <section className="results-section module-panel share-panel" aria-labelledby="share-heading">
-              <CornerMarks />
-              <div className="section-heading">
-                <p className="eyebrow">Share</p>
-                <h2 id="share-heading">Build link</h2>
-              </div>
-              <ShareBuildButton
-                status={copyStatus}
+          {mobileSummaryOpen && (
+            <MobileSummaryPanel onClose={() => setMobileSummaryOpen(false)}>
+              <BuildSummary
+                stats={stats}
+                warnings={warnings}
+                grades={grades}
+                buildExplanation={buildExplanation}
+                buildClass={buildClass}
+                selectedParts={selectedParts}
+                copyStatus={copyStatus}
                 onCopyBuildLink={handleCopyBuildLink}
               />
-            </section>
-          </div>
+            </MobileSummaryPanel>
+          )}
+
+          {pickerStepKey && (
+            <PartPickerPanel
+              stepKey={pickerStepKey}
+              selectedIds={selectedIds}
+              selectedParts={selectedParts}
+              buildClass={buildClass}
+              onClose={() => setPickerStepKey(null)}
+              onSelect={(key, partId) => {
+                handleSelectionChange(key, partId);
+              }}
+              onOpenDetails={setDetailInfo}
+            />
+          )}
         </section>
       )}
 
       {activeTab === "saved" && (
         <section className="tab-panel module-panel" aria-label="Saved builds">
-          <CornerMarks />
           <div className="section-heading">
-            <p className="eyebrow">Saved builds</p>
-            <h2>On this device</h2>
+            <h2>Saved builds</h2>
           </div>
           <p className="section-intro">
             Saves your current Custom Build selections to this browser only. Name optional — a date stamp is used if left blank.
@@ -599,10 +628,8 @@ function App() {
 
       {activeTab === "compare" && (
         <section className="tab-panel module-panel" aria-label="Compare builds">
-          <CornerMarks />
           <div className="section-heading">
-            <p className="eyebrow">Compare builds</p>
-            <h2>Side by side</h2>
+            <h2>Compare builds</h2>
           </div>
           <p className="section-intro">
             Compare estimated stats from two builds you saved on the Saved Builds tab.
@@ -613,14 +640,13 @@ function App() {
 
       {activeTab === "learn" && (
         <section className="tab-panel module-panel" aria-label="Learn">
-          <CornerMarks />
           <LearnPanel entries={learnEntries} />
         </section>
       )}
 
       <PartInfoDrawer
-        info={activePartInfo}
-        onClose={() => setActivePartKey(null)}
+        info={detailInfo}
+        onClose={() => setDetailInfo(null)}
       />
 
       <LegalPanel pageId={legalPageId} onClose={() => setLegalPageId(null)} />
@@ -657,8 +683,7 @@ function LearnPanel({ entries }) {
   return (
     <section aria-labelledby="learn-heading">
       <div className="section-heading">
-        <p className="eyebrow">Reference</p>
-        <h2 id="learn-heading">Field glossary</h2>
+        <h2 id="learn-heading">FPV terms, in plain language</h2>
       </div>
       <p className="section-intro">
         Plain-language definitions for specs and stats you will see while building. Numbers on Custom Build are estimates — see the accuracy notes there.
@@ -739,6 +764,13 @@ function ExplainBuildPanel({ explanation }) {
 
 function PartInfoDrawer({ info, onClose }) {
   const [imageDisplayMode, setImageDisplayMode] = useState("photo");
+  const closeRef = useRef(null);
+
+  useEffect(() => {
+    if (info) {
+      closeRef.current?.focus();
+    }
+  }, [info]);
 
   if (!info) {
     return null;
@@ -767,7 +799,7 @@ function PartInfoDrawer({ info, onClose }) {
             <p className="eyebrow">Part details</p>
             <h2 id="part-info-heading">{categoryLabel}</h2>
           </div>
-          <button className="drawer-close" type="button" onClick={onClose}>
+          <button ref={closeRef} className="drawer-close" type="button" onClick={onClose}>
             Close
           </button>
         </div>
@@ -800,7 +832,25 @@ function PartInfoDrawer({ info, onClose }) {
             label="Est. weight"
             value={getPartWeightLabel(step.key, part)}
           />
+          <PartInfoStat
+            label="Verification"
+            value={(part.verificationStatus ?? "unverified").replaceAll("-", " ")}
+          />
+          {part.verifiedFields?.length > 0 && (
+            <PartInfoStat
+              label="Verified fields"
+              value={`${part.verifiedFields.length} fields`}
+            />
+          )}
         </div>
+        {part.sourceUrl && (
+          <p className="part-info-description">
+            <a href={part.sourceUrl} rel="noopener noreferrer" target="_blank">
+              View manufacturer source
+            </a>
+            {part.sourceDate ? ` · reviewed ${part.sourceDate}` : ""}
+          </p>
+        )}
 
         {part.description && (
           <p className="part-info-description">{part.description}</p>
@@ -1058,7 +1108,7 @@ function SavedBuilds({
   const autoName = useMemo(() => createAutoBuildName(), []);
 
   return (
-    <section className="saved-module saved-module-standalone" aria-label="Saved build controls">
+    <section className="save-panel" aria-label="Saved build controls">
       <div className="save-controls">
         <input
           aria-label="Build name"
@@ -1144,11 +1194,24 @@ function ShareBuildButton({ status, onCopyBuildLink }) {
   );
 }
 
-function PresetBuilds({ presets, onLoadPreset, compact = false }) {
+function PresetBuilds({ presets, partsCatalog, onLoadPreset, compact = false }) {
+  const enrichedPresets = useMemo(
+    () =>
+      presets.map((preset) => {
+        const resolved = resolvePresetParts(preset, partsCatalog);
+        const selected = getSelectedParts(resolved.selections, partsCatalog);
+        const stats = calculateBuildStats(selected, preset.buildClass);
+
+        return { ...preset, selected, stats };
+      }),
+    [partsCatalog, presets],
+  );
+
   if (presets.length === 0) {
     return (
       <div className="preset-empty">
-        No presets for this build class. Switch class or use Custom Build.
+        No starter builds match this class. Choose another class or use Custom
+        Build.
       </div>
     );
   }
@@ -1156,26 +1219,79 @@ function PresetBuilds({ presets, onLoadPreset, compact = false }) {
   return (
     <section
       className={`preset-module ${compact ? "preset-module-compact" : ""}`}
-      aria-label="Preset build cards"
+      aria-label="Starter build cards"
     >
       <div className="preset-grid">
-        {presets.map((preset) => (
+        {enrichedPresets.map((preset) => (
           <article className="preset-card" key={preset.id}>
-            <div>
-              <span className="preset-role">{preset.role}</span>
-              <h3>{preset.name}</h3>
-              {!compact && <p>{preset.description}</p>}
-              {compact && (
-                <p className="preset-summary">{preset.description}</p>
-              )}
+            <div className="preset-image">
+              <DroneVisual
+                selectedParts={preset.selected}
+                buildClass={preset.buildClass}
+                showLabels={false}
+              />
             </div>
-            <button type="button" onClick={() => onLoadPreset(preset)}>
-              Load preset
-            </button>
+            <div className="preset-body">
+              <span className="preset-role">
+                {buildClassById[preset.buildClass]?.label ?? preset.buildClass} ·
+                {" "}Starter
+              </span>
+              <h3>{preset.name}</h3>
+              <p>{preset.description}</p>
+              <div className="preset-stats">
+                <span>{formatCurrency(preset.stats.totalPrice)}</span>
+                <span>{formatFlightTimeRange(preset.stats)}</span>
+                <span>{formatThrustToWeight(preset.stats.thrustToWeight)}</span>
+              </div>
+            </div>
+            <div className="preset-actions">
+              <button type="button" onClick={() => onLoadPreset(preset)}>
+                Load build
+              </button>
+            </div>
           </article>
         ))}
       </div>
     </section>
+  );
+}
+
+function CompatibilityBanner({ warnings, buildClass, selectedParts }) {
+  const high = warnings.filter((warning) => warning.severity === "high");
+  const medium = warnings.filter((warning) => warning.severity === "medium");
+  const unknown = warnings.filter((warning) => warning.severity === "unknown");
+  const unverified = Object.values(selectedParts ?? {}).filter(
+    (part) =>
+      part &&
+      ["unverified", "partially-verified"].includes(
+        part.verificationStatus ?? "unverified",
+      ),
+  ).length;
+  const needsVerification = unknown.length > 0 || unverified > 0;
+  const className = high.length ? "bad" : medium.length || needsVerification ? "warn" : "ok";
+  const title = high.length
+    ? `Incompatible · ${high.length} conflict${high.length === 1 ? "" : "s"}`
+    : medium.length || unknown.length
+      ? "Check specifications"
+      : unverified > 0
+        ? "No known conflicts · specs unverified"
+        : "No known compatibility conflicts";
+  const body = high.length
+    ? "These parts are unlikely to work together safely without changes."
+    : medium.length || unknown.length
+      ? "One or more specifications are unknown or need a closer look. Missing documentation is not proof that parts fit."
+      : unverified > 0
+        ? "Static checks found no known conflicts, but some selected specifications are unverified. Confirm them against manufacturer docs."
+        : `No known conflicts for this ${buildClassById[buildClass]?.label ?? "build"}. Still verify wiring, stack fit, and tune before arming.`;
+
+  return (
+    <div className={`compat-banner ${className}`}>
+      <span className="compat-icon" aria-hidden="true">{high.length ? "!" : medium.length || needsVerification ? "?" : "✓"}</span>
+      <div>
+        <strong>{title}</strong>
+        <p>{body}</p>
+      </div>
+    </div>
   );
 }
 
@@ -1190,89 +1306,857 @@ function CornerMarks() {
   );
 }
 
-function PartPicker({
+const warningCategoryMap = {
+  "prop-clearance": ["props", "frame"],
+  "motor-cell-count": ["motors", "battery"],
+  "esc-current": ["esc", "motors", "props"],
+  "esc-voltage": ["esc", "battery"],
+  "tiny-fc-cell-count": ["flightController", "battery"],
+  "motor-mount": ["motors", "frame"],
+  "fc-frame-stack": ["flightController", "frame"],
+  "esc-frame-stack": ["esc", "frame"],
+  "fc-esc-stack": ["flightController", "esc"],
+  "video-analog-digital": ["camera", "vtx"],
+  "video-digital-system": ["camera", "vtx"],
+  "tiny-cell-count": ["battery"],
+  "tiny-ducted-frame": ["frame"],
+  "tiny-prop-size": ["props"],
+  "tiny-esc-aio": ["esc"],
+  "tiny-fc-aio": ["flightController"],
+  "cinewhoop-ducted-frame": ["frame"],
+  "cinewhoop-low-thrust": ["motors", "props", "battery"],
+  "cinewhoop-heavy-battery": ["battery"],
+  "long-range-cell-count": ["battery"],
+  "long-range-flight-time": ["battery", "motors", "props"],
+  "long-range-prop-pitch": ["props"],
+  "unknown-prop-clearance": ["props", "frame"],
+  "unknown-motor-cells": ["motors", "battery"],
+  "unknown-esc-current": ["esc", "motors"],
+  "unknown-esc-voltage": ["esc", "battery"],
+  "unknown-fc-voltage": ["flightController", "battery"],
+  "unknown-motor-mount": ["motors", "frame"],
+  "unknown-fc-frame-stack": ["flightController", "frame"],
+  "unknown-esc-frame-stack": ["esc", "frame"],
+  "unknown-fc-esc-stack": ["flightController", "esc"],
+  "unknown-video-system": ["camera", "vtx"],
+  "unknown-digital-system": ["camera", "vtx"],
+  "unknown-battery-connector": ["battery"],
+  "unknown-aio-connector": ["battery", "flightController"],
+  "battery-connector": ["battery", "flightController"],
+  "unknown-receiver-protocol": ["receiver"],
+};
+
+function getBuildCompatibility(warnings, selectedParts = {}) {
+  const high = warnings.filter((warning) => warning.severity === "high");
+  const medium = warnings.filter((warning) => warning.severity === "medium");
+  const unknown = warnings.filter((warning) => warning.severity === "unknown");
+  const unverified = Object.values(selectedParts).filter(
+    (part) =>
+      part &&
+      ["unverified", "partially-verified"].includes(
+        part.verificationStatus ?? "unverified",
+      ),
+  ).length;
+
+  if (high.length > 0) {
+    return {
+      level: "issue",
+      label: `Incompatible · ${high.length}`,
+      shortLabel: "Incompatible",
+    };
+  }
+
+  if (medium.length > 0) {
+    return {
+      level: "caution",
+      label: "Check specs",
+      shortLabel: "Check",
+    };
+  }
+
+  if (unknown.length > 0) {
+    return {
+      level: "caution",
+      label: "Check specs",
+      shortLabel: "Check",
+    };
+  }
+
+  if (unverified > 0) {
+    return {
+      level: "caution",
+      label: "No known conflicts · unverified",
+      shortLabel: "Unverified",
+    };
+  }
+
+  return { level: "ok", label: "No known conflicts", shortLabel: "No conflicts" };
+}
+
+function getCategoryWarningStatus(categoryKey, warnings) {
+  const relevant = warnings.filter((warning) =>
+    (warningCategoryMap[warning.id] ?? []).includes(categoryKey),
+  );
+  const high = relevant.filter((warning) => warning.severity === "high");
+  const medium = relevant.filter((warning) => warning.severity === "medium");
+  const unknown = relevant.filter((warning) => warning.severity === "unknown");
+
+  if (high.length > 0) {
+    return { level: "issue", label: "Incompatible" };
+  }
+
+  if (medium.length > 0 || unknown.length > 0) {
+    return { level: "caution", label: "Check specs" };
+  }
+
+  return { level: "ok", label: "No known conflicts", shortLabel: "No conflicts" };
+}
+
+function ConfiguratorNav({
+  selectedParts,
+  activeCategory,
+  warnings,
+  onSelectCategory,
+}) {
+  return (
+    <nav aria-label="Component categories" className="config-nav">
+      {buildSteps.map((step, index) => {
+        const selected = selectedParts[step.key];
+        const status = selected
+          ? getCategoryWarningStatus(step.key, warnings)
+          : { level: "empty", label: "Empty" };
+
+        return (
+          <button
+            aria-label={`${step.label}: ${selected?.name ?? "not selected"}`}
+            className={`config-nav-item ${activeCategory === step.key ? "active" : ""}`}
+            key={step.key}
+            type="button"
+            onClick={() => onSelectCategory(step.key)}
+          >
+            <span className="config-nav-index">{String(index + 1).padStart(2, "0")}</span>
+            <span className="config-nav-label">{step.label}</span>
+            <span className={`config-nav-dot ${status.level}`} aria-hidden="true" />
+          </button>
+        );
+      })}
+    </nav>
+  );
+}
+
+function BuildOverviewRow({
   index,
   step,
   selectedPart,
-  options,
-  onChange,
+  warnings,
+  onOpenPicker,
   onOpenDetails,
 }) {
-  const compatiblePart =
-    options.find((part) => part.id === selectedPart?.id) ?? options[0] ?? null;
-
-  if (!compatiblePart) {
-    return (
-      <article className="part-row part-row-empty">
-        <div className="part-control">
-          <div className="part-heading">
-            <span className="step-marker" aria-hidden="true">
-              {String(index).padStart(2, "0")}
-            </span>
-            <label htmlFor={`${step.key}-select`}>{step.label}</label>
-          </div>
-          <p className="part-description">No compatible parts for this build class.</p>
-        </div>
-      </article>
-    );
-  }
-
-  const price = getPartPriceLabel(step.key, compatiblePart);
-  const weight = getPartWeightLabel(step.key, compatiblePart);
-  const specs = [
-    compatiblePart.brand,
-    price,
-    weight,
-    ...getKeySpecs(step.key, compatiblePart),
-  ].filter(Boolean);
+  const status = selectedPart
+    ? getCategoryWarningStatus(step.key, warnings)
+    : { level: "empty", label: "Empty" };
 
   return (
-    <article className="part-row">
-      <div className="part-preview-stack">
-        <PartImage
-          key={`${step.key}-${compatiblePart.id}`}
-          categoryKey={step.key}
-          part={compatiblePart}
-          partType={step.label}
-        />
+    <article className={`build-row ${selectedPart ? "" : "build-row-empty"}`}>
+      <button
+        className="build-row-main"
+        type="button"
+        onClick={() => onOpenPicker(step.key)}
+      >
+        <span className="build-row-number" aria-hidden="true">
+          {String(index).padStart(2, "0")}
+        </span>
+        <span className="build-row-thumb" aria-hidden="true">
+          {selectedPart ? (
+            <PartImage
+              categoryKey={step.key}
+              part={selectedPart}
+              partType={step.label}
+            />
+          ) : (
+            <span className="build-row-empty-mark">+</span>
+          )}
+        </span>
+        <span className="build-row-copy">
+          <span className="build-row-category">{step.label}</span>
+          <strong>{selectedPart?.name ?? `Choose ${step.label.toLowerCase()}`}</strong>
+          <span className="build-row-meta">
+            {selectedPart
+              ? `${getPartPriceLabel(step.key, selectedPart)} · ${getPartWeightLabel(step.key, selectedPart)}`
+              : "No part selected"}
+          </span>
+          <span className={`build-row-inline-status ${status.level}`}>
+            {status.label}
+          </span>
+        </span>
+        <span className={`build-row-status ${status.level}`}>{status.label}</span>
+        <span className="build-row-action">
+          {selectedPart ? "Change" : "Choose"} <span aria-hidden="true">→</span>
+        </span>
+      </button>
+      {selectedPart && (
         <button
-          aria-label={`Show details for ${compatiblePart.name}`}
-          className="part-details-button"
+          className="build-row-details"
           type="button"
-          onClick={() => onOpenDetails(step.key)}
+          onClick={() => onOpenDetails({ step, part: selectedPart })}
         >
           Details
         </button>
-      </div>
-      <div className="part-control">
-        <div className="part-heading">
-          <span className="step-marker" aria-hidden="true">
-            {String(index).padStart(2, "0")}
-          </span>
-          <label htmlFor={`${step.key}-select`}>{step.label}</label>
-        </div>
-        <select
-          id={`${step.key}-select`}
-          value={compatiblePart.id}
-          onChange={(event) => onChange(step.key, event.target.value)}
-        >
-          {options.map((part) => (
-            <option key={part.id} value={part.id}>
-              {part.name}
-            </option>
-          ))}
-        </select>
-        <p className="part-description">{compatiblePart.description}</p>
-        <div className="part-meta" aria-label={`${step.label} details`}>
-          {specs.map((spec) => (
-            <span key={spec} title={spec}>
-              {spec}
-            </span>
-          ))}
-        </div>
-      </div>
+      )}
     </article>
   );
+}
+
+function BuildSummary({
+  stats,
+  warnings,
+  grades,
+  buildExplanation,
+  buildClass,
+  selectedParts,
+  copyStatus,
+  onCopyBuildLink,
+}) {
+  const compatibility = getBuildCompatibility(warnings, selectedParts);
+
+  return (
+    <section className="results-section build-summary" aria-label="Build summary">
+      <div className="summary-heading">
+        <div>
+          <p className="eyebrow">Estimated build</p>
+          <h2>Build summary</h2>
+        </div>
+        <span className={`summary-status ${compatibility.level}`}>
+          {compatibility.label}
+        </span>
+      </div>
+
+      <div className="summary-total">
+        <span>Estimated total</span>
+        <strong>{formatCurrency(stats.totalPrice)}</strong>
+        <span className="summary-confidence">High confidence · part prices vary by retailer</span>
+      </div>
+
+      <div className="summary-kpis">
+        <div>
+          <span>Estimated weight</span>
+          <strong>{formatWeightG(stats.totalWeightG)}</strong>
+          <span>Medium confidence</span>
+        </div>
+        <div>
+          <span>Estimated flight time</span>
+          <strong>{formatFlightTimeRange(stats)}</strong>
+          <span>Low confidence</span>
+        </div>
+      </div>
+
+      <CompatibilityBanner warnings={warnings} buildClass={buildClass} selectedParts={selectedParts} />
+
+      <details className="advanced-section">
+        <summary>Performance details</summary>
+        <div className="stats-grid advanced-stats">
+          <StatCard
+            label="Est. thrust"
+            value={formatThrustG(stats.totalThrustG)}
+            confidence="MEDIUM"
+          />
+          <StatCard
+            label="Est. T:W"
+            value={formatThrustToWeight(stats.thrustToWeight)}
+            confidence="MEDIUM"
+          />
+          <StatCard
+            label="Est. top speed"
+            value={formatTopSpeedRange(stats)}
+            confidence="LOW"
+          />
+        </div>
+        <EstimateAccuracy />
+      </details>
+
+      <details className="advanced-section">
+        <summary>Build assessment</summary>
+        <div className="grade-grid">
+          {Object.values(grades)
+            .filter((grade) => grade.label !== "Overall")
+            .map((grade) => (
+              <GradeCard key={grade.label} grade={grade} />
+            ))}
+        </div>
+        <ExplainBuildPanel explanation={buildExplanation} />
+        <p className="summary-note">
+          Letter grades are a rough comparison tool, not a safety or performance
+          certification. Static checks cannot catch every wiring, firmware, or
+          physical-fit issue.
+        </p>
+      </details>
+
+      <div className="summary-share">
+        <h3>Share this build</h3>
+        <ShareBuildButton
+          status={copyStatus}
+          onCopyBuildLink={onCopyBuildLink}
+        />
+      </div>
+    </section>
+  );
+}
+
+function MobileSummaryBar({ stats, warnings, selectedParts, onOpenSummary }) {
+  const compatibility = getBuildCompatibility(warnings, selectedParts);
+
+  return (
+    <div className="mobile-summary-bar">
+      <div className="mobile-summary-price">
+        <span>Estimated total</span>
+        <strong>{formatCurrency(stats.totalPrice)}</strong>
+      </div>
+      <span className={`mobile-summary-status ${compatibility.level}`}>
+        {compatibility.shortLabel}
+      </span>
+      <button type="button" onClick={onOpenSummary}>
+        View summary
+      </button>
+    </div>
+  );
+}
+
+function MobileSummaryPanel({ children, onClose }) {
+  const closeRef = useRef(null);
+
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+
+  return (
+    <div className="mobile-summary-layer">
+      <button
+        aria-label="Close build summary"
+        className="mobile-summary-scrim"
+        type="button"
+        onClick={onClose}
+      />
+      <div
+        aria-label="Build summary"
+        aria-modal="true"
+        className="mobile-summary-panel"
+        role="dialog"
+      >
+        <div className="mobile-summary-head">
+          <span>Configuration</span>
+          <button ref={closeRef} className="drawer-close" type="button" onClick={onClose}>
+            Close
+          </button>
+        </div>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function PartPickerPanel({
+  stepKey,
+  selectedIds,
+  selectedParts,
+  buildClass,
+  onClose,
+  onSelect,
+  onOpenDetails,
+}) {
+  const step = buildSteps.find((buildStep) => buildStep.key === stepKey);
+  const options = parts[stepKey] ?? [];
+  const [query, setQuery] = useState("");
+  const [brand, setBrand] = useState("all");
+  const [specFilter, setSpecFilter] = useState("all");
+  const [sort, setSort] = useState("best");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const closeRef = useRef(null);
+
+  useEffect(() => {
+    closeRef.current?.focus();
+  }, []);
+
+  const brands = useMemo(
+    () =>
+      [...new Set(options.map((part) => part.brand).filter(Boolean))].sort(
+        (left, right) => left.localeCompare(right),
+      ),
+    [options],
+  );
+  const specFilters = useMemo(
+    () => getSpecFilterOptions(stepKey, options),
+    [options, stepKey],
+  );
+
+  const filteredOptions = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+
+    return options.filter((part) => {
+      if (brand !== "all" && part.brand !== brand) {
+        return false;
+      }
+
+      if (!matchesSpecFilter(part, specFilter)) {
+        return false;
+      }
+
+      if (!needle) {
+        return true;
+      }
+
+      const haystack = [
+        part.name,
+        part.brand,
+        part.description,
+        ...(part.keySpecs ?? []),
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
+      return haystack.includes(needle);
+    });
+  }, [brand, options, query, specFilter]);
+
+  const evaluatedOptions = useMemo(
+    () =>
+      filteredOptions.map((part) => {
+        const candidateSelections = { ...selectedIds, [stepKey]: part.id };
+        const candidateParts = getSelectedParts(candidateSelections, parts);
+        const candidateStats = calculateBuildStats(candidateParts, buildClass);
+        const candidateWarnings = getCompatibilityWarnings(
+          candidateParts,
+          buildClass,
+          candidateStats,
+        );
+        const high = candidateWarnings.filter(
+          (warning) => warning.severity === "high",
+        );
+        const cautions = candidateWarnings.filter(
+          (warning) => warning.severity === "medium",
+        );
+        const unknowns = candidateWarnings.filter(
+          (warning) => warning.severity === "unknown",
+        );
+        const unverified = Object.values(candidateParts).filter(
+          (candidate) =>
+            candidate &&
+            ["unverified", "partially-verified"].includes(
+              candidate.verificationStatus ?? "unverified",
+            ),
+        ).length;
+        const classCompatible =
+          !part.compatibleClasses?.length ||
+          part.compatibleClasses.includes(buildClass);
+
+        return {
+          part,
+          classCompatible,
+          high,
+          cautions,
+          unknowns,
+          unverified,
+          firstWarning:
+            high[0] ?? cautions[0] ?? unknowns[0] ?? null,
+        };
+      }),
+    [buildClass, filteredOptions, selectedIds, stepKey],
+  );
+
+  const sortedOptions = useMemo(() => {
+    const selectedId = selectedIds[stepKey];
+
+    return [...evaluatedOptions].sort((left, right) => {
+      if (left.part.id === selectedId) return -1;
+      if (right.part.id === selectedId) return 1;
+
+      if (sort === "price-asc") {
+        return (left.part.price ?? 0) - (right.part.price ?? 0);
+      }
+
+      if (sort === "price-desc") {
+        return (right.part.price ?? 0) - (left.part.price ?? 0);
+      }
+
+      if (left.classCompatible !== right.classCompatible) {
+        return left.classCompatible ? -1 : 1;
+      }
+
+      if (left.high.length !== right.high.length) {
+        return left.high.length - right.high.length;
+      }
+
+      if (left.cautions.length !== right.cautions.length) {
+        return left.cautions.length - right.cautions.length;
+      }
+
+      return left.part.name.localeCompare(right.part.name);
+    });
+  }, [evaluatedOptions, selectedIds, sort, stepKey]);
+
+  const activeFilterCount =
+    (brand !== "all" ? 1 : 0) + (specFilter !== "all" ? 1 : 0);
+
+  if (!step) {
+    return null;
+  }
+
+  return (
+    <div
+      aria-labelledby="picker-title"
+      aria-modal="true"
+      className="picker-layer"
+      role="dialog"
+    >
+      <button
+        aria-label="Close part picker"
+        className="picker-scrim"
+        type="button"
+        onClick={onClose}
+      />
+      <div className="picker-panel">
+        <header className="picker-header">
+          <div>
+            <p className="eyebrow">Choose a part</p>
+            <h2 id="picker-title">{step.label}</h2>
+            <p className="picker-subtitle">
+              All options stay visible. Incompatible parts are labeled with the
+              reason instead of being hidden.
+            </p>
+          </div>
+          <button ref={closeRef} className="drawer-close" type="button" onClick={onClose}>
+            Close
+          </button>
+        </header>
+
+        <div className="picker-toolbar">
+          <input
+            aria-label={`Search ${step.label} parts`}
+            className="picker-search-input"
+            placeholder={`Search ${options.length} ${step.label.toLowerCase()} parts`}
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+          <select
+            aria-label="Sort parts"
+            className="picker-sort"
+            value={sort}
+            onChange={(event) => setSort(event.target.value)}
+          >
+            <option value="best">Best fit first</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+          <button
+            aria-expanded={filtersOpen}
+            className="picker-filter-toggle"
+            type="button"
+            onClick={() => setFiltersOpen((open) => !open)}
+          >
+            Filters{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+          </button>
+        </div>
+
+        <div className={`picker-filters-panel ${filtersOpen ? "open" : ""}`}>
+          <select
+            aria-label="Filter by brand"
+            value={brand}
+            onChange={(event) => setBrand(event.target.value)}
+          >
+            <option value="all">All brands</option>
+            {brands.map((item) => (
+              <option key={item} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+          {specFilters.length > 0 && (
+            <select
+              aria-label="Filter by specification"
+              value={specFilter}
+              onChange={(event) => setSpecFilter(event.target.value)}
+            >
+              <option value="all">All specs</option>
+              {specFilters.map((filter) => (
+                <option key={filter.value} value={filter.value}>
+                  {filter.label}
+                </option>
+              ))}
+            </select>
+          )}
+          <button
+            className="picker-reset"
+            type="button"
+            onClick={() => {
+              setBrand("all");
+              setSpecFilter("all");
+            }}
+          >
+            Reset filters
+          </button>
+        </div>
+
+        {activeFilterCount > 0 && (
+          <div className="picker-active-filters">
+            <span>{activeFilterCount} active filter{activeFilterCount === 1 ? "" : "s"}</span>
+            <button
+              type="button"
+              onClick={() => {
+                setBrand("all");
+                setSpecFilter("all");
+              }}
+            >
+              Clear all
+            </button>
+          </div>
+        )}
+
+        <div className="picker-count">
+          {sortedOptions.length} of {options.length} parts shown
+          {selectedParts[stepKey] ? ` · current: ${selectedParts[stepKey].name}` : ""}
+        </div>
+
+        <div className="picker-results">
+          {sortedOptions.length === 0 ? (
+            <div className="picker-empty">
+              No parts match those filters. Try clearing the search or brand
+              filter.
+            </div>
+          ) : (
+            sortedOptions.map(
+              ({ part, classCompatible, high, cautions, unknowns, unverified, firstWarning }) => {
+                const isSelected = selectedIds[stepKey] === part.id;
+                const status = high.length
+                  ? `Incompatible · ${high.length}`
+                  : cautions.length || unknowns.length
+                    ? "Check specs"
+                    : unverified > 0
+                      ? "No known conflicts · unverified"
+                      : "No known conflicts";
+
+                return (
+                  <article
+                    className={`picker-result ${isSelected ? "selected" : ""}`}
+                    key={part.id}
+                  >
+                    <div className="picker-result-image">
+                      <PartImage
+                        categoryKey={stepKey}
+                        part={part}
+                        partType={step.label}
+                      />
+                    </div>
+                    <div className="picker-result-body">
+                      <div className="picker-result-top">
+                        <span className="picker-result-brand">
+                          {part.brand ?? "Unknown brand"}
+                        </span>
+                        <span className={`verification-badge ${part.verificationStatus ?? "unverified"}`}>
+                          {(part.verificationStatus ?? "unverified").replaceAll("-", " ")}
+                        </span>
+                      </div>
+                      <h3>{part.name}</h3>
+                      <div className="picker-result-meta">
+                        {getPartPriceLabel(stepKey, part)} ·{" "}
+                        {getPartWeightLabel(stepKey, part)}
+                      </div>
+                      <div className="picker-result-specs">
+                        {getKeySpecs(stepKey, part).slice(0, 4).map((spec) => (
+                          <span key={spec}>{spec}</span>
+                        ))}
+                      </div>
+                      <div className="picker-result-footer">
+                        <span
+                          className={`picker-compat ${!classCompatible ? "issue" : high.length ? "issue" : cautions.length || unknowns.length || unverified ? "caution" : "ok"}`}
+                        >
+                          {!classCompatible
+                            ? `Not compatible with ${buildClassById[buildClass]?.label ?? "this build class"}`
+                            : status}
+                        </span>
+                        {firstWarning && classCompatible && (
+                          <span className="picker-warning">
+                            {firstWarning.title}
+                          </span>
+                        )}
+                      </div>
+                      <div className="picker-result-actions">
+                        <button
+                          type="button"
+                          onClick={() => onOpenDetails({ step, part })}
+                        >
+                          Details
+                        </button>
+                        <button
+                          className="picker-select"
+                          disabled={!classCompatible}
+                          type="button"
+                          onClick={() => onSelect(stepKey, part.id)}
+                        >
+                          {isSelected ? "Selected" : "Select"}
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                );
+              },
+            )
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function getSpecFilterOptions(stepKey, options) {
+  const cells = [
+    ...new Set(
+      options.flatMap((part) => [
+        ...(part.cells ? [part.cells] : []),
+        ...(part.recommendedCells ?? []),
+        ...(part.supportedCells ?? []),
+      ]),
+    ),
+  ]
+    .filter(Number.isFinite)
+    .sort((left, right) => left - right);
+
+  switch (stepKey) {
+    case "motors":
+      return [
+        { value: "kv:under2000", label: "KV under 2000" },
+        { value: "kv:2000-2999", label: "KV 2000–2999" },
+        { value: "kv:3000plus", label: "KV 3000+" },
+        ...cells.map((cell) => ({
+          value: `cells:${cell}`,
+          label: `${cell}S`,
+        })),
+      ];
+    case "battery":
+      return [
+        ...cells.map((cell) => ({
+          value: `cells:${cell}`,
+          label: `${cell}S`,
+        })),
+        { value: "chemistry:LiHV", label: "LiHV" },
+        { value: "chemistry:LiPo", label: "LiPo" },
+      ];
+    case "props":
+      return [
+        { value: "diameter:under2", label: 'Under 2"' },
+        { value: "diameter:2-3", label: '2–3"' },
+        { value: "diameter:3.5", label: '3.5"' },
+        { value: "diameter:5", label: '5"' },
+        { value: "diameter:7", label: '7"' },
+      ];
+    case "frame":
+      return [
+        { value: "maxprop:under3", label: 'Props under 3"' },
+        { value: "maxprop:3-4", label: 'Props 3–4"' },
+        { value: "maxprop:5", label: '5" props' },
+        { value: "maxprop:7", label: '7" props' },
+        { value: "ducted:true", label: "Ducted" },
+      ];
+    case "esc":
+      return [
+        { value: "amp:under40", label: "Under 40A" },
+        { value: "amp:40-59", label: "40–59A" },
+        { value: "amp:60plus", label: "60A+" },
+        ...cells.map((cell) => ({
+          value: `cells:${cell}`,
+          label: `${cell}S`,
+        })),
+      ];
+    case "flightController":
+      return [
+        { value: "mount:20x20", label: "20x20 mount" },
+        { value: "mount:25.5x25.5", label: "25.5x25.5 mount" },
+        { value: "mount:30.5x30.5", label: "30.5x30.5 mount" },
+        { value: "aio:true", label: "AIO" },
+      ];
+    case "camera":
+    case "vtx":
+      return [
+        { value: "video:analog", label: "Analog" },
+        { value: "video:digital", label: "Digital" },
+      ];
+    case "receiver":
+      return [
+        { value: "protocol:ExpressLRS", label: "ExpressLRS" },
+        { value: "protocol:Crossfire", label: "Crossfire" },
+      ];
+    default:
+      return [];
+  }
+}
+
+function matchesSpecFilter(part, filter) {
+  if (!filter || filter === "all") {
+    return true;
+  }
+
+  const [kind, raw] = filter.split(":");
+  const number = Number(raw);
+
+  switch (kind) {
+    case "kv": {
+      const kv = Number(part.kv);
+      if (!Number.isFinite(kv)) return false;
+      if (raw === "under2000") return kv < 2000;
+      if (raw === "2000-2999") return kv >= 2000 && kv < 3000;
+      if (raw === "3000plus") return kv >= 3000;
+      return true;
+    }
+    case "cells":
+      return [
+        ...(part.cells ? [part.cells] : []),
+        ...(part.recommendedCells ?? []),
+        ...(part.supportedCells ?? []),
+      ].includes(number);
+    case "chemistry":
+      return (part.chemistry ?? "").toLowerCase() === raw.toLowerCase();
+    case "diameter": {
+      const diameter = Number(part.diameterInches);
+      if (!Number.isFinite(diameter)) return false;
+      if (raw === "under2") return diameter < 2;
+      if (raw === "2-3") return diameter >= 2 && diameter < 3.5;
+      if (raw === "3.5") return diameter >= 3.4 && diameter < 4;
+      if (raw === "5") return diameter >= 5 && diameter < 6;
+      if (raw === "7") return diameter >= 6.5;
+      return true;
+    }
+    case "maxprop": {
+      const maxProp = Number(part.maxPropInches);
+      if (!Number.isFinite(maxProp)) return false;
+      if (raw === "under3") return maxProp < 3;
+      if (raw === "3-4") return maxProp >= 3 && maxProp < 5;
+      if (raw === "5") return maxProp >= 5 && maxProp < 6.5;
+      if (raw === "7") return maxProp >= 6.5;
+      return true;
+    }
+    case "amp": {
+      const amp = Number(part.continuousAmp);
+      if (!Number.isFinite(amp)) return false;
+      if (raw === "under40") return amp < 40;
+      if (raw === "40-59") return amp >= 40 && amp < 60;
+      if (raw === "60plus") return amp >= 60;
+      return true;
+    }
+    case "mount":
+      return [part.mountPattern, ...(part.stackMounts ?? [])]
+        .filter(Boolean)
+        .some((mount) => String(mount).includes(raw));
+    case "aio":
+      return Boolean(part.isAio);
+    case "video":
+      return part.videoSystem === raw;
+    case "protocol":
+      return (part.protocol ?? "").toLowerCase() === raw.toLowerCase();
+    case "ducted":
+      return Boolean(part.ducted);
+    default:
+      return true;
+  }
 }
 
 function getPartPriceLabel(key, part) {
@@ -1397,12 +2281,27 @@ function getKeySpecs(key, part) {
   return specs.filter(Boolean);
 }
 
+const statHelp = {
+  "Est. price": "Sum of selected part prices (estimated; real prices vary by retailer).",
+  "Est. mass": "All-up mass including a small hardware allowance per build class.",
+  "Est. thrust": "Estimated total thrust after duct losses for whoops/cinewhoops.",
+  "Est. T:W": "Thrust divided by all-up mass. Higher = stronger punchout.",
+  "Est. flight": "Conservative mixed-throttle range from pack capacity and estimated draw.",
+  "Est. top speed": "Conservative range from KV, voltage, and prop pitch, capped by class.",
+};
+
 function StatCard({ label, value, confidence }) {
   const safeValue = value == null || value === "" ? "N/A" : value;
 
   return (
     <article className="stat-card">
-      <p>{label}</p>
+      <p>
+        {label}
+        <span className="help-tip" tabIndex={0} aria-label={statHelp[label] ?? ""}>
+          ?
+          <span className="help-text">{statHelp[label]}</span>
+        </span>
+      </p>
       <strong>{safeValue}</strong>
       <span className="stat-confidence">Confidence: {confidence.toLowerCase()}</span>
     </article>
