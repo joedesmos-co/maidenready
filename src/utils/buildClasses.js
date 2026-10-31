@@ -11,18 +11,26 @@ export const filterPartsForBuildClass = (partsCatalog, buildClass) =>
     return filteredParts;
   }, {});
 
-export const getDefaultSelectionsForBuildClass = (buildClass, partsCatalog) =>
-  buildSteps.reduce((selections, step) => {
+export const getDefaultSelectionsForBuildClass = (buildClass, partsCatalog) => {
+  const selections = buildSteps.reduce((nextSelections, step) => {
     const firstCompatiblePart = (partsCatalog[step.key] ?? []).find((part) =>
       isPartCompatibleWithClass(part, buildClass),
     );
 
     if (firstCompatiblePart) {
-      selections[step.key] = firstCompatiblePart.id;
+      nextSelections[step.key] = firstCompatiblePart.id;
     }
 
-    return selections;
+    return nextSelections;
   }, {});
+
+  return normalizeIntegratedSelections(
+    selections,
+    buildClass,
+    partsCatalog,
+    "flightController",
+  ).selections;
+};
 
 export const resolveSelectionsForBuildClass = (
   selectedIds,
@@ -87,3 +95,78 @@ export const inferBuildClassFromSelections = (
 
   return [...classCounts.entries()].sort((left, right) => right[1] - left[1])[0][0];
 };
+
+export function normalizeIntegratedSelections(
+  selectedIds,
+  buildClass,
+  partsCatalog,
+  changedKey = null,
+) {
+  const selections = { ...selectedIds };
+  const changedKeys = [];
+  const flightController = (partsCatalog.flightController ?? []).find(
+    (part) => part.id === selections.flightController,
+  );
+  const roles = new Set(flightController?.integratedRoles ?? []);
+  const virtualByRole = new Map();
+
+  for (const role of ["esc", "receiver", "vtx"]) {
+    const virtual = (partsCatalog[role] ?? []).find(
+      (part) =>
+        part.isVirtual &&
+        part.integratedInto === flightController?.id &&
+        part.integratedRole === role,
+    );
+
+    if (virtual) {
+      virtualByRole.set(role, virtual);
+    }
+  }
+
+  const firstRealPart = (role) =>
+    (partsCatalog[role] ?? []).find(
+      (part) =>
+        !part.isVirtual &&
+        !part.integratedInto &&
+        isPartCompatibleWithClass(part, buildClass),
+    );
+
+  for (const role of ["esc", "receiver", "vtx"]) {
+    const current = (partsCatalog[role] ?? []).find(
+      (part) => part.id === selections[role],
+    );
+    const currentIsVirtual = Boolean(
+      current?.isVirtual || current?.integratedInto,
+    );
+    const virtual = virtualByRole.get(role);
+
+    if (changedKey === "flightController" && flightController) {
+      if (roles.has(role) && virtual) {
+        if (selections[role] !== virtual.id) {
+          selections[role] = virtual.id;
+          changedKeys.push(role);
+        }
+        continue;
+      }
+
+      if (currentIsVirtual) {
+        const fallback = firstRealPart(role);
+        if (fallback) {
+          selections[role] = fallback.id;
+          changedKeys.push(role);
+        }
+      }
+      continue;
+    }
+
+    if (currentIsVirtual && (!flightController || current.integratedInto !== flightController.id)) {
+      const fallback = firstRealPart(role);
+      if (fallback) {
+        selections[role] = fallback.id;
+        changedKeys.push(role);
+      }
+    }
+  }
+
+  return { selections, changedKeys };
+}

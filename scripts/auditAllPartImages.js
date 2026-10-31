@@ -14,6 +14,7 @@ import { getPartIllustrationRelativePath } from "../src/utils/partIllustrationPa
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(scriptDir, "..");
 const defaultPublicRoot = join(projectRoot, "public");
+const defaultPrivateRoot = join(projectRoot, "private/photo-candidates");
 const reportPath = join(projectRoot, "docs/ALL_PART_IMAGE_COVERAGE_REPORT.md");
 const manifestPath = join(projectRoot, "docs/all-part-image-coverage.json");
 
@@ -88,7 +89,10 @@ function formatPresetUsage(presetUsage) {
     .join("; ");
 }
 
-export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
+export function auditAllPartImages({
+  publicRoot = defaultPublicRoot,
+  privateRoot = defaultPrivateRoot,
+} = {}) {
   const presetUsageByPartId = buildPresetUsageByPartId();
   const checked = [];
 
@@ -98,6 +102,9 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
       const relativePath = imagePath?.replace(/^\//, "") ?? null;
       const absolutePath = relativePath ? join(publicRoot, relativePath) : null;
       const exists = relativePath ? existsSync(absolutePath) : false;
+      const privateCandidateExists = relativePath
+        ? existsSync(join(privateRoot, relativePath))
+        : false;
       const illustrationRelativePath = getPartIllustrationRelativePath(part.id, step.key);
       const illustrationAbsolutePath = illustrationRelativePath
         ? join(publicRoot, illustrationRelativePath)
@@ -120,6 +127,7 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
         relativePath,
         absolutePath,
         exists,
+        privateCandidateExists,
         illustrationPath: illustrationRelativePath
           ? `/${illustrationRelativePath}`
           : null,
@@ -199,6 +207,9 @@ export function auditAllPartImages({ publicRoot = defaultPublicRoot } = {}) {
     visualCoverage: {
       total: checked.length,
       realProductImages: foundItems.length,
+      privatePhotoCandidates: checked.filter(
+        (entry) => entry.privateCandidateExists,
+      ).length,
       generatedIllustrations: illustrationItems.length,
       fallbackOnly: fallbackOnlyItems.length,
       withVisual: visualItems.length,
@@ -224,7 +235,8 @@ export function formatAllPartImageAuditReport(report) {
     `Missing product JPGs: ${report.missing}`,
     "",
     "Visual coverage:",
-    `  Real product images: ${report.visualCoverage.realProductImages}`,
+    `  Public product images: ${report.visualCoverage.realProductImages}`,
+    `  Private photo candidates: ${report.visualCoverage.privatePhotoCandidates}`,
     `  Generated illustrations: ${report.visualCoverage.generatedIllustrations}`,
     `  Fallback placeholder only: ${report.visualCoverage.fallbackOnly}`,
     `  Total with visual: ${report.visualCoverage.withVisual}/${report.visualCoverage.total}`,

@@ -3,6 +3,42 @@ import { formatFlightTimeRange, getEstimateProfile } from "./buildCalculations.j
 const hasIntersection = (left = [], right = []) =>
   left.some((value) => right.includes(value));
 
+const normalizeMountTokens = (value) => {
+  const raw = String(value ?? "")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[–—]/g, "-");
+  const tokens = new Set([raw]);
+  const pairMatches = raw.matchAll(/(\d+(?:\.\d+)?)x(\d+(?:\.\d+)?)/g);
+
+  for (const match of pairMatches) {
+    tokens.add(`${match[1]}x${match[2]}`);
+    if (match[1] === match[2]) {
+      tokens.add(`${match[1]}x${match[1]}`);
+    }
+  }
+
+  const spacingRaw = raw.replace(/m[234]/g, "");
+  const mmMatches = spacingRaw.matchAll(/(\d+(?:\.\d+)?)mm/g);
+
+  for (const match of mmMatches) {
+    tokens.add(`${match[1]}x${match[1]}`);
+  }
+
+  if (raw.includes("3-hole")) {
+    tokens.add("3-hole");
+  }
+
+  return [...tokens];
+};
+
+const mountsCompatible = (left, right) => {
+  const leftTokens = new Set(asArray(left).flatMap(normalizeMountTokens));
+  const rightTokens = asArray(right).flatMap(normalizeMountTokens);
+
+  return rightTokens.some((token) => leftTokens.has(token));
+};
+
 const asArray = (value) => (Array.isArray(value) ? value : [value].filter(Boolean));
 
 const isFiniteNumber = (value) =>
@@ -155,7 +191,7 @@ export const getCompatibilityWarnings = ({
         "Motor mounting pattern cannot be confirmed",
         `${frame.name} or ${motors.name} is missing a documented motor bolt pattern. Measure the frame and motor before ordering.`,
       );
-    } else if (!hasIntersection(frameMounts, motorMounts)) {
+    } else if (!mountsCompatible(frameMounts, motorMounts)) {
       warnings.push({
         id: "motor-mount",
         severity: "high",
@@ -180,7 +216,7 @@ export const getCompatibilityWarnings = ({
         "Flight controller stack fit cannot be confirmed",
         `${frame.name} or ${flightController.name} is missing a documented stack mounting size. Check the frame manual before ordering.`,
       );
-    } else if (!hasIntersection(frameMounts, fcMounts)) {
+    } else if (!mountsCompatible(frameMounts, fcMounts)) {
       warnings.push({
         id: "fc-frame-stack",
         severity: "medium",
@@ -205,7 +241,7 @@ export const getCompatibilityWarnings = ({
         "ESC stack fit cannot be confirmed",
         `${frame.name} or ${esc.name} is missing a documented stack mounting size. Check the frame manual before ordering.`,
       );
-    } else if (!hasIntersection(frameMounts, escMounts)) {
+    } else if (!mountsCompatible(frameMounts, escMounts)) {
       warnings.push({
         id: "esc-frame-stack",
         severity: "medium",
@@ -230,7 +266,7 @@ export const getCompatibilityWarnings = ({
         "FC and ESC stack match cannot be confirmed",
         `${flightController.name} or ${esc.name} is missing a documented stack mounting size. Verify the standoff pattern before ordering.`,
       );
-    } else if (!hasIntersection(fcMount, escMount)) {
+    } else if (!mountsCompatible(fcMount, escMount)) {
       warnings.push({
         id: "fc-esc-stack",
         severity: "medium",
@@ -276,6 +312,64 @@ export const getCompatibilityWarnings = ({
         });
       }
     }
+  }
+
+  if (flightController?.isAio) {
+    const roles = new Set(flightController.integratedRoles ?? []);
+
+    if (roles.has("esc") && esc && !esc.integratedInto) {
+      warnings.push({
+        id: "aio-esc-redundant",
+        severity: "medium",
+        title: "AIO already includes an ESC",
+        message: `${flightController.name} is an all-in-one board with an integrated ESC. The separately selected ${esc.name} is redundant and adds cost and mass unless you intend to bypass the AIO ESC.`,
+      });
+    }
+
+    if (roles.has("receiver") && receiver && !receiver.integratedInto) {
+      warnings.push({
+        id: "aio-receiver-redundant",
+        severity: "medium",
+        title: "AIO already includes a receiver",
+        message: `${flightController.name} includes an integrated receiver. The separately selected ${receiver.name} is redundant unless you are intentionally using a different radio link.`,
+      });
+    }
+
+    if (roles.has("vtx") && vtx && !vtx.integratedInto) {
+      warnings.push({
+        id: "aio-vtx-redundant",
+        severity: "medium",
+        title: "AIO already includes a video transmitter",
+        message: `${flightController.name} includes an integrated VTX. The separately selected ${vtx.name} adds a second video transmitter and extra mass.`,
+      });
+    }
+  }
+
+  if (esc?.integratedInto && flightController?.id !== esc.integratedInto) {
+    warnings.push({
+      id: "integrated-esc-orphaned",
+      severity: "high",
+      title: "Integrated ESC selected without its AIO host",
+      message: `${esc.name} is the ESC section of ${esc.integratedInto}. Select the matching AIO flight controller or choose a standalone ESC.`,
+    });
+  }
+
+  if (receiver?.integratedInto && flightController?.id !== receiver.integratedInto) {
+    warnings.push({
+      id: "integrated-receiver-orphaned",
+      severity: "medium",
+      title: "Integrated receiver selected without its AIO host",
+      message: `${receiver.name} is integrated into a specific AIO. Select the matching AIO or choose a standalone receiver.`,
+    });
+  }
+
+  if (vtx?.integratedInto && flightController?.id !== vtx.integratedInto) {
+    warnings.push({
+      id: "integrated-vtx-orphaned",
+      severity: "medium",
+      title: "Integrated VTX selected without its AIO host",
+      message: `${vtx.name} is integrated into a specific AIO. Select the matching AIO or choose a standalone VTX.`,
+    });
   }
 
   if (battery && !battery.connector) {

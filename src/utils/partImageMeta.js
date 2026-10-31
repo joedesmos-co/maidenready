@@ -1,3 +1,22 @@
+export const isPartPhotoApproved = (part) => {
+  const license = String(part?.imageLicense ?? "").toLowerCase();
+
+  if (!part?.imagePath || part.imageNeedsReview) {
+    return false;
+  }
+
+  if (!license) {
+    return false;
+  }
+
+  return !(
+    license.includes("no verified") ||
+    license.includes("unknown") ||
+    license.includes("unverified") ||
+    license.includes("pending")
+  );
+};
+
 export const hasPartImageMetadata = (part) =>
   Boolean(part?.imageCredit) ||
   Boolean(part?.imageLicense) ||

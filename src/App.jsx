@@ -20,6 +20,7 @@ import {
   formatTopSpeedMph,
   formatTopSpeedRange,
   formatWeightG,
+  getPartAccounting,
   getSelectedParts,
 } from "./utils/buildCalculations";
 import {
@@ -37,6 +38,7 @@ import {
   loadSavedBuilds,
   persistSavedBuilds,
   resolveSavedBuildSelections,
+  recalculateSavedBuildSnapshot,
 } from "./utils/savedBuilds";
 import {
   buildShareUrl,
@@ -49,9 +51,11 @@ import { explainBuild } from "./utils/explainBuild";
 import {
   getDefaultSelectionsForBuildClass,
   inferBuildClassFromSelections,
+  normalizeIntegratedSelections,
   resolveSelectionsForBuildClass,
 } from "./utils/buildClasses";
 import { LegalPanel } from "./components/LegalPanel.jsx";
+import { BetaFeedbackPanel } from "./components/BetaFeedbackPanel.jsx";
 import { ConfiguratorStage } from "./components/ConfiguratorStage.jsx";
 import { DroneVisual } from "./components/DroneVisual.jsx";
 import { HomePanel } from "./components/HomePanel.jsx";
@@ -85,7 +89,11 @@ const getInitialSelections = (buildClass) => {
     defaultSelections,
   );
 
-  return resolveSelectionsForBuildClass(urlSelections, buildClass, parts).selections;
+  return normalizeIntegratedSelections(
+    resolveSelectionsForBuildClass(urlSelections, buildClass, parts).selections,
+    buildClass,
+    parts,
+  ).selections;
 };
 
 /** Home by default; shared build links open Custom Build so parts are visible. */
@@ -189,6 +197,7 @@ function App() {
   const [presetStatus, setPresetStatus] = useState("");
   const [presetClassFilter, setPresetClassFilter] = useState("all");
   const [legalPageId, setLegalPageId] = useState(null);
+  const [betaFeedbackOpen, setBetaFeedbackOpen] = useState(false);
 
   const selectedParts = useMemo(
     () => getSelectedParts(selectedIds, parts),
@@ -231,13 +240,29 @@ function App() {
   }, [savedBuilds]);
 
   useEffect(() => {
+    setSavedBuilds((current) =>
+      current.map((savedBuild) =>
+        recalculateSavedBuildSnapshot(savedBuild, parts),
+      ),
+    );
+    // Migration runs once on load; subsequent saved-build edits are persisted as-is.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     setSelectedIds((current) => {
       const resolved = resolveSelectionsForBuildClass(current, buildClass, parts);
+      const normalized = normalizeIntegratedSelections(
+        resolved.selections,
+        buildClass,
+        parts,
+        "flightController",
+      );
       const isSame = buildSteps.every(
-        (step) => resolved.selections[step.key] === current[step.key],
+        (step) => normalized.selections[step.key] === current[step.key],
       );
 
-      return isSame ? current : resolved.selections;
+      return isSame ? current : normalized.selections;
     });
   }, [buildClass]);
 
@@ -259,25 +284,29 @@ function App() {
         setMobileSummaryOpen(false);
       } else if (legalPageId) {
         setLegalPageId(null);
+      } else if (betaFeedbackOpen) {
+        setBetaFeedbackOpen(false);
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
+  }, [betaFeedbackOpen, detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
 
   useEffect(() => {
     if (typeof document === "undefined") {
       return undefined;
     }
 
-    const isOpen = Boolean(pickerStepKey || detailInfo || mobileSummaryOpen || legalPageId);
+    const isOpen = Boolean(
+      pickerStepKey || detailInfo || mobileSummaryOpen || legalPageId || betaFeedbackOpen,
+    );
     document.body.style.overflow = isOpen ? "hidden" : "";
 
     return () => {
       document.body.style.overflow = "";
     };
-  }, [detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
+  }, [betaFeedbackOpen, detailInfo, legalPageId, mobileSummaryOpen, pickerStepKey]);
 
   const changeNoticeTimer = useRef(null);
 
@@ -285,7 +314,14 @@ function App() {
     const step = buildSteps.find((buildStep) => buildStep.key === key);
     const part = parts[key]?.find((candidate) => candidate.id === partId);
 
-    setSelectedIds((current) => ({ ...current, [key]: partId }));
+    setSelectedIds((current) =>
+      normalizeIntegratedSelections(
+        { ...current, [key]: partId },
+        buildClass,
+        parts,
+        key,
+      ).selections,
+    );
 
     if (step && part) {
       setChangeNotice(`${step.label} updated: ${part.name}`);
@@ -309,6 +345,7 @@ function App() {
     setDetailInfo(null);
     setMobileSummaryOpen(false);
     setLegalPageId(null);
+    setBetaFeedbackOpen(false);
   };
 
   const handleBuildClassChange = (nextBuildClass) => {
@@ -319,10 +356,17 @@ function App() {
       nextBuildClass,
       parts,
     );
-    const changedCount = resolved.changedKeys.length;
+    const normalized = normalizeIntegratedSelections(
+      resolved.selections,
+      nextBuildClass,
+      parts,
+      "flightController",
+    );
+    const changedCount =
+      resolved.changedKeys.length + normalized.changedKeys.length;
 
     setBuildClass(nextBuildClass);
-    setSelectedIds(resolved.selections);
+    setSelectedIds(normalized.selections);
     setBuildClassStatus(
       changedCount > 0
         ? `Swapped ${changedCount} incompatible part${changedCount === 1 ? "" : "s"} for ${nextClassLabel}.`
@@ -342,9 +386,15 @@ function App() {
       presetBuildClass,
       parts,
     );
+    const normalized = normalizeIntegratedSelections(
+      resolved.selections,
+      presetBuildClass,
+      parts,
+      "flightController",
+    );
 
     setBuildClass(presetBuildClass);
-    setSelectedIds(resolved.selections);
+    setSelectedIds(normalized.selections);
     setPresetStatus(
       isComplete
         ? `${preset.name} loaded — open Custom Build to review.`
@@ -400,9 +450,14 @@ function App() {
       nextBuildClass,
       parts,
     );
+    const normalized = normalizeIntegratedSelections(
+      classResolved.selections,
+      nextBuildClass,
+      parts,
+    );
 
     setBuildClass(nextBuildClass);
-    setSelectedIds(classResolved.selections);
+    setSelectedIds(normalized.selections);
     setSavedBuildStatus(
       resolved.isComplete
         ? "Saved build loaded — switched to Custom Build."
@@ -547,6 +602,7 @@ function App() {
                   index={index + 1}
                   step={step}
                   selectedPart={selectedParts[step.key]}
+                  selectedParts={selectedParts}
                   warnings={warnings}
                   onOpenPicker={setPickerStepKey}
                   onOpenDetails={setDetailInfo}
@@ -651,7 +707,14 @@ function App() {
 
       <LegalPanel pageId={legalPageId} onClose={() => setLegalPageId(null)} />
 
-      <SiteFooter onOpenLegalPage={setLegalPageId} />
+      {betaFeedbackOpen && (
+        <BetaFeedbackPanel onClose={() => setBetaFeedbackOpen(false)} />
+      )}
+
+      <SiteFooter
+        onOpenLegalPage={setLegalPageId}
+        onOpenBetaFeedback={() => setBetaFeedbackOpen(true)}
+      />
     </main>
   );
 }
@@ -1344,6 +1407,12 @@ const warningCategoryMap = {
   "unknown-aio-connector": ["battery", "flightController"],
   "battery-connector": ["battery", "flightController"],
   "unknown-receiver-protocol": ["receiver"],
+  "aio-esc-redundant": ["esc", "flightController"],
+  "aio-receiver-redundant": ["receiver", "flightController"],
+  "aio-vtx-redundant": ["vtx", "flightController"],
+  "integrated-esc-orphaned": ["esc", "flightController"],
+  "integrated-receiver-orphaned": ["receiver", "flightController"],
+  "integrated-vtx-orphaned": ["vtx", "flightController"],
 };
 
 function getBuildCompatibility(warnings, selectedParts = {}) {
@@ -1393,7 +1462,7 @@ function getBuildCompatibility(warnings, selectedParts = {}) {
   return { level: "ok", label: "No known conflicts", shortLabel: "No conflicts" };
 }
 
-function getCategoryWarningStatus(categoryKey, warnings) {
+function getCategoryWarningStatus(categoryKey, warnings, selectedPart = null) {
   const relevant = warnings.filter((warning) =>
     (warningCategoryMap[warning.id] ?? []).includes(categoryKey),
   );
@@ -1409,7 +1478,16 @@ function getCategoryWarningStatus(categoryKey, warnings) {
     return { level: "caution", label: "Check specs" };
   }
 
-  return { level: "ok", label: "No known conflicts", shortLabel: "No conflicts" };
+  if (
+    selectedPart &&
+    ["unverified", "partially-verified"].includes(
+      selectedPart.verificationStatus ?? "unverified",
+    )
+  ) {
+    return { level: "caution", label: "Unverified" };
+  }
+
+  return { level: "ok", label: "No known conflicts" };
 }
 
 function ConfiguratorNav({
@@ -1423,7 +1501,7 @@ function ConfiguratorNav({
       {buildSteps.map((step, index) => {
         const selected = selectedParts[step.key];
         const status = selected
-          ? getCategoryWarningStatus(step.key, warnings)
+          ? getCategoryWarningStatus(step.key, warnings, selected)
           : { level: "empty", label: "Empty" };
 
         return (
@@ -1448,13 +1526,24 @@ function BuildOverviewRow({
   index,
   step,
   selectedPart,
+  selectedParts,
   warnings,
   onOpenPicker,
   onOpenDetails,
 }) {
   const status = selectedPart
-    ? getCategoryWarningStatus(step.key, warnings)
+    ? getCategoryWarningStatus(step.key, warnings, selectedPart)
     : { level: "empty", label: "Empty" };
+  const metaLabel = selectedPart
+    ? [
+        ...new Set(
+          [
+            getPartPriceLabel(step.key, selectedPart, selectedParts),
+            getPartWeightLabel(step.key, selectedPart, selectedParts),
+          ].filter(Boolean),
+        ),
+      ].join(" · ")
+    : "No part selected";
 
   return (
     <article className={`build-row ${selectedPart ? "" : "build-row-empty"}`}>
@@ -1480,11 +1569,7 @@ function BuildOverviewRow({
         <span className="build-row-copy">
           <span className="build-row-category">{step.label}</span>
           <strong>{selectedPart?.name ?? `Choose ${step.label.toLowerCase()}`}</strong>
-          <span className="build-row-meta">
-            {selectedPart
-              ? `${getPartPriceLabel(step.key, selectedPart)} · ${getPartWeightLabel(step.key, selectedPart)}`
-              : "No part selected"}
-          </span>
+          <span className="build-row-meta">{metaLabel}</span>
           <span className={`build-row-inline-status ${status.level}`}>
             {status.label}
           </span>
@@ -1518,6 +1603,7 @@ function BuildSummary({
   onCopyBuildLink,
 }) {
   const compatibility = getBuildCompatibility(warnings, selectedParts);
+  const selectedReceiver = selectedParts.receiver;
 
   return (
     <section className="results-section build-summary" aria-label="Build summary">
@@ -1536,12 +1622,20 @@ function BuildSummary({
         <strong>{formatCurrency(stats.totalPrice)}</strong>
         <span className="summary-confidence">High confidence · part prices vary by retailer</span>
       </div>
+      <p className="summary-inclusion-note">
+        Excludes transmitter, goggles, charger, tools, shipping, taxes, and
+        spare props or batteries.
+      </p>
 
       <div className="summary-kpis">
         <div>
           <span>Estimated weight</span>
           <strong>{formatWeightG(stats.totalWeightG)}</strong>
-          <span>Medium confidence</span>
+          <span>
+            {stats.unknownWeightCount > 0
+              ? "Partial · some weights unknown"
+              : "Medium confidence"}
+          </span>
         </div>
         <div>
           <span>Estimated flight time</span>
@@ -1551,6 +1645,12 @@ function BuildSummary({
       </div>
 
       <CompatibilityBanner warnings={warnings} buildClass={buildClass} selectedParts={selectedParts} />
+      {selectedReceiver && (
+        <p className="radio-note">
+          Radio compatibility is not checked. Confirm your transmitter module
+          supports {selectedReceiver.protocol ?? "the selected receiver protocol"}.
+        </p>
+      )}
 
       <details className="advanced-section">
         <summary>Performance details</summary>
@@ -1572,6 +1672,62 @@ function BuildSummary({
           />
         </div>
         <EstimateAccuracy />
+      </details>
+
+      <details className="advanced-section">
+        <summary>Cost &amp; mass breakdown</summary>
+        <div className="breakdown-list">
+          {stats.partBreakdown.map((entry) => (
+            <div className="breakdown-row" key={`${entry.categoryKey}-${entry.partId}`}>
+              <span className="breakdown-category">{entry.categoryLabel}</span>
+              <strong className="breakdown-part">{entry.partName}</strong>
+              <span className="breakdown-qty">
+                {entry.integrated
+                  ? "Included"
+                  : `${entry.installedQuantity} installed${
+                      entry.packageQuantity > 1
+                        ? ` · ${entry.packages} × ${entry.packageQuantity} pack`
+                        : ""
+                    }`}
+              </span>
+              <span className="breakdown-cost">
+                {entry.integrated ? "—" : formatPreciseCurrency(entry.purchaseCost)}
+              </span>
+              <span className="breakdown-weight">
+                {entry.integrated
+                  ? "—"
+                  : entry.weightKnown
+                    ? `${entry.installedWeightG} g`
+                    : "Unknown"}
+              </span>
+            </div>
+          ))}
+        </div>
+        <div className="breakdown-total">
+          <span>Estimated purchase total</span>
+          <strong>{formatPreciseCurrency(stats.totalPrice)}</strong>
+          <span>Estimated installed mass</span>
+          <strong>{formatWeightG(stats.totalWeightG)}</strong>
+        </div>
+        {stats.integrationNotes.length > 0 && (
+          <ul className="integration-notes">
+            {stats.integrationNotes.map((note) => (
+              <li key={note}>{note}</li>
+            ))}
+          </ul>
+        )}
+        {stats.accountingWarnings.length > 0 && (
+          <ul className="accounting-notes">
+            {[...new Set(stats.accountingWarnings)].map((note) => (
+              <li key={note}>{note}</li>
+            ))}
+          </ul>
+        )}
+        <p className="price-basis-note">
+          Prices are estimated purchase prices. Shipping, taxes, and retailer
+          markups are excluded. Package quantity determines the minimum purchase
+          cost; installed mass counts only what is installed.
+        </p>
       </details>
 
       <details className="advanced-section">
@@ -1664,7 +1820,11 @@ function PartPickerPanel({
   onOpenDetails,
 }) {
   const step = buildSteps.find((buildStep) => buildStep.key === stepKey);
-  const options = parts[stepKey] ?? [];
+  const options = (parts[stepKey] ?? []).filter(
+    (part) =>
+      !part.isVirtual ||
+      part.integratedInto === selectedIds.flightController,
+  );
   const [query, setQuery] = useState("");
   const [brand, setBrand] = useState("all");
   const [specFilter, setSpecFilter] = useState("all");
@@ -1952,14 +2112,22 @@ function PartPickerPanel({
                         <span className="picker-result-brand">
                           {part.brand ?? "Unknown brand"}
                         </span>
-                        <span className={`verification-badge ${part.verificationStatus ?? "unverified"}`}>
-                          {(part.verificationStatus ?? "unverified").replaceAll("-", " ")}
+                        <span
+                          className={`verification-badge ${
+                            part.isVirtual
+                              ? "integrated"
+                              : (part.verificationStatus ?? "unverified")
+                          }`}
+                        >
+                          {part.isVirtual
+                            ? "integrated"
+                            : (part.verificationStatus ?? "unverified").replaceAll("-", " ")}
                         </span>
                       </div>
                       <h3>{part.name}</h3>
                       <div className="picker-result-meta">
-                        {getPartPriceLabel(stepKey, part)} ·{" "}
-                        {getPartWeightLabel(stepKey, part)}
+                        {getPartPriceLabel(stepKey, part, selectedParts)} ·{" "}
+                        {getPartWeightLabel(stepKey, part, selectedParts)}
                       </div>
                       <div className="picker-result-specs">
                         {getKeySpecs(stepKey, part).slice(0, 4).map((spec) => (
@@ -2159,38 +2327,60 @@ function matchesSpecFilter(part, filter) {
   }
 }
 
-function getPartPriceLabel(key, part) {
-  if (!part || typeof part.price !== "number") {
+function getPartPriceLabel(key, part, selectedParts = {}) {
+  if (!part) {
     return "Price TBD";
   }
 
-  const meta = categoryMeta[key] ?? {};
+  const accounting = getPartAccounting(part, key, selectedParts);
 
-  if (meta.priceMultiplier > 1) {
-    return `${formatPreciseCurrency(part.price)} ${
-      meta.unitLabel ?? "each"
-    } / ${formatCurrency(part.price * meta.priceMultiplier)} total`;
+  if (!accounting) {
+    return "Price TBD";
   }
 
-  return `${formatPreciseCurrency(part.price)} ${
-    meta.unitLabel ? meta.unitLabel : ""
-  }`.trim();
+  if (accounting.integrated) {
+    return "Included with AIO";
+  }
+
+  const meta = categoryMeta[key] ?? {};
+
+  if (accounting.priceBasis === "package" && accounting.packageQuantity > 1) {
+    return `${formatPreciseCurrency(part.price)} / set of ${accounting.packageQuantity}`;
+  }
+
+  if (accounting.installedQuantity > 1) {
+    return `${formatPreciseCurrency(part.price)} ${
+      meta.unitLabel ?? "each"
+    } / ${formatCurrency(accounting.purchaseCost)} total`;
+  }
+
+  return formatPreciseCurrency(accounting.purchaseCost);
 }
 
-function getPartWeightLabel(key, part) {
-  if (!part || typeof part.weightG !== "number") {
+function getPartWeightLabel(key, part, selectedParts = {}) {
+  if (!part) {
     return "Weight TBD";
   }
 
-  const meta = categoryMeta[key] ?? {};
+  const accounting = getPartAccounting(part, key, selectedParts);
 
-  if (meta.weightMultiplier > 1) {
-    return `${part.weightG} g each / ${Math.round(
-      part.weightG * meta.weightMultiplier,
-    )} g total`;
+  if (!accounting) {
+    return "Weight TBD";
   }
 
-  return `${part.weightG} g`;
+  if (accounting.integrated) {
+    return "Included with AIO";
+  }
+
+  if (accounting.weightBasis === "package" && accounting.packageQuantity > 1) {
+    return `${accounting.unitWeightG} g / set of ${accounting.packageQuantity}`;
+  }
+
+  if (accounting.installedQuantity > 1) {
+    return `${accounting.unitWeightG} g each / ${accounting.installedWeightG} g total`;
+  }
+
+  return `${accounting.unitWeightG} g`;
 }
 
 function asList(value) {

@@ -5,6 +5,8 @@ const optional = ["weightG", "sourceUrl", "verificationStatus"];
 
 const report = {
   total: 0,
+  realProducts: 0,
+  virtualComponents: 0,
   byCategory: {},
   byBuildClass: {},
   verified: 0,
@@ -26,6 +28,11 @@ for (const step of buildSteps) {
 
 for (const part of allParts) {
   report.total += 1;
+  if (part.isVirtual) {
+    report.virtualComponents += 1;
+  } else {
+    report.realProducts += 1;
+  }
   report.byCategory[part._category] = (report.byCategory[part._category] ?? 0) + 1;
   for (const buildClass of part.compatibleClasses ?? []) {
     report.byBuildClass[buildClass] = (report.byBuildClass[buildClass] ?? 0) + 1;
@@ -56,7 +63,9 @@ for (const part of allParts) {
 }
 
 console.log(JSON.stringify(report, null, 2));
-console.log(`\nCatalog: ${report.total} parts`);
+console.log(`\nCatalog: ${report.total} records`);
+console.log(`Real purchasable products: ${report.realProducts}`);
+console.log(`Virtual integrated components: ${report.virtualComponents}`);
 console.log(`Verified: ${report.verified}, Partial: ${report.partiallyVerified}, Unverified: ${report.unverified}, Deprecated: ${report.deprecated}, Rejected: ${report.rejected}`);
 console.log(`Missing required fields: ${report.missingFields.length}`);
 console.log(`Missing optional fields: ${report.missingOptional.length}`);

@@ -204,3 +204,24 @@ test("unknown warnings reduce the compatibility score less than hard issues", ()
   assert.ok(unknown > hard);
   assert.ok(unknown < 100);
 });
+test("motor mount descriptions with millimeter spacing match frame patterns", () => {
+  for (const [motorMount, frameMount] of [
+    ["4xM3 16mm", "16x16"],
+    ["4xM2 9mm", "9x9"],
+    ["4xM2 12mm", "12x12"],
+  ]) {
+    const warnings = warningsFor({
+      frame: { motorMounts: [frameMount] },
+      motors: { mountPattern: motorMount },
+    });
+    assert.ok(!has(warnings, "motor-mount"), `${motorMount} should match ${frameMount}`);
+  }
+});
+
+test("motor mount still rejects a genuinely different pattern", () => {
+  const warnings = warningsFor({
+    frame: { motorMounts: ["16x16"] },
+    motors: { mountPattern: "4xM2 9mm" },
+  });
+  assert.ok(has(warnings, "motor-mount"));
+});

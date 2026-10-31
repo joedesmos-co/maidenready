@@ -148,14 +148,11 @@ test("details opened from picker closes back to picker", async ({ page }) => {
   await expect(page.getByRole("dialog", { name: "Frame" })).toHaveCount(0);
 });
 
-test("unknown specs surface as unconfirmed, not compatible", async ({ page }) => {
+test("unverified catalog data is labeled instead of confirmed", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("tab", { name: "Presets" }).click();
-  await page.getByRole("button", { name: "Cinewhoop", exact: true }).click();
-  const card = page.locator(".preset-card").filter({ hasText: '2.5" Outdoor Whoop' }).first();
-  await card.getByRole("button", { name: "Load build" }).click();
-  await expect(page.locator(".summary-status")).toContainText("Check specs");
-  await expect(page.getByText(/Check specifications/i).first()).toBeVisible();
+  await page.getByRole("tab", { name: "Custom Build" }).click();
+  await expect(page.locator(".summary-status")).toContainText("unverified");
+  await expect(page.locator(".compat-banner")).toContainText("unverified");
 });
 
 test("hard battery voltage mismatch is labeled and explained", async ({ page }) => {
@@ -208,4 +205,207 @@ test("selected component name appears in the stage", async ({ page }) => {
   await page.keyboard.press("Escape");
   await page.locator(".config-nav-item").nth(5).click();
   await expect(page.locator(".config-stage-top h2")).toContainText("CNHL");
+});
+
+test("all six starter builds load without hard incompatibility", async ({ page }) => {
+  const names = [
+    "Tiny Whoop Beginner",
+    '2.5" Outdoor Whoop',
+    '3.5" Park Freestyle',
+    'Standard 5" Freestyle',
+    "Cinewhoop Cruiser",
+    '7" Long Range Explorer',
+  ];
+
+  for (const name of names) {
+    await page.goto("/");
+    await page.getByRole("tab", { name: "Presets" }).click();
+    const card = page.locator(".preset-card").filter({ hasText: name }).first();
+    await card.getByRole("button", { name: "Load build" }).click();
+    await expect(page.locator(".summary-status")).not.toHaveText(/Incompatible/);
+  }
+});
+
+test("drone hotspot opens the matching part category", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Custom Build" }).click();
+  await page.getByRole("button", { name: "Choose Battery" }).click();
+  await expect(page.getByRole("dialog", { name: "Battery" })).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog", { name: "Battery" })).toHaveCount(0);
+});
+
+test("AIO build shows ESC and receiver as included, not double-charged", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Presets" }).click();
+  const card = page.locator(".preset-card").filter({ hasText: "Tiny Whoop Beginner" }).first();
+  await card.getByRole("button", { name: "Load build" }).click();
+  await expect(page.locator(".summary-total strong")).toHaveText("$143");
+  await page.getByText("Cost & mass breakdown").click();
+  const escRow = page.locator(".breakdown-row").filter({ hasText: "BETAFPV 1S 5A AIO ESC" });
+  const receiverRow = page.locator(".breakdown-row").filter({ hasText: "Integrated ELRS" });
+  await expect(escRow).toContainText("Included");
+  await expect(escRow).toContainText("—");
+  await expect(receiverRow).toContainText("Included");
+  await expect(page.locator(".integration-notes")).toContainText("counted once");
+});
+
+test("legacy saved AIO build totals are migrated on load", async ({ page }) => {
+  const selectedIds = {
+    frame: "betafpv-meteor75-pro-frame",
+    motors: "betafpv-0802se-19500kv",
+    esc: "betafpv-1s-5a-aio-esc",
+    flightController: "betafpv-f4-1s-aio-fc",
+    props: "gemfan-45mm-3",
+    battery: "tattu-1s-450-hv",
+    receiver: "betafpv-f4-1s-aio-elrs",
+    camera: "caddx-ant-nano",
+    vtx: "betafpv-m03-vtx",
+  };
+
+  await page.addInitScript((ids) => {
+    localStorage.setItem(
+      "maidenready.savedBuilds.v1",
+      JSON.stringify([
+        {
+          id: "legacy-aio",
+          name: "Legacy AIO Build",
+          createdAt: new Date().toISOString(),
+          buildClass: "tiny-whoop",
+          selectedIds: ids,
+          totalPrice: 999,
+          totalWeightG: 999,
+          thrustToWeight: 1,
+          flightTimeMinutes: 1,
+          topSpeedMph: 1,
+          overallGrade: "F",
+        },
+      ]),
+    );
+  }, selectedIds);
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Saved Builds" }).click();
+  const row = page.locator(".saved-row").filter({ hasText: "Legacy AIO Build" });
+  await expect(row).toContainText("$143");
+  await expect(row).toContainText("42 g");
+});
+
+test("GEPRC AIO 2.5-inch build counts the AIO once at full price", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Presets" }).click();
+  const card = page.locator(".preset-card").filter({ hasText: '2.5" Outdoor Whoop' }).first();
+  await card.getByRole("button", { name: "Load build" }).click();
+  await expect(page.locator(".summary-total strong")).toHaveText("$263");
+  await expect(page.locator(".summary-kpis")).toContainText("~203 g");
+  await page.getByText("Cost & mass breakdown").click();
+  const escRow = page.locator(".breakdown-row").filter({ hasText: "GEPRC GEP-F411-35A AIO ESC" });
+  const fcRow = page.locator(".breakdown-row").filter({ hasText: "GEPRC GEP-F411-35A AIO FC" });
+  await expect(escRow).toContainText("Included");
+  await expect(fcRow).toContainText("$74.99");
+});
+
+test("integrated receiver is visible only with its AIO host", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Presets" }).click();
+  await page.locator(".preset-card").filter({ hasText: "Tiny Whoop Beginner" }).first().getByRole("button", { name: "Load build" }).click();
+  await page.locator(".config-nav-item").nth(6).click();
+  await expect(page.getByPlaceholder(/Search \d+ receiver parts/i)).toBeVisible();
+  await expect(page.locator(".picker-result").filter({ hasText: "Integrated ELRS" })).toBeVisible();
+  await page.keyboard.press("Escape");
+
+  await page.getByRole("tab", { name: "Custom Build" }).click();
+  await page.locator("#build-class-select").selectOption("5-inch-freestyle");
+  await page.locator(".config-nav-item").nth(6).click();
+  await expect(page.getByPlaceholder(/Search \d+ receiver parts/i)).toBeVisible();
+  await expect(page.locator(".picker-result").filter({ hasText: "Integrated ELRS" })).toHaveCount(0);
+});
+
+test("orphaned integrated receiver in a share URL falls back safely", async ({ page }) => {
+  await page.goto("/?class=5-inch-freestyle&receiver=betafpv-f4-1s-aio-elrs");
+  await page.getByRole("tab", { name: "Custom Build" }).click();
+  await expect(page.locator(".build-row-main").nth(6)).not.toContainText("Integrated ELRS");
+  await expect(page.locator(".summary-status")).not.toContainText("Incompatible");
+});
+
+test("picker is keyboard reachable and returns focus safely", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "Custom Build" }).click();
+  await page.locator(".build-row-main").first().focus();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("dialog", { name: "Frame" })).toBeVisible();
+  await expect(page.locator(".picker-header .drawer-close")).toBeFocused();
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog", { name: "Frame" })).toHaveCount(0);
+});
+
+test("unapproved photo candidates are not publicly served", async ({ page }) => {
+  await page.goto("/");
+  const response = await page.request.get("/parts/frames/geprc-gep-cl35-v3-frame.jpg");
+  const contentType = response.headers()["content-type"] ?? "";
+  expect(contentType).not.toContain("image");
+});
+
+test("beta feedback panel opens from the footer", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Beta feedback" }).click();
+  await expect(page.getByRole("dialog", { name: "Send feedback" })).toBeVisible();
+  await expect(page.getByLabel("Build class")).toBeVisible();
+  await expect(page.getByLabel("Device")).toBeVisible();
+  await page.getByLabel("What happened?").fill("The compatibility note was clear.");
+  await page.locator(".feedback-panel .drawer-close").click();
+  await expect(page.getByRole("dialog", { name: "Send feedback" })).toHaveCount(0);
+});
+
+test("beta smoke journey: configure, save, reload, share, mobile", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: /Your quad\. Your build\./i })).toBeVisible();
+
+  await page.getByRole("tab", { name: "Presets" }).click();
+  await page.locator(".preset-card").filter({ hasText: 'Standard 5" Freestyle' }).first().getByRole("button", { name: "Load build" }).click();
+  await expect(page.locator(".config-stage-top h2")).toContainText("TBS Source One");
+
+  const changePart = async (navIndex, search, resultText) => {
+    await page.locator(".config-nav-item").nth(navIndex).click();
+    const dialog = page.getByRole("dialog");
+    await dialog.getByPlaceholder(/Search \d+ .* parts/i).fill(search);
+    const result = dialog.locator(".picker-result").filter({ hasText: resultText }).first();
+    await result.locator(".picker-select").click();
+    await page.waitForTimeout(150);
+    await page.keyboard.press("Escape");
+  };
+
+  await changePart(0, "AOS 5 V5", "AOS 5 V5");
+  await expect(page.locator(".config-stage-top h2")).toContainText("AOS 5 V5");
+  await changePart(1, "Snow 2306 1860", "Snow 2306 1860KV");
+  await changePart(4, "Gemfan Hurricane 51466", "Gemfan Hurricane 51466");
+  await changePart(5, "Tattu R-Line 6S 1400", "Tattu R-Line 6S 1400mAh 130C");
+
+  await expect(page.locator(".drone-layout-5-inch-freestyle")).toBeVisible();
+  await expect(page.locator(".compat-banner")).toBeVisible();
+  await page.getByText("Cost & mass breakdown").click();
+  await expect(page.locator(".integration-notes")).toContainText("Four physical motors are counted");
+
+  await page.getByRole("tab", { name: "Saved Builds" }).click();
+  await page.getByLabel("Build name").fill("Beta Smoke Build");
+  await page.getByRole("button", { name: "Save build" }).click();
+  await expect(page.locator(".saved-row").filter({ hasText: "Beta Smoke Build" })).toBeVisible();
+
+  await page.reload();
+  await page.getByRole("tab", { name: "Saved Builds" }).click();
+  await page.locator(".saved-row").filter({ hasText: "Beta Smoke Build" }).getByRole("button", { name: "Load", exact: true }).click();
+  await expect(page.locator(".config-stage-top h2")).toContainText("AOS 5 V5");
+
+  const shareUrl = page.url();
+  expect(shareUrl).toContain("frame=aos-5-v5");
+  const secondPage = await page.context().newPage();
+  await secondPage.goto(shareUrl);
+  await expect(secondPage.locator("#build-class-select")).toHaveValue("5-inch-freestyle");
+  await expect(secondPage.locator(".config-stage-top h2")).toContainText("AOS 5 V5");
+  await secondPage.close();
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(shareUrl);
+  await expect(page.locator(".mobile-summary-bar")).toBeVisible();
+  await page.getByRole("button", { name: "View summary" }).click();
+  await expect(page.getByRole("dialog", { name: "Build summary" })).toBeVisible();
 });

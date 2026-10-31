@@ -1,27 +1,67 @@
 {
-  "generatedAt": "2026-10-31T15:04:47.845Z",
+  "generatedAt": "2026-10-31T20:26:55.507Z",
   "summary": {
-    "total": 327,
-    "found": 101,
-    "missing": 226,
-    "presetPartTotal": 48,
-    "presetPartFound": 39,
-    "presetPartMissing": 9,
+    "total": 333,
+    "found": 0,
+    "missing": 333,
+    "presetPartTotal": 49,
+    "presetPartFound": 0,
+    "presetPartMissing": 49,
     "visualCoverage": {
-      "total": 327,
-      "realProductImages": 101,
-      "generatedIllustrations": 226,
+      "total": 333,
+      "realProductImages": 0,
+      "privatePhotoCandidates": 99,
+      "generatedIllustrations": 333,
       "fallbackOnly": 0,
-      "withVisual": 327
+      "withVisual": 333
     },
     "missingByPriority": {
-      "1": 9,
-      "2": 88,
-      "3": 129
+      "1": 49,
+      "2": 132,
+      "3": 152
     }
   },
   "missingByPriority": {
     "1": [
+      {
+        "partId": "betafpv-lava-ii-4s-580",
+        "partName": "BETAFPV LAVA II 4S 580mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-lava-ii-4s-580.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "cnhl-black-6s-1300",
+        "partName": "CNHL Black Series 6S 1300mAh 100C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 1
+      },
       {
         "partId": "gnb-4s-1500",
         "partName": "GNB 4S 1500mAh 120C",
@@ -39,6 +79,215 @@
         "compatibleClasses": [
           "5-inch-freestyle",
           "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "tattu-1s-450-hv",
+        "partName": "Tattu 1S 450mAh HV 75C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/tattu-1s-450-hv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "tattu-rline-4s-850",
+        "partName": "Tattu R-Line 4S 850mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/tattu-rline-4s-850.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "tattu-rline-6s-2200",
+        "partName": "Tattu R-Line 6S 2200mAh 95C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/tattu-rline-6s-2200.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "battery"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "caddx-ant-nano",
+        "partName": "Caddx Ant Nano",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/caddx-ant-nano.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "camera"
+          },
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "camera"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "dji-o3-camera",
+        "partName": "DJI O3 Camera",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/dji-o3-camera.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "camera"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "runcam-nano-4-whoop",
+        "partName": "RunCam Nano 4 Whoop",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/runcam-nano-4-whoop.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "camera"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "runcam-phoenix-2",
+        "partName": "RunCam Phoenix 2",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/runcam-phoenix-2.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "camera"
+          },
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "camera"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-1s-5a-aio-esc",
+        "partName": "BETAFPV 1S 5A AIO ESC",
+        "categoryKey": "esc",
+        "imagePath": "/parts/escs/betafpv-1s-5a-aio-esc.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "esc"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "geprc-gep-f411-35a-aio-esc",
+        "partName": "GEPRC GEP-F411-35A AIO ESC",
+        "categoryKey": "esc",
+        "imagePath": "/parts/escs/geprc-gep-f411-35a-aio-esc.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "esc"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "skystars-km55a-4in1",
+        "partName": "Skystars KM55A 4-in-1",
+        "categoryKey": "esc",
+        "imagePath": "/parts/escs/skystars-km55a-4in1.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "esc"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
         ],
         "priority": 1
       },
@@ -84,6 +333,63 @@
         "compatibleClasses": [
           "3.5-inch-freestyle",
           "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-f4-1s-aio-fc",
+        "partName": "BETAFPV F4 1S AIO FC",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "flightController"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "geprc-gep-f411-35a-aio-fc",
+        "partName": "GEPRC GEP-F411-35A AIO FC",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "flightController"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "matek-h743-mini-lr",
+        "partName": "Matek H743 Mini LR",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/matek-h743-mini-lr.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "flightController"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
         ],
         "priority": 1
       },
@@ -151,6 +457,63 @@
         "priority": 1
       },
       {
+        "partId": "betafpv-meteor75-pro-frame",
+        "partName": "BETAFPV Meteor75 Pro Whoop Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/betafpv-meteor75-pro-frame.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-pavo25-frame",
+        "partName": "BETAFPV Pavo25 Frame Kit",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/betafpv-pavo25-frame.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "geprc-gep-cl35-v3-frame",
+        "partName": "GEPRC GEP-CL35 V3 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "frame"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
         "partId": "rekon-hglrc-rekon7-pro-v2-frame",
         "partName": "HGLRC Rekon7 PRO V2 7-inch LR Frame",
         "categoryKey": "frame",
@@ -189,6 +552,406 @@
         "priority": 1
       },
       {
+        "partId": "betafpv-0802se-19500kv",
+        "partName": "BETAFPV 0802SE 19500KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/betafpv-0802se-19500kv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "brotherhobby-avenger-2806-5-1300",
+        "partName": "BrotherHobby Avenger 2806.5 1300KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "geprc-speedx2-2105-5-2650kv",
+        "partName": "GEPRC SPEEDX2 2105.5 2650KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "iflight-xing2-1404-3800",
+        "partName": "iFlight XING2 1404 3800KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/iflight-xing2-1404-3800.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "iflight-xing2-1404-4600kv",
+        "partName": "iFlight XING2 1404 4600KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "iflight-xing2-2207-1855",
+        "partName": "iFlight XING2 2207 1855KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/iflight-xing2-2207-1855.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "motors"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "gemfan-2218-3",
+        "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-2218-3.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "gemfan-45mm-3",
+        "partName": "Gemfan 45mm 3-Blade (1.5mm Shaft)",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-45mm-3.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "gemfan-51466",
+        "partName": "Gemfan Hurricane 51466",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-51466.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "gemfan-hurricane-3520",
+        "partName": "Gemfan Hurricane 3520",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-hurricane-3520.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "hqprop-7x3-5x3",
+        "partName": "HQProp 7x3.5x3",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-7x3-5x3.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "hqprop-duct-t90-3",
+        "partName": "HQProp Duct T90 3-Blade",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-duct-t90-3.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "props"
+          }
+        ],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-elrs-nano",
+        "partName": "BETAFPV ELRS Lite 2.4GHz",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/betafpv-elrs-nano.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "3.5-inch-freestyle",
+          "5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-f4-1s-aio-elrs",
+        "partName": "BETAFPV F4 1S AIO Integrated ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/betafpv-f4-1s-aio-elrs.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "happymodel-ep2-elrs",
+        "partName": "Happymodel EP2 ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "3-5-park-freestyle",
+            "presetName": "3.5\" Park Freestyle",
+            "buildClass": "3.5-inch-freestyle",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "radiomaster-er6-elrs",
+        "partName": "RadioMaster ER6 2.4GHz ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/radiomaster-er6-elrs.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "radiomaster-rp1-elrs",
+        "partName": "RadioMaster RP1 ELRS Nano",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/radiomaster-rp1-elrs.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "tbs-crossfire-nano",
+        "partName": "TBS Crossfire Nano RX",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "receiver"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "betafpv-m03-vtx",
+        "partName": "BETAFPV M03 5.8GHz VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/betafpv-m03-vtx.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "tiny-whoop-beginner",
+            "presetName": "Tiny Whoop Beginner",
+            "buildClass": "tiny-whoop",
+            "categoryKey": "vtx"
+          },
+          {
+            "presetId": "tiny-whoop-2s-outdoor",
+            "presetName": "2.5\" Outdoor Whoop",
+            "buildClass": "cinewhoop",
+            "categoryKey": "vtx"
+          }
+        ],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "dji-o3-air-unit",
+        "partName": "DJI O3 Air Unit",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/dji-o3-air-unit.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "cinewhoop-cruiser",
+            "presetName": "Cinewhoop Cruiser",
+            "buildClass": "cinewhoop",
+            "categoryKey": "vtx"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
         "partId": "foxeer-reaper-nano-v2-vtx",
         "partName": "Foxeer Reaper Nano V2 VTX",
         "categoryKey": "vtx",
@@ -205,6 +968,47 @@
         "compatibleClasses": [
           "tiny-whoop",
           "3.5-inch-freestyle"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "rush-tank-solo",
+        "partName": "Rush Tank Solo 5.8GHz",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/rush-tank-solo.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "standard-5-freestyle",
+            "presetName": "Standard 5\" Freestyle",
+            "buildClass": "5-inch-freestyle",
+            "categoryKey": "vtx"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 1
+      },
+      {
+        "partId": "tbs-unify-pro32-hv",
+        "partName": "TBS Unify Pro32 HV",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/tbs-unify-pro32-hv.jpg",
+        "usedInPreset": true,
+        "presetUsage": [
+          {
+            "presetId": "7-long-range-explorer",
+            "presetName": "7\" Long Range Explorer",
+            "buildClass": "7-inch-long-range",
+            "categoryKey": "vtx"
+          }
+        ],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range"
         ],
         "priority": 1
       }
@@ -242,6 +1046,19 @@
         "presetUsage": [],
         "compatibleClasses": [
           "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "cnhl-ministar-6s-1500",
+        "partName": "CNHL Ministar 6S 1500mAh 120C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/cnhl-ministar-6s-1500.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop"
         ],
         "priority": 2
       },
@@ -307,6 +1124,18 @@
         "priority": 2
       },
       {
+        "partId": "ovonic-6s-1300",
+        "partName": "Ovonic 6S 1300mAh 100C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/ovonic-6s-1300.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "tattu-4s-1300-freestyle",
         "partName": "Tattu 4S 1300mAh 95C",
         "categoryKey": "battery",
@@ -332,10 +1161,60 @@
         "priority": 2
       },
       {
+        "partId": "tattu-rline-6s-1050",
+        "partName": "Tattu R-Line 6S 1050mAh 120C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/tattu-rline-6s-1050.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "tattu-rline-6s-1400",
+        "partName": "Tattu R-Line 6S 1400mAh 130C",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/tattu-rline-6s-1400.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "tattu-rline-6s-1550",
         "partName": "Tattu R-Line 6S 1550mAh 130C",
         "categoryKey": "battery",
         "imagePath": "/parts/batteries/tattu-rline-6s-1550.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "caddx-ratel-2",
+        "partName": "Caddx Ratel 2",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/caddx-ratel-2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle",
+          "cinewhoop"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "caddx-turtle-v2",
+        "partName": "Caddx Turtle V2",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/caddx-turtle-v2.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -383,6 +1262,43 @@
         "priority": 2
       },
       {
+        "partId": "hdzero-nano-90",
+        "partName": "HDZero Nano 90",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/hdzero-nano-90.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "runcam-nano-2",
+        "partName": "RunCam Nano 2",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/runcam-nano-2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "runcam-racer-2",
+        "partName": "RunCam Racer 2",
+        "categoryKey": "camera",
+        "imagePath": "/parts/cameras/runcam-racer-2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "walksnail-avatar-micro",
         "partName": "Walksnail Avatar Micro",
         "categoryKey": "camera",
@@ -419,6 +1335,30 @@
           "3.5-inch-freestyle",
           "5-inch-freestyle",
           "cinewhoop"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "diatone-mamba-f55-128k",
+        "partName": "Diatone Mamba F55 128K 4-in-1",
+        "categoryKey": "esc",
+        "imagePath": "/parts/escs/diatone-mamba-f55-128k.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "diatone-mamba-f55-pro-esc",
+        "partName": "Diatone Mamba F55 Pro 55A 4-in-1",
+        "categoryKey": "esc",
+        "imagePath": "/parts/escs/diatone-mamba-f55-pro-esc.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
         ],
         "priority": 2
       },
@@ -643,6 +1583,19 @@
         "priority": 2
       },
       {
+        "partId": "holybro-kakute-h7-v2",
+        "partName": "Holybro Kakute H7 V2",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/holybro-kakute-h7-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "7-inch-long-range"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "iflight-beast-f722-fc",
         "partName": "iFlight Beast F722 FC",
         "categoryKey": "flightController",
@@ -659,6 +1612,18 @@
         "partName": "JHEMCU G743 Pro FC",
         "categoryKey": "flightController",
         "imagePath": "/parts/flight-controllers/jhemcu-g743-pro-fc.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "matek-f405-se-fc",
+        "partName": "Matek F405-SE FC",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/matek-f405-se-fc.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -741,6 +1706,30 @@
         "priority": 2
       },
       {
+        "partId": "armattan-marmotte",
+        "partName": "Armattan Marmotte 5-inch",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/armattan-marmotte.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "diatone-roma-f5-frame",
+        "partName": "Diatone Roma F5 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/diatone-roma-f5-frame.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "ethix-lithium5-frame",
         "partName": "Ethix Lithium5 Frame",
         "categoryKey": "frame",
@@ -777,6 +1766,18 @@
         "priority": 2
       },
       {
+        "partId": "geprc-mark5",
+        "partName": "GEPRC Mark5 Deadcat",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/geprc-mark5-deadcat.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "hglrc-zeus5-frame",
         "partName": "HGLRC Zeus5 Frame",
         "categoryKey": "frame",
@@ -793,6 +1794,18 @@
         "partName": "iFlight Nazgul Eco5 Frame",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/iflight-nazgul-eco5.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "iflight-nazgul5-v3-frame",
+        "partName": "iFlight Nazgul5 V3 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/iflight-nazgul5-v3-frame.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -841,6 +1854,18 @@
         "partName": "Lumenier QAV-S 2 JohnnyFPV SE",
         "categoryKey": "frame",
         "imagePath": "/parts/frames/qav-s-johnnyfpv-se.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "rotor-riot-cl2",
+        "partName": "Rotor Riot CL2 5-inch",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/rotor-riot-cl2.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -907,6 +1932,54 @@
         "priority": 2
       },
       {
+        "partId": "brotherhobby-avenger-2507-1850",
+        "partName": "BrotherHobby Avenger 2507 1850KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/brotherhobby-avenger-2507.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "brotherhobby-returner-r6-2207-1850kv",
+        "partName": "BrotherHobby Returner R6 2207 1850KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "emax-eco-ii-2207-1900kv",
+        "partName": "EMAX ECO II 2207 1900KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/emax-eco-ii-2207-1900kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "emax-eco-ii-2306-1900",
+        "partName": "EMAX ECO II 2306 1900KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/emax-eco-ii-2306.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "fpvcycle-2207-1780kv",
         "partName": "FPVCycle 2207 1780KV",
         "categoryKey": "motors",
@@ -955,6 +2028,18 @@
         "priority": 2
       },
       {
+        "partId": "iflight-xing2-2207-2750kv",
+        "partName": "iFlight XING2 2207 2750KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/iflight-xing2-2207-2750kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "johnnyfpv-motor-v2-2207-1960kv",
         "partName": "JohnnyFPV V2 2207 1960KV",
         "categoryKey": "motors",
@@ -971,6 +2056,30 @@
         "partName": "Lumenier AX 2207 1800KV",
         "categoryKey": "motors",
         "imagePath": "/parts/motors/lumenier-2207-1800kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "rcinpower-gts-v2-2207-1950kv",
+        "partName": "RCinPower GTS V2 2207 1950KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "rcinpower-gts-v3-2207-1860",
+        "partName": "RCinPower GTS V3 2207 1860KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/rcinpower-gts-v3-2207.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1063,6 +2172,18 @@
         "priority": 2
       },
       {
+        "partId": "xing-e-pro-2207-1800",
+        "partName": "iFlight XING-E Pro 2207 1800KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/xing-e-pro-2207.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "azure-5148",
         "partName": "Azure Power 5148",
         "categoryKey": "props",
@@ -1146,6 +2267,18 @@
         "priority": 2
       },
       {
+        "partId": "gemfan-51433",
+        "partName": "Gemfan Hurricane 51433",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "gemfan-51466-mck-v2",
         "partName": "Gemfan 51466 MCK V2 3-Blade (5mm Shaft)",
         "categoryKey": "props",
@@ -1157,9 +2290,45 @@
         "priority": 2
       },
       {
+        "partId": "gemfan-5152",
+        "partName": "Gemfan Hurricane 5152",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-5152.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "gemfan-5236",
+        "partName": "Gemfan Hurricane 5236",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-hurricane-5236.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "gemfan-hurricane-51433",
         "partName": "Gemfan Hurricane 51433 3-Blade (5mm Shaft)",
         "categoryKey": "props",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "gemfan-hurricane-51499",
+        "partName": "Gemfan Hurricane 51499",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-hurricane-51499.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1180,10 +2349,70 @@
         "priority": 2
       },
       {
+        "partId": "hqprop-5135-v2",
+        "partName": "HQProp 5135 V2",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-5135-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hqprop-5x4-5x3-v1s",
+        "partName": "HQProp 5x4.5x3 V1S",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-5x4-5x3-v1s.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hqprop-durable-5040-v2",
+        "partName": "HQProp Durable 5040 V2",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-durable-5040-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hqprop-ethix-s5",
+        "partName": "HQProp Ethix S5 5x4x3",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-ethix-s5.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "hqprop-t3x2-5x3-515",
         "partName": "HQProp T3x2.5x3 515",
         "categoryKey": "props",
         "imagePath": "/parts/props/hqprop-t3x2-5x3-515.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hqprop-v2s-5043",
+        "partName": "HQProp V2S 5x4.3x3",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/hqprop-v2s-5043.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1230,6 +2459,42 @@
         "priority": 2
       },
       {
+        "partId": "frsky-r-xsr",
+        "partName": "FrSky R-XSR",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/frsky-r-xsr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "frsky-xsr-sbus",
+        "partName": "FrSky XSR SBUS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/frsky-xsr-sbus.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "happymodel-ep2-5inch-elrs",
+        "partName": "Happymodel EP2 2.4GHz ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/happymodel-ep2-5inch-elrs.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "imm-rc-fusion-v2-elrs",
         "partName": "ImmersionRC Fusion V2 ELRS",
         "categoryKey": "receiver",
@@ -1254,10 +2519,47 @@
         "priority": 2
       },
       {
+        "partId": "tbs-crossfire-micro-v2",
+        "partName": "TBS Crossfire Micro V2",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/tbs-crossfire-micro-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
         "partId": "akk-x2-ultimate-vtx",
         "partName": "AKK X2 Ultimate VTX",
         "categoryKey": "vtx",
         "imagePath": "/parts/vtx/akk-x2-ultimate-vtx.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hdzero-freestyle-vtx",
+        "partName": "HDZero Freestyle VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle",
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "hdzero-race-vtx",
+        "partName": "HDZero Race VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/hdzero-race-vtx.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -1276,9 +2578,59 @@
           "5-inch-freestyle"
         ],
         "priority": 2
+      },
+      {
+        "partId": "tbs-unify-pro32-nano-vtx",
+        "partName": "TBS Unify Pro32 Nano VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/tbs-unify-pro32-nano-vtx.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "walksnail-avatar-gt-vtx",
+        "partName": "Walksnail Avatar GT VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle"
+        ],
+        "priority": 2
+      },
+      {
+        "partId": "walksnail-avatar-hd-v2",
+        "partName": "Walksnail Avatar HD V2 VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/walksnail-avatar-hd-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "5-inch-freestyle",
+          "cinewhoop",
+          "7-inch-long-range"
+        ],
+        "priority": 2
       }
     ],
     "3": [
+      {
+        "partId": "betafpv-1s-300-hv-bt2",
+        "partName": "BETAFPV 1S 300mAh HV BT2.0",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-1s-300-hv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
       {
         "partId": "betafpv-2s-300-ph2",
         "partName": "BETAFPV 2S 300mAh PH2.0",
@@ -1288,6 +2640,18 @@
         "presetUsage": [],
         "compatibleClasses": [
           "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-2s-450-xt30",
+        "partName": "BETAFPV 450mAh 2S 45C XT30",
+        "categoryKey": "battery",
+        "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
         ],
         "priority": 3
       },
@@ -1415,18 +2779,6 @@
         "compatibleClasses": [
           "cinewhoop",
           "3.5-inch-freestyle"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "betafpv-lava-ii-4s-580",
-        "partName": "BETAFPV LAVA II 4S 580mAh 95C",
-        "categoryKey": "battery",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle",
-          "cinewhoop"
         ],
         "priority": 3
       },
@@ -1825,6 +3177,18 @@
         "priority": 3
       },
       {
+        "partId": "diatone-mamba-f405-mini",
+        "partName": "Diatone Mamba F405 Mini",
+        "categoryKey": "flightController",
+        "imagePath": "/parts/flight-controllers/diatone-mamba-f405-mini.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "diatone-mamba-h743-lr-fc",
         "partName": "Diatone Mamba H743 LR FC",
         "categoryKey": "flightController",
@@ -1964,6 +3328,18 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-pavo30-cine-frame",
+        "partName": "BETAFPV Pavo30 Cine Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/betafpv-pavo30-cine.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "betafpv-pavo35-frame",
         "partName": "BETAFPV Pavo35 Whoop Frame",
         "categoryKey": "frame",
@@ -1971,6 +3347,42 @@
         "presetUsage": [],
         "compatibleClasses": [
           "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-pavo35-frame-kit",
+        "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/betafpv-pavo35-frame-kit.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-x-knight-35-frame-kit",
+        "partName": "BETAFPV X-Knight 35 Frame Kit",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/betafpv-x-knight-35-frame-kit.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "geprc-gep-st35-frame",
+        "partName": "GEPRC GEP-ST35 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/geprc-gep-st35.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
         ],
         "priority": 3
       },
@@ -1983,6 +3395,66 @@
         "presetUsage": [],
         "compatibleClasses": [
           "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "happymodel-moblite7-frame",
+        "partName": "Happymodel Moblite7 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/happymodel-moblite7.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "happymodel-mobula7-v2-frame",
+        "partName": "Happymodel Mobula7 V2 Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/happymodel-mobula7-v2.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "iflight-aos-3-5-v5-1-frame",
+        "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/iflight-aos-3-5-v5-1.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "iflight-aos-cine35-v5-frame",
+        "partName": "iFlight AOS Cine35 V5 Frame Kit",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/iflight-aos-cine35-v5.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "iflight-chimera7-lr-frame",
+        "partName": "iFlight Chimera7 LR Frame",
+        "categoryKey": "frame",
+        "imagePath": "/parts/frames/iflight-chimera7-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
         ],
         "priority": 3
       },
@@ -2055,6 +3527,18 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-0802-25000kv",
+        "partName": "BETAFPV 0802 25000KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/betafpv-0802-25000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "betafpv-0802-28000kv-2026",
         "partName": "BETAFPV 0802 28000KV Champion (2026)",
         "categoryKey": "motors",
@@ -2062,6 +3546,18 @@
         "presetUsage": [],
         "compatibleClasses": [
           "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-1102-18000kv",
+        "partName": "BETAFPV 1102 18000KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/betafpv-1102-18000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
         ],
         "priority": 3
       },
@@ -2304,6 +3800,30 @@
         "priority": 3
       },
       {
+        "partId": "happymodel-ex0802-19000kv",
+        "partName": "Happymodel EX0802 19000KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/happymodel-ex0802-19000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "happymodel-se0802-22000kv",
+        "partName": "Happymodel EX0802 22000KV",
+        "categoryKey": "motors",
+        "imagePath": "/parts/motors/happymodel-se0802-22000kv.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "iflight-xing-e-pro-2806-1300kv",
         "partName": "iFlight XING-E Pro 2806 1300KV",
         "categoryKey": "motors",
@@ -2312,18 +3832,6 @@
         "presetUsage": [],
         "compatibleClasses": [
           "7-inch-long-range"
-        ],
-        "priority": 3
-      },
-      {
-        "partId": "iflight-xing2-1404-4600kv",
-        "partName": "iFlight XING2 1404 4600KV",
-        "categoryKey": "motors",
-        "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "3.5-inch-freestyle"
         ],
         "priority": 3
       },
@@ -2515,17 +4023,6 @@
         "priority": 3
       },
       {
-        "partId": "gemfan-2218-3",
-        "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
-        "categoryKey": "props",
-        "usedInPreset": false,
-        "presetUsage": [],
-        "compatibleClasses": [
-          "cinewhoop"
-        ],
-        "priority": 3
-      },
-      {
         "partId": "gemfan-31mm-4blade-whoop",
         "partName": "Gemfan 31mm 4-Blade Whoop",
         "categoryKey": "props",
@@ -2570,6 +4067,31 @@
         "presetUsage": [],
         "compatibleClasses": [
           "3.5-inch-freestyle"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-35mm-3blade-whoop",
+        "partName": "Gemfan 35mm 3-Blade Whoop",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-35mm-whoop.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop",
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "gemfan-40mm-4blade-whoop",
+        "partName": "Gemfan 40mm 4-Blade Whoop",
+        "categoryKey": "props",
+        "imagePath": "/parts/props/gemfan-40mm-whoop.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
         ],
         "priority": 3
       },
@@ -2731,10 +4253,79 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-f4-12a-aio-elrs",
+        "partName": "BETAFPV F4 12A AIO Integrated ELRS",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-matrix-3in1-elrs",
+        "partName": "BETAFPV Matrix 3IN1/4IN1 Integrated ELRS",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "betafpv-matrix-5in1-elrs",
+        "partName": "BETAFPV Matrix 5IN1 Integrated ELRS",
+        "categoryKey": "receiver",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "happymodel-cine-ep2-elrs",
+        "partName": "Happymodel EP2 Cine ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/happymodel-cine-ep2-elrs.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "happymodel-ep1-dual-elrs",
+        "partName": "Happymodel EP1 Dual ELRS",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/happymodel-ep1-dual-elrs.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "radiomaster-er5-915-lr",
         "partName": "Radiomaster ER5 915 LR",
         "categoryKey": "receiver",
         "imagePath": "/parts/receivers/radiomaster-er5-915-lr.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "7-inch-long-range"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "tbs-crossfire-micro-lr",
+        "partName": "TBS Crossfire Micro LR",
+        "categoryKey": "receiver",
+        "imagePath": "/parts/receivers/tbs-crossfire-micro-lr.jpg",
         "usedInPreset": false,
         "presetUsage": [],
         "compatibleClasses": [
@@ -2779,6 +4370,17 @@
         "priority": 3
       },
       {
+        "partId": "betafpv-matrix-5in1-vtx",
+        "partName": "BETAFPV Matrix 5IN1 Integrated 5.8GHz VTX",
+        "categoryKey": "vtx",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
+        ],
+        "priority": 3
+      },
+      {
         "partId": "betafpv-p1-air-unit",
         "partName": "BETAFPV P1 Air Unit HD VTX",
         "categoryKey": "vtx",
@@ -2787,6 +4389,18 @@
         "compatibleClasses": [
           "tiny-whoop",
           "cinewhoop"
+        ],
+        "priority": 3
+      },
+      {
+        "partId": "rush-nano-ultimate-whoop-vtx",
+        "partName": "Rush Nano Ultimate Whoop VTX",
+        "categoryKey": "vtx",
+        "imagePath": "/parts/vtx/rush-nano-ultimate-whoop.jpg",
+        "usedInPreset": false,
+        "presetUsage": [],
+        "compatibleClasses": [
+          "tiny-whoop"
         ],
         "priority": 3
       },
@@ -2806,19 +4420,30 @@
   },
   "missingByCategory": {
     "battery": [
+      "betafpv-lava-ii-4s-580",
+      "cnhl-black-6s-1300",
       "gnb-4s-1500",
+      "tattu-1s-450-hv",
+      "tattu-rline-4s-850",
+      "tattu-rline-6s-2200",
       "betafpv-lava-6s-1100",
       "cnhl-4s-1500-freestyle",
       "cnhl-6s-1500-freestyle",
+      "cnhl-ministar-6s-1500",
       "gnb-6s-1300-hv",
       "gnb-6s-1400-freestyle",
       "lumenier-6s-1100",
       "lumenier-6s-1250-freestyle",
       "ovonic-4s-1400-freestyle",
+      "ovonic-6s-1300",
       "tattu-4s-1300-freestyle",
       "tattu-4s-1550",
+      "tattu-rline-6s-1050",
+      "tattu-rline-6s-1400",
       "tattu-rline-6s-1550",
+      "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
+      "betafpv-2s-450-xt30",
       "betafpv-lava-1s-300-75c",
       "betafpv-lava-1s-450-75c",
       "betafpv-lava-1s-550-75c",
@@ -2830,7 +4455,6 @@
       "betafpv-lava-ii-1s-680",
       "betafpv-lava-ii-2s-580",
       "betafpv-lava-ii-3s-580",
-      "betafpv-lava-ii-4s-580",
       "cnhl-6s-1800-lr-lipo",
       "cnhl-ministar-4s-900",
       "gn-1s-550-bt2",
@@ -2847,11 +4471,36 @@
       "tattu-6s-2800-lr-lipo",
       "tattu-rline-4s-650"
     ],
+    "camera": [
+      "caddx-ant-nano",
+      "dji-o3-camera",
+      "runcam-nano-4-whoop",
+      "runcam-phoenix-2",
+      "caddx-ratel-2",
+      "caddx-turtle-v2",
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
+      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "runcam-nano-2",
+      "runcam-racer-2",
+      "walksnail-avatar-micro",
+      "betafpv-c03-camera",
+      "betafpv-c04-camera",
+      "caddx-proview-cine-digital",
+      "caddx-ratel-lucky-whoop",
+      "foxeer-pico-r-whoop"
+    ],
     "esc": [
+      "betafpv-1s-5a-aio-esc",
+      "geprc-gep-f411-35a-aio-esc",
+      "skystars-km55a-4in1",
       "speedybee-bl32-50a",
       "speedybee-bls-35a-4in1",
       "aikon-ak32-50a-4in1",
       "aikon-f7-mini-35a",
+      "diatone-mamba-f55-128k",
+      "diatone-mamba-f55-pro-esc",
       "foxeer-reaper-f4-65a",
       "hglrc-tekko32-f55-mini-esc",
       "hobbywing-xrotor-60a",
@@ -2872,6 +4521,9 @@
       "meps-konvex-55a-lr-esc"
     ],
     "flightController": [
+      "betafpv-f4-1s-aio-fc",
+      "geprc-gep-f411-35a-aio-fc",
+      "matek-h743-mini-lr",
       "speedybee-f405-mini",
       "speedybee-f405-v4",
       "atomrc-f405-fc",
@@ -2881,8 +4533,10 @@
       "foxeer-f722-v4",
       "foxeer-h743-f722-fc",
       "hglrc-f722-silver-fc",
+      "holybro-kakute-h7-v2",
       "iflight-beast-f722-fc",
       "jhemcu-g743-pro-fc",
+      "matek-f405-se-fc",
       "matek-f722-mini",
       "matek-f722-std-fc",
       "matek-h743-slate-freestyle",
@@ -2893,6 +4547,7 @@
       "betafpv-f411-4s-20a-toothpick-v5",
       "betafpv-matrix-1s-3in1-4in1",
       "betafpv-matrix-1s-5in1-ii",
+      "diatone-mamba-f405-mini",
       "diatone-mamba-h743-lr-fc",
       "geprc-f405-20x20-mini",
       "geprc-f745-lr-fc",
@@ -2902,19 +4557,27 @@
     ],
     "frame": [
       "aos-3-5-v5",
+      "betafpv-meteor75-pro-frame",
+      "betafpv-pavo25-frame",
+      "geprc-gep-cl35-v3-frame",
       "rekon-hglrc-rekon7-pro-v2-frame",
       "tbs-source-one-v5",
       "aos-5-v5",
       "armattan-badger5-frame",
+      "armattan-marmotte",
+      "diatone-roma-f5-frame",
       "ethix-lithium5-frame",
       "flywoo-explorer5-frame",
       "geprc-mark4-frame",
+      "geprc-mark5",
       "hglrc-zeus5-frame",
       "iflight-nazgul-eco5-frame",
+      "iflight-nazgul5-v3-frame",
       "iflight-xl5-v6",
       "impulserc-apexdc",
       "impulserc-reverb5-frame",
       "lumenier-qav-s-johnnyfpv",
+      "rotor-riot-cl2",
       "tbs-source-one-v6-frame",
       "betafpv-air65-ii-frame",
       "betafpv-air75-ii-frame",
@@ -2922,43 +4585,44 @@
       "betafpv-meteor65-pro-ii-frame",
       "betafpv-meteor75-pro-ii-frame",
       "betafpv-pavo20-pro-ii-frame",
+      "betafpv-pavo30-cine-frame",
       "betafpv-pavo35-frame",
+      "betafpv-pavo35-frame-kit",
+      "betafpv-x-knight-35-frame-kit",
+      "geprc-gep-st35-frame",
       "geprc-rocket-lite-75-frame",
+      "happymodel-moblite7-frame",
+      "happymodel-mobula7-v2-frame",
+      "iflight-aos-3-5-v5-1-frame",
+      "iflight-aos-cine35-v5-frame",
+      "iflight-chimera7-lr-frame",
       "newbee-drone-75-pro-frame",
       "tbs-source-one7-lr-frame"
     ],
-    "vtx": [
-      "foxeer-reaper-nano-v2-vtx",
-      "akk-x2-ultimate-vtx",
-      "rush-tank-ii-vtx",
-      "akk-a3-nano-vtx-park",
-      "akk-a5-nano-vtx",
-      "betafpv-a03-400mw-vtx",
-      "betafpv-p1-air-unit",
-      "rush-nano-vtx-park"
-    ],
-    "camera": [
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "walksnail-avatar-micro",
-      "betafpv-c03-camera",
-      "betafpv-c04-camera",
-      "caddx-proview-cine-digital",
-      "caddx-ratel-lucky-whoop",
-      "foxeer-pico-r-whoop"
-    ],
     "motors": [
+      "betafpv-0802se-19500kv",
+      "brotherhobby-avenger-2806-5-1300",
+      "geprc-speedx2-2105-5-2650kv",
+      "iflight-xing2-1404-3800",
+      "iflight-xing2-1404-4600kv",
+      "iflight-xing2-2207-1855",
       "betafpv-2004-1700kv",
       "betafpv-2204-2400kv",
       "betafpv-snow-2306-1860kv",
       "betafpv-snow-2306-2500kv",
+      "brotherhobby-avenger-2507-1850",
+      "brotherhobby-returner-r6-2207-1850kv",
+      "emax-eco-ii-2207-1900kv",
+      "emax-eco-ii-2306-1900",
       "fpvcycle-2207-1780kv",
       "fpvcycle-2207-1960",
       "hypetrain-acer-2306-1950kv",
       "hypetrain-blaster-2450",
+      "iflight-xing2-2207-2750kv",
       "johnnyfpv-motor-v2-2207-1960kv",
       "lumenier-2207-1800kv",
+      "rcinpower-gts-v2-2207-1950kv",
+      "rcinpower-gts-v3-2207-1860",
       "samguk-v-2207-1960kv",
       "skystars-km2207-1910kv",
       "skystars-km2306-1950kv",
@@ -2966,11 +4630,14 @@
       "tmotor-f60-pro-v-1950",
       "tmotor-velox-v3-1750",
       "tmotor-velox-v3-2207-1950kv",
+      "xing-e-pro-2207-1800",
       "betafpv-0702-25000kv-2026",
       "betafpv-0702-30000kv-2026",
       "betafpv-0702-36000kv-2026",
       "betafpv-0802-22000kv-2026",
+      "betafpv-0802-25000kv",
       "betafpv-0802-28000kv-2026",
+      "betafpv-1102-18000kv",
       "betafpv-1102-21000kv-2026",
       "betafpv-1103-10500kv",
       "betafpv-1105-5000kv",
@@ -2991,14 +4658,21 @@
       "emax-eco-1404-4000kv",
       "emax-eco-2004-2550kv",
       "emax-eco-ii-2806-1280kv",
+      "happymodel-ex0802-19000kv",
+      "happymodel-se0802-22000kv",
       "iflight-xing-e-pro-2806-1300kv",
-      "iflight-xing2-1404-4600kv",
       "iflight-xing2-2807-1280kv-lr",
       "rcinpower-1404-3800kv",
       "tmotor-f1404-3800kv",
       "tmotor-mn2004-2550kv"
     ],
     "props": [
+      "gemfan-2218-3",
+      "gemfan-45mm-3",
+      "gemfan-51466",
+      "gemfan-hurricane-3520",
+      "hqprop-7x3-5x3",
+      "hqprop-duct-t90-3",
       "azure-5148",
       "azure-vanover-5140",
       "dalprop-cyclone-5046",
@@ -3006,10 +4680,19 @@
       "ethix-p3-peanut-butter",
       "ethix-s3-5050",
       "gemfan-5125-3",
+      "gemfan-51433",
       "gemfan-51466-mck-v2",
+      "gemfan-5152",
+      "gemfan-5236",
       "gemfan-hurricane-51433",
+      "gemfan-hurricane-51499",
       "gemfan-hurricane-mck-51433",
+      "hqprop-5135-v2",
+      "hqprop-5x4-5x3-v1s",
+      "hqprop-durable-5040-v2",
+      "hqprop-ethix-s5",
       "hqprop-t3x2-5x3-515",
+      "hqprop-v2s-5043",
       "apc-7x4-2-lr",
       "avan-3540-cine-d5",
       "avan-rush-3528",
@@ -3022,11 +4705,12 @@
       "gemfan-1614-3",
       "gemfan-1811-3",
       "gemfan-2023-3",
-      "gemfan-2218-3",
       "gemfan-31mm-4blade-whoop",
       "gemfan-3522-hurricane",
       "gemfan-3528-cine-d5",
       "gemfan-3528-freestyle",
+      "gemfan-35mm-3blade-whoop",
+      "gemfan-40mm-4blade-whoop",
       "gemfan-7035-2-lr",
       "gemfan-7036-3-lr",
       "gemfan-d90s-3",
@@ -3041,115 +4725,144 @@
       "hqprop-t65x30-whoop"
     ],
     "receiver": [
+      "betafpv-elrs-nano",
+      "betafpv-f4-1s-aio-elrs",
+      "happymodel-ep2-elrs",
+      "radiomaster-er6-elrs",
+      "radiomaster-rp1-elrs",
+      "tbs-crossfire-nano",
       "betafpv-elrs-micro-receiver",
       "betafpv-superd-elrs-receiver",
       "betafpv-superp-14ch-receiver",
+      "frsky-r-xsr",
+      "frsky-xsr-sbus",
+      "happymodel-ep2-5inch-elrs",
       "imm-rc-fusion-v2-elrs",
       "jhemcu-ep28-elrs",
+      "tbs-crossfire-micro-v2",
       "betafpv-elrs-nano-receiver",
-      "radiomaster-er5-915-lr"
+      "betafpv-f4-12a-aio-elrs",
+      "betafpv-matrix-3in1-elrs",
+      "betafpv-matrix-5in1-elrs",
+      "happymodel-cine-ep2-elrs",
+      "happymodel-ep1-dual-elrs",
+      "radiomaster-er5-915-lr",
+      "tbs-crossfire-micro-lr"
+    ],
+    "vtx": [
+      "betafpv-m03-vtx",
+      "dji-o3-air-unit",
+      "foxeer-reaper-nano-v2-vtx",
+      "rush-tank-solo",
+      "tbs-unify-pro32-hv",
+      "akk-x2-ultimate-vtx",
+      "hdzero-freestyle-vtx",
+      "hdzero-race-vtx",
+      "rush-tank-ii-vtx",
+      "tbs-unify-pro32-nano-vtx",
+      "walksnail-avatar-gt-vtx",
+      "walksnail-avatar-hd-v2",
+      "akk-a3-nano-vtx-park",
+      "akk-a5-nano-vtx",
+      "betafpv-a03-400mw-vtx",
+      "betafpv-matrix-5in1-vtx",
+      "betafpv-p1-air-unit",
+      "rush-nano-ultimate-whoop-vtx",
+      "rush-nano-vtx-park"
     ]
   },
   "missingByBuildClass": {
-    "5-inch-freestyle": [
-      "gnb-4s-1500",
-      "speedybee-bl32-50a",
-      "speedybee-f405-v4",
-      "tbs-source-one-v5",
-      "betafpv-lava-6s-1100",
-      "cnhl-4s-1500-freestyle",
-      "cnhl-6s-1500-freestyle",
-      "gnb-6s-1300-hv",
-      "gnb-6s-1400-freestyle",
-      "lumenier-6s-1100",
-      "lumenier-6s-1250-freestyle",
-      "ovonic-4s-1400-freestyle",
-      "tattu-4s-1300-freestyle",
-      "tattu-4s-1550",
-      "tattu-rline-6s-1550",
-      "foxeer-falkor-2",
-      "foxeer-predator-v5",
-      "foxeer-toothless-2",
-      "walksnail-avatar-micro",
-      "aikon-ak32-50a-4in1",
-      "aikon-f7-mini-35a",
-      "foxeer-reaper-f4-65a",
-      "hglrc-tekko32-f55-mini-esc",
-      "hobbywing-xrotor-60a",
-      "hobbywing-xrotor-g2-50a",
-      "iflight-succex-e-f4-50a",
-      "meps-konvex-f55-55a-4in1",
-      "meps-konvex-g2-50a",
-      "rush-blade-f7-60a-4in1",
-      "speedybee-bl32-55a-4in1",
-      "tmotor-f55a-pro-ii",
-      "tmotor-velox45a-4in1",
-      "atomrc-f405-fc",
-      "axisflying-h743-mini",
-      "diatone-mamba-f722",
-      "diatone-mamba-f722-s-fc",
-      "foxeer-f722-v4",
-      "foxeer-h743-f722-fc",
-      "hglrc-f722-silver-fc",
-      "iflight-beast-f722-fc",
-      "jhemcu-g743-pro-fc",
-      "matek-f722-mini",
-      "matek-f722-std-fc",
-      "matek-h743-slate-freestyle",
-      "speedybee-f7-v3-fc",
-      "aos-5-v5",
-      "armattan-badger5-frame",
-      "ethix-lithium5-frame",
-      "flywoo-explorer5-frame",
-      "geprc-mark4-frame",
-      "hglrc-zeus5-frame",
-      "iflight-nazgul-eco5-frame",
-      "iflight-xl5-v6",
-      "impulserc-apexdc",
-      "impulserc-reverb5-frame",
-      "lumenier-qav-s-johnnyfpv",
-      "tbs-source-one-v6-frame",
-      "betafpv-2004-1700kv",
-      "betafpv-2204-2400kv",
-      "betafpv-snow-2306-1860kv",
-      "betafpv-snow-2306-2500kv",
-      "fpvcycle-2207-1780kv",
-      "fpvcycle-2207-1960",
-      "hypetrain-acer-2306-1950kv",
-      "hypetrain-blaster-2450",
-      "johnnyfpv-motor-v2-2207-1960kv",
-      "lumenier-2207-1800kv",
-      "samguk-v-2207-1960kv",
-      "skystars-km2207-1910kv",
-      "skystars-km2306-1950kv",
-      "tmotor-f40-pro-2207-1950kv",
-      "tmotor-f60-pro-v-1950",
-      "tmotor-velox-v3-1750",
-      "tmotor-velox-v3-2207-1950kv",
-      "azure-5148",
-      "azure-vanover-5140",
-      "dalprop-cyclone-5046",
-      "dalprop-fold-f5-5040",
-      "ethix-p3-peanut-butter",
-      "ethix-s3-5050",
-      "gemfan-5125-3",
-      "gemfan-51466-mck-v2",
-      "gemfan-hurricane-51433",
-      "gemfan-hurricane-mck-51433",
-      "hqprop-t3x2-5x3-515",
-      "betafpv-elrs-micro-receiver",
-      "betafpv-superd-elrs-receiver",
-      "betafpv-superp-14ch-receiver",
-      "imm-rc-fusion-v2-elrs",
-      "jhemcu-ep28-elrs",
-      "akk-x2-ultimate-vtx",
-      "rush-tank-ii-vtx"
-    ],
-    "cinewhoop": [
-      "gnb-4s-1500",
+    "3.5-inch-freestyle": [
+      "betafpv-lava-ii-4s-580",
+      "tattu-rline-4s-850",
+      "caddx-ant-nano",
+      "runcam-phoenix-2",
       "speedybee-bls-35a-4in1",
       "speedybee-f405-mini",
+      "aos-3-5-v5",
+      "iflight-xing2-1404-3800",
+      "iflight-xing2-1404-4600kv",
+      "gemfan-hurricane-3520",
+      "betafpv-elrs-nano",
+      "happymodel-ep2-elrs",
+      "radiomaster-rp1-elrs",
+      "foxeer-reaper-nano-v2-vtx",
+      "lumenier-6s-1100",
+      "caddx-ratel-2",
+      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "aikon-f7-mini-35a",
+      "axisflying-h743-mini",
+      "matek-f722-mini",
+      "betafpv-2204-2400kv",
+      "hdzero-freestyle-vtx",
+      "betafpv-lava-4s-850",
+      "betafpv-lava-ii-3s-580",
+      "cnhl-ministar-4s-900",
+      "gnb-4s-1100-park",
+      "gnb-4s-750-mini",
+      "tattu-rline-4s-650",
+      "diatone-mamba-f35-mini-esc",
+      "iflight-blitz-mini-e55s-4in1",
+      "betafpv-f405-4s-20a-toothpick-v5",
+      "betafpv-f411-4s-20a-toothpick-v5",
+      "diatone-mamba-f405-mini",
+      "geprc-f405-20x20-mini",
+      "betafpv-hx115-lr-frame",
+      "betafpv-x-knight-35-frame-kit",
+      "geprc-gep-st35-frame",
+      "iflight-aos-3-5-v5-1-frame",
+      "iflight-aos-cine35-v5-frame",
+      "betafpv-1105-5000kv",
+      "betafpv-1105-6000kv",
+      "betafpv-1106-3800kv",
+      "betafpv-1106-4500kv",
+      "betafpv-1404-4600kv",
+      "betafpv-1505-3400kv",
+      "betafpv-1505-4600kv",
+      "betafpv-2004-3000kv",
+      "betafpv-lava-1506-4200kv",
+      "betafpv-lava-2006-2400kv",
+      "emax-eco-1404-4000kv",
+      "rcinpower-1404-3800kv",
+      "tmotor-f1404-3800kv",
+      "avan-rush-3528",
+      "dal-prop-3530-cyclone",
+      "gemfan-3522-hurricane",
+      "gemfan-3528-freestyle",
+      "gemfan-d90s-3",
+      "hqprop-3525-pc",
+      "hqprop-3535-pc",
+      "betafpv-elrs-nano-receiver",
+      "akk-a3-nano-vtx-park",
+      "betafpv-a03-400mw-vtx",
+      "rush-nano-vtx-park"
+    ],
+    "cinewhoop": [
+      "betafpv-lava-ii-4s-580",
+      "gnb-4s-1500",
+      "dji-o3-camera",
+      "runcam-nano-4-whoop",
+      "runcam-phoenix-2",
+      "geprc-gep-f411-35a-aio-esc",
+      "speedybee-bls-35a-4in1",
+      "geprc-gep-f411-35a-aio-fc",
+      "speedybee-f405-mini",
+      "betafpv-pavo25-frame",
+      "geprc-gep-cl35-v3-frame",
+      "geprc-speedx2-2105-5-2650kv",
+      "iflight-xing2-1404-4600kv",
+      "gemfan-2218-3",
+      "hqprop-duct-t90-3",
+      "betafpv-elrs-nano",
+      "radiomaster-er6-elrs",
+      "radiomaster-rp1-elrs",
+      "betafpv-m03-vtx",
+      "dji-o3-air-unit",
+      "rush-tank-solo",
+      "cnhl-ministar-6s-1500",
       "tattu-4s-1550",
+      "caddx-ratel-2",
       "foxeer-toothless-2",
       "walksnail-avatar-micro",
       "aikon-f7-mini-35a",
@@ -3157,9 +4870,10 @@
       "matek-f722-mini",
       "betafpv-elrs-micro-receiver",
       "betafpv-superd-elrs-receiver",
+      "walksnail-avatar-hd-v2",
+      "betafpv-2s-450-xt30",
       "betafpv-lava-ii-2s-580",
       "betafpv-lava-ii-3s-580",
-      "betafpv-lava-ii-4s-580",
       "gnb-4s-1300-cine",
       "tattu-4s-1300-cine",
       "betafpv-c04-camera",
@@ -3169,7 +4883,10 @@
       "betafpv-f411-4s-20a-toothpick-v5",
       "betafpv-hx115-lr-frame",
       "betafpv-pavo20-pro-ii-frame",
+      "betafpv-pavo30-cine-frame",
       "betafpv-pavo35-frame",
+      "betafpv-pavo35-frame-kit",
+      "betafpv-1102-18000kv",
       "betafpv-1103-10500kv",
       "betafpv-1105-5000kv",
       "betafpv-1105-6000kv",
@@ -3188,104 +4905,182 @@
       "avan-3540-cine-d5",
       "dal-35435-cine-d5",
       "gemfan-2023-3",
-      "gemfan-2218-3",
       "gemfan-3528-cine-d5",
+      "gemfan-35mm-3blade-whoop",
       "gemfan-d90s-3",
       "gemfan-floppypop3-3518",
       "hqprop-3536-cine-d5",
       "hqprop-durable-3530-cine",
       "betafpv-elrs-nano-receiver",
+      "happymodel-cine-ep2-elrs",
       "betafpv-a03-400mw-vtx",
       "betafpv-p1-air-unit"
     ],
-    "3.5-inch-freestyle": [
-      "speedybee-bls-35a-4in1",
-      "speedybee-f405-mini",
-      "aos-3-5-v5",
-      "foxeer-reaper-nano-v2-vtx",
+    "5-inch-freestyle": [
+      "cnhl-black-6s-1300",
+      "gnb-4s-1500",
+      "dji-o3-camera",
+      "runcam-phoenix-2",
+      "speedybee-bl32-50a",
+      "speedybee-f405-v4",
+      "tbs-source-one-v5",
+      "iflight-xing2-2207-1855",
+      "gemfan-51466",
+      "betafpv-elrs-nano",
+      "radiomaster-er6-elrs",
+      "radiomaster-rp1-elrs",
+      "tbs-crossfire-nano",
+      "dji-o3-air-unit",
+      "rush-tank-solo",
+      "tbs-unify-pro32-hv",
+      "betafpv-lava-6s-1100",
+      "cnhl-4s-1500-freestyle",
+      "cnhl-6s-1500-freestyle",
+      "cnhl-ministar-6s-1500",
+      "gnb-6s-1300-hv",
+      "gnb-6s-1400-freestyle",
       "lumenier-6s-1100",
+      "lumenier-6s-1250-freestyle",
+      "ovonic-4s-1400-freestyle",
+      "ovonic-6s-1300",
+      "tattu-4s-1300-freestyle",
+      "tattu-4s-1550",
+      "tattu-rline-6s-1050",
+      "tattu-rline-6s-1400",
+      "tattu-rline-6s-1550",
+      "caddx-ratel-2",
+      "caddx-turtle-v2",
+      "foxeer-falkor-2",
+      "foxeer-predator-v5",
       "foxeer-toothless-2",
-      "aikon-f7-mini-35a",
-      "axisflying-h743-mini",
-      "matek-f722-mini",
-      "betafpv-2204-2400kv",
-      "betafpv-lava-4s-850",
-      "betafpv-lava-ii-3s-580",
-      "betafpv-lava-ii-4s-580",
-      "cnhl-ministar-4s-900",
-      "gnb-4s-1100-park",
-      "gnb-4s-750-mini",
-      "tattu-rline-4s-650",
-      "diatone-mamba-f35-mini-esc",
-      "iflight-blitz-mini-e55s-4in1",
-      "betafpv-f405-4s-20a-toothpick-v5",
-      "betafpv-f411-4s-20a-toothpick-v5",
-      "geprc-f405-20x20-mini",
-      "betafpv-hx115-lr-frame",
-      "betafpv-1105-5000kv",
-      "betafpv-1105-6000kv",
-      "betafpv-1106-3800kv",
-      "betafpv-1106-4500kv",
-      "betafpv-1404-4600kv",
-      "betafpv-1505-3400kv",
-      "betafpv-1505-4600kv",
-      "betafpv-2004-3000kv",
-      "betafpv-lava-1506-4200kv",
-      "betafpv-lava-2006-2400kv",
-      "emax-eco-1404-4000kv",
-      "iflight-xing2-1404-4600kv",
-      "rcinpower-1404-3800kv",
-      "tmotor-f1404-3800kv",
-      "avan-rush-3528",
-      "dal-prop-3530-cyclone",
-      "gemfan-3522-hurricane",
-      "gemfan-3528-freestyle",
-      "gemfan-d90s-3",
-      "hqprop-3525-pc",
-      "hqprop-3535-pc",
-      "betafpv-elrs-nano-receiver",
-      "akk-a3-nano-vtx-park",
-      "betafpv-a03-400mw-vtx",
-      "rush-nano-vtx-park"
-    ],
-    "7-inch-long-range": [
-      "rekon-hglrc-rekon7-pro-v2-frame",
-      "foxeer-toothless-2",
+      "hdzero-nano-90",
+      "runcam-nano-2",
+      "runcam-racer-2",
       "walksnail-avatar-micro",
+      "aikon-ak32-50a-4in1",
+      "aikon-f7-mini-35a",
+      "diatone-mamba-f55-128k",
+      "diatone-mamba-f55-pro-esc",
       "foxeer-reaper-f4-65a",
+      "hglrc-tekko32-f55-mini-esc",
       "hobbywing-xrotor-60a",
+      "hobbywing-xrotor-g2-50a",
+      "iflight-succex-e-f4-50a",
+      "meps-konvex-f55-55a-4in1",
+      "meps-konvex-g2-50a",
+      "rush-blade-f7-60a-4in1",
+      "speedybee-bl32-55a-4in1",
+      "tmotor-f55a-pro-ii",
+      "tmotor-velox45a-4in1",
+      "atomrc-f405-fc",
+      "axisflying-h743-mini",
+      "diatone-mamba-f722",
+      "diatone-mamba-f722-s-fc",
+      "foxeer-f722-v4",
+      "foxeer-h743-f722-fc",
+      "hglrc-f722-silver-fc",
+      "holybro-kakute-h7-v2",
+      "iflight-beast-f722-fc",
+      "jhemcu-g743-pro-fc",
+      "matek-f405-se-fc",
+      "matek-f722-mini",
+      "matek-f722-std-fc",
+      "matek-h743-slate-freestyle",
+      "speedybee-f7-v3-fc",
+      "aos-5-v5",
+      "armattan-badger5-frame",
+      "armattan-marmotte",
+      "diatone-roma-f5-frame",
+      "ethix-lithium5-frame",
+      "flywoo-explorer5-frame",
+      "geprc-mark4-frame",
+      "geprc-mark5",
+      "hglrc-zeus5-frame",
+      "iflight-nazgul-eco5-frame",
+      "iflight-nazgul5-v3-frame",
+      "iflight-xl5-v6",
+      "impulserc-apexdc",
+      "impulserc-reverb5-frame",
+      "lumenier-qav-s-johnnyfpv",
+      "rotor-riot-cl2",
+      "tbs-source-one-v6-frame",
+      "betafpv-2004-1700kv",
+      "betafpv-2204-2400kv",
       "betafpv-snow-2306-1860kv",
+      "betafpv-snow-2306-2500kv",
+      "brotherhobby-avenger-2507-1850",
+      "brotherhobby-returner-r6-2207-1850kv",
+      "emax-eco-ii-2207-1900kv",
+      "emax-eco-ii-2306-1900",
+      "fpvcycle-2207-1780kv",
+      "fpvcycle-2207-1960",
+      "hypetrain-acer-2306-1950kv",
+      "hypetrain-blaster-2450",
+      "iflight-xing2-2207-2750kv",
+      "johnnyfpv-motor-v2-2207-1960kv",
+      "lumenier-2207-1800kv",
+      "rcinpower-gts-v2-2207-1950kv",
+      "rcinpower-gts-v3-2207-1860",
+      "samguk-v-2207-1960kv",
+      "skystars-km2207-1910kv",
+      "skystars-km2306-1950kv",
+      "tmotor-f40-pro-2207-1950kv",
+      "tmotor-f60-pro-v-1950",
+      "tmotor-velox-v3-1750",
+      "tmotor-velox-v3-2207-1950kv",
+      "xing-e-pro-2207-1800",
+      "azure-5148",
+      "azure-vanover-5140",
+      "dalprop-cyclone-5046",
+      "dalprop-fold-f5-5040",
+      "ethix-p3-peanut-butter",
+      "ethix-s3-5050",
+      "gemfan-5125-3",
+      "gemfan-51433",
+      "gemfan-51466-mck-v2",
+      "gemfan-5152",
+      "gemfan-5236",
+      "gemfan-hurricane-51433",
+      "gemfan-hurricane-51499",
+      "gemfan-hurricane-mck-51433",
+      "hqprop-5135-v2",
+      "hqprop-5x4-5x3-v1s",
+      "hqprop-durable-5040-v2",
+      "hqprop-ethix-s5",
+      "hqprop-t3x2-5x3-515",
+      "hqprop-v2s-5043",
       "betafpv-elrs-micro-receiver",
       "betafpv-superd-elrs-receiver",
       "betafpv-superp-14ch-receiver",
-      "cnhl-6s-1800-lr-lipo",
-      "gnb-6s-2500-lr-lipo",
-      "lumenier-6s-2200-lr-lipo",
-      "molicel-6s-4000-liion",
-      "ovonic-6s-3000-lr-lipo",
-      "sanyo-6s-3500-liion",
-      "tattu-6s-2800-lr-lipo",
-      "aikon-65a-lr-esc",
-      "diatone-mamba-f55-lr-esc",
-      "meps-konvex-55a-lr-esc",
-      "diatone-mamba-h743-lr-fc",
-      "geprc-f745-lr-fc",
-      "matek-h743-wing-lr-fc",
-      "tbs-source-one7-lr-frame",
-      "brotherhobby-2806-1400kv-lr",
-      "emax-eco-ii-2806-1280kv",
-      "iflight-xing-e-pro-2806-1300kv",
-      "iflight-xing2-2807-1280kv-lr",
-      "apc-7x4-2-lr",
-      "gemfan-7035-2-lr",
-      "gemfan-7036-3-lr",
-      "geprc-7038-2-lr",
-      "hqprop-7030-3-lr",
-      "hqprop-7035-2-lr",
-      "radiomaster-er5-915-lr"
+      "frsky-r-xsr",
+      "frsky-xsr-sbus",
+      "happymodel-ep2-5inch-elrs",
+      "imm-rc-fusion-v2-elrs",
+      "jhemcu-ep28-elrs",
+      "tbs-crossfire-micro-v2",
+      "akk-x2-ultimate-vtx",
+      "hdzero-freestyle-vtx",
+      "hdzero-race-vtx",
+      "rush-tank-ii-vtx",
+      "tbs-unify-pro32-nano-vtx",
+      "walksnail-avatar-gt-vtx",
+      "walksnail-avatar-hd-v2"
     ],
     "tiny-whoop": [
+      "tattu-1s-450-hv",
+      "caddx-ant-nano",
+      "runcam-nano-4-whoop",
+      "betafpv-1s-5a-aio-esc",
+      "betafpv-f4-1s-aio-fc",
+      "betafpv-meteor75-pro-frame",
+      "betafpv-0802se-19500kv",
+      "gemfan-45mm-3",
+      "betafpv-elrs-nano",
+      "betafpv-f4-1s-aio-elrs",
+      "happymodel-ep2-elrs",
+      "betafpv-m03-vtx",
       "foxeer-reaper-nano-v2-vtx",
+      "betafpv-1s-300-hv-bt2",
       "betafpv-2s-300-ph2",
       "betafpv-lava-1s-300-75c",
       "betafpv-lava-1s-450-75c",
@@ -3314,16 +5109,21 @@
       "betafpv-meteor65-pro-ii-frame",
       "betafpv-meteor75-pro-ii-frame",
       "geprc-rocket-lite-75-frame",
+      "happymodel-moblite7-frame",
+      "happymodel-mobula7-v2-frame",
       "newbee-drone-75-pro-frame",
       "betafpv-0702-25000kv-2026",
       "betafpv-0702-30000kv-2026",
       "betafpv-0702-36000kv-2026",
       "betafpv-0802-22000kv-2026",
+      "betafpv-0802-25000kv",
       "betafpv-0802-28000kv-2026",
       "betafpv-1102-21000kv-2026",
       "betafpv-1103-10500kv",
       "betafpv-lava-1102-14000kv",
       "emax-e1106-7200kv",
+      "happymodel-ex0802-19000kv",
+      "happymodel-se0802-22000kv",
       "betafpv-40mm-4blade-1535",
       "emax-avan-40mm-whoop",
       "gemfan-1207-3",
@@ -3331,23 +5131,84 @@
       "gemfan-1614-3",
       "gemfan-1811-3",
       "gemfan-31mm-4blade-whoop",
+      "gemfan-35mm-3blade-whoop",
+      "gemfan-40mm-4blade-whoop",
       "hqprop-t65x30-whoop",
       "betafpv-elrs-nano-receiver",
+      "betafpv-f4-12a-aio-elrs",
+      "betafpv-matrix-3in1-elrs",
+      "betafpv-matrix-5in1-elrs",
+      "happymodel-ep1-dual-elrs",
       "akk-a5-nano-vtx",
-      "betafpv-p1-air-unit"
+      "betafpv-matrix-5in1-vtx",
+      "betafpv-p1-air-unit",
+      "rush-nano-ultimate-whoop-vtx"
+    ],
+    "7-inch-long-range": [
+      "tattu-rline-6s-2200",
+      "dji-o3-camera",
+      "runcam-phoenix-2",
+      "skystars-km55a-4in1",
+      "matek-h743-mini-lr",
+      "rekon-hglrc-rekon7-pro-v2-frame",
+      "brotherhobby-avenger-2806-5-1300",
+      "hqprop-7x3-5x3",
+      "radiomaster-er6-elrs",
+      "radiomaster-rp1-elrs",
+      "tbs-crossfire-nano",
+      "dji-o3-air-unit",
+      "rush-tank-solo",
+      "tbs-unify-pro32-hv",
+      "foxeer-toothless-2",
+      "walksnail-avatar-micro",
+      "foxeer-reaper-f4-65a",
+      "hobbywing-xrotor-60a",
+      "holybro-kakute-h7-v2",
+      "betafpv-snow-2306-1860kv",
+      "betafpv-elrs-micro-receiver",
+      "betafpv-superd-elrs-receiver",
+      "betafpv-superp-14ch-receiver",
+      "walksnail-avatar-hd-v2",
+      "cnhl-6s-1800-lr-lipo",
+      "gnb-6s-2500-lr-lipo",
+      "lumenier-6s-2200-lr-lipo",
+      "molicel-6s-4000-liion",
+      "ovonic-6s-3000-lr-lipo",
+      "sanyo-6s-3500-liion",
+      "tattu-6s-2800-lr-lipo",
+      "aikon-65a-lr-esc",
+      "diatone-mamba-f55-lr-esc",
+      "meps-konvex-55a-lr-esc",
+      "diatone-mamba-h743-lr-fc",
+      "geprc-f745-lr-fc",
+      "matek-h743-wing-lr-fc",
+      "iflight-chimera7-lr-frame",
+      "tbs-source-one7-lr-frame",
+      "brotherhobby-2806-1400kv-lr",
+      "emax-eco-ii-2806-1280kv",
+      "iflight-xing-e-pro-2806-1300kv",
+      "iflight-xing2-2807-1280kv-lr",
+      "apc-7x4-2-lr",
+      "gemfan-7035-2-lr",
+      "gemfan-7036-3-lr",
+      "geprc-7038-2-lr",
+      "hqprop-7030-3-lr",
+      "hqprop-7035-2-lr",
+      "radiomaster-er5-915-lr",
+      "tbs-crossfire-micro-lr"
     ]
   },
   "checked": [
     {
-      "partId": "betafpv-2s-450-xt30",
-      "partName": "BETAFPV 450mAh 2S 45C XT30",
+      "partId": "betafpv-lava-ii-4s-580",
+      "partName": "BETAFPV LAVA II 4S 580mAh 95C",
       "categoryKey": "battery",
-      "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
-      "exists": true,
-      "illustrationPath": "/parts/illustrations/battery/betafpv-2s-450-xt30.svg",
-      "illustrationExists": false,
+      "imagePath": "/parts/batteries/betafpv-lava-ii-4s-580.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-4s-580.svg",
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3358,6 +5219,7 @@
         }
       ],
       "compatibleClasses": [
+        "3.5-inch-freestyle",
         "cinewhoop"
       ],
       "priority": 1
@@ -3367,11 +5229,11 @@
       "partName": "CNHL Black Series 6S 1300mAh 100C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/cnhl-black-6s-1300.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/cnhl-black-6s-1300.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3416,11 +5278,11 @@
       "partName": "Tattu 1S 450mAh HV 75C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-1s-450-hv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/tattu-1s-450-hv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3440,11 +5302,11 @@
       "partName": "Tattu R-Line 4S 850mAh 95C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-4s-850.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/tattu-rline-4s-850.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3464,11 +5326,11 @@
       "partName": "Tattu R-Line 6S 2200mAh 95C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-6s-2200.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/tattu-rline-6s-2200.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3488,11 +5350,11 @@
       "partName": "Caddx Ant Nano",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-ant-nano.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/caddx-ant-nano.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3519,11 +5381,11 @@
       "partName": "DJI O3 Camera",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/dji-o3-camera.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/dji-o3-camera.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3545,11 +5407,11 @@
       "partName": "RunCam Nano 4 Whoop",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-nano-4-whoop.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/runcam-nano-4-whoop.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3570,11 +5432,11 @@
       "partName": "RunCam Phoenix 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-phoenix-2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/runcam-phoenix-2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3603,11 +5465,11 @@
       "partName": "BETAFPV 1S 5A AIO ESC",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/betafpv-1s-5a-aio-esc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/esc/betafpv-1s-5a-aio-esc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3627,11 +5489,11 @@
       "partName": "GEPRC GEP-F411-35A AIO ESC",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/geprc-gep-f411-35a-aio-esc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/esc/geprc-gep-f411-35a-aio-esc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3651,11 +5513,11 @@
       "partName": "Skystars KM55A 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/skystars-km55a-4in1.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/esc/skystars-km55a-4in1.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3730,11 +5592,11 @@
       "partName": "BETAFPV F4 1S AIO FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/betafpv-f4-1s-aio-fc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/betafpv-f4-1s-aio-fc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3754,11 +5616,11 @@
       "partName": "GEPRC GEP-F411-35A AIO FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/geprc-gep-f411-35a-aio-fc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/geprc-gep-f411-35a-aio-fc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3778,11 +5640,11 @@
       "partName": "Matek H743 Mini LR",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/matek-h743-mini-lr.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/matek-h743-mini-lr.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3880,11 +5742,11 @@
       "partName": "BETAFPV Meteor75 Pro Whoop Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-meteor75-pro-frame.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/betafpv-meteor75-pro-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3901,14 +5763,14 @@
     },
     {
       "partId": "betafpv-pavo25-frame",
-      "partName": "BETAFPV Pavo25 Frame",
+      "partName": "BETAFPV Pavo25 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-pavo25-frame.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/betafpv-pavo25-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -3928,11 +5790,11 @@
       "partName": "GEPRC GEP-CL35 V3 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-gep-cl35-v3-frame.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/geprc-gep-cl35-v3-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4000,11 +5862,11 @@
       "partName": "BETAFPV 0802SE 19500KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/betafpv-0802se-19500kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/betafpv-0802se-19500kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4020,39 +5882,15 @@
       "priority": 1
     },
     {
-      "partId": "betafpv-1102-18000kv",
-      "partName": "BETAFPV 1102 18000KV",
-      "categoryKey": "motors",
-      "imagePath": "/parts/motors/betafpv-1102-18000kv.jpg",
-      "exists": true,
-      "illustrationPath": "/parts/illustrations/motors/betafpv-1102-18000kv.svg",
-      "illustrationExists": false,
-      "hasVisual": true,
-      "visualType": "product-photo",
-      "usedInPreset": true,
-      "presetUsage": [
-        {
-          "presetId": "tiny-whoop-2s-outdoor",
-          "presetName": "2.5\" Outdoor Whoop",
-          "buildClass": "cinewhoop",
-          "categoryKey": "motors"
-        }
-      ],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "priority": 1
-    },
-    {
       "partId": "brotherhobby-avenger-2806-5-1300",
       "partName": "BrotherHobby Avenger 2806.5 1300KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-avenger-2806-5-1300.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/brotherhobby-avenger-2806-5-1300.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4072,11 +5910,11 @@
       "partName": "GEPRC SPEEDX2 2105.5 2650KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/geprc-speedx2-2105-5-2650kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/geprc-speedx2-2105-5-2650kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4096,11 +5934,11 @@
       "partName": "iFlight XING2 1404 3800KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-1404-3800.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/iflight-xing2-1404-3800.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4116,15 +5954,40 @@
       "priority": 1
     },
     {
+      "partId": "iflight-xing2-1404-4600kv",
+      "partName": "iFlight XING2 1404 4600KV",
+      "categoryKey": "motors",
+      "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/iflight-xing2-1404-4600kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": true,
+      "presetUsage": [
+        {
+          "presetId": "tiny-whoop-2s-outdoor",
+          "presetName": "2.5\" Outdoor Whoop",
+          "buildClass": "cinewhoop",
+          "categoryKey": "motors"
+        }
+      ],
+      "compatibleClasses": [
+        "3.5-inch-freestyle",
+        "cinewhoop"
+      ],
+      "priority": 1
+    },
+    {
       "partId": "iflight-xing2-2207-1855",
       "partName": "iFlight XING2 2207 1855KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-2207-1855.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/iflight-xing2-2207-1855.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4140,15 +6003,15 @@
       "priority": 1
     },
     {
-      "partId": "gemfan-35mm-3blade-whoop",
-      "partName": "Gemfan 35mm 3-Blade Whoop",
+      "partId": "gemfan-2218-3",
+      "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
       "categoryKey": "props",
-      "imagePath": "/parts/props/gemfan-35mm-3blade-whoop.jpg",
-      "exists": true,
-      "illustrationPath": "/parts/illustrations/props/gemfan-35mm-3blade-whoop.svg",
-      "illustrationExists": false,
+      "imagePath": "/parts/props/gemfan-2218-3.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-2218-3.svg",
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4159,21 +6022,20 @@
         }
       ],
       "compatibleClasses": [
-        "tiny-whoop",
         "cinewhoop"
       ],
       "priority": 1
     },
     {
-      "partId": "gemfan-40mm-4blade-whoop",
-      "partName": "Gemfan 40mm 4-Blade Whoop",
+      "partId": "gemfan-45mm-3",
+      "partName": "Gemfan 45mm 3-Blade (1.5mm Shaft)",
       "categoryKey": "props",
-      "imagePath": "/parts/props/gemfan-40mm-4blade-whoop.jpg",
-      "exists": true,
-      "illustrationPath": "/parts/illustrations/props/gemfan-40mm-4blade-whoop.svg",
-      "illustrationExists": false,
+      "imagePath": "/parts/props/gemfan-45mm-3.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-45mm-3.svg",
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4193,11 +6055,11 @@
       "partName": "Gemfan Hurricane 51466",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-51466.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-51466.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4217,11 +6079,11 @@
       "partName": "Gemfan Hurricane 3520",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-3520.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-hurricane-3520.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4241,11 +6103,11 @@
       "partName": "HQProp 7x3.5x3",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-7x3-5x3.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-7x3-5x3.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4265,11 +6127,11 @@
       "partName": "HQProp Duct T90 3-Blade",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-duct-t90-3.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-duct-t90-3.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4289,11 +6151,11 @@
       "partName": "BETAFPV ELRS Lite 2.4GHz",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/betafpv-elrs-nano.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/betafpv-elrs-nano.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4312,15 +6174,15 @@
       "priority": 1
     },
     {
-      "partId": "happymodel-ep2-elrs",
-      "partName": "Happymodel EP2 ELRS",
+      "partId": "betafpv-f4-1s-aio-elrs",
+      "partName": "BETAFPV F4 1S AIO Integrated ELRS",
       "categoryKey": "receiver",
-      "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
-      "exists": true,
-      "illustrationPath": "/parts/illustrations/receiver/happymodel-ep2-elrs.svg",
-      "illustrationExists": false,
+      "imagePath": "/parts/receivers/betafpv-f4-1s-aio-elrs.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-f4-1s-aio-elrs.svg",
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4328,7 +6190,25 @@
           "presetName": "Tiny Whoop Beginner",
           "buildClass": "tiny-whoop",
           "categoryKey": "receiver"
-        },
+        }
+      ],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 1
+    },
+    {
+      "partId": "happymodel-ep2-elrs",
+      "partName": "Happymodel EP2 ELRS",
+      "categoryKey": "receiver",
+      "imagePath": "/parts/receivers/happymodel-ep2-elrs.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/happymodel-ep2-elrs.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": true,
+      "presetUsage": [
         {
           "presetId": "3-5-park-freestyle",
           "presetName": "3.5\" Park Freestyle",
@@ -4347,11 +6227,11 @@
       "partName": "RadioMaster ER6 2.4GHz ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/radiomaster-er6-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/radiomaster-er6-elrs.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4373,11 +6253,11 @@
       "partName": "RadioMaster RP1 ELRS Nano",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/radiomaster-rp1-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/radiomaster-rp1-elrs.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4400,11 +6280,11 @@
       "partName": "TBS Crossfire Nano RX",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-nano.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/tbs-crossfire-nano.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4425,11 +6305,11 @@
       "partName": "BETAFPV M03 5.8GHz VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/betafpv-m03-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/betafpv-m03-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4456,11 +6336,11 @@
       "partName": "DJI O3 Air Unit",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/dji-o3-air-unit.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/dji-o3-air-unit.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4507,11 +6387,11 @@
       "partName": "Rush Tank Solo 5.8GHz",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/rush-tank-solo.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/rush-tank-solo.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4533,11 +6413,11 @@
       "partName": "TBS Unify Pro32 HV",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/tbs-unify-pro32-hv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/tbs-unify-pro32-hv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": true,
       "presetUsage": [
         {
@@ -4608,11 +6488,11 @@
       "partName": "CNHL Ministar 6S 1500mAh 120C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/cnhl-ministar-6s-1500.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/cnhl-ministar-6s-1500.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4712,11 +6592,11 @@
       "partName": "Ovonic 6S 1300mAh 100C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/ovonic-6s-1300.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/ovonic-6s-1300.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4764,11 +6644,11 @@
       "partName": "Tattu R-Line 6S 1050mAh 120C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-6s-1050.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/tattu-rline-6s-1050.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4781,11 +6661,11 @@
       "partName": "Tattu R-Line 6S 1400mAh 130C",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/tattu-rline-6s-1400.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/tattu-rline-6s-1400.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4815,11 +6695,11 @@
       "partName": "Caddx Ratel 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-ratel-2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/caddx-ratel-2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4834,11 +6714,11 @@
       "partName": "Caddx Turtle V2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/caddx-turtle-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/caddx-turtle-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4905,11 +6785,11 @@
       "partName": "HDZero Nano 90",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/hdzero-nano-90.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/hdzero-nano-90.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4923,11 +6803,11 @@
       "partName": "RunCam Nano 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-nano-2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/runcam-nano-2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -4940,11 +6820,11 @@
       "partName": "RunCam Racer 2",
       "categoryKey": "camera",
       "imagePath": "/parts/cameras/runcam-racer-2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/camera/runcam-racer-2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5012,11 +6892,11 @@
       "partName": "Diatone Mamba F55 128K 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/diatone-mamba-f55-128k.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/esc/diatone-mamba-f55-128k.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5029,11 +6909,11 @@
       "partName": "Diatone Mamba F55 Pro 55A 4-in-1",
       "categoryKey": "esc",
       "imagePath": "/parts/escs/diatone-mamba-f55-pro-esc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/esc/diatone-mamba-f55-pro-esc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5356,11 +7236,11 @@
       "partName": "Holybro Kakute H7 V2",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/holybro-kakute-h7-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/holybro-kakute-h7-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5408,11 +7288,11 @@
       "partName": "Matek F405-SE FC",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/matek-f405-se-fc.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/matek-f405-se-fc.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5529,11 +7409,11 @@
       "partName": "Armattan Marmotte 5-inch",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/armattan-marmotte.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/armattan-marmotte.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5546,11 +7426,11 @@
       "partName": "Diatone Roma F5 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/diatone-roma-f5-frame.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/diatone-roma-f5-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5614,11 +7494,11 @@
       "partName": "GEPRC Mark5 Deadcat",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-mark5-deadcat.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/geprc-mark5.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5665,11 +7545,11 @@
       "partName": "iFlight Nazgul5 V3 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-nazgul5-v3-frame.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/iflight-nazgul5-v3-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5750,11 +7630,11 @@
       "partName": "Rotor Riot CL2 5-inch",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/rotor-riot-cl2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/rotor-riot-cl2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5850,11 +7730,11 @@
       "partName": "BrotherHobby Avenger 2507 1850KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-avenger-2507.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/brotherhobby-avenger-2507-1850.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5867,11 +7747,11 @@
       "partName": "BrotherHobby Returner R6 2207 1850KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/brotherhobby-returner-r6-2207-1850kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/brotherhobby-returner-r6-2207-1850kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5884,11 +7764,11 @@
       "partName": "EMAX ECO II 2207 1900KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/emax-eco-ii-2207-1900kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/emax-eco-ii-2207-1900kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5901,11 +7781,11 @@
       "partName": "EMAX ECO II 2306 1900KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/emax-eco-ii-2306.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/emax-eco-ii-2306-1900.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -5986,11 +7866,11 @@
       "partName": "iFlight XING2 2207 2750KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/iflight-xing2-2207-2750kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/iflight-xing2-2207-2750kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6037,11 +7917,11 @@
       "partName": "RCinPower GTS V2 2207 1950KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/rcinpower-gts-v2-2207-1950kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/rcinpower-gts-v2-2207-1950kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6054,11 +7934,11 @@
       "partName": "RCinPower GTS V3 2207 1860KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/rcinpower-gts-v3-2207.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/rcinpower-gts-v3-2207-1860.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6190,11 +8070,11 @@
       "partName": "iFlight XING-E Pro 2207 1800KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/xing-e-pro-2207.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/xing-e-pro-2207-1800.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6325,11 +8205,11 @@
       "partName": "Gemfan Hurricane 51433",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51433.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-51433.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6358,11 +8238,11 @@
       "partName": "Gemfan Hurricane 5152",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-5152.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-5152.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6375,11 +8255,11 @@
       "partName": "Gemfan Hurricane 5236",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-5236.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-5236.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6408,11 +8288,11 @@
       "partName": "Gemfan Hurricane 51499",
       "categoryKey": "props",
       "imagePath": "/parts/props/gemfan-hurricane-51499.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/gemfan-hurricane-51499.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6442,11 +8322,11 @@
       "partName": "HQProp 5135 V2",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-5135-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-5135-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6459,11 +8339,11 @@
       "partName": "HQProp 5x4.5x3 V1S",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-5x4-5x3-v1s.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-5x4-5x3-v1s.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6476,11 +8356,11 @@
       "partName": "HQProp Durable 5040 V2",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-durable-5040-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-durable-5040-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6493,11 +8373,11 @@
       "partName": "HQProp Ethix S5 5x4x3",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-ethix-s5.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-ethix-s5.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6527,11 +8407,11 @@
       "partName": "HQProp V2S 5x4.3x3",
       "categoryKey": "props",
       "imagePath": "/parts/props/hqprop-v2s-5043.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/props/hqprop-v2s-5043.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6597,11 +8477,11 @@
       "partName": "FrSky R-XSR",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/frsky-r-xsr.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/frsky-r-xsr.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6614,11 +8494,11 @@
       "partName": "FrSky XSR SBUS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/frsky-xsr-sbus.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/frsky-xsr-sbus.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6631,11 +8511,11 @@
       "partName": "Happymodel EP2 2.4GHz ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep2-5inch-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/happymodel-ep2-5inch-elrs.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6682,11 +8562,11 @@
       "partName": "TBS Crossfire Micro V2",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-micro-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/tbs-crossfire-micro-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6716,11 +8596,11 @@
       "partName": "HDZero Freestyle VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-freestyle-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/hdzero-freestyle-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6734,11 +8614,11 @@
       "partName": "HDZero Race VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/hdzero-race-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/hdzero-race-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6768,11 +8648,11 @@
       "partName": "TBS Unify Pro32 Nano VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/tbs-unify-pro32-nano-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/tbs-unify-pro32-nano-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6785,11 +8665,11 @@
       "partName": "Walksnail Avatar GT VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-gt-vtx.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/walksnail-avatar-gt-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6802,11 +8682,11 @@
       "partName": "Walksnail Avatar HD V2 VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/walksnail-avatar-hd-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/walksnail-avatar-hd-v2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6821,11 +8701,11 @@
       "partName": "BETAFPV 1S 300mAh HV BT2.0",
       "categoryKey": "battery",
       "imagePath": "/parts/batteries/betafpv-1s-300-hv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/battery/betafpv-1s-300-hv-bt2.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -6847,6 +8727,23 @@
       "presetUsage": [],
       "compatibleClasses": [
         "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-2s-450-xt30",
+      "partName": "BETAFPV 450mAh 2S 45C XT30",
+      "categoryKey": "battery",
+      "imagePath": "/parts/batteries/betafpv-2s-450-xt30.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/battery/betafpv-2s-450-xt30.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
       ],
       "priority": 3
     },
@@ -7029,23 +8926,6 @@
       "compatibleClasses": [
         "cinewhoop",
         "3.5-inch-freestyle"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "betafpv-lava-ii-4s-580",
-      "partName": "BETAFPV LAVA II 4S 580mAh 95C",
-      "categoryKey": "battery",
-      "exists": false,
-      "illustrationPath": "/parts/illustrations/battery/betafpv-lava-ii-4s-580.svg",
-      "illustrationExists": true,
-      "hasVisual": true,
-      "visualType": "generated-illustration",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle",
-        "cinewhoop"
       ],
       "priority": 3
     },
@@ -7613,11 +9493,11 @@
       "partName": "Diatone Mamba F405 Mini",
       "categoryKey": "flightController",
       "imagePath": "/parts/flight-controllers/diatone-mamba-f405-mini.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/flightController/diatone-mamba-f405-mini.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7829,11 +9709,11 @@
       "partName": "BETAFPV Pavo30 Cine Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-pavo30-cine.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/betafpv-pavo30-cine-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7862,11 +9742,11 @@
       "partName": "BETAFPV Pavo35 Brushless Whoop Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-pavo35-frame-kit.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/betafpv-pavo35-frame-kit.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7879,11 +9759,11 @@
       "partName": "BETAFPV X-Knight 35 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/betafpv-x-knight-35-frame-kit.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/betafpv-x-knight-35-frame-kit.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7896,11 +9776,11 @@
       "partName": "GEPRC GEP-ST35 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/geprc-gep-st35.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/geprc-gep-st35-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7930,11 +9810,11 @@
       "partName": "Happymodel Moblite7 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/happymodel-moblite7.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/happymodel-moblite7-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7947,11 +9827,11 @@
       "partName": "Happymodel Mobula7 V2 Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/happymodel-mobula7-v2.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/happymodel-mobula7-v2-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7964,11 +9844,11 @@
       "partName": "iFlight AOS 3.5 V5.1 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-aos-3-5-v5-1.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/iflight-aos-3-5-v5-1-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7981,11 +9861,11 @@
       "partName": "iFlight AOS Cine35 V5 Frame Kit",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-aos-cine35-v5.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/iflight-aos-cine35-v5-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -7998,11 +9878,11 @@
       "partName": "iFlight Chimera7 LR Frame",
       "categoryKey": "frame",
       "imagePath": "/parts/frames/iflight-chimera7-lr.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/frame/iflight-chimera7-lr-frame.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -8113,11 +9993,11 @@
       "partName": "BETAFPV 0802 25000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/betafpv-0802-25000kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/betafpv-0802-25000kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -8138,6 +10018,23 @@
       "presetUsage": [],
       "compatibleClasses": [
         "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-1102-18000kv",
+      "partName": "BETAFPV 1102 18000KV",
+      "categoryKey": "motors",
+      "imagePath": "/parts/motors/betafpv-1102-18000kv.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/motors/betafpv-1102-18000kv.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "cinewhoop"
       ],
       "priority": 3
     },
@@ -8484,11 +10381,11 @@
       "partName": "Happymodel EX0802 19000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/happymodel-ex0802-19000kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/happymodel-ex0802-19000kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -8501,11 +10398,11 @@
       "partName": "Happymodel EX0802 22000KV",
       "categoryKey": "motors",
       "imagePath": "/parts/motors/happymodel-se0802-22000kv.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/motors/happymodel-se0802-22000kv.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -8527,23 +10424,6 @@
       "presetUsage": [],
       "compatibleClasses": [
         "7-inch-long-range"
-      ],
-      "priority": 3
-    },
-    {
-      "partId": "iflight-xing2-1404-4600kv",
-      "partName": "iFlight XING2 1404 4600KV",
-      "categoryKey": "motors",
-      "imagePath": "/parts/motors/iflight-xing2-1404-4600kv.jpg",
-      "exists": false,
-      "illustrationPath": "/parts/illustrations/motors/iflight-xing2-1404-4600kv.svg",
-      "illustrationExists": true,
-      "hasVisual": true,
-      "visualType": "generated-illustration",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "3.5-inch-freestyle"
       ],
       "priority": 3
     },
@@ -8815,22 +10695,6 @@
       "priority": 3
     },
     {
-      "partId": "gemfan-2218-3",
-      "partName": "Gemfan 2218 3-Blade (1.5mm Shaft)",
-      "categoryKey": "props",
-      "exists": false,
-      "illustrationPath": "/parts/illustrations/props/gemfan-2218-3.svg",
-      "illustrationExists": true,
-      "hasVisual": true,
-      "visualType": "generated-illustration",
-      "usedInPreset": false,
-      "presetUsage": [],
-      "compatibleClasses": [
-        "cinewhoop"
-      ],
-      "priority": 3
-    },
-    {
       "partId": "gemfan-31mm-4blade-whoop",
       "partName": "Gemfan 31mm 4-Blade Whoop",
       "categoryKey": "props",
@@ -8895,6 +10759,41 @@
       "presetUsage": [],
       "compatibleClasses": [
         "3.5-inch-freestyle"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-35mm-3blade-whoop",
+      "partName": "Gemfan 35mm 3-Blade Whoop",
+      "categoryKey": "props",
+      "imagePath": "/parts/props/gemfan-35mm-whoop.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-35mm-3blade-whoop.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop",
+        "cinewhoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "gemfan-40mm-4blade-whoop",
+      "partName": "Gemfan 40mm 4-Blade Whoop",
+      "categoryKey": "props",
+      "imagePath": "/parts/props/gemfan-40mm-whoop.jpg",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/props/gemfan-40mm-4blade-whoop.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
       ],
       "priority": 3
     },
@@ -9121,15 +11020,63 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-f4-12a-aio-elrs",
+      "partName": "BETAFPV F4 12A AIO Integrated ELRS",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-f4-12a-aio-elrs.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-matrix-3in1-elrs",
+      "partName": "BETAFPV Matrix 3IN1/4IN1 Integrated ELRS",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-matrix-3in1-elrs.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
+      "partId": "betafpv-matrix-5in1-elrs",
+      "partName": "BETAFPV Matrix 5IN1 Integrated ELRS",
+      "categoryKey": "receiver",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/receiver/betafpv-matrix-5in1-elrs.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "happymodel-cine-ep2-elrs",
       "partName": "Happymodel EP2 Cine ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-cine-ep2-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/happymodel-cine-ep2-elrs.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -9142,11 +11089,11 @@
       "partName": "Happymodel EP1 Dual ELRS",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/happymodel-ep1-dual-elrs.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/happymodel-ep1-dual-elrs.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -9176,11 +11123,11 @@
       "partName": "TBS Crossfire Micro LR",
       "categoryKey": "receiver",
       "imagePath": "/parts/receivers/tbs-crossfire-micro-lr.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/receiver/tbs-crossfire-micro-lr.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
@@ -9240,6 +11187,22 @@
       "priority": 3
     },
     {
+      "partId": "betafpv-matrix-5in1-vtx",
+      "partName": "BETAFPV Matrix 5IN1 Integrated 5.8GHz VTX",
+      "categoryKey": "vtx",
+      "exists": false,
+      "illustrationPath": "/parts/illustrations/vtx/betafpv-matrix-5in1-vtx.svg",
+      "illustrationExists": true,
+      "hasVisual": true,
+      "visualType": "generated-illustration",
+      "usedInPreset": false,
+      "presetUsage": [],
+      "compatibleClasses": [
+        "tiny-whoop"
+      ],
+      "priority": 3
+    },
+    {
       "partId": "betafpv-p1-air-unit",
       "partName": "BETAFPV P1 Air Unit HD VTX",
       "categoryKey": "vtx",
@@ -9261,11 +11224,11 @@
       "partName": "Rush Nano Ultimate Whoop VTX",
       "categoryKey": "vtx",
       "imagePath": "/parts/vtx/rush-nano-ultimate-whoop.jpg",
-      "exists": true,
+      "exists": false,
       "illustrationPath": "/parts/illustrations/vtx/rush-nano-ultimate-whoop-vtx.svg",
-      "illustrationExists": false,
+      "illustrationExists": true,
       "hasVisual": true,
-      "visualType": "product-photo",
+      "visualType": "generated-illustration",
       "usedInPreset": false,
       "presetUsage": [],
       "compatibleClasses": [
