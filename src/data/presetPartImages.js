@@ -103,15 +103,16 @@ export const applyPresetPartImageFields = (partId, categoryKey) => {
   }
 
   const folder = categoryFolders[categoryKey];
+  const source = getPresetPartImageSource(partId);
 
-  if (!folder) {
+  if (!folder || source?.imageStatus === "rejected") {
     return null;
   }
 
   return {
     imagePath: `/parts/${folder}/${partId}.jpg`,
     imageCredit: presetPartImageCredits[partId] ?? "Unknown manufacturer",
-    imageSourceUrl: getPresetPartImageSource(partId)?.officialUrl ?? undefined,
+    imageSourceUrl: source?.officialUrl ?? undefined,
     imageLicense: "No verified license on file",
     imageNeedsReview: true,
   };

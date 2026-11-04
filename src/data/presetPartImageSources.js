@@ -25,9 +25,9 @@ const basePresetPartImageSources = [
     preferredImageUrl:
       "https://static.wixstatic.com/media/e57211_5a539ff67e794c83aa16d962133b02f6~mv2.png/v1/fill/w_2560,h_1600,al_c/AOS%203.435.png",
     urlConfidence: "high",
-    imageStatus: "needs review",
+    imageStatus: "rejected",
     expectedImagePath: "/parts/frames/aos-3-5-v5.jpg",
-    notes: "Official AOS RC design page for AOS 3.5 V5 frame; Wix hero render is an isolated frame CAD packshot.",
+    notes: "Rejected: downloaded asset was an iFlight logo, not the AOS 3.5 V5 frame. Retain illustration until an exact frame image with usable rights is found.",
   },
   {
     partId: "betafpv-0802se-19500kv",

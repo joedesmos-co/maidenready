@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PartCategoryPlaceholder } from "./PartCategoryPlaceholder.jsx";
 import { getPartIllustrationPath } from "../utils/partIllustrationPath.js";
+import { isPartPhotoApproved } from "../utils/partImageMeta.js";
 
 const DISPLAY_MODES = {
   photo: "photo",
@@ -16,14 +17,19 @@ export function PartImage({
   onDisplayModeChange,
 }) {
   const illustrationPath = getPartIllustrationPath(part.id, categoryKey);
+  const approvedPhoto = isPartPhotoApproved(part);
   const [displayMode, setDisplayMode] = useState(
-    part.imagePath ? DISPLAY_MODES.photo : DISPLAY_MODES.illustration,
+    approvedPhoto ? DISPLAY_MODES.photo : DISPLAY_MODES.illustration,
   );
   const isDrawer = variant === "drawer";
 
   useEffect(() => {
-    setDisplayMode(part.imagePath ? DISPLAY_MODES.photo : DISPLAY_MODES.illustration);
-  }, [part.id, part.imagePath]);
+    setDisplayMode(
+      isPartPhotoApproved(part)
+        ? DISPLAY_MODES.photo
+        : DISPLAY_MODES.illustration,
+    );
+  }, [part]);
 
   useEffect(() => {
     onDisplayModeChange?.(displayMode);

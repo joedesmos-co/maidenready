@@ -28,7 +28,10 @@
     "images:completion-pipeline": "node scripts/runImageCompletionPipeline.js",
     "images:folders": "node scripts/createImageFolders.js",
     "images:generate-illustrations": "node scripts/generatePartIllustrations.js",
-    "validate:stats": "node scripts/validatePresetStats.js"
+    "validate:stats": "node scripts/validatePresetStats.js",
+    "validate:catalog": "node scripts/validateCatalog.js",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "react": "^19.2.7",
@@ -36,6 +39,10 @@
     "vite": "^8.1.0"
   },
   "devDependencies": {
-    "sharp": "^0.35.2"
+    "sharp": "^0.35.2",
+    "@playwright/test": "1.52.0"
+  },
+  "engines": {
+    "node": ">=22 <23"
   }
 }

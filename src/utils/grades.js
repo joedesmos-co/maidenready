@@ -1,5 +1,5 @@
-import { getCompatibilityScore } from "./compatibility";
-import { safeNumber } from "./buildCalculations";
+import { getCompatibilityScore } from "./compatibility.js";
+import { safeNumber } from "./buildCalculations.js";
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 

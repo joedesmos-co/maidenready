@@ -1,123 +1,260 @@
+import { useMemo } from "react";
+import { buildClasses, parts } from "../data/parts.js";
+import { presetBuilds } from "../data/presets.js";
+import { resolvePresetParts } from "../utils/presets.js";
+import {
+  calculateBuildStats,
+  formatCurrency,
+  formatFlightTimeRange,
+  formatThrustToWeight,
+  getSelectedParts,
+} from "../utils/buildCalculations.js";
+import { DroneVisual } from "./DroneVisual.jsx";
+import { PartImage } from "./PartImage.jsx";
+
 const howItWorksSteps = [
-  "Start with a preset or choose a build class.",
-  "Pick parts in Custom Build.",
-  "Check estimates and compatibility.",
-  "Save, compare, or share your build.",
-];
-
-const featureCards = [
   {
-    title: "Presets",
-    description: "Curated starter lists for whoops, freestyle, cinewhoop, and long-range.",
+    title: "Choose a starting point",
+    body: "Open a preset or start blank with the frame class you want to fly.",
   },
   {
-    title: "Custom Build",
-    description: "Nine-part picker with live stats, grades, and part details.",
+    title: "Configure every component",
+    body: "Pick frame, motors, electronics, props, battery, and video gear from the live catalog.",
   },
   {
-    title: "Compatibility checks",
-    description: "Static warnings for props, voltage, stack fit, and video systems.",
-  },
-  {
-    title: "Estimated stats",
-    description: "Price, mass, thrust, T:W, flight time, and top speed ranges.",
-  },
-  {
-    title: "Saved Builds",
-    description: "Store builds in this browser — no account required.",
-  },
-  {
-    title: "Compare",
-    description: "Side-by-side estimated stats for two saved builds.",
-  },
-  {
-    title: "Learn glossary",
-    description: "Plain-language FPV terms for motors, packs, props, and links.",
-  },
-  {
-    title: "Share links",
-    description: "Copy a URL with your class and part selections.",
+    title: "See the build come together",
+    body: "Follow the technical layout, price, weight, estimates, and compatibility as you go.",
   },
 ];
 
-export function HomePanel({ onNavigateTab }) {
+const componentRail = [
+  { key: "frame", label: "Frame", copy: "The chassis and geometry" },
+  { key: "motors", label: "Motors", copy: "Thrust and response" },
+  { key: "battery", label: "Battery", copy: "Voltage and endurance" },
+  { key: "camera", label: "Camera", copy: "The FPV feed" },
+];
+
+export function HomePanel({ onNavigateTab, onSelectBuildClass }) {
+  const heroPreset = useMemo(
+    () =>
+      presetBuilds.find((item) => item.id === "cinewhoop-cruiser") ??
+      presetBuilds[0],
+    [],
+  );
+  const heroBuild = useMemo(() => {
+    const resolved = resolvePresetParts(heroPreset, parts);
+    const selected = getSelectedParts(resolved.selections, parts);
+    const stats = calculateBuildStats(selected, heroPreset.buildClass);
+
+    return { selected, stats };
+  }, [heroPreset]);
+
+  const classCards = useMemo(
+    () =>
+      buildClasses.map((buildClass) => {
+        const preset =
+          presetBuilds.find((item) => item.buildClass === buildClass.id) ??
+          presetBuilds[0];
+        const resolved = resolvePresetParts(preset, parts);
+        const selected = getSelectedParts(resolved.selections, parts);
+
+        return {
+          ...buildClass,
+          selected,
+          frame: selected.frame,
+          preset,
+        };
+      }),
+    [],
+  );
+
   return (
     <div className="home-panel">
-      <section aria-labelledby="home-hero-heading" className="home-hero">
-        <p className="eyebrow">Welcome</p>
-        <h2 id="home-hero-heading" className="home-hero-title">
-          Plan your FPV build before the maiden.
-        </h2>
-        <p className="home-hero-lead">
-          MaidenReady estimates weight, price, thrust-to-weight, flight time, top speed,
-          and part compatibility while you plan a quad. Use it to compare configurations
-          and catch obvious mismatches before you buy or solder.
-        </p>
-        <p className="home-hero-note">
-          MaidenReady is a build calculator — not a store. We do not sell parts, take
-          orders, or link to checkout.
-        </p>
+      <section className="home-hero" aria-labelledby="home-hero-heading">
+        <div className="home-hero-copy">
+          <p className="eyebrow">FPV configurator</p>
+          <h1 id="home-hero-heading" className="home-hero-title">
+            Your quad.
+            <br />
+            Your build.
+          </h1>
+          <p className="home-hero-lead">
+            Configure a real FPV drone part by part. See the layout, price,
+            weight, flight estimates, and compatibility update as you choose.
+          </p>
+          <div className="home-cta-row">
+            <button
+              className="home-cta-button primary"
+              type="button"
+              onClick={() => onNavigateTab("custom")}
+            >
+              Build your drone
+            </button>
+            <button
+              className="home-cta-button"
+              type="button"
+              onClick={() => onNavigateTab("presets")}
+            >
+              Explore builds
+            </button>
+          </div>
+          <p className="home-hero-note">
+            Free planning tool. No account required. Always verify parts against
+            manufacturer documentation before ordering.
+          </p>
+        </div>
+
+        <div className="home-hero-visual">
+          <div className="home-hero-visual-top">
+            <span>Featured configuration</span>
+            <span>{heroPreset.role}</span>
+          </div>
+          <DroneVisual
+            selectedParts={heroBuild.selected}
+            buildClass={heroPreset.buildClass}
+            className="home-drone"
+          />
+          <div className="home-hero-specs">
+            <div>
+              <span>Build</span>
+              <strong>{heroPreset.name}</strong>
+            </div>
+            <div>
+              <span>Est. price</span>
+              <strong>{formatCurrency(heroBuild.stats.totalPrice)}</strong>
+            </div>
+            <div>
+              <span>T:W</span>
+              <strong>{formatThrustToWeight(heroBuild.stats.thrustToWeight)}</strong>
+            </div>
+            <div>
+              <span>Flight</span>
+              <strong>{formatFlightTimeRange(heroBuild.stats)}</strong>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section aria-labelledby="home-how-heading" className="home-section">
-        <div className="section-heading">
-          <p className="eyebrow">Workflow</p>
-          <h2 id="home-how-heading">How it works</h2>
+      <section className="home-spec-strip" aria-label="Catalog summary">
+        <div>
+          <strong>{Object.values(parts).flat().length}</strong>
+          <span>catalog parts</span>
         </div>
-        <ol className="home-steps">
-          {howItWorksSteps.map((step) => (
-            <li key={step}>{step}</li>
+        <div>
+          <strong>{buildClasses.length}</strong>
+          <span>build classes</span>
+        </div>
+        <div>
+          <strong>{presetBuilds.length}</strong>
+          <span>starter presets</span>
+        </div>
+        <div>
+          <strong>2D</strong>
+          <span>honest technical layout</span>
+        </div>
+      </section>
+
+      <section className="home-component-section" aria-labelledby="home-components-heading">
+        <div className="home-section-header">
+          <div>
+            <p className="eyebrow">Real components</p>
+            <h2 id="home-components-heading">Built around the parts you choose</h2>
+          </div>
+          <button
+            className="home-text-action"
+            type="button"
+            onClick={() => onNavigateTab("custom")}
+          >
+            Open configurator →
+          </button>
+        </div>
+        <div className="component-rail">
+          {componentRail.map((item) => {
+            const part = heroBuild.selected[item.key];
+
+            return (
+              <article className="component-tile" key={item.key}>
+                <div className="component-tile-image">
+                  {part && (
+                    <PartImage
+                      categoryKey={item.key}
+                      part={part}
+                      partType={item.label}
+                    />
+                  )}
+                </div>
+                <div className="component-tile-copy">
+                  <span>{item.label}</span>
+                  <strong>{part?.name ?? "Choose a part"}</strong>
+                  <p>{item.copy}</p>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="home-class-section" aria-labelledby="home-classes-heading">
+        <div className="home-section-header">
+          <div>
+            <p className="eyebrow">Pick a discipline</p>
+            <h2 id="home-classes-heading">One platform. Five ways to fly.</h2>
+          </div>
+        </div>
+        <div className="home-class-grid">
+          {classCards.map((buildClass) => (
+            <button
+              className="home-class-card"
+              key={buildClass.id}
+              type="button"
+              onClick={() => onSelectBuildClass(buildClass.id)}
+            >
+              <span className="home-class-image">
+                <DroneVisual
+                  selectedParts={buildClass.selected}
+                  buildClass={buildClass.id}
+                  showLabels={false}
+                />
+              </span>
+              <span className="home-class-copy">
+                <strong>{buildClass.label}</strong>
+                <span>{buildClass.preset.name}</span>
+              </span>
+              <span className="home-class-arrow" aria-hidden="true">→</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="home-process" aria-labelledby="home-process-heading">
+        <div className="home-section-header">
+          <div>
+            <p className="eyebrow">How it works</p>
+            <h2 id="home-process-heading">Configure. Check. Fly.</h2>
+          </div>
+        </div>
+        <ol className="home-process-list">
+          {howItWorksSteps.map((step, index) => (
+            <li key={step.title}>
+              <span className="home-process-index">{String(index + 1).padStart(2, "0")}</span>
+              <strong>{step.title}</strong>
+              <p>{step.body}</p>
+            </li>
           ))}
         </ol>
       </section>
 
-      <section aria-labelledby="home-features-heading" className="home-section">
-        <div className="section-heading">
-          <p className="eyebrow">Tools</p>
-          <h2 id="home-features-heading">What you can do</h2>
+      <section className="home-final-cta" aria-label="Start building">
+        <div>
+          <p className="eyebrow">Ready when you are</p>
+          <h2>Build the quad before you buy the parts.</h2>
         </div>
-        <div className="home-feature-grid">
-          {featureCards.map((card) => (
-            <article className="home-feature-card" key={card.title}>
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section aria-labelledby="home-notes-heading" className="home-section home-notes">
-        <div className="section-heading">
-          <p className="eyebrow">Good to know</p>
-          <h2 id="home-notes-heading">Before you fly</h2>
-        </div>
-        <div className="home-note">
-          <h3>Estimates are approximate</h3>
-          <p>
-            Real-world performance depends on tuning, props, battery health, all-up weight,
-            weather, and flying style. Use MaidenReady to compare builds — not as measured
-            flight data.
-          </p>
-        </div>
-        <div className="home-note">
-          <h3>About part images</h3>
-          <p>
-            Some photos are manufacturer-source candidates pending review. Others are
-            category illustrations when no verified product image is available. Check part
-            details for source and review status.
-          </p>
-        </div>
-      </section>
-
-      <section aria-label="Get started" className="home-cta-row">
-        <button className="home-cta-button primary" type="button" onClick={() => onNavigateTab("presets")}>
-          Start with presets
-        </button>
-        <button className="home-cta-button" type="button" onClick={() => onNavigateTab("custom")}>
-          Build from scratch
-        </button>
-        <button className="home-cta-button" type="button" onClick={() => onNavigateTab("learn")}>
-          Learn FPV terms
+        <button
+          className="home-cta-button primary"
+          type="button"
+          onClick={() => onNavigateTab("custom")}
+        >
+          Build your drone
         </button>
       </section>
     </div>

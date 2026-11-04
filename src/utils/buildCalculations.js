@@ -138,6 +138,89 @@ export const getSelectedParts = (selectedIds, parts) =>
 const getPartPrice = (part) => part.price_usd ?? part.price ?? 0;
 const getPartWeightG = (part) => part.weight_g ?? part.weightG ?? 0;
 
+const getEscInstalledQuantity = (part) => {
+  if (Number.isFinite(Number(part.installedQuantity))) {
+    return Number(part.installedQuantity);
+  }
+
+  if (part.isAio || part.escKind === "4in1" || /4-in-1|4 in 1|four-in-one/i.test(part.name ?? "")) {
+    return 1;
+  }
+
+  return 1;
+};
+
+export const getPartAccounting = (part, categoryKey, selectedParts = {}) => {
+  if (!part) {
+    return null;
+  }
+
+  const meta = categoryMeta[categoryKey] ?? {};
+  const hostSelected = Boolean(
+    part.integratedInto &&
+      Object.values(selectedParts).some(
+        (candidate) => candidate?.id === part.integratedInto,
+      ),
+  );
+  const integrated = hostSelected;
+  const installedQuantity = Number.isFinite(Number(part.installedQuantity))
+    ? Number(part.installedQuantity)
+    : categoryKey === "esc"
+      ? getEscInstalledQuantity(part)
+      : Number(part.installedQuantity ?? meta.installedQuantity ?? 1);
+  const packageQuantity = Math.max(
+    1,
+    Number(part.packageQuantity ?? meta.packageQuantity ?? 1),
+  );
+  const packages = Math.ceil(installedQuantity / packageQuantity);
+  const priceBasis = part.priceBasis ?? meta.priceBasis ?? "each";
+  const weightBasis = part.weightBasis ?? meta.weightBasis ?? "each";
+  const price = safeNumber(part.price, 0);
+  const weight = safeNumber(part.weightG, 0);
+  const weightKnown = part.weightG !== null && part.weightG !== undefined && Number.isFinite(Number(part.weightG));
+  const purchaseCost = integrated
+    ? 0
+    : priceBasis === "package"
+      ? price * packages
+      : price * installedQuantity;
+  const installedWeightG = integrated || !weightKnown
+    ? 0
+    : weightBasis === "package"
+      ? weight * packages
+      : weight * installedQuantity;
+
+  return {
+    partId: part.id,
+    partName: part.name,
+    categoryKey,
+    categoryLabel: meta.label ?? categoryKey,
+    installedQuantity,
+    packageQuantity,
+    packages,
+    priceBasis,
+    weightBasis,
+    unitPrice: price,
+    unitWeightG: weight,
+    purchaseCost: roundTo(purchaseCost, 2),
+    installedWeightG: roundTo(installedWeightG, 2),
+    weightKnown,
+    integrated,
+    integratedInto: part.integratedInto ?? null,
+    integratedRole: part.integratedRole ?? null,
+    accountingWarning: part.integratedInto && !hostSelected
+      ? "This integrated component is selected without its host AIO."
+      : part.priceBasisUnverified
+        ? "Battery pack quantity is not verified; price is treated as one pack."
+        : part.priceConfidence === "unverified"
+          ? "This product price is not verified against a current manufacturer listing."
+          : !weightKnown
+            ? "This product weight is not documented; total mass omits it."
+            : null,
+    priceUnverified: part.priceConfidence === "unverified",
+    priceBasisUnverified: Boolean(part.priceBasisUnverified),
+  };
+};
+
 const roundRange = (min, max, step = 1) => ({
   min: Math.round(min / step) * step,
   max: Math.round(max / step) * step,
@@ -145,20 +228,63 @@ const roundRange = (min, max, step = 1) => ({
 
 export const calculateBuildStats = (selectedParts, buildClass = defaultBuildClass) => {
   const profile = getEstimateProfile(buildClass);
+  const partBreakdown = buildSteps
+    .map((step) => getPartAccounting(selectedParts[step.key], step.key, selectedParts))
+    .filter(Boolean);
 
-  const partsWeightG = buildSteps.reduce((sum, step) => {
-    const part = selectedParts[step.key];
-    const multiplier = categoryMeta[step.key].weightMultiplier;
-    return part ? sum + getPartWeightG(part) * multiplier : sum;
-  }, 0);
-
+  const partsWeightG = partBreakdown.reduce(
+    (sum, entry) => sum + entry.installedWeightG,
+    0,
+  );
   const totalWeightG = partsWeightG + profile.hardwareWeightG;
+  const totalPrice = partBreakdown.reduce(
+    (sum, entry) => sum + entry.purchaseCost,
+    0,
+  );
 
-  const totalPrice = buildSteps.reduce((sum, step) => {
-    const part = selectedParts[step.key];
-    const multiplier = categoryMeta[step.key].priceMultiplier;
-    return part ? sum + getPartPrice(part) * multiplier : sum;
-  }, 0);
+  const integrationNotes = [];
+  const frame = selectedParts.frame;
+  const flightController = selectedParts.flightController;
+  const esc = selectedParts.esc;
+  const receiver = selectedParts.receiver;
+  const vtx = selectedParts.vtx;
+
+  if (flightController?.isAio && esc?.integratedInto === flightController.id) {
+    integrationNotes.push(
+      `${flightController.name} includes the ESC. The AIO is counted once as one board.`,
+    );
+  }
+
+  if (receiver?.integratedInto && receiver.integratedInto === flightController?.id) {
+    integrationNotes.push(
+      `${receiver.name} is integrated into the selected AIO. No separate receiver cost or mass is counted.`,
+    );
+  }
+
+  if (vtx?.integratedInto && vtx.integratedInto === flightController?.id) {
+    integrationNotes.push(
+      `${vtx.name} is integrated into the selected AIO. No separate VTX cost or mass is counted.`,
+    );
+  }
+
+  if (esc && getEscInstalledQuantity(esc) === 1 && !esc.isAio) {
+    integrationNotes.push(
+      "The selected 4-in-1 ESC is one board driving four motors.",
+    );
+  }
+
+  if (selectedParts.motors) {
+    integrationNotes.push("Four physical motors are counted.");
+  }
+
+  if (selectedParts.props) {
+    const propAccounting = partBreakdown.find((entry) => entry.categoryKey === "props");
+    if (propAccounting?.packageQuantity > 1) {
+      integrationNotes.push(
+        `Props: four installed props, counted as ${propAccounting.packages} package${propAccounting.packages === 1 ? "" : "s"} of ${propAccounting.packageQuantity}.`,
+      );
+    }
+  }
 
   const rawThrustG = calculateTotalThrust(selectedParts);
   const ductFactor =
@@ -187,7 +313,14 @@ export const calculateBuildStats = (selectedParts, buildClass = defaultBuildClas
     topSpeedMph: topSpeedEstimate.midpoint,
     topSpeedMphMin: topSpeedEstimate.min,
     topSpeedMphMax: topSpeedEstimate.max,
+    topSpeedKnown: topSpeedEstimate.pitchSpeedMph > 0,
     pitchSpeedMph: roundTo(topSpeedEstimate.pitchSpeedMph, 0),
+    partBreakdown,
+    integrationNotes,
+    accountingWarnings: partBreakdown
+      .filter((entry) => entry.accountingWarning)
+      .map((entry) => entry.accountingWarning),
+    unknownWeightCount: partBreakdown.filter((entry) => !entry.weightKnown).length,
   };
 };
 
@@ -365,20 +498,22 @@ export const validateBuildStats = (stats, buildClass = defaultBuildClass) => {
     issues.push("flightTimeMinutes must be greater than zero");
   }
 
-  if (stats?.topSpeedMphMax > profile.topSpeedMph.max + 1) {
-    issues.push(
-      `top speed max ${stats.topSpeedMphMax} mph exceeds ${buildClass} cap (${profile.topSpeedMph.max} mph)`,
-    );
-  }
+  if (stats?.topSpeedKnown !== false) {
+    if (stats?.topSpeedMphMax > profile.topSpeedMph.max + 1) {
+      issues.push(
+        `top speed max ${stats.topSpeedMphMax} mph exceeds ${buildClass} cap (${profile.topSpeedMph.max} mph)`,
+      );
+    }
 
-  if (stats?.topSpeedMphMin < profile.topSpeedMph.min - 1) {
-    issues.push(
-      `top speed min ${stats.topSpeedMphMin} mph below ${buildClass} floor (${profile.topSpeedMph.min} mph)`,
-    );
-  }
+    if (stats?.topSpeedMphMin < profile.topSpeedMph.min - 1) {
+      issues.push(
+        `top speed min ${stats.topSpeedMphMin} mph below ${buildClass} floor (${profile.topSpeedMph.min} mph)`,
+      );
+    }
 
-  if (stats?.topSpeedMphMin > stats?.topSpeedMphMax) {
-    issues.push("top speed min exceeds max");
+    if (stats?.topSpeedMphMin > stats?.topSpeedMphMax) {
+      issues.push("top speed min exceeds max");
+    }
   }
 
   if (stats?.flightTimeMinutesMin > stats?.flightTimeMinutesMax) {

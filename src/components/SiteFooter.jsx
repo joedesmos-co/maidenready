@@ -1,6 +1,6 @@
 import { footerLinks } from "../data/legalPages.js";
 
-export function SiteFooter({ onOpenLegalPage }) {
+export function SiteFooter({ onOpenLegalPage, onOpenBetaFeedback }) {
   return (
     <footer className="site-footer">
       <nav aria-label="Site information" className="site-footer-nav">
@@ -14,9 +14,16 @@ export function SiteFooter({ onOpenLegalPage }) {
             {link.label}
           </button>
         ))}
+        <button
+          className="site-footer-link"
+          type="button"
+          onClick={onOpenBetaFeedback}
+        >
+          Beta feedback
+        </button>
       </nav>
       <p className="site-footer-note">
-        Estimates for planning only — verify parts and fly safely.
+        Limited beta · estimates for planning only — verify parts and fly safely.
       </p>
     </footer>
   );

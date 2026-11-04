@@ -3,7 +3,56 @@ import { formatFlightTimeRange, getEstimateProfile } from "./buildCalculations.j
 const hasIntersection = (left = [], right = []) =>
   left.some((value) => right.includes(value));
 
+const normalizeMountTokens = (value) => {
+  const raw = String(value ?? "")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[–—]/g, "-");
+  const tokens = new Set([raw]);
+  const pairMatches = raw.matchAll(/(\d+(?:\.\d+)?)x(\d+(?:\.\d+)?)/g);
+
+  for (const match of pairMatches) {
+    tokens.add(`${match[1]}x${match[2]}`);
+    if (match[1] === match[2]) {
+      tokens.add(`${match[1]}x${match[1]}`);
+    }
+  }
+
+  const spacingRaw = raw.replace(/m[234]/g, "");
+  const mmMatches = spacingRaw.matchAll(/(\d+(?:\.\d+)?)mm/g);
+
+  for (const match of mmMatches) {
+    tokens.add(`${match[1]}x${match[1]}`);
+  }
+
+  if (raw.includes("3-hole")) {
+    tokens.add("3-hole");
+  }
+
+  return [...tokens];
+};
+
+const mountsCompatible = (left, right) => {
+  const leftTokens = new Set(asArray(left).flatMap(normalizeMountTokens));
+  const rightTokens = asArray(right).flatMap(normalizeMountTokens);
+
+  return rightTokens.some((token) => leftTokens.has(token));
+};
+
 const asArray = (value) => (Array.isArray(value) ? value : [value].filter(Boolean));
+
+const isFiniteNumber = (value) =>
+  value !== null && value !== undefined && Number.isFinite(Number(value));
+
+const normalizeConnector = (value) =>
+  String(value ?? "")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[–—]/g, "-");
+
+const pushUnknown = (warnings, id, title, message) => {
+  warnings.push({ id, severity: "unknown", title, message });
+};
 
 export const getCompatibilityWarnings = ({
   frame,
@@ -14,146 +63,353 @@ export const getCompatibilityWarnings = ({
   battery,
   camera,
   vtx,
+  receiver,
 }, buildClass = "5-inch-freestyle", stats = {}) => {
   const warnings = [];
 
-  if (frame && props && props.diameterInches > frame.maxPropInches) {
-    warnings.push({
-      id: "prop-clearance",
-      severity: "high",
-      title: "Props are too large for this frame",
-      message: `${props.name} (${props.diameterInches}") exceeds ${frame.name}'s ${frame.maxPropInches}" limit. Props may hit the frame, ducts, or stack — pick a smaller prop or a larger frame.`,
-    });
-  }
-
-  if (
-    motors?.recommendedCells?.length &&
-    battery &&
-    !motors.recommendedCells.includes(battery.cells)
-  ) {
-    warnings.push({
-      id: "motor-cell-count",
-      severity: "high",
-      title: "Motor and battery cell count do not match",
-      message: `${motors.name} is rated for ${motors.recommendedCells.join(
-        "S / ",
-      )}S packs, but ${battery.name} is ${battery.cells}S. Wrong voltage can over-rev motors or feel weak and sluggish.`,
-    });
-  }
-
-  if (esc && motors && props) {
-    const estimatedMotorCurrent = motors.maxCurrentA * (props.currentMultiplier ?? 1);
-
-    if (esc.continuousAmp < estimatedMotorCurrent) {
+  if (frame && props) {
+    if (
+      !isFiniteNumber(frame.maxPropInches) ||
+      !isFiniteNumber(props.diameterInches)
+    ) {
+      pushUnknown(
+        warnings,
+        "unknown-prop-clearance",
+        "Prop clearance cannot be confirmed",
+        `${frame.name} or ${props.name} is missing a documented prop-size limit. Check the frame manual before ordering props.`,
+      );
+    } else if (props.diameterInches > frame.maxPropInches) {
       warnings.push({
-        id: "esc-current",
+        id: "prop-clearance",
         severity: "high",
-        title: "ESC may not handle motor current",
-        message: `${esc.name} is rated for ${esc.continuousAmp}A continuous, but motor + prop combo can draw about ${Math.round(
-          estimatedMotorCurrent,
-        )}A per motor under load. Undersized ESCs can overheat or fail in flight.`,
+        title: "Props are too large for this frame",
+        message: `${props.name} (${props.diameterInches}") exceeds ${frame.name}'s ${frame.maxPropInches}" limit. Props may hit the frame, ducts, or stack — pick a smaller prop or a larger frame.`,
       });
     }
   }
 
-  if (esc?.supportedCells?.length && battery && !esc.supportedCells.includes(battery.cells)) {
-    warnings.push({
-      id: "esc-voltage",
-      severity: "high",
-      title: "ESC does not support this battery voltage",
-      message: `${esc.name} supports ${esc.supportedCells.join(
-        "S / ",
-      )}S packs only. ${battery.name} is ${battery.cells}S — the ESC may not arm or could be damaged.`,
-    });
+  if (motors && battery) {
+    if (!motors.recommendedCells?.length || !isFiniteNumber(battery.cells)) {
+      pushUnknown(
+        warnings,
+        "unknown-motor-cells",
+        "Motor voltage rating is not documented",
+        `${motors.name} does not list supported cell counts. Confirm the motor's rated voltage against the ${battery.name} pack before ordering.`,
+      );
+    } else if (!motors.recommendedCells.includes(battery.cells)) {
+      warnings.push({
+        id: "motor-cell-count",
+        severity: "high",
+        title: "Motor and battery cell count do not match",
+        message: `${motors.name} is rated for ${motors.recommendedCells.join(
+          "S / ",
+        )}S packs, but ${battery.name} is ${battery.cells}S. Wrong voltage can over-rev motors or feel weak and sluggish.`,
+      });
+    }
+  }
+
+  if (esc && motors) {
+    if (!isFiniteNumber(esc.continuousAmp) || !isFiniteNumber(motors.maxCurrentA)) {
+      pushUnknown(
+        warnings,
+        "unknown-esc-current",
+        "ESC current headroom cannot be confirmed",
+        `${esc.name} or ${motors.name} is missing a documented current rating. Check both datasheets before flying at full throttle.`,
+      );
+    } else {
+      const estimatedMotorCurrent =
+        Number(motors.maxCurrentA) * (props?.currentMultiplier ?? 1);
+
+      if (Number(esc.continuousAmp) < estimatedMotorCurrent) {
+        warnings.push({
+          id: "esc-current",
+          severity: "high",
+          title: "ESC may not handle motor current",
+          message: `${esc.name} is rated for ${esc.continuousAmp}A continuous, but motor + prop combo can draw about ${Math.round(
+            estimatedMotorCurrent,
+          )}A per motor under load. Undersized ESCs can overheat or fail in flight.`,
+        });
+      }
+    }
+  }
+
+  if (esc && battery) {
+    if (!esc.supportedCells?.length || !isFiniteNumber(battery.cells)) {
+      pushUnknown(
+        warnings,
+        "unknown-esc-voltage",
+        "ESC voltage range is not documented",
+        `${esc.name} does not list supported cell counts. Confirm its input voltage against the ${battery.name} pack.`,
+      );
+    } else if (!esc.supportedCells.includes(battery.cells)) {
+      warnings.push({
+        id: "esc-voltage",
+        severity: "high",
+        title: "ESC does not support this battery voltage",
+        message: `${esc.name} supports ${esc.supportedCells.join(
+          "S / ",
+        )}S packs only. ${battery.name} is ${battery.cells}S — the ESC may not arm or could be damaged.`,
+      });
+    }
   }
 
   if (
     buildClass === "tiny-whoop" &&
-    flightController?.supportedCells &&
-    battery &&
-    !flightController.supportedCells.includes(battery.cells)
+    flightController &&
+    battery
   ) {
-    warnings.push({
-      id: "tiny-fc-cell-count",
-      severity: "high",
-      title: "Flight controller voltage does not match battery",
-      message: `${flightController.name} supports ${flightController.supportedCells.join(
-        "S / ",
-      )}S only. ${battery.name} is ${battery.cells}S — use a matching whoop pack.`,
-    });
+    if (
+      !flightController.supportedCells?.length ||
+      !isFiniteNumber(battery.cells)
+    ) {
+      pushUnknown(
+        warnings,
+        "unknown-fc-voltage",
+        "Flight controller voltage range is not documented",
+        `${flightController.name} does not list supported cell counts. Confirm it matches the ${battery.name} pack.`,
+      );
+    } else if (!flightController.supportedCells.includes(battery.cells)) {
+      warnings.push({
+        id: "tiny-fc-cell-count",
+        severity: "high",
+        title: "Flight controller voltage does not match battery",
+        message: `${flightController.name} supports ${flightController.supportedCells.join(
+          "S / ",
+        )}S only. ${battery.name} is ${battery.cells}S — use a matching whoop pack.`,
+      });
+    }
   }
 
-  if (
-    frame?.motorMounts?.length &&
-    motors &&
-    !hasIntersection(frame.motorMounts, asArray(motors.mountPattern))
-  ) {
-    warnings.push({
-      id: "motor-mount",
-      severity: "high",
-      title: "Motor bolt pattern does not fit frame",
-      message: `${motors.name} uses ${motors.mountPattern} mounting, but ${frame.name} supports ${frame.motorMounts.join(
-        ", ",
-      )}. Motors will not bolt on without adapters.`,
-    });
+  if (frame && motors) {
+    const frameMounts = asArray(frame.motorMounts);
+    const motorMounts = asArray(motors.mountPattern);
+
+    if (frameMounts.length === 0 || motorMounts.length === 0) {
+      pushUnknown(
+        warnings,
+        "unknown-motor-mount",
+        "Motor mounting pattern cannot be confirmed",
+        `${frame.name} or ${motors.name} is missing a documented motor bolt pattern. Measure the frame and motor before ordering.`,
+      );
+    } else if (!mountsCompatible(frameMounts, motorMounts)) {
+      warnings.push({
+        id: "motor-mount",
+        severity: "high",
+        title: "Motor bolt pattern does not fit frame",
+        message: `${motors.name} uses ${motorMounts.join(
+          " / ",
+        )} mounting, but ${frame.name} supports ${frameMounts.join(
+          ", ",
+        )}. Motors will not bolt on without adapters.`,
+      });
+    }
   }
 
-  if (frame?.stackMounts?.length && flightController) {
+  if (frame && flightController) {
+    const frameMounts = asArray(frame.stackMounts);
     const fcMounts = asArray(flightController.mountPattern);
-    if (fcMounts.length && !hasIntersection(frame.stackMounts, fcMounts)) {
+
+    if (frameMounts.length === 0 || fcMounts.length === 0) {
+      pushUnknown(
+        warnings,
+        "unknown-fc-frame-stack",
+        "Flight controller stack fit cannot be confirmed",
+        `${frame.name} or ${flightController.name} is missing a documented stack mounting size. Check the frame manual before ordering.`,
+      );
+    } else if (!mountsCompatible(frameMounts, fcMounts)) {
       warnings.push({
         id: "fc-frame-stack",
         severity: "medium",
         title: "Flight controller may not fit frame stack",
         message: `${flightController.name} is ${fcMounts.join(
           ", ",
-        )} stack size; ${frame.name} accepts ${frame.stackMounts.join(", ")}. Check standoff spacing before ordering.`,
+        )} stack size; ${frame.name} accepts ${frameMounts.join(
+          ", ",
+        )}. Check standoff spacing before ordering.`,
       });
     }
   }
 
-  if (frame?.stackMounts?.length && esc) {
+  if (frame && esc) {
+    const frameMounts = asArray(frame.stackMounts);
     const escMounts = asArray(esc.mountPattern);
-    if (escMounts.length && !hasIntersection(frame.stackMounts, escMounts)) {
+
+    if (frameMounts.length === 0 || escMounts.length === 0) {
+      pushUnknown(
+        warnings,
+        "unknown-esc-frame-stack",
+        "ESC stack fit cannot be confirmed",
+        `${frame.name} or ${esc.name} is missing a documented stack mounting size. Check the frame manual before ordering.`,
+      );
+    } else if (!mountsCompatible(frameMounts, escMounts)) {
       warnings.push({
         id: "esc-frame-stack",
         severity: "medium",
         title: "ESC may not fit frame stack",
-        message: `${esc.name} is ${escMounts.join(", ")} stack size; ${frame.name} accepts ${frame.stackMounts.join(
+        message: `${esc.name} is ${escMounts.join(
+          ", ",
+        )} stack size; ${frame.name} accepts ${frameMounts.join(
           ", ",
         )}. You may need a different ESC or mounting adapter.`,
       });
     }
   }
 
-  if (flightController && esc && flightController.mountPattern !== esc.mountPattern) {
-    warnings.push({
-      id: "fc-esc-stack",
-      severity: "medium",
-      title: "FC and ESC stack sizes differ",
-      message: `${flightController.name} (${flightController.mountPattern}) and ${esc.name} (${esc.mountPattern}) use different stack sizes. Plan for an adapter or split mounting.`,
-    });
+  if (flightController && esc) {
+    const fcMount = asArray(flightController.mountPattern);
+    const escMount = asArray(esc.mountPattern);
+
+    if (fcMount.length === 0 || escMount.length === 0) {
+      pushUnknown(
+        warnings,
+        "unknown-fc-esc-stack",
+        "FC and ESC stack match cannot be confirmed",
+        `${flightController.name} or ${esc.name} is missing a documented stack mounting size. Verify the standoff pattern before ordering.`,
+      );
+    } else if (!mountsCompatible(fcMount, escMount)) {
+      warnings.push({
+        id: "fc-esc-stack",
+        severity: "medium",
+        title: "FC and ESC stack sizes differ",
+        message: `${flightController.name} (${fcMount.join(
+          " / ",
+        )}) and ${esc.name} (${escMount.join(
+          " / ",
+        )}) use different stack sizes. Plan for an adapter or split mounting.`,
+      });
+    }
   }
 
   if (camera && vtx) {
-    if (camera.videoSystem !== vtx.videoSystem) {
+    if (!camera.videoSystem || !vtx.videoSystem) {
+      pushUnknown(
+        warnings,
+        "unknown-video-system",
+        "Video system compatibility cannot be confirmed",
+        `${camera.name} or ${vtx.name} is missing a documented analog/digital video system. Confirm both before wiring.`,
+      );
+    } else if (camera.videoSystem !== vtx.videoSystem) {
       warnings.push({
         id: "video-analog-digital",
         severity: "high",
         title: "Camera and VTX video types do not match",
         message: `${camera.name} is ${camera.videoSystem}; ${vtx.name} is ${vtx.videoSystem}. Analog and digital systems cannot plug together without extra hardware.`,
       });
-    } else if (
-      camera.videoSystem === "digital" &&
-      camera.digitalSystem !== vtx.digitalSystem
-    ) {
+    } else if (camera.videoSystem === "digital") {
+      if (!camera.digitalSystem || !vtx.digitalSystem) {
+        pushUnknown(
+          warnings,
+          "unknown-digital-system",
+          "Digital video ecosystem cannot be confirmed",
+          `${camera.name} or ${vtx.name} is missing a documented digital system. Confirm the ecosystem and goggles before ordering.`,
+        );
+      } else if (camera.digitalSystem !== vtx.digitalSystem) {
+        warnings.push({
+          id: "video-digital-system",
+          severity: "high",
+          title: "Digital camera and VTX ecosystems do not match",
+          message: `${camera.name} (${camera.digitalSystem}) and ${vtx.name} (${vtx.digitalSystem}) are from different digital ecosystems. They will not link without a matching air unit and goggles.`,
+        });
+      }
+    }
+  }
+
+  if (flightController?.isAio) {
+    const roles = new Set(flightController.integratedRoles ?? []);
+
+    if (roles.has("esc") && esc && !esc.integratedInto) {
       warnings.push({
-        id: "video-digital-system",
-        severity: "high",
-        title: "Digital camera and VTX ecosystems do not match",
-        message: `${camera.name} (${camera.digitalSystem}) and ${vtx.name} (${vtx.digitalSystem}) are from different digital ecosystems. They will not link without a matching air unit and goggles.`,
+        id: "aio-esc-redundant",
+        severity: "medium",
+        title: "AIO already includes an ESC",
+        message: `${flightController.name} is an all-in-one board with an integrated ESC. The separately selected ${esc.name} is redundant and adds cost and mass unless you intend to bypass the AIO ESC.`,
       });
     }
+
+    if (roles.has("receiver") && receiver && !receiver.integratedInto) {
+      warnings.push({
+        id: "aio-receiver-redundant",
+        severity: "medium",
+        title: "AIO already includes a receiver",
+        message: `${flightController.name} includes an integrated receiver. The separately selected ${receiver.name} is redundant unless you are intentionally using a different radio link.`,
+      });
+    }
+
+    if (roles.has("vtx") && vtx && !vtx.integratedInto) {
+      warnings.push({
+        id: "aio-vtx-redundant",
+        severity: "medium",
+        title: "AIO already includes a video transmitter",
+        message: `${flightController.name} includes an integrated VTX. The separately selected ${vtx.name} adds a second video transmitter and extra mass.`,
+      });
+    }
+  }
+
+  if (esc?.integratedInto && flightController?.id !== esc.integratedInto) {
+    warnings.push({
+      id: "integrated-esc-orphaned",
+      severity: "high",
+      title: "Integrated ESC selected without its AIO host",
+      message: `${esc.name} is the ESC section of ${esc.integratedInto}. Select the matching AIO flight controller or choose a standalone ESC.`,
+    });
+  }
+
+  if (receiver?.integratedInto && flightController?.id !== receiver.integratedInto) {
+    warnings.push({
+      id: "integrated-receiver-orphaned",
+      severity: "medium",
+      title: "Integrated receiver selected without its AIO host",
+      message: `${receiver.name} is integrated into a specific AIO. Select the matching AIO or choose a standalone receiver.`,
+    });
+  }
+
+  if (vtx?.integratedInto && flightController?.id !== vtx.integratedInto) {
+    warnings.push({
+      id: "integrated-vtx-orphaned",
+      severity: "medium",
+      title: "Integrated VTX selected without its AIO host",
+      message: `${vtx.name} is integrated into a specific AIO. Select the matching AIO or choose a standalone VTX.`,
+    });
+  }
+
+  if (battery && !battery.connector) {
+    pushUnknown(
+      warnings,
+      "unknown-battery-connector",
+      "Battery connector is not documented",
+      `${battery.name} does not list a connector type. Confirm it matches your power lead or AIO before ordering.`,
+    );
+  }
+
+  const aio = flightController?.isAio ? flightController : null;
+  const aioConnector = aio?.batteryConnector ?? aio?.connector;
+  if (battery?.connector && aio) {
+    if (!aioConnector) {
+      pushUnknown(
+        warnings,
+        "unknown-aio-connector",
+        "AIO battery connector cannot be confirmed",
+        `${aio.name} does not list a battery connector. Confirm it matches the ${battery.name} (${battery.connector}) before ordering.`,
+      );
+    } else if (
+      normalizeConnector(aioConnector) !== normalizeConnector(battery.connector)
+    ) {
+      warnings.push({
+        id: "battery-connector",
+        severity: "high",
+        title: "Battery connector does not match the AIO",
+        message: `${battery.name} uses ${battery.connector}, but ${aio.name} expects ${aioConnector}. Do not force an adapter without checking polarity and current rating.`,
+      });
+    }
+  }
+
+  if (receiver && !receiver.protocol) {
+    pushUnknown(
+      warnings,
+      "unknown-receiver-protocol",
+      "Receiver protocol is not documented",
+      `${receiver.name} does not list a control protocol. Confirm it matches your radio module before ordering.`,
+    );
   }
 
   warnings.push(...getBuildClassWarnings(
@@ -300,6 +556,10 @@ export const getCompatibilityScore = (warnings) => {
 
     if (warning.severity === "medium") {
       return sum + 16;
+    }
+
+    if (warning.severity === "unknown") {
+      return sum + 5;
     }
 
     return sum + 8;

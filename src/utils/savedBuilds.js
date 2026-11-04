@@ -1,5 +1,12 @@
-import { buildSteps } from "../data/parts.js";
-import { safeNumber } from "./buildCalculations.js";
+import { buildSteps, buildClassIds, defaultBuildClass } from "../data/parts.js";
+import { calculateBuildStats, getSelectedParts, safeNumber } from "./buildCalculations.js";
+import {
+  getDefaultSelectionsForBuildClass,
+  inferBuildClassFromSelections,
+  resolveSelectionsForBuildClass,
+} from "./buildClasses.js";
+import { getCompatibilityWarnings } from "./compatibility.js";
+import { calculateBuildGrades } from "./grades.js";
 
 export const savedBuildsStorageKey = "maidenready.savedBuilds.v1";
 
@@ -137,5 +144,51 @@ export const resolveSavedBuildSelections = (
     },
     missing,
     isComplete: missing.length === 0,
+  };
+};
+
+
+export const recalculateSavedBuildSnapshot = (savedBuild, partsCatalog) => {
+  const buildClass =
+    savedBuild.buildClass && buildClassIds.includes(savedBuild.buildClass)
+      ? savedBuild.buildClass
+      : inferBuildClassFromSelections(
+          savedBuild.selectedIds,
+          partsCatalog,
+          defaultBuildClass,
+        );
+  const fallbackSelections = getDefaultSelectionsForBuildClass(
+    buildClass,
+    partsCatalog,
+  );
+  const resolved = resolveSavedBuildSelections(
+    savedBuild,
+    partsCatalog,
+    fallbackSelections,
+    buildClass,
+  );
+  const classResolved = resolveSelectionsForBuildClass(
+    resolved.selections,
+    buildClass,
+    partsCatalog,
+  );
+  const selectedParts = getSelectedParts(classResolved.selections, partsCatalog);
+  const stats = calculateBuildStats(selectedParts, buildClass);
+  const warnings = getCompatibilityWarnings(selectedParts, buildClass, stats);
+  const grades = calculateBuildGrades(stats, warnings);
+
+  return {
+    ...savedBuild,
+    buildClass,
+    totalPrice: stats.totalPrice,
+    totalWeightG: stats.totalWeightG,
+    thrustToWeight: stats.thrustToWeight,
+    flightTimeMinutes: stats.flightTimeMinutes,
+    flightTimeMinutesMin: stats.flightTimeMinutesMin,
+    flightTimeMinutesMax: stats.flightTimeMinutesMax,
+    topSpeedMph: stats.topSpeedMph,
+    topSpeedMphMin: stats.topSpeedMphMin,
+    topSpeedMphMax: stats.topSpeedMphMax,
+    overallGrade: grades.overall.grade,
   };
 };
